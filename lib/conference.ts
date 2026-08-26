@@ -1,5 +1,4 @@
-import papersData from '@/data/papers-with-abstracts.json';
-import posterPapersData from '@/data/poster-papers.json';
+import papersIndexData from '@/data/papers-index.json';
 import sessionsData from '@/data/sessions.json';
 import officialEventsData from '@/data/official-events.json';
 import venuesData from '@/data/venues.json';
@@ -35,6 +34,8 @@ export type Paper = {
   pageImage?: string;
   /** Per-paper PDF, supplied for the autumn conference. */
   paperPdf?: string;
+  /** Set on the lightweight index in place of the abstract text itself. */
+  hasAbstract?: boolean;
 };
 
 export type Session = {
@@ -52,11 +53,16 @@ export type Venue = { id: string; name: string; floor: string };
 export type Speaker = { id: string; name: string; papers: string[] };
 export type Announcement = { id: string; title: string; body: string; date: string; category: string };
 
-type PaperRecord = Omit<Paper, 'sourcePage'> & { source_page?: number | null };
-
-export const papers: Paper[] = ([...papersData, ...posterPapersData] as PaperRecord[]).map(
-  ({ source_page: sourcePage, ...paper }) => ({ ...paper, sourcePage: sourcePage ?? undefined }),
-);
+/**
+ * Lightweight paper list — title, authors, time, place, no abstract text.
+ * Every browsing screen (program, paper list, search, my schedule) uses
+ * this; it keeps `data/papers-with-abstracts.json` (the full text, ~250KB
+ * gzipped) out of the client bundle. The paper detail route reads the full
+ * record separately via `lib/paper-detail.ts`, which only a server
+ * component imports. Regenerate with `npm run build:paper-index` after
+ * editing papers-with-abstracts.json or poster-papers.json.
+ */
+export const papers: Paper[] = papersIndexData as Paper[];
 
 /** Paper sessions plus the official programme-book events (opening, keynotes, dinner…). */
 export const sessions: Session[] = [

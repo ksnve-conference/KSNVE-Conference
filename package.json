@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run build:paper-index",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -13,7 +14,8 @@
     "test:mock-time": "tsx scripts/test-dashboard-mock-time.ts",
     "validate:papers": "tsx scripts/validate-paper-xml.ts",
     "validate:data": "tsx scripts/validate-data.ts",
-    "build:font": "python3 scripts/subset-font.py"
+    "build:font": "python3 scripts/subset-font.py",
+    "build:paper-index": "tsx scripts/build-paper-index.ts"
   },
   "dependencies": {
     "@types/node": "^26.1.0",

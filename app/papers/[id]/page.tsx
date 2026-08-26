@@ -8,6 +8,7 @@ import PaperActions from '@/components/PaperActions';
 import PresentationBadge from '@/components/PresentationBadge';
 import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
+import { getPaperDetail } from '@/lib/paper-detail';
 
 export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 
 export default async function PaperDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const paper = papers.find((p) => p.id === id);
+  const paper = getPaperDetail(id);
   if (!paper) notFound();
 
   const session = sessionById.get(paper.sessionId);

@@ -39,6 +39,7 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 | `official-events.json` | 개회식·키노트·만찬·포스터·대토론회 등 공식 일정 |
 | `papers-with-abstracts.json` | 논문 248건 (앱의 주 데이터) |
 | `poster-papers.json` | 포스터 논문 71건 |
+| `papers-index.json` | 위 두 파일에서 생성되는 경량 색인 (초록 제외). 직접 수정하지 말고 `npm run build:paper-index`로 재생성 |
 | `papers.json` | 프로그램북 원본 메타데이터 (추출 파이프라인 전용, 수정하지 않음) |
 | `speakers.json` | 발표자 색인 |
 | `venues.json` | 발표장 |
@@ -51,8 +52,9 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 ### 실데이터 교체 절차
 
 1. `data/`의 JSON을 교체하고 `lib/conference-config.ts`의 날짜·명칭을 갱신
-2. `npm run validate:data` — 세션 참조, 날짜 범위, 장소 매핑, 발표자 색인을 검사
-3. `npm run build`
+2. `npm run build:paper-index` — 논문 목록용 경량 색인 재생성 (`npm run build`가 자동으로 실행하지만, `npm run dev`로 바로 확인하려면 먼저 실행)
+3. `npm run validate:data` — 세션 참조, 날짜 범위, 장소 매핑, 발표자 색인을 검사
+4. `npm run build`
 
 `validate:data`는 오류가 있으면 비정상 종료하므로 배포 전 게이트로 쓸 수 있습니다.
 

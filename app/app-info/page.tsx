@@ -4,7 +4,7 @@ import { papers, sessions, speakers, venues } from '@/lib/conference';
 
 export const metadata = { title: '앱 정보' };
 
-const withAbstract = papers.filter((p) => p.abstract).length;
+const withAbstract = papers.filter((p) => p.hasAbstract).length;
 
 export default function AppInfoPage() {
   return (

@@ -1,7 +1,5 @@
 /* ============================================================
    Design tokens — the single source of colour for the whole app.
-   Light is defined on :root; dark is redefined in two places so
-   both the OS setting and an explicit choice resolve correctly.
    ============================================================ */
 :root{
   --bg:#f3f5f2;
@@ -44,42 +42,6 @@
   --r-md:14px;
   --r-lg:20px;
   --r-pill:999px;
-}
-
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0d1a18;
-    --card:#152220;
-    --card-2:#1b2apx;
-    --card-2:#1b2926;
-    --chrome:rgba(21,34,32,.94);
-    --text:#e8efec;
-    --text-2:#c6d2ce;
-    --muted:#93a49f;
-    --line:#26332f;
-    --line-soft:#1f2b28;
-    --brand:#4ec2aa;
-    --brand-dark:#0c2b26;
-    --brand-ink:#7fd7c3;
-    --accent:#c9e77a;
-    --tint:#12302a;
-    --tint-ink:#7fd7c3;
-    --warn:#e0b155;
-    --warn-bg:#2a2214;
-    --danger:#ef8a72;
-    --danger-bg:#2b1a16;
-    --star:#e0bd52;
-    --star-bg:#2a2415;
-    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.28);
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0d1a18; --card:#152220; --card-2:#1b2926; --chrome:rgba(21,34,32,.94);
-  --text:#e8efec; --text-2:#c6d2ce; --muted:#93a49f; --line:#26332f; --line-soft:#1f2b28;
-  --brand:#4ec2aa; --brand-dark:#0c2b26; --brand-ink:#7fd7c3; --accent:#c9e77a;
-  --tint:#12302a; --tint-ink:#7fd7c3; --warn:#e0b155; --warn-bg:#2a2214;
-  --danger:#ef8a72; --danger-bg:#2b1a16; --star:#e0bd52; --star-bg:#2a2415;
-  --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.28);
 }
 
 body{ background:var(--bg); color:var(--text); }
@@ -146,8 +108,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   background:var(--card-2); color:var(--muted); border:1px solid var(--line);
 }
 .star.on{ background:var(--star-bg); color:var(--star); border-color:transparent; }
-.session-star{ position:absolute; right:12px; top:12px; width:32px; height:32px; border-radius:50%; }
-.agenda-card{ position:relative; padding-right:52px; }
+.session-star{ position:absolute; right:6px; top:6px; width:44px; height:44px; border-radius:50%; }
+.agenda-card{ position:relative; padding-right:58px; }
 
 /* ---------- my schedule ---------- */
 .schedule-actions{ margin-top:14px; }
@@ -193,9 +155,10 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 
 /* ============================================================
-   Header — the old fixed height clipped the two-line title and
-   let the photo run under the text. Height now follows content,
-   and the wash is strong enough to keep the title legible.
+   Header — one definition, used everywhere. The illustrated hero
+   (.hero-today) is reserved for the home screen; every other
+   screen gets the same 56px compact bar: logo, title, search,
+   notices. No per-shell or per-breakpoint overrides.
    ============================================================ */
 .hero-today{
   height:auto; min-height:0;
@@ -226,14 +189,24 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .hero-links{ position:absolute; top:14px; right:14px; }
 
 .hero-compact{
-  min-height:0; padding:14px 16px; border-radius:0 0 var(--r-lg) var(--r-lg);
-  background:var(--brand-dark); color:#fff;
+  height:56px; min-height:56px; overflow:visible;
+  display:flex; align-items:center; gap:10px;
+  padding:0 16px; border:0; border-bottom:1px solid var(--line); border-radius:0;
+  background:var(--card); color:var(--brand-dark); box-shadow:none;
+  position:sticky; top:0; z-index:20;
 }
-.hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; }
-.hero-compact .brand-logo{ width:34px; height:auto; }
-.hero-compact .hero-title-block b{ font-size:var(--type-body); font-weight:700; letter-spacing:-.02em; }
-.hero-compact .hero-title-block small{ display:flex; gap:8px; margin-top:2px; font-size:11.5px; opacity:.82; }
-.hero-compact .hero-links a{ border-color:rgba(255,255,255,.34); color:#fff; }
+.hero-compact:after{ display:none; }
+.hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
+.hero-compact .brand-logo{ width:28px; height:auto; flex:none; }
+.hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
+.hero-compact .hero-title-block b{
+  display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:15px; font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
+}
+.hero-compact .hero-title-block small,
+.hero-compact .conference-tagline{ display:none; }
+.hero-compact .hero-links{ position:static; margin-left:auto; }
+.hero-compact .hero-links a{ border-color:var(--line); color:var(--brand-dark); }
 
 :root{
   --hero-wash-a:rgba(255,255,255,.94);
@@ -241,19 +214,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   --hero-wash-c:rgba(255,255,255,0);
   --hero-ink:#004d43;
   --hero-ink-2:#2c6157;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --hero-wash-a:rgba(13,26,24,.95);
-    --hero-wash-b:rgba(13,26,24,.78);
-    --hero-wash-c:rgba(13,26,24,.25);
-    --hero-ink:#e8efec;
-    --hero-ink-2:#9fb5af;
-  }
-}
-:root[data-theme="dark"]{
-  --hero-wash-a:rgba(13,26,24,.95); --hero-wash-b:rgba(13,26,24,.78); --hero-wash-c:rgba(13,26,24,.25);
-  --hero-ink:#e8efec; --hero-ink-2:#9fb5af;
 }
 
 /* ---------- bottom nav: opaque so list content never shows through ---------- */
