@@ -23,7 +23,7 @@ export default function MorePage() {
     <main className="shell app-shell">
       <AppHeader compact />
       <section>
-        <div className="screen-title"><div><span>INFORMATION</span><h1>더보기</h1></div></div>
+        <div className="screen-title"><h1>더보기</h1></div>
         <div className="more-menu">
           {menu.map((m) => (
             <Link href={m.href} key={m.href}>

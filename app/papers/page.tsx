@@ -23,22 +23,27 @@ const filters: { id: Filter; label: string }[] = [
 
 const sessionById = new Map(sessions.map((s) => [s.id, s]));
 
+const topics = Array.from(new Set(sessions.map((s) => s.category)))
+  .sort((a, b) => a.localeCompare(b, 'ko'));
+
 export default function PapersPage() {
   const { savedPapers, togglePaper } = useSaved();
   const [query, setQuery] = useState('');
+  const [topic, setTopic] = useState<string>('all');
   const [filter, setFilter] = useState<Filter>('all');
   const [day, setDay] = useState<string>('all');
   const [open, setOpen] = useState<string[]>([]);
 
   const q = query.trim().toLocaleLowerCase('ko');
   const filtered = useMemo(() => papers.filter((paper) => {
+    if (topic !== 'all' && sessionById.get(paper.sessionId)?.category !== topic) return false;
     if (day !== 'all' && paper.date !== day) return false;
     if (filter === 'saved' && !savedPapers.includes(paper.id)) return false;
     if (filter !== 'all' && filter !== 'saved' && presentationTypeFor(paper, sessionById.get(paper.sessionId)) !== filter) return false;
     if (!q) return true;
-    return [paper.title, paper.authors, paper.presenter, paper.session, paper.venue]
+    return [paper.title, paper.authors, paper.presenter, paper.session, paper.venue, ...(paper.keywords ?? [])]
       .join(' ').toLocaleLowerCase('ko').includes(q);
-  }), [q, filter, day, savedPapers]);
+  }), [q, topic, filter, day, savedPapers]);
 
   // Grouping keeps the DOM small: only the sessions a reader opens are rendered.
   const groups = useMemo(() => {
@@ -64,9 +69,15 @@ export default function PapersPage() {
     <main className="shell app-shell">
       <AppHeader compact />
       <section>
-        <div className="screen-title"><div><span>DISCOVER</span><h1>발표 논문</h1></div><strong>{filtered.length}</strong></div>
+        <div className="screen-title"><h1>발표 논문</h1><strong>{filtered.length}</strong></div>
         <SearchBar value={query} onChange={setQuery} placeholder="제목, 저자, 발표자, 세션, 장소 검색" />
 
+        <div className="filter-chips filter-topics" role="group" aria-label="분야">
+          <button className={topic === 'all' ? 'active' : ''} onClick={() => setTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
+          {topics.map((t) => (
+            <button key={t} className={topic === t ? 'active' : ''} onClick={() => setTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
+          ))}
+        </div>
         <div className="filter-chips" role="group" aria-label="발표 유형">
           {filters.map((f) => (
             <button key={f.id} className={filter === f.id ? 'active' : ''} onClick={() => setFilter(f.id)} aria-pressed={filter === f.id}>{f.label}</button>

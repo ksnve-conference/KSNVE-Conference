@@ -33,7 +33,7 @@ export default function MySchedulePage() {
     <main className="shell app-shell">
       <AppHeader compact />
       <section>
-        <div className="screen-title"><div><span>MY CONFERENCE</span><h1>내 일정</h1></div><strong>{items.length}</strong></div>
+        <div className="screen-title"><h1>내 일정</h1><strong>{items.length}</strong></div>
 
         {ready && items.length === 0 && (
           <div className="empty schedule-empty">

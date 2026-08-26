@@ -12,7 +12,6 @@ export default function OriginalPageViewer({ src, title, sourcePage }: OriginalP
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [loaded, setLoaded] = useState(false);
   const [zoomed, setZoomed] = useState(false);
-  const [resolution, setResolution] = useState('1066 × 1458 px');
 
   const openViewer = () => {
     setZoomed(false);
@@ -29,23 +28,17 @@ export default function OriginalPageViewer({ src, title, sourcePage }: OriginalP
     if (dialog?.requestFullscreen) await dialog.requestFullscreen();
   };
 
-  const recordResolution = (image: HTMLImageElement) => {
-    setLoaded(true);
-    setResolution(`${image.naturalWidth} × ${image.naturalHeight} px`);
-  };
+  const pageCaption = sourcePage ? `초록집 ${sourcePage}쪽` : '초록집 원문';
 
   return (
     <section className="abstract original-page">
       <div className="original-page-heading">
         <div>
           <h2>원문 페이지</h2>
-          <p>
-            {resolution}
-            {sourcePage ? ` · PDF ${sourcePage}쪽` : ''}
-          </p>
+          <p>{pageCaption}</p>
         </div>
         <a href={src} target="_blank" rel="noreferrer">
-          Open original page
+          원문 페이지 열기
         </a>
       </div>
 
@@ -58,7 +51,7 @@ export default function OriginalPageViewer({ src, title, sourcePage }: OriginalP
           width="1066"
           height="1458"
           loading="lazy"
-          onLoad={(event) => recordResolution(event.currentTarget)}
+          onLoad={() => setLoaded(true)}
         />
         <span className="zoom-hint">눌러서 확대</span>
       </button>
@@ -75,7 +68,7 @@ export default function OriginalPageViewer({ src, title, sourcePage }: OriginalP
         <header>
           <div>
             <b>원문 페이지</b>
-            <span>{resolution}{sourcePage ? ` · PDF ${sourcePage}쪽` : ''}</span>
+            <span>{pageCaption}</span>
           </div>
           <button type="button" onClick={enterFullscreen}>전체 화면</button>
           <a href={src} target="_blank" rel="noreferrer">원본 열기</a>

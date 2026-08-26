@@ -14,8 +14,8 @@ export default function NoticesPage() {
       <AppHeader compact />
       <BackLink fallback="/more" label="더보기" />
       <div className="section-heading">
-        <div><span className="kicker">ANNOUNCEMENTS</span><h1>공지사항</h1></div>
-        <strong>{unread > 0 ? `${unread} 새 소식` : `${items.length}건`}</strong>
+        <h1>공지사항</h1>
+        <strong>{unread > 0 ? `새 소식 ${unread}건` : `${items.length}건`}</strong>
       </div>
 
       {source === 'cache' && (

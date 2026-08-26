@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import SearchBar from '@/components/SearchBar';
@@ -20,8 +21,17 @@ function readRecent(): string[] {
 }
 
 export default function SearchPage() {
+  return (
+    <Suspense fallback={null}>
+      <SearchPageInner />
+    </Suspense>
+  );
+}
+
+function SearchPageInner() {
+  const searchParams = useSearchParams();
   const { savedPapers, togglePaper } = useSaved();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => searchParams.get('q') ?? '');
   const [recent, setRecent] = useState<string[]>([]);
 
   useEffect(() => { setRecent(readRecent()); }, []);
@@ -41,7 +51,8 @@ export default function SearchPage() {
   }, [q, query]);
 
   const matchedPapers = useMemo(() => q ? papers.filter((p) =>
-    [p.title, p.authors, p.presenter, p.session, p.venue].join(' ').toLocaleLowerCase('ko').includes(q)) : [], [q]);
+    [p.title, p.authors, p.presenter, p.session, p.venue, ...(p.keywords ?? [])]
+      .join(' ').toLocaleLowerCase('ko').includes(q)) : [], [q]);
   const matchedSessions = useMemo(() => q ? sessions.filter((s) =>
     [s.title, s.chair, s.category, s.venue].join(' ').toLocaleLowerCase('ko').includes(q)) : [], [q]);
   const matchedSpeakers = useMemo(() => q ? speakers.filter((s) =>
@@ -59,7 +70,7 @@ export default function SearchPage() {
     <main className="shell app-shell search-screen">
       <AppHeader compact showSearch={false} />
       <section>
-        <div className="screen-title"><div><span>FIND ANYTHING</span><h1>통합 검색</h1></div></div>
+        <div className="screen-title"><h1>통합 검색</h1></div>
         <SearchBar value={query} onChange={setQuery} placeholder="논문, 저자, 발표자, 세션, 장소 검색" autoFocus />
         <p className="search-hint">{q ? `‘${query.trim()}’ 검색 결과 ${total}건` : '관심 있는 키워드나 발표자 이름을 검색하세요.'}</p>
 

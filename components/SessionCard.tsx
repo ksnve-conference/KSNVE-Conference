@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
-import { dayLabel, formatSessionTitle, type Session } from '@/lib/conference';
+import { dayLabel, sessionTitleWithoutTrack, sessionTrack, type Session } from '@/lib/conference';
 
 export default function SessionCard({ session, paperCount, showDate = false }: { session: Session; paperCount: number; showDate?: boolean }) {
   const [start, end] = session.time.split('~');
-  const title = formatSessionTitle(session.title);
+  const title = sessionTitleWithoutTrack(session);
+  const track = sessionTrack(session);
   return (
     <article className="card session-card">
       <div className="session-time">
@@ -12,7 +13,7 @@ export default function SessionCard({ session, paperCount, showDate = false }: {
         <b>{start}</b><span>{end}</span>
       </div>
       <div className="session-body">
-        <div className="badges"><span className="badge live-badge">{formatSessionTitle(session.category)}</span></div>
+        {track && <div className="badges"><span className="badge live-badge">{track}</span></div>}
         <h3 className="paper-title"><Link href={`/sessions/${session.id}`}>{title}</Link></h3>
         <p className="session-place"><Icon name="pin" size={13} /> {session.venue}</p>
         {paperCount > 0 && <p className="meta">좌장 {session.chair} · 발표 {paperCount}건</p>}

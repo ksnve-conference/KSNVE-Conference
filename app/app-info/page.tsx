@@ -9,7 +9,6 @@ const withAbstract = papers.filter((p) => p.hasAbstract).length;
 export default function AppInfoPage() {
   return (
     <InfoPage
-      kicker="APP INFORMATION"
       title="앱 정보"
       intro={`${conferenceConfig.koreanTitle}의 프로그램과 발표 정보를 제공하는 모바일 웹앱입니다.`}
     >

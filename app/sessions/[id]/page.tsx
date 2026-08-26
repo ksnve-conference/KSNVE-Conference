@@ -4,6 +4,7 @@ import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
 import PaperCard from '@/components/PaperCard';
+import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessions, venues } from '@/lib/conference';
 
 export function generateStaticParams() {
@@ -28,12 +29,12 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
           <span className="badge">{dayLabel(session.date)}</span>
           <span className="badge">{session.time}</span>
           {venue ? (
-            <Link className="badge" href={`/venues/${venue.id}`}>⌖ {session.venue}</Link>
+            <Link className="badge" href={`/venues/${venue.id}`}><Icon name="pin" size={12} /> {session.venue}</Link>
           ) : (
             <span className="badge">{session.venue}</span>
           )}
         </div>
-        <p className="kicker">SESSION · {session.id.toUpperCase()}</p>
+        <p className="kicker">{session.id.toUpperCase()}</p>
         <h1>{formatSessionTitle(session.title)}</h1>
         <p className="meta large">좌장 {session.chair} · 발표 {sessionPapers.length}건</p>
       </section>

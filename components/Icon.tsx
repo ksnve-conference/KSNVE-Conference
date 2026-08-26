@@ -22,7 +22,7 @@ const paths: Record<IconName, React.ReactNode> = {
   bell: <><path d="M18 8.8a6 6 0 1 0-12 0c0 5.2-2 6.7-2 6.7h16s-2-1.5-2-6.7Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></>,
   check: <path d="m5 12.5 4.5 4.5L19 7.5"/>,
   info: <><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.2"/></>,
-  sponsor: <><path d="m12 3.5 2.4 5 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 9.3l5.4-.8 2.4-5Z"/></>,
+  sponsor: <><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></>,
   notice: <><path d="M4 9.5h4l7-4.5v14l-7-4.5H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1Z"/><path d="M18.5 9a4 4 0 0 1 0 6"/></>,
   map: <><path d="m3 6.5 6-2.5 6 2.5 6-2.5v14l-6 2.5-6-2.5-6 2.5v-14Z"/><path d="M9 4v14.5M15 6.5V21"/></>,
   download: <><path d="M12 3.5v11M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 17v2a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-2"/></>,

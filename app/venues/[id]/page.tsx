@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
+import Icon from '@/components/Icon';
 import PresentationBadge from '@/components/PresentationBadge';
 import {
   dayLabel,
@@ -46,8 +47,8 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
       <BackLink fallback="/more" label="더보기" />
 
       <section className="profile-hero venue-hero">
-        <span>⌖</span>
-        <p className="kicker">VENUE</p>
+        <span><Icon name="pin" size={28} /></span>
+        <p className="kicker">발표장</p>
         <h1>{venue.name}</h1>
         <p>예정 세션 {venueSessions.length}개 · 발표논문 {paperCount}건</p>
       </section>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import SessionCard from '@/components/SessionCard';
-import TimelineSession from '@/components/TimelineSession';
+import TimeSlotRow from '@/components/TimeSlotRow';
 import TimeTravelPanel from '@/components/TimeTravelPanel';
 import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessions, type Session } from '@/lib/conference';
@@ -50,7 +50,7 @@ const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.cate
 export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
   const [showTimeTravel, setShowTimeTravel] = useState(false);
-  const { savedPapers, savedSessions, togglePaper, toggleSession } = useSaved();
+  const { savedSessions, toggleSession } = useSaved();
   const { items: announcements, unread, markRead, read } = useAnnouncements();
 
   const dates = [...conferenceConfig.dates];
@@ -78,6 +78,18 @@ export default function ProgramPage() {
     .filter((s) => s.date === date)
     .sort((a, b) => a.time.localeCompare(b.time)), [date]);
 
+  // Grouped by start time so every hall running at once shows as one dense row
+  // under a shared heading, instead of a tall card per session.
+  const daySlots = useMemo(() => {
+    const map = new Map<string, Session[]>();
+    daySessions.forEach((session) => {
+      const list = map.get(session.time) || [];
+      list.push(session);
+      map.set(session.time, list);
+    });
+    return [...map.entries()];
+  }, [daySessions]);
+
   const changeMockNow = (value: string | null) => {
     setMockNow(parseMockNow(value));
     const url = new URL(window.location.href);
@@ -96,7 +108,6 @@ export default function ProgramPage() {
         {isBefore && (
           <section className="conference-status-card before-conference">
             <div className="conference-status-meta"><time>{formatKoreanDate(today)}</time><strong>D-{daysBetween(today, conferenceConfig.startDate)}</strong></div>
-            <span>CONFERENCE COUNTDOWN</span>
             <h2>{conferenceConfig.koreanTitle}</h2>
             <p className="countdown-copy">
               <strong>학술대회가 {daysBetween(today, conferenceConfig.startDate)}일 남았습니다.</strong>
@@ -107,14 +118,13 @@ export default function ProgramPage() {
 
         {isDuring && (
           <div className="conference-live-status">
-            <span>LIVE</span>
+            <span>진행중</span>
             <div><b>학술대회 진행 중</b><small>{formatKoreanDate(today)} · {conferenceConfig.venue}</small></div>
           </div>
         )}
 
         {isAfter && (
           <section className="conference-status-card after-conference">
-            <span>CONFERENCE ARCHIVE</span>
             <h2>학술대회가 종료되었습니다.</h2>
             <p>프로그램과 초록은 계속 열람할 수 있습니다.</p>
           </section>
@@ -123,7 +133,7 @@ export default function ProgramPage() {
         {!isAfter && (
           <>
             <div className="dashboard-section">
-              <div className="dashboard-heading"><div><span>NOW &amp; NEXT</span><h2>현재 진행 중 / 다음 세션</h2></div></div>
+              <div className="dashboard-heading"><h2>현재 진행 중 / 다음 세션</h2></div>
               <div className="dashboard-sessions">
                 {currentOrNext.map((session) => (
                   <SessionCard key={session.id} session={session} paperCount={papers.filter((p) => p.sessionId === session.id).length} />
@@ -133,7 +143,7 @@ export default function ProgramPage() {
             </div>
 
             <div className="dashboard-section">
-              <div className="dashboard-heading"><div><span>MAJOR EVENTS</span><h2>주요 일정</h2></div></div>
+              <div className="dashboard-heading"><h2>주요 일정</h2></div>
               <div className="major-event-list">
                 {majorEvents.map((session) => (
                   <Link href={`/sessions/${session.id}`} key={session.id}>
@@ -150,7 +160,7 @@ export default function ProgramPage() {
 
         <div className="dashboard-section">
           <div className="dashboard-heading">
-            <div><span>ANNOUNCEMENTS</span><h2>공지사항 {unread > 0 && <i>{unread}</i>}</h2></div>
+            <h2>공지사항 {unread > 0 && <i>{unread}</i>}</h2>
             {announcements.length > 2 && <Link href="/notices">전체 보기</Link>}
           </div>
           <div className="announcement-list">
@@ -166,28 +176,36 @@ export default function ProgramPage() {
       </section>
 
       <section className="program-block">
-        <div className="screen-title"><div><span>CONFERENCE AGENDA</span><h1>전체 프로그램</h1></div></div>
+        <div className="screen-title"><h1>전체 프로그램</h1></div>
         <div className="date-strip">
           {dates.map((item) => (
             <button key={item} className={date === item ? 'active' : ''} onClick={() => setDate(item)}>
-              <small>{dayLabel(item).split(' ')[1]}요일</small>
               <b>{Number(item.slice(8, 10))}</b>
-              <span>{Number(item.slice(5, 7))}월</span>
+              <span>{dayLabel(item).split(' ')[1]}</span>
             </button>
           ))}
         </div>
         <div className="agenda-summary"><b>{dayLabel(date)} 일정</b><span>{daySessions.length}개 세션</span></div>
         <div className="program-timeline">
-          {daySessions.map((session) => (
-            <TimelineSession
-              key={session.id}
-              session={session}
-              sessionPapers={papers.filter((p) => p.sessionId === session.id)}
-              favorites={savedPapers}
-              onToggle={togglePaper}
-              saved={savedSessions.includes(session.id)}
-              onToggleSession={toggleSession}
-            />
+          {daySlots.map(([time, slotSessions]) => (
+            <div className="time-slot-group" key={time}>
+              <div className="time-slot-heading">
+                <b>{time.split('~')[0]}</b>
+                {time.includes('~') && <span>– {time.split('~')[1]}</span>}
+                {slotSessions.length > 1 && <em>{slotSessions.length}개 홀 동시 진행</em>}
+              </div>
+              <div className="time-slot-rows">
+                {slotSessions.map((session) => (
+                  <TimeSlotRow
+                    key={session.id}
+                    session={session}
+                    paperCount={papers.filter((p) => p.sessionId === session.id).length}
+                    saved={savedSessions.includes(session.id)}
+                    onToggleSession={toggleSession}
+                  />
+                ))}
+              </div>
+            </div>
           ))}
           {daySessions.length === 0 && <div className="compact-empty">이 날짜에 등록된 일정이 없습니다.</div>}
         </div>

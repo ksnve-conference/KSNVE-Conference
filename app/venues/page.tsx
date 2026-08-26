@@ -12,7 +12,7 @@ export default function VenuesPage() {
       <AppHeader compact />
       <BackLink fallback="/more" label="더보기" />
       <div className="section-heading">
-        <div><span className="kicker">VENUE GUIDE</span><h1>발표장 안내</h1></div>
+        <h1>발표장 안내</h1>
         <strong>{venues.length}</strong>
       </div>
       <div className="list">

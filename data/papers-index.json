@@ -11,7 +11,15 @@
     "title": "3차원 공간 화소 단위 음장 제어를 위한 3축 음향 홀로그램 설계",
     "authors": "김진욱, Haseeb Khan(경북대)",
     "presenter": "김진욱",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Acoustic holograms(음향 홀로그램)",
+      "Ultrasound(초음파)",
+      "acoustic lens(음향렌즈)",
+      "acoustic field(음장)",
+      "Ultrasonic focusing(초음파 집속)",
+      "phase delay(위상지연)"
+    ]
   },
   {
     "id": "p002",
@@ -25,7 +33,15 @@
     "title": "Acoustic Emission Characteristics of Lithium-Ion Cells under Mechanical Impact",
     "authors": "Xianglin Huang, Heung Soo Kim(Dongguk Univ.)",
     "presenter": "Xianglin Huang",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Lithium-ion battery",
+      "Mechanical impact",
+      "Acoustic emission",
+      "Dynamic response",
+      "Damage detection",
+      "Signal characteristics Acoustic emission (AE) monitoring provides a sensitive approach for detecting transient damage events in"
+    ]
   },
   {
     "id": "p003",
@@ -39,7 +55,12 @@
     "title": "시간 변조 장력을 적용한 멤브레인 공명기의 적응형 흡음 성능 제어",
     "authors": "김민규, 이규영, 박준홍(한양대)",
     "presenter": "김민규",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Membrane resonator(멤브레인 공명기)",
+      "Time-modulated tension(시간변조 장력)",
+      "Adaptive sound absorption(적응형 흡음)"
+    ]
   },
   {
     "id": "p004",
@@ -53,7 +74,12 @@
     "title": "밸리 포노닉 결정의 경사 인터페이스에서의 파동 전달 특성",
     "authors": "이명준, 오일권(KAIST)",
     "presenter": "이명준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Valley phononic crystals(밸리 포노닉 결정)",
+      "Mass-spring system(질량-스프링 시스템)",
+      "Oblique interface(경사"
+    ]
   },
   {
     "id": "p005",
@@ -67,7 +93,12 @@
     "title": "Tunable Acoustic Absorption Frequency through DSHS Height Control using the Brazil-nut and Reverse Brazil-nut Effects",
     "authors": "오수민, 윤길호(한양대)",
     "presenter": "오수민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Brazil-Nut effect(Ht}214 St}",
+      "Reverse Brazil-Nut effect(4H2}4% Sh)",
+      "Double Split Hollow"
+    ]
   },
   {
     "id": "p006",
@@ -81,7 +112,14 @@
     "title": "세탁기 펌프 배수 시 다상 유동 기인 소음 발생 메커니즘 분석",
     "authors": "이상진, 정철웅, 이상헌(부산대), 최진호(LG전자)",
     "presenter": "이상진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "양방향 펌프",
+      "유동 소음",
+      "이상 유동",
+      "Volume of Fluid (VoF) 모델",
+      "유체 저항 토크"
+    ]
   },
   {
     "id": "p007",
@@ -95,7 +133,11 @@
     "title": "외광 환경에 강건한 구조광 기반 비접촉 3차원 정밀 계측 방법",
     "authors": "김진, 김정민, 박용화(KAIST)",
     "presenter": "김진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "구조광(Structured Light) 3D 계측(3D Measurement)",
+      "비접촉(Non-contact)"
+    ]
   },
   {
     "id": "p008",
@@ -109,7 +151,13 @@
     "title": "스캐닝 사각과 진폭변조 ToF 센서의 저샘플링 한계 극복 및 고조파 왜곡 보정 기법",
     "authors": "안석준, 임윤섭, 임준홍, 박용화(KAIST)",
     "presenter": "안석준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "AMCW Time-of-Flight (진폭변조 시간비행센서)",
+      "Wiggling Error (위글링 오차)",
+      "Rational-Multiple Sampling (유리수 배수 샘플링)",
+      "Harmonic Cancellation (고조파 상쇄)"
+    ]
   },
   {
     "id": "p009",
@@ -123,7 +171,14 @@
     "title": "AMCW 라이다의 확산 반사광 위상-진폭 분석을 통한 생체 조직의 원격 광학 물성 정량화",
     "authors": "임준홍, 임윤섭, 안석준, 박용화(KAIST)",
     "presenter": "임준홍",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "AMCW LiDAR(AMCW 라이다)",
+      "Optical Property(광학 물성)",
+      "Diffuse Reflectance(확산 반사광)",
+      "Remote Optical Sensor(원격 광학 센서)",
+      "Hybrid Model(하이브리드 모델) G 최근  디지털  헬스케어  산업의  성장에  따라  피부  상태를  원격으로  진단하고자  하는  수요가  증가하고  있다"
+    ]
   },
   {
     "id": "p010",
@@ -137,7 +192,13 @@
     "title": "고정자 형상 최적화를 통한 IPMSM의 코깅토크 저감에 따른 소음 저감 연구",
     "authors": "김종욱, 정순영, 윤태영(창원대), 김진수(LG전자), 진성욱(오성기전)",
     "presenter": "김종욱",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Cogging Torque(31% =)",
+      "Back EMF(& 7] 414)",
+      "Reluctance(A}7] 4] et 변화율)",
+      "Magnetic Flux 1060915(자속밀도)"
+    ]
   },
   {
     "id": "p011",
@@ -151,7 +212,13 @@
     "title": "배터리 전극 압연 롤러 모니터링을 위한 진동 센서 모듈 설계, 제작 및 적용",
     "authors": "노은식(포항공과대), 이한규, 박영준(에이시스테크놀로지), 신금재(생산기술연)",
     "presenter": "노은식(포항공과대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotary machine diagnosis (회전체 설비 진단)",
+      "Vibration monitoring (진동 감시)",
+      "Accelerometer (가속도계)",
+      "Vibration amplifying structure (진동 증폭 구조)"
+    ]
   },
   {
     "id": "p012",
@@ -165,7 +232,11 @@
     "title": "회전체 고장 진단에 활용할 수 있는 딥러닝 기반 신호 시각화 기법",
     "authors": "정원호, 박용화(KAIST)",
     "presenter": "정원호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Condition Monitoring (상태진단)",
+      "Deep Learning (딥러닝)"
+    ]
   },
   {
     "id": "p013",
@@ -179,7 +250,12 @@
     "title": "물리지식 기반 AI를 이용한 타이어 건전성 모니터링용 가속도 데이터 생성",
     "authors": "김민태, 박용화(KAIST), 이호종(한국타이어)",
     "presenter": "김민태",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Tire Health monitoring(E}°]°] *tE] %14E] 8)",
+      "Tire Sensing Technology (E}°]°] 4173 BIAS =4))",
+      "Intelligent Tire(?] = 2] 41 = E}°] °])"
+    ]
   },
   {
     "id": "p014",
@@ -193,7 +269,14 @@
     "title": "음향 방출 신호 기반 반도체 CMP 공정 웨이퍼 식별 기법 연구",
     "authors": "김현준, 박용화, 진민제, 한동규(KAIST), 이진우, 한민수, 채주병(삼성 반도체연구소), 양기혁(케이씨텍)",
     "presenter": "김현준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "화학적 기계적 연마(CMP)",
+      "음향 방출(AE)",
+      "종말점 검출(EPD)",
+      "신호 처리",
+      "마모 메커니즘"
+    ]
   },
   {
     "id": "p015",
@@ -207,7 +290,12 @@
     "title": "전동식 브레이크 시스템의 계측 신호 기반 진동 예측",
     "authors": "우정우, 강연준(서울대), 박시윤(현대모비스)",
     "presenter": "우정우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electric brake 59960(전동식 브레이크 시스템)",
+      "60000 20600000(진동 =)",
+      "Transfer function"
+    ]
   },
   {
     "id": "p016",
@@ -221,7 +309,12 @@
     "title": "유연다물체 동역학-전자기장 연성 해석을 이용한 모터의 진동 성능 분석",
     "authors": "박천하, 강건욱(연세대), 김창완(건국대)",
     "presenter": "박천하",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "EV traction motor(EV 7'-6- E})",
+      "Vibration performance(4!-6 “J °s)",
+      "Rotational characteristics(3]*1_ 57a)"
+    ]
   },
   {
     "id": "p017",
@@ -235,7 +328,11 @@
     "title": "제자리비행 시 능동 뒷전 플랩 제어에 따른 로터 소음 변화",
     "authors": "김민석, 공건혁, 김상경, 신상준, 이창배(서울대), 이재하(충남대), 임병욱(국방과학연)",
     "presenter": "김민석",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Hover(4] A} 2] 4] ), Active trailing edge flap-o-s 3 %1 44)",
+      "3] 4141 4 (Whirl tower experiment)"
+    ]
   },
   {
     "id": "p018",
@@ -249,7 +346,12 @@
     "title": "UAM 호버 비행 소음 측정을 위한 정밀 계측 방안 연구",
     "authors": "정민서, 김중관(한서대)",
     "presenter": "정민서",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "UAM(=4] @e 22zIE])",
+      "eVTOL(417] +4} °]4}5)",
+      "Noise Certification Standard(22-4 인증"
+    ]
   },
   {
     "id": "p019",
@@ -263,7 +365,14 @@
     "title": "차량 주행 조건 변화에 대응하는 시변 칼만필터 기반 도로 추정 및 전륜기반 후륜 프리뷰 제어",
     "authors": "김영준, 오종석(공주대)",
     "presenter": "김영준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Time-Varying Kalman Filter(시변 칼만필터)",
+      "Road Estimation(도로 추정)",
+      "Front-Wheel-Based Rear-Wheel Preview Control(전륜기반 후륜 프리뷰 제어)",
+      "Road Roughness(도로 거칠기)",
+      "차량 속도(Vehicle Velocity)"
+    ]
   },
   {
     "id": "p020",
@@ -277,7 +386,15 @@
     "title": "EV 냉각수 액추에이터 진동 예측을 위한 전자기-연성 해석",
     "authors": "김주영, 우정우, 강연준(서울대), 박찬우, 장홍민(현대포리텍)",
     "presenter": "김주영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Multiphysics(다중물리학)",
+      "Multibody dynamics(다물체 동역학)",
+      "CMS(부분 모드 합성법) EV 용 소형 냉각수 액추에이터는 모터",
+      "다단 기어열",
+      "하우징 등으로 구성되며",
+      "작동 중 발생하는 진동은"
+    ]
   },
   {
     "id": "p021",
@@ -291,7 +408,15 @@
     "title": "Topology Optimization of Elastic Metamaterials for Prestress-tunable Wave Mode Conversion using Hyperelastic Media",
     "authors": "하탐이, 윤길호(한양대), Xiaojia Shelly Zhang(Univ. of Illinois Urbana-Champaign)",
     "presenter": "하탐이",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Metamaterial(\"]E}2-2)",
+      "Wave mode conversion(4}-5 = Wh",
+      "Topology optimization(?]’4] 4S)",
+      "Hyperelasticity (4 €!3)",
+      "Tunable metamaterials (74 4]/EH 2) Elastic waves",
+      "unlike acoustic or electromagnetic waves"
+    ]
   },
   {
     "id": "p022",
@@ -305,7 +430,11 @@
     "title": "위상 기반 모션 증폭 화질 향상을 위한 Complex Steerable Pyramid의 최적 구성 방법",
     "authors": "안재영, 박용화(KAIST)",
     "presenter": "안재영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Phase-based Motion Magnification($]’s+ 7]3' 9+ +c)",
+      "Complex Steerable Pyramid"
+    ]
   },
   {
     "id": "p023",
@@ -319,7 +448,11 @@
     "title": "변위 증폭형 압전 액추에이터 기반 고속 조준 거울의 동적 모델링 및 최적 설계에 관한 연구",
     "authors": "박영진, 박노철, 석아연, 최현호, 정재우, 이강희, 전병욱(연세대), 주성철, 정순원(삼정오토메이션), 이승한, 이병주, 이용훈, 김형래(LIG D&A)",
     "presenter": "박영진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Fast Steering Mirror(고속 조준 거울)",
+      "Displacement-Amplified Piezoelectric Actuator(변위 증폭형 압전"
+    ]
   },
   {
     "id": "p024",
@@ -333,7 +466,11 @@
     "title": "KEMAR 원거리 HRTF 데이터베이스 구축 및 3차원 음원정위단서 분석",
     "authors": "이경태, 홍지웅, 강현정, 서동현(부전전자)",
     "presenter": "이경태",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Head-Related Transfer Function(HRTF, 머리전달함수)",
+      "Sound Localization Cue(소리 위치추정 단서)"
+    ]
   },
   {
     "id": "p025",
@@ -347,7 +484,11 @@
     "title": "상반성 기반 BEM을 활용한 KEMAR 원거리 HRTF 추정 및 측정 기반 검증",
     "authors": "이경태, 정석우, 서동현(부전전자)",
     "presenter": "이경태",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Head-Related Transfer Function(HRTF, 머리전달함수)",
+      "Boundary Element Method(BEM, 경계요소법) rlthyG 더미헤드의 원거리 머리전달함수Ooy{mP를 정밀하게 추정하기 위해 경계요소법OiltP을 활용한"
+    ]
   },
   {
     "id": "p026",
@@ -361,7 +502,12 @@
     "title": "수상함 발생 수중방사소음의 거리에 따른 수평방향 점근특성의 특이성",
     "authors": "이두호(동의대), 이성현(기계연)",
     "presenter": "이두호(동의대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Underwater Radiated Noise(수중 방사소음)",
+      "Structure-Borne Noise(구조기인소음)",
+      "Asymptotic Analysis(점근"
+    ]
   },
   {
     "id": "p027",
@@ -375,7 +521,15 @@
     "title": "피아노음의 음향특성에 관한 연구",
     "authors": "김윤재, 김정중, 김흥식(환경음향연구소)",
     "presenter": "김윤재",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Grand Piano",
+      "Upright Piano",
+      "Piano Sounds",
+      "Acoustical Properties",
+      "Pedal Effect",
+      "Acoustical Design"
+    ]
   },
   {
     "id": "p028",
@@ -389,7 +543,14 @@
     "title": "Micro-CT 기반 오픈셀 폼의 유동저항 추정",
     "authors": "이인석(조선해양기자재연), 박영호(창원대)",
     "presenter": "이인석(조선해양기자재연)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Airflow resistivity(--s “| &)",
+      "Porous network model(t}-s4 UES A ©)",
+      "Lattice-Boltzmann method(4%} #2 ¥ER)",
+      "X-ray micro-CT(X4] 4}°] CT)",
+      "Sound absorption(3-2)"
+    ]
   },
   {
     "id": "p029",
@@ -403,7 +564,14 @@
     "title": "전산유체역학을 이용한 냉각용 팬의 유동소음 분석 연구",
     "authors": "조영민(한서대), 전완호, 임태균(Cadence)",
     "presenter": "조영민(한서대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Computational Fluid Dynamics(#12!-#-44] SS)",
+      "Cooling Fan('§Z}-2 #1)",
+      "Aeroacoustics(-7-2-2)",
+      "Turbulence Model(4+47-. 2)",
+      "Noise Source Analysis(2-2-2) 4244)"
+    ]
   },
   {
     "id": "p030",
@@ -417,7 +585,12 @@
     "title": "굽힘·비틀림 모드 분리를 이용한 모달시험 기반 PCB 층별 물성 역추정과 해석 상관성 개선",
     "authors": "박수동, 이현성(현대케피코)",
     "presenter": "박수동",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Multi-layer PCB (다층 인쇄회로기판)",
+      "Inverse Identification (역추정)",
+      "Bending-Torsion Mode Separation (굽"
+    ]
   },
   {
     "id": "p031",
@@ -431,7 +604,12 @@
     "title": "Auto-encoder 및 음질 지수 기반 전기차 주행 사운드 최적 생성 Tool 개발",
     "authors": "노경진, 이동철, 정인수(현대차)",
     "presenter": "노경진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electric Vehicle Driving Sound (전기차 주행 사운드)",
+      "Auto-Encoder (오토인코더)",
+      "Sound Quality Index (음질"
+    ]
   },
   {
     "id": "p032",
@@ -445,7 +623,13 @@
     "title": "스테레오 기반 대규모 선체 블록 계측 시스템의 최적설계법",
     "authors": "김정민, 김진, 박용화(KAIST)",
     "presenter": "김정민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Stereo system",
+      "Ship block",
+      "3D measurement",
+      "Camera optimal placement"
+    ]
   },
   {
     "id": "p033",
@@ -459,7 +643,12 @@
     "title": "FSI-vibroacoustic 연계 해석 기반 트윈 로터리 압축기 냉매 맥동 기인 방사소음 분석",
     "authors": "박상준, 이권기, 정철웅(부산대), 배성원, 하준범, 최낙경(LG전자)",
     "presenter": "박상준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotary compressor(로터리 압축기)",
+      "Pressure pulsation(압력 맥동)",
+      "Fluid-Structure Interaction(유체-구조 상"
+    ]
   },
   {
     "id": "p034",
@@ -473,7 +662,13 @@
     "title": "복소모드 기반 서클피팅과 Global 정규화를 적용한 물리 기반 딥러닝 진동 피로 건전성 지표 예측",
     "authors": "김태완(부산대), 배승훈, 김선민(기계연)",
     "presenter": "김태완(부산대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Circle fitting] ¥]%)",
+      "Global normalization(414 “)a}S})",
+      "Health index(71419 2) 3£)",
+      "Deep leaming(]] 4"
+    ]
   },
   {
     "id": "p035",
@@ -487,7 +682,14 @@
     "title": "병렬 구조 기반 1차원 합성곱 신경망을 이용한 인텔리전트 타이어 상태진단 연구",
     "authors": "김준호, 박용화, 김민태, 정수연, 한동규(KAIST)",
     "presenter": "김준호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Intelligent tire(인텔리전트 타이어)",
+      "health monitoring(건전성 모니터링)",
+      "Vibration analysis(진동분석)",
+      "Fault diagnosis(고장진단)",
+      "deep learning(심층학습)"
+    ]
   },
   {
     "id": "p036",
@@ -501,7 +703,14 @@
     "title": "하중 역추정 기법을 이용한 회전체 시스템의 질량 불균형 하중 추정 및 축계응답 추정 연구",
     "authors": "임현철, 백현우, 김진균(경희대), 허균철, 이동현, 김병욱(기계연)",
     "presenter": "임현철",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Vibration (진동)",
+      "Inverse force Estimation(하중 역추정)",
+      "Relevance vector machine(관련성 벡터 머신)",
+      "Tikhonov regularization(티코노브 정규화)",
+      "Rotor dynamics(회전체 동역학)"
+    ]
   },
   {
     "id": "p037",
@@ -515,7 +724,12 @@
     "title": "다중 주파수 톤버스트 가진을 활용한 MLCC 압전 과도 신호의 동적 특성 추출 및 결함 검출",
     "authors": "김현준, 김호욱(인하대), 최민규(삼성전기)",
     "presenter": "김현준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "MLCC(다층세라믹캐패시터)",
+      "electromechanical response(전기기계적 응답)",
+      "Mahalanobis distance(마할라노"
+    ]
   },
   {
     "id": "p038",
@@ -529,7 +743,13 @@
     "title": "Time Waveform 특성을 이용한 회전기기 상태 진단용 Condition Index 개발",
     "authors": "추상민, 최병근, 윤재광, 문종영(경상국립대), 이정준(울산과학대), 박동희(DAVISS)",
     "presenter": "추상민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotating Machinery(3]%14])",
+      "Time Waveform(A]27}=}9)",
+      "Feature Development($-4 712)",
+      "Machine leaming(7] A] &}4)"
+    ]
   },
   {
     "id": "p039",
@@ -543,7 +763,14 @@
     "title": "고성능 친화경 비납계 압전형 가속도계 센서 제작 및 설비 대상 성능 평가 연구 발표취소 16:15~16:30 해양플렌트 Topside PAGA Coverage 설계와 평가",
     "authors": "김병훈, 정윤기, 이경자, 박규현, 백창연, 이민구(원자력연) 김태무, 김지남(삼성중공업)",
     "presenter": "김병훈",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Piezoelectric sensor(압전센서)",
+      "Condition monitoring(상태감시)",
+      "Accelerometer(가속도계센서)",
+      "Lead-free piezoelectric ceramic(비납계 압전세라믹)",
+      "Vibration test(가진시험)"
+    ]
   },
   {
     "id": "p040",
@@ -557,7 +784,14 @@
     "title": "NVH성능 향상을 위한 다층 Felt모터 흡차음커버 구조별 기여도 연구",
     "authors": "박지호, 이정욱(현대차)",
     "presenter": "박지호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Motor cover insulation pad",
+      "FELT + FELT structure",
+      "PET nonwoven",
+      "PE powder",
+      "PE sheet"
+    ]
   },
   {
     "id": "p041",
@@ -571,7 +805,13 @@
     "title": "진동 피로를 고려한 대형 컨테이너 선박 Lashing Bridge 진동 해석 및 평가 연구",
     "authors": "김지남, 도천수, 권오현(삼성중공업)",
     "presenter": "김지남",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Lashing bridge",
+      "Vibration",
+      "Fatigue",
+      "Container vessel"
+    ]
   },
   {
     "id": "p042",
@@ -585,7 +825,14 @@
     "title": "Corcos Model 기반의 난류 유도 진동 소음 해석기법 연구",
     "authors": "조영민, 정상훈(한서대), 전완호(Cadence) 진동, 동역학 및 제어이론 [2]",
     "presenter": "조영민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Turbulence-Induced Vibration(t#7-t= 41-5)",
+      "Corcos Model(Corcos 5.22)",
+      "Fluid-Structure Interaction(+t4]- TA AAA)",
+      "Spectral Method(+#}= 4 7] #4)",
+      "Rayleigh Radiation(Rayleigh 'A})"
+    ]
   },
   {
     "id": "p043",
@@ -599,7 +846,14 @@
     "title": "ANSYS Motion–harmonic Acoustic 연계 해석을 이용한 소음 예측",
     "authors": "정순영, 윤태영, 김종욱(창원대)",
     "presenter": "정순영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electromagnetic Force(4#1%}7] 4)",
+      "Motor(%.E])",
+      "Dynamic Analysis(é 2] 해석)",
+      "Harmonic Acoustic(Z5} -§ 3)",
+      "Noise Prediction(22- =)"
+    ]
   },
   {
     "id": "p044",
@@ -613,7 +867,11 @@
     "title": "Design of Internal Contact-induced Multiple Quasi-zero Stiffness using Capped Conical Shells",
     "authors": "심명석, 임홍석, 이승엽(서강대)",
     "presenter": "심명석",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Quasi-Zero Stiffness (24]= 강성)",
+      "Multiple Quasi-Zero Stiffness (+S GA) %43)"
+    ]
   },
   {
     "id": "p045",
@@ -627,7 +885,13 @@
     "title": "메탈메쉬-웨이브링 댐퍼를 적용한 고속 전동기용 헤링본 그루브 가스 저널 베어링의 회전체동역학적 성능 측정 및 예측",
     "authors": "조강석, 김태호, 권용범(국민대)",
     "presenter": "조강석",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotordynamic(회전체 동역학)",
+      "Herringbone-grooved journal bearing(헤링본 그루브 저널 베어링)",
+      "Metal mesh damper(메탈메쉬 댐퍼)",
+      "Waved ring(웨이브링)"
+    ]
   },
   {
     "id": "p046",
@@ -641,7 +905,15 @@
     "title": "물리지식 기반 인공신경망을 이용한 회전체 고장데이터 생성",
     "authors": "진민제, 박용화, 최승덕, 최성민(KAIST)",
     "presenter": "진민제",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotating machinery(회전체)",
+      "Fault diagnosis(고장진단)",
+      "Data generation(데이터 생성)",
+      "Physics-informed neural network(물리지식 기반 인공신경망)",
+      "Bearing(베어링)",
+      "Data augmentation(데이터 증강)"
+    ]
   },
   {
     "id": "p047",
@@ -655,7 +927,11 @@
     "title": "심혈관 시뮬레이터 기반 손목 관절 운동과 PPG 왜곡의 상관성 모델링 및 모션 아티팩트 예측 기획 멀티스케일 전산역학",
     "authors": "송유리, 홍준기, 아델, 송현우, 신해인, 박용화(KAIST)",
     "presenter": "송유리",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Multimodal Sensor Fusion(다중모달 센서 융합)",
+      "Biomedical Signal Processing(생체신호 처리)"
+    ]
   },
   {
     "id": "p048",
@@ -669,7 +945,14 @@
     "title": "Vibrational Analysis of Mechanical Jamming in 3D Woven COFs",
     "authors": "권준표, 박지석(아주대), 최문기(일리노이대)",
     "presenter": "권준표",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Covalent organic frameworks(3++2@} +7] 244i)",
+      "Mechanical jamming(7]7]4] 4)",
+      "Molecular dynamics(4-%} “© })",
+      "Vibrational density of states(4/-S +E YS)",
+      "Metamaterials(“]E}= 2)"
+    ]
   },
   {
     "id": "p049",
@@ -683,7 +966,11 @@
     "title": "PEGDE-이온성액체 기반 전기화학적 탈착 접착제의 메커니즘 분석 및 최적 조성 설계를 위한 분자동역학 연구",
     "authors": "박유진, 윤태영(창원대), 유화수, 권준표(아주대)",
     "presenter": "박유진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electrochemically debonding adhesive (전기화학적 탈착 접착제)",
+      "PEGDE (폴리에틸렌글리콜 디글리시딜"
+    ]
   },
   {
     "id": "p050",
@@ -697,7 +984,13 @@
     "title": "멀티스케일 전산역학을 활용한 적층제조 니켈 초내열합금의 석출상 기반 크리프 메커니즘 규명",
     "authors": "함석현, 박우범, 나성수(고려대), 윤태영(창원대)",
     "presenter": "함석현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Molecular Dynamics(분자동역학)",
+      "Inconel 718(니켈 기반 초합금)",
+      "γ규/γ귝 Precipitates phase(강화 석출상)",
+      "High-temperature Creep(고온 크리프)"
+    ]
   },
   {
     "id": "p051",
@@ -711,7 +1004,14 @@
     "title": "미세구조에 따른 헬륨 버블이고엔트로피 합금의 기계적 특성에 미치는 영향에 관한 분자동역학 연구 발표논문 세션/발표일시/논문제목 기획 선박 구조소음 디지털 전환 기술",
     "authors": "문찬혁, 윤태영(창원대) 2026년 5월 28일(목)",
     "presenter": "문찬혁",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "High-Entropy Alloy",
+      "Helium Bubble",
+      "Molecular Dynamics Simulation",
+      "Microstructure",
+      "Mechanical Properties"
+    ]
   },
   {
     "id": "p052",
@@ -725,7 +1025,11 @@
     "title": "유한요소 해석과 계측 데이터 결합을 통한 응답-응답 전달행렬 기반 선박 수중방사소음 예측 알고리즘 개발",
     "authors": "이성현, 서윤호, 김동준(기계연), 마평식(가천대)",
     "presenter": "이성현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Underwater Radiated Noise (47S \"}A}22-%)",
+      "Response-Response Transmissibility (6 4-¢ Hy 41a"
+    ]
   },
   {
     "id": "p053",
@@ -739,7 +1043,13 @@
     "title": "제한된 센서 환경에서의 인공지능 기반 수중방사소음 추정",
     "authors": "노진홍(충북대)",
     "presenter": "노진홍(충북대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Underwater radiated noise(수중방사소음)",
+      "Digital twin(디지털 트윈)",
+      "Hull vibrations(선체 진동)",
+      "Limited sensor measurements(제한된 센서 계측)"
+    ]
   },
   {
     "id": "p054",
@@ -753,7 +1063,13 @@
     "title": "FRF기반 해석-실험 융합 모델 구축 및 진동-음향 변환행렬을 이용한 소음 예측",
     "authors": "김동준, 서윤호, 이성현(기계연)",
     "presenter": "김동준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Underwater Radiated Noise(URN)",
+      "Hybrid Numerical-Experimental Model",
+      "FRF Correction",
+      "Structural-Acoustic Transfer Matrix"
+    ]
   },
   {
     "id": "p055",
@@ -767,7 +1083,12 @@
     "title": "진동-음향 데이터의 결합을 통한 구조물 방사소음 예측 기획 Dynamic substructuring",
     "authors": "마평식(가천대), 서윤호, 이성현, 김동준(기계연)",
     "presenter": "마평식(가천대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Radiated Noise(방사소음)",
+      "Transfer Path Analysis (전달경로해석법)",
+      "Condition Monitoring(상태 감시)"
+    ]
   },
   {
     "id": "p056",
@@ -781,7 +1102,11 @@
     "title": "해석 FBS 정확성 향상을 위한 FRF 모드 절단 오차 보정 연구",
     "authors": "이규성, 김재윤, 강연준(서울대), 곽동희(현대차)",
     "presenter": "이규성",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Frequency Based Substructuring(주파수 기반 부분구조 합성법)",
+      "Frequency Response Function(주파수 응답"
+    ]
   },
   {
     "id": "p057",
@@ -795,7 +1120,12 @@
     "title": "유연거동 영역에서의 FBS 정확도 향상을 위한 강체성 보강 VPT 기법",
     "authors": "김재윤, 강연준(서울대)",
     "presenter": "김재윤",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Transfer function(전달 함수)",
+      "FRF-based substructuring (부분구조합성법)",
+      "Virtual Point Transformation (가상"
+    ]
   },
   {
     "id": "p058",
@@ -809,7 +1139,12 @@
     "title": "QR-pivoting-based Primary DOF Selection for the General Model Reduction Methods",
     "authors": "Robel Weldebrhan Hagos, 이승찬, 한재흥(KAIST)",
     "presenter": "Robel Weldebrhan Hagos",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "General model reduction",
+      "Primary DOFs selection",
+      "it uses modal coordinates to represent the"
+    ]
   },
   {
     "id": "p059",
@@ -823,7 +1158,14 @@
     "title": "Craig-Bampton 기법 인터페이스 구속 모드의 재해석 부문 자동차 NVH와 인간공학 [1]",
     "authors": "이승찬, Robel Weldebrhan Hagos, 한재흥(KAIST), 박광춘(Univ. of Colorado Boulder)",
     "presenter": "이승찬",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Craig-Bampton method (크레이그 뱀프톤 기법)",
+      "Component mode synthesis (부분구조 합성법)",
+      "Fixed interface mode (고정경계 모드)",
+      "Interface constraint mode (경계 구속 모드)",
+      "Residual flexibility (잔류 유연도)"
+    ]
   },
   {
     "id": "p060",
@@ -837,7 +1179,10 @@
     "title": "글라스 루프 차량의 로드 부밍 소음 저감에 관한 연구",
     "authors": "김명환, 한성수, 은현기(르노코리아)",
     "presenter": "김명환",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Road booming noise (로드 부밍 소음)"
+    ]
   },
   {
     "id": "p061",
@@ -851,7 +1196,13 @@
     "title": "타이어 속도 및 사이즈에 따른 공명주파수 분석",
     "authors": "황성욱, 이충현, 조용범, 김정훈, 양소영, 김광선, 한진혁(넥센타이어)",
     "presenter": "황성욱",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Tire cavity(타이어공명음)",
+      "Tire size(타이어 사이즈)",
+      "Tire structure(타이어구조)",
+      "Tire pattern(타이어패턴)"
+    ]
   },
   {
     "id": "p062",
@@ -865,7 +1216,15 @@
     "title": "유연 경계면에 대한 시험적 부분구조합성법",
     "authors": "한현우, 신태진, 조문환(현대차), Ocepek Domen, Jure Korbar, Miha Pogacar, Gregor Cepon(Univ. of Ljubljana)",
     "presenter": "한현우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Dynamic substructuring",
+      "Frequency-Based Substructuring(FBS)",
+      "Flexible Interface",
+      "LASSO",
+      "Singular Vector Transformation(SVT)",
+      "Modal Constraints on Fixtures and Systems(MCFS)"
+    ]
   },
   {
     "id": "p063",
@@ -879,7 +1238,13 @@
     "title": "임팩트 여진 성능 지수 개발을 위한 모션 시뮬레이터를 활용한 진동데이터와 감성 상관성 연구",
     "authors": "방정환, 김진현, 홍성은, 김창범, 고혜민(현대차), 서주원(한양대)",
     "presenter": "방정환",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "ˈFeeling evaluation(감성평가)ˉ",
+      "ˈMotion simulator(모션시물레이터)ˉ",
+      "귆After-shake(여진)귇",
+      "지수(Index)귇"
+    ]
   },
   {
     "id": "p064",
@@ -893,7 +1258,13 @@
     "title": "에너지 기반 초점 성형을 통한 공중 햅틱 초점 영역의 방향성 제어 특별 방위산업 소음진동 [1]",
     "authors": "진장현, 김호욱(인하대)",
     "presenter": "진장현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Ultrasound haptics (초음파 햅틱)",
+      "Air coupled transducer (공기 결합 트랜스듀서)",
+      "Energy different maximization (에너지 차이 최대화)",
+      "Spatiotemporal modulation (시공간 변조)"
+    ]
   },
   {
     "id": "p065",
@@ -907,7 +1278,15 @@
     "title": "MEMS 자이로 센서의 신뢰성 확보를 위한 동특성 분석 및 진동 감쇄 방안",
     "authors": "정병선, 임성환, 김준수, 조현준(LIG D&A)",
     "presenter": "정병선",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Resonance Point",
+      "MEMS Gyroscope",
+      "Elastomer",
+      "Anti-vibration mount",
+      "Anti-vibration system",
+      "Dynamic Characteristics Analysis"
+    ]
   },
   {
     "id": "p066",
@@ -921,7 +1300,13 @@
     "title": "주파수영역분해를 이용한 운용모드해석",
     "authors": "조재상, 김원현(LIG D&A)",
     "presenter": "조재상",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Operational Modal Analysis",
+      "Frequency Domain Decomposition",
+      "Natual Frequency",
+      "Damping Ratio"
+    ]
   },
   {
     "id": "p067",
@@ -935,7 +1320,13 @@
     "title": "기뢰 수중폭발 환경을 고려한 수중 스피커 충격 완화 설계",
     "authors": "이창민, 정은주, 조진우, 전관수(LIG D&A)",
     "presenter": "이창민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Mines(7]#])",
+      "Mine sweeping(7] =] 2°@]])",
+      "Underwater explosion(<-% = 2)",
+      "Underwater Speaker(=>"
+    ]
   },
   {
     "id": "p068",
@@ -949,7 +1340,11 @@
     "title": "적설하중 조건에 따른 이동형 쉘터의 구조적 안전성 평가",
     "authors": "최대식, 정순옥, 김태석, 이형래(KS시스템)",
     "presenter": "최대식",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Mobile 9161@(이동형 셀터)",
+      "940\\ Ｌ080(적설하중)"
+    ]
   },
   {
     "id": "p069",
@@ -963,7 +1358,12 @@
     "title": "응답스펙트럼을 이용한 수상함 탑재장비의 충격 응답 해석 방법",
     "authors": "김윤상, 안채헌(기술교육대), 이규섭(아이겐스코프), 김대근, 정의봉(LIG D&A)",
     "presenter": "김윤상",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "수상함(Surface Shipboard)",
+      "충격해석(Shock Analysis)",
+      "유한요소법(Finite Element Method)"
+    ]
   },
   {
     "id": "p070",
@@ -977,7 +1377,13 @@
     "title": "수상함 탑재장비의 충격생존성 평가를 위한 실험 방안에 대한 고찰",
     "authors": "설창원, 최흥섭(홍익대), 이규섭(아이겐스코프), 안채헌(기술교육대), 김대근, 정의봉(LIG D&A)",
     "presenter": "설창원",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Surface Ship",
+      "UNDEX Shock",
+      "Shock Survivability",
+      "Shock Test Specification"
+    ]
   },
   {
     "id": "p071",
@@ -991,7 +1397,12 @@
     "title": "특징 유사도 기반 군집 재구성을 이용한 발전기 고정자 웨지 체결상태 판별방법",
     "authors": "엄예준, 김희수, 손종덕(한국전력공사)",
     "presenter": "엄예준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Stator Wedge(3!4 2} 9]%])",
+      "Impact Acoustic Signal(E}A 2 21%)",
+      "Feature Vector(S 4 벡터)"
+    ]
   },
   {
     "id": "p072",
@@ -1005,7 +1416,12 @@
     "title": "Bearing Fault Diagnosis under Variable Rotational Speeds via Multi-stream Fusion Convolutional Neural Networks",
     "authors": "Altaf Hussain, Yong-Hwa Park(KAIST)",
     "presenter": "Altaf Hussain",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Bearing Fault Diagnosis (#]°]*} 4 ¢} 21%)",
+      "Multi-Stream CNN (te 2= 4 CNN)",
+      "Sensor Fusion (4144"
+    ]
   },
   {
     "id": "p073",
@@ -1019,7 +1435,14 @@
     "title": "Rolling Element Bearing Multi-fault Diagnosis using Large Language Model",
     "authors": "Rismaya Kumar Mishra, Yong-Hwa Park(KAIST)",
     "presenter": "Rismaya Kumar Mishra",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Industrial AI",
+      "LLM",
+      "Multi-fault diagnosis",
+      "Bearing",
+      "which is difficult for the end"
+    ]
   },
   {
     "id": "p074",
@@ -1033,7 +1456,14 @@
     "title": "자율주행 센서기술 응용 부문 바닥충격음 ; 심리/제도",
     "authors": "김진오(숭실대)",
     "presenter": "김진오(숭실대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Sensor(센서)",
+      "LiDAR(라이더)",
+      "Ultrasound(초음파)",
+      "Autonomous Driving(자율주행)",
+      "Mobility(이"
+    ]
   },
   {
     "id": "p075",
@@ -1047,7 +1477,12 @@
     "title": "JND를 활용한 구조형식에 따른 바닥충격음 31.5Hz대역 변화의 심리반응 분석",
     "authors": "박동채, 김윤성, 류종관(전남대), 김태민(토지주택공사)",
     "presenter": "박동채",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Low frequency band (412} 41S)",
+      "Structural type (q'4&4])",
+      "Just Noticeable Difference (4]24914]2}°])"
+    ]
   },
   {
     "id": "p076",
@@ -1061,7 +1496,12 @@
     "title": "음원 기반 이산 선택 실험을 활용한 층간소음 개선 지불의사(WTP) 추정",
     "authors": "박태호, 홍주영, 김건희(충남대)",
     "presenter": "박태호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact noise(바닥  충격음)",
+      "Willingness to pay(지불  의사)",
+      "Survey(설문조사)"
+    ]
   },
   {
     "id": "p077",
@@ -1075,7 +1515,12 @@
     "title": "공동주택 구조형식에 따른 바닥충격음의 양이상관계수(IACC) 차이와 심리반응에 미치는 영향",
     "authors": "김윤성, 류종관, 박동채(전남대), 김태민(토지주택공사)",
     "presenter": "김윤성",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Inter-floor impact noise (H}E}-S24 2)",
+      "Structural types (77-4 SA})",
+      "IACC (°] A347] )"
+    ]
   },
   {
     "id": "p078",
@@ -1089,7 +1534,13 @@
     "title": "공동주택 바닥충격음 차단구조 인정 제도 현황 및 개선 방안",
     "authors": "강민우, 엄인혁, 하연수, 백권혁, 최원영(건설기술연)",
     "presenter": "강민우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Apartment houses",
+      "Floor impact noise",
+      "Certification system",
+      "Improvement measures"
+    ]
   },
   {
     "id": "p079",
@@ -1103,7 +1554,11 @@
     "title": "Synchro-phasing-system을 이용한 LNG 선박 대형 공기 압축기 진동 제어 사례 연구",
     "authors": "장희영, 도천수, 김지남(삼성중공업)",
     "presenter": "장희영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Synchro-Phasing-System(위상 동기화 시스템)",
+      "Large Air Compressor(대형 공기 압축기) Twin-screw LNGC(쌍축 LNG 운반선)"
+    ]
   },
   {
     "id": "p080",
@@ -1117,7 +1572,13 @@
     "title": "실측자료 기반 유,무인기 비행시험장(비행장) 주변 지역의 소음특성 분석",
     "authors": "고영진(항공우주연)",
     "presenter": "고영진(항공우주연)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Unmanned Aircraft(* 2171)",
+      "Flight Test Area(4] 행시험장)",
+      "Aircraft Noise(@ 27] 2-8)",
+      "Noise Characteristics(22-5-9)"
+    ]
   },
   {
     "id": "p081",
@@ -1131,7 +1592,12 @@
     "title": "비상발전기 구조기인 소음 저감을 위한 방진대책 개선 및 실측 기반 성능 검증",
     "authors": "이수혁, 이장현, 김한샘, 이정호(엔에스브이)",
     "presenter": "이수혁",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Data Center(데이터센터)",
+      "Emergency Generators(비상  발전기)",
+      "Vibration Reduction(진동  저감) Structure Borne Noise(구조기인  소음)"
+    ]
   },
   {
     "id": "p082",
@@ -1145,7 +1611,12 @@
     "title": "기계 설비 진동의 구조 전달 저감을 위한 Isolator 독립기초 시스템 효과 실험적 검증",
     "authors": "윤준호(엔에스브이, 고려대), 이장현, 이정호, 김한샘(엔에스브이), 나성수, 한소운(고려대)",
     "presenter": "윤준호(엔에스브이",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Impact-induced Vibration(충격 유발진동)",
+      "Isolated Foundation Structure(독립기초)",
+      "Structural Isolation(구조"
+    ]
   },
   {
     "id": "p083",
@@ -1159,7 +1630,13 @@
     "title": "SPM HD를 이용한 클린 진공블로우어 모터 베어링의 상태 감시",
     "authors": "김석현(강원대), 한성민, 신재열, 장호식(SPM Instrument Korea)",
     "presenter": "김석현(강원대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Clean Vacuum Blower(22 2S 82201)",
+      "Rolling ㅁ68009(구름 1A)",
+      "Condition Monitoring(Atel ZfAl)",
+      "Shock Pulse Method High Definition (WEY *2ABAH)"
+    ]
   },
   {
     "id": "p084",
@@ -1173,7 +1650,12 @@
     "title": "MobED 다축 모빌리티 플랫폼의 구조와 기어 마이크로 제원 최적화를 통한 NVH 성능 개선 (기업)특별 지멘스 특별세션 5월 28일(목) 10:40~12:00, 그랜드볼룸[1]",
     "authors": "이민욱, 이현구, 이진형, 최재혁, 유근상, 하지우(현대차)",
     "presenter": "이민욱",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "ˈMobED (모베드)ˉ",
+      "ˈGear Mesh Frequency (기어 치합 주파수)ˉ",
+      "ˈGear Noise(기어소음)ˉ YWY] CES(Consumer Electronic Show)에서 로보틱스 분야 최고혁신상을 수상한 MobED(Mobile Eccentric Droid)는 4 개 휠의 독립적인 제어를 통해 차체 수평 유지와 고자유도 조향이 가능한 소형 모빌리티 플랫폼"
+    ]
   },
   {
     "id": "p085",
@@ -1187,7 +1669,8 @@
     "title": "가상 모델과 센싱의 결합으로 완성하는 소음진동 시험의 고도화",
     "authors": "이권형(지멘스)",
     "presenter": "이권형(지멘스)",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "p086",
@@ -1201,7 +1684,8 @@
     "title": "AI Ready 데이터 생성을 위한 Testlab 플랫폼",
     "authors": "황대성(지멘스)",
     "presenter": "황대성(지멘스)",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "p087",
@@ -1215,7 +1699,8 @@
     "title": "시험데이터 기반 AI를 활용한 NVH 분석 및 지능화 가능성 탐색 부문 자동차 NVH와 인간공학 [2]",
     "authors": "윤종현(지멘스)",
     "presenter": "윤종현(지멘스)",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "p088",
@@ -1229,7 +1714,14 @@
     "title": "압전 관성 액추에이터를 이용한 차량 실내소음 저감을 위한 능동진동제어",
     "authors": "김의열, 조우재, 류정재, 김호욱(인하대)",
     "presenter": "김의열",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Active Vibration Control (능동진동제어)",
+      "Vehicle Interior Noise (차량 실내소음)",
+      "Piezoelectric Inertial Actuator (압전 관성 액추에이터)",
+      "Error Accelerometer (오차 가속도계)",
+      "Structure-borne Noise (구조기인 소음)"
+    ]
   },
   {
     "id": "p089",
@@ -1243,7 +1735,13 @@
     "title": "전기차 실내 화인소음 평가와 소음원 변화에 따른 NVH성능 예측 가능한 음질지수 개발",
     "authors": "이동철, 정인수, 노경진(현대자동차)",
     "presenter": "이동철",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Sound Quality Metrics(음질지수)",
+      "Regression(회귀)",
+      "Psychoacoustics(심리음향학)",
+      "Whine Noise(화인소음)"
+    ]
   },
   {
     "id": "p090",
@@ -1257,7 +1755,14 @@
     "title": "차량 대표 소음원의 실내 유입 경로 중 글라스 기여도 분석",
     "authors": "김성배, 이철현, 김영선, 백종수(NVH코리아)",
     "presenter": "김성배",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Glass(유리)",
+      "Path(경로)",
+      "ENG/PE Noise(동력계 소음)",
+      "Tire Noise(노면 소음)",
+      "Wind Noise(풍절음)"
+    ]
   },
   {
     "id": "p091",
@@ -1271,7 +1776,12 @@
     "title": "차량의 다양한 모터를 이용한 능동 사운드 발생 기술 연구",
     "authors": "장경진(현대차), 조영훈(건국대)",
     "presenter": "장경진(현대차)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electric Motor(전기모터)",
+      "Active Sound Generation(능동사운드발생)",
+      "Permanent Magnet Synchronous Motor(영구자석동기모터)"
+    ]
   },
   {
     "id": "p092",
@@ -1285,7 +1795,12 @@
     "title": "리어 액슬 피니언 기어 구동 시스템에서 베어링 프리로드와 주파수 응답 함수 간의 상관성에 관한 연구",
     "authors": "이현구, 이민욱, 이진형(현대차)",
     "presenter": "이현구",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "ˈPreload(예압)ˉ",
+      "ˈFrequency Response Function(주파수 응답함수)ˉ",
+      "ˈGear Noise(기어소음)ˉ"
+    ]
   },
   {
     "id": "p093",
@@ -1299,7 +1814,14 @@
     "title": "물리지식기반 딥러닝과 실험 데이터를 기반으로 한 패스-스루 음향 투과 손실 예측 특별 방위산업 소음진동 [2]",
     "authors": "이상윤, 박기승(GM Technical Center Korea), Kara Gordon, Wenlong Yang, Chad Christensen(GM)",
     "presenter": "이상윤",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Physics-informed(물리지식기반)",
+      "Pass-Through(패스-스루)",
+      "Sound Transmission Loss(음향 투과 손실)",
+      "Deep learning(딥러닝)",
+      "Attention(어텐션)"
+    ]
   },
   {
     "id": "p094",
@@ -1313,7 +1835,14 @@
     "title": "대형 구조물의 국부 좌굴 평가를 위한 서브모델링 기법 연구",
     "authors": "석아연, 박영진, 최현호, 박노철(연세대), 최성현, 이오성, 이주헌(LIG D&A), 강석원, 강성훈(RF 시스템즈)",
     "presenter": "석아연",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "FE analysis(유한요소해석)",
+      "Buckling analysis(좌굴 해석)",
+      "Sub-modeling(서브모델링)",
+      "Multi-Function Radar(다기능 레이다)",
+      "Structural analysis(구조 해석)"
+    ]
   },
   {
     "id": "p095",
@@ -1327,7 +1856,14 @@
     "title": "모드형상 기반 컨볼루션 적분을 이용한 게틀링 사격 분산도 평가",
     "authors": "명호준, 김준형, 박경수(가천대), 박범희(SNT Dynamics)",
     "presenter": "명호준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "모드형상(Mode Shape)",
+      "컨볼루션 적분(Convolution Integral)",
+      "주파수 응답 함수(Frequency Response Function)",
+      "총구 응답 복원(Muzzle Response Reconstruction)",
+      "사격 분산도 평가(Firing Dispersion Evaluation)"
+    ]
   },
   {
     "id": "p096",
@@ -1341,7 +1877,14 @@
     "title": "쉘터 시스템의 소음 특성 및 복합 소음 분석",
     "authors": "이유림, 윤정노, 김이현, 정의봉(LIG D&A)",
     "presenter": "이유림",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Shelter System (#1E] 4] 41)",
+      "Noise Characteristics (42-4 §73)",
+      "Combined 10156 (복합 소음)",
+      "Partition Effect (4\"} @ %)",
+      "Sound Propagation (@ =} 41%)"
+    ]
   },
   {
     "id": "p097",
@@ -1355,7 +1898,12 @@
     "title": "필라멘트 와인딩 센터폴의 등가 강성 행렬 도출과 모달 해석 기반 유효성 평가",
     "authors": "박채원, 이유림, 신호욱, 김대근, 정의봉(LIG D&A)",
     "presenter": "박채원",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Filament Winding(필라멘트 와인딩)",
+      "Composite(복합재)",
+      "Equivalent material properties(등가 물성)"
+    ]
   },
   {
     "id": "p098",
@@ -1369,7 +1917,11 @@
     "title": "구조 해석 및 시험을 통한 항공기 외부 장착물의 구조 건전성 평가",
     "authors": "이정환, 임재문, 김광민, 김준(LIG D&A)",
     "presenter": "이정환",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "External Store(2]4- 42+)",
+      "Structural Integrity(q'4% 건전성)"
+    ]
   },
   {
     "id": "p099",
@@ -1383,7 +1935,13 @@
     "title": "음향-구조 연성계 고유모드, 고유주파수 예측 인공 신경망 개발 기획 미래모빌리티 [1]",
     "authors": "정지용, 이진우(아주대), 김흥태, 이종학, 손동훈(LIG D&A)",
     "presenter": "정지용",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Artificial Neural Network(@]@ 신경망)",
+      "Acoustic Natural Mode(-2@F 31-7-=)",
+      "Acoustic Natural Frequency(-¢ 31--4+3}<)",
+      "Convolutional Neural Network(@#7d @ 214)"
+    ]
   },
   {
     "id": "p100",
@@ -1397,7 +1955,17 @@
     "title": "모빌리티 컨셉 매트릭스와 개발 방법론",
     "authors": "박당희(현대차)",
     "presenter": "박당희(현대차)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Mobility(모빌리티)",
+      "Matrix(매트릭스)",
+      "HMI(Human Machine Interface)",
+      "ML(Machine Learning)",
+      "Voice Recognition(음성인식)",
+      "Gesture Recognition(제스처인식)",
+      "Hand Pointing (핸드포인팅)",
+      "Sound Trigger(사운드트리거)"
+    ]
   },
   {
     "id": "p101",
@@ -1411,7 +1979,17 @@
     "title": "For Better Future, 자동차 HMI의 새로운 도전",
     "authors": "박당희(현대차)",
     "presenter": "박당희(현대차)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Mobility(모빌리티)",
+      "Matrix(매트릭스)",
+      "HMI(Human Machine Interface)",
+      "ML(Machine Learning)",
+      "Voice Recognition(음성인식)",
+      "Gesture Recognition(제스처인식)",
+      "Hand Pointing (핸드포인팅)",
+      "Sound Trigger(사운드트리거)"
+    ]
   },
   {
     "id": "p102",
@@ -1425,7 +2003,12 @@
     "title": "머신러닝을 활용한 모빌리티의 고주파 구조기인 소음 예측 연구",
     "authors": "김용대, 유지우(현대차)",
     "presenter": "김용대",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "whine noise(화인소음)",
+      "machine learning(머신러닝)",
+      "structure-borne(구조기인)"
+    ]
   },
   {
     "id": "p103",
@@ -1439,7 +2022,16 @@
     "title": "차량 오디오 스피커의 음향 특성 해석 부문 바닥충격음 ; AI/데이터",
     "authors": "남호석, 박종서, 황용환(현대차)",
     "presenter": "남호석",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Subwoofer",
+      "Woofer",
+      "Midrange",
+      "Tweeter",
+      "Speaker",
+      "T-S Parameter",
+      "Back Electromagnetic Force"
+    ]
   },
   {
     "id": "p104",
@@ -1453,7 +2045,12 @@
     "title": "공동주택 차음성능 사전 관리 체계 구현을 위한 건설 전주기 AX 기반 데이터 인프라 및 지능형 예측 플랫폼 구축의 필요성",
     "authors": "류종관(전남대)",
     "presenter": "류종관(전남대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "AX(AI 91-2°4|-e 41h)",
+      "Data infrastructure( 4] °] Ej 9] e})",
+      "기준 미달 시 보원시"
+    ]
   },
   {
     "id": "p105",
@@ -1467,7 +2064,12 @@
     "title": "AI 기반 층간소음 예측 모델 개발 및 시험 DB구축 연구(2)",
     "authors": "정민기, 정세훈, 이상엽(브이엠브이테크)",
     "presenter": "정민기",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Inter-Floor Noise(%t42-2)",
+      "Noise Transform Funtion(2-3-412@->)",
+      "Artificial neural network (인공신경망)"
+    ]
   },
   {
     "id": "p106",
@@ -1481,7 +2083,15 @@
     "title": "디지털 트윈과 맨슬래브 바닥충격음 간이측정 결과를 활용한 뜬바닥구조 설계 방법에 관한 연구",
     "authors": "성요한, 김진식, 김혜원(우미건설)",
     "presenter": "성요한",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "floor impact sound(4}=}-34 -)",
+      "floating 14001( 4}4}74)",
+      "transfer matrix method(4l 2 4 48)",
+      "bare slab(W 2H)",
+      "data-driven 009180(데이터 기반 설계)",
+      "0100401 00(디지털 트윈)"
+    ]
   },
   {
     "id": "p107",
@@ -1495,7 +2105,14 @@
     "title": "공동주택 규제 단계에 따른 층간소음 행정 데이터 분석을 통한 차별화된 거버넌스 전환 필요성",
     "authors": "신혜경, 박상희(건설기술연), 김성희(치안정책연)",
     "presenter": "신혜경",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact sound(H}4} 4-2)",
+      "Neighbor noise complaints(7%t2-= Yl)",
+      "Building regulations (24 HA)",
+      "Police 16007 080(경찰 신고 데이터)",
+      "1111(606008160 80701008006(차별화된 거버넌스)"
+    ]
   },
   {
     "id": "p108",
@@ -1509,7 +2126,12 @@
     "title": "설계 조건에 따른 바닥충격음 시뮬레이션 결과 분석 기획 가전 소음진동",
     "authors": "이원학, 박지훈, 송국곤(KCL)",
     "presenter": "이원학",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact sound(4}}4}-S4 <<)",
+      "Simulation(A] ==] °] 41)",
+      "Design Parameter(42 7] 47)"
+    ]
   },
   {
     "id": "p109",
@@ -1523,7 +2145,15 @@
     "title": "주기적 패턴 구조의 설계 변수에 따른 진동 밴드갭 특성 제어",
     "authors": "박기정, 박준홍, 장연진(한양대), 최동욱(LG전자)",
     "presenter": "박기정",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Bandgap(밴드갭)",
+      "Periodic Pattern(주기적 패턴)",
+      "Unit Cell(단위 셀)",
+      "Effective Stiffness(유효 동강성)",
+      "Transfer Function (전달함수)",
+      "Dynamic Characteristics Control(동특성 제어)"
+    ]
   },
   {
     "id": "p110",
@@ -1537,7 +2167,14 @@
     "title": "랜덤신호 기반 소스 모델을 이용한 레시프로 압축기 토출 압력맥동 해석",
     "authors": "최지훈, 구준효(LG전자)",
     "presenter": "최지훈",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Pressure Pulsation(압력맥동)",
+      "Reciprocating Compressor(레시프로 압축기)",
+      "Randomized Signal(랜덤신호)",
+      "Source Model(소스모델)",
+      "Acoustic Analysis(음향해석)"
+    ]
   },
   {
     "id": "p111",
@@ -1551,7 +2188,13 @@
     "title": "Body Fitted Mesh와 Level Set Method를 이용한 동적 컴플라이언스 최소화 기법 연구",
     "authors": "배성원(LG전자), 임성훈, 이주이 카즈히로, 니시와키 신지(교토대), 후루타 코조(리슈메이칸대)",
     "presenter": "배성원(LG전자)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Topology optimization(위상최적화)",
+      "Dynamic compliance minimization(동적 컴플라언스 최소화)",
+      "Body fitted mesh(바디 핏티드 메쉬)",
+      "Level Set Method(레벨 세트법)"
+    ]
   },
   {
     "id": "p112",
@@ -1565,7 +2208,13 @@
     "title": "실시간 소음 센싱을 통한 실외기 소음제어",
     "authors": "김승엽, 김성환(LG전자)",
     "presenter": "김승엽",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "실외기 소음",
+      "소음센싱",
+      "실사용 소음",
+      "VRV 실외기"
+    ]
   },
   {
     "id": "p113",
@@ -1579,7 +2228,14 @@
     "title": "전기신호 기반 AI 가전 MOS 예측 기술",
     "authors": "김준태(LG전자)",
     "presenter": "김준태(LG전자)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "MOS (주관적음질평가)",
+      "Smart Appliance (스마트가전)",
+      "Audio Quality Prediction (음질 예측)",
+      "Machine Learning (머신러닝)",
+      "Speaker Evaluation (스피커 평가) XU 연구  배경  및  목적"
+    ]
   },
   {
     "id": "p114",
@@ -1593,7 +2249,12 @@
     "title": "위상최적화를 이용한 스크류 압축기 소음저감",
     "authors": "최낙경, 배성원, 이종철, 하준범(LG전자), Min-Chi Chien(Hanbell Precise Machinery Co. LTD)",
     "presenter": "최낙경",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "토폴로지 최적화",
+      "스크류 압축기",
+      "압축기 소음"
+    ]
   },
   {
     "id": "p115",
@@ -1607,7 +2268,12 @@
     "title": "하만, 카오디오를 넘어서",
     "authors": "표종훈(하만)",
     "presenter": "표종훈(하만)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Car Audio(카오디오)",
+      "In-Cabin (차량실내)",
+      "SDV (Software Defined Vehicle, 소프트웨어 정의 차량)"
+    ]
   },
   {
     "id": "p116",
@@ -1621,7 +2287,12 @@
     "title": "아름다운 사운드를 만드는 오디오 브랜드, 하만카돈",
     "authors": "정선용(하만)",
     "presenter": "정선용(하만)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Evocative (감성을 자극하는)",
+      "Harmonious (조화로운)",
+      "Artfully (세련된)"
+    ]
   },
   {
     "id": "p117",
@@ -1635,7 +2306,12 @@
     "title": "하만카돈 디자인 전략",
     "authors": "이주은(하만)",
     "presenter": "이주은(하만)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Design Philosophy(€] 4}?! 4 ¢})",
+      "Unified Design language(“S-$}T] 4}21 21 °])",
+      "Experience( 4 @)"
+    ]
   },
   {
     "id": "p118",
@@ -1649,7 +2325,13 @@
     "title": "하만카돈 사운드 철학 기획 자동차 NVH & 감성디자인 [1]",
     "authors": "이정환(하만)",
     "presenter": "이정환(하만)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Harman/Kardon(하만카돈)",
+      "Sound(사운드)",
+      "Car(자동차)",
+      "Tuning(튜닝) c하만카돈  자동차  사운드  특징eG"
+    ]
   },
   {
     "id": "p119",
@@ -1663,7 +2345,13 @@
     "title": "차량 환경 초음파 헬스케어 분야 UX/솔루션 제안",
     "authors": "김기창, 정영현, 권기범(현대차), 구희준, 최종열(마크티), 이신렬(에이49)",
     "presenter": "김기창",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "UX(User Experience, 4+} @)",
+      "HMI(Human-Machine Interface, A-&2+ ¢1|31]¢]4)",
+      "CxRM(Customer- based eXtensive Roadmap, 124 7|¥t S4}7]|2= 9)",
+      "Technology Portfolio Strategy (714 FES A124)"
+    ]
   },
   {
     "id": "p120",
@@ -1677,7 +2365,13 @@
     "title": "능동형 그래뉼러 합성의 가속음 제어를 위한 감각 통합 기반 실시간 인터랙티브 드라이빙 경험 디자인",
     "authors": "신지연, 윤명환(서울대), 문소연(하만), 이상원(버지니아공대)",
     "presenter": "신지연",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Embodied Interaction",
+      "Granular Synthesis",
+      "Cross Modal Perception",
+      "Human-Machine Interaction (HMI)"
+    ]
   },
   {
     "id": "p121",
@@ -1691,7 +2385,13 @@
     "title": "차량 내 낮잠 환경에서 청각 자극 설계의 적용 가능성",
     "authors": "김윤식, 유동주, 전성찬(GIST), 김기창(현대차)",
     "presenter": "김윤식",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Sleep Inertia(수면 관성)",
+      "Power Nap(짧은 낮잠)",
+      "Auditory Stimulation(청각 자극)",
+      "Auditory Sensitivity(청각"
+    ]
   },
   {
     "id": "p122",
@@ -1705,7 +2405,13 @@
     "title": "감성 기반 차량 HVAC 시스템 소음 특성 분석 및 개선 연구 기획 비선형진동 [1]",
     "authors": "권윤정, 김현수(동의대), 김주인(현대차)",
     "presenter": "권윤정",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Affective Response (774 4¥1-S-)",
+      "Automotive HVAC System (AF 공조 시스템)",
+      "페0196 Characterization (2-& 573 444)",
+      "Sound Quality Improvement (3% 711)"
+    ]
   },
   {
     "id": "p123",
@@ -1719,7 +2425,12 @@
     "title": "Roots to Routes: 한국 비선형 동역학 연구의 과거, 현재, 그리고 새로운 프론티어",
     "authors": "이수일(서울시립대)",
     "presenter": "이수일(서울시립대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Nonlinear Dynamics(4] 41 & “&& $})",
+      "Nonlinear Normal Mode(4]41& 47+#L=)",
+      "Targeted Energy"
+    ]
   },
   {
     "id": "p124",
@@ -1733,7 +2444,13 @@
     "title": "변위 종속적 마찰을 갖는 NES의 동역학적 거동 및 분기 해석",
     "authors": "백수민, 백승훈(부산대)",
     "presenter": "백수민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Nonlinear Energy Sink (비선형 에너지 싱크)",
+      "Dry friction (건마찰)",
+      "Stick-Slip (슬립-스틱)",
+      "Non-smooth(비평"
+    ]
   },
   {
     "id": "p125",
@@ -1747,7 +2464,13 @@
     "title": "댐퍼 임팩트를 고려한 회전-병진 연성 시스템의 가진력 분석",
     "authors": "김가희, 백승훈(부산대), 조정훈(LG전자)",
     "presenter": "김가희",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Excitation force identification(7}414 식별)",
+      "Gap-type nonlinear damper(774 3 HAS 34)",
+      "Nonlinear hysteresis model(4]*1 ©] 4 ©)",
+      "Unbalanced rotor(# 4S =&))"
+    ]
   },
   {
     "id": "p126",
@@ -1761,7 +2484,14 @@
     "title": "정전 구동 CNT 공진기의 비선형 주파수 응답 및 고립 분기 해석 기획 미래모빌리티 [2]",
     "authors": "조수민, 이수일(서울시립대), 김일광(코비스테크놀로지)",
     "presenter": "조수민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Carbon nanotube resonator(탄소나노튜브 공진기)",
+      "Isolated response curve(고립 응답 곡선)",
+      "Nonlinear frequency response(비선형 주파수 응답)",
+      "Deflated continuation(소거 연속법)",
+      "Bifurcation analysis(분기"
+    ]
   },
   {
     "id": "p127",
@@ -1775,7 +2505,13 @@
     "title": "MBSE기반 소음진동 참조모델 개발에 Co-simulation과 FRF/MDSA법 적용을 위한 전략 KEYNOTE",
     "authors": "오재응(시스템엔지니어링, 한양대), 이중윤(아주대), 오영준(시스템엔지니어링)",
     "presenter": "오재응(시스템엔지니어링",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "MBSE(&. 217] 81 A) 24 e1%]14°] ZB)",
+      "Reference Model(##4¥ 2)",
+      "Co-Simulation(é-s A) a] °] Al)",
+      "Noise & Vibration(2- 및 진동)"
+    ]
   },
   {
     "id": "p128",
@@ -1789,7 +2525,13 @@
     "title": "MBSE기반 참조모델 개발을 위한 Co-simulation의 소음 진동에 적용",
     "authors": "오재응(시스템엔지니어링, 한양대), 이중윤(아주대), 오영준(시스템엔지니어링)",
     "presenter": "오재응(시스템엔지니어링",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "MBSE(. 27] 8} A] 24 el 2]14°]@)",
+      "Reference Model(#}4¥. 2)",
+      "Co-Simulation(S-s 시뮬레이 Al)",
+      "Noise & Vibration(2- % 진동)"
+    ]
   },
   {
     "id": "p129",
@@ -1803,7 +2545,11 @@
     "title": "Virtual Venues Live",
     "authors": "정상현, 문소연(하만)",
     "presenter": "정상현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Virtual Space(7}’s_ 8-21)",
+      "Car Audio(7}.2.4] 2)"
+    ]
   },
   {
     "id": "p130",
@@ -1817,7 +2563,13 @@
     "title": "햅틱 패턴의 공간적인 변화를 통한 사용자 경험의 향상 – 착용형 햅틱 기기를 중심으로 부문 바닥충격음 ; 이론/예측",
     "authors": "곽기욱(비햅틱스)",
     "presenter": "곽기욱(비햅틱스)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Haptics(햅틱)",
+      "Haptic Pattern(햅틱 패턴)",
+      "Wearable Haptic Device(착용형 햅틱 기기)",
+      "Haptic Rendering(햅틱"
+    ]
   },
   {
     "id": "p131",
@@ -1831,7 +2583,13 @@
     "title": "바닥구조 조건별 천장구조의 바닥충격음 차단성능 실험적 평가",
     "authors": "김신태, 김명준, 윤태경, 한도훈(서울시립대), 조현민(포스코 E&C)",
     "presenter": "김신태",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor Impact Sound(H}4}+34-)",
+      "Ceiling Structures(4#] 77/4)",
+      "Floating Floor(=4}4}-\"4)",
+      "Non-floating Floor(#] 4} }7' 4)"
+    ]
   },
   {
     "id": "p132",
@@ -1845,7 +2603,13 @@
     "title": "불확실성 정량화를 통한 바닥충격음 예측용 확률론적 물리기반 인공신경망 개발 및 검증",
     "authors": "김수홍, 류종관, 황재승(전남대), 김태민(토지주택연)",
     "presenter": "김수홍",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Physics-informed neural network(=?] 인공 417%)",
+      "Uncertainty 04800108000(볼확실성 정량화)",
+      "티00『 impact sound(4}}4+}-324-2)",
+      "Probabilistic ㅁ0ㅁ6010100(확률론적 예측)"
+    ]
   },
   {
     "id": "p133",
@@ -1859,7 +2623,12 @@
     "title": "시공 편차에 의한 바닥충격음의 확률적 분포 예측",
     "authors": "장지호, 정주호, 어거스티너스 위(비즈웨이브), 김용희(영산대)",
     "presenter": "장지호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact noise(바닥충격음)",
+      "Monte-Carlo simulation(몬테카를로 시뮬레이션)",
+      "Construction deviation (시공편차)"
+    ]
   },
   {
     "id": "p134",
@@ -1873,7 +2642,13 @@
     "title": "콘크리트 슬래브의 주파수 종속 감쇠 특성이 중량충격음 예측 응답에 미치는 영향 기획 디지털헬스",
     "authors": "김승희, 최경규(숭실대)",
     "presenter": "김승희",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Bare Concrete Slab( 콘크리트  맨슬래브)",
+      "Frequency-Dependent Damping(주파수  종속  감쇠)",
+      "Heavyweight Impact Sound( 중량충격음)",
+      "Vibro-Acoustic Prediction(진동-음향  예측)"
+    ]
   },
   {
     "id": "p135",
@@ -1887,7 +2662,11 @@
     "title": "혈류 시뮬레이션 대리모델 수립을 위한 연산자 학습",
     "authors": "홍준기, Persad Adelle Ria, 송현우, 송유리, 신해인, 이보미, 박용화(KAIST), 정재학(한국교통대)",
     "presenter": "홍준기",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Hemodynamics(& 4&4 $})",
+      "Deep Operator Network(J 2.4)"
+    ]
   },
   {
     "id": "p136",
@@ -1901,7 +2680,12 @@
     "title": "ToF 카메라를 사용한 IR-depth 영상 기반 비접촉 심박 추정 시스템",
     "authors": "임윤섭, 안석준, 박세준, 박용화(KAIST)",
     "presenter": "임윤섭",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Remote PPG(@14 2-24] 43})",
+      "Heart rate estimation(?!¥#} 4=41)",
+      "ToF Camera(ToF 7+] <})"
+    ]
   },
   {
     "id": "p137",
@@ -1915,7 +2699,12 @@
     "title": "Mimicking Graded Aortic Stenosis using a Mock Circulatory Loop",
     "authors": "Adelle Ria Persad, 홍준기, 송현우, 송유리, 신해인, 이보미, 박용화(KAIST), 정재학(한국교통대)",
     "presenter": "Adelle Ria Persad",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Cardiovascular Disease (4! 2+ 4! $b",
+      "Aortic Stenosis (CIS 43te} & 24S)",
+      "Cardiovascular Simulator (4] & 2+"
+    ]
   },
   {
     "id": "p138",
@@ -1929,7 +2718,12 @@
     "title": "혈관 점탄성 특성을 고려한 PINN 기반 PPG-혈압 파형 추정",
     "authors": "송현우, 홍준기, Adelle Ria Persad, 송유리, 신해인, 박용화(KAIST), 정재학(한국교통대), 이보미(서울대병원)",
     "presenter": "송현우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Blood Pressure Waveform(혈압파형)",
+      "Viscoelastic Model(점탄성 모델)",
+      "Photoplethysmography(광용적맥파)"
+    ]
   },
   {
     "id": "p139",
@@ -1943,7 +2737,11 @@
     "title": "소프트 로봇 심장 시뮬레이터의 개발 특별 유망과학자 [1]",
     "authors": "신해인, 홍준기, Adelle Ria Persad, 송현우, 송유리, 박용화(KAIST), 정재학(한국교통대), 이보미(서울대병원)",
     "presenter": "신해인",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Soft Robot(소프트 로봇)",
+      "Heart(심장)"
+    ]
   },
   {
     "id": "p140",
@@ -1957,7 +2755,13 @@
     "title": "탄성주기구조 기반 파동제어 응용연구",
     "authors": "박충일(강원대)",
     "presenter": "박충일(강원대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Elastic periodic structure(&}3 7|-'4)",
+      "Wave control(3}-s-]°])",
+      "Bandgap(44= #4)",
+      "Concrete structure(= ="
+    ]
   },
   {
     "id": "p141",
@@ -1971,7 +2775,13 @@
     "title": "전기구동 시스템의 모터 및 인버터 기인 소음 연구",
     "authors": "김현수(동의대)",
     "presenter": "김현수(동의대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electromagnetic field (전자기장)",
+      "Magnetic force (자기력)",
+      "PRA(파워릴레이아세이)",
+      "EV NVH(전기차소음)"
+    ]
   },
   {
     "id": "p142",
@@ -1985,7 +2795,13 @@
     "title": "쌍안정 더핑 진동자의 비선형 동역학과 공학적 응용 부문 미래융합기술",
     "authors": "노진홍(충북대)",
     "presenter": "노진홍(충북대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Duffing oscillator(더핑 진동자)",
+      "Bistable systems(쌍안정 시스템)",
+      "Nonlinear dynamics(비선형 동역학)",
+      "Nonlinear vibrations(비선형 진동)"
+    ]
   },
   {
     "id": "p143",
@@ -1999,7 +2815,13 @@
     "title": "축방향 자속 전동기-자기기어 일체형 인휠 구동 모듈의 전자기 기인 진동 유발인자 해석",
     "authors": "백수황, 김현준(상명대), 김완진(한밭대), 이상욱(원광대)",
     "presenter": "백수황",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Axial flux( \"Set 243)",
+      "Motor(51E])",
+      "Magnetic gear(4}7]7]°]), Torque ripple =] S)",
+      "Back-EMF harmonics(9 7] 41 #4} a4 5})"
+    ]
   },
   {
     "id": "p144",
@@ -2013,7 +2835,14 @@
     "title": "The Vibration Analysis Method of the Thin Chamber Equipment by Node Matching",
     "authors": "Vu van Truong, 이호철, 김완진(한밭대)",
     "presenter": "Vu van Truong",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Earthquake",
+      "Finite element analysis",
+      "Node matching",
+      "Vibration",
+      "the research proposes the integration of dampers and"
+    ]
   },
   {
     "id": "p145",
@@ -2027,7 +2856,11 @@
     "title": "선형 동기 모터의 이동자를 위한 분할 자석 고찰",
     "authors": "조영은, 신부현, 김완진, 김영식, 김상훈(한밭대)",
     "presenter": "조영은",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Linear motor(41@ -'-s7])",
+      "PMSM(% \"2144 9S 7] HE)"
+    ]
   },
   {
     "id": "p146",
@@ -2041,7 +2874,12 @@
     "title": "동축 반회전 프로펠러의 축간거리 변화에 따른 공력 특성 분석",
     "authors": "전수원, 이상욱, 박현우(원광대)",
     "presenter": "전수원",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "UAM(도심항공교통)",
+      "Coaxial Contra-rotating Propeller (동축 반회전 프로펠러)",
+      "Aerodynamic performance (공"
+    ]
   },
   {
     "id": "p147",
@@ -2055,7 +2893,14 @@
     "title": "물결형 벽면 구조에 따른 슬로싱 저감 효과에 관한 수치해석적 연구",
     "authors": "김준성, 이상욱(원광대), 김완진(한밭대)",
     "presenter": "김준성",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Sloshing(==.J)",
+      "Corrugated Wall(224& A)",
+      "Free Surface Behavior(At#—U 71-s)",
+      "VOF Method(VOF 224)",
+      "Phase Difference(?]* *t°])"
+    ]
   },
   {
     "id": "p148",
@@ -2069,7 +2914,13 @@
     "title": "Adaptive Learning Rate 및 선택적 재학습을 이용한 Online Learning 기반의 배터리 SOH 예측 특별 한국설비진단자격인증원 특별세션",
     "authors": "홍석규, 고태완, 황성재, 박경수(가천대)",
     "presenter": "홍석규",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Deep learning(딥러닝)",
+      "Online Learning(온라인 러닝)",
+      "State of Health(건강 상태)",
+      "Self-healing effect(자가회"
+    ]
   },
   {
     "id": "p149",
@@ -2083,7 +2934,14 @@
     "title": "진동Ⅳ 자격인증자대형 증기터빈 베어링 케이싱 진동 개선을 위한 연구",
     "authors": "정화준, 류길수, 김종민, 김광근, 황미경(한전KPS)",
     "presenter": "정화준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Structural Dynamic Modification(SDM)",
+      "Resonance",
+      "Modal Analysis",
+      "ODS",
+      "Steam Turbine"
+    ]
   },
   {
     "id": "p150",
@@ -2097,7 +2955,12 @@
     "title": "발전소 GT(Gas Turbine) Ventilation Fan 진동 진단 사례",
     "authors": "최기환, 윤영태(KTM엔지니어링)",
     "presenter": "최기환",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotating Machinery Diagnostics",
+      "Vibration Analysis",
+      "Fault Analysis"
+    ]
   },
   {
     "id": "p151",
@@ -2111,7 +2974,13 @@
     "title": "식물성 오일과 나노입자 첨가제가 PAO윤활유의 트라이볼로지 특성에 미치는 영향에 대한 연구",
     "authors": "김현준, 김건(경북대)",
     "presenter": "김현준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Lubrication(윤활)",
+      "Vegetable oil (식물성 오일)",
+      "Nanoparticle(나노입자)",
+      "Wear(마모)"
+    ]
   },
   {
     "id": "p152",
@@ -2125,7 +2994,10 @@
     "title": "열화상 적용 건물 복사온도 맵핑 및 저비용 모니터링 기술 개발",
     "authors": "이우민, 이동석(인천대)",
     "presenter": "이우민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Mean radiant temperature(?3 wt 4;A}-@ 2)"
+    ]
   },
   {
     "id": "p153",
@@ -2139,7 +3011,15 @@
     "title": "초음파 카메라 기반 누설 탐지 기술의 조선·해양 분야 적용 방안 기획 자동차 NVH & 감성디자인 [2]",
     "authors": "이승하(씨네이브), 도천수(삼성중공업)",
     "presenter": "이승하(씨네이브)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Ultrasonic acoustic camera(초음파 음향카메라)",
+      "Leak(누설)",
+      "Fault(결함)",
+      "Shipbuilding and offshore facilities(조선·해양 설비)",
+      "Abnormal noise localization(이음 위치 추정)",
+      "Field inspection(현장 점검)"
+    ]
   },
   {
     "id": "p154",
@@ -2153,7 +3033,13 @@
     "title": "전기차 모터의 전자기장 특성에 따른 자기 소음 및 스위칭 고주파 소음 저감을 위한 차폐물질 연구",
     "authors": "김현수(동의대), 이형민(현대차)",
     "presenter": "김현수(동의대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electromagnetic field (전자기장)",
+      "Ferromegnetism(강자성체)",
+      "Magnetic Shielding Material(자기차폐물질)",
+      "EV NVH(전기차소음)"
+    ]
   },
   {
     "id": "p155",
@@ -2167,7 +3053,11 @@
     "title": "저가형 제어기와 쉐이커로 구성된 AVC 기반 HVAC 소음 저감 연구",
     "authors": "송인호, 김현수(동의대)",
     "presenter": "송인호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Active Vibration Controls 41-6 7I°])",
+      "Blower Motor Order Nois(B=E7] HE] QU a"
+    ]
   },
   {
     "id": "p156",
@@ -2181,7 +3071,13 @@
     "title": "자동차용 오디오 음질에 대한 사용자 주관적 청취 선호도 조사",
     "authors": "안은정, 김명환(르노코리아)",
     "presenter": "안은정",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Car Audio(자동차 오디오)",
+      "Sound Quality(음질)",
+      "Listening evaluation (청음 평가)",
+      "Sound tuning(음향 튜닝)"
+    ]
   },
   {
     "id": "p157",
@@ -2195,7 +3091,10 @@
     "title": "지휘 가속도 데이터 기반 볼륨/템포 조절 알고리즘 개발 기획 비선형진동 [2]",
     "authors": "이상우, 김현수(동의대)",
     "presenter": "이상우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Real-Time Signal Processing (4! A] Zt"
+    ]
   },
   {
     "id": "p158",
@@ -2209,7 +3108,13 @@
     "title": "비선형 동역학 및 진동 이론 기반의 새로운 주퇴력 흡수 메커니즘",
     "authors": "노진홍(충북대), 김필기(전북대)",
     "presenter": "노진홍(충북대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Recoil force absorption(주퇴력 흡수)",
+      "Shock mitigation(충격 완화)",
+      "Vibration control(진동 제어)",
+      "Snapthrough(스냅스루)"
+    ]
   },
   {
     "id": "p159",
@@ -2223,7 +3128,13 @@
     "title": "횡방향 기저 가진에 의한 탄성 von Mises truss의 비선형 동적 거동 분석",
     "authors": "김필기, 김주원, 한창우(전북대), 노진홍(충북대)",
     "presenter": "김필기",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Bistable Structure(4e@t4] 7'4%=)",
+      "Lateral Base Excitation(S}¥}ek 기저 7}4%))",
+      "Pitchfork Bifurcation(S] 4] 2+. 4%2£7])",
+      "Synchronization (-& 7] S})"
+    ]
   },
   {
     "id": "p160",
@@ -2237,7 +3148,15 @@
     "title": "인공신경망 기반 직사각형 평판의 비선형 진동 및 내부공진 해석",
     "authors": "장서일(서울시립대)",
     "presenter": "장서일(서울시립대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Neural Network(신경망)",
+      "Nonlinear Vibration(비선형 진동)",
+      "Rectangular Plate(직사각형 평판)",
+      "Internal Resonance(내부공진)",
+      "Bifurcation(분기)",
+      "Chaos(혼돈)"
+    ]
   },
   {
     "id": "p161",
@@ -2251,7 +3170,13 @@
     "title": "외부 가진에 의한 슬라이딩 블레이드의 구성력 변화 연구 기획 미래모빌리티 [3]",
     "authors": "전윤호, 백승훈(부산대)",
     "presenter": "전윤호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Configuration 10006(구정력)",
+      "Nonlinear vibration(4]419 %-s)",
+      "Instability(=¢r4 4a)",
+      "Variable-length blade(7}'3 2°] elo] =)"
+    ]
   },
   {
     "id": "p162",
@@ -2265,7 +3190,12 @@
     "title": "Your Cognitive Profile May Determine Perceived Auditory Immersion KEYNOTE",
     "authors": "김성영(KAIST)",
     "presenter": "김성영(KAIST)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Auditory Immersion (청각 몰입)",
+      "Cognitive Profile (인지 패턴)",
+      "Spatial Auditory Attention (공간 청각 주의)"
+    ]
   },
   {
     "id": "p163",
@@ -2279,7 +3209,14 @@
     "title": "미래모빌리티 능동소음제어(ANC) 평가방법 표준화",
     "authors": "이효진, 정정호(방재시험연), 김성현(현대차)",
     "presenter": "이효진",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Active noise 0600001 (능동소음제어)",
+      "Future Mobility (F] 4h",
+      "Standardization( <5})",
+      "Evaluation method (8 7}44)",
+      "44 === (Measurement protocol)"
+    ]
   },
   {
     "id": "p164",
@@ -2293,7 +3230,14 @@
     "title": "클라우드 디지털 트윈을 위한 SDV 아키텍쳐와 차량음향 시스템 개발 방법론의 변화 부문 바닥충격음 ; 재료/공법",
     "authors": "이동주, 유민희(QNX)",
     "presenter": "이동주",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "SDV(소프트웨어정의차량)",
+      "Virtualization(가상화)",
+      "SoC(시스템온칩)",
+      "Portability (이식성)",
+      "Digital-twin(디지"
+    ]
   },
   {
     "id": "p165",
@@ -2307,7 +3251,14 @@
     "title": "바닥시스템의 고유진동수 변화에 따른 중량충격음 저감 특성",
     "authors": "김재호, 김태희, 강덕신, 신동민, 김예찬(현대건설)",
     "presenter": "김재호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact sound (4}=}24-2)",
+      "Floating floor structure (=4}E} 74)",
+      "Screed (H}E} GLE E}S)",
+      "Natural frequency (31-7-4!-SF)",
+      "Resilient layer (S+-=71])"
+    ]
   },
   {
     "id": "p166",
@@ -2321,7 +3272,12 @@
     "title": "연질 폴리우레탄 팽창폼 개발과 갭실러로의 층간 차음 연구",
     "authors": "공경표, 권재근, 이병희, 정경훈, 박상훈(폼웍스)",
     "presenter": "공경표",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Polyurethane Foam(= =] -?-#]] 235)",
+      "Sound Insulation(#}+% 4)",
+      "Gap 96816(중진재)"
+    ]
   },
   {
     "id": "p167",
@@ -2335,7 +3291,8 @@
     "title": "음향메타물질 천장재 바닥충격음 저감성능 현장 평가",
     "authors": "정정호, 이효진(방재시험연), 곽준혁, 박종진(JJNS)",
     "presenter": "정정호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p168",
@@ -2349,7 +3306,14 @@
     "title": "공동주택 실간 경계부 시공 조건이 바닥충격음 성능에 미치는 영향 부문 사회기반시설의 진동 해석, 실험 및 평가",
     "authors": "신동민, 김태희, 강덕신, 김재호, 김예찬(현대건설)",
     "presenter": "신동민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact sound (H}=}-¢4-8)",
+      "Floating floor structure (=4}=} 714)",
+      "Door frame (SS)",
+      "Construction details (A]3- 47)",
+      "Resilient layer (21-41)"
+    ]
   },
   {
     "id": "p169",
@@ -2363,7 +3327,11 @@
     "title": "MR 댐퍼 기반 복합제어장치를 이용한 설비형 비구조요소의 3차원 동적 응답 저감",
     "authors": "정형조, 민서현(KAIST)",
     "presenter": "정형조",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Three-dimensional base isolation(3*}@ '4%)",
+      "Smart vibration control system(2\"}E 41-57]"
+    ]
   },
   {
     "id": "p170",
@@ -2377,7 +3345,12 @@
     "title": "실규모 가스절연개폐장치의 진동대 실험",
     "authors": "전법규, 권유진, 신용재(지진방재연), 황경민(전력연)",
     "presenter": "전법규",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Shaking table test",
+      "Gas-insulated Switchgear",
+      "Seismic fragility analysis"
+    ]
   },
   {
     "id": "p171",
@@ -2391,7 +3364,14 @@
     "title": "FNO 기반 차량-교량 상호작용 응답 및 손상 예측 기법 개발",
     "authors": "이상빈, 김은주(서울대)",
     "presenter": "이상빈",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Damage Detection (#7 %])",
+      "Fourier Neural Operator (= 2]°]] 4174 454)",
+      "Structural Health Monitoring (구조 건전성 모니터링)",
+      "17485 80086(드러스 교량)",
+      "\\01106-80086101680000(자량-교량 상호작용)"
+    ]
   },
   {
     "id": "p172",
@@ -2405,7 +3385,14 @@
     "title": "A Large Language Model-aided Vision-based Framework for Structural Displacement Measurement",
     "authors": "NGUYEN XUAN TINH, 윤형철, LAM PHAT TAI(충북대)",
     "presenter": "NGUYEN XUAN TINH",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Structural health monitoring A= G49 ME] 8)",
+      "Structural 01901800060((구조물 변위)",
+      "Vision-based measurement(@*} 7]¥+ Al)",
+      "Large language model(HifH ce] HA)",
+      "ROI"
+    ]
   },
   {
     "id": "p173",
@@ -2419,7 +3406,14 @@
     "title": "LLM 기반 멀티 에이전트 시스템을 활용한 교량 구조물 동특성 자동 분석 연구",
     "authors": "심성한, 이규민(성균관대)",
     "presenter": "심성한",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Large Language Model (LLM)",
+      "Multi-Agent System",
+      "Structural Health Monitoring (SHM)",
+      "Operational Modal Analysis (OMA)",
+      "Knowledge Graph (KG)"
+    ]
   },
   {
     "id": "p174",
@@ -2433,7 +3427,8 @@
     "title": "부착형 압전소자를 이용한 광대역 모드진동수 측정데이터와 물리지식기반 머신러닝을 활용한 보의 다중균열 진단 특별 유망과학자 [2]",
     "authors": "황진호, 박현우(동아대)",
     "presenter": "황진호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p175",
@@ -2447,7 +3442,12 @@
     "title": "모터 회전자 편심에 따른 전자기 가진원 특성 분석",
     "authors": "박민로(순천향대)",
     "presenter": "박민로(순천향대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Dynamic eccentricity(s 4“)",
+      "Electromagnetic force(41%}7] 4)",
+      "Static eccentricity(4 4 4!)"
+    ]
   },
   {
     "id": "p176",
@@ -2461,7 +3461,11 @@
     "title": "항공 모빌리티 소음 가청화와 인지-기반 설계",
     "authors": "고정우(항공대)",
     "presenter": "고정우(항공대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Noise Auralization(소음 가청화)",
+      "인지-기반 설계(Perception-Influenced Design)"
+    ]
   },
   {
     "id": "p177",
@@ -2475,7 +3479,12 @@
     "title": "반경 및 접선방향 전자기력의 진동 상쇄 효과를 이용한 영구자석 동기모터의 진동 저감 최적화 연구 발표논문 세션/발표일시/논문제목 부문 첨단 항공우주 모빌리티 소음진동 [1]",
     "authors": "김재현, 류승기(영남대) 2026년 5월 29일(금)",
     "presenter": "김재현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electromagnetic force(전자기력)",
+      "Optimal design(최적설계)",
+      "Permanent magnet synchronous motor(영구자석"
+    ]
   },
   {
     "id": "p178",
@@ -2489,7 +3498,15 @@
     "title": "첨단항공모빌리티 축소기 객실 내 소음·진동 계측 데이터를 활용한 능동소음제어 시뮬레이션",
     "authors": "손재혁, 장현우, 김요준, 김세희, 유재관, 김중관(한서대)",
     "presenter": "손재혁",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Advanced Air Mobility(4 +4322] E])",
+      "Noise And Vibration(A Y 진동)",
+      "Active Noise Control(s-S 22-24] ])",
+      "Multi Rotor(t}+] =F)",
+      "Drone(==)",
+      "Broadband(=t 4)"
+    ]
   },
   {
     "id": "p179",
@@ -2503,7 +3520,14 @@
     "title": "이중 후퇴각을 적용한 틸트로터의 허브 진동 및 소음 해석",
     "authors": "오석중, 박재상(충남대), 정재헌, 이명규(항공우주연)",
     "presenter": "오석중",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Tiltrotor(틸트로터)",
+      "Double Sweptback angle(이중 후퇴각)",
+      "Hub Vibration(허브 진동)",
+      "Vibration Index(VI",
+      "진"
+    ]
   },
   {
     "id": "p180",
@@ -2517,7 +3541,13 @@
     "title": "블레이드 매수 변화를 통한 프로펠러-에어프레임 시스템의 소음 및 진동 저감",
     "authors": "손상민, 송찬호, 정다빈, 명노신, 이학진(경상국립대)",
     "presenter": "손상민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Source-doublet Panel Method(Source-Doublet 패널법)",
+      "Vortex Particle Method(와류  입자법)",
+      "Propeller-airframe Interaction(프로펠러-에어프레임  상호간섭)",
+      "Aerodynamic Noise(공력  소음)"
+    ]
   },
   {
     "id": "p181",
@@ -2531,7 +3561,12 @@
     "title": "이중 하반각을 적용한 헬리콥터 로터의 BVI 소음 해석",
     "authors": "이태경, 오석중, 박기정, 박재상(충남대)",
     "presenter": "이태경",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Double anhedral(이중 하반각)",
+      "Blade-Vortex Interaction(BVI, 블레이드-와류 상호작용)",
+      "BVI Noise Analysis(BVI 소음 해석)"
+    ]
   },
   {
     "id": "p182",
@@ -2545,7 +3580,11 @@
     "title": "강체 동축반전 로터의 고차 조화 피치 제어 입력의 기계 학습 기반의 최적화",
     "authors": "황재희, 박재상(충남대)",
     "presenter": "황재희",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Lift-offset Coaxial Rotor (214]] -& #141 =2E})",
+      "Rotor Vibration Control (E] 2l- ”J°])"
+    ]
   },
   {
     "id": "p183",
@@ -2559,7 +3598,13 @@
     "title": "저지연 실시간 음성 향상을 위한 BSRNN 모델 구조 개선",
     "authors": "최인한, 박용화(KAIST)",
     "presenter": "최인한",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Speech Enhancement(음성 향상)",
+      "Deep Learning(딥러닝)",
+      "Long-Short Time Window(장단기 시간 윈도우)",
+      "Low Latency(저지연)"
+    ]
   },
   {
     "id": "p184",
@@ -2573,7 +3618,12 @@
     "title": "Deep Spatiotemporal Learning for Battery Prognostics using Incremental Capacity Curve Image Transformation",
     "authors": "Tanveer Mohad, 김흥수(Dongguk Univ.)",
     "presenter": "Tanveer Mohad",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Deep Spatiotemporal Learning ((] 시공간 $}43)",
+      "Battery Prognostics (HHE] 2] 4-8 =)",
+      "Incremental Capacity Curve (S%% -8- =+44)"
+    ]
   },
   {
     "id": "p185",
@@ -2587,7 +3637,11 @@
     "title": "Mel-Coherence: Quantification of Audio Data Distortion for Optimal Data Augmentation on Sound Event Detection",
     "authors": "최승덕, 최성민, 최인한, 진민제, 박용화(KAIST)",
     "presenter": "최승덕",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "& °]#1= @Z(Sound Event Detection, SED)",
+      "Hl°]E] 4%(Data Augmentation)"
+    ]
   },
   {
     "id": "p186",
@@ -2601,7 +3655,15 @@
     "title": "형상 변화를 반영한 공간 적응형 딥오넷 기반 음향 산란체의 파동 산란 모델링 및 최적 형상 설계",
     "authors": "이종목, 원채윤, 박건혁(포항공과대), 오예니, 노홍균, 이승철(KAIST)",
     "presenter": "이종목",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "=<] 4|4]7]8! 91-8-4]-s(PIML)",
+      "J 2-\\(DeepONet)",
+      "including acoustic cloaking",
+      "ultrasonic inspection",
+      "non-destructive testing",
+      "and medical imaging. In particular"
+    ]
   },
   {
     "id": "p187",
@@ -2615,7 +3677,12 @@
     "title": "역학적으로 시스템과 연관된 물리 변수 보조 분류를 이용한 멀티-태스크 러닝 기반 고장 분류 기법",
     "authors": "이원준, 김현준, 정수연, 박용화(KAIST), 박성원, 옥승훈(HD현대일렉트릭)",
     "presenter": "이원준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "auxiliary classification (보조 분류)",
+      "multi-task learning (멀티-태스크 러닝)",
+      "fault classification (고장 분류)"
+    ]
   },
   {
     "id": "p188",
@@ -2629,7 +3696,12 @@
     "title": "가스터빈 발전기 회전자 인입상태 웨지 체결강도평가 시스템 개발",
     "authors": "손종덕, 엄예준, 정진성, 김희수(전력연)",
     "presenter": "손종덕",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Gas Turbine Generator(7}2 5] #1 %4417])",
+      "Stator Wedge(3.4%} $)4])",
+      "Tightness Evaluation(4l] 4"
+    ]
   },
   {
     "id": "p189",
@@ -2643,7 +3715,14 @@
     "title": "에너지 하베스팅 효율 향상을 위한 진동계의 최적화 연구",
     "authors": "이수목, 조만희(삼우ANC), 류기수(리수엔지니어링)",
     "presenter": "이수목",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "vibration system",
+      "energy harvesting",
+      "regenerative damping power",
+      "dynamic matching",
+      "tuned model"
+    ]
   },
   {
     "id": "p190",
@@ -2657,7 +3736,13 @@
     "title": "꼬리 질량에 컴플라이언트 튜브가 설치된 야누스 헬름홀쯔 센서의 수중 내부 유동 특성 연구",
     "authors": "이종길(경국대)",
     "presenter": "이종길(경국대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Janus-Helmholtz sensor(°Fr>2 232% 44)",
+      "Tail mass(222] 22)",
+      "Compliant tube(4 Sz} o|AE FH)",
+      "Cavity(S-s)"
+    ]
   },
   {
     "id": "p191",
@@ -2671,7 +3756,14 @@
     "title": "양수발전 설비 자동예측진단시스템(H-AIMD) 운영 및 기술고도화",
     "authors": "예송해, 양승옥, 최현식, 임성훈, 김대웅(한수원)",
     "presenter": "예송해",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "H-AIMD",
+      "AI",
+      "Condition Based Maintenance(CBM)",
+      "DCS",
+      "Machine Learning"
+    ]
   },
   {
     "id": "p192",
@@ -2685,7 +3777,12 @@
     "title": "유체 흐름 내 캔틸레버형 PVDF 에너지 하베스터의 에너지 수확 특성에 대한 블러프 바디의 형상과 위치에 따른 영향 부문 ISO/TC43 표준화",
     "authors": "이종길(경국대)",
     "presenter": "이종길(경국대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Energy harvester(o]4 4] <==} 2t4l)",
+      "Bluff body(@t|~ ¥}C])",
+      "Cantilever type PVDF(2] 2H"
+    ]
   },
   {
     "id": "p193",
@@ -2699,7 +3796,13 @@
     "title": "ISO/TC43/SC1 WG 28 및 JWG1의 표준화 동향",
     "authors": "조완호(표준과학연)",
     "presenter": "조완호(표준과학연)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Standard (표준)",
+      "Machinery noise (기계소음)",
+      "Airborne ultrasound (공기중 초음파) ISO/TC  43/SC  1/WG  28은  기계  방사  소음의  측정  방법에  관한  표준을  다루는  WG로",
+      "가장  핵심적인  역할"
+    ]
   },
   {
     "id": "p194",
@@ -2713,7 +3816,12 @@
     "title": "ISO/TC43/SC1 WG45의 표준화 동향",
     "authors": "박현구(송원대), 구진회, 김우정(환경과학원), 임진아(환경산업기술원), 김용희(영산대)",
     "presenter": "박현구(송원대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Standardization(3£< $})",
+      "Environmental Noise($}@ 22)",
+      "^ㅅ00058006(성가심)"
+    ]
   },
   {
     "id": "p195",
@@ -2727,7 +3835,11 @@
     "title": "사운드스케이프 국제표준 ISO 12913 시리즈의 현황",
     "authors": "류종관(전남대), 김용희(영산대)",
     "presenter": "류종관(전남대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Soundscape(-2--s 4)",
+      "International standard(= ll 32.2)"
+    ]
   },
   {
     "id": "p196",
@@ -2741,7 +3853,11 @@
     "title": "투명 방음판 사양 및 성능 평가방법 표준화 방안",
     "authors": "장태순, 이웅용(도로공사 도로교통연), 윤제원(팀버웨어)",
     "presenter": "장태순",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Transparent soundproof panel (='3 WJ-s-2h)",
+      "Standardization of Specifications (AF@ 표준화)"
+    ]
   },
   {
     "id": "p197",
@@ -2755,7 +3871,12 @@
     "title": "ISO 9052-1 개정 동향 및 바닥완충재 KS 제품 표준화",
     "authors": "송국곤, 한성재, 송한솔(KCL)",
     "presenter": "송국곤",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor Resilient Materials(H}=} $+ 2l])",
+      "Dynamic Stiffness(-s 79 Al>)",
+      "Product Standardization(4]"
+    ]
   },
   {
     "id": "p198",
@@ -2769,7 +3890,8 @@
     "title": "건축물 음향성능 등급 표준화 - ISO/TS 19488 부합화 등 기획 미래모빌리티 [4]",
     "authors": "정정호, 이효진(방재시험연)",
     "presenter": "정정호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p199",
@@ -2783,7 +3905,12 @@
     "title": "KEYNOTE AI-SQ Engineering and Creative Sound Design: A New Framework for EV Acoustics",
     "authors": "Norio Kubo(EV Soundscape Limited)",
     "presenter": "Norio Kubo(EV Soundscape Limited)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Sound quality evaluation(¢-2 평가)",
+      "2970408000800(심리음향)",
+      "90400 069194(사운드 디자인)"
+    ]
   },
   {
     "id": "p200",
@@ -2797,7 +3924,11 @@
     "title": "전정기관 동특성 기반 멀미 감수성 지표의 예측력 검증과 주행 컴포트 영향 정량 분석",
     "authors": "김성현, 양재식(현대차)",
     "presenter": "김성현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electric vehicle(#1 7] 4}",
+      "Motion sickness(“1™])"
+    ]
   },
   {
     "id": "p201",
@@ -2811,7 +3942,13 @@
     "title": "다채널 오디오 시스템을 이용한 사용자 의도 기반 차량 내 가변잔향 시스템의 구현 및 객관평가 부문 바닥충격음 ; 측정/평가",
     "authors": "김성준, SATO RAI, 김성영(KAIST), 김주인(현대차)",
     "presenter": "김성준",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Multichannel Audio",
+      "Spatial Audio",
+      "Active Acoustic",
+      "Purpose-Built Vehicle(PBV)"
+    ]
   },
   {
     "id": "p202",
@@ -2825,7 +3962,12 @@
     "title": "모듈러주택 중량충격음의 결정주파수대역 특성 - 소형 공동주택과의 비교",
     "authors": "배기선(동인산업), 윤중연(금강비겐드), 김준영(금강공업)",
     "presenter": "배기선(동인산업)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Floor impact sound(4}}&}-44 =)",
+      "Modular unit system( 5. =] 7144)",
+      "Contribution rate(7] ©] 2)"
+    ]
   },
   {
     "id": "p203",
@@ -2839,7 +3981,12 @@
     "title": "중량충격음 단일수치 기여도 분석에 따른 바닥완충재 소재특성 평가",
     "authors": "황태식, 김현기, 박준호(다스코)",
     "presenter": "황태식",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Heavy-Weight Floor Impact Sound (44)",
+      "Contribution rate (UA) W7E 7) 4-8)",
+      "Resilient layer (H}=}$t- ll)"
+    ]
   },
   {
     "id": "p204",
@@ -2853,7 +4000,13 @@
     "title": "소음 모니터링용 프로토콜 개발에 관한 연구",
     "authors": "김정중, 정성수, 김윤재(환경음향연구소), 이효성(표준과학연)",
     "presenter": "김정중",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Construction Noise (공사장  소음)",
+      "Deep Learning (딥러닝)",
+      "Mel-spectrogram (멜스펙트로그램)",
+      "Convolutional Neural Network (합성곱신경망)"
+    ]
   },
   {
     "id": "p205",
@@ -2867,7 +4020,8 @@
     "title": "무선 기반 IoT 센서 네트워크를 위한 소음 모듈 개발관한 연구",
     "authors": "김정중, 정성수, 김성용, 황석, 고병수(환경음향연구소)",
     "presenter": "김정중",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p206",
@@ -2881,7 +4035,8 @@
     "title": "볼트 체결부의 전단력 추정을 위한 조인트부 탄성응력 활용 연구",
     "authors": "박경원, 장연진, 정현준, 박준홍(한양대), 최성욱(현대자동차)",
     "presenter": "박경원",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p207",
@@ -2895,7 +4050,12 @@
     "title": "베이지안 최적화를 이용한 격자 구조의 저주파 광대역 진동 감쇠 설계",
     "authors": "윤효의, 박채원, 이상륜(이화여대), 이태건, 최원재(표준과학연)",
     "presenter": "윤효의",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Lattice Structures (격자 구조)",
+      "Bayesian Optimization (베이지안 최적화)",
+      "Metamaterials (메타물질)"
+    ]
   },
   {
     "id": "p208",
@@ -2909,7 +4069,13 @@
     "title": "PolyMAX 알고리즘 기반 감쇠비 식별 안정성 향상을 위한 반전력법 보완 방법",
     "authors": "김현우, 서유종, 김찬중(부경대), 김규식(자동차연)",
     "presenter": "김현우",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Stabilization diagram(?} 4 5} 다이어그램)",
+      "Half-power method(#t 41 4 4)",
+      "Pole identification(pole A))",
+      "PolyMAX algorithm(PolyMAX ¢31l2] <q)"
+    ]
   },
   {
     "id": "p209",
@@ -2923,7 +4089,14 @@
     "title": "머신러닝 분류성능 향상을 위한 회전체 전용 상태 지표(Condition Index) 활용",
     "authors": "성주현, 최병근, 강민석, 윤재광, 함다현(경상국립대), 박동희(다비스)",
     "presenter": "성주현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rotary Machinery(3] 41 #14])",
+      "Fault Signal(4@@ 41)",
+      "Machine Learning(®] 4! 2] ‘2)",
+      "Feature Vector(=% “E))",
+      "Condition Index(7 EH %] 34)"
+    ]
   },
   {
     "id": "p210",
@@ -2937,7 +4110,13 @@
     "title": "압력 파워 스펙트럼 밀도를 활용한 원자로 내부 구조물의 유동 동하중에 대한 구조해석에 관한 연구",
     "authors": "라치웅, 박노철, 박영진, 백효성(연세대)",
     "presenter": "라치웅",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Reactor Vessel - 10[600818(원자로 내부 7A)",
+      "Flow-induced  \\1628004(유동유발진동)",
+      "Sub-structuring Analysis(*] 2. 7/4344)",
+      "Fluid-structure Interaction(- 4-7-4 73 Ssh"
+    ]
   },
   {
     "id": "p211",
@@ -2951,7 +4130,8 @@
     "title": "전방향 초음파 방출 증폭을 위한 이중 공진 기반 탄성 메타 구조체 개발 기획 바이오 및 환경 센서",
     "authors": "이혁(기계연), 박준형(표준과학연), 김홍재(삼성전자), 김윤영(서울대)",
     "presenter": "이혁(기계연)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p212",
@@ -2965,7 +4145,13 @@
     "title": "진동 기반 물질 전달 향상을 이용한 휴대형 망간 이온 센서",
     "authors": "최도은, 박주형, 박현준, 김치현, 채경환, 김가영, 박대일, 조원준, 장다영, 김수빈, 강채영, 허은슬, 박진성(성균관대)",
     "presenter": "최도은",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Electrochemical(41 7] 5}$})",
+      "Manganese( 471)",
+      "however",
+      "particularly in drinking water. Therefore"
+    ]
   },
   {
     "id": "p213",
@@ -2979,7 +4165,12 @@
     "title": "납, 카드뮴 이온 검출을 위한 휴대용 진동 장치를 갖춘 나피온/흑연-비스무트 나노 플레이트 센서",
     "authors": "박대일, 박진성, 박주형, 김치현, 박현준, 채경환, 김가영, 조원준, 장다영, 강채영, 김수빈, 최도은, 허은슬(성균관대)",
     "presenter": "박대일",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Vibration(진동)",
+      "Heavy metal ions(중금속 이온)",
+      "Portable electrochemical sensors(휴대용 전기화학센서)"
+    ]
   },
   {
     "id": "p214",
@@ -2993,7 +4184,12 @@
     "title": "뇌척수액 누출의 고감도 진단을 위한 AI 융화 SERS 플랫폼",
     "authors": "박주형, 박현준, 김치현, 채경환, 박대일, 김가영, 조원준, 장다영, 최도은, 강채영, 김수빈, 허은슬, 박진성(성균관대)",
     "presenter": "박주형",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Cerebrospinal fluid rhinorrhea (* 2/472} ++)",
+      "Surface-enhanced Raman Scattering (LUGS 2te} uh)",
+      "Machine learning (7) 41 2]'a)"
+    ]
   },
   {
     "id": "p215",
@@ -3007,7 +4203,13 @@
     "title": "Fabrication of Au@Ag Nanocoral-inspired SERS Substrates for Highly Sensitive Detection of Thiram",
     "authors": "박진성, 박주형, 김치현, 박현준, 채경환, 박대일, 김가영, 조원준, 강채영, 장다영, 최도은, 김수빈, 허은슬(성균관대)",
     "presenter": "박진성",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "biomimic(생태모방)",
+      "SERS(표면증강라만산란)",
+      "Pesticide residues(잔류농약)",
+      "Thiram(티람)"
+    ]
   },
   {
     "id": "p216",
@@ -3021,7 +4223,8 @@
     "title": "틸팅 프로펠러를 사용하는 전기동력수직이착륙기의 전기체 모델링 및 진동 해석",
     "authors": "박기정, 박재상(충남대)",
     "presenter": "박기정",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p217",
@@ -3035,7 +4238,12 @@
     "title": "임팩트 해머 가진 시험 기반 축소 시험체의 동특성 식별",
     "authors": "김준영, 조해성, 박상민(전북대), 박영근(서울대), 송기석(국방과학연)",
     "presenter": "김준영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "High-speed vehicle(a!=+ 4] |)",
+      "Ground Vibration 769((지상 진동 A] 4)",
+      "Impact Hammer(?] 24"
+    ]
   },
   {
     "id": "p218",
@@ -3049,7 +4257,8 @@
     "title": "다양한 착륙각 및 무게중심 위치를 고려한 재사용 발사체의 착륙 시뮬레이션",
     "authors": "조명균, 김현호, 박재상(충남대)",
     "presenter": "조명균",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p219",
@@ -3063,7 +4272,8 @@
     "title": "외란을 고려한 재사용 발사체의 해상 착륙 거동 해석",
     "authors": "김현호, 조명균, 박재상(충남대), 류원희(풍산방산기술연), 심창훈(한화에어로스페이스)",
     "presenter": "김현호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p220",
@@ -3077,7 +4287,8 @@
     "title": "VCT를 이용한 재사용 발사체 추진제 탱크의 좌굴 하중 예측 부문 환경소음의 진단‧예측‧제어 융합기술",
     "authors": "강지윤, 김현호, 박재상(충남대), 심창훈(한화에어로스페이스)",
     "presenter": "강지윤",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p221",
@@ -3091,7 +4302,8 @@
     "title": "환경소음 지식 체계화를 위한 온토로지 설계 및 구현",
     "authors": "박태호, 선효성(환경연)",
     "presenter": "박태호",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p222",
@@ -3105,7 +4317,14 @@
     "title": "환경소음의 음악 마스킹을 위한 심리음향 기반 선택적 적응형 음악제어 방법 발표시간변경 11:10~11:25 층간소음 층정 관련 거주형태별 민원 현황 및 상담건수 포스터발표 [1]",
     "authors": "김성현(현대차) 김길재, 김민수, 윤미진, 심현숙(환경공단)",
     "presenter": "김성현(현대차) 김길재",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Environmental noise (3+ 22-2)",
+      "Psychoacoustics (*] 2]-2-S)",
+      "Critical-band (?] 7] 4)",
+      "Music masking (음악 마스킹)",
+      "408006000810000001(적응형 음악 제어)"
+    ]
   },
   {
     "id": "p223",
@@ -3119,7 +4338,12 @@
     "title": "대리변수를 활용한 통계적 소음지도 작성",
     "authors": "김경민(서울시립대)",
     "presenter": "김경민(서울시립대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Statistical Noise Map(-§7l4] 22-2-4]4)",
+      "Proxy Variables(tl 2] '4-)",
+      "OpenStreetMap(2=2 =z]"
+    ]
   },
   {
     "id": "p224",
@@ -3133,7 +4357,12 @@
     "title": "CPX를 활용한 신축이음장치 발생소음 측정 방법 고찰 부문 철도 소음진동",
     "authors": "이웅용, 장태순, 강혜진, 유혁진(도로공사)",
     "presenter": "이웅용",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "] 4°] -4-4](Expansion joint)",
+      "3.4-:= 2:-2(Highway noise)",
+      "CPX(Close-proximity method)"
+    ]
   },
   {
     "id": "p225",
@@ -3147,7 +4376,13 @@
     "title": "철도차량 주행안정 및 진동저감을 위한 현가파라미터 최적화",
     "authors": "신지환, 박준혁, 최성훈(철도기술연)",
     "presenter": "신지환",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "optimization(] 4 5})",
+      "railway-vehicle(# 21%)",
+      "dynamics(“s Sj $})",
+      "vibartion(4)-s)"
+    ]
   },
   {
     "id": "p226",
@@ -3161,7 +4396,12 @@
     "title": "전산해석을 통한 도시철도 출입문의 차음 성능 분석 연구",
     "authors": "허명, 노희민(철도기술연)",
     "presenter": "허명",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Transmission Loss (4 @ 투과손실)",
+      "Dynamic characteristics (S578)",
+      "Structural Optimization ("
+    ]
   },
   {
     "id": "p227",
@@ -3175,7 +4415,13 @@
     "title": "SEA 기반 철도차량 패널 투과손실 해석 기초연구",
     "authors": "이영규(과학기술연합대학원대), 노희민(철도기술연)",
     "presenter": "이영규(과학기술연합대학원대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Interior noise(#]4] 2-2)",
+      "984(통계적 에너지 44)",
+      "Transmission loss(=-2+ #2)",
+      "high speed"
+    ]
   },
   {
     "id": "p228",
@@ -3189,7 +4435,15 @@
     "title": "고속차량 대차주행 모니터링 시스템",
     "authors": "손병구, 정휴정(BP지능역학), 김재현(철도공사)",
     "presenter": "손병구",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "High-Speed Train(3!4> 철도)",
+      "Bogie Condition Monitoring (c]”} FE] UE] 8)",
+      "Condition- Based Maintenance (7 EH 7] 81 +] 14>)",
+      "Predictive- Based Maintenance (47) 8! 7-4] HE)",
+      "Anomaly Detection(°] §]) KTX WS 2274S He] 2026 현재",
+      "누적 이용객 12억 명 돌파와 함께 고속철도 안전 관리에 대한"
+    ]
   },
   {
     "id": "p229",
@@ -3203,7 +4457,12 @@
     "title": "동력분산식 고속철도 차량의 주행 실내소음 전달 경로 분석 기획 실내음향",
     "authors": "장형석, 이용성, 김종환, 김재환(현대로템), 박재우(지멘스인더스트리소프트웨어)",
     "presenter": "장형석",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "High-speed train(aL4;4 = 2}2)",
+      "Power distributed(S 44414)",
+      "Interior noise (2224)"
+    ]
   },
   {
     "id": "p230",
@@ -3217,7 +4476,14 @@
     "title": "방음터널 내 비상방송 성능 확보를 위한 스피커 배치 방안 검토",
     "authors": "문완기, 연준오, 문순성, 구희모(조선해양기자재연)",
     "presenter": "문완기",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Noise Barrier Tunnel(¥}--E))",
+      "Emergency Broadcasting System(4]*t¥t%)",
+      "Speech Transmission  1006※%(음성전달지수)",
+      "Loudspeaker ㅅㅁ8080060(스피커 배치)",
+      "~~ Acoustic Simulation(- & 4) 2] °] 44)"
+    ]
   },
   {
     "id": "p231",
@@ -3231,7 +4497,12 @@
     "title": "STI 기반 방음터널 내 비상방송 음성전달성능 평가 방법에 관한 연구",
     "authors": "문순성, 구희모, 연준오, 문완기(조선해양기자재연)",
     "presenter": "문순성",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Speech Transmission 1006%(음성전달지수)",
+      "Soundproof 00061(방음터널)",
+      "재난 상황(01689667 situations)"
+    ]
   },
   {
     "id": "p232",
@@ -3245,7 +4516,13 @@
     "title": "건물 외피형상을 이용한 야외 공연장의 음향설계",
     "authors": "김준영, 전현준, 김용희(영산대), 전상은(부산대), 김신태(서울시립대)",
     "presenter": "김준영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Outdoor space(°F2]271)",
+      "Acoustic design( 2-4 4])",
+      "Acoustic simulation(-{ 4 4] <]°] Al)",
+      "Envelope geometry(2] 3] 3h)"
+    ]
   },
   {
     "id": "p233",
@@ -3259,7 +4536,12 @@
     "title": "미술관 및 박물관의 실내음향 특성 및 설계기준 제안",
     "authors": "전상은(부산대), 김준영, 김용희(영산대), 전용철(남양노비텍), 김효진, 이용훈(동성케미컬)",
     "presenter": "전상은(부산대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Art Gallery(#]42))",
+      "Museum(@}234). Room Acoustic(2]U]-<&)",
+      "Field Measurement(@"
+    ]
   },
   {
     "id": "p234",
@@ -3273,7 +4555,12 @@
     "title": "오케스트라 피트 형상 및 내부 마감재료에 따른 오페라극장 무대-피트 밸런스 영향",
     "authors": "김신태(서울시립대), 김용희, 전현준, 김준영(영산대), 전상은, 김윤지(부산대)",
     "presenter": "김신태(서울시립대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Opera Theaters(2.*]@}=%)",
+      "Orchestra Pit(2 7A) 2=Ee} Y=)",
+      "Stage-Pit Balance(f-U-YE Wa"
+    ]
   },
   {
     "id": "p235",
@@ -3287,7 +4574,12 @@
     "title": "해외 사례조사를 통한 실내음향 설계기준 표준화 기획 미래모빌리티 [5]",
     "authors": "김용희(영산대)",
     "presenter": "김용희(영산대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Room acoustics(#! U]-2 @)",
+      "Design criteria(#2 A] 7] <2)",
+      "Standardization(3t <= S})"
+    ]
   },
   {
     "id": "p236",
@@ -3301,7 +4593,11 @@
     "title": "부분기여도함수를 이용한 시트의 진동원 분석",
     "authors": "김호영, 한소운, 김민지, 나성수, 윤성호(고려대), 최성욱, 문호성(현대차)",
     "presenter": "김호영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Ordinary Coherence Function(@¥! 7] =>)",
+      "Partial Coherence Function(*-%27] 4 & +)"
+    ]
   },
   {
     "id": "p237",
@@ -3315,7 +4611,13 @@
     "title": "주행 내외부의 시청각 자극 및 청각적 간섭 환경에서의 운전자 주행 성능과 신뢰도 영향 연구",
     "authors": "신지연, 윤명환(서울대), 문소연(하만)",
     "presenter": "신지연",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Acoustic Interference",
+      "Future Mobility",
+      "Advanced Driver Assistance Systems(ADAS)",
+      "Human-Machine Interaction"
+    ]
   },
   {
     "id": "p238",
@@ -3329,7 +4631,12 @@
     "title": "DeepONet을 이용한 주행 중 차량 진동 전달 경로 분석 연구",
     "authors": "한소운, 김호영, 김민지, 나성수, 윤성호(고려대), 최성욱, 문호성(현대차)",
     "presenter": "한소운",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Passenger ride comfort(승객 컴포트)",
+      "Operational transfer path analysis(운용 전달경로분석)",
+      "DeepONet(심층"
+    ]
   },
   {
     "id": "p239",
@@ -3343,7 +4650,13 @@
     "title": "Operational Transfer Path Analysis 기반 차량 Seat 진동 경로 및 기여도 분석 부문 사운드스케이프",
     "authors": "김민지, 나성수, 윤성호, 한소운, 김호영(고려대), 최성욱, 문호성(현대차)",
     "presenter": "김민지",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Operational Transfer Path Analysis(작동 조건 진동 전달 경로 분석)",
+      "Vibration Transfer Path(진동 전달 경로)",
+      "Transmissibility(전달률)",
+      "Contribution Analysis(기여도 분석)"
+    ]
   },
   {
     "id": "p240",
@@ -3357,7 +4670,13 @@
     "title": "거주자 경험 기반의 공동주택 사운드스케이프 인식 모형 구축: 질적 분석 연구",
     "authors": "김도경, 류종관, 송민정, 한명호(전남대)",
     "presenter": "김도경",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "High-rise multi-family residential buildings (2754 &)",
+      "Soundscape (A}-2@=E 27] °]*)",
+      "Qualitative research(4! 4 +)",
+      "Grounded theory (771 °] =)"
+    ]
   },
   {
     "id": "p241",
@@ -3371,7 +4690,14 @@
     "title": "도시 음환경의 컨텍스트 기반 예측모델 및 공간 지도화",
     "authors": "김건희, 박태호, 홍주영(충남대)",
     "presenter": "김건희",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Soundscape (A}-@#=2:7]°]£)",
+      "Context (71@]2 =)",
+      "Predictive Modeling (JG 22)",
+      "Urban Acoustic Environment (™A] -3!)",
+      "Perceptual-Affective Response (¢]4]-7+73 반응)"
+    ]
   },
   {
     "id": "p242",
@@ -3385,7 +4711,12 @@
     "title": "실내외 복합소음의 평가 지표와 주관적 반응과의 관계",
     "authors": "김정훈, 류종관, 양서영(전남대)",
     "presenter": "김정훈",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Combined noise(=¢t22-2)",
+      "Evaluation Indices(#J 7}4]3£)",
+      "Subjective response(4=-2+4} 4S)"
+    ]
   },
   {
     "id": "p243",
@@ -3399,7 +4730,12 @@
     "title": "실내외 복합소음 환경에서의 소음원별 발생특성과 주관적 반응과의 관계",
     "authors": "양서영, 김정훈, 류종관(전남대)",
     "presenter": "양서영",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Annoyance(*! 4 2%9])",
+      "Combined noise(4+%} 22-2)",
+      "Noise occurrence characteristics(-4 443579)"
+    ]
   },
   {
     "id": "p244",
@@ -3413,7 +4749,8 @@
     "title": "상태진단을 위한 크랙 전파에 의한 스퍼 기어의 진동특성",
     "authors": "박찬일(강원대)",
     "presenter": "박찬일(강원대)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p245",
@@ -3427,7 +4764,16 @@
     "title": "복소고유치의 이해와 응용 : Holset형 댐퍼의 동특성 규명",
     "authors": "이수목(삼우ANC)",
     "presenter": "이수목(삼우ANC)",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "complex eigenvalue analysis",
+      "Holset damper",
+      "equivalent mass inertia",
+      "state equation",
+      "MATLAB Lack of information and identification about the damping characteristics in vibrating system has led to approach mainly with the real eigenvalue analysis i.e",
+      "natural frequency and mode shape",
+      "and appropriate modal"
+    ]
   },
   {
     "id": "p246",
@@ -3441,7 +4787,8 @@
     "title": "인공 지능 기반 건조기 배관 응력/고유진동수 예측 및 설계",
     "authors": "이상륜, 김마리, 이송현(이화여대), 김석찬, 박민호(LG전자)",
     "presenter": "이상륜",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": []
   },
   {
     "id": "p247",
@@ -3455,7 +4802,12 @@
     "title": "동흡진기를 이용한 기계시스템 진동저감",
     "authors": "박성민, 윤정한, 장효선, 박민규, 신완순(국방과학연)",
     "presenter": "박성민",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Vibration(#!“&)",
+      "Dynamic vibration absorber (-& $2! 7])",
+      "Vibration suppression (4!-6- 저감)"
+    ]
   },
   {
     "id": "p248",
@@ -3469,7 +4821,13 @@
     "title": "드럼세탁기 과도 진동 해석 정확도 개선을 위한 댐핑 최적화 해석 프로세스 개발",
     "authors": "오광현, 이상업, 최지훈(삼성전자)",
     "presenter": "오광현",
-    "hasAbstract": true
+    "hasAbstract": true,
+    "keywords": [
+      "Rubber(고무)",
+      "Damping ratio(감쇠율)",
+      "Transient vibration(과도 진동)",
+      "Washing machines(세탁기)"
+    ]
   },
   {
     "id": "poster-p101",
@@ -3483,7 +4841,8 @@
     "title": "군용차량의 정차중 미탐지 소음 시험 및 해석 결과 비교",
     "authors": "류태광, 오재이, 정효연(한화에어로스페이스)",
     "presenter": "류태광",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p102",
@@ -3497,7 +4856,8 @@
     "title": "음향 제품의 냉각, 가열에 대한 고찰",
     "authors": "박소현(성주음향)",
     "presenter": "박소현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p103",
@@ -3511,7 +4871,8 @@
     "title": "방사광가속기 거더 시스템의 진동 증폭 및 상관성 분석",
     "authors": "김정영, 홍광욱, 이홍기, 하태균(포항가속기연)",
     "presenter": "김정영",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p104",
@@ -3525,7 +4886,8 @@
     "title": "4세대 방사광가속기 거더 구조물 진동 특성 연구",
     "authors": "홍광욱, 이홍기, 김정영, 하태균(포항가속기연), 박소정(기초과학지원연)",
     "presenter": "홍광욱",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p105",
@@ -3539,7 +4901,8 @@
     "title": "적외선-가시광 영상 정합을 위한 FPN 기반 다중 스케일 호모그래피 추정",
     "authors": "이준수, 조근찬, 이선우, 김주형(인하대)",
     "presenter": "이준수",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p106",
@@ -3553,7 +4916,8 @@
     "title": "고잡음 원자로 배관의 미세 균열 정량 평가 기술: RMS 활용",
     "authors": "정도연, 정변영, 최영철(원자력연)",
     "presenter": "정도연",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p107",
@@ -3567,7 +4931,8 @@
     "title": "전투차량 원격운용을 위한 제어장치의 사격 구조안정성 분석",
     "authors": "정효연, 박주상, 이재환, 오재이(한화에어로스페이스)",
     "presenter": "정효연",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p108",
@@ -3581,7 +4946,8 @@
     "title": "Vibration Analysis of PLS-II Girder Systems",
     "authors": "김승남(포항가속기연)",
     "presenter": "김승남",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p109",
@@ -3595,7 +4961,8 @@
     "title": "군용 전투차량 연료탱크 설계 개선을 위한 구조 분석",
     "authors": "김정현, 오재이, 김덕호, 이경준(한화에어로스페이스), 양지수(국방신속획득기술연)",
     "presenter": "김정현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p110",
@@ -3609,7 +4976,8 @@
     "title": "임의 형상 평판의 전 주파수 대역 고유치 추출을 위한 분할영역법 기반 NDIF법 개발",
     "authors": "강상욱(한성대)",
     "presenter": "강상욱",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p111",
@@ -3623,7 +4991,8 @@
     "title": "전투차량 탑재 장비 설계를 위한 주행 진동 계측 및 분석",
     "authors": "김덕호, 진현경, 김정현(한화에어로스페이스), 양지수(국방신속획득기술연)",
     "presenter": "김덕호",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p112",
@@ -3637,7 +5006,8 @@
     "title": "휠하우스 모델을 활용한 통과 소음 예측 연구",
     "authors": "김진웅, 이광열, 김용훈(한국타이어)",
     "presenter": "김진웅",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p113",
@@ -3651,7 +5021,8 @@
     "title": "글루도포에 따른 헤드라이너 BSR 소음특성 연구",
     "authors": "변준호, 모형규, 이민호, 김주안(대한솔루션)",
     "presenter": "변준호",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p114",
@@ -3665,7 +5036,8 @@
     "title": "컴프레셔 온도가 소음에 미치는 영향",
     "authors": "양윤상, 정종화, 박준홍(대한솔루션)",
     "presenter": "양윤상",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p115",
@@ -3679,7 +5051,8 @@
     "title": "무인잠수정용 6상 고속 동기전동기의 진동특성 해석 및 시험",
     "authors": "홍도관, 김다은(전기연구원)",
     "presenter": "홍도관",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p116",
@@ -3693,7 +5066,8 @@
     "title": "eVTOL UAM 리프트프롭의 티터링허브 적용을 통한 진동저감 효과 분석",
     "authors": "이명규(항공우주연)",
     "presenter": "이명규",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p117",
@@ -3707,7 +5081,8 @@
     "title": "광섬유 광간섭계 기반 비접촉 다점 계측을 통한 GIS 구조물의 부분방전 탐지 연구",
     "authors": "정휘권, 엄종현(광기술원)",
     "presenter": "정휘권",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p118",
@@ -3721,7 +5096,8 @@
     "title": "수소충전소용 고압 다이어프램 압축기 다이어프램 파손 원인 분류체계 구축",
     "authors": "이중혁, 민태홍(고등기술연)",
     "presenter": "이중혁",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p119",
@@ -3735,7 +5111,8 @@
     "title": "진동 데이터와 모터 전류 데이터의 변동성을 활용한 회전기기 진단 기술에 대한 연구",
     "authors": "전지현, 고태영, 이정한(원자력연)",
     "presenter": "전지현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p120",
@@ -3749,7 +5126,8 @@
     "title": "회전설비 결함 민감도 향상을 위한 특징개발",
     "authors": "장대식, 전지현, 고태영, 박상진, 이정한(원자력연)",
     "presenter": "장대식",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p121",
@@ -3763,7 +5141,8 @@
     "title": "상구조 제어된 KNN 계 압전 세라믹을 이용하여 제작된 압축형 및 전단형 가속도계 센서의 온도 안정성 연구",
     "authors": "정윤기, 김병훈, 이경자, 박규현, 백창연, 이민구(원자력연)",
     "presenter": "정윤기",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p122",
@@ -3777,7 +5156,8 @@
     "title": "높은 압전전압상수의 비납계 압전세라믹을 이용한 음향방출형 센서의 제작 및 특성 평가 연구",
     "authors": "이민구, 김병훈, 이경자, 정윤기, 박규현, 백창연(원자력연)",
     "presenter": "이민구",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p123",
@@ -3791,7 +5171,8 @@
     "title": "디지털 센싱 시스템을 활용한 실시간 교량 동적 처짐 측정 시스템 개발",
     "authors": "서동우, 박상기, 김재환(건설기술연), 김호진(에이테크솔루션), 공민준(더솔트)",
     "presenter": "서동우",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p124",
@@ -3805,7 +5186,8 @@
     "title": "소형모듈원자로의 충격진동 전파특성 연구",
     "authors": "윤두병, 이정한(원자력연)",
     "presenter": "윤두병",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p125",
@@ -3819,7 +5201,8 @@
     "title": "원전 주증기관 밸브 결함에 의한 충격신호 감지 기술 개발",
     "authors": "최영철, 정변영, 정도연(원자력연)",
     "presenter": "최영철",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p126",
@@ -3833,7 +5216,8 @@
     "title": "저주파 해양 환경 응용을 위한 역진자 기반 이중 안정 구조 에너지 하베스터 연구",
     "authors": "김지석(한밭대), 오일권(KAIST)",
     "presenter": "김지석",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p127",
@@ -3847,7 +5231,8 @@
     "title": "간헐성 지표를 활용한 도로교통소음의 시간적 특성 분석",
     "authors": "김남건, 이원영, 노승근, 장미희, 정종순, 권승미(서울시보건환경연)",
     "presenter": "김남건",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p128",
@@ -3861,7 +5246,8 @@
     "title": "분할된 투명 방음패널의 구조적 안전성 검증",
     "authors": "한주형, 한재현, 하지영, 김중석(화학융합시험연)",
     "presenter": "한주형",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p129",
@@ -3875,7 +5261,8 @@
     "title": "운영 중 도로 환경에서의 투명방음벽 진동 측정 및 거동 분석",
     "authors": "장태순, 이웅용(도로공사 도로교통연), 윤제원(팀버웨어기술사사무소)",
     "presenter": "장태순",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p130",
@@ -3889,7 +5276,8 @@
     "title": "소음지도 프로그램을 활용한 교통소음 민원 대응 효율화 연구",
     "authors": "서민아, 고하윤, 안미혜, 이장희, 유창숙, 엄진균, 정경용(세종시보건환경연)",
     "presenter": "서민아",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p131",
@@ -3903,7 +5291,8 @@
     "title": "신축이음장치 통과 소음의 시간 분석 단위별 특성 비교",
     "authors": "이웅용, 장태순, 강혜진(도로공사)",
     "presenter": "이웅용",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p132",
@@ -3917,7 +5306,8 @@
     "title": "서울시 환경소음 시공간 특성 분석: 수동 및 연속 측정망을 중심으로",
     "authors": "장미희, 이정훈, 김남건, 이원영, 노승근, 정종순, 권승미(서울시보건환경연)",
     "presenter": "장미희",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p133",
@@ -3931,7 +5321,8 @@
     "title": "디지털 국토정보-Physics AI 융합 기반 환경 소음 관리 기초 연구",
     "authors": "김필립, 윤준희(건설기술연)",
     "presenter": "김필립",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p134",
@@ -3945,7 +5336,8 @@
     "title": "차량 시트위치 이동에 따른 탑승자 귀 위치 전달함수 변화 비교",
     "authors": "강귀현, 유성식, 조인제, 이나영, 이현지(현대모비스)",
     "presenter": "강귀현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p135",
@@ -3959,7 +5351,8 @@
     "title": "방화구획 관통부 내화채움구조의 음향 비파괴 점검기술 개발",
     "authors": "이효진, 이승재, 정정호, 김대희(방재시험연), 김인권, 임태민(에스엠인스트루먼트)",
     "presenter": "이효진",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p136",
@@ -3973,7 +5366,8 @@
     "title": "자기지도학습 기반 진동 신호 표현학습 프레임워크",
     "authors": "임성훈(한수원)",
     "presenter": "임성훈",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p137",
@@ -3987,7 +5381,8 @@
     "title": "진동 기반 고장진단에서의 불확실성 추정 방법론",
     "authors": "임성훈(한수원)",
     "presenter": "임성훈",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p138",
@@ -4001,7 +5396,8 @@
     "title": "공동주택 내 층간소음 측정 및 평가 소프트웨어 개발 사례",
     "authors": "김길재(환경공단), 정천우, 임진이(이너턴스), 김인규, 김민수, 윤미진, 백다혜, 김노운(환경공단)",
     "presenter": "김길재",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p201",
@@ -4015,7 +5411,8 @@
     "title": "실크-P25 단백질 복합체의 계면 특성에 대한 멀티스케일 인 실리코 분석",
     "authors": "한소운, 박우범, 나성수(고려대)",
     "presenter": "한소운",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p202",
@@ -4029,7 +5426,8 @@
     "title": "Modular Quasi-zero stiffness Vibration Isolation via Series-configured Origami-Inspired Mechanical Metamaterials",
     "authors": "Yuhao Wang(KAIST), Patro Somya Ranjan, 양석규, 양진규(서울대), Kangyu Li, Zhihao Yuan, 주재형(Jiao Tong Univ.), Arup Neogi(중국과학기술대)",
     "presenter": "Yuhao Wang",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p203",
@@ -4043,7 +5441,8 @@
     "title": "4륜 독립 조향/제동/구동 차량의 그립 마진 기반 통합 섀시 제어",
     "authors": "황규용, 오종석(공주대)",
     "presenter": "황규용",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p204",
@@ -4057,7 +5456,8 @@
     "title": "바닥충격음 수음점·가진점 조합에 따른 단일수치 평가량 비교",
     "authors": "윤태경, 김명준, 김신태, 한도훈(서울시립대)",
     "presenter": "윤태경",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p205",
@@ -4071,7 +5471,8 @@
     "title": "하이브리드 음향 흡음재의 복소 주파수 영역 해석 및 CNN 기반 흡음률 최적화",
     "authors": "신종하, 한제헌(한국공학대)",
     "presenter": "신종하",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p206",
@@ -4085,7 +5486,8 @@
     "title": "단일축 기하 변형에 따른 Schwarz-P TPMS의 대칭성 저하 및 방향성 탄성 밴드갭 특성",
     "authors": "김아린, 오일권(KAIST)",
     "presenter": "김아린",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p207",
@@ -4099,7 +5501,8 @@
     "title": "비무향 측정 환경에서의 개인화 HRTF 보정 방법론",
     "authors": "노희주, 한제헌(한국공학대)",
     "presenter": "노희주",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p208",
@@ -4113,7 +5516,8 @@
     "title": "1-3형 및 2-2형 압전 복합체의 결합 공진 모드에서 나타나는 방사 특성 분석",
     "authors": "강호석, 김진욱(경북대)",
     "presenter": "강호석",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p209",
@@ -4127,7 +5531,8 @@
     "title": "3차원 프린팅을 이용한 음향메타렌즈 결합형 소형 초음파 트랜스듀서 개발",
     "authors": "박해정, 김진욱(경북대)",
     "presenter": "박해정",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p210",
@@ -4141,7 +5546,8 @@
     "title": "A Multi-scale Simulation Approach for Analyzing Silk-based 193nm-EBL Photoresists",
     "authors": "김민지, 박우범, 나성수(고려대)",
     "presenter": "김민지",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p211",
@@ -4155,7 +5561,8 @@
     "title": "Magnetically Induced Zero-stiffness in NdFeB-filled H-PDMS Origami Structures",
     "authors": "김채환, 김재환, 공현우, 김민진(금오공과대)",
     "presenter": "김채환",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p212",
@@ -4169,7 +5576,8 @@
     "title": "Design of Multi-directional Quasi-zero stiffness Meta-structure for Ultra-Low Frequency Isolation",
     "authors": "이제무, 박정훈, 임홍석, 이승엽(서강대)",
     "presenter": "이제무",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p213",
@@ -4183,7 +5591,8 @@
     "title": "Beam-Based Quasi-zero Stiffness Structures for Torsional Low-Frequency Isolation",
     "authors": "박정훈, 이제무, 임홍석, 이승엽(서강대)",
     "presenter": "박정훈",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p214",
@@ -4197,7 +5606,8 @@
     "title": "PPO-Based Optimal Design of Zero Stiffness in a Cosine-Curved Dome with Variable-thickness for Vibration Isolation",
     "authors": "김동성, 임홍석, 이승엽(서강대)",
     "presenter": "김동성",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p215",
@@ -4211,7 +5621,8 @@
     "title": "Passive Gimbal Inspired By Bird Head Stabilization",
     "authors": "이승훈, 이준호, 이동민, 김기우(인하대)",
     "presenter": "이승훈",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p216",
@@ -4225,7 +5636,8 @@
     "title": "미세 누설 검출을 위한 시공간 영상 신호 전처리 기법",
     "authors": "박민규(충남대), 손기성, 전형섭(세안기술), 고윤호(충남대)",
     "presenter": "박민규",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p217",
@@ -4239,7 +5651,8 @@
     "title": "스트로보스코픽 영상 기반의 3차원 모션 측정을 활용한 운용 중 블레이드 상태진단 기법 개발",
     "authors": "이주원, 공예슬, 이승환, 정서현, 모태산, 박규해(전남대)",
     "presenter": "이주원",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p218",
@@ -4253,7 +5666,8 @@
     "title": "스마트폰 영상 기반 모터 베어링 고장진단",
     "authors": "신유정, 박용화, 이원준, 김정민, 김현준, 윤창규, 정원호(KAIST)",
     "presenter": "신유정",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p219",
@@ -4267,7 +5681,8 @@
     "title": "신축성 웨이브 구조 압전 회로의 전기 출력 특성 분석",
     "authors": "김경찬, 윤정훈(공주대)",
     "presenter": "김경찬",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p220",
@@ -4281,7 +5696,8 @@
     "title": "수변공원 음악 분수의 환경소음 마스킹 효과와 인지적 반응에 관한 연구",
     "authors": "김재현, 이병찬, 주윤현, 윤익상, 송형주(한국교통대)",
     "presenter": "김재현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p221",
@@ -4295,7 +5711,8 @@
     "title": "PPO를 활용한 단일 프로펠러 드론 제어",
     "authors": "김현민, 손정우(금오공과대)",
     "presenter": "김현민",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p222",
@@ -4309,7 +5726,8 @@
     "title": "음향 성분 특성을 반영한 단일 이미지 기반 RIR 추정",
     "authors": "최성민, 박용화, 최승덕, 최인한(KAIST)",
     "presenter": "최성민",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p223",
@@ -4323,7 +5741,8 @@
     "title": "운항 경로에 따른 UAM 소음의 모델링",
     "authors": "김준영(영산대), 전상은(부산대), 김용희(영산대), 김상호, 권준엽, 최다희, 류세아, 김하민(건국대)",
     "presenter": "김준영",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p224",
@@ -4337,7 +5756,8 @@
     "title": "첨단항공모빌리티 능동소음제어 연구를 위한 멀티콥터 축소기체 설계",
     "authors": "김요준, 손재혁, 장현우, 김세희, 유재관, 김중관(한서대)",
     "presenter": "김요준",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p225",
@@ -4351,7 +5771,8 @@
     "title": "방음벽 설계를 위한 투과 손실 기초 해석 연구",
     "authors": "박성현(인하대), 노희민(철도기술연)",
     "presenter": "박성현",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p226",
@@ -4365,7 +5786,8 @@
     "title": "단방향 클러치 기반 가변 편심 휠의 설계 및 활용",
     "authors": "최석민, 박수인, 손정우(금오공과대)",
     "presenter": "최석민",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p227",
@@ -4379,7 +5801,8 @@
     "title": "순환토사 혼입 재활용 플라스틱 완충재의 동탄성계수 저감을 위한 형상 최적화 연구",
     "authors": "최지원, 김민혁, 김재근, 김의열, 김호욱(인하대), 설창범, 김태훈(리젠티앤아이)",
     "presenter": "최지원",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p228",
@@ -4393,7 +5816,8 @@
     "title": "4절 링크 메커니즘을 적용한 이륜 휠-레그 로봇의 설계 및 균형 제어",
     "authors": "정해린, 손정우, 김희원, 조현성(금오공과대)",
     "presenter": "정해린",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p229",
@@ -4407,7 +5831,8 @@
     "title": "Accelerated Cooling Enabled by Nanostructured Graphene/PEDOT:PSS/TPU Electro-Thermal Composites",
     "authors": "원다민, 김권민, 김재환(금오공과대)",
     "presenter": "원다민",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p230",
@@ -4421,7 +5846,8 @@
     "title": "레이저 패턴된 이온성 고분자 액추에이터의 비대칭 구동을 이용한 솔방울 모사 생체모방 응용",
     "authors": "김정운, 조성준, 오승민, 김재환(금오공과대)",
     "presenter": "김정운",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p231",
@@ -4435,7 +5861,8 @@
     "title": "다중 볼트 체결 구조물의 볼트 풀림 위치 식별을 위한 주파수 응답 및 MS 유사성 함수 기반 해석적 연구",
     "authors": "김성윤, 윤승현, 김희준, 박병주, 한정삼(경국대)",
     "presenter": "김성윤",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p232",
@@ -4449,7 +5876,8 @@
     "title": "실내·외 소음 기준 충족 유형이 상이한 공동주택의 실내 심리음향 지표 비교 연구",
     "authors": "조형찬, 최문경, 장서일(서울시립대)",
     "presenter": "조형찬",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   },
   {
     "id": "poster-p233",
@@ -4463,6 +5891,7 @@
     "title": "공동주택 바닥충격음의 인접 세대 영향 범위 사례 연구",
     "authors": "한도훈, 김명준, 김신태, 윤태경(서울시립대)",
     "presenter": "한도훈",
-    "hasAbstract": false
+    "hasAbstract": false,
+    "keywords": []
   }
 ]

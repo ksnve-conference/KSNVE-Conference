@@ -6,7 +6,7 @@ export const metadata = { title: '행사개요' };
 export default function ConferenceOverviewPage() {
   const { overview } = info;
   return (
-    <InfoPage kicker="CONFERENCE OVERVIEW" title="행사개요" intro={overview.intro}>
+    <InfoPage title="행사개요" intro={overview.intro}>
       <dl className="info-table">
         {overview.rows.map((row) => (
           <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>

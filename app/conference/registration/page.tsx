@@ -7,7 +7,7 @@ export const metadata = { title: '등록안내' };
 export default function RegistrationGuidePage() {
   const { registration } = info;
   return (
-    <InfoPage kicker="REGISTRATION" title="등록안내" intro={registration.intro}>
+    <InfoPage title="등록안내" intro={registration.intro}>
       <div className="info-cards">
         {registration.steps.map((s, i) => (
           <article key={s.title}><span className="info-step">{i + 1}</span><b>{s.title}</b><p>{s.desc}</p></article>

@@ -31,10 +31,12 @@
   --type-section:17px;
   --type-card:18px;
   --type-body:15px;
+  --type-read:17px;
   --type-meta:13px;
   --type-caption:12px;
   --type-small:12px;
   --leading-body:1.62;
+  --leading-read:1.78;
   --leading-tight:1.22;
 
   /* radius scale — three steps, no more */
@@ -144,6 +146,43 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 
 /* ---------- program block on the agenda screen ---------- */
 .program-block{ margin-top:26px; }
+
+/* ---------- time-slot grid: every hall running at once, one row each ---------- */
+.program-timeline{ display:flex; flex-direction:column; gap:16px; }
+.time-slot-group{ display:flex; flex-direction:column; gap:8px; }
+.time-slot-heading{ display:flex; align-items:baseline; gap:6px; margin:0 3px; }
+.time-slot-heading b{ font-size:var(--type-card); font-weight:800; color:var(--text); font-variant-numeric:tabular-nums; }
+.time-slot-heading > span{ font-size:var(--type-meta); color:var(--muted); font-variant-numeric:tabular-nums; }
+.time-slot-heading em{
+  margin-left:auto; font-style:normal; font-size:var(--type-caption); font-weight:700;
+  color:var(--tint-ink); background:var(--tint); padding:3px 9px; border-radius:var(--r-pill);
+}
+.time-slot-rows{
+  overflow:hidden; border:1px solid var(--line); border-radius:var(--r-md);
+  background:var(--card); box-shadow:var(--shadow);
+}
+.time-slot-row{
+  display:flex; align-items:center; gap:6px;
+  padding:9px 8px 9px 12px; border-bottom:1px solid var(--line-soft);
+}
+.time-slot-row:last-child{ border-bottom:0; }
+.time-slot-row.mine{ background:var(--tint); }
+.time-slot-row-link{ display:flex; align-items:center; gap:10px; min-width:0; flex:1; }
+.time-slot-hall{
+  flex:none; max-width:78px; padding:5px 6px; border-radius:var(--r-sm);
+  background:var(--tint); color:var(--tint-ink); font-size:10px; font-weight:800;
+  text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.time-slot-info{ min-width:0; }
+.time-slot-info b{
+  display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:var(--type-meta); font-weight:700; color:var(--text);
+}
+.time-slot-info small{
+  display:block; margin-top:1px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:var(--type-caption); color:var(--muted);
+}
+.time-slot-row .star{ position:static; flex:none; width:36px; height:36px; }
 
 /* ---------- more menu ---------- */
 .more-menu a > span{ display:grid; place-items:center; color:var(--brand); }
@@ -277,7 +316,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .pdf-cta b{ display:block; font-size:var(--type-body); font-weight:700; }
 .pdf-cta small{ display:block; margin-top:2px; font-size:var(--type-caption); opacity:.8; }
 
-.abstract-text{ font-size:var(--type-body); line-height:1.78; color:var(--text-2); word-break:keep-all; }
+.abstract-text{ font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
 .abstract-empty{ font-size:var(--type-meta); color:var(--muted); }
 .extraction-note{
   display:flex; align-items:flex-start; gap:7px;
@@ -288,6 +327,24 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .keyword-chip{
   padding:6px 11px; border-radius:var(--r-pill); background:var(--tint); color:var(--tint-ink);
   font-size:var(--type-caption); font-weight:600;
+}
+
+/* ---------- prev/next paper within the same session ---------- */
+.paper-siblings{
+  display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px;
+}
+.paper-sibling{
+  display:flex; align-items:center; gap:8px; min-width:0;
+  padding:13px 14px; border:1px solid var(--line); border-radius:var(--r-md);
+  background:var(--card); color:var(--text-2);
+}
+.paper-sibling.next{ justify-content:flex-end; text-align:right; }
+.paper-sibling > svg{ flex:none; color:var(--muted); }
+.paper-sibling div{ min-width:0; }
+.paper-sibling small{ display:block; font-size:var(--type-caption); color:var(--muted); }
+.paper-sibling b{
+  display:block; margin-top:2px; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; font-size:var(--type-meta); font-weight:700; color:var(--text);
 }
 
 /* ---------- notification card icons ---------- */

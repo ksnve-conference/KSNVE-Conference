@@ -32,7 +32,6 @@ export default function VenueLayoutPage() {
       <AppHeader compact />
       <BackLink fallback="/more" label="더보기" />
       <div className="venue-guide-heading">
-        <span className="kicker">VENUE GUIDE</span>
         <h1>행사장 배치도</h1>
         <p>층별 배치도를 확대해서 확인하고 발표장을 선택하세요.</p>
       </div>
