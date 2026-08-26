@@ -11,8 +11,10 @@
   <time>09:30~09:45</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>서윤호(기계연)</chair>
-  <abstract>Transfer Matrix 실해역 운용 중인 선박에서 수중방사소음(0804)을 실시간으로 예측하는 AS 선박 소음 관리 측면에서 a 우 중요하나, 실용적으로는 여전히 해결되지 않은 난제이다. 통상적인 해상 시운전 조건에서는 선체에 소수 의 가속도계만 고정 설치가 가능하며, 수중 음압의 광대역 측정은 사실상 불가능하다. 순수 수치해석 기반 접근법은 감쇠 특성 및 경계조건의 불왁실성으로 인해 관심 주과수가 높아질수록 오차가 누적되는 한계가 있으며, 순수 데이터 기반 방법은 제한된 운전조건에서 계측한 극소수의 데이터만 활용할 수 있어 신뢰도가 떨어지며 센서가 설치된 지점 외의 위치에서의 값을 추정하기는 어렵다. 본 연구에서는 System Equivalent Model Mixing(SEMM)2] remove-and-replace 개념을 부분적으로 차용하여, 목업 실험에서 측정 가능한 PRE 부분행렬만을 활용하는 해석-실혐 용합 모델 보정 기법을 제안한다. 수치해석 Bae] 전체 구조 FRE 행렬로부터 변환행렬을 구성하고, 계측 DOF 에서의 해석-실혐 오차를 전체 DOF = 확장 보정함으로써 용합 (hybrid) 구조 FRF 행렬을 구축하였다. 이를 통해 소수의 선체 진동 센서 계측값만으로 URN 을 실시간 추 정하는 예측 체계를 제안한다. 제안 기법의 유효성은 목업 구조물의 FE 2A 및 광대역 가진 실험 데이터를 이용하여 검중하였으며, 구조 FRE 보정을 통해 해석과 실험의 불일치가 현저히 감소됨을 확인하였다. 또한 계측에 사용되지 않은 DOF AAS 블라인드 센서 비교를 통해 보정 모델의 공간 At 성능을 검중하였다. t# 교신저자; 한국기계연구원</abstract>
+  <abstract>실해역 운용 중인 선박에서 수중방사소음(|yuP을 실시간으로 예측하는 것은 선박 소음 관리 측면에서 매 우 중요하나, 실용적으로는 여전히 해결되지 않은 난제이다. 통상적인 해상 시운전 조건에서는 선체에 소수 의 가속도계만 고정 설치가 가능하며, 수중 음압의 광대역 측정은 사실상 불가능하다. 순수 수치해석 기반 접근법은 감쇠 특성 및 경계조건의 불확실성으로 인해 관심 주파수가 높아질수록 오차가 누적되는 한계가 있으며, 순수 데이터 기반 방법은 제한된 운전조건에서 계측한 극소수의 데이터만 활용할 수 있어 신뢰도가 떨어지며 센서가 설치된 지점 외의 위치에서의 값을 추정하기는 어렵다. 본 연구에서는 z stem Equivalent Model Mixing(SEMM)의 remove-and-replace 개념을 부분적으로 차용하여, 목업 실험에서 측정 가능한 mymG 부분행렬만을 활용하는 해석-실험 융합 모델 보정 기법을 제안한다. 수치해석 모델의 전체 구조 mymG 행렬로부터 변환행렬을 구성하고, 계측 kvm 에서의 해석-실험 오차를 전체 kvm 로 확장 보정함으로써 융합 (h brid) 구조 mymG 행렬을 구축하였다. 이를 통해 소수의 선체 진동 센서 계측값만으로 |yu 을 실시간 추 정하는 예측 체계를 제안한다. 제안 기법의 유효성은 목업 구조물의 mlG 모델 및 광대역 가진 실험 데이터를 이용하여 검증하였으며, 구조 mymG 보정을 통해 해석과 실험의 불일치가 현저히 감소됨을 확인하였다. 또한 계측에 사용되지 않은 kvm 에서의 블라인드 센서 비교를 통해 보정 모델의 공간 외삽 성능을 검증하였다. G ˋ JG 교신저자bG 한국기계연구원 lTagUU Q 한국기계연구원</abstract>
   <source_page>127</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.728</extraction_quality>
   <pageImage>/paper-pages/p054.webp</pageImage>
   <affiliations>
     <affiliation>기계연</affiliation>
@@ -21,6 +23,6 @@
     <keyword>Underwater Radiated Noise(URN)</keyword>
     <keyword>Hybrid Numerical-Experimental Model</keyword>
     <keyword>FRF Correction</keyword>
-    <keyword>Structural-Acoustic</keyword>
+    <keyword>Structural-Acoustic Transfer Matrix</keyword>
   </keywords>
 </paper>

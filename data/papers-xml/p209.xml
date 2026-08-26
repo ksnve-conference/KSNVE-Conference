@@ -11,16 +11,20 @@
   <time>09:25~09:40</time>
   <venue>사파이어홀[1]</venue>
   <chair>이혁(기계연)</chair>
-  <abstract>Feature Vector(S 4 벡터 ), Condition Index(7t 태지 표) 회전 설비의 상태 감시 및 진단을 위해 진동 신호로부터 유효한 특징을 주출하고 이를 머신러닝 모델에 학습시켜 AIS 분류하는 연구가 활발히 이루어지고 있다. 현재, 회전 설비 Ada 격응되는 특징 기반 머 신러닝은 원신호로부터 2686, RMS, Kurtosis 등과 같은 형상적 통계적 Sas 사용한다. 하지만 이러한 지 EE ado] 특성을 반영하고 있지 않으며, 다른 결함이더라도 Sage] 유사하게 나타나 분류가 되지 않을 수 있다. 또한, 형상적 통계적 Se Peake] 영향을 크게 받고, 설비 진단 전문가가 진단 시 사용하는 지표 에는 Time wave, FFT Spectrum, Orbit 등 물리적인 의미가 있는 지표를 사용한다. 따라서, 설비 진단 전문 가가 사용하는 특징을 개발하면 분류된 결과로 직관적인 평가가 가능하다. Bate 산업 현장의 진동 데이터를 특징 기반 머신러닝의 분류 결과와 앞서 말한 전문가들이 Adal 사용하는 지표들을 활용한 회전체 전용 상태 지표(2000110ㅁ 1006%)를 사용하여 분류한 ARS 비교하였다. 기존 형상적 통계적 특징 기반 머신러녕과 비교한 결과, Condition Index 기반 머신러닝은 결함 유형 간 경 계가 보다 명왁하게 형성되어 분류성능이 향상되었으며, 운전 조건 변화가 존재하는 환경에서도 향상된 분 류성능을 나타내었다. 또한, 진단 결과가 단순 분류가 아닌 물리 현상과 연결되어 해석 가능하다는 점에서, 산업 현장에서 요구되는 신뢰성 높은 진단 기술로 활용될 수 있을 것으로 사료된다. = 네가 . 솔비 더어터 AD ae 데이터 전처리 특징 계산 주기, ae, 진쪽/메너제 크기, 출격 발생 ae 등 (Data preprocessing) 1 ¥ (Feature Calculation) !</abstract>
+  <abstract>회전 설비의 상태 감시 및 진단을 위해 진동 신호로부터 유효한 특징을 추출하고 이를 머신러닝 모델에 학습시켜 결함을 분류하는 연구가 활발히 이루어지고 있다. 현재, 회전 설비 진단에 적용되는 특징 기반 머 신러닝은 원신호로부터 268, #49, 00051 등과 같은 형상적 통계적 특징을 사용한다. 하지만 이러한 지 표는 결함의 특성을 반영하고 있지 않으며, 다른 결함이더라도 특징값이 유사하게 나타나 분류가 되지 않을 수 있다. 또한, 형상적 통계적 특징은 06#의 영향을 크게 받고, 설비 진단 전문가가 진단 시 사용하는 지표 에는 1106 wave, FFT Spectrum, Orbit 등 물리적인 의미가 있는 지표를 사용한다. 따라서, 설비 진단 전문 가가 사용하는 특징을 개발하면 분류된 결과로 직관적인 평가가 가능하다. 본 연구는 산업 현장의 진동 데이터를 특징 기반 머신러닝의 분류 결과와 앞서 말한 전문가들이 진단에 사용하는 지표들을 활용한 회전체 전용 상태 지표(20001400ㅁ 1006%)를 사용하여 분류한 결과를 비교하였다. 기존 형상적 통계적 특징 기반 머신러닝과 비교한 결과, 0000140ㅁ 1006 기반 머신러닝은 결함 유형 간 A 계가 보다 명확하게 형성되어 분류성능이 향상되었으며, 운전 조건 변화가 존재하는 환경에서도 향상된 분 류성능을 나타내었다. 또한, 진단 결과가 단순 분류가 아닌 몰리 현상과 연결되어 해석 가능하다는 점에서, 산업 현장에서 요구되는 신뢰성 높은 진단 기술로 활용될 수 있을 것으로 사료된다. ： ii 1 i lof m&gt; ! 실비 데이터 | (유형 및 상태별) 데이터 전처리 특징 계산 : = 주기, 위상, 진폭/마너지 크기, 충격 발생 유무 등 (Data preprocessing) (Feature Calculation) ! Eth님 = AN}, TH, spike energy, Side band 등 개 A = = ~~ | ih Hd | 아쓰 es</abstract>
   <source_page>317</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.643</extraction_quality>
   <pageImage>/paper-pages/p209.webp</pageImage>
   <affiliations>
     <affiliation>경상국립대</affiliation>
     <affiliation>다비스</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Rotary Machinery(3] 전 설비)</keyword>
-    <keyword>Fault 818081(결 함 신 호)</keyword>
-    <keyword>Machine Learning( 4] Alaa)</keyword>
+    <keyword>Rotary Machinery(3] 41 #14])</keyword>
+    <keyword>Fault Signal(4@@ 41)</keyword>
+    <keyword>Machine Learning(®] 4! 2] ‘2)</keyword>
+    <keyword>Feature Vector(=% “E))</keyword>
+    <keyword>Condition Index(7 EH %] 34)</keyword>
   </keywords>
 </paper>

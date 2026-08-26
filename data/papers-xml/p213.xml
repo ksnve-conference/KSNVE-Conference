@@ -11,15 +11,17 @@
   <time>08:55~09:10</time>
   <venue>사파이어홀[2]</venue>
   <chair>박진성(성균관대)</chair>
-  <abstract>수계 환경에서의 중금속 오염은 생태계와 인체 건강에 심각한 AHS 미치므로, 현장에서 신속하고 민감하 Al 검출할 수 있는 센서 기술의 개발이 중요하다. 본 연구에서는 Ph” 및 00?&quot; 검출을 위해 진동 장치를 a 합한 휴대용 전기화학 센싱 플랫폼을 개발하였다. 제안된 시스템은 Nafion/SA-WYAPE 나노플레이트 (Nafion/G- BINP)= 기능화된 스크린 프린팅 탄소 전극과 진동 Hols Sisto 물질 전달을 향상시키고 검출 성능을 개선하였다. 진동에 의해 유도된 시료 교반은 전극 표면으로의 확산을 촉진하여 스트리핑 전류 신호를 크게 중가시켰으며, 바라와 Cato] 검출 신호가 각각 약 540%와 511% 향상되었다. 최적 조건에서 센서는 11싸와 (:0파에 대해 각각 0.98 nM 및 1.65 nM 의 낮은 검출한계를 보였으며, 실제 환경 시료(음용수, 토양, 혈청 및 낙동강 시료)에서도 우수한 검출 성능을 확인하였다. 본 연구의 진동 기반 휴대용 전기화학 센 서는 중금속을 현장에서 신속하게 분석할 수 We point-of-use 분석 플랫폼으로 활용될 수 있다.</abstract>
+  <abstract>수계 환경에서의 중금속 오염은 생태계와 인체 건강에 심각한 영향을 미치므로, 현장에서 신속하고 민감하 게 검출할 수 있는 센서 기술의 개발이 중요하다. 본 연구에서는 Pb2+ 및 Cd2+ 검출을 위해 진동 장치를 결 합한 휴대용 전기화학 센싱 플랫폼을 개발하였다. 제안된 시스템은 Nafion/흑연-비스무트 나노플레이트 (Nafion/Gˀ BiNP)로 기능화된 스크린 프린팅 탄소 전극과 진동 유닛을 통합하여 물질 전달을 향상시키고 검출 성능을 개선하였다. 진동에 의해 유도된 시료 교반은 전극 표면으로의 확산을 촉진하여 스트리핑 전류 신호를 크게 증가시켰으며, Pb¸긤와 Cd¸긤의 검출 신호가 각각 약 540%와 511% 향상되었다. 최적 조건에서 센서는 Pb¸긤와 Cd¸긤에 대해 각각 0.98 nM 및 1.65 nM 의 낮은 검출한계를 보였으며, 실제 환경 시료(음용수, 토양, 혈청 및 낙동강 시료)에서도 우수한 검출 성능을 확인하였다. 본 연구의 진동 기반 휴대용 전기화학 센 서는 중금속을 현장에서 신속하게 분석할 수 있는 point-of-use 분석 플랫폼으로 활용될 수 있다.</abstract>
   <source_page>321</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.69</extraction_quality>
   <pageImage>/paper-pages/p213.webp</pageImage>
   <affiliations>
     <affiliation>성균관대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Vibration(4l-&amp;)</keyword>
-    <keyword>Heavy metal ions(@H 이온)</keyword>
-    <keyword>Portable electrochemical sensors(F-tH&amp; 전기화학젠서)</keyword>
+    <keyword>Vibration(진동)</keyword>
+    <keyword>Heavy metal ions(중금속 이온)</keyword>
+    <keyword>Portable electrochemical sensors(휴대용 전기화학센서)</keyword>
   </keywords>
 </paper>

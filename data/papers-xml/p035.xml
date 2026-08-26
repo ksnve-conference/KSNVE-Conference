@@ -11,16 +11,19 @@
   <time>16:15~16:30</time>
   <venue>릴리홀[1]</venue>
   <chair>전종훈(항공우주연)</chair>
-  <abstract>diagnosis(31%4-21 G4), deep 1680008(심충학습). Bate 주행 안정성과 차량 유지관리 SSS 향상시키기 위해 복합 센서를 적용한 지능형 타이어 시스 템을 제안한다. 교통사고 사례 분석 결과, 전체 사고 중 약 10%가 타이어 관련 문제에서 기인하는 것으로 나타나 타이어 상태 관리의 중요성이 더욱 부각되고 있다. 기존의 시간 및 주파수 영역 기반 분석 기법은 결 함 탐지에 활용될 수 있으나, 인공지능 기반 접근법과 비교할 때 성등 측면에서 한계를 보인다. 이를 개선하 기 위해 본 연구에서는 Pads 활용한 타이어 결함 진단 기법을 개발하였다. 타이어 트레드 중앙부에 3 축 가속도 AAS 설치하고, 벨트 및 비드 분리 등 다양한 결함 조건을 모사하여 학습 및 검중을 위한 데이터를 구성하였다. 제안 방법은 병렬 구조의 1 차원 ga 신경망을 기반으로 하며, 다중 스케일 특징을 효과적으 로 통합하고 적응적 가중치 적용을 통해 결함 식별 ASS 향상시키도록 설계되었다. 실험 결과, 제안된 모 델은 높은 tee] 진단 정확도를 나타냈으며, 다양한 결함 유형을 안정적으로 구분할 수 있음을 확인하였다. 또한, 시각화 분석을 통해 각 결함 상태 tat 군집 형성이 이루어짐을 확인하였다. 본 연구는 타이어 결함 진단 기술의 TEs 기여할 수 있는 방법을 제시하며, 궁극적으로 차량의 안전성과 운용 신뢰성 향상 에 기여할 것으로 기대된다.</abstract>
+  <abstract>본 연구는 주행 안정성과 차량 유지관리 효율을 향상시키기 위해 복합 센서를 적용한 지능형 타이어 시스 템을 제안한다. 교통사고 사례 분석 결과, 전체 사고 중 약 XWL가 타이어 관련 문제에서 기인하는 것으로 나타나 타이어 상태 관리의 중요성이 더욱 부각되고 있다. 기존의 시간 및 주파수 영역 기반 분석 기법은 결 함 탐지에 활용될 수 있으나, 인공지능 기반 접근법과 비교할 때 성능 측면에서 한계를 보인다. 이를 개선하 기 위해 본 연구에서는 딥러닝을 활용한 타이어 결함 진단 기법을 개발하였다. 타이어 트레드 중앙부에 3 축 가속도 센서를 설치하고, 벨트 및 비드 분리 등 다양한 결함 조건을 모사하여 학습 및 검증을 위한 데이터를 구성하였다. 제안 방법은 병렬 구조의 1 차원 합성곱 신경망을 기반으로 하며, 다중 스케일 특징을 효과적으 로 통합하고 적응적 가중치 적용을 통해 결함 식별 성능을 향상시키도록 설계되었다. 실험 결과, 제안된 모 델은 높은 수준의 진단 정확도를 나타냈으며, 다양한 결함 유형을 안정적으로 구분할 수 있음을 확인하였다. 또한, 시각화 분석을 통해 각 결함 상태 간 뚜렷한 군집 형성이 이루어짐을 확인하였다. 본 연구는 타이어 결함 진단 기술의 고도화에 기여할 수 있는 방법을 제시하며, 궁극적으로 차량의 안전성과 운용 신뢰성 향상 에 기여할 것으로 기대된다. 篊 匶 {GGGG GGpjvylGGGGt GGzGGpj{OuXWY]WWWYPSG GGpGzG{ GkGwGG GGohurvvrG{pylGjvUGsUG ˋG박용화bG 한국과학기술원 기계공학과 lTaG gUU JG 김준호bG 한국과학기술원 기계공학과 QG 김민태&gt;# 한국과학기술원# 기계공학과 QQG G 정수연&gt;# 한국과학기술원# 기계공학과 QQQG 한동규&gt;# 한국과학기술원# 기계공학과#</abstract>
   <source_page>108</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.632</extraction_quality>
   <pageImage>/paper-pages/p035.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Intelligent tire(@] 22] = 타이어)</keyword>
-    <keyword>health monitoring(714179 모니터링)</keyword>
-    <keyword>Vibration 80815918(진동분석)</keyword>
-    <keyword>Fault</keyword>
+    <keyword>Intelligent tire(인텔리전트 타이어)</keyword>
+    <keyword>health monitoring(건전성 모니터링)</keyword>
+    <keyword>Vibration analysis(진동분석)</keyword>
+    <keyword>Fault diagnosis(고장진단)</keyword>
+    <keyword>deep learning(심층학습)</keyword>
   </keywords>
 </paper>

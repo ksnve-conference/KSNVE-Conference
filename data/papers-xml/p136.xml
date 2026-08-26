@@ -11,14 +11,17 @@
   <time>13:55~14:10</time>
   <venue>사파이어홀[1]</venue>
   <chair>이경태(부전전자)</chair>
-  <abstract>최근 비접족식 헬스케어 모니터링 수요가 급중함에 따라 원격 광용적맥파(280) 연구가 활발히 진행되고 있으나, 기존의 RGBUY AACR) 카메라 기반 BAS 외부 광원 변화나 퍼험자의 움직임 등 환경 요인에 민감하다는 단접이 존재한다. 본 논문은 이러한 문제를 해결하기 위해 Time-of-Flight(ToF) 카메라가 제공하 는 Z°|(Depth) 정보와 AMAR) 세기 ASS 동시에 활용하는 새로운 심박수 추정 시스템을 제안한다. 제 안한 시스템의 BAS 3D CNN 기반인 PhysNetS 변형하였으며, 핵심적으로 깊이 기반 어텐션 모듈 (Depth-guided Attention 14460016)과 다중 시간 스케일 융합 모듈(\0414-606816 Temporal Fusion Module) 포함한다. 깊이 기반 어텐션 모듈은 10 카메라로 취득한 얼굴의 3차원 데이터를 분석해 코와 입 주변처럼 생체 신호가 강하게 나타나는 영역을 선택적으로 강조시켜 효과적인 특징 see] 기여한다. 또한 다중 시간 스케일 융합 모듈은 짧은 스케일과 긴 스케일의 커널을 병렬로 배치하여 심박 신호 특유의 주기성을 포착하 고 보존하는 역할을 수행한다. 연구진이 25~40세 성인 14명을 대상으로 직접 See 데이터셋으로 검중한 결과, 제안한 BAS 최신 PPG 모델보다 15% 낮은 2.53600의 심박수 평균 절대 오차.4^8)와 0.87의 높 은 286 신호의 피어슨 상관계수를 기록하며 그 우수성을 중명하였다. 결론적으로 본 연구는 Tor 카메라의 멀티모달 특성을 활응해 조명 변화가 심한 극한 환경에서도 강건한 심박수 추정이 가능함을 왁인하였으며, 제안한 모들들이 다양한 모델 구조에 da 동합될 수 있다는 실용적 이점을 지닌다. [3D CNN architecture (PhysNet | i 1 1 Multi-scale 2. &gt; { eee ++ Temporal Fusion pei, = | ! Module 나 £ =, 는 3D Conv! “+. PPG signal 은 Gee Layer moesc na pannnnnt | 제 개 Alignment a = Long-scale &gt; &gt; eee [Ke 해 Conv Block Channel-wise 1, 4 f Concatenation i a ention may Short-scal Depth video clip PEL Na 아느 『 Giana Depth-guided Attention Module Multi-scale Temporal Fusion Module</abstract>
+  <abstract>최근 비접촉식 헨스케어 모니터링 수요가 급증함에 따라 윈격 광용적맥파(000) 연구가 활발히 진행되고 있으나, 기존의 &amp;028나 적외선(#) 카메라 기반 방식은 외부 광원 변화나 피험자의 움직임 등 환경 요인에 민감하다는 단점이 존재한다. 본 논문은 이러한 문제를 해결하기 위해 71016-01-011841((101) 카메라가 제공하 는 깊이(06000 정보와 적외선08) 세기 영상을 동시에 활용하는 새로운 심박수 추정 시스템을 제안한다. 제 안한 AlARS) Bae 3D CNN 기반인 『?159써하을 변형하였으며, 핵심적으로 깊이 기반 어텐션 모듈 0206001-841060 ㅅㅁ60000 1400416)과 다중 시간 스케일 융합 모듈(4410-80816 760000181 『4810ㅁ 1400416)을 포함한다. 깊이 기반 어텐션 모듈은 768 카메라로 취득한 얼굴의 3차원 데이터를 분석해 코와 입 주변처럼 생체 신호가 강하게 나타나는 영역을 선택적으로 강조시켜 효과적인 특징 추출에 기여한다. 또한 다중 시간 스케일 융합 모듈은 짧은 스케일과 긴 스케일의 커널을 병릴로 배치하여 심박 신호 특유의 주기성을 포착하 고 보존하는 역할을 수행한다. 연구진이 25~40세 성인 14명을 대상으로 직접 구축한 데이터셋으로 검증한 결과, 제안한 모델은 최신 PPG BAU 15% HS 2.53bpme] Be Wat Ad] 2 zWMAE)S$} 0.872] 높 은 2820 신호의 피어슨 상관계수를 기록하며 그 우수성을 증명하였다. 결론적으로 본 연구는 10 카메라의 멀티모달 특성을 활용해 조명 변화가 심한 극한 환경에서도 강건한 심박수 추정이 가능함을 확인하였으며, 제안한 모듈들이 다양한 모델 구조에 쉽게 통합될 수 있다는 실용적 이점을 지닌다. [3D CNN architecture (PhysNet) | I ㅣ 래 | 4 | Multi-scale &gt; &gt; 1 eee | ; Temporal Fusion 66 해 ! | Module 33 £ 1 Oo, 3D Conv! ~. PPG signal IR video clip a IRface video! 30 0000 81005 Block | ! me 2 | with kernel (ki x ki, x kd) (Head) 1 \ me 은 노는 Layer 나 900 “See a Alignment ee 년 ( Long-scale &gt; &gt; eee [Kk Conv Block Channel-wise \ 7 is 『 ~ 4 Concatenation , 7 Depth face image Watched Dr Conv Blocks Attention map ee Depth video clip with kernel (ic, x i.) Conv Bloc! Depth-guided Attention Module Multi-scale Temporal Fusion Module</abstract>
   <source_page>244</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.616</extraction_quality>
   <pageImage>/paper-pages/p136.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Remote ?80(원격 광용적맥파)。 Heart rate estimation( 4 2} 추정 )</keyword>
-    <keyword>ToF Camera(ToF 카메라).</keyword>
+    <keyword>Remote PPG(@14 2-24] 43})</keyword>
+    <keyword>Heart rate estimation(?!¥#} 4=41)</keyword>
+    <keyword>ToF Camera(ToF 7+] &lt;})</keyword>
   </keywords>
 </paper>

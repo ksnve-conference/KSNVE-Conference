@@ -11,16 +11,14 @@
   <time>10:40~10:55</time>
   <venue>사파이어홀[1]</venue>
   <chair>이수목(삼우ANC)</chair>
-  <abstract>기어는 부적절한 작동조건, 재질 결함, 제작 오차 등 많은 이유로 이에 크랙이 발생할 + 있다. aye 기 어 형상과 기어에 가해지는 토크에 따라 이 뿌리를 따라 혹은 YS 따라 전파된다. 크랙의 전파 방향은 일반 적으로 크랙 끝단의 응력 강도 Alf(crack tip stress intensity factors: SF 의해 결정된다. 이는 크랙 전 sho] 따라 맞물림 강성을 변화시켜 충격 및 고주파 소음과 같은 비정상적인 진동을 유발할 수 있다. 기어의 잔여 수명을 예측하고 기어의 상태 진단을 위해서 크랙 전파에 의한 기어의 진동을 예측하는 것이 중요하다. 그러므로 이 연구에서는 상태 진단을 위해 크랙 전파에 따른 스퍼 기어의 진동을 예측한다. 진동 예측를 위하여 스퍼기어의 맞물림 강성의 해석이 필요하며, 에너지 법에 의한 해석적인 방법을 사용 한다. 이를 위해 기어에 작용하는 이 지지부 기초에너지, Her, 급힘, 압축, 전단 탄성 에너지를 이용하여, 기어의 인벌류트와 필렛부의 트로코이드 곡선의 매개 함수를 사용하여 크랙전파에 따른 기어의 시변 강성 (Time- varying mesh stiffness)S 해석한다. Fig. 1 은 60% SA] 있는 이의 AW 강성의 ASS 보인다. 이러한 크랙 전파에 따른 맞물림 강성을 사용하며 기어를 1 자유도계 운동방정식으로 모델링하여 Newmark beta 법에 의해 진동을 해석한다. 모율=2.25, 공구압력각=17.5“, 구동기어 잇수=48, 피동기어 잇수=50 인 표준 스퍼 기어의 크랙이 없는 기어와 크랙 전파 20%, 40%, 60%가 되는 기어의 AA 강성으로 30 rpm, &apos; 300 rpm, 3000 rpm ] 대해 동적 맞물림 힘과 as 변위를 해석하였다. 그 결과, 크랙이 20%, 40%, 60%로 중가할 수록 SA] 있는 치의 그 동적 변위와 Gol 중가하였고, rpm 이 중가할 $5 수록 크랙 전과 거리에 관계없이 동적 맞물림 을 힘이 중가하였다. = 15 | 1 0 20 40 60 80 Rotation angle (°)</abstract>
+  <abstract>상태진단을 위한 크랙 전파에 의한 스퍼 기어의 진동특성 Vibration characteristics of spur gears due to crack propagation for condition PRQLWRULQJ 박찬일귕پ귖ನ Chan Il Park .H\:RUGV FRQGLWLRQPRQLWRULQJ 상태진단 FUDFNSURSDJDWLRQ 크랙전파 VSXUJHDUV 스퍼기어 YLEUDWLRQ 진동  기어는 부적절한 작동조건, 재질 결함, 제작 오차 등 많은 이유로 이에 크랙이 발생할 수 있다. 크랙은 기 어 형상과 기어에 가해지는 토크에 따라 이 뿌리를 따라 혹은 림을 따라 전파된다. 크랙의 전파 방향은 일반 적으로 크랙 끝단의 응력 강도 계수(crack tip stress intensit G factors: zpmP에 의해 결정된다. 이는 크랙 전 파에 따라 맞물림 강성을 변화시켜 충격 및 고주파 소음과 같은 비정상적인 진동을 유발할 수 있다. 기어의 잔여 수명을 예측하고 기어의 상태 진단을 위해서 크랙 전파에 의한 기어의 진동을 예측하는 것이 중요하다. 그러므로 이 연구에서는 상태 진단을 위해 크랙 전파에 따른 스퍼 기어의 진동을 예측한다. 진동 예측를 위하여 스퍼기어의 맞물림 강성의 해석이 필요하며, 에너지 법에 의한 해석적인 방법을 사용 한다. 이를 위해 기어에 작용하는 이 지지부 기초에너지, Hertz, 굽힘, 압축, 전단 탄성 에너지를 이용하여, 기어의 인벌류트와 필렛부의 트로코이드 곡선의 매개 함수를 사용하여 크랙전파에 따른 기어의 시변 강성 (Time- var ing mesh stiffness)을 해석한다. Fig. 1 은 60% 크랙이 있는 이의 시변 강성의 변동을 보인다. 이러한 크랙 전파에 따른 맞물림 강성을 사용하며 기어를 1 자유도계 운동방정식으로 모델링하여 Newmark beta 법에 의해 진동을 해석한다. 모듈=2.25, 공구압력각=17.5¶, 구동기어 잇수=48, 피동기어 잇수=50 인 표준 스퍼 기어의 크랙이 없는 기어와 크랙 전파 20%, 40%, 60%가 되는 기어의 시변 강성으로 30 rpm, 300 rpm, 3000 rpm 에 대해 동적 맞물림 힘과 변위를 해석하였다. 그 결과, 크랙이 20%, 40%, 60%로 증가할 수록 크랙이 있는 치의 동적 변위와 힘이 증가하였고, rpm 이 증가할 수록 크랙 전파 거리에 관계없이 동적 맞물림 힘이 증가하였다.</abstract>
   <source_page>386</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.622</extraction_quality>
   <pageImage>/paper-pages/p244.webp</pageImage>
   <affiliations>
     <affiliation>강원대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>condition monitoring(’2 4] 2) @)</keyword>
-    <keyword>crack propagation (4. #4 41 5})</keyword>
-    <keyword>spur gears(2+ 5] 7] I)</keyword>
-    <keyword>vibration(4]-&amp;)</keyword>
   </keywords>
 </paper>

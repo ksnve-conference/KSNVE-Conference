@@ -11,16 +11,18 @@
   <time>11:10~11:25</time>
   <venue>릴리홀[1]</venue>
   <chair>문소연(하만)</chair>
-  <abstract>연산자 네트워크) 기존 차량 개발에서는 주로 1 열 시트 중심으로 운전자의 승차감 Aes 확보해 왔으나, 최근에는 승객 컴 포트 확보 요구가 중가함에 따라 2 열 시트 컴포트의 중요성이 커지고 있다. 특히 2 열 AEE 후륜계와 인 접하여 노면 가진의 영향을 1 열 시트보다 직접적으로 받을 가능성이 크다. 따라서 2 열 시트 컴포트 AAS 위해서는 실제 주행 중 노면 가진이 24 시트 응답으로 전달되는 특성을 규명하는 시스템 분석이 필요하다. 본 연구에서는 실제 주행 조건에서의 진동 전달 특성을 분석하기 위하여 Operational transfer path analysis (077&amp;)를 적용하였다. OTPA 는 전달함수 SAIS 위한 별도의 실험 없이, 실제 주행 상태에서 계 측된 입력 및 응답 신호로부터 경로별 기여도를 추정할 수 있으므로 차량과 같은 복잡한 기계 시스템의 전 달경로 분석에 적합하다. 그러나 다수의 입력에 서로 높은 상관성이 존재하는 경우 Crosstalk 가 필연적으로 발생하며, 이로 인해 전달경로 추정의 신뢰성이 저하될 수 있다. 이러한 문제를 완화하기 위해 Singular value decomposition (SVD) 또는 Principal component analysis (PCA) 기반의 차원 축소가 널리 사용되지 만, 이 과정에서 유용한 정보가 함께 제거될 수 있다는 한계가 있다. 본 연구에서는 이러한 한계를 보완하기 위하여 DeepONet (Deep operator network) 기반의 전달경로 분 석 방법을 제안하였다. 주요 전달 경로의 입력과 2 열 시트에서의 진동 응답 데이터를 이용하여 DeepONet 을 학습하고, 이를 통해 주행 조건 변화에 따른 입력-응답 관계를 규명하였다. 본 연구는 2 열 시트 컴포트 향상을 위한 시스템 분석 관점에서, 실제 주행 중 차량 진동 전달 문제를 단순한 역추정 문제가 아니라 입력 -응답 연산자 학습 문제로 재정식화하였다는 점에서 의의가 있다. 제안한 방법을 통해 향후 2 열 시트 컴포 Eo] 지배적인 전달경로 식별, 개선 우선순위 도출, 그리고 초기 개발 단계의 컴포트 개선 방향 AA] 활용 될 수 있을 것으로 기대된다. ㅜ 교신저자; 고려대학교 기계공학과 ＊ 고려대학교 기계공학과</abstract>
+  <abstract>연산자 네트워크) 기존 차량 개발에서는 주로 1 열 시트 중심으로 운전자의 승차감 성능을 확보해 왔으나, 최근에는 승객 컴 포트 확보 요구가 증가함에 따라 2 열 시트 컴포트의 중요성이 커지고 있다. 특히 2 열 시트는 후륜계와 인 접하여 노면 가진의 영향을 1 열 시트보다 직접적으로 받을 가능성이 크다. 따라서 2 열 시트 컴포트 개선을 위해서는 실제 주행 중 노면 가진이 2 열 시트 응답으로 전달되는 특성을 규명하는 시스템 분석이 필요하다. 본 연구에서는 실제 주행 조건에서의 진동 전달 특성을 분석하기 위하여 Operational transfer path anal sis Ov{whP를 적용하였다. v{wh 는 전달함수 측정을 위한 별도의 실험 없이, 실제 주행 상태에서 계 측된 입력 및 응답 신호로부터 경로별 기여도를 추정할 수 있으므로 차량과 같은 복잡한 기계 시스템의 전 달경로 분석에 적합하다. 그러나 다수의 입력에 서로 높은 상관성이 존재하는 경우 Crosstalk 가 필연적으로 발생하며, 이로 인해 전달경로 추정의 신뢰성이 저하될 수 있다. 이러한 문제를 완화하기 위해 Singular value decomposition Oz}kPG 또는 Principal component anal sis OwjhPG 기반의 차원 축소가 널리 사용되지 만, 이 과정에서 유용한 정보가 함께 제거될 수 있다는 한계가 있다. G 본 연구에서는 이러한 한계를 보완하기 위하여 DeepONet (Deep operator network) 기반의 전달경로 분 석 방법을 제안하였다. 주요 전달 경로의 입력과 2 열 시트에서의 진동 응답 데이터를 이용하여 DeepONet 을 학습하고, 이를 통해 주행 조건 변화에 따른 입력-응답 관계를 규명하였다. 본 연구는 2 열 시트 컴포트 향상을 위한 시스템 분석 관점에서, 실제 주행 중 차량 진동 전달 문제를 단순한 역추정 문제가 아니라 입력 T응답 연산자 학습 문제로 재정식화하였다는 점에서 의의가 있다. 제안한 방법을 통해 향후 2 열 시트 컴포 트에 지배적인 전달경로 식별, 개선 우선순위 도출, 그리고 초기 개발 단계의 컴포트 개선 방향 설정에 활용 될 수 있을 것으로 기대된다. ˋ G교신저자bG 고려대학교 기계공학과 lTaG gUU JG 고려대학교 기계공학과 Q 고려대학교# 기계공학과 QQG 현대자동차</abstract>
   <source_page>379</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.71</extraction_quality>
   <pageImage>/paper-pages/p238.webp</pageImage>
   <affiliations>
     <affiliation>고려대</affiliation>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Passenger ride comfort(@74_ 컴포트)</keyword>
-    <keyword>Operational transfer path analysis(&amp;-@ 전달경로분석)</keyword>
-    <keyword>DeepONet(4] &gt;</keyword>
+    <keyword>Passenger ride comfort(승객 컴포트)</keyword>
+    <keyword>Operational transfer path analysis(운용 전달경로분석)</keyword>
+    <keyword>DeepONet(심층</keyword>
   </keywords>
 </paper>

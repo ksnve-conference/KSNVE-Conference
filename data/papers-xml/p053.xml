@@ -11,16 +11,18 @@
   <time>09:15~09:30</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>서윤호(기계연)</chair>
-  <abstract>860907106894606008(제한된 센서 계측) 선박의 수중방사소음(0ㅁ06『\81[6『 Radiated Noise, 40404)은 해양 환경 영향 평가에 있어 중요한 요소로 인 식되고 있다. 그러나 수중방사소음을 직접 계측하기 위해서는 대규모 수조 시험이나 해상 시험이 필요하며, 이는 높은 비용과 제한된 실험 환경 so] 어려움을 수반한다. 이러한 문제를 해결하기 위한 대안으로, 본 연 구에서는 제한된 선체 진동 데이터를 활용하여 수중방사소음을 추정하는 인공지능 기반 모델을 제안한다. 특 히 제한된 수의 센서 정보만을 이용하여 전체 소음 SAS 효과적으로 추정할 수 있는 데이터 기반 접근 방 법을 제시한다. 본 연구 결과는 선박 음향 성능 평가를 위한 효율적인 소음 추정 기법으로 활용될 수 있을 것으로 기대된다. + 교신저자; 충북대학교 기계공학부</abstract>
+  <abstract>은 해양 환경 영향 평가에 있어 중요한 요소로 인 식되고 있다. 그러나 수중방사소음을 직접 계측하기 위해서는 대규모 수조 시험이나 해상 시험이 필요하며, 이는 높은 비용과 제한된 실험 환경 등의 어려움을 수반한다. 이러한 문제를 해결하기 위한 대안으로, 본 연 구에서는 제한된 선체 진동 데이터를 활용하여 수중방사소음을 추정하는 인공지능 기반 모델을 제안한다. 특 히 제한된 수의 센서 정보만을 이용하여 전체 소음 특성을 효과적으로 추정할 수 있는 데이터 기반 접근 방 법을 제시한다. 본 연구 결과는 선박 음향 성능 평가를 위한 효율적인 소음 추정 기법으로 활용될 수 있을 것으로 기대된다. ˋ G교신저자bG 충북대학교 기계공학부 lTaGUgUU JG 충북대학교 기계공학부</abstract>
   <source_page>126</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.713</extraction_quality>
   <pageImage>/paper-pages/p053.webp</pageImage>
   <affiliations>
     <affiliation>충북대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Underwater radiated 70196(ㅜ중방사소음)</keyword>
-    <keyword>Digital 6041(디지털 트윈)</keyword>
-    <keyword>Hull vibrations(71 4] 진동)</keyword>
-    <keyword>Limited</keyword>
+    <keyword>Underwater radiated noise(수중방사소음)</keyword>
+    <keyword>Digital twin(디지털 트윈)</keyword>
+    <keyword>Hull vibrations(선체 진동)</keyword>
+    <keyword>Limited sensor measurements(제한된 센서 계측)</keyword>
   </keywords>
 </paper>

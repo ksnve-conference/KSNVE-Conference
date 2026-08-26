@@ -11,13 +11,14 @@
   <time>10:40~10:55</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김도형(항공우주연)</chair>
-  <abstract>전기 동력으로 수직 이작륙이 가능한 eVIOL 항공기는 도심 환경에서 운용이 가능한 차세대 항공 교통수 단이다. eVIOL 항공기는 도심환경의 운용을 위해 낮은 소음 수준이 요구되기 때문에 분산 전기 추진 기술 을 적용한 다중 로터(27414-101079)를 사용한다. 그러나 다중 로터 사이의 공력 간섭 현상은 eVTOL 항공기 의 성능, 진동, 및 소음에 복합적인 영향을 미치므로 단일 로터 모델만으로는 정확한 거동 예측이 어렵다. 따 라서 다중 로터 간 공력 간섭을 고려한 eVIOL 항공기의 전기체 모델링 및 해석 연구가 필요하다. 본 연구에서는 회전익기 통합 해석 BES) CAMRAD IS 이용하여 Joby Aviation the] 84 와 유사한 6 개 의 틸팅 프로펠러를 갖는 eVIOL 항공기의 전기체 Aeromechanics SYS 구축하고, 헬리콤터 LZE(Hover mode)#} 고정익 BE(Airplane 0ㅁㅁ006)에서 틸팅 프로펠러의 성능, 및 57 허브 진동 하중 특성을 조사하였다. 또한, 블레이드 끝단에 하반각([&apos;=05&quot; @ 94%)을 적용한 제자리 비행 성능 분석하였다. 헬리콤터 모드에서 는 하반각 적용 시 6 개 틸팅 프로펠러의 제자리 비행 성능(01846 of Merit, FM)o] 전반적으로 향상되었으며, 특히 후방 프로펠러(70205. 5, 6)에서 하반각 미적용 모델 대비 최대 14.9%의 FM 향상이 나타났다(018. 1). 고정익 모드(\=100 191019)에서는 후방 프로펠러에서 전방 프로펠러 대비 최대 6.89% 낮은 전진 비행 효율 (Propulsive efficiency 보였으며, 5『 허브 진동 지수(\113000 Index, VD7} 전방 프로펠러027008. 1, 2 및 Props. 3,4)에서 각각 약 0.001 및 0.008 IA 후방 프로펠러7008.5,6)에서 약 0.148 로 중가하였다(0168. 2, 3).</abstract>
+  <abstract>틸팅 프로펠러를 사용하는 전기동력수직이착륙기의 전기체 모델링 및 진동 해석 Modeling and Vibration Analysis of an electric Vertical Take-Off and Landing Aircraft Using Tilting Propellers 박기정귕پ귖ബ박재상ನ Gi-Jeong Park and Jae-Sang Park .!5:+. / !972/ 전기동력수직이착륙기 7%(0%*#3.+,!((!. 틸팅 프로펠러 +1E9%E.D0+.5/+D / 허브 진동 하중  전기 동력으로 수직 이착륙이 가능한 eVTOL 항공기는 도심 환경에서 운용이 가능한 차세대 항공 교통수 단이다. eVTOL 항공기는 도심환경의 운용을 위해 낮은 소음 수준이 요구되기 때문에 분산 전기 추진 기술 을 적용한 다중 로터(multi-rotors)를 사용한다. 그러나 다중 로터 사이의 공력 간섭 현상은 eVTOL 항공기 의 성능, 진동, 및 소음에 복합적인 영향을 미치므로 단일 로터 모델만으로는 정확한 거동 예측이 어렵다. 따 라서 다중 로터 간 공력 간섭을 고려한 eVTOL 항공기의 전기체 모델링 및 해석 연구가 필요하다. G 본 연구에서는 회전익기 통합 해석 코드인 jhtyhkG pp 를 이용하여 Job G Aviation 艧의 z[ 와 유사한 ] 개 의 틸팅 프로펠러를 갖는 eVTOL 항공기의 전기체 Aeromechanics 모델을 구축하고, 헬리콥터 모드(Hover mode)와 고정익 모드(Airplane mode)에서 틸팅 프로펠러의 성능, 및 \wG 허브 진동 하중 특성을 조사하였다. 또한, 블레이드 끝단에 하반각(Ȟ=25¶ @ 94%R)을 적용한 제자리 비행 성능 분석하였다. 헬리콥터 모드에서 는 하반각 적용 시 ] 개 틸팅 프로펠러의 제자리 비행 성능(Figure of Merit, FM)이 전반적으로 향상되었으며, 특히 후방 프로펠러(Props. 5, 6)에서 하반각 미적용 모델 대비 최대 14.9%의 FM 향상이 나타났다(Fig. 1). 고정익 모드(V=100 knots)에서는 후방 프로펠러에서 전방 프로펠러 대비 최대 6.89% 낮은 전진 비행 효율 (Propulsive efficienc )을 보였으며, 5P 허브 진동 지수(Vibration Index, VI)가 전방 프로펠러(Props. 1, 2 및 Props. 3, 4)에서 각각 약 0.001 및 0.008 에서 후방 프로펠러(Props. 5, 6)에서 약 0.148 로 증가하였다(Figs. YSGZPUG</abstract>
   <source_page>357</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.601</extraction_quality>
   <pageImage>/paper-pages/p216.webp</pageImage>
   <affiliations>
     <affiliation>충남대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>69 701(전기동력수직이착륙기) Tilting Propeller( ] 프로펠러) Hub Vibratory ㅁ0808(허브 진동 하중)</keyword>
   </keywords>
 </paper>

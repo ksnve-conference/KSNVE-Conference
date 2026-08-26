@@ -11,8 +11,10 @@
   <time>11:10~11:25</time>
   <venue>사파이어홀[2]</venue>
   <chair>기성현(LG전자)</chair>
-  <abstract>fitted mesh(H}T] 핏티드 메쉬 Level Set Method(@] 2 WER). 모드 중첩 방식에 기반한 동적 컴플라이언스 최소화 기법은 제품이나 부품의 aes 최소화하기 위해 자주 사용되며, 이 기법은 정적 문제에 비해 계산 비용이 많이 소요되는 Ade] 있습니다. 이 기법이 Al 산 시간이 오래 걸리는 이유는 정확한 연산을 위해 필요한 모드 수, 그레이 스케일 요소를 줄이기 위한 반복 횟수, 그리고 부드럽고 명확한 경계를 생성하기 위해 필요한 요소의 수가 증가등의 원인에 기인합 니다. 본 논문에서는 레벨 AES Body fitted mesh 를 사용하여 계산 AWS GSA 수 있는 가능성에 대한 분석 결과를 소개합니다. + 교신저자;</abstract>
+  <abstract>모드 중첩 방식에 기반한 동적 컴플라이언스 최소화 기법은 제품이나 부품의 진동을 최소화하기 위해 자주 사용되며, 이 기법은 정적 문제에 비해 계산 비용이 많이 소요되는 단점이 있습니다. 이 기법이 계 산 시간이 오래 걸리는 이유는 정확한 연산을 위해 필요한 모드 수, 그레이 스케일 요소를 줄이기 위한 반복 횟수, 그리고 부드럽고 명확한 경계를 생성하기 위해 필요한 요소의 수가 증가등의 원인에 기인합 니다. 본 논문에서는 레벨 세트법과 Body fitted mesh 를 사용하여 계산 시간을 단축할 수 있는 가능성에 대한 분석 결과를 소개합니다.G ˋG교신저자bG lTaaGUgUG JGsn전자 QG 교토대학교# 마이크로엔지니어링학부 QQG 리슈메이칸대학교 기계공학부</abstract>
   <source_page>181</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.706</extraction_quality>
   <pageImage>/paper-pages/p111.webp</pageImage>
   <affiliations>
     <affiliation>LG전자</affiliation>
@@ -20,7 +22,9 @@
     <affiliation>리슈메이칸대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Topology 00000428800(위상최적화)</keyword>
-    <keyword>Dynamic compliance minimization-($4] 컴플라언스 최소화) Body</keyword>
+    <keyword>Topology optimization(위상최적화)</keyword>
+    <keyword>Dynamic compliance minimization(동적 컴플라언스 최소화)</keyword>
+    <keyword>Body fitted mesh(바디 핏티드 메쉬)</keyword>
+    <keyword>Level Set Method(레벨 세트법)</keyword>
   </keywords>
 </paper>

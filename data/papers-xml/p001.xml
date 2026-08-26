@@ -11,16 +11,20 @@
   <time>14:20~14:35</time>
   <venue>에메랄드홀</venue>
   <chair>정인지(표준과학연)</chair>
-  <abstract>Ultrasonic focusing(# 43} 집속), phase 088(위상지연) 바이오 샘플 처리, 표면 개질, 치료 초음파 등 정밀한 음향 조작이 필요한 분야에서 3 차원 공간 내 복셀 (Voxel) 단위 음장 제어의 중요성이 커지고 있다. 기존 기술이 주로 3 차원 평면이나 단일 트랩 형성에 머물 렀던 AS 고려하여, 본 연구에서는 3 MHz 중심 주과수를 이용한 음향 홀로그램 중첩 방식을 동해 3 차원 공간 AGES 확보하고자 하였다. 초기 연구로, 단축의 음향 올로그램에 음장 집속 거리별 위상정보를 중첩 시켜 3 차원 음장 구현가능성을 HAVES 통례 분석하였다. 음장 설계에는 가 스펙트럼 방법(4484 Spectrum Method, ASM) 기반의 반복 알고리즘을 적용하였다. 무작위 위상에서 시작하여 목표 형상인 3 차 원 헬릭스01000 구조의 진폭 분포를 단계적으로 모사하도록 전방향 및 후방향 전과 과정을 반복하여 위상 마스크를 도출하였다. 시뮬레이션 결과, 재구성된 3 차원 음장은 목표 형상의 기하학적 Sas 유효하게 복 원하였으며, 수치적으로는 평균 제곱 2zKMean Square Error, MSE) 약 0.6, 정규화된 상호 상관관계 (Normalized Cross Correlation, NCC) 약 0.58 수준의 일치도를 보였다. 이러한 결과는 설계된 음향 올로그 램이 EL 형상과 유의미한 상관관계를 가짐을 나타내며, 본 연구에서 활용한 S229 중첩 방식이 3 차원 복셀 단위 음장 제어를 구련하는 실효성 있는 방법임을 확인하였다. LS see poate ” Pa ed © tes er a x : ’ Re aatey eon Paha) tort ‘ia : &lt; = Po ddr + OT a A ) / ° on Phase map Target “ete</abstract>
+  <abstract>바이오 샘플 처리, 표면 개질, 치료 초음파 등 정밀한 음향 조작이 필요한 분야에서 3 차원 공간 내 복셀 (Voxel) 단위 음장 제어의 중요성이 커지고 있다. 기존 기술이 주로 2 차원 평면이나 단일 트랩 형성에 머물 렀던 점을 고려하여, 본 연구에서는 ZG MHz 중심 주파수를 이용한 음향 홀로그램 중첩 방식을 통해 3 차원 공간 해상도를 확보하고자 하였다. 초기 연구로, 단축의 음향 홀로그램에 음장 집속 거리별 위상정보를 중첩 시켜 3 차원 음장 구현가능성을 수치해석법을 통해 분석하였다. 음장 설계에는 각 스펙트럼 방법(Angular Spectrum Method, hztPG 기반의 반복 알고리즘을 적용하였다. 무작위 위상에서 시작하여 목표 형상인 3 차 원 헬릭스(Helix) 구조의 진폭 분포를 단계적으로 모사하도록 전방향 및 후방향 전파 과정을 반복하여 위상 마스크를 도출하였다. 시뮬레이션 결과, 재구성된 3 차원 음장은 목표 형상의 기하학적 특징을 유효하게 복 원하였으며, 수치적으로는 평균 제곱 오차(Mean Square Error, MSE) 약 0.6, 정규화된 상호 상관관계 (Normalized Cross Correlation, NCC) 약 0.58 수준의 일치도를 보였다. 이러한 결과는 설계된 음향 홀로그 램이 타겟 형상과 유의미한 상관관계를 가짐을 나타내며, 본 연구에서 활용한 홀로그램 중첩 방식이 3 차원 복셀 단위 음장 제어를 구현하는 실효성 있는 방법임을 확인하였다.</abstract>
   <source_page>74</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.71</extraction_quality>
   <pageImage>/paper-pages/p001.webp</pageImage>
   <affiliations>
     <affiliation>경북대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Acoustic holograms( 2 홀로그램)</keyword>
-    <keyword>Ultrasound(#5)</keyword>
-    <keyword>acoustic 1608(음향렌즈)</keyword>
-    <keyword>acoustic field(-%</keyword>
+    <keyword>Acoustic holograms(음향 홀로그램)</keyword>
+    <keyword>Ultrasound(초음파)</keyword>
+    <keyword>acoustic lens(음향렌즈)</keyword>
+    <keyword>acoustic field(음장)</keyword>
+    <keyword>Ultrasonic focusing(초음파 집속)</keyword>
+    <keyword>phase delay(위상지연)</keyword>
   </keywords>
 </paper>

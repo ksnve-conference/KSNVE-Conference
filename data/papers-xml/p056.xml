@@ -11,15 +11,17 @@
   <time>09:00~09:15</time>
   <venue>그랜드볼룸[2]</venue>
   <chair>김진균(경희대)</chair>
-  <abstract>y quency 186 ), Frequency Resp ¢ 함수), Modal truncation 60407(모드 절단 오차) Dynamic substructuring 기법은 다양한 하위 부품으로 구성된 결합품의 진동 응답을 4 하위 부품들의 a 동 CHEE 예측할 수 있다는 장점에 의해 우주항공 분야 및 완성차 분야 등 다양한 분야에서 사용되어 왔 다. 다양한 dynamic substructuring 기법 중, FBS (Frequency Based Substructuring) 기법은 하위 부품들 의 FRF (Frequency Response &quot;400000)을 활용해 결합품의 FRE 를 예측하는 기법으로 해석 1838 를 진행 할 때는 해석 코스트를 줄이기 위해 FE mode superposition S 활용하여 하위 부품들의 FRE 를 계산한다. 그러나 mode superposition 기법의 특성 상, 모든 BES 사용하지 않기에 고차 모드 절단 오차가 필연적으 로 발생하고 각 하위 부품의 FRF 오차가 FBS 계산 과정에서 중쪽되어 최종 결합품의 FRE 정확성을 크게 떨어트린다. 이를 해결하기 Wa residual mode 를 활용하는 것과 같은 다양한 연구가 진행되었고 본 연구에 서는 고차 모드 절단 오차의 특성을 활용해 효율적으로 PRES 보정하는 AS SHE 삼았다. 고차 모드 A 단 오차가 관심 주파수 대역에 대해 거의 일정하다는 특성에서 시작해 다양한 기법을 시도하고 검중하며 FRE 를 적은 해석 코스트로 보정할 수 있음을 입중하였고 이를 토대로 해석 FHSS] 실용성을 중대할 수 있 으리라 기대된다. | 꼬신지자, 서울매학교 + 공동저자의 소속: 서울대학교</abstract>
+  <abstract>기법은 다양한 하위 부품으로 구성된 결합품의 진동 응답을 각 하위 부품들의 진 동 응답들로 예측할 수 있다는 장점에 의해 우주항공 분야 및 완성차 분야 등 다양한 분야에서 사용되어 왔 다. 다양한 d namic substructuring 기법 중, mizG (Frequenc G Based Substructuring) 기법은 하위 부품들 의 mymG (Frequenc G Response Function)을 활용해 결합품의 mym 를 예측하는 기법으로 해석 miz 를 진행 할 때는 해석 코스트를 줄이기 위해 주로 mode superposition 을 활용하여 하위 부품들의 mym 를 계산한다. 그러나 mode superposition 기법의 특성 상, 모든 모드를 사용하지 않기에 고차 모드 절단 오차가 필연적으 로 발생하고 각 하위 부품의 mym 오차가 mizG 계산 과정에서 증폭되어 최종 결합품의 mymG 정확성을 크게 떨어트린다. 이를 해결하기 위해 residual mode 를 활용하는 것과 같은 다양한 연구가 진행되었고 본 연구에 서는 고차 모드 절단 오차의 특성을 활용해 효율적으로 mym 를 보정하는 것을 목표로 삼았다. 고차 모드 절 단 오차가 관심 주파수 대역에 대해 거의 일정하다는 특성에서 시작해 다양한 기법을 시도하고 검증하며 mym 를 적은 해석 코스트로 보정할 수 있음을 입증하였고 이를 토대로 해석 miz 의 실용성을 증대할 수 있 으리라 기대된다. ˋ G교신저자bG 서울대학교 lTaG gUU JG 발표자의 소속aG 서울대학교 Q 공동저자의 소속aG 서울대학교 QQG 공동저자의 소속aG 현대자동차</abstract>
   <source_page>129</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.736</extraction_quality>
   <pageImage>/paper-pages/p056.webp</pageImage>
   <affiliations>
     <affiliation>서울대</affiliation>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Frequency Based Substructuring(-#3}&lt;= 기반 부분구조 합성법)</keyword>
-    <keyword>Frequency Response 80000100(주파수 응답</keyword>
+    <keyword>Frequency Based Substructuring(주파수 기반 부분구조 합성법)</keyword>
+    <keyword>Frequency Response Function(주파수 응답</keyword>
   </keywords>
 </paper>

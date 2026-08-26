@@ -11,8 +11,10 @@
   <time>14:35~14:50</time>
   <venue>에메랄드홀</venue>
   <chair>정인지(표준과학연)</chair>
-  <abstract>characteristics Acoustic emission (AE) monitoring provides a sensitive approach for detecting transient damage events in structures subjected to dynamic loading. In lithium-ion batteries, mechanical impact may generate internal damage such as electrode fracture, separator deformation, and interfacial delamination, which can produce detectable acoustic emission signals. This study investigates the acoustic emission characteristics of lithium-ion pouch cells subjected to drop-weight impact loading. During the impact tests, load-displacement responses and AE signals were simultaneously recorded to capture both the mechanical response and damage-related acoustic activity. The AE signals were analyzed in terms of event counts, amplitude distribution, and energy characteristics. The results show that the intensity and frequency of AE events increase significantly with increasing impact severity. Distinct AE signatures were observed during different stages of the impact process, indicating possible correlations with internal structural damage mechanisms. The analysis demonstrates that acoustic emission monitoring can effectively capture impact-induced damage processes in lithium-ion cells and provides useful information for structural health monitoring of battery systems subjected to mechanical abuse. Signal Acquisition Feature Engineering Damage Predictions “6 RMS Time-domain ~ ow 4.0x10° features Energy 5 | eee Ss _ Intermediate 호 a 5 features High Frequency | KI | Severe 5. | [AE signals| 60 Kurtosis [—Dropweight force FI Statistical features Failed Entropy 0 1 2 3 4 5 6 Time (ms) ㆍ</abstract>
+  <abstract>structures subjected to dynamic loading. In lithium-ion batteries, mechanical impact may generate internal damage such as electrode fracture, separator deformation, and interfacial delamination, which can produce detectable acoustic emission signals. This study investigates the acoustic emission characteristics of lithium-ion pouch cells subjected to drop-weight impact loading. During the impact tests, load-displacement responses and AE signals were simultaneously recorded to capture both the mechanical response and damage-related acoustic activity. The AE signals were analyzed in terms of event counts, amplitude distribution, and energy characteristics. The results show that the intensity and frequency of AE events increase significantly with increasing impact severity. Distinct AE signatures were observed during different stages of the impact process, indicating possible correlations with internal structural damage mechanisms. The analysis demonstrates that acoustic emission monitoring can effectively capture impact-induced damage processes in lithium-ion cells and provides useful information for structural health monitoring of battery systems subjected to mechanical abuse.</abstract>
   <source_page>75</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.855</extraction_quality>
   <pageImage>/paper-pages/p002.webp</pageImage>
   <affiliations>
     <affiliation>Dongguk Univ.</affiliation>
@@ -23,6 +25,6 @@
     <keyword>Acoustic emission</keyword>
     <keyword>Dynamic response</keyword>
     <keyword>Damage detection</keyword>
-    <keyword>Signal</keyword>
+    <keyword>Signal characteristics Acoustic emission (AE) monitoring provides a sensitive approach for detecting transient damage events in</keyword>
   </keywords>
 </paper>

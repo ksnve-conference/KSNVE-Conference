@@ -11,16 +11,21 @@
   <time>11:25~11:40</time>
   <venue>에메랄드홀</venue>
   <chair>최성훈(철도기술연)</chair>
-  <abstract>Based Maintenance (상태기반 유지보수), Predictive- Based Maintenance (예즉기반 유지보수), Anomaly 126660860(의상 탐지) KTX 개통 22주년을 맞이한 20264 현재, 누적 이용객 12억 8 sss} 함께 고속철도 안전 관리에 대한 사회적 요구는 그 어느 때보다 높다. 그러나 기존 KTX 및 ㅠ1※%-산천 차량은 설계 당시의 한계로 인해 실 시간 데이터 수집 장치가 제한적이며, 확보된 데이터 또한 사후 분석 위주로 활용되고 있다. 본 연구는 이러 한 한계를 극복하고 철도 유지보수 패러다임을 주기적 정비에서 데이터 기반의 예측 hl Predictive Maintenance)= 전환하기 위해, 고속철도차량 대차 및 구동계의 실시간 상태 모니터링 시스템을 개발하고 AL 기반 이상 탐지 모델 구축을 시도하였다. 이를 위해 대차 프레임과 윤축, 모터, 감속기 등 주요 구동계 부품에 진동 가속도 ANS 설치하여 거동 및 진동 데이터를 수집하였으며, cps 정보와 연동하여 노선별 환경 특성을 통합 분석할 수 있는 데이터셋 을 확보하였다. 시스템 구축 측면에서는 실제 운행 중인 고속열차 대차부에 3축 가속도 AAS 데이터 수집 FADAQOS 설치하여 실시간 진동 데이터를 확보하였으며, 678 및 통신 모듈을 통합하여 주행 위치와 속 도 정보가 동기화된 서버 인프라를 구축하였다. 수집된 시계열 데이터는 FFT 기반의 주파수 EAS 거쳐 CNN, LSTM, Transformer, Autoencoder 동 다양한 Ged 아키텍처에 적용될 수 있으며, 이를 통해 이상 징후를 조기에 식별할 수 있는 이상탐지 모델의 구현 또한 가능하다. 본 연구는 실제 고속열차 시운전을 통 해 장치의 내구성과 데이터 수집 성능을 검중하였으며, 현차 기반의 학습 데이터를 통해 모델의 실용성을 왁보하였다. 이를 통해 예기치 못한 고장을 사전에 방지하여 안전성을 극대화하고, 불필요한 유지보수 작업 을 줄임으로써 자원 관리의 효율성을 높일 수 있다. 또한 축적된 데이터를 활용한 Al 모델 고도화 시도는 향후 철도 차량 유지 Be] 패러다임을 데이터 기반 예측형 체계로 전환하는 데 기여할 것으로 기대된다. t 교신저자; 정회원, 한국철도공사</abstract>
+  <abstract>사회적 요구는 그 어느 때보다 높다. 그러나 기존 ※17※× 및 \7※-산천 차량은 설계 당시의 한계로 인해 실 시간 데이터 수집 장치가 제한적이며, 확보된 데이터 또한 사후 분석 위주로 활용되고 있다. 본 연구는 이러 한 한계를 극복하고 철도 유지보수 패러다임을 주기적 정비에서 데이터 기반의 oS vl Predictive 00001808006)로 전환하기 위해, 고속철도차량 대차 및 구동계의 실시간 상태 모니터링 시스템을 개발하고 시 기반 이상 탐지 모델 구축을 시도하였다. 이를 위해 대차 프레임과 윤축, 모터, 감속기 등 주요 구동계 부품에 진동 가속도 센서를 설치하여 거동 및 진동 데이터를 수집하였으며, 088 정보와 연동하여 노선별 환경 특성을 통합 분석할 수 있는 데이터셋 을 확보하였다. 시스템 구축 측면에서는 실제 운행 중인 고속열차 대차부에 3축 가속도 센서와 데이터 수집 장치(024ㅅ0))를 설치하여 실시간 진동 데이터를 확보하였으며, 088 및 통신 모듈을 통합하여 주행 위치와 속 도 정보가 동기화된 서버 인프라를 구축하였다. 수집된 시계열 데이터는 때 기반의 주파수 분석을 거쳐 CNN, LSTM, Transformer, Autoencoder S t+oFst Geld 아키텍처에 적용될 수 있으며, 이를 통해 이상 징후를 조기에 식별할 수 있는 이상탐지 모델의 구현 또한 가능하다. 본 연구는 실제 고속열차 시운전을 통 해 장치의 내구성과 데이터 수집 성능을 검증하였으며, 현차 기반의 학습 데이터를 통해 모델의 실용성을 확보하였다. 이를 통해 예기치 못한 고장을 사전에 방지하여 안전성을 극대화하고, 불필요한 유지보수 작업 을 줄임으로써 자원 관리의 효율성을 높일 수 있다. 또한 축적된 데이터를 활용한 ㅅ1 모델 고도화 시도는 향후 철도 차량 유지 보수의 패러다임을 데이터 기반 예측형 체계로 전환하는 데 기여할 것으로 기대된다. + 교신저자; 정회원, 한국철도공사</abstract>
   <source_page>369</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.692</extraction_quality>
   <pageImage>/paper-pages/p228.webp</pageImage>
   <affiliations>
     <affiliation>BP지능역학</affiliation>
     <affiliation>철도공사</affiliation>
   </affiliations>
   <keywords>
-    <keyword>High-Speed Train( = 철도)</keyword>
-    <keyword>Bogie Condition Monitoring (대 차 상태 모니 터렁)</keyword>
-    <keyword>Condition-</keyword>
+    <keyword>High-Speed Train(3!4&gt; 철도)</keyword>
+    <keyword>Bogie Condition Monitoring (c]”} FE] UE] 8)</keyword>
+    <keyword>Condition- Based Maintenance (7 EH 7] 81 +] 14&gt;)</keyword>
+    <keyword>Predictive- Based Maintenance (47) 8! 7-4] HE)</keyword>
+    <keyword>Anomaly Detection(°] §]) KTX WS 2274S He] 2026 현재</keyword>
+    <keyword>누적 이용객 12억 명 돌파와 함께 고속철도 안전 관리에 대한</keyword>
   </keywords>
 </paper>

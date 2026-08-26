@@ -11,8 +11,10 @@
   <time>15:35~15:50</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김완진(국립한밭대)</chair>
-  <abstract>This study introduces an innovative and robust approach for the vibration analysis of thin chamber equipment, specifically applied to electrical switchboards using a node matching technique. To ensure structural stability under seismic excitation, the research proposes the integration of dampers and pivots as new anti-vibration devices (AVD). These devices are designed to mitigate vibrations caused by earthquakes and inertia forces resulting from the equipment’&apos;s mass. The core of the analysis involves a high-fidelity finite element (FE) model developed in Solidworks. The methodology employs a node matching approach to link complex components, such as the top cover casting parts and the AVDs. Each structural component was meshed using 8-node hexahedron elements, totaling 377,199 elements and 712,662 nodes, with a maximum mesh size of 30 mm to ensure the highest level of simulation accuracy. Experimental validation was conducted via shaker table tests to verify the dynamic characteristics. The results demonstrate a resonance frequency of approximately 6 Hz, with the AVDs reducing maximum relative displacement by at least 50%, proving the effectiveness of the node matching analysis in predicting and controlling vibrations for thin-walled industrial equipment. | ry 2 a - tone tg ~ 더 대 1: er 4 = 5 ! NE tet 82 19 Lh. . ‘ 기 10-7 10” 101 10? 로 — = Frequency (Hz)</abstract>
+  <abstract>pivots as new anti-vibration devices (AVD). These devices are designed to mitigate vibrations caused by earthquakes and inertia forces resulting from the equipment's mass. The core of the analysis involves a high-fidelity finite element (FE) model developed in Solidworks. The methodology employs a node matching approach to link complex components, such as the top cover casting parts and the AVDs. Each structural component was meshed using 8-node hexahedron elements, totaling 377,199 elements and 712,662 nodes, with a maximum mesh size of 30 mm to ensure the highest level of simulation accuracy. Experimental validation was conducted via shaker table tests to verify the dynamic characteristics. The results demonstrate a resonance frequency of approximately 6 Hz, with the AVDs reducing maximum relative displacement by at least 50%, proving the effectiveness of the node matching analysis in predicting and controlling vibrations for thin-walled industrial equipment. | 「 ZC (NS 으 ' ; Zot / NS 2003.10 eS FPS -샐 , 주 ~ | 『「 주 10그 100 101 102 SS = Frequency (Hz)</abstract>
   <source_page>252</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.769</extraction_quality>
   <pageImage>/paper-pages/p144.webp</pageImage>
   <affiliations>
     <affiliation>한밭대</affiliation>
@@ -22,6 +24,6 @@
     <keyword>Finite element analysis</keyword>
     <keyword>Node matching</keyword>
     <keyword>Vibration</keyword>
-    <keyword>Seismic response.</keyword>
+    <keyword>the research proposes the integration of dampers and</keyword>
   </keywords>
 </paper>

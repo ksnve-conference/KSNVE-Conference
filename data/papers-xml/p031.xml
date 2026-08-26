@@ -11,15 +11,17 @@
   <time>16:30~16:45</time>
   <venue>오팔홀[1]</venue>
   <chair>김찬중(부경대)</chair>
-  <abstract>지수), Psycho-acoustic Parameters (4] 2] -4-€ 지표), Order Optimization (2.C] 최적화) 전기차의 주행 사운드는 차량의 감성 품질과 브랜드 AAAS 형성하는 중요한 요소이다. 특히 전기차는 내연기관 차량과 달리 엔진 기통에 따른 고유 BA] 부재하므로, 소비자가 선호하는 주행 TAS 반영한 주 행 사운드를 체계적으로 설계할 수 있는 기술 개발이 필요하다. 본 연구에서는 Auto-Encoder 및 음질 지수 기반의 전기차 주행 사운드 최적 생성 7601을 개발하였다. 이 를 위해 엔진 기통별04, V6, V8) 주행 사운드로부터 오더 스펙트럼 × Order) 2 차원 BS 추출하고 ALES 학습용 데이터셋을 구축하였다. Auto-Encoder 는 오더 스펙트럼 YS 입력으로 하여 이를 재구성하 ES 학습되며, 이 과정에서 획득되는 잠재 벡터(21, 22)는 차종별 음향 특성을 2 차원 잠재 공간에 Boe 데 활용된다. 이후 Powerfulness, Pleasantness, Sound Quality 항목에 대한 Jury Test 결과와 심리음향 지 #(Psycho-acoustic Parameters)S 통합 분석하여 주행 사운드의 음질 ATS 개발하였다. 개발된 음질 지 수를 기반으로, 잠재 벡터(21, 22)와 오더 선택 정보를 입력으로 하여 음질 지수를 추정하는 1 기반 회귀 모 as 학습하였다. 또한 목표 음질 지수가 주어졌을 때 이에 최적화된 오더 조합을 추천할 수 UES Latent, Upward, Downward, Hybrid, Continuous, Brute-force 등 다양한 탐색 기법을 적용하였다. 최종적으로 오 더 분석, 잠재 공간 시각화, 음질 지수 추정 및 오더 추천 기능을 통합한 (6601(618011081 User Interface) Tool S 구현하였다. 개발된 7601 을 통해 전기차 주행 사운드의 음질 지수를 정량적으로 추정할 수 있을 뿐만 아니라, SHS 질 지수 기반의 오더 조합 추천으로 사운드 컨셉 설계 및 음향 Hol 응이하여, 향후 전기차 주행 사운드 개발의 효율성과 경쟁력 강화에 기여할 수 있을 것으로 기대된다. E+ | = | Be AIR it Ord Model Ontinization GUIToo| »| &amp;- | SR iy} 투 Vote sascin Latent / Upward / Downward ral eee ae sai Seles : saree ears sal Etnaton pee fecommendation</abstract>
+  <abstract>오더 최적화) 전기차의 주행 사운드는 차량의 감성 품질과 브랜드 정체성을 형성하는 중요한 요소이다. 특히 전기차는 내연기관 차량과 달리 엔진 기통에 따른 고유 음색이 부재하므로, 소비자가 선호하는 주행 감성을 반영한 주 행 사운드를 체계적으로 설계할 수 있는 기술 개발이 필요하다. 본 연구에서는 Auto-Encoder 및 음질 지수 기반의 전기차 주행 사운드 최적 생성 Tool 을 개발하였다. 이 를 위해 엔진 기통별(I4, V6, V8) 주행 사운드로부터 오더 스펙트럼(RPM Ý Order) 2 차원 맵을 추출하고 hpG 모델 학습용 데이터셋을 구축하였다. Auto-Encoder 는 오더 스펙트럼 맵을 입력으로 하여 이를 재구성하 도록 학습되며, 이 과정에서 획득되는 잠재 벡터(z1, z2)는 차종별 음향 특성을 2 차원 잠재 공간에 매핑하는 데 활용된다. 이후 Powerfulness, Pleasantness, Sound Qualit G 항목에 대한 Jur G Test 결과와 심리음향 지 표(Ps cho-acoustic Parameters)를 통합 분석하여 주행 사운드의 음질 지수를 개발하였다. 개발된 음질 지 수를 기반으로, 잠재 벡터(z1, z2)와 오더 선택 정보를 입력으로 하여 음질 지수를 추정하는 AI 기반 회귀 모 델을 학습하였다. 또한 목표 음질 지수가 주어졌을 때 이에 최적화된 오더 조합을 추천할 수 있도록 Latent, Upward, Downward, H brid, Continuous, Brute-force 등 다양한 탐색 기법을 적용하였다. 최종적으로 오 더 분석, 잠재 공간 시각화, 음질 지수 추정 및 오더 추천 기능을 통합한 GUI(Graphical User Interface) Tool 을 구현하였다. 개발된 Tool 을 통해 전기차 주행 사운드의 음질 지수를 정량적으로 추정할 수 있을 뿐만 아니라, 목표 음 질 지수 기반의 오더 조합 추천으로 사운드 컨셉 설계 및 음향 튜닝이 용이하여, 향후 전기차 주행 사운드 개발의 효율성과 경쟁력 강화에 기여할 수 있을 것으로 기대된다.</abstract>
   <source_page>104</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.718</extraction_quality>
   <pageImage>/paper-pages/p031.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
     <keyword>Electric Vehicle Driving Sound (전기차 주행 사운드)</keyword>
-    <keyword>Auto-Encoder (2.9124)</keyword>
-    <keyword>Sound Quality Index (4-4</keyword>
+    <keyword>Auto-Encoder (오토인코더)</keyword>
+    <keyword>Sound Quality Index (음질</keyword>
   </keywords>
 </paper>

@@ -11,17 +11,19 @@
   <time>15:50~16:05</time>
   <venue>에메랄드홀</venue>
   <chair>김현수(동의대)</chair>
-  <abstract>자동차 시장에서 이동 중 SAA SASS FE 요소의 가치가 커짐에 따라, 오디오 음질은 고객 만족도 를 결정짓는 핵심 요소로 부각되고 있다. 그러나 오디오 음질은 청취자의 주관적 편차가 커 품질을 정량적으 로 객관화하는 데 어려움이 있다. 본 연구에서는 동일 세그먼트 5 개 차종을 대상으로 68 명의 평가단이 참여 하여 대역 해상력(03300 Resolution), 전체 밸런스(\11016 Balance), 음장감(8138108), 491 7(Umaging) 그리 고 AAA (Reproducibility) € 5 개 항목을 기반으로 청취 선호도를 분석하였다. 연구 결과, 종합 SHE 오디오 하드웨어 사양과 반드시 일치하지 Yeon] 최상위 차량과 최하위 차량 간 의 항목별 점수 편차 분석을 통해 핵심 변별 요인을 분석하였다. 최하위 차량은 특히 중저음 대역의 해상력 부족으로 인해 전체적인 사운드 BAA} 저하되었을 뿐만 아니라, 사운드 공간적 깊이감 또한 부족한 것으 로 평가되었다. 이를 통해 각 대역의 높은 해상력을 바탕으로 전 대역의 조화를 이루는 균형감있는 튜닝이 사용자 선호도 에 결정적인 SS 미침을 확인하였다. 따라서 향후 자동차 오디오 사운드 튜닝 시 대역별 해상력 확보는 물론, 음장감, 정위감, 재현성의 종합적인 사운드 최적화가 필수적일 것으로 보인다. Table 1 Evaluation Metrics Total Score Comparison Total Score: 100 균형감 20 대 = = mie een |공간감, 놓이감, 21, 무대 위치감| 20 = aya | 센처 위치갑, 자우 벨런스, gaz | 16 0 ee 재현성 저음 풍부함, 선평함, 현장감 | 5 10 … “a 합계 100 대역 해상력 SUT 『음장감 AAD 『재현성</abstract>
+  <abstract>자동차 시장에서 이동 중 승객에게 즐거움을 주는 요소의 가치가 커짐에 따라, 오디오 음질은 고객 만족도 를 결정짓는 핵심 요소로 부각되고 있다. 그러나 오디오 음질은 청취자의 주관적 편차가 커 품질을 정량적으 로 객관화하는 데 어려움이 있다. 본 연구에서는 동일 세그먼트 5 개 차종을 대상으로 68 명의 평가단이 참여 하여 대역 해상력(Band Resolution), 전체 밸런스(Whole Balance), 음장감(Staging), 정위감(Imaging) 그리 고 재현성(Reproducibilit ) 총 5 개 항목을 기반으로 청취 선호도를 분석하였다. 연구 결과, 종합 순위는 오디오 하드웨어 사양과 반드시 일치하지 않았으며 최상위 차량과 최하위 차량 간 의 항목별 점수 편차 분석을 통해 핵심 변별 요인을 분석하였다. 최하위 차량은 특히 중저음 대역의 해상력 부족으로 인해 전체적인 사운드 밸런스가 저하되었을 뿐만 아니라, 사운드 공간적 깊이감 또한 부족한 것으 로 평가되었다. 이를 통해 각 대역의 높은 해상력을 바탕으로 전 대역의 조화를 이루는 균형감있는 튜닝이 사용자 선호도 에 결정적인 영향을 미침을 확인하였다. 따라서 향후 자동차 오디오 사운드 튜닝 시 대역별 해상력 확보는 물론, 음장감, 정위감, 재현성의 종합적인 사운드 최적화가 필수적일 것으로 보인다.</abstract>
   <source_page>264</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.72</extraction_quality>
   <pageImage>/paper-pages/p156.webp</pageImage>
   <affiliations>
     <affiliation>르노코리아</affiliation>
     <affiliation>자동차용 오디오 음질에 대한 사용자 주관적 청취 선호도 조사</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Car Audio(4}-§*} 오디오)</keyword>
-    <keyword>Sound Quality(3-4)</keyword>
-    <keyword>Listening evaluation (44-3 평가)</keyword>
-    <keyword>Sound tuning 42)</keyword>
+    <keyword>Car Audio(자동차 오디오)</keyword>
+    <keyword>Sound Quality(음질)</keyword>
+    <keyword>Listening evaluation (청음 평가)</keyword>
+    <keyword>Sound tuning(음향 튜닝)</keyword>
   </keywords>
 </paper>

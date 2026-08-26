@@ -11,15 +11,18 @@
   <time>16:05~16:20</time>
   <venue>오팔홀[1]</venue>
   <chair>백승훈(부산대)</chair>
-  <abstract>Variable-length blade(7}# 2°] 블레이드) 연속체 내부 구조가 변할 때 발생하는 에너지 변화를 설명하기 위해 도입된 추상적인 de 구성력 (Configuration force) HE Eshelby-like 10706라고 하며, 이 힘은 뉴턴 역학으로 설명하지 못하는 재료 내부 의 기하학적 형태나 배열의 변화를 설명하기에 유리한 개념이다. 재료 역학 분야에서 국한적으로 사용해 오 던 이 개념을 최근 경계조건이 변하는 탄성 구조물에 적용하는 연구가 진행되고 있다. 예를 들어 경계조건 으로부터 길이가 변하는 탄성 블레이드와 같은 구조물에서는 형상 변화에 따라 구조물 내부에 새로운 힘이 fee 수 있으며, 이러한 Ge 구조물의 안정성에 중요한 영향을 미친다. 최근 관련 연구에서는 구성력이 작용하는 시스템에서 나타나는 임계하중 부근의 정적 평형점 분기 분석 등 불안정성 연구에 주목하고 있다. 그러나 대부분의 연구는 정적 및 준정적 해석에 기반하여 불안정성을 분석하는 데 집중되어 있으며, 외부 가진이 작용하는 동적 해석에 기반한 연구는 시도된 바 없다. 본 연구에서는 구성력이 작용하는 시스템의 동적 불안정성을 분석하기 위해, Fig. 1(8)의 기준 구조를 바 탕으로 하중과 외부 가진을 적용한 ZAP. 106))에서 동적 해석을 수행하였다. 특히 블레이드에 작용하는 하중이 임계하중을 초과한 영역에서는 정적 평형점의 wea 정도가 블레이드 끝단에 작용하는 하중과 돌출 길이에 따라 매우 민감하게 변화한다048. 2(8)). 이와 같은 조건에서 블레이드 하단에 연결된 스프링에 조화 AAS 가했을 때, 가진 조건, 블레이드 길이 등 시스템의 파라미터에 따라 블레이드 Bde] 진동 중심이 a 화하며0018. 20), 이를 통해 동적 불안정 거동이 파라미터에 따라 변화하고 조절될 수 Wes 이론적 및 수치적으로 확인하였다. f (a) Static displacement : X-axis | Blade 1 ee Los as I £,.{ === | 터 ad Senstive region | , i 치기 (0) lime coment the blade tip 6.082 Sliding Sleeve It 0.08 é I: o.o78 FI = 0.076 Bassin Sis pe 그 aa s 10 15 20 25 30 Time&apos;s}</abstract>
+  <abstract>연속체 내부 구조가 변할 때 밭생하는 에너지 변화를 설명하기 위해 도입된 추상적인 힘을 구성력 (Configuration force) 52% Eshelby-like 10700라고 하며, 이 힘은 뉴턴 역학으로 설명하지 못하는 재료 내부 의 기하학적 형태나 배열의 변화를 설명하기에 유리한 개념이다. 재료 역학 분야에서 국한적으로 사용해 오 던 이 개념을 최근 경계조건이 변하는 탄성 구조물에 적용하는 연구가 진행되고 있다. 예를 들어 경계조건 으로부터 길이가 변하는 탄성 블레이드와 같은 구조물에서는 형상 변화에 따라 구조물 내부에 새로운 힘이 유도될 수 있으며, 이러한 힘은 구조물의 안정성에 중요한 영향을 미친다. 최근 판련 연구에서는 구성력이 작용하는 시스템에서 나타나는 임계하중 부근의 정적 평형점 분기 분석 등 불안정성 연구에 주목하고 있다. 그러나 대부분의 연구는 정적 및 준정적 해석에 기반하여 불안정성을 분석하는 데 집중되어 있으며, 외부 가진이 작용하는 동적 해석에 기반한 연구는 시도된 바 없다. 본 연구에서는 구성력이 작용하는 시스템의 동적 불안정성을 분석하기 위해, 016. 1(8)의 기준 구조를 바 탕으로 하중과 외부 가진을 적용한 조건0018. 106))에서 동적 해석을 수행하였다. 특히 블레이드에 작용하는 하중이 임계하중을 초과한 영역에서는 정적 평형점의 굽힘 정도가 블레이드 끝단에 작용하는 하중과 돌출 길이에 따라 매우 민감하게 변화한다(018. 2(8)). 이와 같은 조건에서 블레이드 하단에 연결된 스프렁에 조화 가진을 가했을 때, 가진 조건, 블레이드 길이 등 시스템의 파라미터에 따라 블레이드 끝단의 진동 중심이 변 화하며(018. 2(06)), 이를 통해 동적 불안정 거동이 파라미터에 따라 변화하고 조절될 수 있음을 이론적 및 수치적으로 확인하였다. 7 (a) Static displacement : X-axis 에 6807 X (a) | (b) &lt; 0.5다| Pah \ | +— Blade L(t) 20. S— ———— 으 = | toad 92) Senstive =m i . ae 0.05 0.1 0.15 0.2 0,25 03 0.35 i ¥ : 2 ®yjp (M) [ * 그 (5) Time responses of the blade tip 0.082 식 Sliding Sleeve 1 t — 0.08 | An | ‘ 더 x ae = 0.07 i "| Ny = 0.076 | Yp = Asinwt | 0084 8} 1 0 0.072 eee Ra } 0 5 10 15 20 25 30 Time 's|</abstract>
   <source_page>269</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.583</extraction_quality>
   <pageImage>/paper-pages/p161.webp</pageImage>
   <affiliations>
     <affiliation>부산대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Configuration force(7+’d 4)</keyword>
-    <keyword>Nonlinear vibration(4]41@ 진동)</keyword>
-    <keyword>Instability ek 73)</keyword>
+    <keyword>Configuration 10006(구정력)</keyword>
+    <keyword>Nonlinear vibration(4]419 %-s)</keyword>
+    <keyword>Instability(=¢r4 4a)</keyword>
+    <keyword>Variable-length blade(7}'3 2°] elo] =)</keyword>
   </keywords>
 </paper>

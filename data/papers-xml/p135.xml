@@ -11,14 +11,17 @@
   <time>13:40~13:55</time>
   <venue>사파이어홀[1]</venue>
   <chair>이경태(부전전자)</chair>
-  <abstract>심혈관 혈류 시뮬레이션은 연산 비응이 높아 매개변수 추정이나 민감도 분석과 같이 수천 번의 반복 연산 이 요구되는 환경에서는 활용에 한계가 있다. 이를 극복하기 위해 본 APE 시간 정규화(1106 Normalization) 기법을 통합한 매개변수화된 8 오퍼레이터 네트워크[)66004460 기반의 대리모델 프레임워 크를 제안한다. 본 프레임워크는 주기 및 기간 정규화라는 2 단계 전략을 사용하며, 심박수, 동맥 경직도, 상대적 동맥 길 이와 같은 생리학적 WAS 명시적으로 네트워크에 인코덩한다. 1 차원 심혈관 시뮬레이션 데이터를 통 한 평가 결과, 학습 분포 내에서는 매우 낮은 SARMSE)S 달성했으며, 학습 범위를 크게 벗어난 극한의 조건에서도 기존 모델들보다 우수한 강건성을 입중했다. 또한, 기존 수치 해석 솔버 대비 약 수십만 배 가속 화된 추론 속도를 기록하여 뛰어난 연산 효율성을 확인했다. 결과적으로 본 연구는 주기적인 생리적 Ass 강건하게 모델링할 수 있는 연산 기반을 제공하며, 기존 수 치 해석 시뮬레이션으로는 사실상 불가능했던 대규모 역문제 해결 및 민감도 분석에 기여한다. This work was supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT) (No. RS-2024-00350917) and also, this work was supported by the InnoCORE program of the Ministry of Science and ICT(N10250154). —mall-ynpar! aist.ac.Kr =: aa # 한국과학기술원 나 하국과롱매학과 - 230 -</abstract>
+  <abstract>심혈관 혈류 시뮬레이션은 연산 비용이 높아 매개변수 추정이나 민감도 분석과 같이 수천 번의 반복 연산 이 요구되는 환경에서는 활용에 한계가 있다. 이를 극복하기 위해 본 연구는 시간 정규화(1106 Normalization) 7)}8-S S33 Waste 닙 오퍼레이터 네트워크[)06600461 기반의 대리모델 프레임워 크를 제안한다. 본 프레임위크는 주기 및 기간 정규화라는 8 단계 전략을 사용하며, 심박수, 동맥 경직도, 상대적 동맥 길 이와 같은 생리학적 매개변수를 명시적으로 네트워크에 인코딩한다. 1 차원 심혈관 시뮬레이션 데이터를 통 한 평가 결과, 학습 분포 내에서는 매우 낮은 오차004090)를 달성했으며, 학습 범위를 크게 벗어난 극한의 조건에서도 기존 모델들보다 우수한 강건성을 입증했다. 또한, 기존 수치 해석 솔버 대비 약 수십만 배 가속 화된 추론 속도를 기록하여 뛰어난 연산 효율성을 확인했다. 결과적으로 본 연구는 주기적인 생리적 신호를 강건하게 모델링할 수 있는 연산 기반을 제공하며, 기존 수 치 해석 시뮬레이션으로는 사실상 불가능했던 대규모 역문제 해결 및 민감도 분석에 기여한다. This work was supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT) (No. RS-2024-00350917) and also, this work was supported by the InnoCORE program of the Ministry of Science and ICT(N10250154). + 교신저자; 한국과학기술원 * 한국과학기술원 E=mail'yhpark@kaist.ac.kr 한국교통대학교</abstract>
   <source_page>243</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.696</extraction_quality>
   <pageImage>/paper-pages/p135.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
     <affiliation>한국교통대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Hemodynamics(@ 류역 학) Deep Operator Network(] 2.41)</keyword>
+    <keyword>Hemodynamics(&amp; 4&amp;4 $})</keyword>
+    <keyword>Deep Operator Network(J 2.4)</keyword>
   </keywords>
 </paper>

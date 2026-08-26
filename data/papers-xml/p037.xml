@@ -11,16 +11,18 @@
   <time>16:45~17:00</time>
   <venue>릴리홀[1]</venue>
   <chair>전종훈(항공우주연)</chair>
-  <abstract>비스 거리), random forest(WG 포레스트), 01ㅜ68000 excitation(h] 34 가진) Bate 순차적 다중 HS 톤버스트 가진과 랜덤 포레스트(&quot;800014 10『680 기반 AAAYS 결합한 데 이터 기반 비파괴 검사 프레임워크를 제안하여 다층 세라믹 캐패시터0041.00) 내부 미세결함을 선별한다. MLCC 수요 중가에 따라 공정 중 폐기되는 불량 로트에서 정상 ASS 선별해 재사용하는 기술의 중요성이 커지고 있으나, 기존 CT 및 ※-16검사는 BSS} 시간 문제로 전수 검사에 적용하기 어렵고, 단일 공진주가 수 기반 전기기계적 응답 방식 역시 미세결함 탐지 민감도가 현저히 부족하다. 이에 본 연구에서는 MLCC 샘플에 1 MHz 에서 10 MHz 범위의 톤버스트를 0.1 MHz 간격으로 순차 인가하여 전기기계적 과도응답을 획득하고, 시간 및 주과수 영역의 11 개 신호 특징을 추출하였다. 이후 분산팽장계수(08ㅁ80406 inflation factor, VIF) 분석으로 다중공선성을 제거하고, 마할라노비스 거리(\101181800115 distance)S 활웅하여 정상 과 불량 간 분리도가 최대화되는 최적 pep 집합을 선정하였다. MD 분석 결과 비공진 주과수에서의 MD 값이 공진 a 대비 최대 3 배 이상 높게 나타났으며, 최적 비공진 Sere 학습된 랜덤 포레스트 분류기는 약 90%의 Bee ROC-AUC 0.95 를 달성하였다. 이를 통해 소수의 최적 주파수만으로도 높은 결함 탐지 정확도를 유지하면서 검사 시간을 대폭 단축할 수 USS 입중하였으며, 본 프레임워크는 대량 생 산 환경의 고속 인라인 MLCC 전수 검사에 실용적으로 적용 가능한 방법론을 제시하였다. 」 자 2 ARS on 개 (3) Resonant frequency excitation (6) Offresonant frequency (c} Random forest excitation classification result</abstract>
+  <abstract>비공진 가진) 본 연구는 순차적 다중 주파수 톤버스트 가진과 랜덤 포레스트(random forest) 기반 머신러닝을 결합한 데 이터 기반 비파괴 검사 프레임워크를 제안하여 다층 세라믹 캐패시터OtsjjPG 내부 미세결함을 선별한다. tsjjG 수요 증가에 따라 공정 중 폐기되는 불량 로트에서 정상 제품을 선별해 재사용하는 기술의 중요성이 커지고 있으나, 기존 CT 및 X-ra 검사는 비용과 시간 문제로 전수 검사에 적용하기 어렵고, 단일 공진주파 수 기반 전기기계적 응답 방식 역시 미세결함 탐지 민감도가 현저히 부족하다. 이에 본 연구에서는 tsjjG 샘플에 XG MHz 에서 XWG MHz 범위의 톤버스트를 WUXG MHz 간격으로 순차 인가하여 전기기계적 과도응답을 획득하고, 시간 및 주파수 영역의 11 개 신호 특징을 추출하였다. 이후 분산팽창계수(variance inflation factor, VIF) 분석으로 다중공선성을 제거하고, 마할라노비스 거리(Mahalanobis distance)를 활용하여 정상 과 불량 간 분리도가 최대화되는 최적 구동주파수 집합을 선정하였다. tk 분석 결과 비공진 주파수에서의 tk 값이 공진 주파수 대비 최대 3 배 이상 높게 나타났으며, 최적 비공진 주파수로 학습된 랜덤 포레스트 분류기는 약 90%의 정확도와 ROC-AUC 0.95 를 달성하였다. 이를 통해 소수의 최적 주파수만으로도 높은 결함 탐지 정확도를 유지하면서 검사 시간을 대폭 단축할 수 있음을 입증하였으며, 본 프레임워크는 대량 생 산 환경의 고속 인라인 tsjjG 전수 검사에 실용적으로 적용 가능한 방법론을 제시하였다. (a) Resonant frequency excitation (b) Off-resonant frequency excitation (c) Random forest classification result</abstract>
   <source_page>110</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.746</extraction_quality>
   <pageImage>/paper-pages/p037.webp</pageImage>
   <affiliations>
     <affiliation>인하대</affiliation>
     <affiliation>삼성전기</affiliation>
   </affiliations>
   <keywords>
-    <keyword>41.00(다충세라믹캐패시터)</keyword>
-    <keyword>electromechanical response(417]7] A] 4] 응답)</keyword>
-    <keyword>Mahalanobis distance(?} Ste}.</keyword>
+    <keyword>MLCC(다층세라믹캐패시터)</keyword>
+    <keyword>electromechanical response(전기기계적 응답)</keyword>
+    <keyword>Mahalanobis distance(마할라노</keyword>
   </keywords>
 </paper>

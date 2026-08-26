@@ -11,15 +11,18 @@
   <time>09:25~09:40</time>
   <venue>사파이어홀[2]</venue>
   <chair>박진성(성균관대)</chair>
-  <abstract>본 연구에서는 고감도 SERS EAS 위해 산호 구조를 모사한 Au/Ag 나노코랄 기반 기판을 개발하였다. 전 기화학적 SAIS 통해 Au/Ag 나노기둥을 형성한 후 선택적 Ag AAS 적용하여 다공성 나노코랄 PAS 구 현하였으며, 이를 통해 hotspot 간 상호작용, bimetallic 효과, 표면 LW 형성, 넓은 비표면적이라는 네 가 지 신호 중폭 요소를 하나의 기판에 통합하였다. 구조 및 조성 분석을 통해 TAT bimetal 분포와 최적화된 다공성 형태를 확인하였고, 전자기 시뮬레이션을 통해 향상된 전기장 집중 효과를 검중하였다. 최적 조건에 서 제작된 기판은 우수한 신호 균일성 및 재현성을 보였으며, 황 함유 농약인 thiram 대해 높은 선택성과 안정성을 나타냈다. 특히 토양수, 하천수, FEE, 음용수 등 실제 환경 시료에서도 M 수준의 초고감도 검출 이 가능함을 입중하였다. 이러한 결과는 제안된 Au/Ag 나노코랄 SERS 플랫폼이 환경 모니터링 및 공중보 건 분야에서 효과적인 분석 도구로 활용될 수 USS 시사한다. a) ance Z ‘AuiAg nanopillars Riga a) 별 = 이 ! 이 nN &quot;| Ee) ㄴㄴ. ? Gea” se gs” 테 } sesame Fig. 2 Thiram detection in various aquatic</abstract>
+  <abstract>본 연구에서는 고감도 zlyzG 분석을 위해 산호 구조를 모사한 Au/Ag 나노코랄 기반 기판을 개발하였다. 전 기화학적 공정을 통해 Au/Ag 나노기둥을 형성한 후 선택적 Ag 에칭을 적용하여 다공성 나노코랄 구조를 구 현하였으며, 이를 통해 hotspot 간 상호작용, bimetallic 효과, 표면 나노갭 형성, 넓은 비표면적이라는 네 가 지 신호 증폭 요소를 하나의 기판에 통합하였다. 구조 및 조성 분석을 통해 균일한 bimetal 분포와 최적화된 다공성 형태를 확인하였고, 전자기 시뮬레이션을 통해 향상된 전기장 집중 효과를 검증하였다. 최적 조건에 서 제작된 기판은 우수한 신호 균일성 및 재현성을 보였으며, 황 함유 농약인 thiram에 대해 높은 선택성과 안정성을 나타냈다. 특히 토양수, 하천수, 수돗물, 음용수 등 실제 환경 시료에서도 fM 수준의 초고감도 검출 이 가능함을 입증하였다. 이러한 결과는 제안된 Au/Ag 나노코랄 zlyzG 플랫폼이 환경 모니터링 및 공중보 건 분야에서 효과적인 분석 도구로 활용될 수 있음을 시사한다.</abstract>
   <source_page>323</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.729</extraction_quality>
   <pageImage>/paper-pages/p215.webp</pageImage>
   <affiliations>
     <affiliation>성균관대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>biomimic( YF] 4})</keyword>
-    <keyword>8888(표면중강라만산란) Pesticide residues( AF-S)</keyword>
-    <keyword>Thiram(4] F)</keyword>
+    <keyword>biomimic(생태모방)</keyword>
+    <keyword>SERS(표면증강라만산란)</keyword>
+    <keyword>Pesticide residues(잔류농약)</keyword>
+    <keyword>Thiram(티람)</keyword>
   </keywords>
 </paper>

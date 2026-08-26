@@ -11,15 +11,17 @@
   <time>09:00~09:15</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>서윤호(기계연)</chair>
-  <abstract>행렬), Finite Element Analysis (유한요소 해석), Scaled Model Experiment (S224 Aq) 선박 수중방사소음(0804)의 실시간 ASS 위해 유한요소008) 해석과 일부 위키의 AS 데이터를 결함한 응답-응답 adda 기반 예측 알고리즘을 개발하였다. 축소 모형(길이 1.8 me 두 개의 기관실과 장비받 침대를 모사하도록 제작되었으며, 장비받침대 위 10개 지점에 대해 공기 중에서 FE 해석 및 Exciter 가진 Ads 수행하였다. 선체에 설치된 가속도계 31채널(갑판 4채널 + 선체 27채널)을 입력으로 하며, FE 해석 10케이스로 구성한 전달행렬(1600, 60000을 사전 지식(6007)으로 활용하고. Exciter 실측 데이터와의 Weighted Transmissibility 기법으로 실측 간 불일치를 보정한다. Tat 갑판 및 선체 가속도 실측으로, Trost 선체 가속도 실측 및 근접장 음압 실측(0 = 0.5 ㅁ0)으로 각각 보정하며, FE 해석의 AH rank] 맞춰 출력 차원을 Nn, = 10으로 제한하는 10 제한 방식으로 well-determined #4 문제를 구성한다. 예측된 선체 진동으로부터 방사소음을 예측하기 위해 기반 근접장-원거리 에너지 전달비 KOS 도입 하였다. Weighted Trcosice 동해 근접장(0 = 0.5 m) SS 예측하고, FE 해석에서 eet KM) = 8106 / Eosmes 갑하여 1 m 거리 방사소음을 예측한다. 제안된 과이프라인은 입력부터 출력까지 가속도계 신호만 으로 완결되며, 근접장 직접 계측 없이도 lm 방사소음 예측이 가능한 구조를 제공한다. 알고리즘의 타당성 은 길이 1.8 ㅠ 선박 축소 모형 AGS 통해 검중하였다. re ieee Te cimeom 올55 —</abstract>
+  <abstract>의 실시간 예측을 위해 유한요소(8) 해석과 일부 위치의 계측 데이터를 결합한 웅답-웅답 전달행렬 기반 예측 알고리즘을 개발하였다. 축소 모형(길이 1.8 ㅁ0)은 두 개의 기관실과 장비받 침대를 모사하도록 제작되었으며, 장비받침대 위 10개 지점에 대해 공기 중에서 8 해석 및 84006 가진 실험을 수행하였다. 선체에 설치된 가속도계 31채널(갑판 4채널 + 선체 27채널)을 입력으로 하며, "8 해석 10케 이 스로 구성한 전달행 렬(110 Tacoustic)을 사전 지식(0001)으로 활용하고, Exciter 실측 데이터 와의 \61814160 '780500155101114 기법으로 1#-실측 간 불일치를 보정한다. Tye st 및 선체 가속도 실측으로, 00006은 선체 가속도 실측 및 근접장 음압 실측(0 = 0.5 2)으로 각각 보정하며, FE 해석의 실효 780Ｌ에 맞춰 출력 차원을 제, = 10으로 제한하는 100 제한 방식으로 \611-0666001060 추정 문제를 구성한다. 예즉된 선체 진동으로부터 방사소음을 예즉하기 위해 # 기반 근접장-원거리 에너지 전달비 ※(《)를 도입 하였다. Weighted Tacoustic = 통해 근접장(0 = 0.5 m) 음압을 예측하고, FE 해석 에서 산출한 K(f) = Eim FE / Eosmees 곱하여 1 0 거리 방사소음을 예측한다. 제안된 파이프라인은 입력부터 출력까지 가속도계 신호만 으로 완결되며, 근접장 직접 계측 없이도 1 ㅁ 방사소음 예측이 가능한 구조를 제공한다. 알고리즘의 타당성 은 길이 1.8 ㅠ 선박 축소 모형 실험을 통해 검증하였다. T_hull (FE) T_acoustic (FE) K(f) Fe (N_r x 31) [N_r x (27+N_D] J E_1m/E_0.5m = = 도; | - _ Deck &gt; Weighted T_hull _Welahied | { Ex. enon FEO NF press. | ! Hall easire) predicted nirnts "| (meas) | | | + NF press. 0.5m { &gt; ~ | \ Ss = : : 22 14 5 ×…~ apply 5 0.5 m pressure 2 " ^ a | Sa ——— oa Side shell \ ==] Bottom shell</abstract>
   <source_page>125</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.531</extraction_quality>
   <pageImage>/paper-pages/p052.webp</pageImage>
   <affiliations>
     <affiliation>기계연</affiliation>
     <affiliation>가천대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Underwater Radiated Noise (Fey MAS)</keyword>
-    <keyword>Response-Response Transmissibility (응답-응답 전달</keyword>
+    <keyword>Underwater Radiated Noise (47S "}A}22-%)</keyword>
+    <keyword>Response-Response Transmissibility (6 4-¢ Hy 41a</keyword>
   </keywords>
 </paper>

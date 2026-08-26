@@ -11,8 +11,10 @@
   <time>16:20~16:35</time>
   <venue>사파이어홀[1]</venue>
   <chair>정형조(KAIST)</chair>
-  <abstract>Analysis (OMA), Knowledge Graph (KG) 교량 구조물의 고유진동수, 감쇠비, 모드 형상 등 몽특성의 연속적 추적은 구조물 건전성 모니터렁(5800)의 핵심 요소이다. 그러나 기존 운웅모달해석(004. 워크플로우는 신호처리 알고리즘 실행, 스펙트럼 결과 해석, 등 전 과경에서 Kael 전문가의 개입을 전제로 하여, 분석 비웅과 분석자 간 변동성이 크다는 한게가 있다. 본 연구는 LLM 기반 멀티 에이전트 시스템과 물리 기반 신호처리 EPS 결합하여 교량 동특성 EAS 완 전 자동화하는 프레임워크를 제안한다. 제안 시스템은 Code-as-Reasoning PAYS 채택하며, 신호처리 에이전트 모드 분류 에이전트-오케스트레이터 에이전트로 구성된 ASA 멀티 에이전트 TAS 통해 분석 A 크플로우를 순차적으로 분해-실행한다. 수치 계산은 NExT-ERA 기반 결정론적 알고리즘이 전담하며, LLM 은 결과의 해석과 고차 추론만을 담당함으로써 계산 신뢰성을 보장한다. 구조 진단에서의 LLM 환각(18100108800) AAS 위해, 3계층 지식그래프&lt;06)를 구축하여 물리 사전지식을 체계화하였다. Layer 1은 OMA 문헌으로부터 자동 추출된 방법론 지식, Layer 2는 대상 교량의 센서 위상과 구조역학적 모드 물리 정보, Layer 8는 시변 계측 관측값으로 구성된다. 추론 시 오케스트레이터 에이전트는 KG 트리플을 근거로 인용하여 물리적으로 일관된 추론 연쇄(068600108 아810)를 생성한다. 본 프레임워크는 하부 슬래브 FRP 보강판 제거 Ago] 수행된 25(:-1형 wee] 계측 데이터를 대상으로 검 중하였다. 가속도계 9채널 및 변형률계 OBS 500116로 계즉한 보강 제거 AS 2일치 데이터를 Bota, FRP 보강판 AA 의한 강성 저하가 SS 변화로 나타나는 구조적 손상 시나리오에 대해 시스템 ass 평가하였다. 단일 에이전트 대비 멀티 에이전트 비교, KG 미제공 대비 KG 중강 RAG 비교 실험을 통해 모 EAB 정확도, 환각률(1140[-38-14086), FE 근거 추적 가능성을 정량 평가하며, KG 중장 멀티 에이전트 구조가 전문가 수준의 진단 성능과 추론 투명성을 PATS 확인하였다.</abstract>
+  <abstract>교량 구조물의 고유진동수, 감쇠비, 모드 형상 등 동특성의 연속적 추적은 구조물 건전성 모니터링OzotP의 핵심 요소이다. 그러나 기존 운용모달해석OvthPG 워크플로우는 신호처리 알고리즘 실행, 스펙트럼 결과 해석, 등 전 과정에서 도메인 전문가의 개입을 전제로 하여, 분석 비용과 분석자 간 변동성이 크다는 한계가 있다. 본 연구는 sstG 기반 멀티 에이전트 시스템과 물리 기반 신호처리 도구를 결합하여 교량 동특성 분석을 완 전 자동화하는 프레임워크를 제안한다. 제안 시스템은 Code-as-Reasoning 패러다임을 채택하며, 신호처리 에이전트·모드 분류 에이전트·오케스트레이터 에이전트로 구성된 계층적 멀티 에이전트 구조를 통해 분석 워 크플로우를 순차적으로 분해·실행한다. 수치 계산은 NExT-ERA 기반 결정론적 알고리즘이 전담하며, sst 은 결과의 해석과 고차 추론만을 담당함으로써 계산 신뢰성을 보장한다. 구조 진단에서의 sstG 환각(hallucination) 억제를 위해, Z계층 지식그래프OrnP를 구축하여 물리 사전지식을 체계화하였다. La er 1은 vthG 문헌으로부터 자동 추출된 방법론 지식, La er 2는 대상 교량의 센서 위상과 구조역학적 모드 물리 정보, La er Z는 시변 계측 관측값으로 구성된다. 추론 시 오케스트레이터 에이전트는 rnG 트리플을 근거로 인용하여 물리적으로 일관된 추론 연쇄(reasoning chain)를 생성한다. 본 프레임워크는 하부 슬래브 mywG 보강판 제거 실험이 수행된 wzjTp형 교량의 계측 데이터를 대상으로 검 증하였다. 가속도계 9채널 및 변형률계 9채널을 500Hz로 계측한 보강 제거 전·후 2일치 데이터를 활용하여, mywG 보강판 제거에 의한 강성 저하가 동특성 변화로 나타나는 구조적 손상 시나리오에 대해 시스템 성능을 평가하였다. 단일 에이전트 대비 멀티 에이전트 비교, rnG 미제공 대비 rnG 증강 yhnG 비교 실험을 통해 모 드 식별 정확도, 환각률(LLM-as-Judge), 추론 근거 추적 가능성을 정량 평가하며, rnG 증강 멀티 에이전트 구조가 전문가 수준의 진단 성능과 추론 투명성을 달성함을 확인하였다. 감사의 글 이 성과는 정부(과학기술정보통신부)의 재원으로 한국연구재단의 지원을 받아 수행된 연구임. OyzTYWY\TWYYYZ]XYPG ˋ G교신저자bG 성균관대학교 건설환경공학부 교수 lTaGgU JG 성균관대학교 글로벌스마트시티융합전공 박사과정</abstract>
   <source_page>281</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.734</extraction_quality>
   <pageImage>/paper-pages/p173.webp</pageImage>
   <affiliations>
     <affiliation>성균관대</affiliation>
@@ -21,6 +23,7 @@
     <keyword>Large Language Model (LLM)</keyword>
     <keyword>Multi-Agent System</keyword>
     <keyword>Structural Health Monitoring (SHM)</keyword>
-    <keyword>Operational Modal</keyword>
+    <keyword>Operational Modal Analysis (OMA)</keyword>
+    <keyword>Knowledge Graph (KG)</keyword>
   </keywords>
 </paper>

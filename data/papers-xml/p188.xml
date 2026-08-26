@@ -11,16 +11,18 @@
   <time>08:40~08:55</time>
   <venue>에메랄드홀</venue>
   <chair>이종길(경국대)</chair>
-  <abstract>강도 평가), Inspection Robot(@ Ak ER), 최근 전력 수요 변동 중가에 따라 가스터빈 발전기의 기동-정지 운전이 빈번해지고 있으며, 이에 따라 발 전기 내부 구조물의 열적 및 기계적 피로가 중가하고 있다. 특히 고정자 웨지는 AAs 철심을 고정하는 핵 심 구조물로서, 체결력이 Ade 경우 진동 중가, 절연 마모, 나아가 절연과피로 이어질 수 있으므로, 이에 대한 정량적 상태평가 기술의 Bago] 증대되고 있다. 국내에서는 발전기 진단 시 회전자 인출 후 사람에 의한 수기타격 및 청음에 의한 검사 방식에 주로 의 존하고 있으며, 일부 발전기 제조사 SA 검사 장비 및 진단 서비스를 aaa 있다. 또한 aad 인출 과정에서 발생하는 시간 손실, 정비 비용 중가 및 작업 위험성 So 문제로 인해, 회전자 미인출 상태에서도 신뢰성 있는 진단이 가능한 기술 개발의 필요성이 지속적으로 제기되고 있다. 이에 본 연구에서는 발전기 회전자 인입 상태에서 고정자 웨지 체결강도를 평가하기 위한 지능형 검사 시스템을 개발하였다. 본 시스템은 발전기 내부 Ne Bair 882)을 주행하는 모바일 검사 로봇과, 웨지 타격 에 따른 응답 신호를 분석하는 진단 알고리즘으로 구성된다. 검사 EFS 발전기 회전자와 고정자 사이의 제한된 공간 내에서 안정적으로 이동하며 dle 타격하고 음향 les 취득한다. 취득된 신호는 주과수 특 성 및 패턴 분석을 통해 처리되며, 이를 기반으로 웨지 체결상태를 정량적으로 평가하도록 개발되었다. 발전기 웨지 체결강도 검사 로봇 로봇 제어 / 영상 분석 / 웨지 진단 웨지 체결강도 평가 &quot; | ee] wes ts (그 | 레틸정상! 버 , 로봇 제어 age Om ze 띠별 ] ㆍ . BHA | 90 7 7 WA A Jala a 23 때 Straight @ Pines ues} ~주의 ×불량</abstract>
+  <abstract>최근 전력 수요 변동 증가에 따라 가스터빈 발전기의 기동-정지 운전이 빈번해지고 있으며, 이에 따라 발 전기 내부 구조물의 열적 및 기계적 피로가 증가하고 있다. 특히 고정자 웨지는 권선과 철심을 고정하는 핵 심 구조물로서, 체결력이 저하될 경우 진동 증가, 절연 마모, 나아가 절연파피로 이어질 수 있으므로, 이에 대한 정량적 상태평가 기술의 필요성이 증대되고 있다. 국내에서는 발전기 진단 시 회전자 인출 후 사람에 의한 수기타격 및 청음에 의한 검사 방식에 주로 의 존하고 있으며, 일부 발전기 제조사 중심의 검사 장비 및 진단 서비스를 수행하고 있다. 또한 회전자 인출 과정에서 발생하는 시간 손실, 정비 비용 증가 및 작업 위험성 등의 문제로 인해, 회전자 미인출 상태에서도 신뢰성 있는 진단이 가능한 기술 개발의 필요성이 지속적으로 제기되고 있다. 이에 본 연구에서는 발전기 회전자 인입 상태에서 고정자 웨지 체결강도를 평가하기 위한 지능형 검사 시스템을 개발하였다. 본 시스템은 발전기 내부 에어캡(0ㅁ 882)을 주행하는 모바일 검사 로봇과, 웨지 타격 에 따른 응담 신호를 분석하는 진단 알고리즘으로 구성된다. 검사 로봇은 발전기 회전자와 고정자 사이의 제한된 공간 내에서 안정적으로 이동하며 웨지를 타격하고 음향 신호를 취득한다. 취득된 신호는 주과수 특 성 및 패턴 분석을 통해 처리되며, 이를 기반으로 웨지 체결상태를 정량적으로 평가하도록 개발되었다. ead Airs boas eee도 로봇 제어 / 영상 분석 / 웨지 진단 발전기 내부 영상 문석] 웨지 제결강도 펑가 웨지데이터 취득 a ee " 」 ° , EES Gl wens 0 | 300 |: Ea “ : | a | \ ㆍ ay 00 e. = 대 Straight MASA 80 a | &lt; 115 배로 아이오 UD es E beanie Ow</abstract>
   <source_page>296</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.655</extraction_quality>
   <pageImage>/paper-pages/p188.webp</pageImage>
   <affiliations>
     <affiliation>전력연</affiliation>
     <affiliation>가스터빈 발전기 회전자 인입상태 웨지 체결강도평가 시스템 개발</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Gas Turbine Generator(7}2: F] Bl 발전기)</keyword>
-    <keyword>Stator Wedge( 3174 자 웨 Al)</keyword>
-    <keyword>Tightness Evaluation(4] 4</keyword>
+    <keyword>Gas Turbine Generator(7}2 5] #1 %4417])</keyword>
+    <keyword>Stator Wedge(3.4%} $)4])</keyword>
+    <keyword>Tightness Evaluation(4l] 4</keyword>
   </keywords>
 </paper>

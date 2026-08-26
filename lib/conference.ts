@@ -1,16 +1,13 @@
 import papersData from '@/data/papers-with-abstracts.json';
 import posterPapersData from '@/data/poster-papers.json';
 import sessionsData from '@/data/sessions.json';
+import officialEventsData from '@/data/official-events.json';
 import venuesData from '@/data/venues.json';
 import speakersData from '@/data/speakers.json';
 import announcementsData from '@/data/announcements.json';
-import { fallTestAdditionalSessions, mapSpringConferenceTextToFall, mapSpringDateToFall } from '@/lib/conference-config';
+import { conferenceConfig } from '@/lib/conference-config';
 
-export type PaperFigure = {
-  id?: string;
-  caption?: string;
-  image?: string;
-};
+export type PaperFigure = { id?: string; caption?: string; image?: string };
 
 export type Paper = {
   paper_id?: string;
@@ -30,9 +27,14 @@ export type Paper = {
   abstract?: string;
   keywords?: string[];
   sourcePage?: number;
+  /** How the abstract was obtained: font-decode | ocr-300dpi | no-page */
   extractionStatus?: string;
-  figures?: { id?: string; caption?: string; image?: string }[];
+  /** 0–1 confidence in the extracted text; low values are worth a human check. */
+  extractionQuality?: number;
+  figures?: PaperFigure[];
   pageImage?: string;
+  /** Per-paper PDF, supplied for the autumn conference. */
+  paperPdf?: string;
 };
 
 export type Session = {
@@ -46,60 +48,36 @@ export type Session = {
   category: string;
 };
 
-export type Venue = {
-  id: string;
-  name: string;
-  floor: string;
-};
+export type Venue = { id: string; name: string; floor: string };
+export type Speaker = { id: string; name: string; papers: string[] };
+export type Announcement = { id: string; title: string; body: string; date: string; category: string };
 
-export type Speaker = {
-  id: string;
-  name: string;
-  papers: string[];
-};
+type PaperRecord = Omit<Paper, 'sourcePage'> & { source_page?: number | null };
 
-export type Announcement = {
-  id: string;
-  title: string;
-  body: string;
-  date: string;
-  category: string;
-};
-
-type PaperDataRecord = Omit<Paper, 'sourcePage'> & {
-  source_page?: number | null;
-};
-
-export const papers: Paper[] = ([...papersData, ...posterPapersData] as PaperDataRecord[]).map(
-  ({ source_page: sourcePage, ...paper }) => ({
-    ...paper,
-    date: mapSpringDateToFall(paper.date),
-    sourcePage: sourcePage ?? undefined,
-  }),
+export const papers: Paper[] = ([...papersData, ...posterPapersData] as PaperRecord[]).map(
+  ({ source_page: sourcePage, ...paper }) => ({ ...paper, sourcePage: sourcePage ?? undefined }),
 );
+
+/** Paper sessions plus the official programme-book events (opening, keynotes, dinner…). */
 export const sessions: Session[] = [
-  ...(sessionsData as Session[]).map((session) => ({
-    ...session,
-    date: mapSpringDateToFall(session.date),
-  })),
-  ...fallTestAdditionalSessions,
+  ...(sessionsData as Session[]),
+  ...(officialEventsData as Session[]),
 ];
+
 export const venues = venuesData as Venue[];
 export const speakers = speakersData as Speaker[];
-export const announcements: Announcement[] = (announcementsData as Announcement[]).map((announcement) => ({
-  ...announcement,
-  title: announcement.id === 'notice-000' ? announcement.title : mapSpringConferenceTextToFall(announcement.title),
-  body: announcement.id === 'notice-000' ? announcement.body : mapSpringConferenceTextToFall(announcement.body),
-}));
+export const announcements = announcementsData as Announcement[];
 
-export const dayLabel = (date: string) => {
-  const labels: Record<string, string> = {
-    '2026-11-25': '11/25 수',
-    '2026-11-26': '11/26 목',
-    '2026-11-27': '11/27 금',
-    '2026-11-28': '11/28 토',
-  };
-  return labels[date] ?? date;
-};
+const dayLabels = new Map(
+  (conferenceConfig.dates as readonly string[]).map((date, index) => {
+    const [, month, day] = date.split('-');
+    return [date, `${Number(month)}/${Number(day)} ${conferenceConfig.dayNames[index] ?? ''}`.trim()];
+  }),
+);
+
+export const dayLabel = (date: string) => dayLabels.get(date) ?? date;
 
 export const formatSessionTitle = (title: string) => title.replace(/^(기획|부문|특별)\s+/, '[$1] ');
+
+export const sessionById = new Map(sessions.map((session) => [session.id, session]));
+export const venueByName = new Map(venues.map((venue) => [venue.name, venue]));

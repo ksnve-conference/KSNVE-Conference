@@ -11,15 +11,17 @@
   <time>09:20~09:30</time>
   <venue>사파이어홀[2]</venue>
   <chair>박경수(가천대), 한제헌(한국공학대)</chair>
-  <abstract>Structure Borne Noise(77]¢l 소음) 데이터센터는 서버 및 네트워크 장비 등 24시간 운영 특성상 정전 등 비상상황에 대비하기 위해 다수의 비상발전기가 설치된다. 발전기는 신뢰성 확보를 위해 주기적으로 점검 및 시험 가동이 수행되며 고출럭의 운전 특성으로 인해 데이터센터 내부와 외부에 소음과 진동문제를 발생시킨다. 비상발전기 가동 시 실내로 전달되는 소음은 천장과 바닥을 투과해서 전달되는 투과소음과 엔진의 회전운 Fd 의해 발생한 진동이 기초 및 건축 구조체를 따라 전달되면서 실내 소음으로 재방사되는 구조기인 소음 으로 구분이 된다 실내의 경우 법적인 소음규제기준은 없으나 미국 공조냉동공학회(^&amp;81104.48, American Society of Heating, Refrigerating and Air-Conditioning Engineers) 나 자체 기준으로 NC(Noise Criteria) Curve 및 dB(A)S 기반으로 설정된다. 특히 Nc 기준은 주과수별 허용 AGES 규정하여 AY 음 환경의 BAS 대표하는 ARE 활 용되어 실내 사무 공간 등에 널리 적용된다. 본 연구 대상 현장은 설계단계에서 Ne 35 기준을 만족하도록 설계되었으나 시공 과정에서 방진 요구 성능 과 부합하지 않는 방진재가 적용되어 IY BGO] NSS 추과한 사례이며 JSS 통해 구조기인 수음과 공 기전달 음의 기여도를 구분하여 원인을 분석하였다. 시공 이후의 방음 및 방진 대책 Ase 구조적 제약으로 인해 성능 개선에 한계가 존재하며 설계 초기 단 계에서 예측에 기반한 방진 설계가 펄수적이다. 또한, 설계 제품과 동등한 성능이 확보된 방진 시스템의 성능 검중과 함께 시 공 품질 판리가 병행되어야 하며 방진 AJA eo] 설치조건 및 구조체 접함부에 대한 관리가 요구된다 060 0부완후측정결과 ㅡ- 바닥 슬라브 7 + SS | 1 때 8--------- -===느= | ory SS 다를 cleo 은 따이 oes a) ~ RSS = 기리 호 5 | ss sa cas — NcLas 를 0001 봅 fig ya Aa iS. 30 4 SS ss = = == = as é aan Cee Petey om cay 22 ae oe 0.0001 EE See: = wH 1 1 } Lit 6 ㄱ a am ane dics coo. $$ &amp; 125 250 0 590 0 (CK COCK COOK 8 0 60 이 120 Frequency[Hz] Frequency[Hz]</abstract>
+  <abstract>데이터센터는 서버 및 네트워크 장비 등 24시간 운영 특성상 정전 등 비상상황에 대비하기 위해 다수의 비상발전기가 설치된다. 발전기는 신뢰성 확보를 위해 주기적으로 점검 및 시험 가동이 수행되며 고출력의 운전 특성으로 인해 데이터센터 내부와 외부에 소음과 진동문제를 발생시킨다. 비상발전기 가동 시 실내로 전달되는 소음은 천장과 바닥을 투과해서 전달되는 투과소음과 엔진의 회전운 동에 의해 발생한 진동이 기초 및 건축 구조체를 따라 전달되면서 실내 소음으로 재방사되는 구조기인 소음 으로 구분이 된다. 실내의 경우 법적인 소음규제기준은 없으나 미국 공조냉동공학회(ASHRAE, American Society of Heating, Refrigerating and Air-Conditioning Engineers) 나 자체 기준으로 NC(Noise Criteria) Curve 및 dB(A)를 기반으로 설정된다. 특히 NC 기준은 주파수별 허용 소음도를 규정하여 실내 음 환경의 정온성을 대표하는 지표로 활 용되어 실내 사무 공간 등에 널리 적용된다. 본 연구 대상 현장은 설계단계에서 NC 35 기준을 만족하도록 설계되었으나 시공 과정에서 방진 요구 성능 과 부합하지 않는 방진재가 적용되어 실내 소음이 기준을 초과한 사례이며 실측을 통해 구조기인 소음과 공 기전달 음의 기여도를 구분하여 원인을 분석하였다. 시공 이후의 방음 및 방진 대책 적용은 구조적 제약으로 인해 성능 개선에 한계가 존재하며 설계 초기 단 계에서 예측에 기반한 방진 설계가 필수적이다. 또한, 설계 제품과 동등한 성능이 확보된 방진 시스템의 성능 검증과 함께 시 공 품질 관리가 병행되어야 하며 방진 시스템의 설치조건 및 구조체 접합부에 대한 관리가 요구된다.</abstract>
   <source_page>154</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.743</extraction_quality>
   <pageImage>/paper-pages/p081.webp</pageImage>
   <affiliations>
     <affiliation>엔에스브이</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Data Center(4] 이터센터)</keyword>
-    <keyword>Emergency Generators( 4] 4} 발전기)</keyword>
-    <keyword>Vibration Reduction(4l -&amp; 저감 )</keyword>
+    <keyword>Data Center(데이터센터)</keyword>
+    <keyword>Emergency Generators(비상  발전기)</keyword>
+    <keyword>Vibration Reduction(진동  저감) Structure Borne Noise(구조기인  소음)</keyword>
   </keywords>
 </paper>

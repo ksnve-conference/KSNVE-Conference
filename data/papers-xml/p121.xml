@@ -11,15 +11,19 @@
   <time>14:10~14:25</time>
   <venue>에메랄드홀</venue>
   <chair>김기창(현대차)</chair>
-  <abstract>민감도) 졸음운전 예방과 업무 수행 능력 회복을 위해 차량 내 낮잠 Sho] 주목받고 있다. 그러나 기상 직후 나타나는 수면관성은 즉각적인 운전 복귀와 작업 수행을 저해할 수 있으므로, 이를 완화하기 위한 효과적인 기상 유도 방법이 필요하다. 청각 자극은 차량 환경에서 적용이 용이한 접근법이지만, 개인의 청각 민감도를 고려한 맞춤형 설계 Ate 아직 충분하지 않다. 이에 본 연구에서는 피혐자를 청각 민감도에 따라 민감군과 비민감군으로 분류하고, 각 to 최적화된 청각 자극을 실시간 제어 시스템에 적용하여 수면관성 완화 및 피로 회복 Sts 검중하였다. 실험 패러다임 구성은 Fg ld 제시하였다. 청각 민감도 기저선은 NoiSeQ(Noise Sensitivity Questionnaire), WNSS(Weinstein Noise Sensitivity Scale), SSSQ2(Sound Sensitivity Symptoms Questionnaire Version 2.0) 42S 통해 측정하였으며, 이를 바탕으로 정상 yay 19명을 비민감군(2ㅁ = 10)과 민감군(2 = 9)으로 분류하였다. 비민감군에는 입면 및 수면 유지 단계에서 00 noises, 기상 유도 GAINS 자연 새소리를 제공하였다. 민감군에는 입면 및 수면 유지 단계에서 각각 6 Hz 및 3 Hz binaural beats= 적용하였고, 기상 유도 단계에서는 고주파 성분을 Gad 새소리를 제공하였다. AGS 실제 차량(아이오닉 5) 환경에서 수행되었으며, Ear-EEG(Electroencephalogram) ASS 입력으로 하는 random forest 기반 수면 단계 분류 BAS 실시간 청각 자극 제어 시스템에 적용하였다. 수면관성과 기분 평가는 KSS(Karolinska Sleepiness Scale), SIQ(Sleep Inertia Questionnaire), POMS(Profile of Mood States), PVT-B(Psychomotor Vigilance Task-BriefS 이용하여 낮잠 전, 기상 후 5분, 15분, 30분 시점에서 수행하였고, 모든 사후 측정값은 낮잠 전 값을 기준으로 정규화하였다. 통계 분석은 Wilcoxon signed-rank 1[68[를 사용하였고, 효과크기 은 해당 검정의 표준화 통계량을 기반으로 산출하였다. 분석 결과, PVI-B 반응시간과 88에서는 유의한 차이가 나타나지 않았다. SIQE 비민감군의 기상 후 5분 시점에서 비교적 큰 효과크기 = -0.61)를 보였으나, FDR 보정 후 통계적 유의성은 확보되지 않았다(00126 = 0.2188). 반면 POMS] Vigor 점수는 전체 Baro 기상 후 5분, 15분, 30분 시점 모두에서 유의하게 중가하였다(13016 1). 이러한 결과는 본 연구의 맞춤형 청각 자극 시스템이 차량 내 낮잠 후 주관적 활력 회복에 TAA 영향을 미칠 가능성을 시사한다. Table 1 Statistical Results for POMS (Vigor) and SIO POMS(Vigor) 0.78 &quot; auditory stimulation system ㆍ KSS, POMS, SIQ. 2 “&gt; KSS, POMS, SIQ, POMS(Vigor) 0.65 nr ne POMS(Vigor) 0.75 sa 2081 Fig. 1 Experiment Paradigm + 교신저자; apple al 응합학과 + 광주과학기술원 al 융합학과 Eomail: scjun@gist.ac.kr ** 현대자동차 제네시스엔지니어링솔루션팀 # 광주과학기술원 al 응합학과 -216-</abstract>
+  <abstract>졸음운전 예방과 업무 수행 능력 회복을 위해 차량 내 낮잠 활용이 주목받고 있다. 그러나 기상 직후 나타나는 수면관성은 즉각적인 운전 복귀와 작업 수행을 저해할 수 있으므로, 이를 완화하기 위한 효과적인 기상 유도 방법이 필요하다. 청각 자극은 차량 환경에서 적용이 용이한 접근법이지만, 개인의 청각 민감도를 고려한 맞춤형 설계 연구는 아직 충분하지 않다. 이에 본 연구에서는 피험자를 청각 민감도에 따라 민감군과 비민감군으로 분류하고, 각 군에 최적화된 청각 자극을 실시간 제어 시스템에 적용하여 수면관성 완화 및 피로 회복 효과를 검증하였다. 실험 패러다임 구성은 Fig. 1에 제시하였다. 청각 민감도 기저선은 uzxOuG z G xPSG ~uzzO~G uG z G zPSG zzzxYOzG Sensitivit S mptoms Questionnaire Version 2.0) 설문을 통해 측정하였으며, 이를 바탕으로 정상 피험자 19명을 비민감군(n = 10)과 민감군(n = 9)으로 분류하였다. 비민감군에는 입면 및 수면 유지 단계에서 pink noise를, 기상 유도 단계에서는 자연 새소리를 제공하였다. 민감군에는 입면 및 수면 유지 단계에서 각각 6 Hz 및 3 Hz binaural beats를 적용하였고, 기상 유도 단계에서는 고주파 성분을 감쇄한 새소리를 제공하였다. 실험은 실제 차량(아이오닉 5) 환경에서 수행되었으며, Ear-EEG(Electroencephalogram) 신호를 입력으로 하는 random forest 기반 수면 단계 분류 모델을 실시간 청각 자극 제어 시스템에 적용하였다. 수면관성과 기분 평가는 KSS(Karolinska Sleepiness Scale), SIQ(Sleep Inertia Questionnaire), POMS(Profile of Mood States), PVT-B(Ps chomotor Vigilance Task-Brief)를 이용하여 낮잠 전, 기상 후 5분, 15분, 30분 시점에서 수행하였고, 모든 사후 측정값은 낮잠 전 값을 기준으로 정규화하였다. 통계 분석은 Wilcoxon signed-rank test를 사용하였고, 효과크기 r은 해당 검정의 표준화 통계량을 기반으로 산출하였다. 분석 결과, PVT-B 반응시간과 KSS에서는 유의한 차이가 나타나지 않았다. SIQ는 비민감군의 기상 후 5분 시점에서 비교적 큰 효과크기(r = -0.61)를 보였으나, FDR 보정 후 통계적 유의성은 확보되지 않았다(FDR = 0.2188). 반면 POMS의 Vigor 점수는 전체 피험자에서 기상 후 5분, 15분, 30분 시점 모두에서 유의하게 증가하였다(Table 1). 이러한 결과는 본 연구의 맞춤형 청각 자극 시스템이 차량 내 낮잠 후 주관적 활력 회복에 긍정적 영향을 미칠 가능성을 시사한다.</abstract>
   <source_page>229</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.676</extraction_quality>
   <pageImage>/paper-pages/p121.webp</pageImage>
   <affiliations>
     <affiliation>GIST</affiliation>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Sleep 106008(수면 관성)</keyword>
-    <keyword>Power Nap(@t-2 낮잠) Auditory Stimulation(*4 Z} 자극) Auditory Sensitivity Zt</keyword>
+    <keyword>Sleep Inertia(수면 관성)</keyword>
+    <keyword>Power Nap(짧은 낮잠)</keyword>
+    <keyword>Auditory Stimulation(청각 자극)</keyword>
+    <keyword>Auditory Sensitivity(청각</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,19 @@
   <time>11:25~11:40</time>
   <venue>릴리홀[1]</venue>
   <chair>문소연(하만)</chair>
-  <abstract>Transmissibility( 전달률), Contribution Analysis(7]] = 분석), 자량 주행 중 발생하는 시트(6680 ASL FA] 직접 체감하는 주요 진동 응답 중 하나다. 시트 진동 저감을 위한 시스템 WAS 위해서는 다양한 전달 경로 중 어떤 경로가 응답에 가장 크게 기여하는지를 가 악하는 AO] 필수적이다. 본 연구에서는 특정 주행 조건에서 계즉한 실차 진동 데이터를 바탕으로 Operational Transfer Path Analysis(OTPA)S 적응하여, 차량 시트 진동의 주요 전달 경로와 경로별 기여 ES 분석하였다. Operational Transfer Path Analysis(OTPA)E 실제 주행 조건()060800081 condition dA ASS 응답 신호만을 사용하여 입력과 출력 Apolo] 상관관계를 분석하는 기법이다. 경계면에서의 94 (Excitation)S 추정하는 전통적인 TPA 와 달리, OTPA 는 ABE(Transmissibility)S 추정하기 때문에 시스템의 비선형 적 특성과 실제 하중 조건을 그대로 반영할 수 있어 실차 NVH(Noise, Vibration, Harshness) 평가 및 문 제 해결에 매우 효율적이다. 본 연구에서는 시트 쿠션 진동 응답을 출력으로 설정하고, 서브프레임 및 시트 마운트 Poo 주요 진동 Ass 입력으로 선정하여 OTPA 를 수행하였다. 다채널 입력 신호 간에 존재하 는 상관성(270881310) EAS 해결하기 위해 특이값 분해(81084180『 Value Decomposition, SVD) 기법을 4 용하였으며, 이를 통해 독립적인 주성분을 추출하고 노이즈를 배제함으로써 전달률(11700501551601160 주정 의 신뢰성을 확보하였다. 이를 통해 FS 영역에서 시트 진동 응답에 대한 경로별 기여도를 비교하고, 특 정 주파수 대역에서 상대적으로 영향이 큰 전달 경로를 검토하였다. 이러한 분석은 실차 조건에서 시트 A 동의 전달 SAS 이해하고, 향후 시트 진동 저감을 위한 구조 개선 방향을 도출하는 기초 자료로 활용될 수 있다. + 교신저자; 고려대학교 기계공학과 ea ane</abstract>
+  <abstract>차량 주행 중 발생하는 시트(Seat) 진동은 승객이 직접 체감하는 주요 진동 응답 중 하나다. 시트 진동 저감을 위한 시스템 개선을 위해서는 다양한 전달 경로 중 어떤 경로가 응답에 가장 크게 기여하는지를 파 악하는 것이 필수적이다. 본 연구에서는 특정 주행 조건에서 계측한 실차 진동 데이터를 바탕으로 Operational Transfer Path Anal sis(OTPA)를 적용하여, 차량 시트 진동의 주요 전달 경로와 경로별 기여 도를 분석하였다. Operational Transfer Path Anal sis(OTPA)는 실제 주행 조건(Operational condition)에서 계측된 응답 신호만을 사용하여 입력과 출력 사이의 상관관계를 분석하는 기법이다. 경계면에서의 외력(Excitation)을 추정하는 전통적인 TPA 와 달리, OTPA 는 전달률(Transmissibilit )을 추정하기 때문에 시스템의 비선형 적 특성과 실제 하중 조건을 그대로 반영할 수 있어 실차 NVH(Noise, Vibration, Harshness) 평가 및 문 제 해결에 매우 효율적이다. 본 연구에서는 시트 쿠션 진동 응답을 출력으로 설정하고, 서브프레임 및 시트 마운트 부근의 주요 진동 신호를 입력으로 선정하여 v{wh 를 수행하였다. 다채널 입력 신호 간에 존재하 는 상관성(Crosstalk) 문제를 해결하기 위해 특이값 분해(Singular Value Decomposition, SVD) 기법을 적 용하였으며, 이를 통해 독립적인 주성분을 추출하고 노이즈를 배제함으로써 전달률(Transmissibilit ) 추정 의 신뢰성을 확보하였다. 이를 통해 주파수 영역에서 시트 진동 응답에 대한 경로별 기여도를 비교하고, 특 정 주파수 대역에서 상대적으로 영향이 큰 전달 경로를 검토하였다. 이러한 분석은 실차 조건에서 시트 진 동의 전달 특성을 이해하고, 향후 시트 진동 저감을 위한 구조 개선 방향을 도출하는 기초 자료로 활용될 수 있다. ˋG교신저자bG 고려대학교 기계공학과 lTa gUU JG 고려대학교 기계공학과 Q 고려대학교 기계공학과 QQG # 현대자동차</abstract>
   <source_page>380</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.731</extraction_quality>
   <pageImage>/paper-pages/p239.webp</pageImage>
   <affiliations>
     <affiliation>고려대</affiliation>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Operational Transfer Path Analysis(2}= 조건 진동 전달 경로 분석)</keyword>
-    <keyword>Vibration Transfer Path(ZlE 전달 경로)</keyword>
+    <keyword>Operational Transfer Path Analysis(작동 조건 진동 전달 경로 분석)</keyword>
+    <keyword>Vibration Transfer Path(진동 전달 경로)</keyword>
+    <keyword>Transmissibility(전달률)</keyword>
+    <keyword>Contribution Analysis(기여도 분석)</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,20 @@
   <time>08:40~08:55</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>고정우(항공대)</chair>
-  <abstract>000001(능동소음제어), Multi Rotor(4}+ 로터), Drone(E =), Broadband 4) 본 연구에서는 첨단항공모빌리티 축소기의 객실 소음 및 진동 데이터를 활용하여 능동소음제어 시뮬레이 AS 수행하였다. 실제 AAM 기체를 이용한 객실 소음 능동 제어 방법론의 개발 및 ase 기체 확보와 운 용。 안전성 Sol 제약으로 인해 반복적인 실혐과 비교 평가에 한계가 있다. 이에 본 연구에서는 이를 대체할 수 있는 실험 플랫폼으로 첨단항공모빌리티 축소기를 제작하였다. 축소기는 실제 AAM 기체의 다중 로터 구성을 모사할 수 있는 멀티콤터형 ESS 기반으로, 객실 환경을 유사하게 모사할 수 있도록 별도로 설계 및 제작한 축소 동체를 결합하여 구성하였다. 객실 내부에는 마이크로폰과 가속도계를 설치하여 비행 중 A 실 내에 발생하는 소음과 des 계측할 수 있도록 구성하였다. 이후 비행을 통해 Fuse 소음 및 진동 데 이터를 바탕으로 FxLMs 알고리즘 기반 능동소음제어 시뮬레이션을 수행하였다. 이를 바탕으로 객실 내 광 대역 소음에 대한 능동소음제어 적용 가능성을 살펴보았다. BAPE 향후 축소기 기반 실시간 능동소음제 어 Ags} 실제 AAM 객실 환경 ASS 위한 기초 자료로 활용될 것으로 기대된다. @ ak. a ae 000 a {2% ㆍ ECB ae” @ 1 ~ 비번 |</abstract>
+  <abstract>본 연구에서는 첨단항공모빌리티 축소기의 객실 소음 및 진동 데이터를 활용하여 능동소음제어 시뮬레이 션을 수행하였다. 실제 4404 기체를 이용한 객실 소음 능동 제어 방법론의 개밭 및 검증은 기체 확보와 운 용, 안전성 등의 제약으로 인해 반복적인 실험과 비교 평가에 한계가 있다. 이에 본 연구에서는 이를 대체할 수 있는 실험 플랫폼으로 첨단항공모빌리티 축소기를 제작하였다. 축소기는 실제 444 기체의 다중 로터 FAS WH 수 있는 멀티콤터형 드론을 기반으로, 객실 환경을 유사하게 모사할 수 있도록 별도로 설계 및 제작한 축소 동체를 결합하여 구성하였다. 객실 내부에는 마이크로폰과 가속도계를 설치하여 비행 중 객 실 내에 발생하는 소음과 진동을 계측할 수 있도록 구성하였다. 이후 비행을 통해 확보한 소음 및 진동 데 이터를 바탕으로 1%Ｌ0/48 알고리즘 기반 능동소음제어 시뮬레이션을 수행하였다. 이를 바탕으로 객실 내 광 대역 소음에 대한 능동소음제어 적용 가능성을 살펴보았다. 본 연구는 향후 축소기 기반 실시간 능동소음제 어 실험과 실제 &amp;4)4 객실 환경 적용을 위한 기초 자료로 활용될 것으로 기대된다. 8 8 : / @ © x(7) LE», ys “Se So d(n) 더 나 따 5 ' 20 J ECB omy eo | yy 대 A es 0 1251 의 60 Seer eS | 그</abstract>
   <source_page>286</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.649</extraction_quality>
   <pageImage>/paper-pages/p178.webp</pageImage>
   <affiliations>
     <affiliation>한서대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Advanced Air 4406119(첨단항공모빌리티)</keyword>
-    <keyword>Noise And Vibration(2$ 및 진동)</keyword>
-    <keyword>Active Noise</keyword>
+    <keyword>Advanced Air Mobility(4 +4322] E])</keyword>
+    <keyword>Noise And Vibration(A Y 진동)</keyword>
+    <keyword>Active Noise Control(s-S 22-24] ])</keyword>
+    <keyword>Multi Rotor(t}+] =F)</keyword>
+    <keyword>Drone(==)</keyword>
+    <keyword>Broadband(=t 4)</keyword>
   </keywords>
 </paper>

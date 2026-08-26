@@ -11,14 +11,16 @@
   <time>09:00~09:10</time>
   <venue>사파이어홀[2]</venue>
   <chair>박경수(가천대), 한제헌(한국공학대)</chair>
-  <abstract>Twin-screw LNGC(?3} LNG 운반선) At 운항 중 득성 메인 엔진 회전 수 구간에서 발생하는 과노한 진농은 주진 효율 빛 상비 신뢰성 에 부정적인 영향을 미친다. 본 사례에서는 twin-screw 추진 시스템이 적용된 LNG 선박의 메인 al 진 특정 rm 에서 대형공기압축기의 진동 응답이 급격히 중쪽되는 문제를 대상으로 선박에 적용되어 있는 Synchro-Phasing-System 을 활용하여 진동 저감을 한 AMS 소개한다. 본 연구에서는 현장 ASS 통해 문제 구간에서의 진동 레벨과 주파수 SIS 파악하였으며 이를 바탕으로 Synchro- Phasing-System 을 사용하여 최적의 Main Engine Phase 를 적용 하여 문제 구간의 진동 응답이 현 저히 저감 되었다. 본 사례는 선박에 적용되어 있는 Synchro-Phasing-System 을 이용하여 효과적으 로 문제를 해결한 사례로, 향후 twin-screw 추진 시스템이 적용된 선박의 효과적인 설계 개선이 될 것으로 기대된다. | 글 (보게 아히 TTT dl = “4a ve 는 두 00202027272227220620222220202020222202022720272273 ry a. 기 | 나트 개 이매 에 SPS 위상(도) ㄴㄴ (gt = ~ \&quot; 20s ie</abstract>
+  <abstract>선박 운항 중 특정 메인 엔진 회전 수 구간에서 발생하는 과도한 진동은 추진 효율 및 장비 신뢰성 에 부정적인 영향을 미친다. 본 사례에서는 twin-screw 추진 시스템이 적용된 sunG 선박의 메인 엔 진 특정 rpm 에서 대형공기압축기의 진동 응답이 격히 증폭되는 문제를 대상으로 선박에 적용되어 있는 z nchro-Phasing-S stem 을 활용하여 진동 저감을 한 사례를 소개한다. 본 연구에서는 현장 계측을 통해 문제 구간에서의 진동 레벨과 주파수 특성을 파악하였으며 이를 바탕으로 z nchro- Phasing-S stem 을 사용하여 최적의 Main Engine Phase 를 적용 하여 문제 구간의 진동 응답이 현 저히 저감 되었다. 본 사례는 선박에 적용되어 있는 z nchro-Phasing-S stem 을 이용하여 효과적으 로 문제를 해결한 사례로, 향후 twin-screw 추진 시스템이 적용된 선박의 효과적인 설계 개선이 될 것으로 기대된다.</abstract>
   <source_page>152</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.736</extraction_quality>
   <pageImage>/paper-pages/p079.webp</pageImage>
   <affiliations>
     <affiliation>삼성중공업</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Synchro-Phasing-System(9]t 동기화 시스템)</keyword>
-    <keyword>Large Air Compressor(t] @ 공기 압축기)</keyword>
+    <keyword>Synchro-Phasing-System(위상 동기화 시스템)</keyword>
+    <keyword>Large Air Compressor(대형 공기 압축기) Twin-screw LNGC(쌍축 LNG 운반선)</keyword>
   </keywords>
 </paper>

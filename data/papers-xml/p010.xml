@@ -11,8 +11,10 @@
   <time>15:20~15:35</time>
   <venue>오팔홀[1]</venue>
   <chair>배성원(LG전자)</chair>
-  <abstract>Magnetic Flux 10608159(자속밀도) 최근 가전제품 분야에서는 USS, 고출력과 함께 소형화를 동시에 만족하는 모터에 대한 요구가 중가하 고 있으며, 이러한 흐름 속에서 Spoke-type BLDC 모터가 중요한 대안으로 주목받고 있다. 그러나 해당 구 조는 우수한 성능에도 불구하고 구조적 특성으로 인해 코깅토크가 중가하는 경향이 있으며, 이는 진동 및 소음 문제로 이어져 NVA 성능 저하의 주요 elo] 된다. 본 연구에서는 이러한 BAS 해결하기 위해 고 정자 형상 최적화를 기반으로 코깅토크를 저감하고, 나아가 방사 소음까지 동시에 줄이는 AS SRE 한다. 코깅토크는 자속과 자기저항 변화을에 의해 결정되므로, 본 연구에서는 모터 Ved 직접적인 영향을 주는 자속 밀도는 유지하면서 자기저항 변화을을 감소시키는 설계 전략을 채택하였다. 이를 위해 notch depth, notch length, air shoe length, stator shoe lengthS 주요 설계 변수로 설정하고, 다양한 조합에 대해 전자기 해석을 수행하여 최적 형상을 도출하였다. 그 결과, 기존 대비 코깅토크는 크게 감소하였으며, 역기전력은 유지되거나 소쪽 향상되어 성등 저하 없이 AAS] 이루어졌다. 또한 공극 자속 밀도는 유사한 수준을 유지 한 반면, 자기저항 변화율은 현저히 감소하여 코깅토크 Age] 핵심 요인이 자기저항 변화율임을 확인하였 다. 추가적으로 전자기-구조-음향 해석을 연계한 멀티피직스 분석을 통해 진동 및 소음 특성을 평가한 결과, 특정 주파수 대역에서 공진 피크가 감소하며 구조 진동이 효과적으로 저감됨을 확인하였다. 이러한 진동 저 감은 방사 소음 감소로 이어졌으며, 결과적으로 모터의 NvH Yoo) 전반적으로 향상됨을 확인할 수 있었 다. Electromagnetic Modal, Harmonic response Harmonic acoustic ena iw™ pee</abstract>
+  <abstract>최근 가전제품 분야에서는 고효율, 고출력과 함께 소형화를 동시에 만족하는 모터에 대한 요구가 증가하 고 있으며, 이러한 흐름 속에서 90066-606 81100 모터가 중요한 대안으로 주목받고 있다. 그러나 해당 + 조는 우수한 성능에도 불구하고 구조적 특성으로 인해 코깅토크가 증가하는 경향이 있으며, 이는 진동 및 소음 문제로 이어져 지\ 성능 저하의 주요 원인이 된다. 본 연구에서는 이러한 문제를 해결하기 위해 고 정자 형상 최적화를 기반으로 코깅토크를 저감하고, 나아가 방사 소음까지 동시에 줄이는 것을 목표로 한다. 코깅토크는 자속과 자기저항 변화율에 의해 결정되므로, 본 연구에서는 모터 성능에 직접적인 영향을 주는 자속 밀도는 유지하면서 자기저항 변화을을 감소시키는 설계 전략을 채택하였다. o]S Fal notch depth, notch length, air shoe length, stator shoe lengthS = 설계 변수로 설정하고, 다양한 조합에 대해 전자기 해석을 수행하여 최적 형상을 도출하였다. 그 결과, 기존 대비 코깅토크는 크게 감소하였으며, 역기전력은 유지되거나 소폭 향상되어 성능 저하 없이 개선이 이루어졌다. 또한 공극 자속 밀도는 유사한 수준을 유지 한 반면, 자기저항 변화율은 현저히 감소하여 코깅토크 저감의 핵심 요인이 자기저항 변화윤임을 확인하였 다. 추가적으로 전자기-구조-음향 해석을 연계한 멀티피직스 분석을 통해 진동 및 소음 특성을 평가한 결과, 특정 주파수 대역에서 공진 피크가 감소하며 구조 진동이 효과적으로 저감됨을 확인하였다. 이러한 진동 저 감은 방사 소음 감소로 이어졌으며, 결과적으로 모터의 401 성능이 전반적으로 향상됨을 확인할 수 있었 다. Electromagnetic Modal, Harmonic response Harmonic acoustic Sem | (KD. | | 『 Le i | . , ¥ . i 1003 | a A | ' ' | 을 \ : cae) ne | | ~ 후 개 &gt; LS _ —_ | i | V 주 을 ' y Fig.l MultiPhysics Analysis Electromagnetic-Structure-Acoustics Analysis WorkFlow + 교신저자; 국립창원대학교 * 국립창원대학교</abstract>
   <source_page>83</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.69</extraction_quality>
   <pageImage>/paper-pages/p010.webp</pageImage>
   <affiliations>
     <affiliation>창원대</affiliation>
@@ -20,8 +22,9 @@
     <affiliation>오성기전</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Cogging Torque(3t7 2)</keyword>
-    <keyword>Back EMF(47] 414)</keyword>
-    <keyword>Reluctance(4}7] 4] 변화율)</keyword>
+    <keyword>Cogging Torque(31% =)</keyword>
+    <keyword>Back EMF(&amp; 7] 414)</keyword>
+    <keyword>Reluctance(A}7] 4] et 변화율)</keyword>
+    <keyword>Magnetic Flux 1060915(자속밀도)</keyword>
   </keywords>
 </paper>

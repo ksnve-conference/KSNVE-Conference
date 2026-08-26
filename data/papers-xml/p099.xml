@@ -11,8 +11,10 @@
   <time>11:55~12:10</time>
   <venue>오팔홀[1]</venue>
   <chair>정의봉(LIG D&amp;A)</chair>
-  <abstract>Natural Frequency(&amp; &amp; 고유주파수), Convolutional Neural Network( #43 신경망) age 운용자의 작전 수행을 위한 공간으로, 작전 운용 HSS 위해 운용 편의성을 고려하여 설계하고 제작하여야 한다. 그러나 Ae] 내부 공간은 전자장비로 인한 Ago] 운용자에게 Bas 줄 수 있으며, 내 부 음향 특성은 공간 내부의 구조나 공간 경계의 물성에 따라 변경된다. 따라서 물성 변화에 따른 실내 음 향 공간의 SY 예측과 분석이 필수격이다. 본 연구에서는 인공지등을 활용하여 2차원 평면 Ste] 물성 변화에 따른 음향 고유모드와 고유주파수 변화를 예측하는 인공 신경망을 제시한다. 외벽 1개 면의 질량과 강성에 대한 SYS LHS(Latin Hypercube Sampling) 기법을 이용하여 조합하였으며, 손실함수는 MAE, MAC, Tanimoto indexS 사용하여 인공 신경 망을 학습시켰다. 인공지능 학습 결과, 물성 변화에 민감한 1차 고유주과수 평가 데이터 OOO 중 10% 미만의 오차를 가지는 예측 결과가 99.2%로 인공 신경망의 학습이 잘 진행되었음을 확인할 수 있다. A LULL LIL LLL 내 OO ~ | |i 버버 \ s 10 로 go | 0 Ast natual frequency Ss _, A . 200 더 | ^ | ㅣ &amp; And natural frequency WS@ iy 3 4 … i 4ih natural frequency \\ 6 200 400 600 oo Ground truth [Hz] . . Fig. 2 Comparison of natural frequencies</abstract>
+  <abstract>셀터는 운용자의 작전 수행을 위한 공간으로, 작전 운용 효율을 위해 운용 편의성을 고려하여 설계하고 제작하여야 한다. 그러나 셀터 내부 공간은 전자장비로 인한 소음이 운용자에게 불쾌감을 줄 수 있으며, 내 부 음향 특성은 공간 내부의 구조나 공간 경계의 몰성에 따라 변경된다. 따라서 물성 변화에 따른 실내 음 향 공간의 특성 예측과 분석이 필수적이다. 본 연구에서는 인공지능을 활용하여 2차원 평면 공간의 물성 변화에 따른 음향 고유모드와 고유주과수 변화를 예측하는 인공 신경망을 제시한다. 외벽 1개 면의 질량과 강성에 대한 물성을 1119(Ｌ800 150000466 880001408) 기법을 이용하여 조합하였으며, 손실함수는 4448, 4/4ㅅ0, 780100060 1406&amp;를 사용하여 인공 신경 망을 학습시켰다. 인공지능 학습 결과, 물성 변화에 민감한 1차 고유주과수 평가 데이터 ((0(&gt;개 중 10% 미만의 오차를 가지는 예측 결과가 99.20로 인공 신경망의 학습이 잘 진행되었음을 확인할 수 있다. Acoustic hard wali 600 | als : Ground truth &gt; 때 이시 |] 아기 80% accuracy s | | 00, 44 | @ Ist natural frequency WV" 0019 에이 을 이 je ata soe | a a | 고 i 4th natural frequency &gt; : 을 200) : @ Sthnaturat rei | Ly | 더 일 J i * = Oth natural frequency N 0 200 400 600 Ground truth [Hz] . . . Fig. 2 Comparison of natural frequencies</abstract>
   <source_page>169</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.595</extraction_quality>
   <pageImage>/paper-pages/p099.webp</pageImage>
   <affiliations>
     <affiliation>아주대</affiliation>
@@ -20,7 +22,8 @@
   </affiliations>
   <keywords>
     <keyword>Artificial Neural Network(@]@ 신경망)</keyword>
-    <keyword>Acoustic Natural Mode(-2-¢F 고유모드)</keyword>
-    <keyword>Acoustic</keyword>
+    <keyword>Acoustic Natural Mode(-2@F 31-7-=)</keyword>
+    <keyword>Acoustic Natural Frequency(-¢ 31--4+3}&lt;)</keyword>
+    <keyword>Convolutional Neural Network(@#7d @ 214)</keyword>
   </keywords>
 </paper>

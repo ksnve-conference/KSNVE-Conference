@@ -11,14 +11,16 @@
   <time>15:05~15:20</time>
   <venue>사파이어홀[1]</venue>
   <chair>김재환(국립금오공대)</chair>
-  <abstract>위상 기반 모션 $25(Phase-based Motion Magnification, PMM)2 영상 내 미세한 AMS 이미지 주파수 영역의 위상 변화로 해석하여 시각화하는 기법으로, 전통적인 센서의 공간/비용 측면의 제약을 극복할 수 있 는 비접촉식 동적 분석 노구로 주목받고 있다. 특히 Complex Steerable Pyramid(CSP)S 활용한 PMM 기법 은 이미지 품질의 강건성이 뛰어나 확대된 영상으로부터 변위를 추적하는 후처리 적용에 용이함이 있어 다 양한 비전 기반 측정 기법에 널리 활용되고 있다. 기존의 25604 기법은 09#의 스케일 Bas 입력 이미지 의 특성과 관계없이 옥타브(00186) 단위로 분할한다. 그러나 촬영된 객체의 형상과 크기에 따라 이미지의 주과수 분포가 상이하므로, 이러한 일률적인 분할 방식은 주요 주파수 성분의 누락을 초래할 수 있으며, 이 에 따른 결과의 품질 저하가 진동 측정을 위한 변위 데이터 환산 시 정밀도 감소를 야기할 수 있다. 본 연 구에서는 이러한 한계를 극복하기 위해 097의 뱅크 WAS 이미지 스펙트럼상의 에너지 분포를 고려하여 최적화된 스케일 분할을 시노하였다. 제안된 Ws} 기존 방식의 성능 비교를 위해, 객체의 경계 ABTS 평가하는 Tenengrad 기반의 지표를 노입하였다. 한편, 단순 Tenengrad 지표는 BY 현상(08108 artifact)°] 나 노이즈 등의 불규칙한 변화 또한 선명도로 os 수 있으므로, 산출된 선명도 지표를 이미지 픽셀 분포 의 분산 값으로 정규화하여 분석하였다. 이를 통해 주요 주파수 대역을 PEACE 캡처하도록 필터 Was 구성하는 것이 영상 품질 향상에 유의미하게 기여함을 확인하였다. as __ Radial spectral energy with CSP filter banks respanses (at y=0) ee Magnkinte Spectrum of the Image i Ee a eT Vali é UN = Fig. 2 기존 00816기반 CSP 뱅크 RACHA, iene neg 이미지의 주파수 분포를 고려한 csp 뱅크</abstract>
+  <abstract>내 미세한 변위를 이미지 주파수 영역의 위상 변화로 해석하여 시각화하는 기법으로, 전통적인 센서의 공간/비용 측면의 제약을 극복할 수 있 = WAS SABA Ete BEN ch. SS] Complex Steerable Pyramid(CSP)S 활용한 2444 기법 은 이미지 품질의 강건성이 뛰어나 확대된 영상으로부터 변위를 추적하는 후처리 적용에 용이함이 있어 다 양한 비전 기반 측정 기법에 널리 활용되고 있다. 기존의 28484 기법은 09『의 스케일 뱅크를 입력 이미지 의 특성과 관계없이 옥타브(00816) 단위로 분할한다. 그러나 촬영된 객체의 형상과 크기에 따라 이미지의 주파수 분포가 상이하므로, 이러한 일률적인 분할 방식은 주요 주파수 성분의 누락을 초래할 수 있으며, 이 에 따른 결과의 품질 저하가 진동 측정을 위한 변위 데이터 환산 시 정밀도 감소를 야기할 수 있다. 몬 연 PIAS 이러한 한계를 극복하기 위해 08#『의 뱅크 간격을 이미지 스펙트럼상의 에너지 분포를 고려하여 커적화된 스케일 분할을 시도하였다. 제안된 방식과 기존 방식의 성능 비교를 위해, 객체의 경계 선명도를 평가하는 160608100 기반의 지퓨를 도입하였다. 한편, 단순 760008180 지표는 링잉 현상(008108 8101800이 나 노이즈 등의 불규칙한 변화 또한 선명도로 오인할 수 있으므로, 산출된 선명도 지표를 이미지 픽셀 분포 의 분산 값으로 정규화하여 분석하였다. 이를 통해 주요 주파수 대역을 집중적으로 캡처하도록 필터 뱅크를 구성하는 것이 영상 품질 향상에 유의미하게 기여함을 확인하였다. a = Radial spectral energy with CSP filter banks responses (at y = 0) 를 200) ‘i - zo i 은 06 i | Boal | \ H (Ny Al) FFL ] 5 ! ! WAY as Magnitude Spectrum of the Image 을 — Cép filter bank (octave) Vai : i “ ~ of 0.25 도 0.25 0.5 올때 00000000 30121 spectral ener ring-wise sum 을 ) “ \y | [aes 00000 0 을 . — csp filter bank (24) /\/\ /\ /\ NAN aan 5 250000 1 normalized sada feguency "= 수 6. 2 기존 0062\6기반 097 뱅크 분할(상)과, normalized radial frequency 7 이미지의 주파수 분포를 고려한 08? 뱅크 08. 1 이미지의 주파수 영역 스펙트럼 Bash 이 논문은 2026년도 정부(산업통상주원부)의 재원으로 한국산업기술징흥원의 지원을 받아 수행된 연구임 (89-2025-02263945, 2026년 산업혁신인재성장지원사업) + 박용화;정회원, 197</abstract>
   <source_page>95</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.598</extraction_quality>
   <pageImage>/paper-pages/p022.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Phase-based Motion Magnification(?] tt 기반 영상 확대)</keyword>
+    <keyword>Phase-based Motion Magnification($]’s+ 7]3' 9+ +c)</keyword>
     <keyword>Complex Steerable Pyramid</keyword>
   </keywords>
 </paper>

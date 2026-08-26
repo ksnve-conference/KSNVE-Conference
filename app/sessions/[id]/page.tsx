@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
+import AppHeader from '@/components/AppHeader';
+import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
 import PaperCard from '@/components/PaperCard';
 import { dayLabel, formatSessionTitle, papers, sessions, venues } from '@/lib/conference';
 
@@ -18,8 +20,8 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
 
   return (
     <main className="shell detail-shell">
-      <Header compact />
-      <Link href="/" className="back">← 전체 프로그램</Link>
+      <AppHeader compact />
+      <BackLink fallback="/" label="뒤로" />
 
       <section className="detail-card">
         <div className="badges">
@@ -38,6 +40,7 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
 
       <h2 className="section-title">세션 발표</h2>
       <div className="list">{sessionPapers.map((paper) => <PaperCard key={paper.id} paper={paper} />)}</div>
+      <AppTabs />
     </main>
   );
 }

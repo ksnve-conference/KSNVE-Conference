@@ -11,14 +11,17 @@
   <time>08:55~09:10</time>
   <venue>그랜드볼룸[2]</venue>
   <chair>마평식(가천대)</chair>
-  <abstract>Capacity Curve (Sat 용량 곡선), 10886718005[0008800(이미지 변환) The precise quantification of lithium-ion battery degradation is fundamental to ensuring the operational integrity of high-demand energy storage systems. This study proposes an advanced prognostic framework that integrates incremental capacity (IC) analysis with a deep spatiotemporal learning architecture. IC curves are computed from differential voltage-capacity (dQ/dV) data to isolate peak shifts and area variations, which serve as indicators of loss of lithium inventory and loss of active material. To preserve the high-dimensional dependencies of these aging signatures, the IC curves are transformed into a structured sequence of temporal images. This encoding allows the model to extract spatial features related to curve morphology while simultaneously tracking their non-linear evolution across cycles. As illustrated in Fig. 1, a specialized neural network is utilized to process these multidimensional representations, effectively mapping subtle electrochemical transitions to the State of Health (SoH) and Remaining Useful Life (RUL). By transitioning from manual feature selection to a robust image-based learning paradigm, this approach enhances the predictive capability of intelligent battery management systems under dynamic cycling conditions. | | = @OrN [더 6000 ~ |=! ; ¥ ; Wo a\ | | 빠이 : ded @- Oo Bes iit | | SoH/RUL Raw data IC curve Transform into Convolutional Recurrent Prediction extraction temporal sequences layer layer</abstract>
+  <abstract>framework that integrates incremental capacity (IC) analysis with a deep spatiotemporal learning architecture. IC curves are computed from differential voltage-capacity (dQ/dV) data to isolate peak shifts and area variations, which serve as indicators of loss of lithium inventory and loss of active material. To preserve the high-dimensional dependencies of these aging signatures, the IC curves are transformed into a structured sequence of temporal images. This encoding allows the model to extract spatial features related to curve morphology while simultaneously tracking their non-linear evolution across cycles. As illustrated in Fig. 1, a specialized neural network is utilized to process these multidimensional representations, effectively mapping subtle electrochemical transitions to the State of Health (SoH) and Remaining Useful Life (RUL). By transitioning from manual feature selection to a robust image-based learning paradigm, this approach enhances the predictive capability of intelligent battery management systems under dynamic cycling conditions. poring i ㅣ (6) 보린 a Oy? {&gt; 때 » oO X : Orem) % CA) | | il | | 「 [] O : | | ial SoH/RUL Raw data IC curve Transform into Convolutional Recurrent Prediction extraction temporal sequences layer layer</abstract>
   <source_page>292</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.812</extraction_quality>
   <pageImage>/paper-pages/p184.webp</pageImage>
   <affiliations>
     <affiliation>Dongguk Univ.</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Deep Spatiotemporal Learning (@ 시공간 학습) Battery Prognostics (배터리 수명 예측)</keyword>
-    <keyword>Incremental</keyword>
+    <keyword>Deep Spatiotemporal Learning ((] 시공간 $}43)</keyword>
+    <keyword>Battery Prognostics (HHE] 2] 4-8 =)</keyword>
+    <keyword>Incremental Capacity Curve (S%% -8- =+44)</keyword>
   </keywords>
 </paper>

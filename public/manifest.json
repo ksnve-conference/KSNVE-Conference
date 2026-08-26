@@ -1,9 +1,22 @@
 {
-  "name": "KSNVE Annual Fall Conference 2026",
-  "short_name": "KSNVE 2026 Fall",
+  "name": "2026 추계 소음진동 학술대회",
+  "short_name": "KSNVE 2026",
+  "description": "한국소음진동공학회 2026년도 추계 학술대회 프로그램과 초록",
+  "lang": "ko",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#f6f8fb",
+  "orientation": "portrait",
+  "background_color": "#f3f5f2",
   "theme_color": "#00796b",
-  "icons": []
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "내 일정", "url": "/my" },
+    { "name": "논문 검색", "url": "/search" }
+  ]
 }

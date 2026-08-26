@@ -11,17 +11,22 @@
   <time>10:40~10:55</time>
   <venue>릴리홀[1]</venue>
   <chair>이효진(방재시험연)</chair>
-  <abstract>Recognition(-3-4 2144), Gesture Recognition( 4] 2:4] 214}), Hand Pointing (@= 9) 4), Sound 10888(사운드트리거) 자율주행과 전동화를 기반으로 모빌리티라는 용어가 보편화되어가고 있다. 모빌리티란 단순한 이동이 아넌새로 운 가지를 창출하는 공간으로 BAIT, 이러한 모빌리티 정의를 기반으로 다양한 모빌리티 FBS 예측하여 각 모빌리티가 가져야 할 속성과 핵심기술을 정의할 수 있게 되었다. a 《 4 Eee mn (0 ee So ee ae 다그 [She &amp; te Shared Mobility [EI Marine Mobility 68 Personal Mobility Ell 21 “as” | Tm i sures 9) . 때: 10010 — - 2 | lee | sta [세 2 Oi. us 〉저 9) 8 서어 개 도 ee ge ls</abstract>
+  <abstract>자율주행과 전동화를 기반으로 모빌리티라는 용어가 보편화되어가고 있다. 모빌리티란 단순한 이동이 아닌새로 운 가치를 창출하는 공간으로 정의되고, 이러한 모빌리티 정의를 기반으로 다양한 모빌리티 유형을 예측하여 각 모빌리티가 가져야 할 속성과 핵심기술을 정의할 수 있게 되었다.</abstract>
   <source_page>170</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.765</extraction_quality>
   <pageImage>/paper-pages/p100.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Mobility2]™])</keyword>
-    <keyword>Matrix(]=82)</keyword>
+    <keyword>Mobility(모빌리티)</keyword>
+    <keyword>Matrix(매트릭스)</keyword>
     <keyword>HMI(Human Machine Interface)</keyword>
     <keyword>ML(Machine Learning)</keyword>
-    <keyword>Voice</keyword>
+    <keyword>Voice Recognition(음성인식)</keyword>
+    <keyword>Gesture Recognition(제스처인식)</keyword>
+    <keyword>Hand Pointing (핸드포인팅)</keyword>
+    <keyword>Sound Trigger(사운드트리거)</keyword>
   </keywords>
 </paper>

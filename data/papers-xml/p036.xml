@@ -11,8 +11,10 @@
   <time>16:30~16:45</time>
   <venue>릴리홀[1]</venue>
   <chair>전종훈(항공우주연)</chair>
-  <abstract>Tikhonov regularization(E] 2-H. 정규화) Rotor dynamics(3] 44] 동역학) 회전체 시스템은 운전 조건 변화에 따라 다양한 가진력이 발생하며, 이는 진동, 소음 및 피로 TAS 유발하여 시스템의 안정성과 신뢰성을 저하시키는 주요 요인이 된다. 이러한 문제를 a 방하고 안정적인 운전을 달성하기 위해서는 상태 진단과 정밀한 밸런싱 제어가 필수적이며, 이 를 위해 불균형 하중을 정확하게 추정하는 것이 중요하다. 질량 Sega 의해 발생하는 가진력 은 회전 주파수의 1 차 성분으로 나타나며 회전체 Berge] 주요 원인 중 하나로 작용한다. 특 히 운전 중 변화하는 불균형 하중을 정확하게 추정하기 위해서는 하중 크기에 대한 실시간 + 정이 SRA, 이때 하중 작용 위치의 불확실성은 추정 정확도를 저하시키는 주요 요인으로 작 용한다. 기존의 티코노프 정규화 기반 하중 역추정 기법은 하중 크기 추정에 유효하지만, 하중 위치가 사전에 충분히 규명되지 않은 경우 역추정의 안정성과 정확도가 저하될 수 있다. 이에 본 연구에서는 회전체 시스템의 질량 불균형 하중 추정을 위해 오프라인-온라인 연계 기반의 방법을 적용하였다. 오프라인 단계에서는 G-RVMGroup Relevance Vector Machine)&amp; 이용 하여 불균형 하중의 작용 위치를 식별하였고, 온라인 단계에서는 식별된 위치 정보를 바탕으로 티코노프 정규화 기반의 실시간 역추정 기법을 적용하여 운전 중 변동하는 하중 크기와 축계 응답을 연속적으로 추정하였다. 또한 수치 시뮬레이션과 AAS 통해 제안한 방법의 적용 가능 성을 검토하였다. 1 과신저자; 경희매학교 기계종학과 + 경희때학교 기계공학과 (응합공학 as)</abstract>
+  <abstract>회전체 시스템은 운전 조건 변화에 따라 다양한 가진력이 발생하며, 이는 진동, 소음 및 피로 누적을 유발하여 시스템의 안정성과 신뢰성을 저하시키는 주요 요인이 된다. 이러한 문제를 예 방하고 안정적인 운전을 달성하기 위해서는 상태 진단과 정밀한 밸런싱 제어가 필수적이며, 이 를 위해 불균형 하중을 정확하게 추정하는 것이 중요하다. 질량 불균형에 의해 발생하는 가진력 은 회전 주파수의 1 차 성분으로 나타나며 회전체 불안정의 주요 원인 중 하나로 작용한다. 특 히 운전 중 변화하는 불균형 하중을 정확하게 추정하기 위해서는 하중 크기에 대한 실시간 추 정이 중요하며, 이때 하중 작용 위치의 불확실성은 추정 정확도를 저하시키는 주요 요인으로 작 용한다. 기존의 티코노프 정규화 기반 하중 역추정 기법은 하중 크기 추정에 유효하지만, 하중 위치가 사전에 충분히 규명되지 않은 경우 역추정의 안정성과 정확도가 저하될 수 있다. 이에 본 연구에서는 회전체 시스템의 질량 불균형 하중 추정을 위해 오프라인궽온라인 연계 기반의 방법을 적용하였다. 오프라인 단계에서는 G-RVM(Group Relevance Vector Machine)을 이용 하여 불균형 하중의 작용 위치를 식별하였고, 온라인 단계에서는 식별된 위치 정보를 바탕으로 티코노프 정규화 기반의 실시간 역추정 기법을 적용하여 운전 중 변동하는 하중 크기와 축계 응답을 연속적으로 추정하였다. 또한 수치 시뮬레이션과 실험을 통해 제안한 방법의 적용 가능 성을 검토하였다. ˋG교신저자bG 경희대학교 기계공학과 lTaG UgUU QG 경희대학교 기계공학과 O융합공학 전공) QQG 한국기계연구원 h융합연구센터 JG 발표자, 경희대학교 기계공학과 O융합공학 전공)</abstract>
   <source_page>109</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.723</extraction_quality>
   <pageImage>/paper-pages/p036.webp</pageImage>
   <affiliations>
     <affiliation>경희대</affiliation>
@@ -20,7 +22,9 @@
   </affiliations>
   <keywords>
     <keyword>Vibration (진동)</keyword>
-    <keyword>Inverse force Estimation(6} 역추정)</keyword>
-    <keyword>Relevance vector 10080006(관련성 벡터 머신)</keyword>
+    <keyword>Inverse force Estimation(하중 역추정)</keyword>
+    <keyword>Relevance vector machine(관련성 벡터 머신)</keyword>
+    <keyword>Tikhonov regularization(티코노브 정규화)</keyword>
+    <keyword>Rotor dynamics(회전체 동역학)</keyword>
   </keywords>
 </paper>

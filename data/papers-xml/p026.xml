@@ -11,16 +11,18 @@
   <time>16:30~16:45</time>
   <venue>에메랄드홀</venue>
   <chair>김진욱(경북대)</chair>
-  <abstract>해석), Horizontally Propagating 80400(수평방향 진행음) 수상함의 구조기인 수중방사소음을 해석하면 일반적으로 원거리에서는 거리에 반비례하여 감소하는 aS 보인다. 그러나 수중의 수중함 중심에서 수평방향으로 거리에 따른 점근특성을 THs 때 기대와는 달리 거 리의 제곱에 반비례하여 구조기인 소음이 감소하는 결과를 보였다 Fig. 1 참조). 본 연구에서는 무한 수심을 가정하고 수면에서 거울 이미지 상으로 위치하는 쌍극자 음원의 해석해를 바탕으로 이러한 원인을 설명한다. 12 XS: Azimuth{255°) 128, XS: Azimuth 270° Lina eof - Saas abi Aon as ‘l My eS x ~ gESs i lan = ee 로 a mane 시</abstract>
+  <abstract>수평방향 진행음) 수상함의 구조기인 수중방사소음을 해석하면 일반적으로 원거리에서는 거리에 반비례하여 감소하는 응답을 보인다. 그러나 수중의 수중함 중심에서 수평방향으로 거리에 따른 점근특성을 살폈을 때 기대와는 달리 거 리의 제곱에 반비례하여 구조기인 소음이 감소하는 결과를 보였다 (Fig. 1 참조). 본 연구에서는 무한 수심을 가정하고 수면에서 거울 이미지 상으로 위치하는 쌍극자 음원의 해석해를 바탕으로 이러한 원인을 설명한다. G G G G</abstract>
   <source_page>99</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.753</extraction_quality>
   <pageImage>/paper-pages/p026.webp</pageImage>
   <affiliations>
     <affiliation>동의대</affiliation>
     <affiliation>기계연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Underwater Radiated Noise(-@ 방사소음)</keyword>
-    <keyword>Structure-Borne Noise(} 47] 21 24-4)</keyword>
-    <keyword>Asymptotic Analysis(4]2</keyword>
+    <keyword>Underwater Radiated Noise(수중 방사소음)</keyword>
+    <keyword>Structure-Borne Noise(구조기인소음)</keyword>
+    <keyword>Asymptotic Analysis(점근</keyword>
   </keywords>
 </paper>

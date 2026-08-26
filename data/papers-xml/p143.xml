@@ -11,8 +11,10 @@
   <time>15:20~15:35</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김완진(국립한밭대)</chair>
-  <abstract>Back-EMF harmonics(4 기전력 고조파) 본 연구에서는 축방향 자속(4171. Axial Flux Permanent Magnet) 전동기와 축방향 동축 자기기어 (AFCMG, Axial Flux Coaxial Magnetic Gear)S 통합한 인 훨 구동 Bas 제안하고, 통합 구조에서 발생 할 수 있는 전자기 기인 진동 유발 인자를 중점적으로 해석하였다. 제안한 인 훨 구동 모듈은 9슬롯 6극 구 조의 AFPM 전동기와 3단 AFCMGE 구성되며, AFPM 전동기의 상부 회전자가 AFCMGS] 고속 회전자 역할을 동시에 수행하도록 설계함으로써 구조적 통합성과 공간 효율성을 확보하였다. 또한, 2단 AFCMGE 각각 4.333:1 및 3.07711의 감속비를 가지며, 전체 시스템은 13.333:1의 종 감속비를 갖도록 구성하였다. 3차원 유한요소해석 결과, 제안한 통합 모듈은 무전류 조건에서 자기기어 단독 구동 시와 같은 토크 전달 특성을 나타내어 기어부의 기본 동작 특성이 유지됨을 확인하였다. 또한, 정격 전류 인가 시에는 전동기에서 발생한 토크와 자기기어 입력 측에서 발생하는 반력 토크가 상쇄되어 입력 측 토크가 0 Nm 수렴하는 특 성을 보였다. 출력 측 토크 리플은 무전류 조건에서 3.88 Nm, 정격 전류 인가 조건에서 2.94 340로 나타났 으며, 이는 통합 구조에서도 출력 측 토크 변동 SYS 정량적으로 평가할 필요가 있음을 보여준다. 한편, 통합 Eee] 역기전력 과형은 &amp;1003/06에 의해 추가된 자속의 영향으로 비대칭성이 나타났고, FFT 분석 결 과 총고조파왜율(11112)은 13.32%로 산출되었다. 이상의 결과를 통해 제안한 통합 모듈은 인 a 구동 시스템에 요구되는 기본적인 토크 전달 Aca 감속 기능을 확보하고 VSS 확인하였다. 동시에 진동 측면에서는 구조적 요인보다 전자기적 토크 맥동과 역기 전력 고조파가 주요 영향 인자로 작용할 가능성이 크며, 향후 진동 및 소음 저감을 위해 이에 대한 추가적 인 분석과 설계적 보완이 필요함을 확인하였다. Table 1 Specifications of integrated module we ACME Parameter Unit { 7 Output ———= Rated power kw i | ~ 6 ~ Total gear ratio - nae / ae Input speed rpm “FF he =&gt;? ] Output speed rpm 대 &lt; Input Torque ripple (no current) AFPM motor pall Torque ripple (rated current) Nm 개 Back-EMF THD % Fig. 1 Shape integrated module + 교신저자; 정회원, 상명대학교 휴먼지능로봇공학과 * 한발대학교 기계소재용합시스템공학과</abstract>
+  <abstract>휠 구동 모듈을 제안하고, 통합 구조에서 발생 할 수 있는 전자기 기인 진동 유발 인자를 중점적으로 해석하였다. 제안한 인 휠 구동 모듈은 9슬롯 6극 구 S| AFPM 41-&amp;7]2} 25: 4800140로 구성되며, 47721 전동기의 상부 회전자가 480140의 고속 회전자 역할을 동시에 수행하도록 설계함으로써 구조적 통합성과 공간 효율성을 확보하였다. 또한, 2단 AFCMGE 각각 4.333:1 및 3.07711의 감속비를 가지며, 전체 시스템은 13.333:1의 총 감속비를 갖도록 구성하였다. 3차원 유한요수해석 결과, 제안한 통합 모듈은 무전류 조건에서 자기기어 단독 구동 시와 같은 토크 전달 특성을 나타내어 기어부의 기본 동작 특성이 유지됨을 확인하였다. 또한, 정격 전류 인가 시에는 전동기에서 발생한 토크와 자기기어 입력 측에서 발생하는 반력 토크가 상쇄되어 입력 측 토크가 0 4에 수렴하는 |S 성을 보였다. 출력 측 토크 리플은 무전류 조건에서 3.88 80, 정격 전류 인가 조건에서 2.94 지ㅁ로 나타났 으며, 이는 통합 구조에서도 출력 측 토크 변동 특성을 정량적으로 평가할 필요가 있음을 보여준다. 한편, 통합 모듈의 역기전력 과형은 4800140에 의해 추가된 자속의 영향으로 비대칭성이 나타났고, ㅠㅜ 분석 결 과 총고조파왜율(1+[10)은 13.32%로 산출되었다. 이상의 결과를 통해 제안한 통합 모듈은 인 휠 구동 시스템에 요구되는 기본적인 토크 전달 성능과 감속 기능을 확보하고 있음을 확인하였다. 동시에 진동 측면에서는 구조적 요인보다 전자기적 토크 팩동과 역기 전력 고조파가 주요 영향 인자로 작용할 가능성이 크며, 향후 진동 및 소음 저감을 위해 이에 대한 추가적 인 분석과 설계적 보완이 필요함을 확인하였다.</abstract>
   <source_page>251</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.633</extraction_quality>
   <pageImage>/paper-pages/p143.webp</pageImage>
   <affiliations>
     <affiliation>상명대</affiliation>
@@ -21,9 +23,9 @@
     <affiliation>축방향 자속 전동기-자기기어 일체형 인휠 구동 BBS] 전자기 기인</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Axial flux 방향 자속)</keyword>
-    <keyword>Motor(=E])</keyword>
-    <keyword>Magnetic gear( 7} 7] 기어)</keyword>
-    <keyword>Torque 20006(토크 리플)</keyword>
+    <keyword>Axial flux( "Set 243)</keyword>
+    <keyword>Motor(51E])</keyword>
+    <keyword>Magnetic gear(4}7]7]°]), Torque ripple =] S)</keyword>
+    <keyword>Back-EMF harmonics(9 7] 41 #4} a4 5})</keyword>
   </keywords>
 </paper>

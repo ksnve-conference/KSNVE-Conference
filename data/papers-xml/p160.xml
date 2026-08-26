@@ -11,15 +11,20 @@
   <time>15:50~16:05</time>
   <venue>오팔홀[1]</venue>
   <chair>백승훈(부산대)</chair>
-  <abstract>Internal Resonance(H--41), BifurcationG#7]), Chaos(@==) Bate 조화가진을 받는 직사각형 평판의 비선형 진동 문제[1]를 완전연결 84144 (Fully Connected Neural Network, FCNN)2= 재해석한다. 양 단순지지 직사각형 평판의 종횡비 &lt;=1.683 에서 (1,2)&apos;(3,1) 모드 사이에 1:1 내부공진(101670801 resonance)®] 발생하며, von Karman 비선형 방정식의 Galerkin 축약과 평균화(306『88108) 기법을 순차적으로 적용하면 4 차원 자율계로 변환된다. 이 시스템은 가진 주파수 변화에 따라 saddle-node 분기, pitchfork 분기, Hopf 분기, 주기배중(0660400-00143108) 연쇄, 카오스(01205) 및 AAS 7\ (boundary 011918)를 포함하는 풍부한 비선형 ASS 나타낸다. FCNN 을 비선형 동역학 대리 모델(640708816 modeb= 활용하는 연구를 세 단계로 진행한다. 1 단계(본 발표)에서는 4 차원 Bats 자율계(34612860 autonomous equations) S$ 대상으로, 주파수 이탈량(0), 가진력 크기(9), 감쇠계수(60) 및 초기 AH 조건을 입력, 정상상태 응답 진쪽을 출력으로 하는 FCNN [8-128-&gt;128-ㅡ1282, tanh 활성화함수, Adam 최적화]을 구성한다. 초기조건을 신경망 입력에 포함함으로써 다중 정상상태가 공존하는 점프0040720) 구간도 단일 모델로 표현한다. 2 단계에서는 비자을 444 Al (non-autonomous original equations) ©. =, 3 단계에서는 편미분방정식(21280에 대한 PINN(Physics- Informed Neural Network)? = 순차 확장한다. 학습 데이터는 논문의 정확한 파라미터(8=6×10^* ,1=0.3,ㅁ1 =ㅁ2 =V(35/3)~3.416)S 사용한 Runge-Kutta 수치적분으로 생성하였다. 훈련된 FCNNG 안정ㆍ불안정 분기점 위치, 주파수 응답 곡선의 다중 분기0018. 1 참조), 카오스 발생 주과수 AGS 정확히 재현하였다. 파라미터 &gt; (parameter sweep) 속도는 Runge-Kutta 수치적분 대비 수백 깨 향상되어, 광역 과라미터 공간에서의 분기 구조 과악이 헌실적으로 STS 확인하였다. [1] Chang, S.I, Bajaj, A.K. and Krousgrill, C.M. (1992), Nonlinear Dynamics, 3, 365-402.</abstract>
+  <abstract>본 연구는 조화가진을 받는 직사각형 평판의 비선형 진동 문제[1]를 완전연결 인공신경망(Full Connected Neural Network, FCNN)으로 재해석한다. 양 단순지지 직사각형 평판의 종횡비 Ʉ=1.633 에서 (1,2)½(3,1) 모드 사이에 XaXG 내부공진(internal resonance)이 발생하며, von Kçrmçn 비선형 방정식의 Galerkin 축약과 평균화(averaging) 기법을 순차적으로 적용하면 4 차원 자율계로 변환된다. 이 시스템은 가진 주파수 변화에 따라 saddle-node 분기, pitchfork 분기, Hopf 분기, 주기배증(period-doubling) 연쇄, 카오스(chaos) 및 경계위기(boundar crisis)를 포함하는 풍부한 비선형 거동을 나타낸다. mjuu 을 비선형 동역학 대리 모델(surrogate model)로 활용하는 연구를 세 단계로 진행한다. 1 단계(본 발표)에서는 4 차원 평균화 자율계(averaged autonomous equations)를 대상으로, 주파수 이탈량(ɍ), 가진력 크기OxPSG 감쇠계수(c) 및 초기 진폭 조건을 입력, 정상상태 응답 진폭을 출력으로 하는 mjuuG [8˧128˧128˧128˧2, tanh 활성화함수, Adam 최적화]을 구성한다. 초기조건을 신경망 입력에 포함함으로써 다중 정상상태가 공존하는 점프(jump) 구간도 단일 모델로 표현한다. 2 단계에서는 비자율 원방정식(non-autonomous original equations)으로, 3 단계에서는 편미분방정식(PDE)에 대한 PINN(Ph sics- Informed Neural Network)으로 순차 확장한다. 학습 데이터는 논문의 정확한 파라미터(ȿ=6Ý10ͼ࿋, ɇ=0.3, p࿍=p࿎=˲(35/3)˷3.416)를 사용한 Runge-Kutta 수치적분으로 생성하였다. 훈련된 mjuu 은 안정½불안정 분기점 위치, 주파수 응답 곡선의 다중 분기(Fig. XG 참조), 카오스 발생 주파수 대역을 정확히 재현하였다. 파라미터 스윕(parameter sweep) 속도는 Runge-Kutta 수치적분 대비 수백 배 향상되어, 광역 파라미터 공간에서의 분기 구조 파악이 현실적으로 가능함을 확인하였다. X jSGzUpUSGiSGhUrUGGrSGjUtUGOX``YPSGuGk SGZSGZ]\ˀ[WYU mUGXGGuG GGOGPaGyr[GGGUGmjuuGG ˋG서울시립대학교 환경공학부 (교신저자) lTaGgUUG JG서울시립대학교 환경공학부</abstract>
   <source_page>268</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.639</extraction_quality>
   <pageImage>/paper-pages/p160.webp</pageImage>
   <affiliations>
     <affiliation>서울시립대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Neural Network(#14 3)</keyword>
-    <keyword>Nonlinear Vibration] @ 진동)</keyword>
-    <keyword>Rectangular 218[6(직사각형 평판)</keyword>
+    <keyword>Neural Network(신경망)</keyword>
+    <keyword>Nonlinear Vibration(비선형 진동)</keyword>
+    <keyword>Rectangular Plate(직사각형 평판)</keyword>
+    <keyword>Internal Resonance(내부공진)</keyword>
+    <keyword>Bifurcation(분기)</keyword>
+    <keyword>Chaos(혼돈)</keyword>
   </keywords>
 </paper>

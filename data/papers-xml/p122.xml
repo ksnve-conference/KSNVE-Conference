@@ -11,16 +11,19 @@
   <time>14:25~14:40</time>
   <venue>에메랄드홀</venue>
   <chair>김기창(현대차)</chair>
-  <abstract>Characterization (42-2- 특성 분석), Sound Quality Improvement (음질 개선) 최근 des 차량의 보급 확대로 인해 과워트레인 소음이 감소함에 따라, 차량 실내 소음의 중요성이 상 대적으로 중대되고 있다. 특히 실내 소음 중 840 시스템에서 발생하는 ASS 실내 환경 품질에 중요한 영향을 미치는 요소로, 이에 대한 기존 연구는 주로 소음 저감에 초점을 맞추어 수행되어 왔다. 그러나 사용 자 만족도 향상을 위해서는 단순한 소음 저감뿐 아니라 인간의 감성 반응을 고려한 음질 설계가 요구된다. 이에 본 연구에서는 감성 기반 접근을 통해 차량 HVAC 소음의 주과수 SYS 분석하고, 이를 기반으로 음 질 개선 방안을 제안하고자 한다. 먼저, 감성 기반 ASS 통해 차량 HVAC 시스템 소음의 특성을 분석하 고, 주과수 대역별 음향 특성을 조절한 HVAC 사운드 음원을 제작하여 해당 음원에 대해 청음 평가를 수행 하였다. 이를 통해 HVAc 사운드의 시원함과 쾌적함에 영향을 미치는 주요 주과수 SYS 도출하였다. 도 출된 결과를 기반으로 목표 음향 특성을 설정하였으며, 이를 구현하기 위해 St 제약을 고려한 미로형 사 일런서와 Active Sound Design(ASD) 기술을 적용하기 위한 스피커를 240 덕트에 부착하여 음질을 개선 하였다. 사일런서는 쾌적함을 개선하기 위해 특정 Fake 대역의 소음을 저감하도록 설계하였고, ASD 기술 은 시원함을 개선하기 위해 특정 주과수 성분을 중폭하도록 적용하였다. 사일런서와 4813 기술 적용 후 청 음 평가 결과, 적응 전 대비 쾌적함과 시원함이 향상된 것으로 확인되었다. 본 연구는 기존의 전동화 차량 HVAC 시스템 AS 저감 중심 접근에서 나아가, 감성 wes 반영한 HVAC 사운드 개선 방법을 제안하고 그 효과를 검증하였다. Table 1 Frequency bands affecting perceived 따가 HRC 나바 pleasantness and coolness of HVAC sound Jaa Soiree rT &lt;. 4 FLEE Eo ee | 나 11 ae te 에 frequency band | _ pleasantness coolness = —— as \ | \ = B amplification Le 2 - 개 ~</abstract>
+  <abstract>최근 전동화 차량의 보급 확대로 인해 파워트레인 소음이 감소함에 따라, 차량 실내 소음의 중요성이 상 대적으로 중대되고 있다. 특히 실내 소음 중 2740 시스템에서 발생하는 소음은 실내 환경 품질에 중요한 영향을 미치는 요소로, 이에 대한 기존 연구는 주로 소음 저감에 초점을 맞추어 수행되어 왔다. 그러나 사용 자 만족도 향상을 위해서는 단순한 소음 저감뿐 아니라 인간의 감성 반응을 고려한 음질 설계가 요구된다. 이에 본 연구에서는 감성 기반 접근을 통해 차량 240 소음의 주파수 특성을 분석하고, 이를 기반으로 음 질 개선 방안을 제안하고자 한다. 먼저, 감성 기반 접근을 통해 차량 240 시스템 소음의 특성을 분석하 고, 주파수 대역별 음향 특성을 조절한 440 사운드 음원을 제작하여 해당 음원에 대해 청음 평가를 수행 하였다. 이를 통해 840 사운드의 시원함과 쾌적함에 영향을 미치는 주요 주과수 특성을 도출하였다. 도 출된 결과를 기반으로 목표 음향 특성을 설정하였으며, 이를 구현하기 위해 공간 제약을 고려한 미로형 사 일런서와 4006 90000 1068180(^&amp;80) 기술을 적용하기 위한 스피커를 240 덕트에 부착하여 음질을 개선 하였다. 사일런서는 쾌적함을 개선하기 위해 특정 주과수 대역의 소음을 저감하도록 설계하였고, 450 기술 은 시원함을 개선하기 위해 특정 주파수 성분을 증폭하도록 적용하였다. 사일련서와 45 기술 적용 후 청 음 평가 결과, 적용 전 대비 과적함과 시원함이 향상된 것으로 확인되었다. 본 연구는 기존의 전동화 차량 840 시스템 소음 저감 중심 접근에서 나아가, 감성 반응을 반영한 840 사운드 개선 방법을 제안하고 그 효과를 검증하였다.</abstract>
   <source_page>230</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.663</extraction_quality>
   <pageImage>/paper-pages/p122.webp</pageImage>
   <affiliations>
     <affiliation>동의대</affiliation>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Affective Response (감성 반응)</keyword>
-    <keyword>Automotive HVAC System (차량 공조 시스템)</keyword>
-    <keyword>Noise</keyword>
+    <keyword>Affective Response (774 4¥1-S-)</keyword>
+    <keyword>Automotive HVAC System (AF 공조 시스템)</keyword>
+    <keyword>페0196 Characterization (2-&amp; 573 444)</keyword>
+    <keyword>Sound Quality Improvement (3% 711)</keyword>
   </keywords>
 </paper>

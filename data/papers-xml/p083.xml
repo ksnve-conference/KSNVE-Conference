@@ -11,16 +11,19 @@
   <time>09:40~09:50</time>
   <venue>사파이어홀[2]</venue>
   <chair>박경수(가천대), 한제헌(한국공학대)</chair>
-  <abstract>Monitoring(Atel 감시), Shock Pulse Method High 0ㅁ61001000 (고정밀 쇼크펄스범), 본 연구에서는 산업용 분진 및 이물질을 제거하거나 원료의 이송과 반도체 정밀공정의 BUH 사용하는 CV Blower (2H 진공 블로우어) 모터의 볼 베어링의 상태 감시 및 진단 사례를 소개한다. 상태 감시에는 SPM HD 기법을 이용한다. SPM HDe S84 전용 센서와 Tess 필터링 기법을 통해 가속도 ANS 사용하는 일반적인 진동 스펙트럼 분석보다 훨씬 초기에 베어링의 결함 상태를 파악할 수 있다. 다양한 산 업현장에서 중요 장비의 상태 감시 및 대책 +o) 널리 사용되고 있다. 본 CV Blower 사례 BAS 6212 볼베어링으로 지지되고, SAE 360070ㅁ으로 구동된다. 본 연구에서는 모터 베어링 하우징의 양단에 속펼스 전용 AVS 부작하여 3개월에 걸쳐 속 펼스 최대치 인 2022과 기저치인 8126의 HAS 감시하였다. 진동과 SUAS 동시에 측정하여 비교하기 위해 881/사의 Duo 센서를, 신호 취득에는 106110018를, t= Condmaster RubyS 사용하였다. 속펼스의 ALE 결함 의 상태뿐만 아니라 외륜 및 내륜에 대한 Be] 상대 속도에 지배된다. 상대 속도는 축 직경과 회전 속도로 결정되므로 베어링의 제원과 회전 속도로 정규화된 속펼스 값을 사용하였다. Figle 감시 기간에 따른 1120과 HDc 값의 변화와 안전운전 구간과 위험 구간의 HD 스펙트럼을 보인다. Fig 2는 가속도 센서로 추출 못하는 베어링의 초기 AES SPM HDS 잘 추출할 수 USS 보인다. a ar ， | oS i Fn A ree aN 가가 AA AM</abstract>
+  <abstract>본 연구에서는 산업용 분진 및 이몰질을 제거하거나 원료의 이송과 반도체 정밀공정의 클린룸에 사용하는 0 810\6 (클린 진공 블로우어) 모터의 볼 베어링의 상태 감시 및 진단 사례를 소개한다. 상태 감시에는 8054 102 기법을 이용한다. SPM HD 속펄스 전용 센서와 고도화된 필터링 기법을 통해 가속도 센서를 사용하는 일반적인 진동 스펙트럼 분석보다 훨씬 초기에 베어링의 결함 상태를 파악할 수 있다. 다양한 산 업현장에서 중요 장비의 상태 감시 및 대책 수립에 널리 사용되고 있다. 본 0? 810\6@ 사례 모델은 6212 볼베어링으로 지지되고, 모터는 360000으로 구동된다. 본 연구에서는 모터 베어렁 하우징의 양단에 속펄스 전용 센서를 부착하여 3개월에 걸쳐 속 펄스 최대치 인 2102과 기저치인 2100의 추세를 감시하였다. 진동과 속펄스를 동시에 측정하여 비교하기 위해 988/사의 Duo AAS, 신호 취득에는 10[61100\8를, 진단에는 0000018966ㅠ #46를 사용하였다. 속펄스의 강도는 결함 의 상태뿐만 아니라 외륜 및 내륜에 대한 볼의 상대 속도에 지배된다. 상대 속도는 축 직경과 회전 속도로 결정되므로 베어링의 제원과 회전 속도로 정규화된 속펄스 값을 사용하였다. 118.1은 감시 기간에 따른 000과 206 값의 변화와 안전운전 구간과 위험 구간의 20 스펙트럼을 보인다. 118. 2는 가속도 센서로 추출 못하는 베어링의 초기 결함을 904 ㅁ80로 잘 추출할 수 있음을 보인다. | | yp ee + 그리 | ; | ㅣ 대 a= | 「 이이” 00 AWA WANA iin cui Aden ids</abstract>
   <source_page>156</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.602</extraction_quality>
   <pageImage>/paper-pages/p083.webp</pageImage>
   <affiliations>
     <affiliation>강원대</affiliation>
     <affiliation>SPM Instrument Korea</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Clean Vacuum 010\하(클린 진공 #201)</keyword>
-    <keyword>Rolling ㅁ68000(구름 베어링)</keyword>
-    <keyword>Condition</keyword>
+    <keyword>Clean Vacuum Blower(22 2S 82201)</keyword>
+    <keyword>Rolling ㅁ68009(구름 1A)</keyword>
+    <keyword>Condition Monitoring(Atel ZfAl)</keyword>
+    <keyword>Shock Pulse Method High Definition (WEY *2ABAH)</keyword>
   </keywords>
 </paper>

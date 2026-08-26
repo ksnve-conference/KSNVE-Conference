@@ -11,8 +11,10 @@
   <time>14:50~15:05</time>
   <venue>릴리홀[2]</venue>
   <chair>김성현(현대차)</chair>
-  <abstract>회전익 tele 회전하는 로터 블레이드와 주변 유동의 상호작용으로 인해 긍력소음을 발생시킨다. 능동 적으로 ASS 저감시키기 위한 방안 중 하나로, NASAMA] ABS Smart Material Actuated Rotor Technology (SMART) 로터와 같이 로터 블레이드에 능동 뒷전 플랩을 적용한 능동 제어 기술이 연구되어 왔다. 뒷전 플랩의 위상, 주과수 및 진쪽과 같은 작동 변수를 변화시키면 로터 블레이드의 동적 하중이 변화 하며, 이를 통해 소음 및 진동 저감 효과를 달성할 수 있는 것으로 알려져 있다 [1]. 서울대학교 지능형 공탄성 및 헬리콤터 연구실에서는 능동 플랩 뒷전 블레이드가 적용된 (86041 National University Flap, SNUF) 로터에 대한 연구를 수행하여 왔다 [2]. 본 논문에서는 SNUF 로터에 대하여 DYMORE 4.0프로그램을 활용하여 다물체동역학 및 공기역학해석을 수행하였다. 능동 뒷전 플랩의 주과수, 위상, 진쪽의 West] 따른 로터 블레이드 각 스팬 지점에서의 공력하중 및 변위를 산출하였다. 예측된 값을 기반으로 소음 해석 프로그램인 280-\072\073을 활용하여 능동 뒷전 플랩 작동에 따른 소음 변화를 해 석적으로 확인하였다. 소음 측정을 위해 무향 시설을 구축하고, 서모보터를 활용한 플랩 구동장치와 회전실험 장치(\1101 tower) 를 이용하여 회전실혐을 수행하였다. 회전실혐에서는 일정한 회전수와 추력을 유지한 tHe Aa 플랩의 a =, 주과수, 위상을 변화하며 소음 및 로터 허브의 Aes 계측하였다. 무향시설에서 수행한 회전실혐에서 A 측값을 활용하여 능동 뒷전 플랩의 작동이 로터의 소음과 진동에 미치는 영향을 분석하고자 하였다. 이 논문은 2026년도 정부(방위사업청의 재원으로 국방기술진흥연구소의 지원 (No. 20- 105-£00-005(KRIT-CT-23-010), 국방 수직이착륙기 특화 연구센터) 60%) 및 정부(과학기술정보통신부)의 재원으로 한국연구재단의 지원을 받아 수행된 연구입지6.20218#145.1031868) (50%). [1] Sim, B. W., Janaki Ram, R. D., and Lau, B. H. (2014). Reduced In-plane, Low-frequency Noise of an Active Flap Rot or. Journal of the American Helicopter Society, 59(2), 1-17. [2] Im B, Ry, J, Rhee, W, Lee, H, Kong, K, De Poitevin, C., and Shin, S J. (2022). Qpen-loop Hover Experiment of a Mach-scaled SNUF Rotor for Active Vibration Control. In 4810 European Rotorcraft Forum, 2022. Associazione Italiana di Aeronautica e Astronautica (AIDAA). 1 노 이 패매여 ㅣ cv mate - aa sy zy — ㆍ 2 , — Peteniiometeril = Flange ny “ )</abstract>
+  <abstract>회전익 항공기는 회전하는 로터 블레이드와 주변 유동의 상호작용으로 인해 공력소음을 발생시킨다. 능동 적으로 소음을 저감시키기 위한 방안 중 하나로, 제494ㅅ에서 개발한 82784 /141160481 ㅅ0048160 010 160000108? (95487) 로터와 같이 로터 블레이드에 능동 뒷전 플랩을 적용한 능동 제어 기술이 연구되어 왔다. 뒷전 플랩의 위상, 주과수 및 전폭과 같은 작동 변수를 변화시키면 로터 블레이드의 동적 하중이 변화 하며, 이를 통해 소음 및 진동 저감 효과를 달성할 수 있는 것으로 알려져 있다 [1]. 서울대학교 지능형 공탄성 및 헬리콤터 연구실에서는 능동 플랩 뒷전 블레이드가 적용된 (96041 8040081 University 비82, 9페04) 로터에 대한 연구를 수행하여 왔다 [2]. 본 논문에서는 8제0 로터에 대하여 10740 4.0프로그램을 활용하여 다몰체동역학 및 공기역학해석을 수행하였다. 능동 뒷전 플랩의 주파수, 위상, 진폭의 변화에 따른 로터 블레이드 각 스팬 지점에서의 공력하중 및 변위를 산출하였다. 예측된 값을 기반으로 소음 해석 프로그램인 ?90-\07\0)03을 활용하여 능동 뒷전 플랩 작동에 따른 소음 변화를 해 석적으로 확인하였다. AG SAS 위해 무향 시설을 구축하고, 서모보터를 활용한 플랩 구동장치와 회전실험 장치(\1104 tower) 를 이용하여 회전실험을 수행하였다. 회전실험에서는 일정한 회전수와 추력을 유지한 상태로 뒷전 플랩의 진 폭, 주파수, 위상을 변화하며 소음 및 로터 허브의 진동을 계측하였다. 무향시설에서 수행한 회전실협에서 계 측값을 활용하여 능동 뒷전 플랩의 작동이 로터의 소음과 진동에 미치는 영향을 분석하고자 하였다. 이 논문은 2026년도 정부(방위사업청)의 재원으로 국방기술진흥연구수의 지원 (46. 20- 105-800-0050&lt;1[1-(71-23-010), 국방 수직이착륙기 특화 연구센터) (50%) 및 정부(과학기술정보통신의 재원으로. 한국연구재단의 지원을 Blo} spa] 47'9](No.2021R1A5A1031868) (50%). [1] Sim, B. W., Janaki Ram, R. D., and Lau, B. H. (2014). Reduced In-plane, Low-frequency Noise of an Active Flap Rot or. Journal of the American Helicopter Society, 59(2), 1-17. [2] Im B, Ryi, J., Rhee, W, Lee, H., Kong, K. De Poitevin, C., and Shin, S. J. (2022). Open-loop Hover Experiment of a Mach-scaled SNUF Rotor for Active Vibration Control. In 48rd European Rotorcraft Forum, 2022. Associazione Italiana di Aeronautica e Astronautica (AIDAA). aa == = a , a aie . ey s- 2 Pas 7 =) a | = 도 전 — Pee ere lier = -Flange a es ~; b ㅣ i fe ~ 더 c= ae 7 “14 1 Trailing edge flap assembly =1%] 2 SNUF rotor in an anechoic chamber tT GAA}; ASuetal 항공우주공학과 *＊ 중남대학3항공우주공학과 ~ 서울대학교 항공우주공학과</abstract>
   <source_page>90</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.601</extraction_quality>
   <pageImage>/paper-pages/p017.webp</pageImage>
   <affiliations>
     <affiliation>서울대</affiliation>
@@ -20,8 +22,7 @@
     <affiliation>국방과학연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Hover(A] +2] 4] )</keyword>
-    <keyword>Active trailing edge flap(-o-s 뒷전 플랩)</keyword>
-    <keyword>344 aWhirl tower experiment)</keyword>
+    <keyword>Hover(4] A} 2] 4] ), Active trailing edge flap-o-s 3 %1 44)</keyword>
+    <keyword>3] 4141 4 (Whirl tower experiment)</keyword>
   </keywords>
 </paper>

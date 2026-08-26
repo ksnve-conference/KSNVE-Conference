@@ -11,16 +11,19 @@
   <time>15:35~15:50</time>
   <venue>오팔홀[1]</venue>
   <chair>백승훈(부산대)</chair>
-  <abstract>Bifureation(2] *] #3. 분기), Synchronization (동기화), Vibration Suppression(4l-S 억제) 쌍안정 구조물은 AW-AF(snap-through) 현상을 비롯한 강한 비선형 동특성을 나타내는 것으로 잘 알려 져 있다. 이러한 쌍안정 구조물은 진동 절연 기술, 진동 에너지 수확 기술, 충격 흡수 기술 등 다양한 공학 문야에서 활발히 적용되어 왔다. 최근에는 기계적 머타물길 뿐만 아니라, 기계적 방식의 논리 게이트. 스위 a, 메모리 기반의 기계적 컴퓨팅 기술에서도, 쌍안정 구조물이 주요 동작 메커니즘으로 활용되고 있다. 하 지만. ahd 구조물의 ASS 복잡한 분기 현상 및 비선형 동기화 현상을 수반할 수 있어, 다양한 동격 하 중 하에서 비선형 특성을 명확히 분석하는 것은 난이도가 높고 EAA 과제라고 할 수 있다. 본 연구에서는 횡방향 기저 가진을 받는 B44 von Mises truss modelS 기반으로, 기계적 스위치의 메커 USS 규명하고 가진 과라미터에 따른 동작 SYS 문석하였다. 우선, truss model] 기하학적 비선형성을 고려하여 지배 WAS 유도하였으며. 해석 모델의 단순화를 위하여 테일러 급수 전개를 적응하고 비선형 항을 3차 다한식으로 근사하였다. 유도된 지배 방정식은 시변 계수를 포함한 쌍안정 진동자 모델로 표현된 다 시계열 분석. 주과수 분석, 위상 평면 분석, 푸앵카레 단면 분기 해석 등 다양한 해석 기법을 gato, 가진 WAFS 주과수)의 변화에 따른 시스템의 응람 SYS 분석하였다. 그 결과로, 시스템의 안정 성 sts} 진동 억제 현상에 기반하는 기계적 스위치의 동작 메커니즘을 규명하였으며, 횡방향 기저 가진의 조건에 따라 시스템이 달리 동작하는 매개변수 입계조건 8 영역을 분석하였다 + 교신저자; 정회원, 전북대학교 기계설계공학부 * 전북대학교 기계설계공학부</abstract>
+  <abstract>져 있다. 이러한 쌍안정 구조물은 진동 절연 기술, 진동 에너지 수확 기술, 충격 흡수 기술 등 다양한 공학 분야에서 활발히 적용되어 왔다. 최근에는 기계적 메타물질 뿐만 아니라, 기계적 방식의 논리 게이트, 스위 치, 메모리 기반의 기계적 컴퓨팅 기술에서도, 쌍안정 구조물이 주요 동작 메커니즘으로 활용되고 있다. 하 지만, 쌍안정 구조물의 거동은 복잡한 분기 현상 및 비선형 동기화 현상을 수반할 수 있어, 다양한 동적 하 중 하에서 비선형 특성을 명확히 분석하는 것은 난이도가 높고 도전적인 과제라고 할 수 있다. 본 연구에서는 횡방향 기저 가진을 받는 탄성 700 41668 0ㅁ0488 0ㅁ0061을 기반으로, 기계적 스위치의 메커 니즘을 규명하고 가진 파라미터에 따른 동작 특성을 분석하였다. 우선, 60495 200081의 기하학적 비선형성을 고려하여 지배 방정식을 유도하였으며, 해석 모델의 단순화를 위하여 테일러 급수 전개를 적용하고 비선형 항을 3차 다항식으로 근사하였다. 유도된 지배 방정식은 시변 계수를 포함한 쌍안정 진동자 모델로 표현된 다. 시계열 분석, 주파수 분석, 위상 평면 분석, 푸앵카레 단면 및 분기 해석 등 다양한 해석 기법을 통하여, 가진 매개변수(진폭 및 주파수)의 변화에 따른 시스템의 응답 특성을 분석하였다. 그 결과로, 시스템의 안정 성 변화와 진동 억제 현상에 기반하는 기계적 스위치의 동작 메커니즘을 규명하였으며, 횡방향 기저 가진의 조건에 따라 시스템이 달리 동작하는 매개변수 임계조건 및 영역을 분석하였다. + 교신저자;정회원, 전북대학교 기계설계공학부 *＊ 전북대학교 기계설계공학부</abstract>
   <source_page>267</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.678</extraction_quality>
   <pageImage>/paper-pages/p159.webp</pageImage>
   <affiliations>
     <affiliation>전북대</affiliation>
     <affiliation>충북대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Bistable Structure(?#¢k4 구조물)</keyword>
-    <keyword>Lateral Base Excitation(]¥}eF 기저 가진)</keyword>
-    <keyword>Pitchfork</keyword>
+    <keyword>Bistable Structure(4e@t4] 7'4%=)</keyword>
+    <keyword>Lateral Base Excitation(S}¥}ek 기저 7}4%))</keyword>
+    <keyword>Pitchfork Bifurcation(S] 4] 2+. 4%2£7])</keyword>
+    <keyword>Synchronization (-&amp; 7] S})</keyword>
   </keywords>
 </paper>

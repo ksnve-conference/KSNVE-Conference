@@ -11,15 +11,19 @@
   <time>14:10~14:25</time>
   <venue>오팔홀[1]</venue>
   <chair>이수일(서울시립대)</chair>
-  <abstract>Nonlinear hysteresis model(4] 41 @ 이력 모텔), Unbalanced 70101(불평형 로터) 회전 기계 시스템의 안정적인 제어와 구조 설계를 위해서는 시스템 레벨에서의 동역학적 거동 및 가진력 을 정확히 예측하는 것이 필수적이다. 특히 가전제품 Se] 현수 시스템에 널리 사용되는 마찰 WS 조립 공차나 설계 의도에 의해 필연적으로 HAS 포함하며, 이는 As 전후의 거시적 충돌과 마찰이 Aga 강 한 비선형성을 유발한다. 하지만 기존 연구에서는 주로 일반적인 비선형 마찰 및 감쇠 특성 규명에 치중해 왔으며, 설계 의도에 의한 유격이 포함된 비선형 Bye] 동특성을 분석하고 Add Fee 사례는 극히 드물다. 이에 본 연구에서는 SE 현상을 수반하는 유격형 Bo 동적 거동을 시스템 레벨에서 분석하기 위해 AQ 기반으로 수림된 유격형 마찰 gy 모델을 불평형 로터 시스템에 결합하여 가진력을 예측하는 동 합 해석 방법론을 제안한다. 대상 gas] 동특성을 정밀하게 식별하기 위해 Fig 1과 같이 a 단품에 대 한 가진 실혐을 수행하였으며 이를 바탕으로 유격에 의한 비선형 Wa] SYS BAD 수 있는 Bouc-Wen 모델 기반의 비선형 이력 모델을 수립하였다. 시스템 레벨의 분석을 위해 Fig. 2와 같은 로터 BAS 기반 으로 불평형 질량에 의한 횡방향-비블림 AA (Lateral-torsional coupling) 효과가 고려된 운동방정식을 유도 하였으며 앞서 수립된 비선형 Bs] 모델을 해당 로터 시스템의 마운트 요소로 적용하였다. 제안된 방법론은 복잡한 주과수 영역의 등가화 과정 없이 시간 영역에서 Ag 수치 ARS 수행함으로써 시스템의 과도 응담 및 비선형 가진력을 정량적으로 산출한다. 최종적으로 실제 구동 시스템을 대상으로 한 실험을 통해 제안된 해석 모델이 유격 내 임팩트 현상 및 고차 조화 진동 성분을 효과적으로 모사함을 검중하였다. 본 연구에서 제시하는 방법론은 비선형 요소가 포함된 다양한 회전 기계 시스템의 진동 특성 분석 및 가진원 ABS 위 한 신뢰성 있는 해석적 기반을 제공할 것으로 기대된다. = 2 개 : Fape 시 | ws | a | yey zi ‘Sal 0020 | Reem @| / 튼 céthz Ce Nj</abstract>
+  <abstract>회전 기계 시스템의 안정적인 제어와 구조 설계를 위해서는 시스템 레벨에서의 동역학적 거동 및 가진력 을 정확히 예측하는 것이 필수적이다. 특히 가전제품 등의 현수 시스템에 널리 사용되는 마찰 PAS 2H 공차나 설계 의도에 의해 필연적으로 유격을 포함하며, 이는 접촉 전후의 거시적 충돌과 마찰이 결합된 강 한 비선형성을 유발한다. 하지만 기존 연구에서는 주로 일반적인 비선형 마찰 및 감쇠 특성 규명에 치중해 왔으며, 설계 의도에 의한 유격이 포함된 비선형 맘퍼의 동특성을 분석하고 시스템에 적용한 사례는 극히 드물다. 이에 본 연구에서는 충돌 현상을 수반하는 유격형 퍼의 동적 거동을 시스템 레벨에서 분석하기 위해 실헌 기반으로 수립된 유격형 마찰 멈퍼 모델을 불평형 로터 시스템에 결합하여 가진력을 예측하는 통 합 해석 방법론을 제안한다. 대상 밍퍼의 동특성을 정밀하게 식별하기 위해 0. 1과 깥이 멈퍼 단품에 대 한 가진 설혐을 수행하였으며 이를 바탕으로 유격에 의한 비선형 감쇠 특성을 묘사할 수 있는 8000-\60 모델 기반의 비선형 이력 모델을 수립하였다. 시스템 레벨의 분석을 위해 0. 2와 같은 로터 모델을 기반 으로 불평형 질량에 의한 횡방향-비틀림 연성(.0[66701-607910001 00401108) 효과가 고려된 운동방정식을 유도 하였으며 앞서 수립된 비선형 덤퍼 모델을 해당 로터 시스템의 마운트 요소로 적용하였다. 제안된 방법론은 복잡한 주파수 영역의 등가화 과정 없이 시간 영역에서 직접 수치 적분을 수행함으로써 시스템의 과도 응답 및 비선형 가진력을 정량적으로 산출한다. 최종적으로 실제 구동 시스템을 대상으로 한 실험을 통해 제안된 해석 모델이 유격 내 임팩트 현상 및 고차 조화 진동 성분을 효과적으로 모사함을 검증하였다. 본 연구에서 제시하는 방법론은 비선형 요소가 포함된 다양한 회전 기계 시스템의 진동 특성 분석 및 가진원 식별을 위 한 신뢰성 있는 해석적 기반을 제공할 것으로 기대된다. a, We x x Pypr.t - Espr, R | i an | * - 때“ el on” Koi a Fay Sy ; | eat 은 구 Ce Lamp. + Famp,R c ee. a&gt; = ES 8</abstract>
   <source_page>233</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.672</extraction_quality>
   <pageImage>/paper-pages/p125.webp</pageImage>
   <affiliations>
     <affiliation>부산대</affiliation>
     <affiliation>LG전자</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Excitation force identification(7}41 #4 식별)</keyword>
-    <keyword>Gap-type nonlinear damper(f-A 3 비선형 Bx)</keyword>
+    <keyword>Excitation force identification(7}414 식별)</keyword>
+    <keyword>Gap-type nonlinear damper(774 3 HAS 34)</keyword>
+    <keyword>Nonlinear hysteresis model(4]*1 ©] 4 ©)</keyword>
+    <keyword>Unbalanced rotor(# 4S =&amp;))</keyword>
   </keywords>
 </paper>

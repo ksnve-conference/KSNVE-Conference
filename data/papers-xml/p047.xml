@@ -11,14 +11,16 @@
   <time>17:00~17:15</time>
   <venue>사파이어홀[1]</venue>
   <chair>오종석(공주대)</chair>
-  <abstract>손목 429 웨어러블 디바이스에 탑재된 PPG@Photoplthysmography) AME 주변 환경 요인과 움직임에 민감하여, 단순 신호처리 기반 노이즈 제거 기법만으로는 건강 정보를 완전히 신뢰하기는 어렵다. 이를 해결 하기 위해 본 연구는 PPG 와 IMUUnertial Measurement Units) 센서의 다중모달 센서 SIS 통해 BES 감지하고, 그 운동이 PPG ASS 얼마나 왜곡시키는지에 대한 상관성 모델링 기법을 제안한다. 본 기법은 심혈관 하드웨어 시뮬레이터를 활용하여 인공 손목에 센서 융합 모듈과 3 | 서보 모터를 탑재 하여 다양한 관절 운동을 재현하였다. 동시에 1 회 박출량(806 Volume)S 조절하며 PPG 의 왜곡과 박출 량 사이의 관계를 CNN-BiLSTM 기반 GAY 모델로 학습하였다. 제안된 모델은 IMU 데이터를 통해 손목 LES 감지하고, 이에 따른 PPG 왜곡량을 예측한 뒤 주파수 변환 기법을 적용하여 원래 신호에서 잡음을 제거한다. 성능 평가는 묘“ 와 RMSE AHS 통해 수행되며, 단일 피험자 검중과 피험자별 검중을 통해 모델 의 강건성을 확인한다. BAPE 격한 운동이나 극한 상황에서 발생하는 움직임 잡음을 사전에 예측ㆍ 제거함으로써 웨어러블 디 바이스가 보다 신뢰성 높은 피드백을 제공할 수 있음을 보여준다. 이는 심혈관 질환을 포함한 헬스케어 모니 터링 분야에서 손목 관절 운동과 생체신호 간의 관계를 기반으로 모션 아티팩트 발생을 예측하는 새로운 프 레임워크 발전에 기여한다. This work was supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT) (No. RS-2024-00350917) 이 SES 2026년도 정부(산업통상주원부)의 재원으로 한국산업기술징흥원의 지원을 받아 수행된 연구임 088-2025-02263945, 2026년 산업혁신인재성장지원사업) + 교신저자; 한국과학기술원 이</abstract>
+  <abstract>손목 착용형 웨어러블 디바이스에 탑재된 PPG(Photoplth smograph PG 센서는 주변 환경 요인과 움직임에 민감하여, 단순 신호처리 기반 노이즈 제거 기법만으로는 건강 정보를 완전히 신뢰하기는 어렵다. 이를 해결 하기 위해 본 연구는 wwn 와 IMU(Inertial Measurement Units) 센서의 다중모달 센서 융합을 통해 운동을 감지하고, 그 운동이GwwnG신호를 얼마나 왜곡시키는지에 대한 상관성 모델링 기법을 제안한다. 본 기법은 심혈관 하드웨어 시뮬레이터를 활용하여 인공 손목에 센서 융합 모듈과 3 축 서보 모터를 탑재 하여 다양한 관절 운동을 재현하였다. 동시에 1 회 박출량(Stroke Volume)을 조절하며 wwn 의 왜곡과 박출 량 사이의 관계를 CNN-BiLSTM 기반 딥러닝 모델로 학습하였다. 제안된 모델은 pt|G 데이터를 통해 손목 운동을 감지하고, 이에 따른 wwnG 왜곡량을 예측한 뒤 주파수 변환 기법을 적용하여 원래 신호에서 잡음을 제거한다. 성능 평가는 y 2 와 ytzlG 지표를 통해 수행되며, 단일 피험자 검증과 피험자별 검증을 통해 모델 의 강건성을 확인한다. 본 연구는 격한 운동이나 극한 상황에서 발생하는 움직임 잡음을 사전에 예측˱ 제거함으로써 웨어러블 디 바이스가 보다 신뢰성 높은 피드백을 제공할 수 있음을 보여준다. 이는 심혈관 질환을 포함한 헬스케어 모니 터링 분야에서 손목 관절 운동과 생체신호 간의 관계를 기반으로 모션 아티팩트 발생을 예측하는 새로운 프 레임워크 발전에 기여한다. {GGGG GGuGyGmGGrOuymPGGG GG rGOtzp{PGOuUGyzTYWY[TWWZ\W`X^PG 이 논문은 2026년도 정부(산업통상주원부)의 재원으로 한국산업기술징흥원의 지원을 받아 수행된 연구임 (RS-2025-02263945, 2026년 산업혁신인재성장지원사업) ˋG 교신저자bG 한국과학기술원 lTa gUUG QG 한국과학기술원 JG 한국과학기술원</abstract>
   <source_page>120</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.663</extraction_quality>
   <pageImage>/paper-pages/p047.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Multimodal Sensor Fusion(*}}€2 Al] 융합)</keyword>
-    <keyword>Biomedical Signal 0000688108(생체신호 처리)</keyword>
+    <keyword>Multimodal Sensor Fusion(다중모달 센서 융합)</keyword>
+    <keyword>Biomedical Signal Processing(생체신호 처리)</keyword>
   </keywords>
 </paper>

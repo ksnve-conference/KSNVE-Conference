@@ -11,8 +11,10 @@
   <time>15:35~15:50</time>
   <venue>사파이어홀[1]</venue>
   <chair>정형조(KAIST)</chair>
-  <abstract>전력계통의 핵심 설비인 가스절연개폐장치(436-109418660 Switchgear, GISHE 지진 시 기능 상실이 대규모 정전 및 필수 전력공급 체계에 치명적인 영향을 미칠 수 있어, 정량적인 지진안전성 평가가 매우 중요하다. 본 연구에서는 실규모 170 kV 078를 대상으로 진동대를 이용한 sh] AEA Seismic Fragility Test)\S 수 행하여 손상형태와 지진취약요소를 관찰하였다. 입력지진은 Table 1과 같이 단계별로 증폭 적용하였다. 시험 결과, 주요 지진취약부는 지지구조물과 가스절연버스턱트(336-05418660 Busduct, 013)의 연결부이며, 볼트 의 풀림과 항복 및 지지부의 국부변형이 주요 손상형태로 관찰되었으며, 이러한 지지부의 소성변형이 상부 기기의 S7d(RockingyS 유발하여 급격한 응답 중쪽을 초래한 것으로 분석되었다. 본 연구에서 실규모 진동 대 AGS 동해 지진하중에 의한 cis] 손상형태와 쳐약요소를 제시함으로써, 향후 변전설비의 내진보강을 위한 기초자료로 활응될 수 있을 것으로 기대된다. 23164 TDetailed experimental procedure for the seismic fragility test gta CO”C—C*~da ee Amplification Factor = 10 2 Building Amplification Factor = 2.07 3 Amplified by 1.2 from Level 2 &gt; aa = ㅣ = | Ne is per Nf | are | 은 로에 _—— i 0 : ‘| i | (a) Front view (d) Side view (Left)</abstract>
+  <abstract>정전 및 필수 전력공급 체계에 치명적인 영향을 미칠 수 있어, 정량적인 지진안전성 평가가 매우 중요하다. 본 연구에서는 실규모 170 1 018를 대상으로 진동대를 이용한 파괴한도실험(861907116 『1881165 Test)S 수 행하여 손상형태와 지진취약요수를 관찰하였다. 입력지진은 74616 1과 같이 단계별로 증폭 적용하였다. 시험 결과, 주요 지진취약부는 지지구조물과 가스절연버스덕트(489-2750418660 8108040[, 018)의 연결부이며, 볼트 의 풀림과 항복 및 지지부의 국부변형이 주요 손상형태로 관찰되었으며, 이러한 지지부의 소성변형이 상부 기기의 록킹(《00008)을 유발하여 급격한 응답 증폭을 초래한 것으로 분석되었다. 본 연구에서 실규모 진동 대 실험을 통해 지진하중에 의한 018의 손상형태와 취약요소를 제시함으로써, 향후 변전설비의 내진보강을 위한 기초자료로 활용될 수 있을 것으로 기대된다. abeilT TDetailed experimental procedure for the seismic fragility test Step Input Motion Level Amplification Faotor = 10 2 Building Amplification Faoior = 2.07 3 Amplified by 12 from Level 2 ST ae 구드 》 we 7 ㆍ 벌레 니사 이이 기소 니 | 09 ce Cal A: 37 _ Pao) 7 all 고 테~~ ay Rig i ed : = ｌ' | He 2 he en 베버 » Weal | _— ie oe ; 0 주, 기 Piha —Leerpy x U |! ~ AS Pa — 될 pa ie =) =| = 6 1 이. | i ; a == (a) Front view (d) Side view (Left) Fig.T Experimental setup of the 170 kV GIS unit on the shaking table 이 연구는 한전 전력연구원의 연구과제(내진기준 상향에 따른 변전설비의 성능평가 및 보강기술 개발)과 행정안전부 재난안전산업진흥시설조성지원사업\8-2024-00418342)의 지원으로 부산대학교 지진방재연구센 터의 진동대 장비를 활용하여 수행되었습니다. + 교신저자; 정회원, 부산대학교 지진방재연구센터 *＊ 부산대학교 지진방재연구센터</abstract>
   <source_page>278</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.613</extraction_quality>
   <pageImage>/paper-pages/p170.webp</pageImage>
   <affiliations>
     <affiliation>지진방재연</affiliation>
@@ -22,6 +24,5 @@
     <keyword>Shaking table test</keyword>
     <keyword>Gas-insulated Switchgear</keyword>
     <keyword>Seismic fragility analysis</keyword>
-    <keyword>Substation equipment.</keyword>
   </keywords>
 </paper>

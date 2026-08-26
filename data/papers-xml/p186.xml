@@ -11,16 +11,21 @@
   <time>09:25~09:40</time>
   <venue>그랜드볼룸[2]</venue>
   <chair>마평식(가천대)</chair>
-  <abstract>Understanding acoustic scattering phenomena is essential for a variety of scientific and engineering applications, including acoustic cloaking, ultrasonic inspection, non-destructive testing, and medical imaging. In particular, because the geometry of an acoustic scatterer has a significant influence on wave scattering behavior, it is important to understand how scattering characteristics change with geometric variations. However, investigating these effects using conventional numerical simulations requires repeated analyses over a wide range of geometries, resulting in substantial computational cost and time. To address this limitation, we propose a geometry-aware spatially adaptive Pl-DeepONet (GASA- DeepONet) that accelerates acoustic scattering simulations by predicting wave scattering behavior for previously unseen geometries. The proposed model can predict the full temporal trajectory of wave incidence and scattering for each geometry in real-time, without error accumulation. Quantitative analyses show that, for unseen geometries, GASA-DeepONet achieves an 11% lower relative L2 error than a conventional ResUNet-based DeepONet. Building on this fast surrogate model, we further conduct shape optimization of acoustic scatterers. Specifically, to identify scatterer geometries that minimize wave scattering in a desired direction, we construct a directivity pattern from the full temporal trajectory of the predicted wave field, and employ the covariance matrix adaptation evolution strategy (CMA-ES) to determine the optimal shape. These results demonstrate the potential of the proposed framework as an efficient tool for both rapid acoustic scattering analysis and design optimization under varying geometric conditions. + 교신저자; 하국과학기술원 기계공학과 + 포항공과매학교 기계콩학과</abstract>
+  <abstract>scattering behavior, it is important to understand how scattering characteristics change with geometric variations. However, investigating these effects using conventional numerical simulations requires repeated analyses over a wide range of geometries, resulting in substantial computational cost and time. To address this limitation, we propose a geometry-aware spatially adaptive Pl-DeepONet (GASA- DeepONet) that accelerates acoustic scattering simulations by predicting wave scattering behavior for previously unseen geometries. The proposed model can predict the full temporal trajectory of wave incidence and scattering for each geometry in real-time, without error accumulation. Quantitative analyses show that, for unseen geometries, GASA-DeepONet achieves an 11% lower relative L2 error than a conventional ResUNet-based DeepONet. Building on this fast surrogate model, we further conduct shape optimization of acoustic scatterers. Specifically, to identify scatterer geometries that minimize wave scattering in a desired direction, we construct a directivity pattern from the full temporal trajectory of the predicted wave field, and employ the covariance matrix adaptation evolution strategy (CMA-ES) to determine the optimal shape. These results demonstrate the potential of the proposed framework as an efficient tool for both rapid acoustic scattering analysis and design optimization under varying geometric conditions. + 교신저자; 한국과학기술원 기계공학과 , 푸항공과매학교 기계공학과</abstract>
   <source_page>294</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.842</extraction_quality>
   <pageImage>/paper-pages/p186.webp</pageImage>
   <affiliations>
     <affiliation>포항공과대</affiliation>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>물리지식기반 212-2)&quot; (PIML)</keyword>
-    <keyword>9.2.(DeepONet)</keyword>
-    <keyword>음향 21 eb] (acoustic scatterer).</keyword>
+    <keyword>=&lt;] 4|4]7]8! 91-8-4]-s(PIML)</keyword>
+    <keyword>J 2-\(DeepONet)</keyword>
+    <keyword>including acoustic cloaking</keyword>
+    <keyword>ultrasonic inspection</keyword>
+    <keyword>non-destructive testing</keyword>
+    <keyword>and medical imaging. In particular</keyword>
   </keywords>
 </paper>

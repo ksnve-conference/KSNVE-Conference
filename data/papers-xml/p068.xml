@@ -11,15 +11,16 @@
   <time>09:45~10:00</time>
   <venue>오팔홀[1]</venue>
   <chair>김준(LIG D&amp;A)</chair>
-  <abstract>This study uses finite element analysis to evaluate a mobile shelter roof&apos;s stability under personnel loads. Comparing the original design with a square-tube reinforced version, the results show that reinforcement effectively redistributes stress and increases the safety factor. This modification significantly improves stiffness and reliability, ensuring the roof meets all structural requirements for maintenance environments. 본 연구는 ASTM E1925-10(Specification for Engineering and Design Criteria for Rigid Wall Relocatable Structures) 동절기 극한의 적설 환경 발생 시 훈련장비용 이동형 셀터가 확보해야 하는 구조 적 안정성 및 내구성을 수치 해석 기법을 통해 정밀하게 검중하였다. 이를 위해 최신 해석 소프트웨어인 Ansys Workbench 2025 R28 활용하였으며, 31 설계 데이터를 기반으로 주요 프레임 재질인 강재(8235)와 보조 재질인 목재0000)의 물리적 SYS 반영한 유한요소 BAS 구축하였다. 하중 산정 단계에서는 ASTM 81925-1에 근거한 Snow 1080(20018/0^) 조건을 Casel 2} Personnel load(300kg)°] 0.220에 적용된 Case2 = 선정하였다. Casel 구조 해석 결과, 구조물 내에서 발생하는 최대 von-Mises 응력은 34.5 MPak 산출되었으며, 이는 지붕 프레임과 수직 기둥이 결합되는 코너 연결부(1010에서 하중 전이에 따른 응력 집중 현상으로 인해 발 생한 것으로 확인되었다. 또한, 지붕 상부 중앙 영역에서는 하중에 의한 굽힘03600108) 현상으로 인해 최대 0.98 ㅁ00의 변위가 관찰되었으나, 이는 전체 구조물 크기 대비 매우 미미한 수준으로 구조적 기등 수행에 지장이 없음을 확인하였다. 08562는 각관 BAA 적용 시 응력 집중 현상이 효과적으로 완화되었으며, 안전율이 1.5배 중가하는 성등 향상을 보였다. 보강 전에도 기준치를 만족하는 안정적인 상태였으나, 각관 추가를 통해 구조적 여유치를 더 욱 높임으로써 한층 더 견고한 설계를 완성하였습니다. Table 1 Comparison of maximum stress and i= at a displacement for Design Case 1 and Case 2 ~ ~ Max.stress Max.displacement sm 때 : - 200 [MPa] [mm] = Casel : | | (snow load) 098 1 (Personnel low a) 1.96 Fig. 1 Maximum displacement of the mobile shelter frame for structural analysis t 케이에스시스템 R&amp;D ※ 케이에스시스템 R&amp;D</abstract>
+  <abstract>improves stiffness and reliability, ensuring the roof meets all structural requirements for maintenance environments. 본 연구는 ㅅ49184 E1925-10(Specification for Engineering and Design Criteria for Rigid Wall Relocatable Structures)2 6417] =+e2] 4A B28 By 시 훈련장비용 이동형 셀터가 확보해야 하는 구조 적 안정성 및 내구성을 수치 해석 기법을 통해 정밀하게 검증하였다. 이를 위해 최신 해석 소프트웨어인 Ansys \040860011 2025 #2를 활용하였으며, 31 설계 데이터를 기반으로 주요 프레임 재질인 강재(8235)와 보조 재질인 목재(\000)의 몰리적 특성을 반영한 유한요소 모델을 구축하였다. 하중 산정 단계에서는 ASTM E1925-1¢] 27 Snow load(200kg/m’) 27 Casel 2} Personnel load(300kg)°] 0.2m7o] 4-231 08562로 선정하였다. 08561 구조 해석 결과, 구조물 내에서 발생하는 최대 700-\41868 응력은 34.5 /88로 산출되었으며, 이는 지붕 프레임과 수직 기둥이 결합되는 코너 연결부(10100에서 하중 전이에 따른 응력 집중 현상으로 인해 발 생한 것으로 확인되었다. 또한, 지붕 상부 중앙 영역에서는 하중에 의한 굽힘(8600108) 현상으로 인해 최대 0.98 2ㅁ00의 변위가 관찰되었으나, 이는 전체 구조물 크기 대비 매우 미미한 수준으로 구조적 기능 수행에 지장이 없음을 확인하였다. Case는 각관 보강재 적용 시 응력 집중 현상이 효과적으로 완화되었으며, 안전율이 1.5배 중가하는 성능 향상을 보였다. 보강 전에도 기준치를 만족하는 안정적인 상태였으나, 각관 추가를 통해 구조적 여유치를 더 욱 높임으로써 한층 더 견고한 설계를 완성하였습니다.</abstract>
   <source_page>141</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.637</extraction_quality>
   <pageImage>/paper-pages/p068.webp</pageImage>
   <affiliations>
     <affiliation>KS시스템</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Mobile Shelter(°] = 첼터)</keyword>
-    <keyword>Snow 1080(적설하중)</keyword>
-    <keyword>Personnel 1080(인원하중)</keyword>
+    <keyword>Mobile 9161@(이동형 셀터)</keyword>
+    <keyword>940\ Ｌ080(적설하중)</keyword>
   </keywords>
 </paper>

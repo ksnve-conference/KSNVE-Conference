@@ -11,14 +11,17 @@
   <time>14:50~15:05</time>
   <venue>에메랄드홀</venue>
   <chair>정인지(표준과학연)</chair>
-  <abstract>Adaptive sound 809000000(적웅형 흡음) 본 연구에서는 시간에 따라 장력을 변화시킬 수 있는 멤브레인 공명기를 이용하여 덕트 내부 소 음에 대한 적응형 흡음 성능 제어 가능성을 검토하였다. 일반적인 멤브레인 공명기는 막의 질량, 장력, AME 부피 등에 의해 특정 주파수 대역에서 공명 특성을 가지며, 이에 따라 제한된 주파 수 범위에서만 효과적인 소음 저감 성능을 나타낸다. 그러나 실제 덕트 및 기기 내부 eee 작동 조건에 따라 주요 주파수 성분이 변화할 수 있으므로, 고정된 공명 주과수를 갖는 수동형 공명기 만으로는 넓은 운전 조건에 대응하기 어렵다. 이에 본 연구에서는 멤브레인 장력을 시간적으로 변 조함으로써 공명기의 저감 대역을 능동적으로 이동시키고, 흡음 성능을 보다 넓은 주파수 영역으 로 확장할 수 있는 방법을 제안하였다. Air Flow Air Periodic intake Region On/Off Valve Membrane</abstract>
+  <abstract>본 연구에서는 시간에 따라 장력을 변화시킬 수 있는 멤브레인 공명기를 이용하여 덕트 내부 소 음에 대한 적응형 흡음 성능 제어 가능성을 검토하였다. 일반적인 멤브레인 공명기는 막의 질량, 장력, 캐비티 부피 등에 의해 특정 주파수 대역에서 공명 특성을 가지며, 이에 따라 제한된 주파 수 범위에서만 효과적인 소음 저감 성능을 나타낸다. 그러나 실제 덕트 및 기기 내부 소음은 작동 조건에 따라 주요 주파수 성분이 변화할 수 있으므로, 고정된 공명 주파수를 갖는 수동형 공명기 만으로는 넓은 운전 조건에 대응하기 어렵다. 이에 본 연구에서는 멤브레인 장력을 시간적으로 변 조함으로써 공명기의 저감 대역을 능동적으로 이동시키고, 흡음 성능을 보다 넓은 주파수 영역으 로 확장할 수 있는 방법을 제안하였다.</abstract>
   <source_page>76</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.719</extraction_quality>
   <pageImage>/paper-pages/p003.webp</pageImage>
   <affiliations>
     <affiliation>한양대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Membrane resonator(] 2 2]¢] 공명기)</keyword>
-    <keyword>Time-modulated 16089100(시간변조 장력)</keyword>
+    <keyword>Membrane resonator(멤브레인 공명기)</keyword>
+    <keyword>Time-modulated tension(시간변조 장력)</keyword>
+    <keyword>Adaptive sound absorption(적응형 흡음)</keyword>
   </keywords>
 </paper>

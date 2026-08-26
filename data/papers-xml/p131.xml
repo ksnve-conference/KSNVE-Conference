@@ -11,16 +11,19 @@
   <time>13:40~13:55</time>
   <venue>릴리홀[2]</venue>
   <chair>장지호(표준과학연, 비즈웨이브)</chair>
-  <abstract>Non-floating 81000비픈바닥구조) 최근 공동주택 바닥충격음 차단성능 사후확인제도의 도입으로 인해 현장 기반의 정량적 성능평가가 중요해 지면서 성등개선 방안으로서의 천장구조에 대한 관심이 높아지고 있다. 지금까지 기존 APSA 천장구조의 차단 메커니즘을 주로 질량-공기-질량(\4469-&amp;17-54886, MAM) 공진이론과 음향 방사이론으로 설명해 왔다. 질 량-공기-질량(4868-&amp;1-4868) 321°] 24 따르면, 바닥슬래브와 천장 패널 사이의 공기충은 특정 공진 주파수 를 형성하며 공진 주파수 부근에서 투과손실이 급격하게 저하하는 공진손실이 발생한다. 음향 방사이론 관점 에서 바닥슬래브의 음향 Whe 면밀도, re 강성, 임계 tesa 의해서 결정되며, 천장구조는 상부세대에 서 발생한 중격음이 바닥슬래브를 통해 방사된 음향에너지가 수음실로 전달되는 경로에 차단 및 흡음 효과를 부가하는 요소로 작용한다. 그러나 이러한 이론들은 공통적으로 가정과 단순화를 통해 LEA] 따라 복합적 인 영향을 검토하기에는 한계를 가진다. 그럼에도 천장구조를 통한 바탁충격음 저감 연구는 다양하게 수행되 고 있다. 천장 내부 Sls 깊이, 옵음재 중진, 달대 종류 등 구성 변수에 따른 성능 변화가 보고되어 왔으나, 이러한 연구는 제한된 조건에서 의 결과를 제시하고 있어 바닥구조 조건에 따라 천장구조의 차단 BAU Fo] 실제로 어떻게 다르게 나타나는지는 아직 실현적으로 검중이 미비한 것으로 판단된다. 이에 본 연구에서는 공 동주택 AAS 모사한 실험동에서 Sees 및 BES 두 바닥구조 조건에 대해 다양한 천장구조 구성 케이 스의 AGS 수행하고, 기존 이론적 해석과 Ad 결과를 비교 분석하는 것을 목적으로 한다. Mortar 40 mm 해 Acrated concrete 30 mm | | 2170 40 mm wis a 베로 00매 = | or? Ee Lig ae ELE THI ㅣ # 、 ^ , | LT LLL 0 | 1111 Concrete slab 120 mm &gt; . : © | 6 도 . ~ : 8 ea 나 | [1] 효 [11[ (a) Floating floor 원 A\ Mortar 45 mm B 55 6 Aerated concrete 65 mm B i i . — = 50 바고 - | 홈 GL = Eas BO Conerete slab 10 . i 40 y : , 10 100 1000 10000 tty Nomfloating 0006 00 1/3 Octave band Frequency [Hz] . ¥ 1i Cross-sectional configuration of the floor structure . gf 2i Measured impact sound pressure levels with resonance effects ※ 본 연구는 국토교통부/국토교통과학기술진흥원의 지원으로 수행되었음 GAAS RS-2022-00144050) + 정회원, 서울시립대학교 건축학부 교수 * 서울시립대학교 건축공학과 대학원</abstract>
+  <abstract>최근 공동주택 바닥충격음 차단성능 사후확인제도의 도입으로 인해 현장 기반의 정량적 성능평가가 중요해 지면서 성능개선 방안으로서의 천장구조에 대한 관심이 높아지고 있다. 지금까지 기존 연구들은 천장구조의 차단 메커니즘을 주로 질량-공기-질량(\4465-&amp;1-\4855, 44414) 공진이론과 음향 방사이론으로 설명해 왔다. 질 량-공기-질량(\4856-&amp;1-\4885) 공진이론에 따르면, 바닥슬래브와 천장 패널 사이의 공기충은 특정 공진 주파수 를 형성하며 공진 주과수 부근에서 투과손실이 급격하게 저하하는 공진손실이 발생한다. 음향 방사이론 관점 에서 바닥슬래브의 음향 방사는 면밀도, 굽힘 강성, 임계 주파수에 의해서 결정되며, 천장구조는 상부세대에 서 발생한 충격음이 바닥슬래브를 통해 방사된 음향에너지가 수음실로 전달되는 경로에 차단 및 흡음 효과를 부가하는 요소로 작용한다. 그러나 이러한 이론들은 공통적으로 가정과 단순화를 통해 도출됨에 따라 복합적 인 영향을 검토하기에는 한계를 가진다. 그럼에도 천장구조를 통한 바닥충격음 저감 연구는 다양하게 수행되 고 있다. 천장 내부 공기충 깊이, 흡음재 충진, 달대 종류 등 구성 변수에 따른 성능 변화가 보고되어 왔으나, 이러한 연구는 제한된 조건에서 의 결과를 제시하고 있어 바닥구조 조건에 따라 천장구조의 차단 메커니즘이 실제로 어떻게 다르게 나타나는지는 아직 실험적으로 검증이 미비한 것으로 판단된다. 이에 본 연구에서는 공 SEG AIS A ABSA] Eve} Y wep 두 바닥구조 조건에 대해 다양한 천장구조 구성 케이 스의 실험을 수행하고, 기존 이론적 해석과 실현 결과를 비교'분석하는 것을 목적으로 한다. Mortar 40 mm 80 Aerated concrete 30 mim | | ETPU 40 mm wm 75 po 그 11 0 | 111 = | - $70 + yt s-H#¢4——| 4 . . ~ 4 다 |맥 [ . O 은 65 | 11000 | | | 1111 | ㅣ ｌ ㅣ | 11! Concrete slab 120 mm . 1 더 이 : : £ 60 {Lit} tt비 Lt (a) Floating floor es A\ Mortar 45 mm 3 55 | 18 Poo eas 「 | | Aerated concrete 65 mm 3S ' Ml ‘ 홈 50 ~ --넌 7006) ee ee Ge . &lt; EF 4s pt S| | a a &gt; ‘ . 4 4 oO Concrete slab 120 mm | 40 때 % . 10 100 1000 10000 (by Nomfloating floor SSS 1/3 Octave band Frequency [Hz] . F 1i Cross-sectional configuration of the floor structure . gf 2i Measured impact sound pressure levels with resonance effects ※ 본 연구는 국토교통부/국토교통과학기술진흥원의 지원으로 수행되었음 (과제번호 #9-2022-00144050) + 정회원, 서울시림대학교 건축학부 교수 * 서울시립대학교 건축공학과 대학원</abstract>
   <source_page>239</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.614</extraction_quality>
   <pageImage>/paper-pages/p131.webp</pageImage>
   <affiliations>
     <affiliation>서울시립대</affiliation>
     <affiliation>포스코 E&amp;C</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Floor Impact Sound(4} 44-2)</keyword>
-    <keyword>Ceiling Structures(4l 장구조)</keyword>
-    <keyword>Floating Floor( =H} 4-74)</keyword>
+    <keyword>Floor Impact Sound(H}4}+34-)</keyword>
+    <keyword>Ceiling Structures(4#] 77/4)</keyword>
+    <keyword>Floating Floor(=4}4}-"4)</keyword>
+    <keyword>Non-floating Floor(#] 4} }7' 4)</keyword>
   </keywords>
 </paper>

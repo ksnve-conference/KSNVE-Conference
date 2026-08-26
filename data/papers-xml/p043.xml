@@ -11,16 +11,19 @@
   <time>16:00~16:15</time>
   <venue>사파이어홀[1]</venue>
   <chair>오종석(공주대)</chair>
-  <abstract>Acoustic( 3} 음향), Noise Prediction(+2 예측), Vibration(2]-=) 본 연구에서는 ANSYS Motion-Harmonic Acoustic 연계 ASS 이용하여 BLDC BAS] ASS 예측하 는 것을 목적으로 한다. 특히 모터 구동 시 발생하는 전자기력을 가진력으로 고려하여, 이에 의해 유도되는 구조 진동과 음향 응답 간의 상관관계를 정량적으로 분석하고자 한다. 먼저. 모터 운전 과정에서 발생하는 전자기력, 특히 토크 리플 및 고조과 성분을 포함한 가진력을 동적 해석의 입력 조건으로 설정한다. 이를 기 반으로 ANSYS MotionS 이용하여 모터 구조물의 진동 거동을 해석하고, 실제 운전 조건을 반영한 구조 응답 특성을 도출한다. 또한 시간 영역에서 얻어진 응답 데이터를 188 Fourier Transform(FFT)S 통해 주 과수 영역으로 변환하여 주요 주과수 성분 및 공진 특성을 분석한다. 다음으로. 동적 해석 결과를 기반으로 Harmonic Acoustic 해석을 수행하여 모터에서 방사되는 소음을 예측한다. 이 과정에서 구조 진동 결과를 음향 해석의 경계 조건으로 활용함으로세, 실제 구조-음향 연계 특성을 반영한 소음 해석을 수행한다. 또한 음압 레벨(80400 Pressure Level, SPL) 및 A-weighted SPLS 계산하여 인간의 청감 특성을 고려한 소음 평가를 수행한다. 더 나아가 전자기력의 주과수 성분과 구조물의 고유진동수 간의 상호작용을 분석한으로써, 특정 주와수 대역에서 발생하는 공진 및 진동 중폭 ats 규명하고, 이로 인한 소음 발생 메커니즘을 체계 적으로 분석한다. 이를 동해 전자기적 요인과 FRA 요인이 Meow 작응하는 진동 및 소음 발생 원리 를 명확히 할 수 있다. 본 연구는 동적-음향 연계 해석 기반의 소음 예측 방법을 제시하고, 모터 설계 단계 에서 진동 및 소음을 사전에 예측할 수 있는 기반을 제공한다. 또한 향후 저소음-고효을 모터 설계를 위한 설계 기준 및 최적화 방향을 제시하는 a] 기여할 것으로 기대된다. 7 ~ i: 304 , = ! &apos; i</abstract>
+  <abstract>는 것을 목적으로 한다. 특히 모터 구동 시 밭생하는 전자기력을 가진력으로 고려하여, 이에 의해 유도되는 구조 진동과 음향 응답 간의 상관관계를 정량적으로 분석하고자 한다. 떤저, 모터 운전 과정에서 발생하는 전자기력, 특히 토크 리플 및 고조과 성분을 포함한 가진력을 동적 해석의 입력 조건으로 설정한다. 이를 기 반으로 ㅅ제98 /40004을 이용하여 모터 구조물의 진동 거동을 해석하고, 실제 운전 조건을 반영한 구조 응답 특성을 도출한다. 또한 시간 영역에서 얻어진 응답 데이터를 789 Fourier Transform(FFT)&amp; 통해 주 파수 영역으로 변환하여 주요 주과수 성분 및 공진 특성을 분석한다. 다음으로, 동적 해석 결과를 기반으로 Harmonic &amp;600506 해석을 수행하여 모터에서 방사되는 소음을 예측한다. 이 과정에서 구조 진동 결과를 음향 해석의 경계 조건으로 활용함으로써, 실제 구조-음향 연계 특성을 반영한 소음 해석을 수행한다. 또한 음압 레벨(90400 『1689476 Level, SPL) 및 ㅅ-\0191160 9#Ｌ을 계산하여 인간의 청감 특성을 고려한 소음 평가를 수행한다. 더 나아가 전자기력의 주과수 성분과 구조물의 고유진동수 간의 상호작용을 분석함으로씨, 특정 주파수 대역에서 발생하는 공진 및 진동 증폭 현상을 규명하고, 이로 인한 소음 발생 메커니즘을 체계 적으로 분석한다. 이를 통해 전자기적 요인과 구조적 요인이 복합적으로 작용하는 진동 및 소음 발생 원리 를 명확히 할 수 있다. 본 연구는 동적-음향 연계 해석 기반의 소음 예측 방법을 제시하고, 모터 설계 단계 에서 진동 및 소음을 사전에 예측할 수 있는 기반을 제공한다. 또한 향후 저소음고효율 모터 설계를 위한 설계 기준 및 최적화 방향을 제시하는 데 기여할 것으로 기대된다. 1: 4 a “~ aes) : : 에 - 、 4 을 rn Cae 4 , q Zz an ! wae " | : : ' P nee Wath al % ay 007 an’ i a ~— 0100</abstract>
   <source_page>116</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.641</extraction_quality>
   <pageImage>/paper-pages/p043.webp</pageImage>
   <affiliations>
     <affiliation>창원대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Electromagnetic Force( 4 47] 4)</keyword>
-    <keyword>Motor( 51 &amp;})</keyword>
-    <keyword>Dynamic Analysis(@ 4 ala)</keyword>
-    <keyword>Harmonic</keyword>
+    <keyword>Electromagnetic Force(4#1%}7] 4)</keyword>
+    <keyword>Motor(%.E])</keyword>
+    <keyword>Dynamic Analysis(é 2] 해석)</keyword>
+    <keyword>Harmonic Acoustic(Z5} -§ 3)</keyword>
+    <keyword>Noise Prediction(22- =)</keyword>
   </keywords>
 </paper>

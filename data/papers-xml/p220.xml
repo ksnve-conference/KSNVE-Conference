@@ -11,15 +11,15 @@
   <time>11:40~11:55</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김도형(항공우주연)</chair>
-  <abstract>VCT(Vibration Correlation Technique), Initial imperfection(7] 결함), Internal pressure(]4+ 압력) 우주 발사체 추진제 탱크는 발사 및 비행 과정에서 축방향 압축 하중과 내부 압력을 동시에 받으며, see 원통 첼 구조로 인해 기하학적 초기 결함에 매우 민감하다. 본 연구에서는 스킨-프레임-스트링거의 세미-모 노코크 형식의 재사용 발사체 추진제 탱크《=1.83 m 및 L=2.10 mo] 대하여 VCT(Vibration Correlation Technique) 기반의 좌굴 하중 예측을 기하학적 초기 결함과 내부 압력을 함께 고려하여 수행하였다. ABAQUS 를 이용하여 유한요소 모델을 구축하였으며, 기하학적 초기 AG SPLAGingle Perturbation Load 406070801)와 MPLA(Multiple Perturbation Load Approach) 모델을 적용하여 각각 구현하였다. 이때 MPLA 는 2 Al(Fig.1) 및 4 개의 Perturbation load 를 적용한 경우를 포함하여 다중 초기 Ade] 영향을 분 석하였다. 또한 내부 압력 0.0, 2.5, 5.0 bar 조건에서 고유진동수 AAS 수행하고, 이를 바탕으로 VCT 를 통해 좌굴 하중을 예측하였다. 해석 결과, 모든 초기 결함 모델에서 내부 압력이 중가할수록 SE 하중이 중 가하였으며, 동일한 내부 압력 조건에서는 다중 초기 결함이 고려될수록 HS 하중이 감소하는 경향을 보였 VCT 예측 결과(818.2)는 비선형 후좌굴 해석 결과와 전반적으로 일치하였으며, 대부분의 내부 압력 조건 에서 약 6% 이내의 차이를 보였다. 또한 비선형 후좌굴 해석은 평균 약 588 분이 소요된 반면, VCT 는 약 25 분으로 해석 시간이 크게 단축되었다. 이를 통해 VCT 는 초기 결함과 내부 압력을 함께 고려한 재사용 발사체 추진체 탱크의 좌굴 SG 효율적으로 예측할 수 있는 기법으로 판단된다. Axial load, N al / Pe a Pee / 때 | 키드 / Perturbation 10205 [| | — 때 of Tinea &quot; | 때 ee) NZ EES Minti ak * ie ㅣ (1-2)</abstract>
+  <abstract>9&amp;7를 이용한 재사용 발사체 추진제 탱크의 좌굴 하중 예측 Prediction of Buckling Loads of Reusable Launch Vehicle Propellant Tanks Using the Vibration Correlation Technique 강지윤귕پ귖ബ김현호귕څ귖ബ심창훈귕څڅ귖ബ박재상ನ Ji-Yoon Kang, Hyeon-Ho Kim, Chang-Hoon Sim and Jae-Sang Park .H\ :RUGV  5HXVDEOH ODXQFK YHKLFOH 재사용 발사체  %XFNOLQJ ORDG 좌굴 하중  3URSHOODQW WDQN 추진제 탱크       9&amp;7 9LEUDWLRQ&amp;RUUHODWLRQ7HFKQLTXH ,QLWLDOLPSHUIHFWLRQ 초기 결함 ,QWHUQDOSUHVVXUH 내부 압력  우주 발사체 추진제 탱크는 발사 및 비행 과정에서 축방향 압축 하중과 내부 압력을 동시에 받으며, 얇은 원통 쉘 구조로 인해 기하학적 초기 결함에 매우 민감하다. 본 연구에서는 스킨-프레임-스트링거의 세미-모 노코크 형식의 재사용 발사체 추진제 탱크(R=1.83 m 및 L=2.10 m)에 대하여 VCT(Vibration Correlation Technique) 기반의 좌굴 하중 예측을 기하학적 초기 결함과 내부 압력을 함께 고려하여 수행하였다. hihx|z 를 이용하여 유한요소 모델을 구축하였으며, 기하학적 초기 결함은 SPLA(Single Perturbation Load Approach)와 MPLA(Multiple Perturbation Load Approach) 모델을 적용하여 각각 구현하였다. 이때 twsh 는 2 개(Fig.1) 및 [ 개의 Perturbation load 를 적용한 경우를 포함하여 다중 초기 결함의 영향을 분 석하였다. 또한 내부 압력 0.0, 2.5, 5.0 bar 조건에서 고유진동수 해석을 수행하고, 이를 바탕으로 VCT 를 통해 좌굴 하중을 예측하였다. 해석 결과, 모든 초기 결함 모델에서 내부 압력이 증가할수록 좌굴 하중이 증 가하였으며, 동일한 내부 압력 조건에서는 다중 초기 결함이 고려될수록 좌굴 하중이 감소하는 경향을 보였 다. VCT 예측 결과(Fig.2)는 비선형 후좌굴 해석 결과와 전반적으로 일치하였으며, 대부분의 내부 압력 조건 에서 약 6% 이내의 차이를 보였다. 또한 비선형 후좌굴 해석은 평균 약 588 분이 소요된 반면, VCT 는 약 25 분으로 해석 시간이 크게 단축되었다. 이를 통해 VCT 는 초기 결함과 내부 압력을 함께 고려한 재사용 발사체 추진체 탱크의 좌굴 하중을 효율적으로 예측할 수 있는 기법으로 판단된다. =Fig. 2 VCT curves for MPLA at 2.5 bard</abstract>
   <source_page>361</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.602</extraction_quality>
   <pageImage>/paper-pages/p220.webp</pageImage>
   <affiliations>
     <affiliation>충남대</affiliation>
     <affiliation>한화에어로스페이스</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Reusable launch vehide(™JA}- 발사체) Buckling load(#} 하중)</keyword>
-    <keyword>Propellant 1800(추진제 탱크)</keyword>
   </keywords>
 </paper>

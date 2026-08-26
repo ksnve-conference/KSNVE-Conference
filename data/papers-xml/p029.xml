@@ -11,17 +11,20 @@
   <time>16:00~16:15</time>
   <venue>오팔홀[1]</venue>
   <chair>김찬중(부경대)</chair>
-  <abstract>1008[(난뮤모델), Noise Source Analysis(2-32 분석) 전자 제품에서 발생하는 열문제는 제품의 성능 하락을 유발함과 동시에 수명 단축의 주요 원인으로 작용하 므로, 대부분의 전자 ASAE 냉가용 Mo] 장작되어 있다. 일상용 전자 제품에 장착되는 냉가용 팬은 크기 가 작은 대신 높은 회전수로 인해 큰 환경소음의 요인으로 작용하며, 이를 감소하기 위해 저소음 팬 블레이 드 설계, 흡음재 부착 등 다양한 소음 저감방법이 적용되고 있다. 하지만 그 공력소음원이 무엇이며, 어떤 메 커니즘으로 소음을 발생시키는 지를 분석하는 연구가 선행되어야 한다. 본 연구에서는 수치해석적 방법으로 접근하여 CFD 기법을 사용한 소음 BAS 수행하였다. 상용 SW 인 Cadence 사의 CradleCFD 중 scFlow 를 사용하여 유동장 및 표면 소음원을 계산하였고, 소음원으로부터 원거리로 방사되는 소음은 Flowcs- Williams &amp; HawkingFW-H) 방정식을 통해 계산하였다. 우선 수치해석의 정확성을 보장하기 위해 격자 조 밀도, time-step, 난듀모델을 변화시키며 케이스 스터디를 수혜하여 IIIS 설경하였고, ALS 동한 측정 결과와 상호 비교함으로써 정확성을 확인하였다. 이후 냉각용 팬의 소음원을 블레이드, 벨마우스로 구분하여 분석하였다. 본 연구는 WAS 펜의 공력수음을 080 AS 동해 분석하는 기초 연구로서, 향후 저수음 펜 설계, 소음 흡음 방안 마련 So] 연구로 확장될 수 있다. ol ~ &lt; on 후. ㅣ | — | ~ 3“ - ^ u, s | ; | ANE i 기 [리자 8 VA SS 8 tay ng ： 0000000! ° 8 500 1000 1500 2000 ㆍ Frequency [Hz]</abstract>
+  <abstract>전자 제품에서 발생하는 열문제는 제품의 성능 하락을 유발함과 동시에 수명 단축의 주요 원인으로 작용하 므로, 대부분의 전자 제품에는 냉각용 팬이 장착되어 있다. 일상용 전자 제품에 장착되는 냉각용 팬은 크기 가 작은 대신 높은 회전수로 인해 큰 환경소음의 요인으로 작용하며, 이를 감소하기 위해 저소음 팬 블레이 드 설계, 흡음재 부착 등 다양한 소음 저감방법이 적용되고 있다. 하지만 그 공력소음원이 무엇이며, 어떤 메 커니즘으로 소음을 발생시키는 지를 분석하는 연구가 선행되어야 한다. 본 연구에서는 수치해석적 방법으로 접근하여 (4 기법을 사용한 소음 분석을 수행하였다. 상용 5\ el Cadence AS] CradleCFD 중 80110\ 를 사용하여 유동장 및 표면 소음원을 계산하였고, 소음원으로부터 원거리로 방사되는 소음은 10\08- 버118008 &amp; 118\00800\-[1) 방정식을 통해 계산하였다. 우선 수치해석의 정확성을 보장하기 위해 격자 조 밀도, 0006-하68, 난류모델을 변화시키며 케이스 스터디를 수행하여 해석자를 설정하였고, 실험을 통한 측정 결과와 상호 비교함으로써 정확성을 확인하였다. 이후 냉각용 팬의 소음원을 블레이드, 벨마우스로 구분하여 분석하였다. 본 연구는 냉각용 팬의 공력소음을 (11) 해석을 통해 분석하는 기초 연구로서, 향후 저소음 al 설계, 소음 흡음 방안 마련 등의 연구로 확장될 수 있다. ' oe - - _ 60 i 0 이 €85@8 | SST k-wd Se ~ . &lt; 50 i i a Pad . 은 수 fe | | | \ &gt; 를 | | 「 bs rp % 30 -가 tot fi | | ㅣ 5 1” a 들 || | ri h | |) \ | | 시 | 기 y ~ 2 20 | 내 대 | AY \ ni | | Nl ㅣ | | || Te 0 41 i Shiva SG ! ㅣ bE SA 는 하구 다 는지 ° ” Frequency [Hz] ”</abstract>
   <source_page>102</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.58</extraction_quality>
   <pageImage>/paper-pages/p029.webp</pageImage>
   <affiliations>
     <affiliation>한서대</affiliation>
     <affiliation>Cadence</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Computational Fluid 12008048(전산유체역학)</keyword>
-    <keyword>Cooling 884(냉각응 팬)</keyword>
-    <keyword>Aeroacoustics(--S 22-8)</keyword>
-    <keyword>Turbulence</keyword>
+    <keyword>Computational Fluid Dynamics(#12!-#-44] SS)</keyword>
+    <keyword>Cooling Fan('§Z}-2 #1)</keyword>
+    <keyword>Aeroacoustics(-7-2-2)</keyword>
+    <keyword>Turbulence Model(4+47-. 2)</keyword>
+    <keyword>Noise Source Analysis(2-2-2) 4244)</keyword>
   </keywords>
 </paper>

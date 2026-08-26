@@ -11,15 +11,19 @@
   <time>15:50~16:05</time>
   <venue>사파이어홀[1]</venue>
   <chair>정형조(KAIST)</chair>
-  <abstract>(구조 건전성 모니터링), Truss Bridge(Et]% 교량), Vehicle-Bridge Interaction (A}t-W 상호작용) 철도 트러스 교량은 반복적인 열차 하중에 의해 부재의 피로 Eto] 누적될 수 있으며, 이에 대한 조기 감 지 및 정량적 평가가 구조 안전성 확보 Sad 중요하다. 본 연구에서는 트러스 교량 위를 주행하는 8 량 Aas} 교량 간의 동적 상호작용으로 인해 발생하는 응답을 분석하고, 트러스 부재의 손상을 예측하는 Val 3 기반 모델을 개발하였다. 이를 위해 트러스 교량을 2 차원 모델로 구성하고, 열차 하중은 이동 집중하중으 로 모사하였으며, Ads 교량 상판 간의 AAS 스프링 요소를 통해 구현하였다. 특정 부재의 강성을 단계 적으로 저하시켜 다양한 손상 시나리오를 모사하고, 각 시나리오에 대한 교량 하부 변위 응답 데이터를 축적 하였다. 취득된 변위 응답 신호에 High-pass Filter 를 적용하여 정적 성분을 제거하고, 구조 Et] 민감한 동적 성분만을 주출하였다. 추출된 동적 변위 응답장을 입력으로 하여, 함수 공간 간의 매핑을 학습하는 0006 Neural Operator(FNO) 기반 예측 모델을 구성하였으며, 손상 부재의 위치 및 손상지수를 동시에 예측하도 록 학습되었다. 시뮬레이션 결과, 제안 모델은 다양한 손상 위치 및 손상 수준에 대해 높은 예측 정확도를 나타내었으며, 교량 응답 데이터만으로 손상 Fas] ABs 손상 정도의 정량적 평가가 가능함을 확인하였다. 본 연구의 결과는 구조 건전성 모니터링(51140) 및 디지털 트윈 기반 유지관리 시스템에 적용 가능한 데이터 기반 손상 예측 프레임워크로서의 활용 가능성을 제시한다. | 가 ~ &gt; Fourier layer &apos;</abstract>
+  <abstract>철도 트러스 교량은 반복적인 열차 하중에 의해 부재의 피로 손상이 누적될 수 있으며, 이에 대한 조기 감 지 및 정량적 평가가 구조 안전성 확보 측면에서 중요하다. 본 연구에서는 트러스 교량 위를 주행하는 8 량 염차와 교량 간의 동적 상호작용으로 인해 발생하는 응답을 분석하고, 트러스 부재의 손상을 예측하는 덤러 닝 기반 모델을 개발하였다. 이를 위해 트러스 교량을 2 차원 모델로 구성하고, 열차 하중은 이동 집중하중으 로 모사하였으며, 레일과 교량 상관 간의 연결은 스프링 요수를 통해 구현하였다. 특정 부재의 강성을 단계 적으로 저하시켜 다양한 손상 시나리오를 모사하고, 각 시나리오에 대한 교량 하부 변위 응답 데이터를 축적 하였다. 취득된 변위 응답 신호에 1191-ㅁ0865 111167 를 적용하여 정적 성분을 제거하고, 구조 손상에 민감한 동적 성분만을 추출하였다. 추출된 동적 변위 웅답장을 입력으로 하여, 함수 공간 간의 매핑을 학습하는 "0406 지6081 006181070040) 기반 예측 모델을 구성하였으며, 손상 부재의 위치 및 손상지수를 동시에 예측하도 록 학습되었다. 시뮬레이션 결과, 제안 모델은 다양한 손상 위치 및 손상 수준에 대해 높은 예측 정확도를 나타내었으며, 교량 응답 데이터만으로 손상 부재의 식별과 손상 정도의 정량적 평가가 가능함을 확인하였다. 본 연구의 결과는 구조 건전성 모니터링(61100) 및 디지털 트윈 기반 유지관리 시스템에 적용 가능한 데이터 기반 손상 예측 프레임워크로서의 활용 가능성을 제시한다. o-® s+ sine @-@ ——S on ee Fourier layer Settee</abstract>
   <source_page>279</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.663</extraction_quality>
   <pageImage>/paper-pages/p171.webp</pageImage>
   <affiliations>
     <affiliation>서울대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Damage Detection (손상 감지)</keyword>
-    <keyword>Fourier Neural Operator @Fz]ol] 신경 연산자)</keyword>
-    <keyword>Structural Health Monitoring</keyword>
+    <keyword>Damage Detection (#7 %])</keyword>
+    <keyword>Fourier Neural Operator (= 2]°]] 4174 454)</keyword>
+    <keyword>Structural Health Monitoring (구조 건전성 모니터링)</keyword>
+    <keyword>17485 80086(드러스 교량)</keyword>
+    <keyword>\01106-80086101680000(자량-교량 상호작용)</keyword>
   </keywords>
 </paper>

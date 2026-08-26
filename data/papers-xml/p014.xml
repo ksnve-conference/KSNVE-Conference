@@ -11,8 +11,10 @@
   <time>15:05~15:20</time>
   <venue>릴리홀[1]</venue>
   <chair>전종훈(항공우주연)</chair>
-  <abstract>화학기계연마((11601081 Mechanical Polishing, CMP) 공정에서 엔드포인트 검출은 웨이퍼의 두께 균일도 및 공정 품질을 결정하는 핵심 요소이다. 특히 다양한 막질이 순차적으로 제거되는 CMP 공정에서는 막질 전환 시점을 정확히 식별하는 것이 중요하다. 본 연구에서는 광학 및 와전류 기반 방식의 GAS 보완하기 위해, 넓은 주파수 응답 특성을 갖는 음향 방출(&amp;0601486040 Emission, AE) AZS 활용한 엔드포인트 검출 가 능성을 분석하였다. 본 실험에서 AE 기반 모니터링은 설비 구동계(모터, 인버터 Sa 발생하는 강력한 노 이즈로 인해 실제 공정 신호인 광대역 마찰 에녀지가 마스킹되는 한계가 존재한다. 이를 해결하기 위해 본 연구에서는 중간값 필터를 적용하여 주기적 노이즈를 효과적으로 제거하고, 포락선 분석을 통해 막질별 마모 에너지의 거시적 변화량을 추출하였다. 실험적 ASS 위해 실리콘 산화막과, 실리콘 질화막 등 다양한 박막 조건에서 AE ASS 취득하였으며, 막질의 기계적 물성에 따라 발생하는 AE 주파수 스펙트럼의 차이를 분 석하였다. 본 연구는 AE 기반 CMP 엔드포인트 검출에서 Fas 영역 특징이 유효한 식별 지표가 될 수 있 음을 실혐적으로 검중하였으며, 향후 막질 고유 스펙트럼의 역학적 해석 및 노이즈 분리 기법을 통해 보다 강건한 공정 모니터링 기술로 확장될 수 있을 것으로 기대된다. —Data1 Wafer —Data3 Carrier wad | | | | | | “Polishing Pad ALT HL |, LOMITA Polishing Platen 8 Hi | 00 | | | | AE sensor ] | with zig | Frequency (kHz)</abstract>
+  <abstract>공정에서 엔드포인트 검출은 웨이퍼의 두께 균일도 및 공정 품질을 결정하는 핵심 요소이다. 특히 다양한 막질이 순차적으로 제거되는 jtwG 공정에서는 막질 전환 시점을 정확히 식별하는 것이 중요하다. 본 연구에서는 광학 및 와전류 기반 방식의 한계를 보완하기 위해, 넓은 주파수 응답 특성을 갖는 음향 방출(Acoustic Emission, hlPG 신호를 활용한 엔드포인트 검출 가 능성을 분석하였다. 본 실험에서 hlG 기반 모니터링은 설비 구동계(모터, 인버터 등)에서 발생하는 강력한 노 이즈로 인해 실제 공정 신호인 광대역 마찰 에너지가 마스킹되는 한계가 존재한다. 이를 해결하기 위해 본 연구에서는 중간값 필터를 적용하여 주기적 노이즈를 효과적으로 제거하고, 포락선 분석을 통해 막질별 마모 에너지의 거시적 변화량을 추출하였다. 실험적 검증을 위해 실리콘 산화막과, 실리콘 질화막 등 다양한 박막 조건에서 hlG 신호를 취득하였으며, 막질의 기계적 물성에 따라 발생하는 hlG 주파수 스펙트럼의 차이를 분 석하였다. 본 연구는 hlG 기반 jtwG 엔드포인트 검출에서 주파수 영역 특징이 유효한 식별 지표가 될 수 있 음을 실험적으로 검증하였으며, 향후 막질 고유 스펙트럼의 역학적 해석 및 노이즈 분리 기법을 통해 보다 강건한 공정 모니터링 기술로 확장될 수 있을 것으로 기대된다.</abstract>
   <source_page>87</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.743</extraction_quality>
   <pageImage>/paper-pages/p014.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
@@ -20,9 +22,9 @@
     <affiliation>케이씨텍</affiliation>
   </affiliations>
   <keywords>
-    <keyword>화학적 기계적 연마(2800)</keyword>
-    <keyword>음향 방출(48)</keyword>
-    <keyword>종말점 검출08810)</keyword>
+    <keyword>화학적 기계적 연마(CMP)</keyword>
+    <keyword>음향 방출(AE)</keyword>
+    <keyword>종말점 검출(EPD)</keyword>
     <keyword>신호 처리</keyword>
     <keyword>마모 메커니즘</keyword>
   </keywords>

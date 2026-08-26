@@ -11,15 +11,17 @@
   <time>09:50~10:00</time>
   <venue>사파이어홀[2]</venue>
   <chair>박경수(가천대), 한제헌(한국공학대)</chair>
-  <abstract>2026 CES(Consumer Electronic Show) 4] 로보틱스 분야 최고혁신상을 수상한 MobED(Mobile Eccentric 107010)는 4 개 훨의 독립적인 제어를 통해 차체 수평 유지와 고자유도 조향이 가능한 소형 모빌리티 플랫폼 으로 Fig.l 과 같이 구동, 제동, 조향, 현가 기능이 통합된 복합 훨 구조를 특징으로 한다. 그러나 훨 내부에 적용된 고감속 기어 시스템은 다축 구동 구조 특성상 기어 물림 Fao] 기인한 소음 및 구조적 공진을 유 발하여 NVH 성능 저하의 주요 요인으로 작응하였다. 이 연구에서는 개발 과경에서 인지된 구동 및 조향 시 소음 문제를 정의하고, 기어 물림 특성, 전달 경로 강성, 조향 시스템 유격 등 NVH 영향 요소에 대한 면밀 한 분석을 수행하여 원인 규명과 설계 개선 방안을 강구하였다. 분석 결과를 기반으로 첫찌, 구동 모듈 감속 기 기어의 치 크라운 SUS} 세미토핑을 적용하여 물림 충격을 감소시켰다. 둘째, 편심 구동부의 하우징 정 밀도 향상을 통례 구조 강성을 확보하였다. MA, 조향 기어의 벡래시를 50% 축소하고 최격화하여 저속 영 역에서의 de 소음을 효과적으로 제어하였다. 개선된 사양에 대한 NVH 성등 평가 결과, Fig.2 와 같이 다양 한 주행 조건에서 전 주과수 대역의 소음 및 진동 레벨이 유의미하게 감소하여 USS 만한 성능을 gust 였다. 이 연구의 결과는 복합 기구 기반 소형 모빌리티의 NVH 문제를 구조 보강과 기어 치형 최적화 FS 통해 해결한 실중적 사례로서, 향후 유사 모빌리티 플랫폼 개발 시 유용한 설계, 개발 가이드라인을 제공할 것이다. = 13065 y é | 여| Innovation</abstract>
+  <abstract>으로 Fig.1 과 같이 구동, 제동, 조향, 현가 기능이 통합된 복합 휠 구조를 특징으로 한다. 그러나 휠 내부에 적용된 고감속 기어 시스템은 다축 구동 구조 특성상 기어 물림 주파수에 기인한 소음 및 구조적 공진을 유 발하여 NVH 성능 저하의 주요 요인으로 작용하였다. 이 연구에서는 개발 과정에서 인지된 구동 및 조향 시 소음 문제를 정의하고, 기어 물림 특성, 전달 경로 강성, 조향 시스템 유격 등 NVH 영향 요소에 대한 면밀 한 분석을 수행하여 원인 규명과 설계 개선 방안을 강구하였다. 분석 결과를 기반으로 첫째, 구동 모듈 감속 기 기어의 치 크라운 증대와 세미토핑을 적용하여 물림 충격을 감소시켰다. 둘째, 편심 구동부의 하우징 정 밀도 향상을 통해 구조 강성을 확보하였다. 셋째, 조향 기어의 백래시를 50% 축소하고 최적화하여 저속 영 역에서의 래틀 소음을 효과적으로 제어하였다. 개선된 사양에 대한 NVH 성능 평가 결과, Fig.2 와 같이 다양 한 주행 조건에서 전 주파수 대역의 소음 및 진동 레벨이 유의미하게 감소하여 만족할 만한 성능을 확보하 였다. 이 연구의 결과는 복합 기구 기반 소형 모빌리티의 NVH 문제를 구조 보강과 기어 치형 최적화 등을 통해 해결한 실증적 사례로서, 향후 유사 모빌리티 플랫폼 개발 시 유용한 설계, 개발 가이드라인을 제공할 것이다.</abstract>
   <source_page>157</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.693</extraction_quality>
   <pageImage>/paper-pages/p084.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>“MobED (4)=)”</keyword>
-    <keyword>“Gear Mesh Frequency (7]°] 치합 주파수)&quot;</keyword>
-    <keyword>“Gear Noise(7]°] 23-8)”</keyword>
+    <keyword>ˈMobED (모베드)ˉ</keyword>
+    <keyword>ˈGear Mesh Frequency (기어 치합 주파수)ˉ</keyword>
+    <keyword>ˈGear Noise(기어소음)ˉ YWY] CES(Consumer Electronic Show)에서 로보틱스 분야 최고혁신상을 수상한 MobED(Mobile Eccentric Droid)는 4 개 휠의 독립적인 제어를 통해 차체 수평 유지와 고자유도 조향이 가능한 소형 모빌리티 플랫폼</keyword>
   </keywords>
 </paper>

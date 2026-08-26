@@ -11,15 +11,21 @@
   <time>14:50~15:05</time>
   <venue>사파이어홀[1]</venue>
   <chair>김재환(국립금오공대)</chair>
-  <abstract>Hyperelasticity (4% 9), Tunable metamaterials (7}}4 메타물질) Elastic waves, unlike acoustic or electromagnetic waves, can propagate in both longitudinal (L) and transverse (T) modes. Controlling elastic waves is particularly important in applications where only a single wave mode is desired. In applications such as ultrasonic elastography and nondestructive evaluation, where each wave mode is required independently, selective mode control becomes essential. In this study, we investigate elastic wave mode conversion in a nearly incompressible Mooney-— Rivlin hyperelastic material subjected to simple uniaxial tension or compression. Since the tangent stiffness of hyperelastic materials varies with prestress, they provide an effective platform for tunable wave mode conversion. To address this, we propose a tunable elastic metamaterial that enables prestress— dependent wave mode conversion through topology optimization. A density-based optimization framework is developed, with sensitivity analysis performed using the adjoint method. The effectiveness of the proposed approach is validated by carefully incorporating periodic boundary conditions within a finite design domain. Numerical examples demonstrate that the designed metamaterial can selectively convert an incident longitudinal wave into either longitudinal or transverse waves depending on the applied prestress. Hyperelastic (prestressed) Pre-stress in hyperelastic only [): Hyperelastic material J: Design domain | T-wave H u, =0.05xL 6 | Tr 90% | g Floquet Periodic BC in y-direction 준 ef i 3 Medium A cell | Medium A} i z 오 See 2 [ T-wave ] = t : : 그 i TH &lt;1% | &gt; i H</abstract>
+  <abstract>single wave mode is desired. In applications such as ultrasonic elastography and nondestructive evaluation, where each wave mode is required independently, selective mode control becomes essential. In this study, we investigate elastic wave mode conversion in a nearly incompressible Mooney- Rivlin hyperelastic material subjected to simple uniaxial tension or compression. Since the tangent stiffness of hyperelastic materials varies with prestress, they provide an effective platform for tunable wave mode conversion. To address this, we propose a tunable elastic metamaterial that enables prestress- dependent wave mode conversion through topology optimization. A density-based optimization framework is developed, with sensitivity analysis performed using the adjoint method. The effectiveness of the proposed approach is validated by carefully incorporating periodic boundary conditions within a finite design domain. Numerical examples demonstrate that the designed metamaterial can selectively convert an incident longitudinal wave into either longitudinal or transverse waves depending on the applied prestress. Hyperelastic (prestressed) Pre-stress in hyperelastic only [}: Hyperelastic material i. Design domain | T-wave ; u, =0.05x L 0” Tri" &gt;99% | a J Floquet Periodic BC in y-direction 주 ————— on ileal aia aaah ical | oD erenenenenmencnnnen exenmenermisecnmn enemy eae mee &amp; | { &amp; Bo AAA. Lovave Hyper ear / | | fe __Hyperclastic (undeformed) 3 Medium A oil | Medium A } 5 Oo E « 라나 3 T-wave | 느 L L 8 | —_ TH. &lt;1% | &gt; ㅣ 1 Br Siesta einige tc i tinal</abstract>
   <source_page>94</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.793</extraction_quality>
   <pageImage>/paper-pages/p021.webp</pageImage>
   <affiliations>
     <affiliation>한양대</affiliation>
     <affiliation>Univ. of Illinois Urbana-Champaign</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Metamaterial(]E}2@)</keyword>
-    <keyword>Wave mode conversion(3+-$ 모드 변환 Topology 0000428000(위상최적화)</keyword>
+    <keyword>Metamaterial("]E}2-2)</keyword>
+    <keyword>Wave mode conversion(4}-5 = Wh</keyword>
+    <keyword>Topology optimization(?]’4] 4S)</keyword>
+    <keyword>Hyperelasticity (4 €!3)</keyword>
+    <keyword>Tunable metamaterials (74 4]/EH 2) Elastic waves</keyword>
+    <keyword>unlike acoustic or electromagnetic waves</keyword>
   </keywords>
 </paper>

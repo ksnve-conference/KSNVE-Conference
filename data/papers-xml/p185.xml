@@ -11,15 +11,16 @@
   <time>09:10~09:25</time>
   <venue>그랜드볼룸[2]</venue>
   <chair>마평식(가천대)</chair>
-  <abstract>본 연구는 음향 이벤트 검출(ㅎ00400 Event Detection, SEDAN] 데이터 중강에 의해 발생하는 왜곡 정도 를 정량화하기 위해 mel-coherence2} TAMC(Total Averaged Mel-Coherence)S 제안한다. SED 학습에서 데이터 중강이 필수적이지만, 중강 강도가 지나치게 약하면 충분한 일반화 효과를 얻기 어렵고, 반대로 지나 치게 강하면 원래 음향 이벤트의 특성이 손상될 수 있기에, 이를 정량화하기 위해 71 coherence function 을 확장하여, 선형 주파수축의 STFT 기반 유사도 대신 omel-spectrogram 기반 유사도를 계산하는 mel-coherenceS 정의하였다. 또한 이를 시간축, 주파수축, 전체 학습 데이터셋에 대해 평균하여 TAMCS 구성함으로새, 특정 데이터 증강 설경이 Aa 데이터셋에 가하는 왜꼭량을 하나의 지표로 표현하였다. 실험은 DCASE 2021 Task 4 68561406 설정을 기반으로 수행되었고, 데이터 중강 기법으로는 white noise addition, frequency masking¥} mix-up®] 사용되었다. 성능 평가는 PSDSS 이용하였으며, 기존 600600006를 평균한 TACH 제안한 TAMCS 각각 비교하였다. 그 결과 TAcE 두 중강 기법에서 SEA 경향을 SE 히 보어주지 못한 We, TAMCE 두 경우 모두 유사한 성능 WIS eed. 특히 최고 성능은 각각 TAMC 0.710과 0.722 부근에서 나타났으며, 이를 통해 서로 다른 데이터 중강 기법이라도 적절한 왜곡 수 준이 유사한 BAIA 형성될 수 있음을 보였다. 이러한 결과를 바탕으로, TAMC7} 881에서 데이터 중강 하이퍼파라미터를 설정할 때 왜곡량을 정량적으로 나타내는 기준으로 활용될 수 있음을 제시한다. 0. = = = 2000 | (= = 4 cee 2 4000 4 = = 내 =: se 널 oa 보</abstract>
+  <abstract>본 연구는 음향 이벤트 검출(80400 81606 106660000, 8810)에서 데이터 증강에 의해 발생하는 왜곡 정도 를 정량화하기 위해 ㅁ61-004606006와 '4146(:(10124 ㅅㅠ04600 14101-004000000)를 제안한다. 980 학습에서 데이터 중강이 필수적이지만, 중강 강도가 지나치게 약하면 충분한 일반화 효과를 얻기 어렵고, 반대로 지나 치게 강하면 원래 음향 이벤트의 특성이 손상될 수 있기에, 이를 정량화하기 위해 기존 600600006 8400000 을 확장하여, 선형 주파수축의 814 기반 유사도 대신 76-8000008000 기반 유사도를 계산하는 1061-001676006를 정의하였다. 또한 이를 시간축, 주파수축, 전체 학습 데이터셋에 대해 평균하여 14440를 구성함으로써, 특정 데이터 증강 설정이 전체 데이터셋에 가하는 왜곡량을 하나의 지표로 표현하였다. 실험은 00498 2021 785 4 6856106 설정을 기반으로 수행되었고, 데이터 증강 기법으로는 \166 00186 addition, 6604600 10891408과 001%-02이 사용되었다. 성능 평가는 ?8108를 이용하였으며, 기존 604606006를 평균한 140와 제안한 74340를 각각 비교하였다. 그 결과 7&amp;0(는 두 증강 기법에서 공통적인 경향을 충분 히 보여주지 못한 반면, 14840는 두 경우 모두 유사한 성능 변화를 나타냈다. 특히 최고 성능은 각각 74840 0.710과 0.722 부근에서 나타났으며, 이를 통해 서로 다른 데이터 중강 기법이라도 적절한 왜곡 수 준이 유사한 ASIA 형성될 수 있음을 보였다. 이러한 결과를 바탕으로, 714140가 880에서 데이터 증강 하이퍼파라미터를 설정할 때 왜곡량을 정량적으로 나타내는 기준으로 활용될 수 있음을 제시한다. 롤 6000 으으 이 도 은 호 = 를 ~ Bees ee “Eis = 를 i soe 2 he fie = 제 ae gm 7 바이 0 ie E2000 은 500 tee =: =e seat = = aon eS 7 feof —— io ae ~ 55 | |: 로 2000 글 = = : = ^ _ 를 3 Oe!</abstract>
   <source_page>293</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.464</extraction_quality>
   <pageImage>/paper-pages/p185.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>음향 이벤트 @ (Sound Event Detection</keyword>
-    <keyword>SED)</keyword>
-    <keyword>데이터 S%(Data Augmentation)</keyword>
+    <keyword>&amp; °]#1= @Z(Sound Event Detection, SED)</keyword>
+    <keyword>Hl°]E] 4%(Data Augmentation)</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,17 @@
   <time>08:40~09:10</time>
   <venue>릴리홀[1]</venue>
   <chair>박당희(현대차)</chair>
-  <abstract>Vehicle acoustic (AK 음향); Artificial intelligence(213-2]-s) The presentation highlights a novel framework, ALSQ (Artificial Intelligence -Sound Quality) Engineering, which integrates classical psychoacoustic methods with artificial intelligence to advance sound evaluation and design. Conventional approaches—such as regression analysis, psychoacoustic parameters, and spectral analysis—each have inherent limitations and rely heavily on expert knowledge. To address this, AI-SQ Engineering introduces an “Aufhebung” concept, combining their strengths through Al-driven integration. The framework consists of three key components: (1) an Al-based “Sound Sommelier” that categorizes sounds using feature engineering and clustering techniques, (2) an image-recognition-based model that interprets time-frequency representations (e.g., sFFT) to suggest relevant evaluation parameters, and (3) listening- based predictive models that link subjective impressions with objective descriptors. Building upon this, this talk introduces Creative Sound Design using a “musical score-based” time-structure, bridging one- dimensional sound quality evaluation and two-dimensional time-based sound design. Applications to automotive sound design, including acceleration sounds and electric vehicle (EV) acoustic systems (ASD/AVAS), are demonstrated. Finally, future perspectives are discussed, highlighting AL-assisted sound design for brand identity, safety, and cultural adaptation, emphasizing the continued importance of human judgment in the loop. + Corresponding author: EV Soundscape Limited</abstract>
+  <abstract>761410168000800(차량 음향); 41048010110061186006(인공지능) The presentation highlights a novel framework, A/-SQ (Artificial Intelligence -Sound Quality) Engineering, which integrates classical psychoacoustic methods with artificial intelligence to advance sound evaluation and design. Conventional approaches—such as regression analysis, psychoacoustic parameters, and spectral analysis—each have inherent limitations and rely heavily on expert knowledge. To address this, AI-SQ Engineering introduces an “Aufhebung” concept, combining their strengths through Al-driven integration. The framework consists of three key components: (1) an Al-based “Sound Sommelier’” that categorizes sounds using feature engineering and clustering techniques, (2) an image-recognition-based model that interprets time-frequency representations (e.g., SFFT) to suggest relevant evaluation parameters, and (3) listening- based predictive models that link subjective impressions with objective descriptors. Building upon this, this talk introduces Creative Sound Design using a “musical score-based” time-structure, bridging one- dimensional sound quality evaluation and two-dimensional time-based sound design. Applications to automotive sound design, including acceleration sounds and electric vehicle (EV) acoustic systems (ASD/AVAS), are demonstrated. Finally, future perspectives are discussed, highlighting Al-assisted sound design for brand identity, safety, and cultural adaptation, emphasizing the continued importance of human judgment in the loop. + Corresponding author; EV Soundscape Limited</abstract>
   <source_page>307</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.811</extraction_quality>
   <pageImage>/paper-pages/p199.webp</pageImage>
   <affiliations>
     <affiliation>EV Soundscape Limited</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Sound quality evaluation: 2 평가)</keyword>
-    <keyword>Psychoacoustic(4] 2] 2-4)</keyword>
-    <keyword>Sound design’A}-2 = 디자인)</keyword>
+    <keyword>Sound quality evaluation(¢-2 평가)</keyword>
+    <keyword>2970408000800(심리음향)</keyword>
+    <keyword>90400 069194(사운드 디자인)</keyword>
   </keywords>
 </paper>

@@ -11,14 +11,18 @@
   <time>09:10~09:25</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>고정우(항공대)</chair>
-  <abstract>Propeller-airframe Interaction(= 22 z]-o] oO] =a] 상호간섭), Aerodynamic Noise(S 4 소음) 도심 항공 모빌리티는 분산전기추진 시스템 기반의 차세대 회전익 항공기로서, 저고도 영역에서의 제자리 비행 및 수직이작륙 기능을 통해 노심 간 여객, 화물 운송 등 다양한 분야에서의 BEE 기대되고 있다. 그러나 다중 프로펠러 시스템은 높은 Disk ㄴ080108으로 인해 강한 SHS 생성하고, 똥체, 날개. 에어프레 임 간 복잡한 공기역학적 상호간섭을 유발한다. Se, Mewes} 기체 간 접합부인 에어프레임의 경우 직접 적인 후듀와의 SEE 인해 기체의 가진력 및 톤 소음 중가의 주요 원인으로 작용할 가능성이 높다. 이에 본 연구에서는 로터와 에어프레임 간 공기역학적 상호작웅이 공력 성능 및 소음 특성에 미치는 영향을 수치 해석적으로 분석하였다. DI Phantom 2 프로켈러와 에어프레임 형상에 대하여 패널범과 비정상 와류 입자 법 기반 공력 해석을 수행하고, 시계열 데이터 및 Power Spectrum Density 분석을 통해 주기적인 진동 하 중을 평가하였다. 또한 Ffowcs Williams-Hawkings 음향 상사법을 연계하여 Blade Passing Frequency 대역 의 하중 소음 방사 경향을 예측하였다. 특허, 블레이드 매수 변화에 따른 공력 및 소음 Sys 비교함으로써 구성요소 간 상호작용에 따른 비정상 공력 하중과 하중 소음 저감 방안을 제시하였다. ie aie eA : 호 내 고사 eet ey a MCS. AL ‘SPL [dB] oe &lt; , i [a8] 0000 Rimmer arti a imme oe Elevation angle [I Elevation angle [] Be 독이 - 60) 2 blades (b) 3 blades VO 0 RoE eect (Po 7 ste _ 빼 (c) 4 blades (d) 5 blades</abstract>
+  <abstract>도심 항공 모빌리티는 분산전기추진 시스템 기반의 차세대 회전익 항공기로서, 저고도 영역에서의 제자리 비행 및 수직이착륙 기능을 통해 도심 간 여객, 화물 운송 등 다양한 분야에서의 활용도가 기대되고 있다. 그러나 다중 프로펠러 시스템은 높은 Disk Loading으로 인해 강한 후류를 생성하고, 동체, 날개, 에어프레 임 간 복잡한 공기역학적 상호간섭을 유발한다. 특히, 프로펠러와 기체 간 접합부인 에어프레임의 경우 직접 적인 후류와의 충돌로 인해 기체의 가진력 및 톤 소음 증가의 주요 원인으로 작용할 가능성이 높다. 이에 본 연구에서는 로터와 에어프레임 간 공기역학적 상호작용이 공력 성능 및 소음 특성에 미치는 영향을 수치 해석적으로 분석하였다. DJI Phantom 2 프로펠러와 에어프레임 형상에 대하여 패널법과 비정상 와류 입자 법 기반 공력 해석을 수행하고, 시계열 데이터 및 Power Spectrum Density 분석을 통해 주기적인 진동 하 중을 평가하였다. 또한 Ffowcs Williams-Hawkings 음향 상사법을 연계하여 Blade Passing Frequency 대역 의 하중 소음 방사 경향을 예측하였다. 특히, 블레이드 매수 변화에 따른 공력 및 소음 특성을 비교함으로써 구성요소 간 상호작용에 따른 비정상 공력 하중과 하중 소음 저감 방안을 제시하였다.</abstract>
   <source_page>288</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.743</extraction_quality>
   <pageImage>/paper-pages/p180.webp</pageImage>
   <affiliations>
     <affiliation>경상국립대</affiliation>
   </affiliations>
   <keywords>
     <keyword>Source-doublet Panel Method(Source-Doublet 패널법)</keyword>
-    <keyword>Vortex Particle Method( 2} 7- 입자법)</keyword>
+    <keyword>Vortex Particle Method(와류  입자법)</keyword>
+    <keyword>Propeller-airframe Interaction(프로펠러-에어프레임  상호간섭)</keyword>
+    <keyword>Aerodynamic Noise(공력  소음)</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,14 @@
   <time>11:10~11:25</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김도형(항공우주연)</chair>
-  <abstract>Landing Angle(2}-§2}), Center of Gravity-+7] 중심), Landing Mode(4}5 모드) 최근 Falcon 9 및 New Glenn $2] 재사용 우주 발사체는 발사 비용 절감과 운용 효율성 향상 측면에서 큰 주목을 받고 있으며, 특히 발사체의 회수 및 MISS 위한 안정적인 착륙 기술의 중요성이 점차 중가하 고 있다. 본 연구에서는 스프링-탬퍼 기반의 충격 흡수 장치를 적용한 착륙 다리를 갖는 재사용 발사체의 다 양한 착륙각 2 무게 중심 위치를 고려한 착륙 ASS 분석하였다. 이를 위해 dea 동역학 해석 프로그램 인 ADAMS 를 활용하여 착륙 다리를 사용하는 재사용 발사체를 모델링하고 착륙 시뮬레이션을 수행하였다. 이때, 재사용 발사체 모델은 RETALT 프로젝트의 RETALTI 을 사용하였다. 4°, 5°, 8°, 10°, 및 110의 착륙 각(6 )을 고려하였으며, 발사체 1 단 AL = 64.7 mS 기준으로 26%, 31%, 34%, 38%, 및 48%L 의 무게 중심 AAS Satie. 1). 작륙각을 고려한 1-2-1 착륙 모드에 대해 시뮬레이션을 수행하였으며, 모 = 착륙각 조건에서 무게 중심이 상부로 이동할 수록 초기 착륙하는 착륙 다리(168 Dol 작용하는 하중은 중가하는 반면, 후속 착륙 다리에 작용하는 하중은 감소하는 경향이 확인되었다(046. 2). 또한, 착륙각이 11° 이상인 경우에는 모든 조건에서 착륙에 실패하였다. ie 2000 |[mBasoline: Vertical landing} (_JLeg1 | : 1800 |mmiCase (a): CG = 0.26L i |[mGase (b): GG = 0.31L Leg _|| | 1600 [Ezsaee (0: CG = 0.34L Third Second First i 1400 case te OG = OSL contact contact contact i 1200 = | | | CG = 22.059 | b= 647m 론1000 | ㅣ a 22058 mM: 800 fLeg3i | | tLe 1 | 600 LE ㅣ 400 iT y Legs 5 200 때 ㅣ Lae 0 2 Leg 21 xX Leg 2,4 호, 0 6, 0 C}</abstract>
+  <abstract>다양한 착륙각 및 무게 중심 위치를 고려한 재사용 발사체의 착륙 시뮬레이션 Landing Simulation of a Reusable Launch Vehicle Considering Various Landing Angles and Center of Gravity Positions 조명균귕پ귖ബ김현호귕څ귖ബ박재상ನ Myeong-Gyun Cho, Hyeon-Ho Kim and Jae-Sang Park .H\ :RUGV 5HXVDEOH /DXQFK 9HKLFOH 재사용 발사체  /DQGLQJ /HJ 착륙 다리  6KRFN $EVRUEHU 충격흡수 장치  /DQGLQJ$QJOH 착륙각 &amp;HQWHURI*UDYLW\ 무게 중심 /DQGLQJ0RGH 착륙 모드 최근 Falcon `G 및 New Glenn 등의 재사용 우주 발사체는 발사 비용 절감과 운용 효율성 향상 측면에서 큰 주목을 받고 있으며, 특히 발사체의 회수 및 재사용을 위한 안정적인 착륙 기술의 중요성이 점차 증가하 고 있다. 본 연구에서는 스프링-댐퍼 기반의 충격 흡수 장치를 적용한 착륙 다리를 갖는 재사용 발사체의 다 양한 착륙각 및 무게 중심 위치를 고려한 착륙 거동을 분석하였다. 이를 위해 다물체 동역학 해석 프로그램 인 hkhtz 를 활용하여 착륙 다리를 사용하는 재사용 발사체를 모델링하고 착륙 시뮬레이션을 수행하였다. 이때, 재사용 발사체 모델은 RETALT 프로젝트의 RETALT1 을 사용하였다. 4¶, 5¶, 8¶, 10¶, 및 11¶의 착륙 각(ɂ )을 고려하였으며, 발사체 1 단 길이(L = 64.7 m)를 기준으로 26%, 31%, 34%, 38%, 및 43%L 의 무게 중심 위치를 이용하였다(Fig. 1). 착륙각을 고려한 1-2-1 착륙 모드에 대해 시뮬레이션을 수행하였으며, 모 든 착륙각 조건에서 무게 중심이 상부로 이동할 수록 초기 착륙하는 착륙 다리(Leg 1)에 작용하는 하중은 증가하는 반면, 후속 착륙 다리에 작용하는 하중은 감소하는 경향이 확인되었다(Fig. 2). 또한, 착륙각이 11¶ 이상인 경우에는 모든 조건에서 착륙에 실패하였다. Leg 1 Leg 2&amp;4 Leg 3 θ Third Second First contact contact contact Leg 4 CG = 22.059 m Leg 3 Leg 1 Y X Z L = 64.7 m Leg 2 Leg 3 Leg 1 X Leg 2, 4</abstract>
   <source_page>359</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.599</extraction_quality>
   <pageImage>/paper-pages/p218.webp</pageImage>
   <affiliations>
     <affiliation>충남대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Reusable Launch Vehicle(AV}-S 발사체)</keyword>
-    <keyword>Landing 168(착륙 다리)</keyword>
-    <keyword>Shock Absorbe(44S 장치)</keyword>
   </keywords>
 </paper>

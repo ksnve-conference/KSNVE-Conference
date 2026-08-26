@@ -11,8 +11,10 @@
   <time>09:55~11:10</time>
   <venue>사파이어홀[1]</venue>
   <chair>이혁(기계연)</chair>
-  <abstract>Omnidirectional \846(전방향 파동), 01408800.618080006(조음파 변환기), Non-destructive evaluation(#] 5}3] 검사) 비파괴 검사 분야의 전방향 초음파 제어 기술은 넓은 영역을 동시에 검사할 수 있지만, 방사 손실로 인해 원거리 검사 품질이 저하되는 본질적 한계가 있다. 이를 극복하고자 본 연구는 전방향 초음파 전단수평(511) 파의 누적 중쪽(00014180\6 amplifications 달성하는 새로운 형태의 탄성 메타 PAAEMS)S 제안한다. 제안된 EMS 는 내부 및 가장자리 공동으로 구성된 이중 과브리-페로&quot;361-『6101) FAIS 형성하여, 에 너지를 가두었다가 정밀한 공진 조건 하에서 결맞음(604616001 상태로 Yee Ses 극적으로 중폭시킨다. 특히 방사 이득은 구조체의 두께 조절을 통해 직관적으로 제어 가능하며, 여러 EMS 를 중첩하면 개별 임피 던스 비의 Fd 해당하는 누적 중쪽 효과를 얻을 수 있다. 본 연구는 원통 좌표계 유효 매질 모델을 통해 이 론적 EWS 마련하고, 수치해석 및 실혐을 통해 제안된 누적 SS 현상이 이론적 예측과 탁월하게 일치함을 확인하였다. 결과적으로 본 메타 구조체 WAS 복잡한 배열형 트랜스듀서 기술 없이도 전방향 검사 Ves 비약적으로 향상시킬 수 있는 실용적인 접근법을 제공한다. ae a ge 개 00 = 그 2 20 20 ” my | 2 = 20 ue ee 영사 그래 | 0 --- = go -… = &quot;~ F</abstract>
+  <abstract>전방향 초음파 방출 증폭을 위한 이중 공진 기반 탄성 메타 구조체 개발 Development of Dual Resonance-Based Elastic Metastructures for Omnidirectional Ultrasonic Emission Enhancement 이혁귕پ귖ನബ박준형귕څ귖ബ김홍재귕څڅ귖ബ김윤영귕څڅڅ귖 Hyuk Lee, Jun Hyeong Park, Hong Jae Kim, and Yoon Young Kim .H\ :RUGV (ODVWLF PHWDPDWHULDO 탄성 메타물질  'XDO UHVRQDQFH 이중 공진  )DEU\3HURW UHVRQDQFH 파브리페로 공진  2PQLGLUHFWLRQDOZDYH 전방향 파동 8OWUDVRQLFWUDQVGXFHU 초음파 변환기 1RQGHVWUXFWLYHHYDOXDWLRQ 비파괴 검사 비파괴 검사 분야의 전방향 초음파 제어 기술은 넓은 영역을 동시에 검사할 수 있지만, 방사 손실로 인해 원거리 검사 품질이 저하되는 본질적 한계가 있다. 이를 극복하고자 본 연구는 전방향 초음파 전단수평(SH) 파의 누적 증폭(cumulative amplification)을 달성하는 새로운 형태의 탄성 메타 구조체(EMS)를 제안한다. 제안된 ltz 는 내부 및 가장자리 공동으로 구성된 이중 파브리-페로(Fabr -Perot) 공진기를 형성하여, 에 너지를 가두었다가 정밀한 공진 조건 하에서 결맞음(coherent) 상태로 방출해 파동을 극적으로 증폭시킨다. 특히 방사 이득은 구조체의 두께 조절을 통해 직관적으로 제어 가능하며, 여러 ltz 를 중첩하면 개별 임피 던스 비의 곱에 해당하는 누적 증폭 효과를 얻을 수 있다. 본 연구는 원통 좌표계 유효 매질 모델을 통해 이 론적 토대를 마련하고, 수치해석 및 실험을 통해 제안된 누적 증폭 현상이 이론적 예측과 탁월하게 일치함을 확인하였다. 결과적으로 본 메타 구조체 개념은 복잡한 배열형 트랜스듀서 기술 없이도 전방향 검사 성능을 비약적으로 향상시킬 수 있는 실용적인 접근법을 제공한다.</abstract>
   <source_page>319</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.678</extraction_quality>
   <pageImage>/paper-pages/p211.webp</pageImage>
   <affiliations>
     <affiliation>기계연</affiliation>
@@ -21,7 +23,5 @@
     <affiliation>서울대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Elastic metamaterial(E}9 메타물질) Dual resonance(]@ 공진)</keyword>
-    <keyword>Fabry-Perot 166008006(파브리-페로 공진)</keyword>
   </keywords>
 </paper>

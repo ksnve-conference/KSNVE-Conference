@@ -11,15 +11,17 @@
   <time>11:40~11:55</time>
   <venue>에메랄드홀</venue>
   <chair>김호욱(인하대)</chair>
-  <abstract>후륜 구동 차량의 리어 AS 피니언 기어에 적용된 2 개의 테이퍼 Se] 베어링의 프리로드(2761080)는 축 계 장성, 기어 치합 특성, 마찰 손실 및 기어 소음 발생과 밀접한 관련이 있다. 일반적으로 초기 조립 편차와 내구후 베어링 마모 등에 의해 프리로드 저하가 발생한다. 148.1과 같이 상대속도를 이용하여 조립하는 프리 로드 설정 방식은 조립 공정 상의 오차, 윤활 조건, 레이스웨이 표면 상태 등에 민감하여 반복성과 Bayo] 떨어져서 Fig.2 와 같이 동일하게 SHO] 되었으나 실제로 낮은 프리로드가 적응되면 차량에서 기어 소음이 문제가 된다. 이 연구에서는 8018.98 과 Zo] 다양한 프리로드 조건에서 피니언 기어 축계의 주과수 응답함수 (Frequency Response Function, FRFYS 측정하였다. 조입토크 중가에 따라 강성이 상승하면서 특정 대역의 공진 주과수가 Books SHS 확인하였다. 이는 프리로드 중가에 따라 베어링 간극 감소로 인한 동역학적 특성 변화가 발생함을 의미한다. 따라서 Fig.3 의 ‘MD! 과 같이 특정한 주과수 영역안에 공진주과수가 존재하 a 초기 조렵시에 일정한 수준의 설계된 프리로드가 부가된 것으로 판단할 수 있다. 이 연구의 결과를 Sot 여 조립단계에서 PRES} 조립 품질 검중에 유용한 진단 EPH 이용될 + 있음을 확인하였다. | 게다가 —— 호 | | isan 7</abstract>
+  <abstract>후륜 구동 차량의 리어 액슬 피니언 기어에 적용된 2 개의 테이퍼 롤러 베어링의 프리로드(Preload)는 축 계 강성, 기어 치합 특성, 마찰 손실 및 기어 소음 발생과 밀접한 관련이 있다. 일반적으로 초기 조립 편차와 내구후 베어링 마모 등에 의해 프리로드 저하가 발생한다. Fig.1 과 같이 상대속도를 이용하여 조립하는 프리 로드 설정 방식은 조립 공정 상의 오차, 윤활 조건, 레이스웨이 표면 상태 등에 민감하여 반복성과 정확성이 떨어져서 Fig.2 와 같이 동일하게 조립이 되었으나 실제로 낮은 프리로드가 적용되면 차량에서 기어 소음이 문제가 된다. 이 연구에서는 Fig.3 과 같이 다양한 프리로드 조건에서 피니언 기어 축계의 주파수 응답함수 (Frequenc Response Function, FRF)를 측정하였다. 조임토크 증가에 따라 강성이 상승하면서 특정 대역의 공진 주파수가 상승하는 경향을 확인하였다. 이는 프리로드 증가에 따라 베어링 간극 감소로 인한 동역학적 특성 변화가 발생함을 의미한다. 따라서 Fig.3 의 ˄ཛ˅ 과 같이 특정한 주파수 영역안에 공진주파수가 존재하 면 초기 조립시에 일정한 수준의 설계된 프리로드가 부가된 것으로 판단할 수 있다. 이 연구의 결과를 통하 여 조립단계에서 mym 평가가 조립 품질 검증에 유용한 진단 도구로 이용될 수 있음을 확인하였다.</abstract>
   <source_page>162</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.714</extraction_quality>
   <pageImage>/paper-pages/p092.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>“Preload(ol] $))”</keyword>
-    <keyword>“Frequency Response Function(#3}&lt;- 웅답함수)</keyword>
-    <keyword>“Gear Noise(7]°] 22-2)”</keyword>
+    <keyword>ˈPreload(예압)ˉ</keyword>
+    <keyword>ˈFrequency Response Function(주파수 응답함수)ˉ</keyword>
+    <keyword>ˈGear Noise(기어소음)ˉ</keyword>
   </keywords>
 </paper>

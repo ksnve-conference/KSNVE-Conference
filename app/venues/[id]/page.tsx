@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
+import AppHeader from '@/components/AppHeader';
+import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
 import PresentationBadge from '@/components/PresentationBadge';
 import {
   dayLabel,
@@ -40,8 +42,8 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
 
   return (
     <main className="shell detail-shell venue-detail">
-      <Header compact />
-      <Link href="/?tab=more" className="back">← 더보기</Link>
+      <AppHeader compact />
+      <BackLink fallback="/more" label="더보기" />
 
       <section className="profile-hero venue-hero">
         <span>⌖</span>
@@ -106,6 +108,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
           <p>프로그램 업데이트 시 이곳에 표시됩니다.</p>
         </div>
       )}
+      <AppTabs />
     </main>
   );
 }

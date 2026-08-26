@@ -11,17 +11,19 @@
   <time>09:45~10:00</time>
   <venue>에메랄드홀</venue>
   <chair>이상권(인하대)</chair>
-  <abstract>전기차는 임팩트 발생 시 재중쪽 현상으로 인해 내연기관 차량 대비 여진이 크게 느껴진다. 그러나 a 제 탑승객의 주관적 BUTS 객관적으로 수치화하는 데 한게가 있어, 변별력 있는 새로운 모델링이 필요하 다. 기존에는 FFE 필링 가중치 곡선, 주관적 필링과 계측 데이터의 상관성, 신호 구성 방법 등을 연구했 다. 내부적으로 RMSi 를 사용해 여진 AAS 수치화했으나, 중격이 클수록 여진이 작게 인지되는 마스킹 현상과 충격 후 여진이 재중쪽되는 전기차의 특성을 제대로 표현하지 못했다. 모션 시뮬레이터 환경에서 실차 진동을 기반으로 신호를 변조하고, 평가자의 불편감을 종합적으로 점수 화 하고 감성 불편도 경향성과 속, 여진의 상호 기여도를 과악하여 수치화 방안을 연구했다. 모션 시뮬레이터를 통해 감성평가에서 중격과 여진이 모두 종합 감성에 기여함을 확인하고, 진동 신호 와 필링 결과를 바탕으로 신뢰성 있는 Bas 개발했고, 실차 진동 데이터 분석을 통해 개발모델의 유효성 을 검중하였다. 주관적 감성 평가 ous (60 @ 점수 기준(불편두) 불편한의정도 | ous a Aretotet 1 매우편만함,피로감이전혀 gla 매끄럽고 불편함이 거의 없음 ia 주관적 감성 평기 가진시필링평가 +“ (가진시스팀) — - © i 20 a 2 Hele siezolj9| gar ¥eaenl HelBOL aIaS | 을 나서 =. - 3 보통 o @ Hs al 190 때 4. 볼편합,피로하며진동이 sted 느껴지고맡이 Bete HFM @감성 정량화 fal Se gy ia Oven xo relent @ - monde 5 ap Sea, gUsieda 2a NGO 8089 45 FeAl ED 2, @</abstract>
+  <abstract>전기차는 임팩트 발생 시 재증폭 현상으로 인해 내연기관 차량 대비 여진이 크게 느껴진다. 그러나 실 제 탑승객의 주관적 불편감을 객관적으로 수치화하는 데 한계가 있어, 변별력 있는 새로운 모델링이 필요하 다. 기존에는 주파수별 필링 가중치 곡선, 주관적 필링과 계측 데이터의 상관성, 신호 구성 방법 등을 연구했 다. 내부적으로 RMSi 를 사용해 여진 시간을 수치화했으나, 충격이 클수록 여진이 작게 인지되는 마스킹 현상과 충격 후 여진이 재증폭되는 전기차의 특성을 제대로 표현하지 못했다. 모션 시뮬레이터 환경에서 실차 진동을 기반으로 신호를 변조하고, 평가자의 불편감을 종합적으로 점수 화 하고 감성 불편도 경향성과 쇽, 여진의 상호 기여도를 파악하여 수치화 방안을 연구했다. 모션 시뮬레이터를 통해 감성평가에서 충격과 여진이 모두 종합 감성에 기여함을 확인하고, 진동 신호 와 필링 결과를 바탕으로 신뢰성 있는 모델을 개발했고, 실차 진동 데이터 분석을 통해 개발모델의 유효성 을 검증하였다.</abstract>
   <source_page>136</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.728</extraction_quality>
   <pageImage>/paper-pages/p063.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
     <affiliation>한양대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>“Feeling evaluation(#}79 4 가)”</keyword>
-    <keyword>“Motion simulator(&amp;.44. 4] 물레이터)&quot;</keyword>
-    <keyword>“After-shake(] 21)”</keyword>
-    <keyword>~]&lt;=(ndex)”</keyword>
+    <keyword>ˈFeeling evaluation(감성평가)ˉ</keyword>
+    <keyword>ˈMotion simulator(모션시물레이터)ˉ</keyword>
+    <keyword>귆After-shake(여진)귇</keyword>
+    <keyword>지수(Index)귇</keyword>
   </keywords>
 </paper>

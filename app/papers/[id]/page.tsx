@@ -1,172 +1,114 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Header from '@/components/Header';
+import AppHeader from '@/components/AppHeader';
+import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
 import OriginalPageViewer from '@/components/OriginalPageViewer';
 import PaperActions from '@/components/PaperActions';
 import PresentationBadge from '@/components/PresentationBadge';
-import { dayLabel, formatSessionTitle, papers, sessions, speakers, venues } from '@/lib/conference';
+import Icon from '@/components/Icon';
+import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
 
 export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
 }
 
-export default async function PaperDetail({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function PaperDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-
   const paper = papers.find((p) => p.id === id);
   if (!paper) notFound();
 
-  const session = sessions.find((s) => s.id === paper.sessionId);
+  const session = sessionById.get(paper.sessionId);
   const speaker = speakers.find((s) => s.papers.includes(paper.id));
-  const venue = venues.find((v) => v.name === paper.venue);
-  const affiliations = Array.isArray(paper.affiliations)
-    ? paper.affiliations
-    : paper.affiliations
-      ? [paper.affiliations]
-      : [];
+  const venue = venueByName.get(paper.venue);
+  const affiliations = Array.isArray(paper.affiliations) ? paper.affiliations : paper.affiliations ? [paper.affiliations] : [];
+  const needsReview = (paper.extractionQuality ?? 1) < 0.55 && Boolean(paper.abstract);
 
   return (
     <main className="shell detail-shell paper-detail">
-      <Header compact />
-
-      <Link href="/" className="back">
-        ‹ 프로그램으로 돌아가기
-      </Link>
+      <AppHeader compact />
+      <BackLink fallback="/papers" label="목록으로" />
 
       <article className="detail-card">
         <PresentationBadge paper={paper} showId />
-
         <h1>{paper.title}</h1>
 
         <div className="presenter">
           <span>{paper.presenter?.slice(0, 1) || '?'}</span>
-
           <div>
             <small>발표자</small>
             <b>
-              {speaker ? (
-                <Link className="text-link" href={`/speakers/${speaker.id}`}>
-                  {paper.presenter} ›
-                </Link>
-              ) : (
-                paper.presenter
-              )}
+              {speaker
+                ? <Link className="text-link" href={`/speakers/${speaker.id}`}>{paper.presenter} <Icon name="chevron" size={13} /></Link>
+                : paper.presenter}
             </b>
             <p>{paper.authors}</p>
           </div>
         </div>
 
-        <PaperActions id={paper.id} />
+        <PaperActions id={paper.id} title={paper.title} />
 
         <section className="schedule-panel">
           <div>
-            <span>▣</span>
-            <p>
-              <small>일시</small>
-              <b>
-                {dayLabel(paper.date)} · {paper.time}
-              </b>
-            </p>
+            <span><Icon name="clock" size={17} /></span>
+            <p><small>일시</small><b>{dayLabel(paper.date)} · {paper.time}</b></p>
           </div>
-
           <div>
-            <span>⌖</span>
+            <span><Icon name="pin" size={17} /></span>
             <p>
               <small>발표장</small>
-              <b>
-                {venue ? (
-                  <Link className="text-link" href={`/venues/${venue.id}`}>
-                    {paper.venue} ›
-                  </Link>
-                ) : (
-                  paper.venue
-                )}
-              </b>
+              <b>{venue ? <Link className="text-link" href={`/venues/${venue.id}`}>{paper.venue} <Icon name="chevron" size={13} /></Link> : paper.venue}</b>
             </p>
           </div>
         </section>
 
+        {paper.paperPdf && (
+          <a className="pdf-cta" href={paper.paperPdf} target="_blank" rel="noreferrer">
+            <span><Icon name="file" size={19} /></span>
+            <div><b>논문 원문 PDF</b><small>새 탭에서 열립니다</small></div>
+            <em><Icon name="download" size={17} /></em>
+          </a>
+        )}
+
         <dl className="details">
-          <div>
-            <dt>저자</dt>
-            <dd>{paper.authors}</dd>
-          </div>
-
-          <div>
-            <dt>소속</dt>
-            <dd>{affiliations.length > 0 ? affiliations.join(', ') : '-'}</dd>
-          </div>
-
+          <div><dt>저자</dt><dd>{paper.authors}</dd></div>
+          <div><dt>소속</dt><dd>{affiliations.length > 0 ? affiliations.join(', ') : '-'}</dd></div>
           <div>
             <dt>세션</dt>
-            <dd>
-              {session ? (
-                <Link className="text-link" href={`/sessions/${session.id}`}>
-                  {formatSessionTitle(session.title)} ›
-                </Link>
-              ) : (
-                formatSessionTitle(paper.session)
-              )}
-            </dd>
+            <dd>{session
+              ? <Link className="text-link" href={`/sessions/${session.id}`}>{formatSessionTitle(session.title)} <Icon name="chevron" size={13} /></Link>
+              : formatSessionTitle(paper.session)}</dd>
           </div>
-
-          <div>
-            <dt>좌장</dt>
-            <dd>{session?.chair || '-'}</dd>
-          </div>
-
-          {paper.sourcePage && (
-            <div>
-              <dt>초록집 페이지</dt>
-              <dd>{paper.sourcePage}</dd>
-            </div>
-          )}
+          <div><dt>좌장</dt><dd>{session?.chair && session.chair !== '-' ? session.chair : '-'}</dd></div>
+          {paper.sourcePage ? <div><dt>초록집 페이지</dt><dd>{paper.sourcePage}쪽</dd></div> : null}
         </dl>
 
-        <section className="abstract">
-          <h2>키워드</h2>
-          {paper.keywords && paper.keywords.length > 0 ? (
+        {paper.keywords && paper.keywords.length > 0 && (
+          <section className="abstract">
+            <h2>키워드</h2>
             <div className="keyword-list">
-              {paper.keywords.map((keyword) => (
-                <span key={keyword} className="keyword-chip">
-                  {keyword}
-                </span>
-              ))}
+              {paper.keywords.map((keyword) => <span key={keyword} className="keyword-chip">{keyword}</span>)}
             </div>
-          ) : (
-            <p>-</p>
-          )}
-        </section>
+          </section>
+        )}
 
         <section className="abstract">
           <h2>초록</h2>
-
-          {paper.abstract ? (
-            <p className="abstract-text">{paper.abstract}</p>
-          ) : (
-            <p>No abstract is available.</p>
+          {paper.abstract
+            ? <p className="abstract-text">{paper.abstract}</p>
+            : <p className="abstract-empty">이 발표는 초록집에 초록이 수록되어 있지 않습니다.</p>}
+          {needsReview && (
+            <p className="extraction-note">
+              <Icon name="info" size={14} /> 자동 추출된 초록으로, 일부 문자가 정확하지 않을 수 있습니다. 정확한 내용은 원문 페이지를 확인해 주세요.
+            </p>
           )}
         </section>
 
         {paper.pageImage && (
-          <OriginalPageViewer
-            src={paper.pageImage}
-            title={paper.title}
-            sourcePage={paper.sourcePage}
-          />
-        )}
-
-        {paper.extractionStatus && paper.extractionStatus !== 'ok' && (
-          <section className="abstract">
-            <h2>추출 상태</h2>
-            <p>{paper.extractionStatus}</p>
-          </section>
+          <OriginalPageViewer src={paper.pageImage} title={paper.title} sourcePage={paper.sourcePage} />
         )}
       </article>
+      <AppTabs />
     </main>
   );
 }

@@ -11,8 +11,10 @@
   <time>15:20~15:35</time>
   <venue>사파이어홀[1]</venue>
   <chair>김재환(국립금오공대)</chair>
-  <abstract>액추에이터), Finite Element Analysis(77@t 요소 해석) 다양한 레이저 시스템에서 정밀 조준 기술의 요구가 중가함에 따라, 고속 조준 거울(0261 Steering Mirror, FSM)9] 중요성이 부각되고 있다. FSM 은 레이저 빔의 Hees 고속으로 정밀하게 제어하는 장치로 빠른 응 답성, 넓은 구동 범위 및 높은 정밀도가 요구된다. FSM 에는 보이스 코일 액추에이터(\06106 Coil Actuator, VCA), 릴럭턴스 액추에이터, 압전 액추에이터2162061600710 actuator) 등 다양한 액추에이터가 적용되며, 이 중 압전 액추에이터 기반 FSM 은 높은 강성과 우수한 정밀도를 갖는 장점이 있는 반면 구동 변위가 제한적 이라는 단점을 가진다. 이러한 한계를 보완하기 위해 변위 중폭 구조가 활용된다. 변위 중폭 TRE FSM 의 구동 성능을 결정하는 핵심 요소로, 대표적으로 c+S=28 (Rhombus type} 브 리지형0304086 type)°] 널리 활응된다. 두 구조는 모두 유연 기구(200701480『 mechanism=4 액추에이터의 변위를 중폭하는 원리를 가지지만, 형상 기하학적 특성 및 하중 전달 경로의 차이에 따라 동일한 중폭비 조 건에서도 강성 차이를 보인다. 이러한 차이는 8514 의 고유진동수 및 구동 범위 특성에 직접적인 VHS 미 친다. 이에 본 연구에서는 변위 중폭형 압전 액추에이터 기반 FSM] 대한 동적 모델링을 통해 해석식을 도출하 였으며, 유한요소해석을 통해 도출된 해석식의 타당성을 검중하였다. 또한 두 가지 변위 중폭 구조의 형상에 따른 ASS 비교-분석하였다. 이를 바탕으로 구동 범위를 유지하면서 고유진동수를 향상시킬 수 있는 변위 중폭 THI 설계 방안을 제시하였으며, 기존 모델과의 비교를 통해 제안한 설계의 유효성을 확인하였다. 본 결과물은 방위사업청의 재원으로 국방기술진흥연구소의 방산기업 100 프로젝트 기술개발 전용지원사업 의 지원을 받아 연구되었음 (NO. R2402 10) + 연세대학교 기계공학과 ＊ 연세대학교 기계공학과</abstract>
+  <abstract>유한 요소 해석) 다양한 레이저 시스템에서 정밀 조준 기술의 요구가 증가함에 따라, 고속 조준 거울(Fast Steering Mirror, mztP의 중요성이 부각되고 있다. mzt 은 레이저 빔의 방향을 고속으로 정밀하게 제어하는 장치로 빠른 응 답성, 넓은 구동 범위 및 높은 정밀도가 요구된다. mzt 에는 보이스 코일 액추에이터(Voice Coil Actuator, }jhPSG 릴럭턴스 액추에이터, 압전 액추에이터(Piezoelectric actuator) 등 다양한 액추에이터가 적용되며, 이 중 압전 액추에이터 기반 mzt 은 높은 강성과 우수한 정밀도를 갖는 장점이 있는 반면 구동 변위가 제한적 이라는 단점을 가진다. 이러한 한계를 보완하기 위해 변위 증폭 구조가 활용된다. 변위 증폭 구조는 mzt 의 구동 성능을 결정하는 핵심 요소로, 대표적으로 마름모형(Rhombus t pe)과 브 리지형(Bridge t pe)이 널리 활용된다. 두 구조는 모두 유연 기구(Compliant mechanism)로서 액추에이터의 변위를 증폭하는 원리를 가지지만, 형상 기하학적 특성 및 하중 전달 경로의 차이에 따라 동일한 증폭비 조 건에서도 강성 차이를 보인다. 이러한 차이는 mzt 의 고유진동수 및 구동 범위 특성에 직접적인 영향을 미 친다. 이에 본 연구에서는 변위 증폭형 압전 액추에이터 기반 mzt 에 대한 동적 모델링을 통해 해석식을 도출하 였으며, 유한요소해석을 통해 도출된 해석식의 타당성을 검증하였다. 또한 두 가지 변위 증폭 구조의 형상에 따른 성능을 비교½분석하였다. 이를 바탕으로 구동 범위를 유지하면서 고유진동수를 향상시킬 수 있는 변위 증폭 구조의 설계 방안을 제시하였으며, 기존 모델과의 비교를 통해 제안한 설계의 유효성을 확인하였다. G 본 결과물은 방위사업청의 재원으로 국방기술진흥연구소의 방산기업 XWWG 프로젝트 기술개발 전용지원사업 의 지원을 받아 연구되었음 (NO. R2402 10) ˋ G연세대학교 기계공학과 lTawg UU JG 연세대학교 기계공학과 Q 연세대학교 기계공학과 QQG 삼정오토메이션 QQQGspnGkMhG</abstract>
   <source_page>96</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.727</extraction_quality>
   <pageImage>/paper-pages/p023.webp</pageImage>
   <affiliations>
     <affiliation>연세대</affiliation>
@@ -20,7 +22,7 @@
     <affiliation>LIG D&amp;A</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Fast Steering Mirror(a.4+ 조준 거울)</keyword>
-    <keyword>Displacement-Amplified Piezoelectric Actuator(#l 9] 244 압전</keyword>
+    <keyword>Fast Steering Mirror(고속 조준 거울)</keyword>
+    <keyword>Displacement-Amplified Piezoelectric Actuator(변위 증폭형 압전</keyword>
   </keywords>
 </paper>

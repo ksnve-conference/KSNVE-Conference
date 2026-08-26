@@ -11,17 +11,20 @@
   <time>16:00~16:15</time>
   <venue>릴리홀[2]</venue>
   <chair>손정우(국립금오공대)</chair>
-  <abstract>piezoelectric ceramic(H] 47] 압전세라믹),\600000168(가진시혐) 본 연구는 100% 해외 선진기술에 의존하고 있는 원전 설비/기기 상태감시용 AEA 센서 (300616『01006161)의 소재/부품 원천 기술을 개발하는데 목적이 있다. GAA iezoelectricity)S 이용하는 가 속도계 AAS] 핵심소재인 압전세라믹을 개발하고 이를 이용하여 개발된 가속도계 센서와 센서의 설비 대상 As AS Wes 포함한다. 특히, 가속도계 센서에 도입된 압전세라믹은 기존 전통의 소재이자 유해물질인 WS 함유하는 26(21,110080221)를 대체하는 친환경 소재로서 (K.NaJNbOAKNN)A] 소재를 개발하고 이를 검중하고자 하였다. KNN Al AALS 상경계(00866 000008117의 조작 APS 통해 최적 조성을 개발하였고, 개발된 조성의 SAS 압전전하상수 dee 가 370 pC/N, 큐리온도가 330CHA 전통의 압전소재인 PZT-5A 와 Wet 압전성능을 보유하였다. 이 소재를 센서의 압전체로 활용하기 위해 고상반응합성법(60110-81316 reaction method) 이용하여 3@(ring-shaped)o] 실형상을 제작하였다. 센서의 최적 Aes 구현하기 위 해 수치해석(0040160081 simulation 이용하여 압전체, 질량체, 베이스, 절연체 등 핵심 구성부품들의 디자 인을 최적화하였다. 제작된 AAS] 가진시험(01673000 test) 결과 공진주파수 【, 은 20 ke, 전압감도는 101 mV/g 였고, 이는 상웅의 PZT AS West 우수한 성능이었다. 온도안정성 평가결과 사용온도는 120TH 고, 회로내장형 상용 센서의 사용온도 BAS 만족하였다. 실제 산업 설비 환경에서의 Ves 검중하기 위해 원심식 펌프(6600114881 pump)2] = 베어링 위치에 센서를 설치하여 응답특성을 평가하였다. 시험은 Was 위해 기존 상응 PZT AAS} 개발된 비납계 ANS 부착하여 수행하였고, 평가 결과 개발된 비납계 센서의 진동 응답 특성이 PZT 센서에 필적하는 우수한 응답특성을 확인할 수 있었다. 사사 이 논문은 2026 년도 정부(과학기술정보통신부)의 Adee 한국연구재단의 지원을 받아 수행된 연구임 (가동원전 안전성 향상 핵심기술 개발 사업 RS-2022-00144147). + 교신저자; 한국원자력연구원 기기안전진단연구부 :</abstract>
+  <abstract>본 연구는 XWWLG 해외 선진기술에 의존하고 있는 원전 설비/기기 상태감시용 가속도계 센서 (accelerometer)의 소재/부품 원천 기술을 개발하는데 목적이 있다. 압전성(piezoelectricit P을 이용하는 가 속도계 센서의 핵심소재인 압전세라믹을 개발하고 이를 이용하여 개발된 가속도계 센서와 센서의 설비 대상 성능 검증 내용을 포함한다. 특히, 가속도계 센서에 도입된 압전세라믹은 기존 전통의 소재이자 유해물질인 납을 함유하는 Pb(Zr,Ti)O3(PZT)를 대체하는 친환경 소재로서 (K,Na)NbO3(KNN)계 소재를 개발하고 이를 검증하고자 하였다. ruu 계 소재는 상경계(phase boundar P의 조작 연구를 통해 최적 조성을 개발하였고, 개발된 조성의 물질은 압전전하상수 d33 가 370 pC/N, 큐리온도가 330ଇ로서 전통의 압전소재인 PZT-5A 와 대등한 압전성능을 보유하였다. 이 소재를 센서의 압전체로 활용하기 위해 고상반응합성법(solid-state reaction method)을 이용하여 환형(ring-shaped)의 실형상을 제작하였다. 센서의 최적 성능을 구현하기 위 해 수치해석(numerical simulation)을 이용하여 압전체, 질량체, 베이스, 절연체 등 핵심 구성부품들의 디자 인을 최적화하였다. 제작된 센서의 가진시험(vibration test) 결과 공진주파수 fr 은 20 ໫, 전압감도는 101 mV/g 였고, 이는 상용의 PZT 센서와 대등한 우수한 성능이었다. 온도안정성 평가결과 사용온도는 120ଇ였 고, 회로내장형 상용 센서의 사용온도 범위를 만족하였다. 실제 산업 설비 환경에서의 성능을 검증하기 위해 원심식 펌프(centrifugal pump)의 볼 베어링 위치에 센서를 설치하여 응답특성을 평가하였다. 시험은 비교를 위해 기존 상용 w{G 센서와 개발된 비납계 센서를 부착하여 수행하였고, 평가 결과 개발된 비납계 센서의 진동 응답 특성이 w{G 센서에 필적하는 우수한 응답특성을 확인할 수 있었다. G 사사 이 논문은 2026 년도 정부(과학기술정보통신부)의 재원으로 한국연구재단의 지원을 받아 수행된 연구임 (가동원전 안전성 향상 핵심기술 개발 사업 RS-2022-00144147). ˋG교신저자bG 한국원자력연구원 기기안전진단연구부 lTaGgUU QG 공동저자의 소속bG 한국원자력연구원 기기안전진단연구부 JG 발표자의 소속bG 한국원자력연구원 기기안전진단연구부</abstract>
   <source_page>112</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.712</extraction_quality>
   <pageImage>/paper-pages/p039.webp</pageImage>
   <affiliations>
     <affiliation>원자력연</affiliation>
     <affiliation>삼성중공업</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Piezoelectric 860800(압전센서)</keyword>
-    <keyword>Condition 00040008(상태감시)</keyword>
-    <keyword>Accelerometer(7}4-=7]] 411)</keyword>
-    <keyword>Lead-free</keyword>
+    <keyword>Piezoelectric sensor(압전센서)</keyword>
+    <keyword>Condition monitoring(상태감시)</keyword>
+    <keyword>Accelerometer(가속도계센서)</keyword>
+    <keyword>Lead-free piezoelectric ceramic(비납계 압전세라믹)</keyword>
+    <keyword>Vibration test(가진시험)</keyword>
   </keywords>
 </paper>

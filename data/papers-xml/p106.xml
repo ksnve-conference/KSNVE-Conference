@@ -11,15 +11,20 @@
   <time>11:10~11:25</time>
   <venue>릴리홀[2]</venue>
   <chair>신혜경(건설기술연)</chair>
-  <abstract>bare slab(e]] 2), data-driven 008184(데이터 기반 설계), digital 50(니지털 트윈) 현행 설게에서 바닥구조는 인정구조에 명시된 완충재 SS] 사양에 의존하여 경혐적으로 선정되는 경우가 대부분이며, 평면 형태와 구조체에 따른 음향적 특성이 설계에 반영되기가 어렵다. 골조 궁사가 완료된 시점 의 맨슬래브는 S44 시공 전 유일한 현장 검측 기회를 제공하지만, 해당 시점에서 측정된 데이터가 설계 변수로 활용되는 AMS 아직 정립되지 않은 실정이다. 이에 본 연구는 세대 평면 및 바탁마감재 정보, ae 래브 바닥충격음 데이터, 전달행렬법 기반 다자유도 예측 모델을 통합하여 디지털 트윈 설계 지원 프레임워 크를 수렵하고, 실측 자료와의 Wa dss 통해 그 유효성을 검중하고자 한다. 본 프레임워크는 골조 완료 시점의 현장 데이터를 바탕으로 다음과 같은 프로세스를 거쳐 바닥충격음을 [Sada 설계를 지원한다. ㆍ 맨슬리브 바닥충격음의 러벨 및 주과수 스펙트럼을 Se 클러스터링 및 취약 세대 산출 + 시공 평활도 편차와 천장고 여유 등의 정보를 이용한 Spe) 예상 성능 편차 산출 + 인정구조 데이터베이스 탐색 및 전달행렬범 Se 통한 목표 등급 만족 여부 검토 ㆍ 바탁마감재 종류에 따른 경량충격음 성능 예측 * 중량-경량 통합 설계 매트릭스 출력: 마감재 × 완중재 조합별 예측 등급 제시 또한 대규모 현장의 맨슬래브 바닥충격음 스펙트럼 데이터를 Kmeans 클러스터링 기법으로 문석 및 유형 화하고, 세대별 위험도 점수를 산출하여 검중용 표본세대를 정량적으로 선정하는 방범(보수적 평가 방법)을 제안하였다. 제안 프레임워크는 골조 단계 실측 데이터와 설계 정보를 전달행렬법과 결합하여 Sas 설계 를 체계화하는 데 의의가 있으며, 데이터 기반 스펙트럼 분류 및 표본세대 정량 선정 기준을 제공한다. 향후 음향 보정 모델 개선, 완충재 동적 특성의 DB 확중, Al 기반 최적화 알고리즘 통합을 추진하고자 한다. Table 1 Comparison of simulation methods [Se 59409 000] ae Method is 버 Ri : FEM Tens of minutes | Low-frequency x [ 10 hours advantage - - SEA 때 advantage [ only TM © Figure 1 Framework for floating floor design range support based on impact sound clustering + BAIA, 정화원, 교신저자 소속 * 우미건설(주)</abstract>
+  <abstract>현행 설계에서 바닥구조는 인정구조에 명시된 완충재 등의 사양에 의존하여 경험적으로 선정되는 경우가 대부분이며, 평면 형태와 구조체에 따른 음향적 특성이 설계에 반영되기가 어렵다. 골조 공사가 완료된 시점 의 맨슬래브는 든바닥 시공 전 유일한 현장 검측 기회를 제공하지만, 해당 시점에서 측정된 데이터가 설계 변수로 활용되는 체계는 아직 정립되지 않은 설정이다. 이에 본 연구는 세대 평면 및 바닥마감재 정보, 맨슬 래브 바닥충격음 데이터, 전달행렬법 기반 다자유도 예측 모델을 통합하여 디지털 트원 설계 지원 프레임워 크를 수립하고, 실측 자료와의 비교-대조를 통해 그 유효성을 검증하고자 한다. 본 프레임위크는 골조 완료 시점의 현장 데이터를 바탕으로 다음과 같은 프로세스를 거쳐 바닥충격음을 예측하고 설계를 지원한다. ㆍ 맨슬래브 바닥충격음의 레벨 및 주파수 스펙트럼을 통한 클러스터링 및 취약 세대 산출</abstract>
   <source_page>176</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.735</extraction_quality>
   <pageImage>/paper-pages/p106.webp</pageImage>
   <affiliations>
     <affiliation>우미건설</affiliation>
   </affiliations>
   <keywords>
-    <keyword>floor impact sound(H} 4-34 2)</keyword>
-    <keyword>floating floor( = 5} 4-7? 4)</keyword>
-    <keyword>transfer matrix method(41 2 렬법)</keyword>
+    <keyword>floor impact sound(4}=}-34 -)</keyword>
+    <keyword>floating 14001( 4}4}74)</keyword>
+    <keyword>transfer matrix method(4l 2 4 48)</keyword>
+    <keyword>bare slab(W 2H)</keyword>
+    <keyword>data-driven 009180(데이터 기반 설계)</keyword>
+    <keyword>0100401 00(디지털 트윈)</keyword>
   </keywords>
 </paper>

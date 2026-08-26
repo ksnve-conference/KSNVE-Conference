@@ -11,8 +11,10 @@
   <time>09:00~09:15</time>
   <venue>오팔홀[1]</venue>
   <chair>김준(LIG D&amp;A)</chair>
-  <abstract>Dynamic Characteristics Analysis 본 연구는 방위 산업 및 우주 항공 분야 waa} 위치 및 자세 제어에 aaa 억할을 pase MEMS(Micro-Electro-Mechanical Systems) 자이로 센서의 진동 내구성 및 신뢰성 확보를 목적으로 한다. 미세 가속도계 및 진동계의 원리를 이용하는 MEMS 자이로 AE 특성상 외부 Asa 취약하며, 특히 고속 기동 시 발생하는 강한 ASS AL 내부에 설계되지 않은 비정상격 진동 모드를 유발한다. 이는 노이즈 레벨의 상승과 바이어스 편차03186 12040의 중가를 초래하여 비행 제어 시스템의 치명적인 오작동 원인이 된다. 이러한 문제를 해결하기 위해 본 연구에서는 우선 주과수 가변형 지그(18)를 설계하여 외부 입력 주과수 변화에 따른 자이로 센서의 동특성을 정밀하게 분석하였다 이를 바탕으로 물리적 특성이 상이한 방진구(^&amp;00-\1678400 mounts 자이로 센서 하부 질량체에 적용하 는 Ads 수행하였으며, 진동 Ga 성능에 따른 센서 출력 데이터의 변화를 정량적으로 계측하여 최적화된 데이터떼이스를 구축하였다. 연구 결과, 외부 전동 주과수 대역과 방전구의 감쇠 특성 사이의 상관관계를 규 명하였으며, 이는 자이로 ANS) 측정 WILE Jue 수 있는 방진 시스템 설계의 공학적 기준을 제시 한다 본 연구의 성과는 향후 고환경 기동 비행체의 제어 시스템 설계 DA 패키징 최적화 분야에서 중요한 기초 자료로 활용될 것으로 기대된다. t 교신저자; 정회원, 교신저자 소속 * 공동저자의 소속</abstract>
+  <abstract>본 연구는 방위 산업 및 우주 항공 분야 비행체의 위치 및 자세 제어에 핵섬적인 역할을 수행하는 MEMS(Micro-Electro-Mechanical Systems) 4}°]= 4lA|2] he Uy 및 신뢰성 확보를 목적으로 한다. 미세 가속도계 및 진동계의 원리를 이용하는 08405 자이로 센서는 특성상 외부 진동에 취약하며, 득히 고속 기동 시 발생하는 강한 진동은 센서 내부에 설계되지 않은 비정상적 진동 모드를 유발한다. 이는 노이즈 레벨의 상승과 바이어스 편차(8185 1004)의 증가를 초래하여 비행 제어 시스템의 치명적인 오작동 원인이 된다. 이러한 문제를 해결하기 위해 본 연구에서는 우선 주파수 가변형 지그(119)를 설계하여 외부 입력 주파수 변화에 따른 자이로 센서의 동특성을 정밀하게 분석하였다. 이를 바탕으로 물리적 특성이 상이한 방진구(&amp;400-\1600000 100400를 자이로 센서 하부 질량체에 적용하 = AGS 수행하였으며, 진동 감쇄 성능에 따른 센서 출력 데이터의 변화를 정량적으로 계측하여 최적화된 데이터베이스를 구축하였다. 연구 결과, 외부 진동 주파수 대역과 방진구의 감쇠 특성 사이의 상관관계를 규 명하였으며, 이는 자이로 센서의 측정 정확도를 극대화할 수 있는 방진 시스템 설계의 공학적 기준을 제시 한다. 본 연구의 성과는 향후 고환경 기동 비행체의 제어 시스템 설계 및 센서 패키징 최적화 분아에서 중요한 기초 자료로 활용될 것으로 기대된다. + 교신저자; 정회원, 교신저자 소속 ＊ 공동저자의 소속</abstract>
   <source_page>138</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.669</extraction_quality>
   <pageImage>/paper-pages/p065.webp</pageImage>
   <affiliations>
     <affiliation>LIG D&amp;A</affiliation>
@@ -23,5 +25,6 @@
     <keyword>Elastomer</keyword>
     <keyword>Anti-vibration mount</keyword>
     <keyword>Anti-vibration system</keyword>
+    <keyword>Dynamic Characteristics Analysis</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,18 @@
   <time>14:30~14:55</time>
   <venue>사파이어홀[2]</venue>
   <chair>최영철(원자력연)</chair>
-  <abstract>Nonlinear vibrations(®] 1@ 진동) 비선형 동역학 및 ded 대한 이해는 동역학계에서의 비선형성을 회피하는 것이 아니라 적극적으로 a 용함으로써 기계 시스템의 새로운 작동 원리를 설계할 수 있는 강력한 접근법을 제공한다. 특히 쌍안정 더핑02008708) 진동자는 풍부한 SAGA 특성과 다양한 공학적 응용 가능성으로 인해 지속적인 관심을 받 아온 대표적인 비선형 시스템이다. 본 발표에서는 쌍안정 더핑 진동자에서 나타나는 주요 비선형 동역학 현상을 소개한다. 특히 영주파수 특이 현상이나 병목 현상과 같은 흥미로운 임계 거동들, 그리고 복잡한 운동 혹은 혼돈의 발생과 관련된 분기 구조 SS 중심으로 쌍안정 GY 진동자의 동역학적 특징을 설명한 다. 또한 이러한 비선형 동역학적 특징이 진동 및 충격 제어 시스템과 광대역 진동 에너지 수확기 설계에 어떻게 활용될 수 있는지에 대해 살펴보고, 쌍안정 더핑 진동자의 새로운 공학적 응용 가능성을 논의한다. + 교신저자; 충북대학교 기계공학부</abstract>
+  <abstract>비선형 동역학 및 진동에 대한 이해는 동역학계에서의 비선형성을 회피하는 것이 아니라 적극적으로 활 용함으로써 기계 시스템의 새로운 작동 원리를 설계할 수 있는 강력한 접근법을 제공한다. 특히 쌍안정 더핑(Duffing) 진동자는 풍부한 동역학적 특성과 다양한 공학적 응용 가능성으로 인해 지속적인 관심을 받 아온 대표적인 비선형 시스템이다. 본 발표에서는 쌍안정 더핑 진동자에서 나타나는 주요 비선형 동역학 현상을 소개한다. 특히 영주파수 특이 현상이나 병목 현상과 같은 흥미로운 임계 거동들, 그리고 복잡한 운동 혹은 혼돈의 발생과 관련된 분기 구조 등을 중심으로 쌍안정 더핑 진동자의 동역학적 특징을 설명한 다. 또한 이러한 비선형 동역학적 특징이 진동 및 충격 제어 시스템과 광대역 진동 에너지 수확기 설계에 어떻게 활용될 수 있는지에 대해 살펴보고, 쌍안정 더핑 진동자의 새로운 공학적 응용 가능성을 논의한다. ˋ G교신저자bG 충북대학교 기계공학부 lTaGUgUU JG 충북대학교 기계공학부</abstract>
   <source_page>250</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.721</extraction_quality>
   <pageImage>/paper-pages/p142.webp</pageImage>
   <affiliations>
     <affiliation>충북대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Duffing oscillator(t]4 진동자)</keyword>
-    <keyword>Bistable systems(2¢k 시스템)</keyword>
-    <keyword>Nonlinear dynamics(#]41@ 동역학)</keyword>
+    <keyword>Duffing oscillator(더핑 진동자)</keyword>
+    <keyword>Bistable systems(쌍안정 시스템)</keyword>
+    <keyword>Nonlinear dynamics(비선형 동역학)</keyword>
+    <keyword>Nonlinear vibrations(비선형 진동)</keyword>
   </keywords>
 </paper>

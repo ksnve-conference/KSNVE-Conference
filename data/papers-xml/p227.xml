@@ -11,17 +11,19 @@
   <time>11:10~11:25</time>
   <venue>에메랄드홀</venue>
   <chair>최성훈(철도기술연)</chair>
-  <abstract>train( 4 철도) 초록 본 연구는 고속철도차량의 실내소음을 대상으로, 통계적 에너지 해석(86[3484681 Energy Analysis, SEA) 모델에서 입력원0004 power) 속도별 모델링을 정의하고 이를 기반으로 고속 영역까지의 실내소음 예측을 수행하고자 하였다. 우선 2W0km/h 운행 조건에서 공력소음과 전동소음을 구분하고, 각 입력원의 주파수 특성을 분석하였다. 이를 바탕으로 각 소음원을 속도의 함수로 표현되는 입력 파워 모델로 정의하고, 속도 중가에 따른 음압레벨의 변화를 반영하였다. 나아가 정의된 입력 as] BAS 적용하여 더 고속의 조건에서 실내소음을 예측하였다. 본 APE 기존 88ㅅ모델과 제한된 입력 Aus 기반으로, 입력원 모델링과 속도 확장 해석의 적용가능성을 제시하고, 향후 고속철도차량 실내소음 해석 및 저감 설계를 위한 기초 자료로 활용될 수 있다. + 한국철도기술연구원 교통환경연구실 책입연구원</abstract>
+  <abstract>고속 철도) 조록 본 연구는 고속철도차량의 실내소음을 대상으로, 통계적 에너지 해석(960090081 80688 Analysis, SEA) 모델에서 입력원(2044 ㅁ0\61)의 속도별 모델링을 정의하고 이를 기반으로 고속 영역까지의 실내소음 예측을 수행하고자 하였다. 우선 25000 운행 조건에서 공력수음과 전동소음을 구분하고, 각 입력원의 주파수 특성을 분석하였다. 이를 바탕으로 각 소음원을 속도의 함수로 표현되는 입력 파워 모델로 정의하고, 속도 증가에 따른 음암레벨의 변화를 반영하였다. 나아가 정의된 입력 과위 모텔을 적용하여 더 고속의 조건에서 실내소음을 예측하였다. 본 연구는 기존 98ㅅ모델과 제한된 입력 정보를 기반으로, 입력원 모델링과 속도 확장 해석의 적용가능성을 제시하고, 향후 고속철도차량 실내소음 해석 및 저감 설계를 위한 기초 자료로 활용될 수 있다. + 한국철도기술연구원 교통환경연구실 책임연구원</abstract>
   <source_page>368</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.675</extraction_quality>
   <pageImage>/paper-pages/p227.webp</pageImage>
   <affiliations>
     <affiliation>과학기술연합대학원대</affiliation>
     <affiliation>철도기술연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Interior 7ㅁ0186(싶내 소음)</keyword>
-    <keyword>984&amp;(통계적 에너지 해석)</keyword>
-    <keyword>Transmission 1058(투과 손실)</keyword>
+    <keyword>Interior noise(#]4] 2-2)</keyword>
+    <keyword>984(통계적 에너지 44)</keyword>
+    <keyword>Transmission loss(=-2+ #2)</keyword>
     <keyword>high speed</keyword>
   </keywords>
 </paper>

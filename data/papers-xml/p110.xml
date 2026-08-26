@@ -11,15 +11,19 @@
   <time>10:55~11:10</time>
   <venue>사파이어홀[2]</venue>
   <chair>기성현(LG전자)</chair>
-  <abstract>Source Model( 4:22.54), Acoustic Analysis(-2-F@H 44) 레시프로 압축기의 토출계에서 발생하는 압력맥동은 냉장고 시스템 내 배관 진동 및 소음의 주요 원인 중 하나이다. 기존의 압력맥동 해석 방식은 음향해석에 기반하여, 토출계 내 전 주파수 대역에 걸쳐 일정한 크기의 질량 소스를 가정하고 토출 출구에서의 압력맥동을 계산하는 WHO] 주로 사용되어 왔다. 그러나 이 방법은 실제 압축기 작동 시 발생하는 물리적 소스와 상당한 차이가 있어, 실험 결과와의 정합성 확보 및 설계 단계에서의 맥동 수준 예측에 한계가 있다. 이를 보완하기 위한 접근으로, 1D 압축기 성능해석을 통해 산출된 한 사이클 내 토출 유량 파형을 소스로 활용하는 방법이 있다. Aes Polytropic 압축 과정 기반의 통합 사이클 시뮬레이션으로 구성되며, 토출 밸브 거동으로부터 한 사이클의 토출 유량 파형을 계산할 수 있다. 그러나 이 방법 역시 이상적인 정상 작동 조건을 가정한 단일 사이클 파형에 기반하므로, 실제 기계 작동 시 존재하는 사이클 간 WEI (cycle- to-cycle variation S 반영하지 못한다는 한계가 있다. 본 연구에서는 실제 압축기 작동의 기계적 Beads 반영한 랜덤신호 기반 소스 모델을 제안한다. 제안 모 BS 매 사이클마다 토출 시간, 토출 진폭, 토출 시작 시점에 랜덤 Wes 부여하는 방식으로 구성된다. 이를 통해 생성된 소스 신호는 FFT 분석 결과에서 실제 압축기 토출 소음 스펙트럼과 유사한 광대역 특성을 나 타내며, 특정 고조파 성분 외에 대역 전반에 걸친 맥동 에너지 분포를 재현할 수 있다. 본 방법은 음향 해석 모델의 소스 입력으로 적용하여, 설계 변경에 따른 토출계 형상의 상대적인 맥동 저감 효과를 평가하고 초기 설계 단계에서 맥동 수준을 가놈하는 실용적인 수단으로 Bee 수 있다. o 100 200 300 400 500 600 700 800 900 1000 &apos; x , aoa ‘ ‘00 400 500 - 000 7700 800 900 1000 Frequency [He] frequency [Hz]</abstract>
+  <abstract>레시프로 압축기의 토출계에서 발생하는 압력맥동은 냉장고 시스템 내 배관 진동 및 소음의 주요 원인 중 하나이다. 기존의 압력맥동 해석 방식은 음향해석에 기반하여, 토출계 내 전 주파수 대역에 걸쳐 일정한 크기의 질량 소스를 가정하고 토출 출구에서의 압력맥동을 계산하는 방법이 주로 사용되어 왔다. 그러나 이 방법은 실제 압축기 작동 시 발생하는 물리적 소스와 상당한 차이가 있어, 실험 결과와의 정합성 확보 및 설계 단계에서의 맥동 수준 예측에 한계가 있다. 이를 보완하기 위한 접근으로SGXkG 압축기 성능해석을 통해 산출된 한 사이클 내 토출 유량 파형을 소스로 활용하는 방법이 있다. 성능해석은 Pol tropic 압축 과정 기반의 통합 사이클 시뮬레이션으로 구성되며, 토출 밸브 거동으로부터 한 사이클의 토출 유량 파형을 계산할 수 있다. 그러나 이 방법 역시 이상적인 정상 작동 조건을 가정한 단일 사이클 파형에 기반하므로, 실제 기계 작동 시 존재하는 사이클 간 변동성(c cle- to-c cle variation)을 반영하지 못한다는 한계가 있다. G 본 연구에서는 실제 압축기 작동의 기계적 변동성을 반영한 랜덤신호 기반 소스 모델을 제안한다. 제안 모 델은 매 사이클마다 토출 시간, 토출 진폭, 토출 시작 시점에 랜덤 변동을 부여하는 방식으로 구성된다. 이를 통해 생성된 소스 신호는 mm{G 분석 결과에서 실제 압축기 토출 소음 스펙트럼과 유사한 광대역 특성을 나 타내며, 특정 고조파 성분 외에 대역 전반에 걸친 맥동 에너지 분포를 재현할 수 있다. 본 방법은 음향 해석 모델의 소스 입력으로 적용하여, 설계 변경에 따른 토출계 형상의 상대적인 맥동 저감 효과를 평가하고 초기 설계 단계에서 맥동 수준을 가늠하는 실용적인 수단으로 활용될 수 있다.</abstract>
   <source_page>180</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.719</extraction_quality>
   <pageImage>/paper-pages/p110.webp</pageImage>
   <affiliations>
     <affiliation>LG전자</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Pressure Pulsation(3}@4 &quot;4-S)</keyword>
-    <keyword>Reciprocating Compressor(a]*] ==. 압축기)</keyword>
-    <keyword>Randomized 81808!(랜덤신호)</keyword>
+    <keyword>Pressure Pulsation(압력맥동)</keyword>
+    <keyword>Reciprocating Compressor(레시프로 압축기)</keyword>
+    <keyword>Randomized Signal(랜덤신호)</keyword>
+    <keyword>Source Model(소스모델)</keyword>
+    <keyword>Acoustic Analysis(음향해석)</keyword>
   </keywords>
 </paper>

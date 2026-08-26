@@ -11,17 +11,19 @@
   <time>15:20~15:35</time>
   <venue>오팔홀[1]</venue>
   <chair>백승훈(부산대)</chair>
-  <abstract>through(2 &quot;82-3 최근 병역 Ade] 급격한 감소와 함께 소형무인전투체계 및 유무인 복합전투체계의 중요성이 빠르게 중 가하고 있다. 이러한 체계에서는 소형 플랫폼에 탑재되는 무장의 안정적인 운용이 중요한 기술적 과제로 떠오르고 있으며, 특히 사격 시 발생하는 주퇴력을 효과적으로 제어하는 기술이 요구된다. 본 발표에서는 이러한 문제를 해결하기 위한 접근으로 비선형 동역학 및 진동 이론을 활용한 새로운 주퇴력 흡수 메커니 즘을 소개한다. 제안된 메커니즘은 비선형 진동계의 동역학적 특성을 이용하여 주퇴 과정에서 발생하는 충격 하중을 완화하고, 이로써 소형 플랫폼에서도 안정적인 무장 운용을 가능케 할 것으로 기대된다. 특히 본 연구에서는 이러한 작동 원리를 전달력 무력화로 정의하고, 선형 시스템과의 비교를 통해 성능 개선의 AGS 확인한다. 또한 보다 실용적인 설계를 위해 자석 기반 메커니즘을 제안하고, 해당 설계의 응용 가 능성을 수치 해석을 통해 검토한다. + 교신저자; 충북대학교 기계공학부 + 전북때학교 기계설계공학부</abstract>
+  <abstract>최근 병역 자원의 격한 감소와 함께 소형무인전투체계 및 유무인 복합전투체계의 중요성이 빠르게 증 가하고 있다. 이러한 체계에서는 소형 플랫폼에 탑재되는 무장의 안정적인 운용이 중요한 기술적 과제로 떠오르고 있으며, 특히 사격 시 발생하는 주퇴력을 효과적으로 제어하는 기술이 요구된다. 본 발표에서는 이러한 문제를 해결하기 위한 접근으로 비선형 동역학 및 진동 이론을 활용한 새로운 주퇴력 흡수 메커니 즘을 소개한다. 제안된 메커니즘은 비선형 진동계의 동역학적 특성을 이용하여 주퇴 과정에서 발생하는 충격 하중을 완화하고, 이로써 소형 플랫폼에서도 안정적인 무장 운용을 가능케 할 것으로 기대된다. 특히 본 연구에서는 이러한 작동 원리를 전달력 무력화로 정의하고, 선형 시스템과의 비교를 통해 성능 개선의 정도를 확인한다. 또한 보다 실용적인 설계를 위해 자석 기반 메커니즘을 제안하고, 해당 설계의 응용 가 능성을 수치 해석을 통해 검토한다. ˋ G교신저자bG 충북대학교 기계공학부 Q lTaGUgUU JG 충북대학교 기계공학부 전북대학교# 기계설계공학부</abstract>
   <source_page>266</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.724</extraction_quality>
   <pageImage>/paper-pages/p158.webp</pageImage>
   <affiliations>
     <affiliation>충북대</affiliation>
     <affiliation>전북대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Recoil force absorption(2]4 흡수)</keyword>
-    <keyword>Shock mitigation 2 완화)</keyword>
-    <keyword>Vibration 00000[(진동 제어)</keyword>
-    <keyword>Snap-</keyword>
+    <keyword>Recoil force absorption(주퇴력 흡수)</keyword>
+    <keyword>Shock mitigation(충격 완화)</keyword>
+    <keyword>Vibration control(진동 제어)</keyword>
+    <keyword>Snapthrough(스냅스루)</keyword>
   </keywords>
 </paper>

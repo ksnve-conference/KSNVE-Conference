@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
+import AppHeader from '@/components/AppHeader';
+import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
 import FloorPlanViewer from '@/components/FloorPlanViewer';
 import { venues, type Venue } from '@/lib/conference';
 
@@ -27,8 +29,8 @@ function roomVenues(names: readonly string[]) {
 export default function VenueLayoutPage() {
   return (
     <main className="shell detail-shell venue-guide-page">
-      <Header compact />
-      <Link href="/?tab=more" className="back">← 더보기</Link>
+      <AppHeader compact />
+      <BackLink fallback="/more" label="더보기" />
       <div className="venue-guide-heading">
         <span className="kicker">VENUE GUIDE</span>
         <h1>행사장 배치도</h1>
@@ -51,6 +53,7 @@ export default function VenueLayoutPage() {
           </section>
         ))}
       </div>
+      <AppTabs />
     </main>
   );
 }

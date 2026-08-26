@@ -11,14 +11,17 @@
   <time>16:15~16:30</time>
   <venue>사파이어홀[2]</venue>
   <chair>윤태영(국립창원대)</chair>
-  <abstract>에터),100461040(이온성 액체), 4016048000080106(분자동역학) 전기차) 배터리 팩에서는 구조적 안정성과 경량화를 위해 접착 접합이 널리 사용되지만, 강한 접착 특성은 분해 및 재활용 공정에서 제약으로 작용한다. 이에 따라 전기장 인가를 통해 접작력을 SEALE AVS 수 있는 전기화학적 탈착 4A] (Electrochemically Debonding Adhesives, EDA)7} 주목받고 있으며, 이온성 액체를 포함한 에폭시 시스템은 전압 인가 시 이온 이동 및 계면 반응을 통해 접착 계면을 선택적으로 약화시킬 수 있다. 본 연구에서는 PEGDE(polyethylene glycol diglycidyl 60161)를 도입한 에폭시/이온성액체 시스템을 대상으로 분자동역학05602) 시뮬레이션을 수행하여 탈착 메커니즘을 분석하였다. 그 결과, PEGDE 함량 중가에 따라 고차 이온 클러스터가 억제되고 자유 이온 분율이 중가하며,0ㅁ001460 Nernst-Einstein 기반 이온전도도가 향상되는 경향을 확인하였다. 이는 28017-이온 간 상호작용이 이온 결합을 약화시켜 이온 수송을 촉진함을 의미한다. 이러한 분자 수준 변화는 전기장 인가 시 계면으로의 이온 이동을 가속화하여 탈착 효율 향상에 직접적으로 기여할 수 있다. 또한, Al/epoxy/Al 및 AlOs/epoxy/Al 계면에서 전단 시뮬레이션을 수행한 결과, 전기장 조건을 모사한 경우 파괴 모드가 601168146 failure] interfacial faillurel 전환되는 경향을 확인하였다. 이는 전기화학 반응에 의해 계면 Ayo] 선택적으로 약화되어 탈착이 유도됨을 의미한다. 한편, 전기차 운용 환경에서는 약 10-190 Hz 범위의 Also] 지속적으로 작용하며, 이러한 동적 하중은 접착 계면의 기계적 안정성에 영향을 미칠 수 있다. 따라서 진동은 탈착을 유도하는 요인이 아니라, 전기화학적 탈착 기능을 갖는 접착제가 실제 환경에서도 접합 상태를 유지할 수 있는지를 평가하기 위한 중요한 조건이며, 본 연구에서 Ale 계면 전단 기반 해석은 향후 진동 조건 하에서의 접착 강도 변화 및 계면 거동 분석으로 확장될 수 있다. 특히 이러한 접근은 전기적 자극에 의한 탈착 성능과 동적 환경에서의 구조적 신뢰성을 동시에 고려한 접착 설계 전략으로 확장될 수 있다. Epoxy Components Epoxy System Construction Debonding Simulation Experimental Validation Resin Liquids SER rey, eee pom | - 4 PE Snag so ;</abstract>
+  <abstract>배터리 팩에서는 구조적 안정성과 경량화를 위해 접착 접합이 널리 사용되지만, 강한 접착 특성은 분해 및 재활용 공정에서 제약으로 작용한다. 이에 따라 전기장 인가를 통해 접착력을 능동적으로 제어할 수 있는 전기화학적 탈착 접착제(Electrochemicall Debonding Adhesives, EDA)가 주목받고 있으며, 이온성 액체를 포함한 에폭시 시스템은 전압 인가 시 이온 이동 및 계면 반응을 통해 접착 계면을 선택적으로 약화시킬 수 있다. 본 연구에서는 PEGDE(pol eth lene gl col digl cid l ether)를 도입한 에폭시/이온성액체 시스템을 대상으로 분자동역학(MD) 시뮬레이션을 수행하여 탈착 메커니즘을 분석하였다. 그 결과SGwlnklG 함량 증가에 따라 고차 이온 클러스터가 억제되고 자유 이온 분율이 증가하며, modified Nernst-Einstein 기반 이온전도도가 향상되는 경향을 확인하였다. 이는 wlnklT이온 간 상호작용이 이온 결합을 약화시켜 이온 수송을 촉진함을 의미한다. 이러한 분자 수준 변화는 전기장 인가 시 계면으로의 이온 이동을 가속화하여 탈착 효율 향상에 직접적으로 기여할 수 있다. 또한, Al/epox /Al 및 Al2O3/epox /Al 계면에서 전단 시뮬레이션을 수행한 결과, 전기장 조건을 모사한 경우 파괴 모드가 cohesive failure에서 interfacial failure로 전환되는 경향을 확인하였다. 이는 전기화학 반응에 의해 계면 결합이 선택적으로 약화되어 탈착이 유도됨을 의미한다. 한편, 전기차 운용 환경에서는 약 10-190 Hz 범위의 진동이 지속적으로 작용하며, 이러한 동적 하중은 접착 계면의 기계적 안정성에 영향을 미칠 수 있다. 따라서 진동은 탈착을 유도하는 요인이 아니라, 전기화학적 탈착 기능을 갖는 접착제가 실제 환경에서도 접합 상태를 유지할 수 있는지를 평가하기 위한 중요한 조건이며, 본 연구에서 제시한 계면 전단 기반 해석은 향후 진동 조건 하에서의 접착 강도 변화 및 계면 거동 분석으로 확장될 수 있다. 특히 이러한 접근은 전기적 자극에 의한 탈착 성능과 동적 환경에서의 구조적 신뢰성을 동시에 고려한 접착 설계 전략으로 확장될 수 있다.</abstract>
   <source_page>122</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.738</extraction_quality>
   <pageImage>/paper-pages/p049.webp</pageImage>
   <affiliations>
     <affiliation>창원대</affiliation>
     <affiliation>아주대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Electrochemically debonding adhesive (17) 42-4 탈착 접착제) 08001 (폴리에틸렌글리콜 디글리시딜</keyword>
+    <keyword>Electrochemically debonding adhesive (전기화학적 탈착 접착제)</keyword>
+    <keyword>PEGDE (폴리에틸렌글리콜 디글리시딜</keyword>
   </keywords>
 </paper>

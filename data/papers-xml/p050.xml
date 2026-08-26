@@ -11,16 +11,19 @@
   <time>16:30~16:45</time>
   <venue>사파이어홀[2]</venue>
   <chair>윤태영(국립창원대)</chair>
-  <abstract>High-temperature 04660(고은 크리프) 니켈 초내열합금(00006! 718)은 우수한 고온 강도와 내식성을 바탕으로 극한 환경용 핵심 부품에 널리 활 용되고 있다. 최근 항공우주 및 발전 WAS 복잡 형상의 니어 넷 o]=(Near-net-shape) 구현이 가능한 적충제조(&amp;001076 Manufacturing) 기술을 도입하며 제조 패러다임의 전환을 맞이하고 있다. 다만, 해당 공 정의 급속 웅고 및 열이력에서 기인하는 고유한 미세구조적 불균일성이 재료의 고온 크리프(76620) AS 미치는 St 대해서는 여전히 심도 있는 학술적 규명이 요구되는 실정이다. 본 연구에서는 적층제조 공정 조건을 전산 모사하여 형성된 미세구조 내 다양한 결함([76[6019)들을 확인 하고, 이를 바탕으로 분자동역학(\1016048+ Dynamics) 시뮬레이션을 통해 4 ASA (yyy) 크리프 ASS 정량적으로 평가하였다. 특히 실현 및 연속체 역학 기반 해석으로는 분리가 불가능한 개별 석출상의 크리프 저항 기여도를 원자 단위의 국부적 메커니즘 추적을 통해 규명하였다. 이러한 분석 결과는 적층제조 소재의 미세 ads} 특정 강화상의 상호작용이 고온 변형 저항성에 기여하는 물리적 원리를 제시하며, 향후 멀티스 케일 기반의 재료 설계 및 신뢰성 해석을 위한 핵심적 이론 근거로 활용될 것으로 기대된다. (a) (b) (©) Precedinglayer ㄴㄴ 106 00000 20… BB … 9 ace Others Temperature (K)</abstract>
+  <abstract>은 우수한 고온 강도와 내식성을 바탕으로 극한 환경용 핵심 부품에 널리 활 용되고 있다. 최근 항공우주 및 발전 산업은 복잡 형상의 니어 넷 쉐이프(Near-net-shape) 구현이 가능한 적층제조(Additive Manufacturing) 기술을 도입하며 제조 패러다임의 전환을 맞이하고 있다. 다만, 해당 공 정의 속 응고 및 열이력에서 기인하는 고유한 미세구조적 불균일성이 재료의 고온 크리프(Creep) 거동에 미치는 영향에 대해서는 여전히 심도 있는 학술적 규명이 요구되는 실정이다. 본 연구에서는 적층제조 공정 조건을 전산 모사하여 형성된 미세구조 내 다양한 결함(Defects)들을 확인 하고, 이를 바탕으로 분자동역학(Molecular k namics) 시뮬레이션을 통해 각 석출상+γ규2γ귝)의 크리프 거동을 정량적으로 평가하였다. 특히 실험 및 연속체 역학 기반 해석으로는 분리가 불가능한 개별 석출상의 크리프 저항 기여도를 원자 단위의 국부적 메커니즘 추적을 통해 규명하였다. 이러한 분석 결과는 적층제조 소재의 미세 결함과 특정 강화상의 상호작용이 고온 변형 저항성에 기여하는 물리적 원리를 제시하며, 향후 멀티스 케일 기반의 재료 설계 및 신뢰성 해석을 위한 핵심적 이론 근거로 활용될 것으로 기대된다.</abstract>
   <source_page>123</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.736</extraction_quality>
   <pageImage>/paper-pages/p050.webp</pageImage>
   <affiliations>
     <affiliation>고려대</affiliation>
     <affiliation>창원대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Molecular 120080408(분자동역학)</keyword>
-    <keyword>Incond 718744 기반 초합금)</keyword>
-    <keyword>11&quot; Precipitates 20856(강화 4273)</keyword>
+    <keyword>Molecular Dynamics(분자동역학)</keyword>
+    <keyword>Inconel 718(니켈 기반 초합금)</keyword>
+    <keyword>γ규/γ귝 Precipitates phase(강화 석출상)</keyword>
+    <keyword>High-temperature Creep(고온 크리프)</keyword>
   </keywords>
 </paper>

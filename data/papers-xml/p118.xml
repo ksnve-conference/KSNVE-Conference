@@ -11,16 +11,18 @@
   <time>14:40~15:00</time>
   <venue>사파이어홀[2]</venue>
   <chair>기성현(LG전자)</chair>
-  <abstract>&lt;하만카돈 자동차 사운드 특징&gt; 가장 중요하게 생각하는 QA Spectral Accuracy F, 본연의 소리를 정확히 전달하는 A. 전체적으로 균헝잡히고 부드러운 음색으로 특히 왜곡없이 투명하고 깨끗한 소리를 추구함. 보다 넓은 스테이지와 함께 Bash 악기가 정직하게 재현이 될 수 있도록 함. &lt;하만카돈 오디오 ASS 위한 자동차 개발 단계&gt; 1. 차량 등급에 맞게 시스템 레이아웃 구성 및 스퍼커 선정 2. 하마카돈 스피커 위치, 그릴디자인, 사운드 기능 등 협의/결정 8. 프로토 / 과일 두 번의 사운드 HY 진행 : 미디어, 라디오, 경고음 등 4. 올바른 튜닝 데이터가 적용 여부 확인을 위한 차량 평가 진행 &lt; UAE 차량 사운드 튜닝 프로세스 &gt; 자동차 오디오 사운드 YS 차량 공간 사운드를 설계하는 개넘으로 볼 수 있다. 비대칭적인 Bal 공간과 여러 스피커들의 조화로운 WPS 위해 차량 튜닝은 필수적이다. 사운드의 기본적인 밸런스 뿐만 아니라 보컬, 악기 SS 원하는 위치에서 표현될 수 있도록 하는 것이 목표이며 이를 위해 객관적인 차량 특성에 대한 측정과 이를 바탕으로 한 엔지지어의 주관적인 Woe 튜닝이 이루어 진다 SURKCTIVE omectve ; 고 im ™ 도 &apos; \ ssh NM 2 \ a. 0 호성 j Vo # ~~! = \ nderstanding the relationship between. ㅣ \ perception and measurement ㅣ ma</abstract>
+  <abstract>가장 중요하게 생각하는 요소는 Spectral Accurac G 즉, 본연의 소리를 정확히 전달하는 것. 전체적으로 균형잡히고 부드러운 음색으로 특히 왜곡없이 투명하고 깨끗한 소리를 추구함. 보다 넓은 스테이지와 함께 보컬과 악기가 정직하게 재현이 될 수 있도록 함. c하만카돈 오디오 적용을 위한 자동차 개발 단계eG XU 차량 등 에 맞게 시스템 레이아웃 구성 및 스피커 선정 2. 하마카돈 스피커 위치, 그릴디자인, 사운드 기능 등 협의/결정 ZU 프로토 VG 파일럿 두 번의 사운드 튜닝 진행 aG 미디어, 라디오, 경고음 등 [U 올바른 튜닝 데이터가 적용 여부 확인을 위한 차량 평가 진행 G cG 하만카돈 차량 사운드 튜닝 프로세스 eG 자동차 오디오 사운드 튜닝은 차량 공간 사운드를 설계하는 개념으로 볼 수 있다. 비대칭적인 청취 공간과 여러 스피커들의 조화로운 결합을 위해 차량 튜닝은 필수적이다. 사운드의 기본적인 밸런스 뿐만 아니라 보컬, 악기 등을 원하는 위치에서 표현될 수 있도록 하는 것이 목표이며 이를 위해 객관적인 차량 특성에 대한 측정과 이를 바탕으로 한 엔지지어의 주관적인 판단으로 튜닝이 이루어 진다</abstract>
   <source_page>226</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.717</extraction_quality>
   <pageImage>/paper-pages/p118.webp</pageImage>
   <affiliations>
     <affiliation>하만</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Harman/Kardon(} 9h 7H)</keyword>
-    <keyword>Sound AK)</keyword>
-    <keyword>Car(ZHE 4h</keyword>
-    <keyword>Tuning ed)</keyword>
+    <keyword>Harman/Kardon(하만카돈)</keyword>
+    <keyword>Sound(사운드)</keyword>
+    <keyword>Car(자동차)</keyword>
+    <keyword>Tuning(튜닝) c하만카돈  자동차  사운드  특징eG</keyword>
   </keywords>
 </paper>

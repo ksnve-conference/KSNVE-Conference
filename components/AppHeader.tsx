@@ -1,0 +1,45 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import Icon from '@/components/Icon';
+import { conferenceConfig } from '@/lib/conference-config';
+
+type Props = { compact?: boolean; showSearch?: boolean; unread?: number };
+
+export default function AppHeader({ compact = false, showSearch = true, unread = 0 }: Props) {
+  return (
+    <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
+      <Link href="/" className="brand-mark">
+        <Image
+          className="brand-logo"
+          src="/images/ksnve-logo-transparent.png"
+          alt="한국소음진동공학회"
+          width={594}
+          height={587}
+          sizes="(max-width: 560px) 76px, 92px"
+          priority
+        />
+        <div className="hero-title-block">
+          <b>{conferenceConfig.headerTitle}</b>
+          <small>
+            <span>{conferenceConfig.displayDate}</span>
+            <span>{conferenceConfig.venue}</span>
+          </small>
+          {!compact && <em className="conference-tagline">지속가능한 내일의 소음 진동</em>}
+        </div>
+      </Link>
+      <nav className="hero-links" aria-label="바로가기">
+        {showSearch && (
+          <Link href="/search" aria-label="통합 검색">
+            <Icon name="search" size={18} />
+          </Link>
+        )}
+        <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
+          <Icon name="notice" size={18} />
+          {unread > 0 && <i className="hero-badge">{unread}</i>}
+        </Link>
+      </nav>
+    </header>
+  );
+}

@@ -11,15 +11,19 @@
   <time>14:20~14:35</time>
   <venue>사파이어홀[1]</venue>
   <chair>김재환(국립금오공대)</chair>
-  <abstract>Preview 00000[(전륜기반 후륜 프리뷰 제어 Road Roughness(=Z 거칠기), 차량 (Vehicle Velocity) 최근 차량 현가제어는 노면 정보를 선제적으로 활용하는 프리뷰 제어 기반으로 발전하고 있으며, 이를 위 해 카메라 및 라이다와 같은 전방 노면 탐지 센서가 널리 사용되고 있다. 그러나 이러한 센서는 설치 비용이 높고, #2 날씨나 전방 장애물 등 외부 환경에 따라 성능 저하가 발생할 수 있다. 이에 따라 칼만필터를 활 용한 차량 동역학 기반 도로 추정 기법이 대안으로 주목받고 있다. 하지만 실제 주행 환경에서는 차량 속도 와 도로 거칠기가 지속적으로 변하므로, 고정된 공분산을 사용하는 기존 칼만필터로는 안정적인 도로 추정 성능 Guo] 한계가 있다. 특히 속도 변화는 공간 해상도와 관측 주파수 대역을 변화시키고, 도로 거칠기 변 화는 모델 불일치를 중가시켜 도로 추정 정확도에 영향을 미친다. 본 연구에서는 이러한 문제를 해결하기 위해 차량 속도(61106 \610011)와 노로 거칠기 정보(&amp;1)\)를 반 영하는 A 칼만필터(15008) 기반 전륜 도로 추정 기법과 이를 후륜 제어에 연계하는 전륜기반 후륜 프리 뷰 제어(88380) FAS 제안한다. 제안 기법은 차체 및 전륜 훨 센서 ASS 이용해 도로 VAS 추정하며, 2 수직 가속도 기반 ADV 지표와 차량 SES 활용하여 차량 주행 조건에 따라 공정잡음 공분산 Qs 가변 적으로 조정해 도로 추정 Veo] 향상되도록 구성하였다. 이를 차량 동역학 시뮬레이션(237910)을 통해 고 정 @ 기반 필터와 비교 검중한 결과, 제안 AS 도로 추정 정확도 및 제어 성능 측면에서 개선된 age 보였다. Controller Sensor Data (Skyhook) (CarSim) Road Front Sensor Rear Suspension | Estimation Signal Controller a ime Varyin; Vehicle Velocity, ADV ongitudinal Vx (Vehicle Velocity)</abstract>
+  <abstract>최근 차량 현가제어는 노면 정보를 선제적으로 활용하는 프리뷰 제어 기반으로 발전하고 있으며, 이를 위 해 카메라 및 라이다와 같은 전방 노면 탐지 센서가 널리 사용되고 있다. 그러나 이러한 센서는 설치 비용이 높고, 궂은 날씨나 전방 장애물 등 외부 환경에 따라 성능 저하가 발생할 수 있다. 이에 따라 칼만필터를 활 용한 차량 동역학 기반 도로 추정 기법이 대안으로 주목받고 있다. 하지만 실제 주행 환경에서는 차량 속도 와 도로 거칠기가 지속적으로 변하므로, 고정된 공분산을 사용하는 기존 칼만필터로는 안정적인 도로 추정 성능 확보에 한계가 있다. 특히 속도 변화는 공간 해상도와 관측 주파수 대역을 변화시키고, 도로 거칠기 변 화는 모델 불일치를 증가시켜 도로 추정 정확도에 영향을 미친다. 본 연구에서는 이러한 문제를 해결하기 위해 차량 속도(Vehicle Velocit )와 도로 거칠기 정보(ADV)를 반 영하는 시변 칼만필터(TVKF) 기반 전륜 도로 추정 기법과 이를 후륜 제어에 연계하는 전륜기반 후륜 프리 뷰 제어OmiyjPG 구조를 제안한다. 제안 기법은 차체 및 전륜 휠 센서 신호를 이용해 도로 입력을 추정하며, 휠 수직 가속도 기반 ADV 지표와 차량 속도를 활용하여 차량 주행 조건에 따라 공정잡음 공분산 Q 를 가변 적으로 조정해 도로 추정 성능이 향상되도록 구성하였다. 이를 차량 동역학 시뮬레이션(CarSim)을 통해 고 정 x 기반 필터와 비교 검증한 결과, 제안 기법은 도로 추정 정확도 및 제어 성능 측면에서 개선된 결과를 보였다.</abstract>
   <source_page>92</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.714</extraction_quality>
   <pageImage>/paper-pages/p019.webp</pageImage>
   <affiliations>
     <affiliation>공주대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Time-Varying Kalman 1116(시변 칼만필터)</keyword>
-    <keyword>Road Estimation’ 74)</keyword>
-    <keyword>Front-Wheel-Based Rear-Wheel</keyword>
+    <keyword>Time-Varying Kalman Filter(시변 칼만필터)</keyword>
+    <keyword>Road Estimation(도로 추정)</keyword>
+    <keyword>Front-Wheel-Based Rear-Wheel Preview Control(전륜기반 후륜 프리뷰 제어)</keyword>
+    <keyword>Road Roughness(도로 거칠기)</keyword>
+    <keyword>차량 속도(Vehicle Velocity)</keyword>
   </keywords>
 </paper>

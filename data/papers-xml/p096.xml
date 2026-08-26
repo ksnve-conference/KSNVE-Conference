@@ -11,15 +11,19 @@
   <time>11:10~11:25</time>
   <venue>오팔홀[1]</venue>
   <chair>정의봉(LIG D&amp;A)</chair>
-  <abstract>Partition Effect (격벽 영향), Sound Propagation (음파 전달) 군용 셀터는 다양한 전자 및 기계 장비가 밀집된 환경에서 운용되며, MIL-STD-1474E 등 소음 기준을 만족해야 하므로 설계 단계에서 소음 예측이 요구된다. 그러나 aa 내부는 격벽, 문 구조, 장비 배치 및 반 AA 특성으로 인해 자유음장과 상이한 복합 음향장을 형성하여 단순 예측이 어려운 한계를 가진다. 이에 본 연구에서는 군용 첼터 환경에서 소음원 특성과 예측 기법을 분석하고, 보정 접근법을 제시하고자 한다. 본 연구에서는 40 # 군용 첼터 내부를 대상으로 양압기, UPS, Rack 장비, 냉방 및 난방 Bajo] 단독 소 음 및 복합 ASS 측경하였다. 측정 공간은 240 격자 형태로 구성하였으며, 격벽을 포함한 운용 조건을 반영하였다. 각 소음원에 대해 자유음장 기반 거리 AAAS 이용하여 ASRS 산출하고, 보정항을 도입하 여 보정 예측값을 생성하여 RMSE(Root Mean Square Error)S 이용해 보정 효과를 정량적으로 평가하였다. 분석 결과, 양압기는 확산성 음원 특성으로 인해 전반적으로 예측값이 과소평가되는 경향을 보였으며, Rack 장비는 격벽에 의한 차폐 효과로 인해 좌-우 구역 간 큰 오차 편차가 나타났다. 냉:난방 장치는 방향 성 영향으로 인해 특정 영역에서 예측 오차가 중가하는 SAS 보였다. 첼터 내부 음장이 단순 거리감쇠로 설명되지 않음을 확인하였다. BAA 적용 결과, 단독 ASA 기준 RMSES 양압기 60.0% 감소, Rack 장비 76.8% 감소, UPS 27.7% 감소, 냉방 38.3%, 난방 38.5% 감소로 개선되었다. 그러나 복합 소음의 경우 RMSE 4.0% 감소로 제한적 인 개선만 나타났으며, 이는 다중 소음원 간 상호작용과 공간 내 반사 및 구조 전달 효과가 단순 구역 보정 으로는 중분히 반영되지 않기 때문으로 판단된다. 본 연구는 군용 첼터 내부 소음 예측 시 자유음장 기반 접근의 한계를 정량적으로 제시하고, 소음원 유형 및 공간 구조를 고려한 보정 필요성을 확인하였다. 또한, 향후 aq 설계 단계에서 기준 만족을 위한 소음 저감 설계(격벽 배치, 장비 위치 최적화, 흡음 구조 ADA 활용 가능한 기초 데이터를 제안한다. Blower ~ Measured - Predicted a al | [miter Comacton Bottom 67 73 41 15 10 까 get a es “Posten Ite, se 8 」 Blower - Measured - Corrected Predicted [개 (left 410.3 dB /Right ¥5.34B) rane | &apos; a 13 02 “= 0 ~ i: 2 cn asr 7 salem Position Index ar |</abstract>
+  <abstract>군용 셀터는 다양한 전자 및 기계 장비가 밀집된 환경에서 운용되며, 441ㅁ-8710-14748 등 소음 기준을 만족해야 하므로 설계 단계에서 소음 예측이 요구된다. 그러나 셀터 내부는 격벽, 문 구조, 장비 배치 및 반 사 특성으로 인해 자유음장과 상이한 복합 음향장을 형성하여 단순 예측이 어려운 한계를 가진다. 이에 본 연구에서는 군용 첼터 환경에서 소음원 특성과 예측 기법을 분석하고, 보정 접근법을 제시하고자 한다. 본 연구에서는 40 군용 셀터 내부를 대상으로 양압기, 0809, #80【 장비, 냉방 및 난방 장치의 단독 소 음 및 복합 소음을 측정하였다. 측정 공간은 2×10 격자 형태로 구성하였으며, 격벽을 포함한 운용 조건을 반영하였다. 각 소음원에 대해 자유음장 기반 거리 감쇠식을 이용하여 예측값을 산출하고, BAYS Ego} 여 보정 예측값을 생성하여 &amp;4498(0《001[ Mean Square 8ㅁ01)를 이용해 보정 효과를 정량적으로 평가하였다. 분석 결과, 양압기는 확산성 음원 특성으로 인해 전반적으로 예측값이 과소평가되는 경향을 보였으며,</abstract>
   <source_page>166</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.648</extraction_quality>
   <pageImage>/paper-pages/p096.webp</pageImage>
   <affiliations>
     <affiliation>LIG D&amp;A</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Shelter System (첼터 시스템)</keyword>
-    <keyword>Noise Characteristics (42% 특성)</keyword>
-    <keyword>Combined Noise (44 소음)</keyword>
+    <keyword>Shelter System (#1E] 4] 41)</keyword>
+    <keyword>Noise Characteristics (42-4 §73)</keyword>
+    <keyword>Combined 10156 (복합 소음)</keyword>
+    <keyword>Partition Effect (4"} @ %)</keyword>
+    <keyword>Sound Propagation (@ =} 41%)</keyword>
   </keywords>
 </paper>

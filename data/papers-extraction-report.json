@@ -1,49 +1,23 @@
 {
-  "validated_at": "2026-07-03T17:31:23.337Z",
-  "valid": true,
-  "promoted": true,
-  "expected_papers": 248,
-  "xml_files": 248,
-  "parsed_papers": 248,
-  "complete_papers": 248,
-  "missing_fields": [],
-  "extraction_warnings": [
-    {
-      "paper_id": "p085",
-      "fields": [
-        "affiliations",
-        "abstract",
-        "source_page"
-      ]
-    },
-    {
-      "paper_id": "p086",
-      "fields": [
-        "affiliations",
-        "abstract",
-        "source_page"
-      ]
-    },
-    {
-      "paper_id": "p087",
-      "fields": [
-        "affiliations",
-        "abstract",
-        "source_page"
-      ]
-    },
-    {
-      "paper_id": "p205",
-      "fields": [
-        "abstract"
-      ]
-    }
-  ],
-  "page_images": 245,
-  "missing_page_images": [],
-  "parsing_errors": [],
-  "duplicate_ids": [],
-  "missing_ids": [],
-  "unexpected_ids": [],
-  "json_matches_xml": true
+ "generated_at": "2026-08-26T06:44:54",
+ "total": 248,
+ "methods": {
+  "font-decode": 124,
+  "ocr-300dpi": 121,
+  "no-page": 3
+ },
+ "low_quality": [
+  "p052",
+  "p098",
+  "p123",
+  "p175",
+  "p182",
+  "p185",
+  "p229"
+ ],
+ "no_abstract": [
+  "p085",
+  "p086",
+  "p087"
+ ]
 }

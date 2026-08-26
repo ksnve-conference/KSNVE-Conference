@@ -11,8 +11,10 @@
   <time>08:55~09:10</time>
   <venue>에메랄드홀</venue>
   <chair>이종길(경국대)</chair>
-  <abstract>운동하는 물체의 내부에 장착된 SA Aelectromotive) 영구자석을 이용하여 운동 에너지를 전기적 에너지 로 변환하는 에너지 하베스팅 장치를 고안하고 최대 하베스팅 에너지가 발생하는 조건을 이론적으로 분석하 였다. 물체 속도에 비례하여 작용력을 발생하는 공통점으로부터 deal 감쇠에 상응하는 기전력 Bas 설정 하였다. 해석적으로 3 가지 운동모델을 수립하고 분석하였다. 감쇠 발전기가 고정된 Balwall) 모델, 자석이 병진 운동하는 질량(6110108 mass) 모델 그리고 완전한 진동계를 구성한 질량-스프링 (mass-spring) 모델이 다. 분석 결과 동일한 용량의 감쇠발전기를 사용하는 경우 동전질량 Bao] 최대치는 동적 부합 (dynamic matching)4] 벽 모델의 절반에 해당하고 스프링 모델은 주파수 SA(tuned model)S 통하여 벽 모델과 동일 하거나 그 이상의 하베스팅 출력이 Aedes 이론적으로 확인하였다. 실험적인 과정을 거친 질량 모델에 대 해 이론적으로 분석하고 가능한 최대 출력을 계산하여 비교하였다. 연구의 기본적 동기는 진동계의 어느 요소가 에너지 하베스팅에 영향을 주는지 밝히며 동시에 주어진 조건 에서 그 한계치와 최적의 조건은 무엇인가를 알아보는 것이다. 또한 일반적으로 관심을 갖지 않는 진동계 감 쇠에 의한 에너지 Ye (energy dissipation 1816)을 고찰하는 측면도 있다. Table 1 Goveming equation and average power of each regenerative model Sliding ss png 100 5 1 (mw)? Mass- 5 lg 그 04 그 (Ch iwt &gt;_1 (mw?) mx t+ Cx, + kx, =C&apos;x +kx = (C&apos;iw + k)Ae P, = 5 uC Ata? Gomadt ete Wall model Harvest G 5 x= 49100 | 6 Mass-spring model = . g3 www s m = 1 Sliding mass model a : “ Fe “ “ … 10 | | | C((Ns/m)</abstract>
+  <abstract>운동하는 물체의 내부에 장착된 동전형(electromotive) 영구자석을 이용하여 운동 에너지를 전기적 에너지 로 변환하는 에너지 하베스팅 장치를 고안하고 최대 하베스팅 에너지가 발생하는 조건을 이론적으로 분석하 였다. 물체 속도에 비례하여 작용력을 발생하는 공통점으로부터 진동계 감쇠에 상응하는 기전력 모델을 설정 하였다. 해석적으로 3 가지 운동모델을 수립하고 분석하였다. 감쇠 발전기가 고정된 벽체(wall) 모델, 자석이 병진 운동하는 질량(sliding mass) 모델 그리고 완전한 진동계를 구성한 질량-스프링 (mass-spring) 모델이 다. 분석 결과 동일한 용량의 감쇠발전기를 사용하는 경우 동전질량 모델의 최대치는 동적 부합 (d namic matching)시 벽 모델의 절반에 해당하고 스프링 모델은 주파수 동조(tuned model)를 통하여 벽 모델과 동일 하거나 그 이상의 하베스팅 출력이 가능함을 이론적으로 확인하였다. 실험적인 과정을 거친 질량 모델에 대 해 이론적으로 분석하고 가능한 최대 출력을 계산하여 비교하였다. 연구의 기본적 동기는 진동계의 어느 요소가 에너지 하베스팅에 영향을 주는지 밝히며 동시에 주어진 조건 에서 그 한계치와 최적의 조건은 무엇인가를 알아보는 것이다. 또한 일반적으로 관심을 갖지 않는 진동계 감 쇠에 의한 에너지 방출율 (energ dissipation rate)을 고찰하는 측면도 있다.</abstract>
   <source_page>297</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.748</extraction_quality>
   <pageImage>/paper-pages/p189.webp</pageImage>
   <affiliations>
     <affiliation>삼우ANC</affiliation>

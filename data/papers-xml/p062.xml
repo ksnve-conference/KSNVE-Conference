@@ -11,8 +11,10 @@
   <time>09:30~09:45</time>
   <venue>에메랄드홀</venue>
   <chair>이상권(인하대)</chair>
-  <abstract>Transformation(S VT), Modal Constraints on Fixtures and Systems(MCFS) BESS 443 A(dynamic subsiructuring2 서브 시스템의 동특성을 이용하여 결합 시스템의 동특성을 예 측하는 기솔로 자동차 산업 등에서 시스템 단위 성능 개선에 자주 활용되어 왔다. 특히, 복잡한 전달 특성을 합성하는 주파수 응답 함수 B41 A(frequency-based substructuring, FBS) =S 통해 차량의 응답을 예측하 고, 서브 시스템 단위의 성능 SHS 도출하는데 매우 유용하게 활용되고 있다. 한편, 부분구조합성법은 시스 템 간 경계0716ㅁ806)의 동특성이 예측 결과에 매우 큰 영향을 미친다. 기존에는 결합 지점을 변형이 없는 강체로 가정하는 가상 지점 변환 7) A(virtual point transformation, VPT)S 중심으로 점 결합 경계(6010[- like interface)] 대해 주로 접근이 가능하였다. 그러나 경계가 연속된 aA 혹은 AS 형성하는 경우 (continuous interface), 경계면의 동적 거동이 예측 결과에 큰 영향을 미쳐 Ao] 어려웠다. 이러한 한계가 실차 성능으로부터 서브 시스템 단위의 요구사항을 도출하는 목표 전개(3786 088080108)를 더 세부적인 + 조물 단위까지 수행하지 못하도록 제한하고 있다. 본 연구에서는 점, 선, 면 결합 경계를 가진 서브 시스템에 대하여 경계면의 동특성을 고려한 시험적 부분 구조합성 기술을 적용하고, 검중하였다. 볼트 결합, 접착제 결합 등 다양한 경계면의 동적 Aes OR 분해, 특이값 분해(9084107 value decomposition, SVD) SS 이용하여 정량적으로 분석하였다. 또한 분석된 경계 EAl(rigid or flexible interface)] 따라 VPT, 강성 결합(60101688 injection), LASSO(east absolute shrinkage and selection operator), SVI(singular vector transformation), MCFSGnodal constraints on fixture and subsystem) 등을 통해 경계면의 동특성을 반영하여 주파수 응답 함수를 예측하였다. 본 연구의 결과는 시험적 부분구조합성법을 기존보다 다양하고 일반적인 경계면에 적용 및 확장할 수 있는 가능성을 검중하였다. + 교신저자; 현대자동차 ages</abstract>
+  <abstract>은 서브 시스템의 동특성을 이용하여 결합 시스템의 동특성을 예 측하는 기술로 자동차 산업 등에서 시스템 단위 성능 개선에 자주 활용되어 왔다. 특히, 복잡한 전달 특성을 합성하는 주파수 응답 함수 합성법(frequenc -based substructuring, FBS) 등을 통해 차량의 응답을 예측하 고, 서브 시스템 단위의 성능 목표를 도출하는데 매우 유용하게 활용되고 있다. 한편, 부분구조합성법은 시스 템 간 경계(interface)의 동특성이 예측 결과에 매우 큰 영향을 미친다. 기존에는 결합 지점을 변형이 없는 강체로 가정하는 가상 지점 변환 기법(virtual point transformation, VPT)을 중심으로 점 결합 경계(point- like interface)에 대해 주로 접근이 가능하였다. 그러나 경계가 연속된 선 혹은 면을 형성하는 경우 (continuous interface), 경계면의 동적 거동이 예측 결과에 큰 영향을 미쳐 적용이 어려웠다. 이러한 한계가 실차 성능으로부터 서브 시스템 단위의 요구사항을 도출하는 목표 전개(target cascading)를 더 세부적인 구 조물 단위까지 수행하지 못하도록 제한하고 있다. 본 연구에서는 점, 선, 면 결합 경계를 가진 서브 시스템에 대하여 경계면의 동특성을 고려한 시험적 부분 구조합성 기술을 적용하고, 검증하였다. 볼트 결합, 접착제 결합 등 다양한 경계면의 동적 거동을 xyG 분해, 특이값 분해(singular value decomposition, z}kPG 등을 이용하여 정량적으로 분석하였다. 또한 분석된 경계 특성(rigid or flexible interface)에 따라 VPT, 강성 결합(stiffness injection), LASSO(least absolute G G G PSG z}{OG G PSG tjmzOG G G fixture and subs stem) 등을 통해 경계면의 동특성을 반영하여 주파수 응답 함수를 예측하였다. 본 연구의 결과는 시험적 부분구조합성법을 기존보다 다양하고 일반적인 경계면에 적용 및 확장할 수 있는 가능성을 검증하였다. ˋG교신저자bG 현대자동차 lTaGg UG JG 발표자bG 현대자동차 QG 현대자동차 QQG| GGsSGm GGtGl#</abstract>
   <source_page>135</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.669</extraction_quality>
   <pageImage>/paper-pages/p062.webp</pageImage>
   <affiliations>
     <affiliation>현대차</affiliation>
@@ -23,6 +25,7 @@
     <keyword>Frequency-Based Substructuring(FBS)</keyword>
     <keyword>Flexible Interface</keyword>
     <keyword>LASSO</keyword>
-    <keyword>Singular Vector</keyword>
+    <keyword>Singular Vector Transformation(SVT)</keyword>
+    <keyword>Modal Constraints on Fixtures and Systems(MCFS)</keyword>
   </keywords>
 </paper>

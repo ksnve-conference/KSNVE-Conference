@@ -11,8 +11,10 @@
   <time>10:55~11:10</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김도형(항공우주연)</chair>
-  <abstract>= 해머) 본 연구에서는 고속 비행체의 지상 진동 4) AGround Vibration Test, GVT)S 위한 시험 장치 개발의 일 환으로, 시혐체의 동특성에 대한 244 ase 수행하였다. 실물 시험체 기반 6\1는 비용 및 시험 환경 제약이 크기 때문에, 선행 연구에서는 스케일링 기법을 적용한 축소 시험체를 설계하고 수치 해석을 통해 타당성을 검중하였다. 이를 바탕으로 3차원 프린팅 기반의 축소 시혐체를 제작하였다. 본 연구에서는 자유경계 조건을 모사하기 위해 구축된 GVT 환경[11에서 기존에 제작된 축소 시혐체를 대 상으로 임팩트 해머00080 Hammer)S 이용한 가진 시험을 수행하여 동특성을 실혐적으로 검중하였다. A 측된 응답 데이터를 기반으로 주파수 응답 G+ Frequency Response Function, FRF)S 도출하고, 이를 통 해 고유진동수 및 모드 특성을 식별하였다. Ee Ad 결과를 선행 연구의 수치 해석 결과와 비교함으로써 축소 시험체의 동특성 재현성과 구조적 건전성을 검중하였다. 이를 통해 본 연구는 가진기를 이용한 지상 진동 시험(37) 수행을 위한 시험 장치 및 축소 Ada Ad 기반 동특성 AS BAS 왁림하고, 후속 단계의 실제 47 ASS 위한 기초 데이터를 제공한다. Sos = — 수 . _ aE ef +——\= .</abstract>
+  <abstract>트 해머) 본 연구에서는 고속 비행체의 지상 진동 시험(370000 \1670000 7686 07)을 위한 시험 장치 개발의 일 환으로, 시험체의 동특성에 대한 실험적 검증을 수행하였다. 실물 시험체 기반 0\1는 비용 및 시험 환경 제약이 크기 때문에, 선행 연구에서는 스케일렁 기법을 적용한 축소 시험체를 설계하고 수치 해석을 통해 타당성을 검중하였다. 이를 바탕으로 3차원 프린팅 기반의 축소 시험체를 제작하였다. 본 연구에서는 자유경계 조건을 모사하기 위해 구축된 6\7 환경[1]1에서 기존에 제작된 축소 시험체를 대 상으로 임팩트 해머00080 ㅁ800060)를 이용한 가진 시험을 수행하여 동특성을 실험적으로 검증하였다. Al 측된 응답 데이터를 기반으로 주파수 응답 함수(\7604600＊ Response Function, FRF)S “dal, JS 통 해 고유진동수 및 모드 특성을 식별하였다. 또한, 실험 결과를 선행 연구의 수치 해석 결과와 비교함으로써 SA NVA] ESQ AVI 구조적 건전성을 검증하였다. 이를 통해 본 연구는 가진기를 이용한 지상 진동 시협(0\1) 수행을 위한 시험 장치 및 축소 시험체의 실험 기반 동특성 검증 절차를 확립하고, 후속 단계의 실제 67 적용을 위한 기초 데이터를 제공한다. 루아 가이 애래 a ： ~ WY = \/</abstract>
   <source_page>358</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.629</extraction_quality>
   <pageImage>/paper-pages/p217.webp</pageImage>
   <affiliations>
     <affiliation>전북대</affiliation>
@@ -20,7 +22,8 @@
     <affiliation>국방과학연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>High-speed vehicle( = 비행 All)</keyword>
-    <keyword>Ground Vibration Test(4] 진동 시혐)。 Impact Hammer(?] 4</keyword>
+    <keyword>High-speed vehicle(a!=+ 4] |)</keyword>
+    <keyword>Ground Vibration 769((지상 진동 A] 4)</keyword>
+    <keyword>Impact Hammer(?] 24</keyword>
   </keywords>
 </paper>

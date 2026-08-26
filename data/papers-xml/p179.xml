@@ -11,17 +11,19 @@
   <time>08:55~09:10</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>고정우(항공대)</chair>
-  <abstract>동 지수), Blade-Vortex Interaction(BVI, 블레이드-와류 상호작용) 본 연구에서는 V-22 Osprey BEZEL] 25% 축소 모델인 TRAM 의 틸트로터에 대하여 이중 후퇴각 적 용 유무에 따른 허브 진동 및 BVi(Blade-Vortex Interaction) 239) 변화를 확인하였다. 회전익기 통합 해 석 코드(0010『01801【! comprehensive analysis 0006)인 CAMRAD 11 를 이용하여 블레이드의 44%R 지점에서 8 의 전진각 및 80%R 지점에서 37&quot; 의 후퇴각을 적용한 TRAM 의 틸트로터에 대하여 Aeromechanics 모 델0018. DS 구축하고, 회전익 모드의 저속 하강 4B) ARPM=1410, 1 =0.15, 및 로터 받음각(6.=6&quot; )에서 로 터 허브 진동 AVS 수행하였다. 이매, 로터 허브 Wee 로터 진동 지수(\1, Vibration Index)S 이용하여 평가하였다. 또한, 이후 Ffowes Williams and Hawking(FW-H) 기반의 Cll-Sound 를 이용하여 BVI 소음 해 AS 수행하였다. Figure 2 에서 확인할 수 있듯이, 이중 SAAS 고려한 틸트로터의 경우 저속 하강 비행에 서 로터 허브 진동 하중이 75.2% 중가하였지만, 이중 후퇴각 모델이 기본 모델과 대비하여 최대 BVI 소음 이 약 4 08 감소하였다(0846. 3). Ly a 80%R Ane eit 느나그나그 Vo \ 00111144111111111 나 { f Cc _aamr- . Rotational BVI SPL (dB) . Rotational BVI SPL (08) 8 44%R “a 3 군 7</abstract>
+  <abstract>와류 상호작용) 본 연구에서는 V-22 Ospre 틸트로터의 25% 축소 모델인 TRAM 의 틸트로터에 대하여 이중 후퇴각 적 용 유무에 따른 허브 진동 및 BVI(Blade-Vortex Interaction) 소음의 변화를 확인하였다. 회전익기 통합 해 석 코드(rotorcraft comprehensive anal sis code)인 jhtyhkG pp 를 이용하여 블레이드의 [[LyG 지점에서 8ȋ 의 전진각 및 80%R 지점에서 37ȋ 의 후퇴각을 적용한 TRAM 의 틸트로터에 대하여 Aeromechanics 모 델(Fig. 1)을 구축하고, 회전익 모드의 저속 하강 비행(RPM=1410, Ɇ =0.15, 및 로터 받음각(as=6ȋ )에서 로 터 허브 진동 해석을 수행하였다. 이때, 로터 허브 진동은 로터 진동 지수(VI, Vibration Index)를 이용하여 평가하였다. 또한, 이후 Ffowcs Williams and Hawking(FW-H) 기반의 CII-Sound 를 이용하여 i}pG 소음 해 석을 수행하였다. Figure 2 에서 확인할 수 있듯이, 이중 후퇴각을 고려한 틸트로터의 경우 저속 하강 비행에 서 로터 허브 진동 하중이 75.2% 증가하였지만, 이중 후퇴각 모델이 기본 모델과 대비하여 최대 BVI 소음 이 약 4 dB 감소하였다(Fig. 3).</abstract>
   <source_page>287</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.669</extraction_quality>
   <pageImage>/paper-pages/p179.webp</pageImage>
   <affiliations>
     <affiliation>충남대</affiliation>
     <affiliation>항공우주연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Tiltrotor(&apos;] = 2 €})</keyword>
-    <keyword>Double Sweptback angle(°] 후퇴각)</keyword>
-    <keyword>Hub Vibration(@] 2. 진동)</keyword>
+    <keyword>Tiltrotor(틸트로터)</keyword>
+    <keyword>Double Sweptback angle(이중 후퇴각)</keyword>
+    <keyword>Hub Vibration(허브 진동)</keyword>
     <keyword>Vibration Index(VI</keyword>
     <keyword>진</keyword>
   </keywords>

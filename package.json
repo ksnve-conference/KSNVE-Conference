@@ -11,19 +11,22 @@
     "extract:posters": "python3 scripts/extract-poster-papers-from-program.py",
     "render:paper-pages": "tsx scripts/render-paper-pages.ts",
     "test:mock-time": "tsx scripts/test-dashboard-mock-time.ts",
-    "validate:papers": "tsx scripts/validate-paper-xml.ts"
+    "validate:papers": "tsx scripts/validate-paper-xml.ts",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "build:font": "python3 scripts/subset-font.py"
   },
   "dependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "typescript": "latest"
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "pdfjs-dist": "^6.1.200",
-    "tsx": "^4.22.5"
+    "tsx": "^4.22.5",
+    "pretendard": "^1.3.9"
   }
 }

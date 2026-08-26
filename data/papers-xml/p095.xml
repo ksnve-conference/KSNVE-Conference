@@ -11,16 +11,20 @@
   <time>10:55~11:10</time>
   <venue>오팔홀[1]</venue>
   <chair>정의봉(LIG D&amp;A)</chair>
-  <abstract>Function), 총구 응답 $2 (Muzzle Response Reconstruction), 사격 분산도 34 7}(Firing Dispersion Evaluation) ASQ 기반 근접방어무기체계의 사격 시 발생하는 진동은 SH Tip) 거동과 탄의 초기 발사 자세에 영향 을 주어 사격 분산도 형성에 직접적으로 작용하지만, 총구 부근은 회전 및 운용 간섭으로 인해 직접 계측이 제한되는 경우가 많다. 또한 해석 기반 접근에서는 총열 구조와 지지 조건을 단순화하여 모델링하는 사례가 존재하므로, 실제 운용 경계조건이 반영된 동적 응답을 실험적으로 AST 정량화하는 데 한계가 있다. 특 히 사격 중 발생하는 반복 충격성 가진과 구조 전달특성이 중첩된 SHS 단순 시간영역 비교만으로 해석하 기 어렵기 때문에, 계측 가능한 위치의 응답으로부터 총구 응답을 복원하고 이를 사격 분산도와 연계하여 해 석할 수 있는 방법이 필요하다. 이에 본 연구에서는 센서 부착이 가능한 위치에서 획득한 계측 응답과 각 지 점 간 주파수 응답 함수(&quot;7601460068001486101400107, FRF), 그리고 유한요소해석(10116 Element Method, FEM)22 Eee? 모드형상 및 동특성 정보를 함께 이용하여 종구 응답을 복원하고, 이를 기반으로 게틀링 AAS 분산도를 평가하였다. 응답 복원 과정에서는 계측 지점과 총구 사이의 전달특성을 주파수영역에서 정 식화하고, 이를 시간영역의 컨볼루션 적분 관계로 대응시켜 해석하였으며, 4 모드의 기여는 FEM 으로부터 확보한 모드형상비를 반영하여 정량화하였다. 이를 통해 직접 계측이 어려운 총구 AAS SHS 측정 가능 지점의 신호로부터 추정하였고, 실험 계측값과 해석 기반 전달특성을 동일한 비교 체계에서 연계함으로써 a 제 ot 예측 응답 사이의 일관성을 확보하였다. 또한 복원된 총구 응답의 타당성을 검토하기 위하여 시간 영역 파형과 고속 푸리에 변환(0361 Fourier Transform, 811) 스펙트럼을 함께 분석하고, 과도 구간과 정상 구간에서의 응답 특성을 비교하였다. 이 과정에서 시간 동기화, 기준 구간 정렬, 드리프트 및 오프셋 AAS 포함한 전처리를 수행하여 반복 비교가 가능한 조건을 확보하였으며, 동일한 분석 조건에서 실험 응답과 예 측 응답을 정량적으로 비교하였다. 주파수영역에서는 주요 ds 성분과 wes 구조, 대역별 에너지 분포의 재현 여부를 함께 검토하였고, 시간영역에서는 복원 응답의 반복성, 진쪽 변동 경향, Peak-to-Peak(P2P) 특 성을 비교하여 종구 거동의 재현성을 확인하였다. 그 결과, Be 총구 응답은 AG 스펙트럼의 주요 고조 과 구조를 전반적으로 재현하였으며, Tip 응답 예측 OAH 약 10% 수준으로 나타났다. 또한 주요 고조파 진폭비 오차는 10% 이하로 확인되었으며, 복원된 총구 응답의 시간적 반복성과 진폭 변동 특성 역시 실험 결과와 일관된 경향을 보였다. 이를 통해 제한된 계측 조건에서도 총구 응답의 주요 진동 특성과 WIE 관 련 거동을 신뢰성 있게 평가할 수 있음을 확인하였다. 또한 계측 응답과 해석 기반 전달특성을 연계한 접근 이 SY 사격 분산도 평가에 유효하게 적용될 수 있음을 보였다. +: Member, Department of Mechanical Engineering, Gachon University, +: Department of Mechanical Engineering, Gachon University Professor + : SNT Dynamics</abstract>
+  <abstract>게틀링 기반 근접방어무기체계의 사격 시 발생하는 진동은 총구(Tip) 거동과 탄의 초기 발사 자세에 영향 을 주어 사격 분산도 형성에 직접적으로 작용하지만, 총구 부근은 회전 및 운용 간섭으로 인해 직접 계측이 제한되는 경우가 많다. 또한 해석 기반 접근에서는 총열 구조와 지지 조건을 단순화하여 모델링하는 사례가 존재하므로, 실제 운용 경계조건이 반영된 동적 응답을 실험적으로 검증하고 정량화하는 데 한계가 있다. 특 히 사격 중 발생하는 반복 충격성 가진과 구조 전달특성이 중첩된 응답은 단순 시간영역 비교만으로 해석하 기 어렵기 때문에, 계측 가능한 위치의 응답으로부터 총구 응답을 복원하고 이를 사격 분산도와 연계하여 해 석할 수 있는 방법이 필요하다. 이에 본 연구에서는 센서 부착이 가능한 위치에서 획득한 계측 응답과 각 지 점 간 주파수 응답 함수(Frequenc Response Function, FRF), 그리고 유한요소해석(Finite Element Method, mltP으로 도출한 모드형상 및 동특성 정보를 함께 이용하여 총구 응답을 복원하고, 이를 기반으로 게틀링 사격의 분산도를 평가하였다. 응답 복원 과정에서는 계측 지점과 총구 사이의 전달특성을 주파수영역에서 정 식화하고, 이를 시간영역의 컨볼루션 적분 관계로 대응시켜 해석하였으며, 각 모드의 기여는 mlt 으로부터 확보한 모드형상비를 반영하여 정량화하였다. 이를 통해 직접 계측이 어려운 총구 위치의 응답을 측정 가능 지점의 신호로부터 추정하였고, 실험 계측값과 해석 기반 전달특성을 동일한 비교 체계에서 연계함으로써 실 제 응답과 예측 응답 사이의 일관성을 확보하였다. 또한 복원된 총구 응답의 타당성을 검토하기 위하여 시간 영역 파형과 고속 푸리에 변환(Fast Fourier Transform, FFT) 스펙트럼을 함께 분석하고, 과도 구간과 정상 구간에서의 응답 특성을 비교하였다. 이 과정에서 시간 동기화, 기준 구간 정렬, 드리프트 및 오프셋 제거를 포함한 전처리를 수행하여 반복 비교가 가능한 조건을 확보하였으며, 동일한 분석 조건에서 실험 응답과 예 측 응답을 정량적으로 비교하였다. 주파수영역에서는 주요 진폭 성분과 고조파 구조, 대역별 에너지 분포의 재현 여부를 함께 검토하였고, 시간영역에서는 복원 응답의 반복성, 진폭 변동 경향, Peak-to-Peak(P2P) 특 성을 비교하여 총구 거동의 재현성을 확인하였다. 그 결과, 복원된 총구 응답은 실험 스펙트럼의 주요 고조 파 구조를 전반적으로 재현하였으며, Tip 응답 예측 오차는 약 10% 수준으로 나타났다. 또한 주요 고조파 진폭비 오차는 XWLG 이하로 확인되었으며, 복원된 총구 응답의 시간적 반복성과 진폭 변동 특성 역시 실험 결과와 일관된 경향을 보였다. 이를 통해 제한된 계측 조건에서도 총구 응답의 주요 진동 특성과 분산도 관 련 거동을 신뢰성 있게 평가할 수 있음을 확인하였다. 또한 계측 응답과 해석 기반 전달특성을 연계한 접근 이 게틀링 사격 분산도 평가에 유효하게 적용될 수 있음을 보였다. ˋGaG Member, Department of Mechanical Engineering, Gachon University, ProfessorG QG: Department of Mechanical Engineering, Gachon University QQGaGSNT DynamicsG</abstract>
   <source_page>165</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.741</extraction_quality>
   <pageImage>/paper-pages/p095.webp</pageImage>
   <affiliations>
     <affiliation>가천대</affiliation>
     <affiliation>SNT Dynamics</affiliation>
   </affiliations>
   <keywords>
-    <keyword>2=@%k(Mode Shape)</keyword>
-    <keyword>컨볼루션 444(Convolution Integral)</keyword>
-    <keyword>주파수 웅답 @&lt;F(Frequency Response</keyword>
+    <keyword>모드형상(Mode Shape)</keyword>
+    <keyword>컨볼루션 적분(Convolution Integral)</keyword>
+    <keyword>주파수 응답 함수(Frequency Response Function)</keyword>
+    <keyword>총구 응답 복원(Muzzle Response Reconstruction)</keyword>
+    <keyword>사격 분산도 평가(Firing Dispersion Evaluation)</keyword>
   </keywords>
 </paper>

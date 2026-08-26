@@ -1,3 +1,26 @@
-import Link from 'next/link'; import Header from '@/components/Header';
-const sponsors=['현대자동차','LIG D&A','LG전자','삼성전자','SK하이닉스','현대중공업','두산그룹','GS그룹'];
-export default function Sponsors(){return <main className="shell detail-shell"><Header compact/><Link href="/?tab=more" className="back">← 더보기</Link><div className="section-heading"><div><span className="kicker">PARTNERS</span><h1>함께하는 후원사</h1></div></div><div className="sponsor-grid">{sponsors.map((name)=><article className="sponsor" key={name}><strong>{name}</strong></article>)}</div></main>}
+import AppHeader from '@/components/AppHeader';
+import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
+import sponsors from '@/data/sponsors.json';
+
+export const metadata = { title: '후원사' };
+
+export default function SponsorsPage() {
+  return (
+    <main className="shell detail-shell">
+      <AppHeader compact />
+      <BackLink fallback="/more" label="더보기" />
+      <div className="section-heading">
+        <div><span className="kicker">PARTNERS</span><h1>후원 · 전시 참여사</h1></div>
+        <strong>{sponsors.companies.length}</strong>
+      </div>
+      <p className="section-note">학술대회를 후원하고 전시회에 참여하는 기업과 기관입니다.</p>
+      <div className="sponsor-grid">
+        {sponsors.companies.map((name) => (
+          <article className="sponsor" key={name}><strong>{name}</strong></article>
+        ))}
+      </div>
+      <AppTabs />
+    </main>
+  );
+}

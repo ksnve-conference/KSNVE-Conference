@@ -11,17 +11,15 @@
   <time>08:40~08:55</time>
   <venue>사파이어홀[1]</venue>
   <chair>이혁(기계연)</chair>
-  <abstract>(차량구조 Shear force (4124). 실제 차량 환경에서 볼트 체결부는 주행 중 외부 가진에 의해 전단력이 반복적으로 작용하며, 이는 체결력 저하 및 풀럼 ats 유빌하여 구조 안전성에 영향을 미친다. 기존의 직접 측정 방식은 0110 체결부 내부에 AAS 삽입해야 하는 구조적 제약과 반복적인 분해-재조립 과정으로 인한 내구도 저하 Fat 존재한다. 본 연구에서는 이러한 GAS 극복하기 위해 pillar 외부에 다점 가속도계를 부착하고, 두 지점 간 위상차로부터 유도되는 진동 인텐시티를 새로운 평가 과라미터로 정의하였다. 이를 Sa 체결부에 작용하는 전단력을 추정 하는 기법을 제안하였다. 실혐 결과, 제안된 인텐시티 기반 파라미터는 볼트 풀림에 주요하게 기여하는 저주 과 대역에서 기존 전단력 응답과 높은 PES 나타냈다. 본 기법은 차량 구조물의 체결 상태 모니터링에 효과적으로 활용될 수 있다. Ax, 건</abstract>
+  <abstract>볼트 체결부의 전단력 추정을 위한 조인트부 탄성응력 활용 연구 Shear Force Estimation in Bolted Joints Using Elastic-Stress Based Joint Interface Analysis 박경원귕پ귖ബ장연진귕څ귖ബ정현준귕څ귖ബ최성욱귕څڅ귖ബ 박준홍ನ .H\:RUGV %ROWORRVHQLQJ 볼트 풀림 3KDVHGLIIHUHQFH 위상차 6WUXFWXUDO LQWHQVLW\ 구조 인텐시티 9HKLFOHVWUXFWXUH 차량구조  6KHDUIRUFH 전단력  실제 차량 환경에서 볼트 체결부는 주행 중 외부 가진에 의해 전단력이 반복적으로 작용하며, 이는 체결력 저하 및 풀림 현상을 유발하여 구조 안전성에 영향을 미친다. 기존의 직접 측정 방식은 pillar 체결부 내부에 센서를 삽입해야 하는 구조적 제약과 반복적인 분해½재조립 과정으로 인한 내구도 저하 문제가 존재한다. 본 연구에서는 이러한 한계를 극복하기 위해 pillar 외부에 다점 가속도계를 부착하고, 두 지점 간 위상차로부터 유도되는 진동 인텐시티를 새로운 평가 파라미터로 정의하였다. 이를 통해 체결부에 작용하는 전단력을 추정 하는 기법을 제안하였다. 실험 결과, 제안된 인텐시티 기반 파라미터는 볼트 풀림에 주요하게 기여하는 저주 파 대역에서 기존 전단력 응답과 높은 유사도를 나타냈다. 본 기법은 차량 구조물의 체결 상태 모니터링에 효과적으로 활용될 수 있다. 꾰</abstract>
   <source_page>314</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.679</extraction_quality>
   <pageImage>/paper-pages/p206.webp</pageImage>
   <affiliations>
     <affiliation>한양대</affiliation>
     <affiliation>현대자동차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Bolt loosening (==. 풀림)</keyword>
-    <keyword>Phase difference (위상차)</keyword>
-    <keyword>Structural intensity (구조 인텐시티)</keyword>
-    <keyword>Vehicle structure</keyword>
   </keywords>
 </paper>

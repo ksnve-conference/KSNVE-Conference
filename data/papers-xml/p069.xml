@@ -11,8 +11,10 @@
   <time>10:00~10:15</time>
   <venue>오팔홀[1]</venue>
   <chair>김준(LIG D&amp;A)</chair>
-  <abstract>현대 전장에서 수상함에 탑재된 장비는 가혹한 중격환경에 노출되어도 기능상의 문제가 발생하지 않아야 NERS 보장받을 수 있다. 중격실험장비는 수중 SAWS 모사하는 시험을 수행하며 이를 ASS 수 있다. 이러한 충격시험은 허용응력 초과여부가 중요한 구조적 강건성뿐만 아니라 부품의 이탈 등에 기인하는 고장 을 고려한 기능적 안정성을 포함한다. 그러나 실험용 중격 입럭에 대한 Tees] 강건성이 확보되지 않으면 그 실험은 무의미하다. 다양한 유한요소해석 기법은 SA 입력 해석을 수행하여 구조적 강건성을 평가할 수 있게 한다. 시간영역의 비선형 해석은 짧은 해석주기를 유지할 펄요가 있으므로 복잡한 대상 모델해석에 대 하여 과대한 해석자원을 요구하는 단점이 있다. 모드 중첩법은 비교적 빠른 시간에 유사한 결과를 얻을 수 있으나, 선형해석에 국한되는 단점이 있다. 본 연구에서는 복잡한 대상 구조물을 점질량 행렬로 단순화하고 완중용 부품의 비선형 특성을 고려한 시간영역 해석을 수행한 후, 선형에 국한되는 모드중첩범을 적용하여 적은 해석자원으로 복잡한 구조물의 중격해석을 수행하는 PRS 제시한다. + 교신저자; 정회원, 한국기술교육대학교 메카트로너스공학과 * (주) 아이겐스코프</abstract>
+  <abstract>현대 전장에서 수상함에 탑재된 장비는 가혹한 충격환경에 노출되어도 기능상의 문제가 발생하지 않아야 생존성을 보장받을 수 있다. 충격실험장비는 수중 충격파를 모사하는 시험을 수행하며 이를 검증할 수 있다. 이러한 충격시험은 허용응력 초과여부가 중요한 구조적 강건성뿐만 아니라 부품의 이탈 등에 기인하는 고장 을 고려한 기능적 안정성을 포함한다. 그러나 실험용 충격 입력에 대한 구조물의 강건성이 확보되지 않으면 그 실험은 무의미하다. 다양한 유한요소해석 기법은 충격 입력 해석을 수행하여 구조적 강건성을 평가할 수 있게 한다. 시간영역의 비선형 해석은 짧은 해석주기를 유지할 필요가 있으므로 복잡한 대상 모델해석에 대 하여 과대한 해석자원을 요구하는 단점이 있다. 모드 중첩법은 비교적 빠른 시간에 유사한 결과를 얻을 수 있으나, 선형해석에 국한되는 단점이 있다. 본 연구에서는 복잡한 대상 구조물을 점질량 행렬로 단순화하고 완충용 부품의 비선형 특성을 고려한 시간영역 해석을 수행한 후, 선형에 국한되는 모드중첩법을 적용하여 적은 해석자원으로 복잡한 구조물의 충격해석을 수행하는 방법을 제시한다. ˋ J 교신저자 ; 정회원, 한국기술교육대학교 메카트로닉스공학과</abstract>
   <source_page>142</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.749</extraction_quality>
   <pageImage>/paper-pages/p069.webp</pageImage>
   <affiliations>
     <affiliation>기술교육대</affiliation>
@@ -20,8 +22,8 @@
     <affiliation>LIG D&amp;A</affiliation>
   </affiliations>
   <keywords>
-    <keyword>수상함(81806 Shipboard)</keyword>
-    <keyword>충격 al] A (Shock Analysis)</keyword>
-    <keyword>38 +H Finite Element Method)</keyword>
+    <keyword>수상함(Surface Shipboard)</keyword>
+    <keyword>충격해석(Shock Analysis)</keyword>
+    <keyword>유한요소법(Finite Element Method)</keyword>
   </keywords>
 </paper>

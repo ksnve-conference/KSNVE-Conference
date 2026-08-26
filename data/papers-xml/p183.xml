@@ -11,15 +11,18 @@
   <time>08:40~08:55</time>
   <venue>그랜드볼룸[2]</venue>
   <chair>마평식(가천대)</chair>
-  <abstract>Low Latency(] 2] @) 공간 음성 향상을 위한 음성 신호 처리는 저지연 특성에 크게 의존하며, 특히 보청기와 같은 실시간 시스템 에서는 낮은 알고리즘 지연이 펄수적으로 요구된다. 기존의 STFT 기반 음성 향상 BAS 비인과적이거나 인과적 구조를 가지더라도 10ms 이상의 지연을 가지는 경우가 많아 실제 보청기 환경에 적용하기 어럼다. 이러한 문제를 해결하기 위해 본 연구에서는 Band-Split Recurrent Neural Network 기반 모델에 저지연 기 법을 적용한 음성 향상 방법을 제안한다. 제안된 HRS 긴 분석 윈도우와 짧은 합성 윈노우를 사용하는 Long-Short Time Window 기법과 미래 프레임을 예측하는 Future-frame predictiong 결합하여 알고리즘 지연을 감소시키는 TAS 가진다. 특히 비대칭 윈도우 구조를 활용하여 주과수 해상도를 유지하면서도 지연 을 효과적으로 줄이는 것을 SHE 한다. 또한, 주파수 대역을 분리하여 처리하는 BSRNN 구조를 기반으로 시간-주과수 특성을 동시에 고려한 음성 향상을 수행한다. 2899] 화자와 다양한 잡음 환경으로 구성된 VCTK-DEMAND 데이터셋을 사용하여 제안된 방법을 학습 및 평가하였으며, 추가적으로 1170506608와 ESC-S0S 활용하여 일반화 Yes 검중하였다. 실험 결과, 비 대칭 윈도우를 적용한 경우 기존 STFT 기반 모델 대비 낮은 지연 환경에서도 안정적인 Pes 보였으며, 특히 Sms 수준의 알고리즘 Ads 달성하면서도 성능 저하를 최소화할 수 NSS 확인하였다. 또한, 로그 스펙트럼 왜곡 및 PESO, SSNR, 5700] 등의 지표를 통해 성능을 비교한 결과, 제안된 방법은 기존 방식 대비 저지연 환경에서 효과적인 음성 향상 성능을 나타내었다. 반면, Putureframe prediction’) 경우 일부 환경 에서 성능 저하가 발생하여 모델 구조에 따라 제한적으로 적용되어야 할을 확인하였다. Table 1 Performance comparison of speech enhancement models under different latency reduction configurations Causality Ahead Type (ms) tfWon-causat| 0 | 994 | - 9199 Tt 970 2] causa | | 994 | 16 | 910 | 106 | 0909 3| causa | 0 | Am | os | am | 96 | ase 4 0.940 6] causa | 8 | 496 | 001 0 166 0 | 0 866 | 064 ㅜ 교신저자; 한국과학기술원 기계공학과</abstract>
+  <abstract>공간 음성 향상을 위한 음성 신호 처리는 저지연 특성에 크게 의존하며, 특히 보청기와 같은 실시간 시스템 에서는 낮은 알고리즘 지연이 필수적으로 요구된다. 기존의 z{m{G 기반 음성 향상 모델은 비인과적이거나 인과적 구조를 가지더라도 10ms 이상의 지연을 가지는 경우가 많아 실제 보청기 환경에 적용하기 어렵다. 이러한 문제를 해결하기 위해 본 연구에서는 Band-Split Recurrent Neural Network 기반 모델에 저지연 기 법을 적용한 음성 향상 방법을 제안한다. 제안된 방법은 긴 분석 윈도우와 짧은 합성 윈도우를 사용하는 Long-Short Time Window 기법과 미래 프레임을 예측하는 Future-frame prediction을 결합하여 알고리즘 지연을 감소시키는 구조를 가진다. 특히 비대칭 윈도우 구조를 활용하여 주파수 해상도를 유지하면서도 지연 을 효과적으로 줄이는 것을 목표로 한다. 또한, 주파수 대역을 분리하여 처리하는 izyuuG 구조를 기반으로 시간-주파수 특성을 동시에 고려한 음성 향상을 수행한다. Y_명의 화자와 다양한 잡음 환경으로 구성된 }j{rTklthukG 데이터셋을 사용하여 제안된 방법을 학습 및 평가하였으며, 추가적으로 LibriSpeech와 lzjT\W을 활용하여 일반화 성능을 검증하였다. 실험 결과, 비 대칭 윈도우를 적용한 경우 기존 z{m{G 기반 모델 대비 낮은 지연 환경에서도 안정적인 성능을 보였으며, 특히 8ms 수준의 알고리즘 지연을 달성하면서도 성능 저하를 최소화할 수 있음을 확인하였다. 또한, 로그 스펙트럼 왜곡 및GwlzxSGzzuySGz{vpG등의 지표를 통해 성능을 비교한 결과, 제안된 방법은 기존 방식 대비 저지연 환경에서 효과적인 음성 향상 성능을 나타내었다. 반면, Future-frame prediction의 경우 일부 환경 에서 성능 저하가 발생하여 모델 구조에 따라 제한적으로 적용되어야 함을 확인하였다.</abstract>
   <source_page>291</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.749</extraction_quality>
   <pageImage>/paper-pages/p183.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Speech Enhancement(3-3 향상)</keyword>
-    <keyword>Deep Learning( J @|*d)</keyword>
-    <keyword>Long-Short Time \1400\(장단기 시간 윈도우)</keyword>
+    <keyword>Speech Enhancement(음성 향상)</keyword>
+    <keyword>Deep Learning(딥러닝)</keyword>
+    <keyword>Long-Short Time Window(장단기 시간 윈도우)</keyword>
+    <keyword>Low Latency(저지연)</keyword>
   </keywords>
 </paper>

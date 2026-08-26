@@ -11,16 +11,18 @@
   <time>11:40~11:55</time>
   <venue>사파이어홀[1]</venue>
   <chair>이수목(삼우ANC)</chair>
-  <abstract>드럼세탁기 탈수 구동 다물체동역학 해석 시 드럼 안에 있는 질량(추부하)에 의한 BA 때문에 Tub(+%) 가 진동하게 된다. 최대 진동은 구동계, 진동계 부품들 조합에 의해 시스템 공진 특성이 나타나는 과도 구간 에서 발생하며, 이는 상대적으로 낮은 회전속도(저주파)에서 나타나고 있다. Tub 진동은 여러 연결 요소 중 진동을 저감시키는 Damper 끝단에 있는 Rubber Bush 의 특성에 많은 영향을 받고있다. 또한 Tub 가 크기 때문에 연결된 Damper 마다 전달되는 하중이 다르며, 방향 별로 다른 fae 진동을 하게 된다. 고무 소 재의 경우 진동을 야기시키는 하중, 진동 주과수에 따라 Damping ratio 가 변하는 특성을 갖고 있기 때문에 Damper Bush 마다 그리고 각 Bush 의 방향 별로 다른 Damping ratio 특성이 나타날 수 있다. 이번 연구에서는 Rubber Bush 의 선형 등가 HAS 최적화하는 프로세스를 개발하였고, 세탁기가 구동하는 전체 시간이 아닌 과도 영역 진동 만을 SHE 하고 있다. 이는 점점 더 커지는 세탁기 용량 때문에 70-외 벽 간 접촉 위혐도가 중가하여 과도 구간의 Tub 최대 진동 예측력을 개선할 필요성이 생겼기 때문이다. aa 최적화 해석 프로세스는 2 단계의 해석으로 이루어진다. 첫번째는 소재 특성의 Damping ratio 를 기반 으로 기준 WARS 계산하여, 모든 Damper Bush 동일한 BAAS 적용하여 1 차 해석을 진행한다. 두번 al 단계에서는 1 차 해석 결과의 Tub 진동 주파수, Damper Bush 작용 하중을 고려하여 최적화된 Damper Bush 의 B8aS 적용하여 2 차 AAS 진행한다. Be 최적화도 2 단계로 이루어진다. 아래 Damping ratio 이론식 (1)을 보면 Damping ratio 는 질량의 제곱근 반비례하며, 일반적인 다물체동역학에서는 질량은 하중 과 비례하기 때문에 (DAB 같은 비례 특성으로 상세 Damping ratio 을 계산할 수 있다. __¢ \ eek , fo: 초기 GAS 6=Fee OGRE I ae 248 또한 Damping ratio JEAS 변형하면 아래 (3)번 식처럼 BIS 강성의 배수 형태로 나타낼 수 있으며, QAS 통해 계산한 상세 Damping ratio 와 Tub 의 방향 별 공진주파수를 대입시키면 각각의 Damper Bush 에 적합한 Wess 계산할 수 있다. &gt; 6 _ _ 2*¢ 0 = TR C=¢ = 2Vmk Cake) 선행 해석의 결과를 이용하여 해석 결과 정확도를 개선하는 이런 방법론은 세탁기 작동 중 발생하는 진동 에 의해 진동소스가 변하지 않고, 모델링 대상([)34006『 1810481)이 진동부(1&apos;106)에 비해 무시할 수준으로 작으 며, 특정 공진주파수 영역대의 결과만 목적으로 두고 있기 때문에 가능한 것으로 보인다. + 교신저자, # 발표자; 삼성전자 생활가전사업부 + akan 생훌가건사입부</abstract>
+  <abstract>드럼세탁기 탈수 구동 다물체동역학 해석 시 드럼 안에 있는 질량(추부하)에 의한 편심 때문에 Tub(수조) 가 진동하게 된다. 최대 진동은 구동계, 진동계 부품들 조합에 의해 시스템 공진 특성이 나타나는 과도 구간 에서 발생하며, 이는 상대적으로 낮은 회전속도(저주파)에서 나타나고 있다. Tub 진동은 여러 연결 요소 중 진동을 저감시키는 Damper 끝단에 있는 Rubber Bush 의 특성에 많은 영향을 받고있다. 또한 Tub 가 크기 때문에 연결된 Damper 마다 전달되는 하중이 다르며, 방향 별로 다른 주파수로 진동을 하게 된다. 고무 소 재의 경우 진동을 야기시키는 하중, 진동 주파수에 따라 Damping ratio 가 변하는 특성을 갖고 있기 때문에 Damper Bush 마다 그리고 각 Bush 의 방향 별로 다른 Damping ratio 특성이 나타날 수 있다. 이번 연구에서는 Rubber Bush 의 선형 등가 댐핑을 최적화하는 프로세스를 개발하였고, 세탁기가 구동하는 전체 시간이 아닌 과도 영역 진동 만을 목표로 하고 있다. 이는 점점 더 커지는 세탁기 용량 때문에 Tub-외 벽 간 접촉 위험도가 증가하여 과도 구간의 Tub 최대 진동 예측력을 개선할 필요성이 생겼기 때문이다. G 댐핑 최적화 해석 프로세스는 2 단계의 해석으로 이루어진다. 첫번째는 소재 특성의 Damping ratio 를 기반 으로 기준 댐핑값을 계산하여, 모든 Damper Bush 에 동일한 댐핑값을 적용하여 1 차 해석을 진행한다. 두번 째 단계에서는 1 차 해석 결과의 Tub 진동 주파수, Damper Bush 작용 하중을 고려하여 최적화된 Damper Bush 의 댐핑값을 적용하여 2 차 해석을 진행한다. 댐핑 최적화도 2 단계로 이루어진다. 아래 Damping ratio 이론식 OXP을 보면 Damping ratio 는 질량의 제곱근 반비례하며, 일반적인 다물체동역학에서는 질량은 하중 과 비례하기 때문에 OYP식과 같은 비례 특성으로 상세 Damping ratio 을 계산할 수 있다. G G 또한 Damping ratio 이론식을 변형하면 아래 OZP번 식처럼 댐핑을 강성의 배수 형태로 나타낼 수 있으며, OYP식을 통해 계산한 상세 Damping ratio 와 Tub 의 방향 별 공진주파수를 대입시키면 각각의 Damper Bush 에 적합한 댐핑값을 계산할 수 있다. G G 선행 해석의 결과를 이용하여 해석 결과 정확도를 개선하는 이런 방법론은 세탁기 작동 중 발생하는 진동 에 의해 진동소스가 변하지 않고, 모델링 대상(Damper Bush)이 진동부(Tub)에 비해 무시할 수준으로 작으 며, 특정 공진주파수 영역대의 결과만 목적으로 두고 있기 때문에 가능한 것으로 보인다. G ˋ G교신저자SGJG 발표자bG 삼성전자 생활가전사업부 G lTaGUgUG QG # 삼성전자# 생활가전사업부 G</abstract>
   <source_page>390</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.718</extraction_quality>
   <pageImage>/paper-pages/p248.webp</pageImage>
   <affiliations>
     <affiliation>삼성전자</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Rubber(32&quot;+)</keyword>
-    <keyword>Damping ratio(%}4] -&amp;)</keyword>
-    <keyword>Transient vibration(@}5. 진동)</keyword>
-    <keyword>Washing machines(4] =}7])</keyword>
+    <keyword>Rubber(고무)</keyword>
+    <keyword>Damping ratio(감쇠율)</keyword>
+    <keyword>Transient vibration(과도 진동)</keyword>
+    <keyword>Washing machines(세탁기)</keyword>
   </keywords>
 </paper>

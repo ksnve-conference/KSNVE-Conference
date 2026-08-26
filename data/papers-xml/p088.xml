@@ -11,14 +11,19 @@
   <time>10:40~10:55</time>
   <venue>에메랄드홀</venue>
   <chair>김호욱(인하대)</chair>
-  <abstract>(압전 관성 액추에이터) Error Accelerometer (22+ 가속도계), Structure-borne Noise (P7191 소음) 본 연구에서는 실험실 환경의 차량 축소 BAS 대상으로, 200- 500 Hz 중간 FASE 대역의 실내 소음을 저감하기 위한 능동진동제어를 구현하였다. 마이크로폰 기반 능동소음제어는 2 차 경로가 길고 음향공간 내 JAW 응랍 편차가 커 제어 성능 확보에 제약이 있으므로, 본 연구에서는 직접 제작한 압전 관성 액추에이 터와 패널 상의 오차 가속도 AALS 사용하는 FXLMS (filtered-x least mean squares) 기반 능동진동제어를 적용하였다. 하부 패널의 실험적 모드 형상 BAS Fal 248.3 Hz 와 326.38 112 를 대상 주파수로 선정하였으 며, 두 모드에서 공통적으로 SLPS 보이는 영역을 고려하여 오차 AA 액추에이터의 위치를 결정하였 다. 선정된 각 대상 주와수에서 제어 성능을 평가한 결과, 오차 가속도계 응답은 각각 27.3 dB 및 27.1 dB 저감되었고, 운전석 위치의 실내 음압도 각각 14.1 08 및 9.6 dB 감소하였다. 이러한 결과는 패널 가속도계 기반 능동진동제어가 중간 주과수 대역의 실내 소음 Add 효과적으로 적용될 수 있음을 축소 모델 AGS 통해 보여준다. 향후 연구에서는 주과수 2G 가진 조건과 복수 AMS 대상으로 하는 다중 액추에이터 및 다중 오차 센서 구성으로 확장하여 제어 성능을 살펴볼 예정이다. 400 | 60 AVC } AVC F350 OFF 4 ON 50 Evaluation = — ——— | easing Va &lt;= \ 2 300 408 = Acoustic Cavity 은 250 30 7 80600. 200 20 2 E ar 01 Shaker @ 06 2 4 6 Target Panel Time [s]</abstract>
+  <abstract>본 연구에서는 실험실 환경의 차량 축소 모델을 대상으로, YWWˀ \WWG Hz 중간 주파수 대역의 실내 소음을 저감하기 위한 능동진동제어를 구현하였다. 마이크로폰 기반 능동소음제어는 2 차 경로가 길고 음향공간 내 위치별 응답 편차가 커 제어 성능 확보에 제약이 있으므로, 본 연구에서는 직접 제작한 압전 관성 액추에이 터와 패널 상의 오차 가속도 센서를 사용하는 FxLMS (filtered-x least mean squares) 기반 능동진동제어를 적용하였다. 하부 패널의 실험적 모드 형상 분석을 통해 248.3 Hz 와 326.3 Hz 를 대상 주파수로 선정하였으 며, 두 모드에서 공통적으로 큰 응답을 보이는 영역을 고려하여 오차 센서와 액추에이터의 위치를 결정하였 다. 선정된 각 대상 주파수에서 제어 성능을 평가한 결과, 오차 가속도계 응답은 각각 27.3 dB 및 27.1 dB 저감되었고, 운전석 위치의 실내 음압도 각각 14.1 dB 및 9.6 dB 감소하였다. 이러한 결과는 패널 가속도계 기반 능동진동제어가 중간 주파수 대역의 실내 소음 저감에 효과적으로 적용될 수 있음을 축소 모델 실험을 통해 보여준다. 향후 연구에서는 주파수 스윕 가진 조건과 복수 패널을 대상으로 하는 다중 액추에이터 및 다중 오차 센서 구성으로 확장하여 제어 성능을 살펴볼 예정이다.</abstract>
   <source_page>158</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.691</extraction_quality>
   <pageImage>/paper-pages/p088.webp</pageImage>
   <affiliations>
     <affiliation>인하대</affiliation>
   </affiliations>
   <keywords>
     <keyword>Active Vibration Control (능동진동제어)</keyword>
-    <keyword>Vehicle Interior Noise (4% 실내소음) Piezoelectric Inertial Actuator</keyword>
+    <keyword>Vehicle Interior Noise (차량 실내소음)</keyword>
+    <keyword>Piezoelectric Inertial Actuator (압전 관성 액추에이터)</keyword>
+    <keyword>Error Accelerometer (오차 가속도계)</keyword>
+    <keyword>Structure-borne Noise (구조기인 소음)</keyword>
   </keywords>
 </paper>

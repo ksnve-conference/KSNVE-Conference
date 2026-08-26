@@ -11,8 +11,10 @@
   <time>16:45~17:00</time>
   <venue>릴리홀[2]</venue>
   <chair>손정우(국립금오공대)</chair>
-  <abstract>본 연구는 대형 컨테이녀선의 래싱 브리지1364108 bridge) 구조물에 대한 진동 AS 기준을 제시하는 AS 목적으로 한다. 래싱 브리지는 항해 중 선박의 주요 기진력에 의해 공진이 HS 경우 과도한 진동이 발생 할 수 있으며, 이는 구조 피로 손상의 주요 원인이 된다. 본 연구에서는 래싱 로드가 체결되지 않은 자립 ZACfreestanding 00001000)을 최악의 하중 시나리오로 설정하여 진동 해석 및 피로 평가를 수행하였다. aed 의해 유발되는 응력 사이클 수가 매우 크다는 점을 고려하여, 구조물의 내구 한도로서 피로 한도(&quot;34846 limit) WAS 적용하였다. 공진 발생 시 래싱 브리지의 동적 Ase 개별 고유 모드 Btteigenvector)d 지배되는 SG 보이므로, 각 진동 BEBE 주응력 (principal stress)°] 피로 한도에 노달하는 AAS 산출하고, 이에 desk]: 속도 및 변위 진동 허용치를 모 드별로 도출하였다. 본 연구의 age 대형 컨테이너선 래싱 브리지의 진동 설계 기준 및 현장 계측 기반 구조 건전성 평가에 실용적인 참고 기준으로 활용될 수 있다. Ny =a, . 0006 Class tad viratoneiponte mp 3p pao oar 2: Bp 6562 angie X.momen Se order aon) iy - 、2 = ey ie alee viraton repens mm/s mah] atop per of Pr 2: Brn engine moment herder ean)</abstract>
+  <abstract>본 연구는 대형 컨테이너선의 래싱 브리지(lashing bridge) 구조물에 대한 진동 허용 기준을 제시하는 것을 목적으로 한다. 래싱 브리지는 항해 중 선박의 주요 기진력에 의해 공진이 유발될 경우 과도한 진동이 발생 할 수 있으며, 이는 구조 피로 손상의 주요 원인이 된다. 본 연구에서는 래싱 로드가 체결되지 않은 자립 조건(freestanding condition)을 최악의 하중 시나리오로 설정하여 진동 해석 및 피로 평가를 수행하였다. 진동에 의해 유발되는 응력 사이클 수가 매우 크다는 점을 고려하여, 구조물의 내구 한도로서 피로 한도(fatigue limit) 개념을 적용하였다. 공진 발생 시 래싱 브리지의 동적 거동은 개별 고유 모드 형상(eigenvector)에 지배되는 특성을 보이므로, 각 진동 모드별로 주응력 (principal stress)이 피로 한도에 도달하는 조건을 산출하고, 이에 대응하는 속도 및 변위 진동 허용치를 모 드별로 도출하였다. 본 연구의 결과는 대형 컨테이너선 래싱 브리지의 진동 설계 기준 및 현장 계측 기반 구조 건전성 평가에 실용적인 참고 기준으로 활용될 수 있다.</abstract>
   <source_page>114</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.73</extraction_quality>
   <pageImage>/paper-pages/p041.webp</pageImage>
   <affiliations>
     <affiliation>삼성중공업</affiliation>

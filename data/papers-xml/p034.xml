@@ -11,17 +11,19 @@
   <time>16:00~16:15</time>
   <venue>릴리홀[1]</venue>
   <chair>전종훈(항공우주연)</chair>
-  <abstract>14), Structural health monitoring(-% 건전성 모니터링) 항공우주 맞 산업 구조물에서 진동에 의한 피로 파괴는 구조적 안전성을 위협하는 핵심 요인이다. 실시간 건전성 모니터렁을 위해서는 손상 진행에 따른 모달 파라미터의 변화를 정확히 추적하고, 이를 기반으로 건 전성 지표01686101 Index, HDS 예측하는 것이 필수적이다. 기존의 서클 피팅 BAS 감쇠비의 초기값을 1131 power method 로 추정하여 사용한다. Half power method 는 노이즈에 취약하여 시험 초반에 부정확한 초기 값을 산출하며, 이 초기값의 Sab} 서클 피팅 결과에 전파되어 케이스마다 감쇠비의 절대 레벨이 상이하게 추정되는 오프셋 문제를 유발한다. 이는 모달 파라미터의 절대적 수치 변화에 반응하는 Global 정규화 모델 의 학습 안정성을 저해한다. 본 연구에서는 선행연구&apos;&quot;에서 제안된 바닥 가진 서클 피팅 방법에 복소 모드 ZS 도입하여 초기값 의존성 없이 감쇠비를 추정하고, Global 정규화와 결합한 Bag 기반 H 예측 프레임워크를 제안한다. 시편은 석출 경화형 스테인리스강인 PH15-7Mo 재질의 브라켓을 사용하였으며, MIL-STD-810HS 참고한 21.48 Grms 조건의 랜덤 진동 시험을 수행하였다. 서클 AAS 통해 원의 중심 및 반지름 기반 감쇠비, 1차 공진주파수, 복소 모드 허수부 및 위상을 포함하는 5개의 물리적 768076를 주출하였다. 비의 정답 BAAS 위해 8Grms 조건에서 전자현미경을 통해 Crack] ASS 관찰하고, 미세 Crack 발생, 병합, 직선적 성장의 3개 AAAS 설정하여 PCHIP(Piecewise Cubic Hermite Interpolating Polynomial) 보간 기반의 비대칭 HI 곡 선을 정의하였다. Global 정규화의 물리적 타당성 ASS 위해 감쇠비를 10% 중가 및 감소시킨 후 예측 결과를 비교하였다. 그 결과, Local 정규화 기반의 모델은 모두 동일한 예측 결과를 보인 반면, Global 정규화 기반 BAS 감쇠 비의 절대적 수치 변화에 반응하여 물리적으로 타당한 학습이 이루어졌음을 확인하였다. 예측 모델은 GRU, TCN, CNN-LSTM, Transformer 등 여러 아키텍처를 비교한 결과 Transformer7} 최적의 성능을 보여 A 정하였다. 또한, 학습 데이터와 상이한 가진력 조건에 대해 가진력에 따른 모달 파라미터의 기저 값 변화를 근사한 피팅 함수 기반 도메인 정렬을 적용하여 안정적인 HAS AAS 확인하였다. 이를 통해 본 프레임 워크가 단일 가진 조건의 소수 시험 데이터만으로 학습하고 상이한 운용 조건에서도 적용 가능한 예측 체계 를 구축할 수 있음을 보였다.</abstract>
+  <abstract>조 건전성 모니터링) 항공우주 맞 산업 구조물에서 진동에 의한 피로 파괴는 구조적 안전성을 위협하는 핵심 요인이다. 실시간 건전성 모니터렁을 위해서는 손상 진행에 따른 모달 파라미터의 변화를 정확히 추적하고, 이를 기반으로 건 전성 지표([168101 1ㅁ06※%, 111)를 예즉하는 것이 필수적이다. 기존의 서클 피팅 방식은 감쇠비의 초기값을 1131 power method 로 추정하여 사용한다. 1131 ㅁ0\6『7 10060100 는 노이즈에 취약하여 시험 초반에 부정확한 초기 RS ASH, 이 초기값의 오차가 서클 피팅 결과에 전파되어 케이스마다 감쇠비의 절대 레벨이 상이하게 추정되는 오프셋 문제를 유발한다. 이는 모달 파라미터의 절대적 수치 변화에 반응하는 (10181 정규화 모델 의 학습 안정성을 저해한다. 본 연구에서는 선행연구''에서 제안된 바닥 가진 서클 피팅 방법에 복소 모드 2를 도입하여 초기값 의존성 없이 감쇠비를 추정하고, (10181 정규화와 결합한 닙러닝 기반 111 예측 프레임워크를 제안한다. 시편은 석출 경화형 스테인리스강인 바115-7100 재질의 브라켓을 사용하였으며, 1111.-611)-81011를 참고한 21.48 06700 조건의 랜덤 진동 시험을 수행하였다. 서클 피팅을 통해 원의 중심 및 반지름 기반 감쇠비, 1차 공진주파수, 복소 모드 허수부 및 위상을 포함하는 5개의 물리적 16806를 주출하였다. 비의 정답 라벨렁을 위해 87705 조건에서 전자현미경을 통해 (780【의 거동을 관찰하고, 미세 (780 발생, 병합, 직선적 성장의 3개 앵커점을 설정하여 70[102(21606\186 (41010 11600116 10[6700180108 10100ㅁ00181) 보간 기반의 비대칭 HI = 선을 정의하였다. (10168! 정규화의 물리적 타당성 검중을 위해 감쇠비를 10% 증가 및 감소시킨 후 예측 결과를 비교하였다. 그 결과, 10081 정규화 기반의 모델은 모두 동일한 예측 결과를 보인 반면, (10621 정규화 기반 모델은 감쇠 비의 절대적 수치 변화에 반응하여 몰리적으로 타당한 학습이 이루어졌음을 Seley. aS BAS GRU, TCN, CNN-LSTM, Transformer 등 여러 아키텍처를 비교한 결과 713085[07016「가 최적의 성능을 보여 선 정하였다. 또한, 학습 데이터와 상이한 가진력 조건에 대해 가진력에 따른 모달 파라미터의 기저 값 변화를 근사한 피팅 함수 기반 도메인 정렬을 적용하여 안정적인 111 예측 궤적을 확인하였다. 이를 통해 본 프레임 워크가 단일 가진 조건의 소수 시험 데이터만으로 학습하고 상이한 운용 조건에서도 적용 가능한 예측 체계 를 구축할 수 있음을 보였다. 참고문헌 [1] Kang, D. S., Bae, S.-H. and Baek, S., 2025, An Acceleration-only Modal Circle-fitting Method for In-situ Fatigue Damage Detection, Scientific Reports, Vol. 15, 45607. + 교신저자; 한국기계연구원 원전기기연구실 , 한국기계연구원 원전기기연구실</abstract>
   <source_page>107</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.612</extraction_quality>
   <pageImage>/paper-pages/p034.webp</pageImage>
   <affiliations>
     <affiliation>부산대</affiliation>
     <affiliation>기계연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Circle fitting(*] 피팅)</keyword>
-    <keyword>Global normalization(414 정규화)</keyword>
-    <keyword>Health index(21 4179 지표)</keyword>
-    <keyword>Deep learning(¥] =]</keyword>
+    <keyword>Circle fitting] ¥]%)</keyword>
+    <keyword>Global normalization(414 “)a}S})</keyword>
+    <keyword>Health index(71419 2) 3£)</keyword>
+    <keyword>Deep leaming(]] 4</keyword>
   </keywords>
 </paper>

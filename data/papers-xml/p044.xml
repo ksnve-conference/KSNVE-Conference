@@ -11,15 +11,16 @@
   <time>16:15~16:30</time>
   <venue>사파이어홀[1]</venue>
   <chair>오종석(공주대)</chair>
-  <abstract>Isolation (41S 절연) Low-frequency vibration degrades system durability and human health. Quasi-Zero Stiffness (QZS) mechanisms offer effective low-frequency isolation by drastically reducing dynamic natural frequency. However, conventional QZS structures suffer from load sensitivity, limiting their application outside narrow design loads. This study proposes a mass-producible capped conical shell structure that induces internal contact between two distinct nonlinear components to realize a secondary QZS region. This multiple QZS mechanism successfully extends the effective load range by over 200% compared to a single structure. Additionally, its modular design allows simple series connections to flexibly accommodate various target loads. Optimal geometric parameters were derived using a surrogate model based on a nonlinear hyperelastic Finite Element Method (FEM) database. Static compression tests on a 3D-printed TPU prototype experimentally verified the two designed QZS regions. The proposed mechanism is highly promising for vibration isolation in vehicle platforms and precision machinery subject to fluctuating payloads. — - 006 — 250 0 er pS ~ 150 ; : a 이 = 100 30 4 i 0 amie: 0 2 4 6 8 10 19 ities Displacement(mm)</abstract>
+  <abstract>However, conventional QZS structures suffer from load sensitivity, limiting their application outside narrow design loads. This study proposes a mass-producible capped conical shell structure that induces internal contact between two distinct nonlinear components to realize a secondary QZS region. This multiple QZS mechanism successfully extends the effective load range by over 200% compared to a single structure. Additionally, its modular design allows simple series connections to flexibly accommodate various target loads. Optimal geometric parameters were derived using a surrogate model based on a nonlinear hyperelastic Finite Element Method (FEM) database. Static compression tests on a 3D-printed TPU prototype experimentally verified the two designed QZS regions. The proposed mechanism is highly promising for vibration isolation in vehicle platforms and precision machinery subject to fluctuating payloads. —TPU 95A Serr FS 250 a ia. v0 2 150 § - 100 50 0 0 2 4 6 8 10 12 Displacement(mm)</abstract>
   <source_page>117</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.805</extraction_quality>
   <pageImage>/paper-pages/p044.webp</pageImage>
   <affiliations>
     <affiliation>서강대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Quasi-Zero Stiffness (준제로 강성)</keyword>
-    <keyword>Multiple Quasi-Zero Stiffness (다중 준제로 강성)</keyword>
-    <keyword>Vibration</keyword>
+    <keyword>Quasi-Zero Stiffness (24]= 강성)</keyword>
+    <keyword>Multiple Quasi-Zero Stiffness (+S GA) %43)</keyword>
   </keywords>
 </paper>

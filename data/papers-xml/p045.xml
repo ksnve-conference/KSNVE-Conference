@@ -11,15 +11,18 @@
   <time>16:30~16:45</time>
   <venue>사파이어홀[1]</venue>
   <chair>오종석(공주대)</chair>
-  <abstract>mesh damper(™] lls] &quot;8 3), Waved ring(#]] ©] 4.3) 가스 윤활 베어링은 오일 베어링과 달리 공기를 윤활제로 사용하기 때문에 별도의 급유 장치가 필요하지 않아 시스템 구성이 단순하며, 소형 고속 회전기기에 적용하기에 유리하다. 특히 헤링본 그루브 가스 저널 ]°] #1 (Herringbone-grooved gas journal 66808, 110608)은 베어링 내면에 형성된 그루브를 통해 동압을 발생시켜 안정적인 구동이 가능하도록 설계된 베어링이다. 그러나 오일 베어링에 비해 하중지지력, 강성, 감 4 성능이 낮아 회전축의 불평형 질량 및 윤활 유체의 휘돌림 거동에 의한 불안정성이 발생할 가능성이 있 다. 따라서 회전체 동역학적 성능 향상을 위해 별도의 탄성 구조체를 결합한 베어링 시스템 구성이 필요하다. &gt;] Se] 24 (Metal mesh damper, MMD)E 금속 와이어를 적충하여 제작한 구조로, 와이어 자체의 강성 과 와이어 간 쿨롱 마찰을 통해 GAS 부여할 수 있는 금속 ASS Blt. 이는 베어링 @H= 널리 사 용되는 스퀴즈 필름 BH 달리 별도의 오일 공급 장치를 필요로 하지 않으며, 구조와 제작이 비교적 단순 하여 경제적인 베어링 Bee 많이 사용되고 있다. 그러나 메탈메쉬탬퍼는 비선형 강성 Sas 가지고 있어 시스템 거동 예측이 어렵다는 한계가 있다. 이에 본 연구에서는 높은 선형 GIS 부여하기 위해 웨이브 링 (Waved ring, WHS 추가한 ASAAGA Mole AAS 적용하였다. 웨이브 Be 시스템의 주요 강성을 담당하고 선형 강성을 부여하는 역할을 한다. 본 연구에서는 메탈메쉬-웨이브링 B77 적용된 고속 전동기용 헤링본 그루브 가스 저널 베어링의 회전 체 동역학적 SAS 실혐적으로 평가하였으며, 해석 모델과의 Yas 통해 해당 시스템의 Vest 해석적 예 측 가능성을 검중하였다. | 국민대학교 기계공학부 ＊ 국민대학교 일반대학원 기계공학부</abstract>
+  <abstract>가스 윤활 베어링은 오일 베어링과 달리 공기를 윤활제로 사용하기 때문에 별도의 유 장치가 필요하지 않아 시스템 구성이 단순하며, 소형 고속 회전기기에 적용하기에 유리하다. 특히 헤링본 그루브 가스 저널 베어링(Herringbone-grooved gas journal bearing, onqiP은 베어링 내면에 형성된 그루브를 통해 동압을 발생시켜 안정적인 구동이 가능하도록 설계된 베어링이다. 그러나 오일 베어링에 비해 하중지지력, 강성, 감 쇠 성능이 낮아 회전축의 불평형 질량 및 윤활 유체의 휘돌림 거동에 의한 불안정성이 발생할 가능성이 있 다. 따라서 회전체 동역학적 성능 향상을 위해 별도의 탄성 구조체를 결합한 베어링 시스템 구성이 필요하다. 메탈메쉬댐퍼(Metal mesh damper, ttkP는 금속 와이어를 적층하여 제작한 구조로, 와이어 자체의 강성 과 와이어 간 쿨롱 마찰을 통해 감쇠를 부여할 수 있는 금속 재질의 댐퍼이다. 이는 베어링 댐퍼로 널리 사 용되는 스퀴즈 필름 댐퍼와 달리 별도의 오일 공 G 장치를 필요로 하지 않으며, 구조와 제작이 비교적 단순 하여 경제적인 베어링 댐퍼로 많이 사용되고 있다. 그러나 메탈메쉬댐퍼는 비선형 강성 특성을 가지고 있어 시스템 거동 예측이 어렵다는 한계가 있다. 이에 본 연구에서는 높은 선형 강성을 부여하기 위해 웨이브 링 (Waved ring, WR)을 추가한 메탈메쉬댐퍼-웨이브링 댐퍼를 적용하였다. 웨이브 링은 시스템의 주요 강성을 담당하고 선형 강성을 부여하는 역할을 한다. 본 연구에서는 메탈메쉬-웨이브링 댐퍼가 적용된 고속 전동기용 헤링본 그루브 가스 저널 베어링의 회전 체 동역학적 특성을 실험적으로 평가하였으며, 해석 모델과의 비교를 통해 해당 시스템의 성능과 해석적 예 측 가능성을 검증하였다. ˋG국민대학교 기계공학부 lTaGgUU QG 국민대학교# 일반대학원# 기계공학부 JG 국민대학교 일반대학원 기계공학부</abstract>
   <source_page>118</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.726</extraction_quality>
   <pageImage>/paper-pages/p045.webp</pageImage>
   <affiliations>
     <affiliation>국민대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Rotordynamic(=] 41 4] 동역학)</keyword>
-    <keyword>Herringbone-grooved journal 068008(헤링본 그루브 저널 베어링)</keyword>
-    <keyword>Metal</keyword>
+    <keyword>Rotordynamic(회전체 동역학)</keyword>
+    <keyword>Herringbone-grooved journal bearing(헤링본 그루브 저널 베어링)</keyword>
+    <keyword>Metal mesh damper(메탈메쉬 댐퍼)</keyword>
+    <keyword>Waved ring(웨이브링)</keyword>
   </keywords>
 </paper>

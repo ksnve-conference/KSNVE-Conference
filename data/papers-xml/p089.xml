@@ -11,16 +11,18 @@
   <time>10:55~11:10</time>
   <venue>에메랄드홀</venue>
   <chair>김호욱(인하대)</chair>
-  <abstract>최근 자동차 산업은 매우 빠른 SEE 내연기관 동력 시스템에서 Aes 모터 시스템으로 전환함에 따라 전기차 실내의 고주파 화인소음(\111046 1ㅁ0186)과 W]AAS(Background 1ㅁ0186)이 핵심 NVH 상품성 지표로 평가되고 있다. 본 ate 정량적 실내소음 평가 기준 수립을 FACE, 당사 대표 전기차 및 유럽 경쟁차 포함한 총 11 대를 대상으로 실도로 주행평가를 수행하였다. NVH 전문가와 비전문가로 구성된 37 명의 평가자를 대상으로 차량 및 주행모드별 주관적 ADB Jury 7681를 실시하였으며, 수집된 실내소음 데이터에 모터 회전수 기반 신호분리 기법을 적용하여 고주파 화인 소음과 배경소음을 분리하여 독림적으로 분석하였다. 심리음향학 기반 특징추출(0680ㅇ Extractions 통해 화인소음 예측에는 Tone to Noise Ratio, Specific Tonality, Specific Prominence Ratio 등 10 개 분석기법, 배경소음 예측에는 16461 vs. Time, FFT vs. Time, Loudness 등 7 개 분석기법을 적용하였다. 최종적으로 145) 7 (Linear Regression) 7]¥ 음질지수(80100 Quality Metrics) JS} 모델을 개발하였으며, 주관적 평가결과와 Re = 0.9 의 높은 상관성과 모델 일반화 Aes 확인하였다. 개발된 모델은 (1) 화인소음 음질지수, © 배경소음 음질지수, © 재합성 Overall 음질지수의 3 단계 평가체계로 구성되며, 소음원별 SH, 저감 및 재합성 기능을 포함한 실무형 UlUser Interface) $2 구현되었다. 본 연구를 통해 개발 단계별 정량적인 811 수준을 평가할 수 있을 뿐만 아니라, 고주파 화인소음과 배경 소음의 개발목표 설정이 용이하고, 경쟁차와 당사 개발차의 실내소음 성능비교와 데이터 베이스(08) 관리가 가능하여, 전기차 NVH 성능 BAAS 강화하는 것과 더불어 개발자의 업무효율성 향상 및 개발비용 저감에 크게 기여하게 되었다. ~ 「 4 ZS = — 2 = 기 &gt; usin i &amp; i ~ 로 sal</abstract>
+  <abstract>최근 자동차 산업은 매우 빠른 속도로 내연기관 동력 시스템에서 전동화 모터 시스템으로 전환함에 따라 전기차 실내의 고주파 화인소음(Whine noise)과 배경소음(Background noise)이 핵심 NVH 상품성 지표로 평가되고 있다. 본 연구는 정량적 실내소음 평가 기준 수립을 목적으로, 당사 대표 전기차 및 유럽 경쟁차 포함한 총 11 대를 대상으로 실도로 주행평가를 수행하였다. NVH 전문가와 비전문가로 구성된 37 명의 평가자를 대상으로 차량 및 주행모드별 주관적 청감평가(Jur Test)를 실시하였으며, 수집된 실내소음 데이터에 모터 회전수 기반 신호분리 기법을 적용하여 고주파 화인 소음과 배경소음을 분리하여 독립적으로 분석하였다. 심리음향학 기반 특징추출(Feature Extraction)을 통해 화인소음 예측에는 Tone to Noise Ratio, Specific Tonalit , Specific Prominence Ratio 등 10 개 분석기법, 배경소음 예측에는 Level vs. Time, FFT vs. Time, Loudness 등 7 개 분석기법을 적용하였다. 최종적으로 선형회귀(Linear Regression)기반 음질지수(Sound Qualit Metrics) 예측 모델을 개발하였으며, 주관적 평가결과와 y¸G dG WU` 의 높은 상관성과 모델 일반화 성능을 확인하였다. 개발된 모델은 ཛG 화인소음 음질지수, ཛྷG 배경소음 음질지수, ཝG 재합성 Overall 음질지수의 3 단계 평가체계로 구성되며, 소음원별 증폭, 저감 및 재합성 기능을 포함한 실무형 UI(User Interface) 툴로 구현되었다. 본 연구를 통해 개발 단계별 정량적인 NVH 수준을 평가할 수 있을 뿐만 아니라, 고주파 화인소음과 배경 소음의 개발목표 설정이 용이하고, 경쟁차와 당사 개발차의 실내소음 성능비교와 데이터 베이스OkiPG 관리가 가능하여, 전기차 NVH 성능 경쟁력을 강화하는 것과 더불어 개발자의 업무효율성 향상 및 개발비용 저감에 크게 기여하게 되었다.</abstract>
   <source_page>159</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.743</extraction_quality>
   <pageImage>/paper-pages/p089.webp</pageImage>
   <affiliations>
     <affiliation>현대자동차</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Sound Quality Metrics(-2-4.4] &lt;p)</keyword>
-    <keyword>Regression(§] 7)</keyword>
-    <keyword>Psychoacousties(4] 2] -4-F¢})</keyword>
-    <keyword>Whine Noise(3}91 2-3)</keyword>
+    <keyword>Sound Quality Metrics(음질지수)</keyword>
+    <keyword>Regression(회귀)</keyword>
+    <keyword>Psychoacoustics(심리음향학)</keyword>
+    <keyword>Whine Noise(화인소음)</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,17 @@
   <time>11:25~11:40</time>
   <venue>오팔홀[1]</venue>
   <chair>정의봉(LIG D&amp;A)</chair>
-  <abstract>함정 탑재용 안테나는 설치 공간의 제약과 무게 제한으로 인해 SS 비강성과 비강도를 갖는 재료의 적용 이 필수적이다. 본 연구에서는 이를 위해 탄소 섬유 강화 복합재(0880) 및 필라멘트 Ale 공법을 적응한 마스트 센터폴을 설계하였다. 이때 필라멘트 old 공법은 적층 구조에 따라 이방성 특성이 변화하므로 ANSYS ACP 를 이용하여 적중 구조를 구현한 해석을 수행하였다. 또한 해석 효율성 제고를 위하여 고전적 AS 이론(61221” 기반의 등가 SAS 산출하여 Solid 모델에 적용한 후 ACP (shell, 60110) 모델과 비교함으 로써 유효성을 검중하였다. 해석 모델의 신뢰성 검중을 위해 임팩트 해머를 이용한 진동 시험을 수행하였으며, 두 가지 시편에 대해 1-6 차 고유진동수 및 모드 형상을 측정하였다. 시험 및 모달 해석 비교 결과, 등가 BAS 적용한 Equiv- Solid 모델이 시편 1(높이 1502000)에서 0.91%, 시편 2(높이 70200)에서 7.13%의 평균 오차율을 기록하며 세 가지 해석 모델 중 실협값과 가장 높은 일치도를 보였다. 이를 통해 해석 수행 시 복잡한 적층 구조를 직 접 모사하지 않고 등가 물성을 적응하는 방식이 마스트 센터폴의 진동 특성 에측에 충분한 유효성을 WES 입중하였다. 80161 시편 1 고유진동수 Table2 시편 2 고유진동수 Natural Frequency [Hz] Natural Frequency [Hz] Mode Mode ACP-Shell | ACP-Solid | Equiv-Solid ACP-Shell | ACP-Solid | Equiv-Solid 1 98107 322.48 2 98110 3 522.52 : 70001 8 758.14 4 70987 4 759.28 5 91687 5 804.67 6 91647 8 894.78 + 교신저자; 116 Defense&amp;Aerospace . . * LIG Defense&amp; Aerospace</abstract>
+  <abstract>함정 탑재용 안테나는 설치 공간의 제약과 무게 제한으로 인해 높은 비강성과 비강도를 갖는 재료의 적용 이 필수적이다. 본 연구에서는 이를 위해 탄소 섬유 강화 복합재OjmywPG 및 필라멘트 와인딩 공법을 적용한 마스트 센터폴을 설계하였다. 이때 필라멘트 와인딩 공법은 적층 구조에 따라 이방성 특성이 변화하므로 huzzG hjw 를 이용하여 적층 구조를 구현한 해석을 수행하였다. 또한 해석 효율성 제고를 위하여 고전적 적층 이론Ojsw{PG 기반의 등가 물성을 산출하여 Solid 모델에 적용한 후 hjwG (shell, solid) 모델과 비교함으 로써 유효성을 검증하였다. G 해석 모델의 신뢰성 검증을 위해 임팩트 해머를 이용한 진동 시험을 수행하였으며, 두 가지 시편에 대해 XT] 차 고유진동수 및 모드 형상을 측정하였다. 시험 및 모달 해석 비교 결과, 등가 물성을 적용한 Equiv- Solid 모델이 시편 1(높이 150mm)에서 0.91%, 시편 2(높이 70mm)에서 7.13%의 평균 오차율을 기록하며 세 가지 해석 모델 중 실험값과 가장 높은 일치도를 보였다. 이를 통해 해석 수행 시 복잡한 적층 구조를 직 접 모사하지 않고 등가 물성을 적용하는 방식이 마스트 센터폴의 진동 특성 예측에 충분한 유효성을 가짐을 입증하였다.</abstract>
   <source_page>167</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.699</extraction_quality>
   <pageImage>/paper-pages/p097.webp</pageImage>
   <affiliations>
     <affiliation>LIG D&amp;A</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Filament Winding(2 t} = 와인덩)</keyword>
-    <keyword>000100816(복합재)</keyword>
-    <keyword>Equivalent material properties“s-7} 물성)</keyword>
+    <keyword>Filament Winding(필라멘트 와인딩)</keyword>
+    <keyword>Composite(복합재)</keyword>
+    <keyword>Equivalent material properties(등가 물성)</keyword>
   </keywords>
 </paper>

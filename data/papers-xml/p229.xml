@@ -11,16 +11,18 @@
   <time>11:40~11:55</time>
   <venue>에메랄드홀</venue>
   <chair>최성훈(철도기술연)</chair>
-  <abstract>동력분산식 고속철도차량은 견인전동기와 훨-레일 접족에 의한 진동소음원이 대차와 차체의 복합 연결 시 스템을 통해 객실로 전달되는 Ss 갖는다. 본 연구에서는 개별 가진원에 의한 소음 발생원인과 전달 경 로를 규명하고, 특정 주파수의 실내소음 제어 및 설계 AAS 위해 전달 경로 분석(17609 Path Analysis, TPAYS 수행하였다. 전달 경로 분석 방법론 중 입력 하중(06706)을 정밀하게 추정하기 위하여 Matrix inversion 기법을 적용하였다. 이를 위해 대차를 소음원으로 정의하고, 차체와 시스템적으로 분리하여 전달 함수를 측정하였다. 주요 전달 경로로 모노링크, By, 안티롤바, 공기스프링 등 11개의 전달 경로를 선정하 여 각 연결부 주변에 2개 이상의 3축 진동가속도계를 설치하고, 객실 내 소음 및 진동 측정 위치를 목표점 (Target 2010[)으로 설정하였다. 정차 시 측정한 전달함수와 고속 주행 시험에서 획득한 작동 데이터를 바탕 으로 TPAS 실시하였다. 분석 결과, 주요 가진원 주과수에서 실측된 소음과 17ㅅ로 합성된 소음이 높은 상 관성을 보여 시스템 Bags 타당성을 검중하였다. 소음원은 aad 전동 소음, 견인전동기의 기계적 진동 및 전자기적 가진에 의한 진동으로 구분하여 분석하였다. 특히 견인전동기의 전자기적 가진에 의한 진동의 경로는 QBAVaw 080006)에서 전달력과 전달함수 기여도가 높게 나타났다. 향후 해당 경로의 기여도를 저감하기 위한 설계 개선을 추진할 예정이다. 자유단조건구연 SEs Crh &quot;~ &gt;” “3 &lt;2 je i f ot &gt; 3축가속도그. |. 개 회 dg P= ea e ~ ee 8 부 i — eo ! - d 1 개 - —— | * 00 ㅣ 2 ㆍ Impact hammer | f= ae, | 9 # : | etree sey See 시 ~ = | ㅣ _ ~ Lil - 개 Peet . Yaw 내 : ` 7 2 eS... : eS od att</abstract>
+  <abstract>동력분산식 고속철도차량은 견인전동기와 휠-레일 접촉에 의한 전동소음원이 대차와 차체의 복합 연결 시 스템을 통해 객실로 전달되는 특성을 갖는다. 본 연구에서는 개별 가진원에 의한 소음 발생원인과 전달 경 로를 규명하고, 특정 주파수의 실내소음 제어 및 설계 개선을 위해 AS B= WA (Transfer Path Analysis, TPAYS 수행하였다. 전달 경로 분석 방법론 중 입력 하중(80700)을 정밀하게 추정하기 위하여 14801 107609107 기법을 적용하였다. 이를 위해 대차를 소음원으로 정의하고, 차체와 시스템적으로 분리하여 전달 함수를 측정하였다. 주요 전달 경로로 모노링크, 탬퍼, 안티롤바, 공기스프링 등 11개의 전달 경로를 선정하 여 각 연결부 주변에 2개 이상의 3축 진동가속도계를 설치하고, 객실 내 소음 및 진동 측정 위치를 목표점 (1918라 70100으로 설정하였다. 정차 시 측정한 전달함수와 고속 주행 시혐에서 획득한 작동 데이터를 바탕 으로 1?ㅅ를 실시하였다. 분석 결과, 주요 가진원 주파수에서 실측된 소음과 1?ㅅ로 합성된 소음이 높은 상 관성을 보여 시스템 모델링의 타당성을 검증하였다. 소음원은 휠-레일 전동 소음, 견인전동기의 기계적 진동 및 전자기적 가진에 의한 전동으로 구분하여 분석하였다. 특히 견인전동기의 전자기적 가진에 의한 진동의 4 25= L2ABW(Yaw damper)*] ASA2 전달함수 기여도가 높게 나타났다. 향후 해당 경로의 기여도를 저감하기 위한 설계 개선을 추진할 예정이다. 오스 ~ CP . CM Lig? ee Zs 3축 가속도계 | cs | ~ 1008.스^ mm ㅣ. aaa 「 … 내 개 3 32000 ~ a la 1 Y | 브라켓 [를 22 ~ ” ^ 1 놀이 ——— in I ae 시 | : | ~ = lo ans vy a ^ i — 시험용 : i 1 ee ie = Y in \ = 13 】 oe 구구, 이 ~~) | Lg =: ㅣ - I r 4 = ris er 4 13 : 로제 바즈 개 = es &lt;&lt;“ == &amp; RS __ impact nage 1, 수 도다 이 &amp; /ㆍ ~ 3 | (, = 153254 5 er s 고! 01505 0" &gt; la &lt; 저 &gt; we ae OTe viz 4 3축 가속도계 개 = A vie ; ei eo aeaae — 일 실내 진등가속도계 빼. _——— 더 » | 수 기 『 " Z a ‘st . ¥ 개 z Ayes . 고” —— Ts dont = ‘a es 2027 ! ! ! cy. | Pay 6 at \- I 4 \ he) ) ES TENE SS op ent ia a OES Fi ~</abstract>
   <source_page>370</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.519</extraction_quality>
   <pageImage>/paper-pages/p229.webp</pageImage>
   <affiliations>
     <affiliation>현대로템</affiliation>
     <affiliation>지멘스인더스트리소프트웨어</affiliation>
   </affiliations>
   <keywords>
-    <keyword>High-speed train( al 2 +e)</keyword>
-    <keyword>Power distributed( = 34 분산식 )</keyword>
-    <keyword>Interior noise (실내 소음)</keyword>
+    <keyword>High-speed train(aL4;4 = 2}2)</keyword>
+    <keyword>Power distributed(S 44414)</keyword>
+    <keyword>Interior noise (2224)</keyword>
   </keywords>
 </paper>

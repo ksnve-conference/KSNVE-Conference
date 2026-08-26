@@ -11,15 +11,18 @@
   <time>08:40~08:55</time>
   <venue>사파이어홀[2]</venue>
   <chair>박진성(성균관대)</chair>
-  <abstract>Manganese ions (Mn?*) are essential trace elements in biological systems; however, excessive exposure can cause neurological disorders and environmental contamination, particularly in drinking water. Therefore, the development of sensitive and portable detection systems for Mn?* monitoring is highly important. In this study, we developed a portable electrochemical sensor for manganese ion detection based on vibration-assisted signal enhancement. The electrode surface was sequentially modified by depositing graphite particles, followed by the electrochemical reduction of graphene oxide (GO) to improve electrical conductivity. Subsequently, a Nafion polymer layer was introduced as a cation-exchange membrane to enhance ion selectivity and preconcentration of Mn?*. The detection was performed using cathodic stripping voltammetry (CSV). During the deposition step of CSV, a coin vibrator was applied beneath the electrode to induce vibration, promoting mass transport and improving the accumulation efficiency of manganese ions on the electrode surface. As a result, the proposed sensor exhibited significantly enhanced electrochemical signals and achieved a limit of detection (LOD) of 489 pM. This vibration-assisted strategy provides a simple and effective approach for improving mass transport in electrochemical sensing systems and demonstrates strong potential for portable environmental monitoring applications.</abstract>
+  <abstract>highly important. In this study, we developed a portable electrochemical sensor for manganese ion detection based on vibration-assisted signal enhancement. The electrode surface was sequentially modified by depositing graphite particles, followed by the electrochemical reduction of graphene oxide (GO) to improve electrical conductivity. Subsequently, a Nafion polymer layer was introduced as a cation-exchange membrane to enhance ion selectivity and preconcentration of Mn?*. The detection was performed using cathodic stripping voltammetry (CSV). During the deposition step of CSV, a coin vibrator was applied beneath the electrode to induce vibration, promoting mass transport and improving the accumulation efficiency of manganese ions on the electrode surface. As a result, the proposed sensor exhibited significantly enhanced electrochemical signals and achieved a limit of detection (LOD) of 489 pM. This vibration-assisted strategy provides a simple and effective approach for improving mass transport in electrochemical sensing systems and demonstrates strong potential for portable environmental monitoring applications. Acknowledgement This study was supported by grants from the National Research Foundation (NRF) of South Korea (grant numbers: RS-2023-NR077066, RS-2024-00460957, RS-2024-00438542, RS-2025-00561260, RS-2025-00554830 and RS-2024-00353529). + 교신저자; 성균관대학교 바이오메카트로닉스학과 공둥적자의 소속: 성균관매학교 바이오메카트로닉스학과</abstract>
   <source_page>320</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.786</extraction_quality>
   <pageImage>/paper-pages/p212.webp</pageImage>
   <affiliations>
     <affiliation>성균관대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Electrochemical(417] 화학)</keyword>
-    <keyword>Manganese( 7b)</keyword>
-    <keyword>sensor(4l7])</keyword>
+    <keyword>Electrochemical(41 7] 5}$})</keyword>
+    <keyword>Manganese( 471)</keyword>
+    <keyword>however</keyword>
+    <keyword>particularly in drinking water. Therefore</keyword>
   </keywords>
 </paper>

@@ -11,16 +11,20 @@
   <time>14:25~14:40</time>
   <venue>오팔홀[1]</venue>
   <chair>이수일(서울시립대)</chair>
-  <abstract>frequency 16800086(비선형 주파수 응답), Deflated continuation(27] 연속법), Bifurcation 80815818(분기 해석) 경전 구동 탄소나노튜브(60000 nanotube, CND FANE 기하학적 비선형성과 정전기력의 간극 의존적 득이 성이 함께 작용하여 복잡한 비선형 SHS 보인다. 특히 FEA 부근에서 응답 곡선으로부터 분리된 VHS 답 곡선(801)이 나타날 수 있으며, 이는 외란에 의해 예기치 못한 진폭 도약을 유발할 수 있어 장치 신뢰성 측면에서 주의 깊게 다루어야 한다. 26&quot; 가 아닌 정전 구동 미세 캔틸레버 공진기에서는 ()-8000 변화에 따 른 1018 의 존재가 보고되었으며[1], 저자가 포함된 APE 선행 연구에서도 cnr 공진기에서 시간적분 기 법을 통해 6018 가 부분적으로 확인된 바 있다[2]. 다만 이러한 접근은 대체로 안정 해 se 국한되며, SSM 축소 BAS 이용하는 방법[3]의 경우는 비해석적인 정전기 비선형성 1(18)을 다루는 al 제약이 있다. 가진력 경로를 따라 해를 추적하는 방법[4] 또한 경로 연결성에 의존한다는 점에서 한계가 있다. 이와 같이 isola 의 전체적인 비선형 응답 PAS 체계적으로 soho] 것은 매우 어렵다. 본 연구에서는 이러한 WAS SOE, 해의 경로 연결성에 의존하지 않고 분기 해에 접근할 수 있는 수 치 기법인 0608660 continuation[5]S CNT 공진기의 비선형 주파수 응답 해석에 적용한다. 아울러 Q-factor 와 가진 전압을 매개변수로 주과수-매개변수 공간에서 4018 의 생성과 소멸 특성을 탐색하고, 이를 통해 공진기 의 거동을 보다 넓은 작동 영역에서 이해하는 것을 SHE 한다. 본 연구의 결과는 정전 구동 CNT 공진기에 서 나타나는 복합 비선형 응답을 해석하는 데 도움이 될 것으로 기대되며, 추후 실험적 검중을 위한 수치적 기반 자료로 이어질 수 있을 것이다. [1] Pratiher, B. (2014) “Stability and bifurcation analysis of an electrostatically controlled highly deformable microcantilever- based resonator,” Nonlinear Dynamics, 78, 1781-1800. [2] Kim, I K., Lee, S. 1. (2019) “Numerical prediction of isolated response solution in electrostatically excited carbon nanotube resonator,” Proc. Nonlinear Dynamic Conference (NoDyCon), Rome, Italy. [3] Ponsioen, S., Pedergnana, T., Haller, G. (2019) “Analytic prediction of isolated forced response curves from spectral submanifolds,” Nonlinear Dynamics, 98, 2755-2773. [4] Quaegebeur, S., Vadeard, T., Thouverez, F (2025) “A new numerical path to retrieve isolated branches on large scale nonlinear mechanical systems,” Nonliner Dynamics, 113, 3035-3052. [5] Farrell, P E., Beentjes, C. H. L., Birkisson, A. (2016) “The computation of disconnected bifurcation diagrams,” arXiv preprint arXiv :1603.00809. Taek Seas # 서울지림때학교 대학원</abstract>
+  <abstract>해석) 정전 구동 탄소나노튜브Ocarbon nanotube, CNTPG 공진기는 기하학적 비선형성과 정전기력의 간극 의존적 특이 성이 함께 작용하여 복잡한 비선형 응답을 보인다. 특히 주공진 부근에서 응답 곡선으로부터 분리된 고립 응 답 곡선OisolaP이 나타날 수 있으며, 이는 외란에 의해 예기치 못한 진폭 도약을 유발할 수 있어 장치 신뢰성 측면에서 주의 깊게 다루어야 한다. CNT 가 아닌 정전 구동 미세 캔틸레버 공진기에서는 Q-factor 변화에 따 른 BLola 의 존재가 보고되었으며XSG 저자가 포함된 연구팀의 선행 연구에서도 CNTG 공진기에서 시간적분 기 법을 통해 isola 가 부분적으로 확인된 바 있다YUG 다만 이러한 접근은 대체로 안정 해 응답에 국한되며, SSMG 축소 모델을 이용하는 방법Z의 경우는 비해석적인 정전기 비선형성 1/(1-x)2 을 다루는 데 제약이 있다. 가진력 경로를 따라 해를 추적하는 방법[G 또한 경로 연결성에 의존한다는 점에서 한계가 있다. 이와 같이 isola 의 전체적인 비선형 응답 구조를 체계적으로 파악하는 것은 매우 어렵다. 본 연구에서는 이러한 배경을 바탕으로, 해의 경로 연결성에 의존하지 않고 분기 해에 접근할 수 있는 수 치 기법인 deflated continuation\을 CNTG 공진기의 비선형 주파수 응답 해석에 적용한다. 아울러 Q-factor 와 가진 전압을 매개변수로 주파수-매개변수 공간에서 isola 의 생성과 소멸 특성을 탐색하고, 이를 통해 공진기 의 거동을 보다 넓은 작동 영역에서 이해하는 것을 목표로 한다. 본 연구의 결과는 정전 구동 CNTG 공진기에 서 나타나는 복합 비선형 응답을 해석하는 데 도움이 될 것으로 기대되며, 추후 실험적 검증을 위한 수치적 기반 자료로 이어질 수 있을 것이다. [1] Pratiher, B. (2014) 귆Stability and bifurcation analysis of an electrostatically controlled highly deformable microcantileverbased resonator,귇 Nonlinear Dynamics, 78, 1781-1800. [2] Kim, I. K., Lee, S. I. (2019) 귆Numerical prediction of isolated response solution in electrostatically excited carbon nanotube resonator,귇 Proc. Nonlinear Dynamic Conference (NoDyCon), Rome, Italy. [3] Ponsioen, S., Pedergnana, T., Haller, G. (2019) 귆Analytic prediction of isolated forced response curves from spectral submanifolds,귇 Nonlinear Dynamics, 98, 2755-2773. [4] Quaegebeur, S., Vadcard, T., Thouverez, F. (2025) 귆A new numerical path to retrieve isolated branches on large scale nonlinear mechanical systems,귇 Nonliner Dynamics, 113, 3035-3052. [5] Farrell, P. E., Beentjes, C. H. L., Birkisson, Á. (2016) 귆The computation of disconnected bifurcation diagrams,귇 arXiv preprint arXiv:1603.00809. ˋG교신저자bG 서울시립대학교 lTagUU JG 서울시립대학교 대학원 QG ൽ코비스테크놀로지</abstract>
   <source_page>234</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.708</extraction_quality>
   <pageImage>/paper-pages/p126.webp</pageImage>
   <affiliations>
     <affiliation>서울시립대</affiliation>
     <affiliation>코비스테크놀로지</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Carbon nanotube 1766008604(탄소나노튜브 공진기)</keyword>
-    <keyword>Isolated response curve(al#} 응답 곡선)</keyword>
-    <keyword>Nonlinear</keyword>
+    <keyword>Carbon nanotube resonator(탄소나노튜브 공진기)</keyword>
+    <keyword>Isolated response curve(고립 응답 곡선)</keyword>
+    <keyword>Nonlinear frequency response(비선형 주파수 응답)</keyword>
+    <keyword>Deflated continuation(소거 연속법)</keyword>
+    <keyword>Bifurcation analysis(분기</keyword>
   </keywords>
 </paper>

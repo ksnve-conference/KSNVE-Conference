@@ -11,8 +11,10 @@
   <time>14:35~14:50</time>
   <venue>사파이어홀[1]</venue>
   <chair>김재환(국립금오공대)</chair>
-  <abstract>EV 용 소형 냉각수 액추에이터는 모터, 다단 기어열, 하우징 등으로 구성되며, 작동 중 발생하는 진동은 전자기 가진과 구조 전달 특성이 복합적으로 작용한 결과로 나타난다. 이러한 시스템의 NVH 특성을 예측하 기 위해서는 전자기 해석, 기구 동역학 해석, 구조 응답 AAS GAM multiphysics 기반의 time-domain 해석이 필요하지만, 실제 모델에서는 계산 비용과 모델링 복잡도가 매우 크다는 한계가 있다. 특히 하우징과 같은 유연체 부품을 어떤 방식으로 모델링하느냐에 따라 전체 해석 시간과 응답 표현 능력이 크게 달라질 수 있다. 본 연구에서는 전자기력 기반 액추에이터의 time-domain 진동 응답을 예측하기 위한 해석 프로세스를 Ansys Motion 기반으로 구축하고, 16341016 body 모델링 전략으로서 Nodal FE Body 2} Modal FE Body 의 적용 차이를 비교하였다. 먼저, 전자기 AAS 통해 모터 구동에 따른 가진력을 산출하고, 이를 다단 기어계 를 포함하는 multibody dynamics 모델에 AAS time-domain 동적 응답을 해석하였다. 이때 eas flexible body 로 고려하여 구조 진동 SHS 계산하였으며, 각 절점의 모든 자유도를 유지하여 국부 변형 및 세부 거동 표현에 유리한 Nodal FE Body 9} CMS 기반 자유도를 축소한 Modal FE Body 두 가지 방법을 고 려하였다. 동일한 액추에이터 시스템에 대해 두 모델링 방식을 적용한 결과, Modal FE Body S 이용하여 구 동 시뮬레이션 소요 시간을 약 24 시간에서 10 분 수준으로 크게 단축할 수 있었으며, 이를 FA time domain 해석에서 주요 한계로 작용하는 과도한 계산 비용을 효과적으로 완화할 수 있었고, 초기 해석 단계 에서 발생할 수 있는 설계 오류 및 모델링 시행착오에 보다 신속하게 대응할 + VSS 확인하였다. pfait-oaey 60 6) 」』 된 } ( 0“</abstract>
+  <abstract>전자기 가진과 구조 전달 특성이 복합적으로 작용한 결과로 나타난다. 이러한 시스템의 NVH 특성을 예측하 기 위해서는 전자기 해석, 기구 동역학 해석, 구조 응답 해석을 연계한 multiph sics 기반의 time-domain 해석이 필요하지만, 실제 모델에서는 계산 비용과 모델링 복잡도가 매우 크다는 한계가 있다. 특히 하우징과 같은 유연체 부품을 어떤 방식으로 모델링하느냐에 따라 전체 해석 시간과 응답 표현 능력이 크게 달라질 수 있다. 본 연구에서는 전자기력 기반 액추에이터의 time-domain 진동 응답을 예측하기 위한 해석 프로세스를 Ans s Motion 기반으로 구축하고, flexible bod G 모델링 전략으로서 Nodal FE Bod 와 Modal FE Bod 의 적용 차이를 비교하였다. 먼저, 전자기 해석을 통해 모터 구동에 따른 가진력을 산출하고, 이를 다단 기어계 를 포함하는 multibod G d namics 모델에 연계하여 time-domain 동적 응답을 해석하였다. 이때 하우징을 flexible bod 로 고려하여 구조 진동 응답을 계산하였으며, 각 절점의 모든 자유도를 유지하여 국부 변형 및 세부 거동 표현에 유리한 Nodal FE Bod 와 jtzG 기반 자유도를 축소한 Modal FE Bod G 두 가지 방법을 고 려하였다. 동일한 액추에이터 시스템에 대해 두 모델링 방식을 적용한 결과, Modal FE Bod 를 이용하여 구 동 시뮬레이션 소요 시간을 약 24 시간에서 10 분 수준으로 크게 단축할 수 있었으며, 이를 통해 time- domain 해석에서 주요 한계로 작용하는 과도한 계산 비용을 효과적으로 완화할 수 있었고, 초기 해석 단계 에서 발생할 수 있는 설계 오류 및 모델링 시행착오에 보다 신속하게 대응할 수 있음을 확인하였다.</abstract>
   <source_page>93</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.73</extraction_quality>
   <pageImage>/paper-pages/p020.webp</pageImage>
   <affiliations>
     <affiliation>서울대</affiliation>
@@ -20,8 +22,11 @@
     <affiliation>EV 냉각수 액추에이터 진동 SS 위한 전자기-연성 해석</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Multiphysics(t} =] 4)</keyword>
-    <keyword>Multibody dynamics(t}=-4] 동역학)</keyword>
-    <keyword>CMSGRE 모드 합성법)</keyword>
+    <keyword>Multiphysics(다중물리학)</keyword>
+    <keyword>Multibody dynamics(다물체 동역학)</keyword>
+    <keyword>CMS(부분 모드 합성법) EV 용 소형 냉각수 액추에이터는 모터</keyword>
+    <keyword>다단 기어열</keyword>
+    <keyword>하우징 등으로 구성되며</keyword>
+    <keyword>작동 중 발생하는 진동은</keyword>
   </keywords>
 </paper>

@@ -11,16 +11,18 @@
   <time>09:30~09:45</time>
   <venue>오팔홀[1]</venue>
   <chair>김준(LIG D&amp;A)</chair>
-  <abstract>중스피커) 기뢰는 민간 및 군 항구를 대상으로 부설되어 Ges 위협하고, 단 한발로 고가의 대형 함정을 Aya 수 있는 가장 경제적이고 효과적인 해군 무기체계 중 하나이다. 함정의 진동이나 음향, 수압과 자기장의 변화 등 다양한 ASS 감지하여 폭발하는 기뢰의 다양한 감응 특성을 고려하여 기뢰를 제거하는 무기체계를 소 해장비라 일컨는다. 그 중 음향에 감응하는 기뢰를 제거하는 역할을 하는 수중스퍼커는 수중쪽발 시 SAT 에 의한 직접적인 영향 및 장비 내부로 전달되는 급가속 충격이 크게 작용하므로 이로 인한 장비의 과손 및 손상을 방지할 수 있는 설계가 요구된다. 설계 단계에서 중격성능을 확인하는 대표적인 절차는 독일 해군의 2043에서 확인할 수 있다. 실제 시험적인 절차의 경우 초기 설계단계에서 대상장비를 위한 시험장치 및 장비 구축 등 규정에서 제시한 절차를 실현하는 것에 많은 한계를 지니고 있으므로 신뢰성이 있는 해석모델 을 구축하여 이론적 접근으로 구조안전성을 평가하는 방법이 효과적이다. 따라서 본 논문에서는 이론적 방 Ws 통한 중격성능 검토를 목적으로 해석모델에 대한 물리적 타당성을 입중하기 위하여 유체장 및 하중 적 용방안에 대한 사전검중을 수행하였고, 수중쪽발 현상 모델을 구축하여 충격 완화 설계에 따라 음향발생기 에 발생하는 변형 및 응력과 이로 인한 장비의 파손 유/무를 수치해석을 통해 추정하였다. ; Underwater TNTX Eg speaker</abstract>
+  <abstract>중스피커) 기뢰는 민간 및 군 항구를 대상으로 부설되어 항로를 위협하고, 단 한발로 고가의 대형 함정을 파괴할 수 있는 가장 경제적이고 효과적인 해군 무기체계 중 하나이다. 함정의 진동이나 음향, 수압과 자기장의 변화 등 다양한 ASS 감지하여 폭발하는 기뢰의 다양한 감응 특성을 고려하여 기뢰를 제거하는 무기체계를 소 해장비라 일컨는다. 그 중 음향에 감응하는 기뢰를 제거하는 역할을 하는 수중스피커는 수중폭발 시 충격파 에 의한 직접적인 영향 및 장비 내부로 ASS BK SA] AA 작용하므로 이로 인한 장비의 파손 및 손상을 방지할 수 있는 설계가 요구된다. 설계 단계에서 충격성능을 확인하는 대표적인 절차는 독일 해군의 8\043에서 확인할 수 있다. 실제 시험적인 절차의 경우 초기 설계단계에서 대상장비를 위한 시험장치 및 장비 구축 등 규정에서 제시한 절차를 실현하는 것에 많은 한계를 지니고 있으므로 신뢰성이 있는 해석모델 을 구축하여 이론적 접근으로 구조안전성을 평가하는 방법이 효과적이다. 따라서 본 논문에서는 이론적 방 법을 통한 충격성능 검토를 목적으로 해석모델에 대한 물리적 타당성을 입증하기 위하여 유체장 및 하중 적 용방안에 대한 사전검증을 수행하였고, 수중폭발 현상 모델을 구축하여 충격 완화 설계에 따라 음향발생기 에 발생하는 변형 및 응력과 이로 인한 장비의 파손 유/무를 수치해석을 통해 추정하였다. ㆍ 가 INT Xkg speaker</abstract>
   <source_page>140</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.725</extraction_quality>
   <pageImage>/paper-pages/p067.webp</pageImage>
   <affiliations>
     <affiliation>LIG D&amp;A</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Mines(7] 2])</keyword>
-    <keyword>Mine sweeping(7] 뢰소해)</keyword>
-    <keyword>Underwater explosion(4-44 2)</keyword>
-    <keyword>Underwater Speaker(+=</keyword>
+    <keyword>Mines(7]#])</keyword>
+    <keyword>Mine sweeping(7] =] 2°@]])</keyword>
+    <keyword>Underwater explosion(&lt;-% = 2)</keyword>
+    <keyword>Underwater Speaker(=&gt;</keyword>
   </keywords>
 </paper>

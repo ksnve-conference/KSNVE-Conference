@@ -11,8 +11,10 @@
   <time>11:25~11:40</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김도형(항공우주연)</chair>
-  <abstract>치), Aluminum Honeycomb Core( 2-4] 허니콤 코어), Offshore Landing Simulation(@]+ 착륙 시뮬레이션) 우주 발사체 시장의 확대와 재사용 발사체의 상용화에 따라 발사체의 안정적인 착륙 및 회수 기술의 중요 성이 중가하고 있다. 특히 착륙 GS 이용해 수직 IHS 수행하는 AG 발사체는 충격 흡수와 SH 후 자세 안정성 확보가 필수적이다. 재사용 발사체의 회수 방식 중 해상 작륙장을 이용하는 DRL(Downrange 1.300108)방식은 발사 후 1 단 발사체가 발사장으로 복귀하는 RTLS(Return To Launch 8116)방식보다 연료 AES 절감하여 탑재 중량 확보 측면에서 유리하다. 그러나 해상 착륙 시에는 과랑과 측풍과 같은 외란이 착륙 안정성을 저해하는 요인으로 작용한다. 따라서 본 연구에서는 상용 다물체 동역학 프로그램인 MSC ADAMS 를 활용하여 착륙 다리와 다양한 Sa 흡수 장치를 이용하는 재사용 발사체에 대하여 측풍(60480 및 해상 착륙 과정에 작용하는 해상 착륙장의 운동(\346)을 함께 고려하여 착륙 Aes 조사한다(0418. 1). 착륙 다리의 다양한 충격 흡수 장치로는 Spring-damper system(Case 1), 알루미늄 허니콤 코어(2366 2), 및 알루미늄 허니콤 코어와 Damper system(Case 3S 함께 사용하는 세 종류의 충격 흡수 AAS 각각 이 용하여 착륙 시뮬레이션을 수행한다. 이후, 착륙 다리에 발생하는 동적 거동 및 에너지 흡수 특성을 분석한 다. 착륙 시뮬레이션 결과, 동일한 Gust 속도에서 168#1 과 Leg#3 의 충격 에너지 흡수 BE Case 3 에서 가장 뛰어난 것을 확인하였다0016. 2(a)). Wave 의 효과 고려 시 Case 2 에서 초기 압축 후 210[684 장성으로 변형 상태를 유지하며 착륙에 성공하였으며, Case 1 과 Case 8 은 각각 Spring system 의 4142} Damper system 의 압축 반력으로 인해 착륙에 실패하였다(18. 2(b)). Shock energy absorption ratio Reaction force of shock absorber system (leg #1 / Leg #3) (leg #2) y 800 = 160 Landing platform a = LA | _ 600 :50x50xim t+ , x eto ^ 호 ㆍ [개 Hi 그 20 pate $ 400) ase 1 Lega] 5 | 0200 a 노 0. 5 7 1 12 15 17 906 내 VL 25 30 4 “ 8, * Gust [m/s] Time [s] ^ (a) Gust effect (b) Wave effect (a) Gust effect (b) Wave effect</abstract>
+  <abstract>외란을 고려한 재사용 발사체의 해상 착륙 거동 해석 Offshore Landing Behavior Simulations of a Reusable Launch Vehicle Considering Disturbances 김현호귕پ귖ബ박재상ನബ류원희귕څ귖ബ심창훈귕څڅ귖ബ조명균귕څڅڅ귖 Hyeon-Ho Kim#, Jae-Sang Parkನ, Won-Hee Ryu=, Chang-Hoon Sim and Myeong-gyun Cho= , .H\ :RUGV  5HXVDEOH /DXQFK 9HKLFOH 재사용 발사체  /DQGLQJ /HJ 착륙 다리  6KRFN $EVRUEHU 6\VWHP 충격 흡수 장 치 $OXPLQXP+RQH\FRPE&amp;RUH 알루미늄 허니콤 코어 2IIVKRUH/DQGLQJ6LPXODWLRQ 해상 착륙 시뮬레이션   우주 발사체 시장의 확대와 재사용 발사체의 상용화에 따라 발사체의 안정적인 착륙 및 회수 기술의 중요 성이 증가하고 있다. 특히 착륙 다리를 이용해 수직 착륙을 수행하는 재사용 발사체는 충격 흡수와 착륙 후 자세 안정성 확보가 필수적이다. 재사용 발사체의 회수 방식 중 해상 착륙장을 이용하는 DRL(Downrange Landing)방식은 발사 후 1 단 발사체가 발사장으로 복귀하는 RTLS(Return To Launch Site)방식보다 연료 소모를 절감하여 탑재 중량 확보 측면에서 유리하다. 그러나 해상 착륙 시에는 파랑과 측풍과 같은 외란이 착륙 안정성을 저해하는 요인으로 작용한다. 따라서 본 연구에서는 상용 다물체 동역학 프로그램인 tzjG hkhtz 를 활용하여 착륙 다리와 다양한 충격 흡수 장치를 이용하는 재사용 발사체에 대하여 측풍(Gust) 및 해상 착륙 과정에 작용하는 해상 착륙장의 운동(Wave)을 함께 고려하여 착륙 거동을 조사한다(Fig. 1). 착륙 다리의 다양한 충격 흡수 장치로는 Spring-damper s stem(Case XPSG 알루미늄 허니콤 코어(Case YPSG 및 알루미늄 허니콤 코어와 Damper s stem(Case ZP을 함께 사용하는 세 종류의 충격 흡수 장치를 각각 이 용하여 착륙 시뮬레이션을 수행한다. 이후, 착륙 다리에 발생하는 동적 거동 및 에너지 흡수 특성을 분석한 다. 착륙 시뮬레이션 결과, 동일한 Gust 속도에서 Leg#1 과 Leg#3 의 충격 에너지 흡수 비는 Case 3 에서 가장 뛰어난 것을 확인하였다(Fig. 2(a)). Wave 의 효과 고려 시 Case 2 에서 초기 압축 후 Plateau 강성으로 변형 상태를 유지하며 착륙에 성공하였으며, Case 1 과 Case 3 은 각각 Spring s stem 의 복원력과 Damper s stem 의 압축 반력으로 인해 착륙에 실패하였다(Fig. 2(b)).</abstract>
   <source_page>360</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.617</extraction_quality>
   <pageImage>/paper-pages/p219.webp</pageImage>
   <affiliations>
     <affiliation>충남대</affiliation>
@@ -20,8 +22,5 @@
     <affiliation>한화에어로스페이스</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Reusable Launch Vehicle(”]A}- 발사체)</keyword>
-    <keyword>Landing Leg(2}§ 다리)</keyword>
-    <keyword>Shock Absorber System(44 흡수 4</keyword>
   </keywords>
 </paper>

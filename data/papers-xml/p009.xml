@@ -11,14 +11,19 @@
   <time>15:05~15:20</time>
   <venue>오팔홀[1]</venue>
   <chair>배성원(LG전자)</chair>
-  <abstract>Remote Optical Sensor( 14 광학 센서) Hybrid 44008[(하이브리드 모델) 최근 디지털 헬스케어 산업의 성장에 따라 피부 상태를 원격으로 진단하고자 하는 수요가 중가하고 있다. 기존 광학 진단 기기(285, 50171 둥)의 접족식 오차 및 외광 취약성을 극복하기 위해, 본 연구는 AMCW 라 이다를 활용하여 생체 조직의 SEAS ww) 와 환산산란계수 (//&apos; )를 정량화하는 원격 진단 기법을 제안한 다. 매질 내부의 순수 산란광 수집을 위해 라이다 광학계의 1/4 과장판(4\[)을 제거한 교차 편광 셋업을 구 축하고, 20-tap 병렬 복조 방식을 적용해 저출력 산란광 신호의 SNR 을 극대화하였다. 이와 함께 근거리의 몬테카를로 시뮬레이션과 원거리의 확산 EONS 결합한 하이브리드 프로파일을 수신 렌즈 면적에 대해 적분함으로써 하드웨어 수신 Ass 정밀하게 예측하는 BAS 구축하였다. 역추정 과정에서는 통제된 실혐 환경의 시스템 변수를 비례 상수 KE 캘리브레이션하고, 측정된 진폭과 Ate 동시에 만족하는 해를 탐색하되 다중 해 발생 시 생물학적 제약 조건을 도입하여 알고리즘의 강건성 을 확보하였다. 사람 피부 물성 범위를 모사한 16 개의 조직 모사 팬 실험 결과, we 12.77%, //&apos; 는 18.06%의 평균 오차율004470)을 기록했다. 특히 실제 값과의 선형적 상관관계를 나타내는 결정계수 가 H, 0.9738, uw’, 0.8752 로 매우 높게 나타나, 원격 환경에서 매질의 상태 변화를 정확히 추적할 수 있음을 입중하였다. 본 연구는 AMCW 라이다 기반의 하이브리드 Bago] 원격 피부 진단 센서로서 높은 타당성을 ABS 시사하며, 향후 거리 종속 캘리브레이션 및 미광(608 light) 보정 알고리즘을 통해 비통제 임상 환경 AAS 시스템 범용성을 고노화할 계획이다. Table 1 Quantitative estimation performance. + 한국과학기솔원 cases * 한국과학기술원 기계공학과 - 69 -</abstract>
+  <abstract>기존 광학 진단 기기OkyzSG zmkpG 등)의 접촉식 오차 및 외광 취약성을 극복하기 위해, 본 연구는 htj~G 라 ᇱ 이다를 활용하여 생체 조직의 흡수계수ୄߤ୽୅와 환산산란계수 Oߤஏ P를 정량화하는 원격 진단 기법을 제안한 다. 매질 내부의 순수 산란광 수집을 위해 라이다 광학계의 1/4 파장판(QWP)을 제거한 교차 편광 셋업을 구 축하고, 20-tap 병렬 복조 방식을 적용해 저출력 산란광 신호의 zuy 을 극대화하였다. 이와 함께 근거리의 몬테카를로 시뮬레이션과 원거리의 확산 이론Ok{P을 결합한 하이브리드 프로파일을 수신 렌즈 면적에 대해 적분함으로써 하드웨어 수신 신호를 정밀하게 예측하는 모델을 구축하였다. 역추정 과정에서는 통제된 실험 환경의 시스템 변수를 비례 상수 ୧로 캘리브레이션하고, 측정된 진폭과 위상을 동시에 만족하는 해를 탐색하되 다중 해 발생 시 생물학적 제약 조건을 도입하여 알고리즘의 강건성 ᇱ 을 확보하였다. 사람 피부 물성 범위를 모사한 16 개의 조직 모사 팬텀 실험 결과, ߤ୽ 는 12.77%, ߤஏ 는 ୎ 18.06%의 평균 오차율(MAPE)을 기록했다. 특히 실제 값과의 선형적 상관관계를 나타내는 결정계수 ୮ 가 ᇱ ߤ୽G WU`^Z_SG ߤஏ 0.8752 로 매우 높게 나타나, 원격 환경에서 매질의 상태 변화를 정확히 추적할 수 있음을 입증하였다. 본 연구는 htj~G 라이다 기반의 하이브리드 모델링이 원격 피부 진단 센서로서 높은 타당성을 가짐을 시사하며, 향후 거리 종속 캘리브레이션 및 미광(Stra light) 보정 알고리즘을 통해 비통제 임상 환경 에서의 시스템 범용성을 고도화할 계획이다. {GXGxGGUG ୎ lG ytzlG thwlGOLPG ୮ yGzG YUZ^Y]G X_UW]GLG WU_^\YG hG WUX`Z]G XYU^^GLG WU`^Z_G ˋG한국과학기술원 기계공학과 lTaG gUU JG 한국과학기술원 기계공학과 Q 한국과학기술원 기계공학과 QQG 한국과학기술원 기계공학과</abstract>
   <source_page>82</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.627</extraction_quality>
   <pageImage>/paper-pages/p009.webp</pageImage>
   <affiliations>
     <affiliation>KAIST</affiliation>
   </affiliations>
   <keywords>
-    <keyword>AMCW LiDAR(AMCW 라이다 Optical Property(2*} 물성)</keyword>
-    <keyword>Diffuse Reflectance(44t 반사광)</keyword>
+    <keyword>AMCW LiDAR(AMCW 라이다)</keyword>
+    <keyword>Optical Property(광학 물성)</keyword>
+    <keyword>Diffuse Reflectance(확산 반사광)</keyword>
+    <keyword>Remote Optical Sensor(원격 광학 센서)</keyword>
+    <keyword>Hybrid Model(하이브리드 모델) G 최근  디지털  헬스케어  산업의  성장에  따라  피부  상태를  원격으로  진단하고자  하는  수요가  증가하고  있다</keyword>
   </keywords>
 </paper>

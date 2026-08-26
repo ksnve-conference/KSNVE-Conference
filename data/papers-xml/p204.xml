@@ -11,16 +11,19 @@
   <time>09:10~09:25</time>
   <venue>릴리홀[2]</venue>
   <chair>성요한(우미건설)</chair>
-  <abstract>Convolutional Neural Network (합성 곱신경망) 소음은 거의 모든 분야에서 발생하고 있으며 geet 환경을 위해 소음저감 기술 개발과 더불어 정책적인 관리도 지속적으로 발전되어 왔다. 소음 측정은 가장 기본적인 것으로 주로 수음계를 사용하거나 마이크로 폰과 연계된 측정 Las} 같은 계측장비를 사용하고 있다. 수음 모니터렁은 목적에 따라 단시간 혹은 장 시간 자동 혹은 수동 측정시스템을 적용하고 있으며, 차후 기록된 자료들 중 이상 Ase 사람이 일일지 들 어가면서 계거하는 식의 분석이 기존의 방법이라고 할 수 있다. 하지만 회근에는 A] 급속한 보급으로 인 해 이러한 문제를 소프드웨어적으로 처리하는 경우가 중가하고 있으며 정확도 역시 상당한 수준에 달하고 있다 본 연구는 소음 모니터링 자료를 단순히 확인하는 Ao] 아니라 소음 발생 원인을 판별하기 위해 환경분 쟁의 주요 내용 중 FU 공사장 소음을 대상으로 Gey BIS 적용해 보았다. 모델의 학습 및 검중을 위해 기 구축된 Al Huby 제공하는 도시 소리 데이터 중 공사장 카테고리에 해당하는 LA7]generator), 콘크리트펌프(60007666 pump), »44]7](crusher), 항타기(646 driver) 등 4개 종류에 대한 자료를 활용하였다. 원 mele WAV 형식으로 제공되며, 학습 데이터 9,717개와 AS 데이터 522개로 구성되어 있다. 적용한 몇 가지 모델은 1786161에 정리하였다. Awe 검중된 모델로 가장 표준적인 CNN 모델이다. 8그 HP 모바일 환경에서도 적용이 가능한 빠른 연산속도가 특징이다. 0그룹은 하이브리드 형태로 소량의 소음 데이터에도 적용가능하다. Dive 최신 BAS 복합소음 WA] 적용 가능한 모델이다. 이들 BAS 적용 한 결과 본 연구 대상인 공사장 수음의 경우는 ONNVit BAO] 가장 효과적임을 알 수 있었다 Table 1 Summary of model architectures Model Architecture ImageNet backbone ResNet50 + classifier ImageNet backbone VGGI6 + classifier MobileNetv2 | 8 | ImageNet backbone + classifier 3xConv-BN-Pool CNN+SVM + GAP + Dense CNN features CNN+RE + RF(200) CNN features Custom CNN | ㅁ | + LinearSVM . CNN + 2xTransformer CNN+NAT | ㅁ | encoder + 정회원, @68환경음향연구소 ＊ 한국표준과학연구원</abstract>
+  <abstract>소음은 거의 모든 분야에서 발생하고 있으며 정온한 환경을 위해 소음저감 기술 개발과 더불어 정책적인 관리도 지속적으로 발전되어 왔다. 소음 측정은 가장 기본적인 것으로 주로 소음계를 사용하거나 마이크로 폰과 연계된 측정 시스템과 같은 계측장비를 사용하고 있다. 소음 모니터링은 목적에 따라 단시간 혹은 장 시간 자동 혹은 수동 측정시스템을 적용하고 있으며, 차후 기록된 자료들 중 이상 신호는 사람이 일일지 들 어가면서 제거하는 식의 분석이 기존의 방법이라고 할 수 있다. 하지만 최근에는 AI 의 속한 보 으로 인 해 이러한 문제를 소프트웨어적으로 처리하는 경우가 증가하고 있으며 정확도 역시 상당한 수준에 달하고 있다. 본 연구는 소음 모니터링 자료를 단순히 확인하는 것이 아니라 소음 발생 원인을 판별하기 위해 환경분 쟁의 주요 내용 중 하나인 공사장 소음을 대상으로 딥러닝 모델을 적용해 보았다. 모델의 학습 및 검증을 위해 기 구축된 AI Hub에서 제공하는 도시 소리 데이터 중 공사장 카테고리에 해당하는 발전기(generator), 콘크리트펌프(concrete pump), 파쇄기(crusher), 항타기(pile driver) 등 4개 종류에 대한 자료를 활용하였다. 원 데이터는 WAV 형식으로 제공되며, 학습 데이터 9,717개와 검증 데이터 522개로 구성되어 있다. 적용한 몇 가지 모델은 Table1에 정리하였다. A그룹은 검증된 모델로 가장 표준적인 CNN 모델이다. B그 룹은 모바일 환경에서도 적용이 가능한 빠른 연산속도가 특징이다. C그룹은 하이브리드 형태로 소량의 소음 데이터에도 적용가능하다. D그룹은 최신 모델로 복합소음 판별에 적용 가능한 모델이다. 이들 모델을 적용 한 결과 본 연구 대상인 공사장 소음의 경우는 CNNVit 모델이 가장 효과적임을 알 수 있었다.</abstract>
   <source_page>312</source_page>
+  <extraction_method>font-decode</extraction_method>
+  <extraction_quality>0.724</extraction_quality>
   <pageImage>/paper-pages/p204.webp</pageImage>
   <affiliations>
     <affiliation>환경음향연구소</affiliation>
     <affiliation>표준과학연</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Construction Noise (@A}% 소음)</keyword>
-    <keyword>Deep Learning (2d)</keyword>
-    <keyword>Mel-spectrogram (WA MEERA)</keyword>
+    <keyword>Construction Noise (공사장  소음)</keyword>
+    <keyword>Deep Learning (딥러닝)</keyword>
+    <keyword>Mel-spectrogram (멜스펙트로그램)</keyword>
+    <keyword>Convolutional Neural Network (합성곱신경망)</keyword>
   </keywords>
 </paper>

@@ -11,15 +11,16 @@
   <time>15:50~16:05</time>
   <venue>그랜드볼룸[1]</venue>
   <chair>김완진(국립한밭대)</chair>
-  <abstract>영구자석 선형 동기 전동기(0607080601-\488106[ Linear Synchronous Motor, PMLSM)= 높은 효율, 우수 한 추력 밀도, 그리고 기어와 같은 기계적 변환 장치가 필요 없는 단순한 구조 덕분에 초정밀 가공 시스템 및 고속 전자기 추진 시스템 등 다양한 산업 분야에서 핵심적인 역할을 수행하고 있다 [1]. 특히 최근 산업 계의 요구에 따라 고속-고정밀 구동이 가능한 PMLSM 연구가 활발히 진행되고 있다. 고속 구동용 PMLSM 은 설계 특성상 일반적으로 큰 극 피치(0016 Pitch)S 갖게 된다. 이러한 구조적 SYS 공극 자속 BES 비정현과적 분포를 유발하여 추력 리플(11019 810216)이 발생할 수 있다. 영구자석 분할(8680060160 PM) 기 법은 추력 평균을 높이고 리플을 예측하는 a 효과적이나, 실제 제작 과정에서 발생하는 세그먼트 간의 간 극(382)이 자속 밀도 분포에 미치는 영향에 대한 정밀한 분석이 필요하다[2]. 또한, 할바흐 배열03816804 Aray)&amp; 적용하여 자속을 집중시키는 방식도 널리 사용되지만, 고속 구동 시의 와전류 손실을 완전히 해결 하기에는 한계가 있다 [2]. 복잡한 자석 배열을 저비용으로 구현하기 위해 소형 큐브 자석을 활용한 이산화 ZAlDiscrete Approximation) 기법도 연구되고 있다 [3]. 본 연구에서는 단일 영구자석을 소형 큐브 자석으 로 활용하여 공극의 자속 밀도를 정현파형에 가깝게 구현하고자 한다. 자석을 사용량을 감소시키고 이동자 에서 자석의 조렵에 유용한 장접이 있다. 노고 . Cite tere 다스리 저놈 Ee aT = … / \ 니그 a ery &gt; - -</abstract>
+  <abstract>한 추력 밀도, 그리고 기어와 같은 기계적 변환 장치가 필요 없는 단순한 구조 덕분에 초정밀 가공 시스템 및 고속 전자기 추진 시스템 등 다양한 산업 분야에서 핵심적인 역할을 수행하고 있다 [1]. 특히 최근 산업 계의 요구에 따라 고속-고정밀 구동이 가능한 2\41Ｌ8814 연구가 활발히 진행되고 있다. 고속 구동용 2441.94 은 설계 특성상 일반적으로 큰 극 피치(0016 0100를 갖게 된다. 이러한 구조적 특성은 공극 자속 밀도의 비정현파적 분포를 유발하여 추력 리플(11248 Ripple)o] 23st 수 있다. 영구자석 분할(96801604160 PM) 기 법은 추력 평균을 높이고 리플을 예측하는 데 효과적이나, 실제 제작 과정에서 발생하는 세그먼트 간의 간 극(0480)이 자속 밀도 분포에 미치는 영향에 대한 정밀한 분석이 필요하다[2]. 또한, 할바흐 배열08216804 Arrays 적용하여 자속을 집중시키는 방식도 널리 사용되지만, 고속 구동 시의 와전류 손실을 완전히 해결 하기에는 한계가 있다 [2]. 복잡한 자석 배열을 저비용으로 구현하기 위해 소형 큐브 자석을 활용한 이산화 2A}(Discrete Approximation) 7]/4J#&amp; APs] We} B). 본 연구에서는 단일 영구자석을 소형 큐브 자석으 로 활용하여 공극의 자속 밀도를 정현파형에 가깝게 구현하고자 한다. 자석을 사용량을 감소시키고 이동자 에서 자석의 조립에 유용한 장점이 있다. sparen ae Calculator Expressions Plot 1 니치아 ee Ansys i= A 때 0" wall 7? | |</abstract>
   <source_page>253</source_page>
+  <extraction_method>ocr-300dpi</extraction_method>
+  <extraction_quality>0.635</extraction_quality>
   <pageImage>/paper-pages/p145.webp</pageImage>
   <affiliations>
     <affiliation>한밭대</affiliation>
   </affiliations>
   <keywords>
-    <keyword>Linear motor(Al 형 구동기)</keyword>
-    <keyword>PMSM(@ 구자석 동기모터)</keyword>
-    <keyword>Electromagnetic analysis( 4 #17] 해석)</keyword>
+    <keyword>Linear motor(41@ -'-s7])</keyword>
+    <keyword>PMSM(% "2144 9S 7] HE)</keyword>
   </keywords>
 </paper>
