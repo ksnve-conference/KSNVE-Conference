@@ -7,7 +7,10 @@ import { conferenceConfig } from '@/lib/conference-config';
 
 type Props = { compact?: boolean; showSearch?: boolean; showNotice?: boolean; unread?: number };
 
-export default function AppHeader({ compact = false, showSearch = true, showNotice = true, unread = 0 }: Props) {
+// Search/notice shortcuts belong on the home hero only — every compact (detail
+// or 더보기-branch) screen already has a back link and the bottom tab bar, so
+// the icons default off there instead of needing every caller to opt out.
+export default function AppHeader({ compact = false, showSearch = !compact, showNotice = !compact, unread = 0 }: Props) {
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
       {!compact && (
