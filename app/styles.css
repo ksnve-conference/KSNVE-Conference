@@ -513,5 +513,11 @@ body{
    well below the rest of the page's text scale */
 .presenter small{ font-size:var(--type-meta); }
 .presenter p{ font-size:var(--type-meta); }
+
+/* home dashboard: major events + announcements — titles matched the rest
+   of the app's card titles (15px), announcement titles were only 12px */
+.major-event-list b{ font-size:15px; }
+.major-event-list small{ font-size:13px; }
+.announcement-list b{ font-size:15px; font-weight:700; }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
