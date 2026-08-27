@@ -28,6 +28,7 @@ function isIos() {
 export default function InstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showIosHint, setShowIosHint] = useState(false);
+  const [canShare, setCanShare] = useState(false);
   const [dismissed, setDismissed] = useState(true); // default hidden until checked, to avoid a flash
 
   useEffect(() => {
@@ -37,7 +38,10 @@ export default function InstallPrompt() {
     } catch {
       setDismissed(false);
     }
-    if (isIos()) setShowIosHint(true);
+    if (isIos()) {
+      setShowIosHint(true);
+      setCanShare(typeof navigator.share === 'function');
+    }
 
     const onPrompt = (event: Event) => {
       event.preventDefault();
@@ -60,11 +64,23 @@ export default function InstallPrompt() {
     dismiss();
   };
 
+  // iOS has no install API — the closest thing to a working button is opening
+  // the native share sheet for them, since "Add to Home Screen" lives inside it.
+  const openShareSheet = () => {
+    navigator.share({ title: document.title, url: window.location.href }).catch(() => undefined);
+  };
+
   if (dismissed || (!deferredPrompt && !showIosHint)) return null;
 
   return (
     <div className="install-prompt">
-      <span><Icon name="download" size={17} /></span>
+      {canShare ? (
+        <button type="button" className="install-prompt-icon" onClick={openShareSheet} aria-label="공유 시트 열기">
+          <Icon name="download" size={17} />
+        </button>
+      ) : (
+        <span className="install-prompt-icon"><Icon name="download" size={17} /></span>
+      )}
       {deferredPrompt ? (
         <div>
           <b>홈 화면에 추가</b>
@@ -73,7 +89,9 @@ export default function InstallPrompt() {
       ) : (
         <div>
           <b>홈 화면에 추가</b>
-          <small>공유 <Icon name="external" size={12} /> 버튼을 누른 뒤 &lsquo;홈 화면에 추가&rsquo;를 선택하세요.</small>
+          <small>
+            공유<Icon name="external" size={12} className="install-prompt-inline-icon" />버튼을 누른 뒤 &lsquo;홈 화면에 추가&rsquo;를 선택하세요.
+          </small>
         </div>
       )}
       {deferredPrompt && <button type="button" onClick={install}>추가</button>}
