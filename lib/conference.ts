@@ -85,17 +85,5 @@ export const dayLabel = (date: string) => dayLabels.get(date) ?? date;
 
 export const formatSessionTitle = (title: string) => title.replace(/^(기획|부문|특별)\s+/, '[$1] ');
 
-const trackPattern = /^(기획|부문|특별)\s+/;
-
-/** '기획' | '부문' | '특별', or null for a session with no track prefix. */
-export const sessionTrack = (session: Pick<Session, 'title' | 'category'>) => {
-  const match = session.title.match(trackPattern) || session.category.match(trackPattern);
-  return match ? match[1] : null;
-};
-
-/** Session title with the track prefix stripped — pair with a track badge instead of repeating it inline. */
-export const sessionTitleWithoutTrack = (session: Pick<Session, 'title'>) =>
-  session.title.replace(trackPattern, '').trim();
-
 export const sessionById = new Map(sessions.map((session) => [session.id, session]));
 export const venueByName = new Map(venues.map((venue) => [venue.name, venue]));

@@ -7,14 +7,15 @@ import Icon from '@/components/Icon';
 import PresentationBadge from '@/components/PresentationBadge';
 import {
   dayLabel,
+  formatSessionTitle,
   papers,
-  sessionTitleWithoutTrack,
-  sessionTrack,
   sessions,
   venues,
   type Paper,
   type Session,
 } from '@/lib/conference';
+
+const isTalkSession = (session: Session) => /키노트|초청/.test(session.category);
 
 export function generateStaticParams() {
   return venues.map((venue) => ({ id: venue.id }));
@@ -63,8 +64,11 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
               .filter((paper) => paper.sessionId === session.id)
               .sort(sortPapers);
             const [start, end] = session.time.split('~');
-            const title = sessionTitleWithoutTrack(session);
-            const track = sessionTrack(session);
+            const title = formatSessionTitle(session.title);
+            const metaText = isTalkSession(session) && sessionPapers.length > 0
+              ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
+              : [session.chair && session.chair !== '-' ? `좌장 ${session.chair}` : null, `발표 ${sessionPapers.length}건`]
+                .filter(Boolean).join(' · ');
 
             return (
               <article className="card venue-session-card" key={session.id}>
@@ -76,11 +80,10 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                   </div>
 
                   <div className="venue-session-body">
-                    {track && <span className="badge live-badge">{track}</span>}
                     <h3>
                       <Link href={`/sessions/${session.id}`}>{title}</Link>
                     </h3>
-                    <p>좌장 {session.chair} · 발표 {sessionPapers.length}건</p>
+                    <p>{metaText}</p>
                   </div>
 
                   <Link className="chevron" href={`/sessions/${session.id}`} aria-label={`${title} 세션 보기`}>

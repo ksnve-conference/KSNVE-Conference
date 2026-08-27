@@ -18,6 +18,12 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
 
   const sessionPapers = papers.filter((paper) => paper.sessionId === id);
   const venue = venues.find((item) => item.name === session.venue);
+  const hasChair = Boolean(session.chair && session.chair !== '-');
+  const isTalk = /키노트|초청/.test(session.category);
+  const metaText = isTalk && sessionPapers.length > 0
+    ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
+    : [hasChair ? `좌장 ${session.chair}` : null, sessionPapers.length > 0 ? `발표 ${sessionPapers.length}건` : null]
+      .filter(Boolean).join(' · ');
 
   return (
     <main className="shell detail-shell">
@@ -36,11 +42,15 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
         </div>
         <p className="kicker">{session.id.toUpperCase()}</p>
         <h1>{formatSessionTitle(session.title)}</h1>
-        <p className="meta large">좌장 {session.chair} · 발표 {sessionPapers.length}건</p>
+        {metaText && <p className="meta large">{metaText}</p>}
       </section>
 
-      <h2 className="section-title">세션 발표</h2>
-      <div className="list">{sessionPapers.map((paper) => <PaperCard key={paper.id} paper={paper} />)}</div>
+      {sessionPapers.length > 0 && (
+        <>
+          <h2 className="section-title">세션 발표</h2>
+          <div className="list">{sessionPapers.map((paper) => <PaperCard key={paper.id} paper={paper} />)}</div>
+        </>
+      )}
       <AppTabs />
     </main>
   );

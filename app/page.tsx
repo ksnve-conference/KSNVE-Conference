@@ -50,7 +50,10 @@ const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.cate
 export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
   const [showTimeTravel, setShowTimeTravel] = useState(false);
-  const { savedSessions, toggleSession } = useSaved();
+  const { savedPapers, savedSessions, togglePaper, toggleSession } = useSaved();
+  const [openSessions, setOpenSessions] = useState<string[]>([]);
+  const toggleSessionOpen = (id: string) =>
+    setOpenSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
   const { items: announcements, unread, markRead, read } = useAnnouncements();
 
   const dates = [...conferenceConfig.dates];
@@ -136,7 +139,15 @@ export default function ProgramPage() {
               <div className="dashboard-heading"><h2>현재 진행 중 / 다음 세션</h2></div>
               <div className="dashboard-sessions">
                 {currentOrNext.map((session) => (
-                  <SessionCard key={session.id} session={session} paperCount={papers.filter((p) => p.sessionId === session.id).length} />
+                  <SessionCard
+                    key={session.id}
+                    session={session}
+                    sessionPapers={papers.filter((p) => p.sessionId === session.id)}
+                    isOpen={openSessions.includes(session.id)}
+                    onToggleOpen={() => toggleSessionOpen(session.id)}
+                    savedPapers={savedPapers}
+                    onTogglePaper={togglePaper}
+                  />
                 ))}
                 {currentOrNext.length === 0 && <div className="compact-empty">현재 진행 중이거나 예정된 세션이 없습니다.</div>}
               </div>
@@ -199,9 +210,13 @@ export default function ProgramPage() {
                   <TimeSlotRow
                     key={session.id}
                     session={session}
-                    paperCount={papers.filter((p) => p.sessionId === session.id).length}
+                    sessionPapers={papers.filter((p) => p.sessionId === session.id)}
                     saved={savedSessions.includes(session.id)}
                     onToggleSession={toggleSession}
+                    isOpen={openSessions.includes(session.id)}
+                    onToggleOpen={() => toggleSessionOpen(session.id)}
+                    savedPapers={savedPapers}
+                    onTogglePaper={togglePaper}
                   />
                 ))}
               </div>

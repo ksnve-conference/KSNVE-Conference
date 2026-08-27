@@ -32,9 +32,9 @@
   --type-card:18px;
   --type-body:15px;
   --type-read:17px;
-  --type-meta:13px;
-  --type-caption:12px;
-  --type-small:12px;
+  --type-meta:14px;
+  --type-caption:13px;
+  --type-small:13px;
   --leading-body:1.62;
   --leading-read:1.78;
   --leading-tight:1.22;
@@ -216,12 +216,13 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   overflow:hidden; border:1px solid var(--line); border-radius:var(--r-md);
   background:var(--card); box-shadow:var(--shadow);
 }
-.time-slot-row{
-  display:flex; align-items:center; gap:6px;
-  padding:9px 8px 9px 12px; border-bottom:1px solid var(--line-soft);
-}
+.time-slot-row{ border-bottom:1px solid var(--line-soft); }
 .time-slot-row:last-child{ border-bottom:0; }
-.time-slot-row.mine{ background:var(--tint); }
+.time-slot-row.mine .time-slot-row-main{ background:var(--tint); }
+.time-slot-row-main{
+  display:flex; align-items:center; gap:6px;
+  padding:9px 8px 9px 12px;
+}
 .time-slot-row-link{ display:flex; align-items:center; gap:10px; min-width:0; flex:1; }
 .time-slot-hall{
   flex:none; max-width:78px; padding:5px 6px; border-radius:var(--r-sm);
@@ -237,7 +238,19 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   display:block; margin-top:1px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   font-size:var(--type-caption); color:var(--muted);
 }
+.time-slot-toggle{
+  display:flex; flex:none; align-items:center; gap:5px;
+  padding:6px 4px; border:0; background:transparent; color:var(--muted);
+}
+.time-slot-toggle em{
+  font-style:normal; font-size:var(--type-caption); font-weight:800;
+  color:var(--tint-ink); background:var(--tint); border-radius:var(--r-pill); padding:3px 8px;
+}
+.time-slot-toggle svg{ transition:transform .18s ease; }
+.time-slot-toggle svg.rot{ transform:rotate(180deg); }
 .time-slot-row .star{ position:static; flex:none; width:36px; height:36px; }
+.time-slot-papers{ display:flex; flex-direction:column; gap:9px; padding:0 12px 14px; }
+.time-slot-papers .paper-card{ box-shadow:none; }
 
 /* ---------- more menu ---------- */
 .more-menu a > span{ display:grid; place-items:center; color:var(--brand); }
@@ -249,7 +262,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   /* A slow photo crossfade isn't the kind of motion this setting is meant to
      suppress (no parallax/zoom/spin) — keep the hero rotating instead of
      freezing on whatever the collapsed-duration rule above left it on. */
-  .hero-photo-stack span{ animation-duration:24s !important; }
+  .hero-photo-stack span{ animation-duration:12s !important; }
 }
 
 /* ============================================================
@@ -269,29 +282,29 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 /* Four real photos of the venue and Yeosu, cross-fading — same set the
    conference's own site (conf.ksnve.or.kr) opens with. Pure-CSS animation,
    no JS carousel: each layer holds the shared cycle for a quarter of it,
-   offset by a negative delay. */
+   offset by a negative delay. Order: lighthouse, fireworks, harbor, venue. */
 .hero-photo-stack{ position:absolute; inset:0; z-index:0; }
 .hero-photo-stack span{
   position:absolute; inset:0;
   background-size:cover; background-repeat:no-repeat;
   opacity:0;
-  animation:heroPhotoFade 24s infinite;
+  animation:heroPhotoFade 12s infinite;
 }
 .hero-photo-stack span:nth-child(1){
-  background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 62%;
+  background-image:url('/images/hero-yeosu-lighthouse.webp'); background-position:50% 32%;
   animation-delay:0s;
 }
 .hero-photo-stack span:nth-child(2){
+  background-image:url('/images/hero-yeosu-fireworks.webp'); background-position:50% 62%;
+  animation-delay:-3s;
+}
+.hero-photo-stack span:nth-child(3){
   background-image:url('/images/hero-yeosu-harbor.webp'); background-position:50% 55%;
   animation-delay:-6s;
 }
-.hero-photo-stack span:nth-child(3){
-  background-image:url('/images/hero-yeosu-fireworks.webp'); background-position:50% 62%;
-  animation-delay:-12s;
-}
 .hero-photo-stack span:nth-child(4){
-  background-image:url('/images/hero-yeosu-lighthouse.webp'); background-position:50% 32%;
-  animation-delay:-18s;
+  background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 62%;
+  animation-delay:-9s;
 }
 @keyframes heroPhotoFade{
   0%{ opacity:0; }
@@ -308,8 +321,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-today .hero-title-block{ min-width:0; }
 .hero-today .hero-org-name{
-  display:block; margin-bottom:3px; font-size:clamp(11px, 3vw, 13px);
-  font-weight:800; letter-spacing:.05em; color:rgba(255,255,255,.85);
+  display:block; margin-bottom:3px; font-size:clamp(14px, 4.2vw, 16px);
+  font-weight:800; letter-spacing:.02em; color:rgba(255,255,255,.85);
   text-shadow:0 1px 4px rgba(0,0,0,.4);
 }
 .hero-today .hero-title-block b{
@@ -318,11 +331,11 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today .hero-title-block small{
   display:flex; flex-wrap:wrap; gap:3px 8px; margin-top:9px;
-  font-size:clamp(13px, 3.9vw, 14px); font-weight:600; color:rgba(255,255,255,.92);
+  font-size:clamp(14px, 4.2vw, 16px); font-weight:800; letter-spacing:-.01em; color:rgba(255,255,255,.92);
   text-shadow:0 1px 5px rgba(0,0,0,.4);
 }
 .hero-today .conference-tagline{
-  display:block; margin-top:7px; font-size:clamp(14px, 4.2vw, 16px);
+  display:block; margin-top:7px; font-size:clamp(14px, 4.2vw, 16px); font-weight:800; letter-spacing:-.01em;
   font-style:normal; color:rgba(255,255,255,.82); text-shadow:0 1px 5px rgba(0,0,0,.4);
 }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
@@ -372,8 +385,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   overflow:visible; margin:0; padding:0; scroll-snap-type:none;
 }
 .dashboard-sessions > *{ width:auto; min-width:0; flex:none; }
-.session-card{
-  display:grid; grid-template-columns:62px 1fr 20px; gap:12px; align-items:start;
+.session-card{ display:block; padding:0; overflow:hidden; }
+.session-card-main{
+  display:grid; grid-template-columns:62px 1fr auto; gap:12px; align-items:start; padding:16px;
 }
 .session-card .session-time{ display:flex; flex-direction:column; gap:2px; }
 .session-card .session-time b{ font-size:var(--type-body); font-weight:800; color:var(--text); }
@@ -381,7 +395,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .session-card .session-body{ min-width:0; }
 .session-card .paper-title{ margin-top:7px; }
 .session-card .session-place{ margin:6px 0 0; font-size:var(--type-meta); color:var(--muted); }
-.session-card .chevron{ align-self:center; color:var(--muted); display:flex; }
+.session-card .time-slot-toggle{ margin-top:2px; }
+.session-card .time-slot-papers{ padding:0 16px 16px; }
 
 /* ---------- offline ---------- */
 .offline-banner{
@@ -493,9 +508,14 @@ body{
 .schedule-panel{ background:var(--line); }
 .schedule-panel > div{ background:var(--card-2); }
 .schedule-panel > div > span{ color:var(--brand); display:flex; }
-.schedule-panel small{ font-size:var(--type-caption); color:var(--muted); }
-.schedule-panel b{ font-size:var(--type-meta); color:var(--text); }
+.schedule-panel small{ font-size:var(--type-meta); color:var(--muted); }
+.schedule-panel b{ font-size:var(--type-body); color:var(--text); }
 .details dt{ color:var(--muted); }
 .details dd{ color:var(--text); }
+
+/* paper detail: presenter byline — was hardcoded at 10/11px in globals.css,
+   well below the rest of the page's text scale */
+.presenter small{ font-size:var(--type-meta); }
+.presenter p{ font-size:var(--type-meta); }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
