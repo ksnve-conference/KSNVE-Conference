@@ -28,6 +28,7 @@ export default function AppHeader({ compact = false, showSearch = true, unread =
           />
         )}
         <div className="hero-title-block">
+          {!compact && <span className="hero-org-name">한국소음진동공학회</span>}
           <b>{conferenceConfig.headerTitle}</b>
           <small>
             <span>{conferenceConfig.displayDate}</span>

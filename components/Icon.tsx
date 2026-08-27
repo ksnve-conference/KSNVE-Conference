@@ -4,7 +4,7 @@ export type IconName =
   | 'calendar' | 'papers' | 'search' | 'star' | 'star-filled' | 'more'
   | 'pin' | 'clock' | 'chevron' | 'chevron-down' | 'back' | 'close'
   | 'bell' | 'check' | 'info' | 'sponsor' | 'notice' | 'map' | 'download'
-  | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand';
+  | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand' | 'filter';
 
 const paths: Record<IconName, React.ReactNode> = {
   calendar: <><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></>,
@@ -32,6 +32,7 @@ const paths: Record<IconName, React.ReactNode> = {
   alert: <><path d="M12 4.5 21 19.5H3L12 4.5Z"/><path d="M12 10v4M12 16.8v.2"/></>,
   external: <><path d="M14 4.5h5.5V10"/><path d="m19.5 4.5-8 8"/><path d="M18 14v5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 19V8a1.5 1.5 0 0 1 1.5-1.5h5"/></>,
   expand: <><path d="M9 4.5H4.5V9M15 4.5h4.5V9M9 19.5H4.5V15M15 19.5h4.5V15"/></>,
+  filter: <path d="M4 5.5h16M7.5 12h9M10.5 18.5h3"/>,
 };
 
 export default function Icon({ name, size = 20, className, strokeWidth = 1.7 }: IconProps) {

@@ -85,12 +85,59 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .filter-chips button.active{ background:var(--brand); border-color:var(--brand); color:#fff; }
 .filter-days button.active{ background:var(--brand-ink); border-color:var(--brand-ink); }
 
-/* ---------- recent searches (compact row above the filters) ---------- */
+/* ---------- recent searches — shown only while the search field is active,
+   so the resting browse view isn't cluttered with a permanent chip row ---------- */
+.search-cluster .recent-chips{ display:none; }
+.search-cluster:focus-within .recent-chips{ display:flex; }
 .recent-chips{ align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
 .recent-chips::-webkit-scrollbar{ display:none; }
 .recent-chips button{ display:inline-flex; align-items:center; gap:5px; }
 .recent-chips-clear{
   flex:none; margin-left:2px; padding:9px !important; color:var(--muted) !important;
+}
+
+/* ---------- filter trigger + bottom sheet (replaces permanently-visible
+   filter-chip rows — matches the collapsed-filter pattern in Whova/Attendee) ---------- */
+.filter-trigger{
+  display:flex; align-items:center; gap:8px; width:100%;
+  margin-top:10px; padding:11px 15px;
+  border:1px solid var(--line); border-radius:var(--r-pill);
+  background:var(--card); color:var(--text-2); font-size:var(--type-meta); font-weight:700;
+}
+.filter-trigger em{
+  margin-left:auto; font-style:normal; display:grid; place-items:center;
+  min-width:20px; height:20px; padding:0 6px; border-radius:var(--r-pill);
+  background:var(--brand); color:#fff; font-size:11px; font-weight:800;
+}
+.filter-sheet{
+  position:fixed; inset:auto 0 0 0; width:100%; max-width:600px; margin-inline:auto;
+  max-height:82vh; padding:0; border:0; border-radius:20px 20px 0 0;
+  background:var(--card); color:var(--text);
+}
+.filter-sheet::backdrop{ background:rgba(8,18,16,.5); }
+.filter-sheet-header{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 18px; border-bottom:1px solid var(--line);
+}
+.filter-sheet-header h2{ margin:0; font-size:var(--type-section); font-weight:800; }
+.filter-sheet-header button{ border:0; background:transparent; color:var(--muted); padding:4px; }
+.filter-sheet-body{ overflow-y:auto; max-height:calc(82vh - 132px); padding:16px 18px 4px; }
+.filter-sheet-body section{ margin-bottom:20px; }
+.filter-sheet-body section:last-child{ margin-bottom:4px; }
+.filter-sheet-body h3{ margin:0 0 10px; font-size:var(--type-meta); font-weight:800; color:var(--muted); }
+.filter-sheet-body .filter-chips{ margin:0 -18px; padding:2px 18px; }
+.filter-sheet-footer{
+  display:flex; gap:10px; padding:14px 18px calc(14px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--line);
+}
+.filter-sheet-reset{
+  flex:none; padding:12px 16px; border:1px solid var(--line); border-radius:var(--r-pill);
+  background:var(--card); color:var(--text-2); font-weight:700; font-size:var(--type-meta);
+}
+.filter-sheet-reset:disabled{ opacity:.4; }
+.filter-sheet-apply{
+  flex:1; padding:12px 16px; border:0; border-radius:var(--r-pill);
+  background:var(--brand); color:#fff; font-weight:800; font-size:var(--type-meta);
 }
 
 /* ---------- grouped paper list ---------- */
@@ -199,10 +246,10 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 /* ---------- motion ---------- */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
-  /* the collapsed-duration rule above would otherwise leave every hero photo
-     at its post-animation opacity:0 — show the first one, statically */
-  .hero-photo-stack span{ animation:none !important; opacity:0; }
-  .hero-photo-stack span:first-child{ opacity:1; }
+  /* A slow photo crossfade isn't the kind of motion this setting is meant to
+     suppress (no parallax/zoom/spin) — keep the hero rotating instead of
+     freezing on whatever the collapsed-duration rule above left it on. */
+  .hero-photo-stack span{ animation-duration:24s !important; }
 }
 
 /* ============================================================
@@ -260,6 +307,11 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-today .hero-title-block{ min-width:0; }
+.hero-today .hero-org-name{
+  display:block; margin-bottom:3px; font-size:clamp(11px, 3vw, 13px);
+  font-weight:800; letter-spacing:.05em; color:rgba(255,255,255,.85);
+  text-shadow:0 1px 4px rgba(0,0,0,.4);
+}
 .hero-today .hero-title-block b{
   display:block; font-size:clamp(25px, 7vw, 33px); line-height:1.18; letter-spacing:-.03em;
   font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.4);
@@ -271,7 +323,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today .conference-tagline{
   display:block; margin-top:7px; font-size:clamp(14px, 4.2vw, 16px);
-  font-style:italic; color:rgba(255,255,255,.82); text-shadow:0 1px 5px rgba(0,0,0,.4);
+  font-style:normal; color:rgba(255,255,255,.82); text-shadow:0 1px 5px rgba(0,0,0,.4);
 }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
 .hero-today .hero-links a{

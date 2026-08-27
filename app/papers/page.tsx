@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useMemo, useState } from 'react';
+import { Suspense, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
@@ -45,10 +45,16 @@ function PapersPageInner() {
   const [filter, setFilter] = useState<Filter>('all');
   const [day, setDay] = useState<string>('all');
   const [open, setOpen] = useState<string[]>([]);
+  const filterSheetRef = useRef<HTMLDialogElement>(null);
 
   const q = query.trim().toLocaleLowerCase('ko');
   const searching = q.length > 0;
-  const { recent, remove: removeRecent, clear: clearRecent } = useRecentSearches(query);
+  const { recent, clear: clearRecent } = useRecentSearches(query);
+
+  const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
+  const openFilters = () => filterSheetRef.current?.showModal();
+  const closeFilters = () => filterSheetRef.current?.close();
+  const resetFilters = () => { setTopic('all'); setFilter('all'); setDay('all'); };
 
   const filtered = useMemo(() => papers.filter((paper) => {
     if (topic !== 'all' && sessionById.get(paper.sessionId)?.category !== topic) return false;
@@ -92,38 +98,67 @@ function PapersPageInner() {
       <AppHeader compact showSearch={false} />
       <section>
         <div className="screen-title"><h1>발표 논문</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
-        <SearchBar value={query} onChange={setQuery} placeholder="제목, 저자, 발표자, 세션, 장소 검색" />
 
-        {!searching && recent.length > 0 && (
-          <div className="recent-chips" role="group" aria-label="최근 검색">
-            {recent.map((item) => (
-              <button key={item} type="button" onClick={() => setQuery(item)}>
-                <Icon name="search" size={12} />{item}
+        <div className="search-cluster">
+          <SearchBar value={query} onChange={setQuery} placeholder="제목, 저자, 발표자, 세션, 장소 검색" />
+          {recent.length > 0 && (
+            <div className="recent-chips" role="group" aria-label="최근 검색">
+              {recent.map((item) => (
+                <button key={item} type="button" onClick={() => setQuery(item)}>
+                  <Icon name="search" size={12} />{item}
+                </button>
+              ))}
+              <button type="button" className="recent-chips-clear" onClick={clearRecent} aria-label="최근 검색 모두 지우기">
+                <Icon name="close" size={12} />
               </button>
-            ))}
-            <button type="button" className="recent-chips-clear" onClick={clearRecent} aria-label="최근 검색 모두 지우기">
-              <Icon name="close" size={12} />
-            </button>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
 
-        <div className="filter-chips filter-topics" role="group" aria-label="분야">
-          <button className={topic === 'all' ? 'active' : ''} onClick={() => setTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
-          {topics.map((t) => (
-            <button key={t} className={topic === t ? 'active' : ''} onClick={() => setTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
-          ))}
-        </div>
-        <div className="filter-chips" role="group" aria-label="발표 유형">
-          {filters.map((f) => (
-            <button key={f.id} className={filter === f.id ? 'active' : ''} onClick={() => setFilter(f.id)} aria-pressed={filter === f.id}>{f.label}</button>
-          ))}
-        </div>
-        <div className="filter-chips filter-days" role="group" aria-label="날짜">
-          <button className={day === 'all' ? 'active' : ''} onClick={() => setDay('all')} aria-pressed={day === 'all'}>전체 날짜</button>
-          {conferenceConfig.dates.map((d) => (
-            <button key={d} className={day === d ? 'active' : ''} onClick={() => setDay(d)} aria-pressed={day === d}>{dayLabel(d)}</button>
-          ))}
-        </div>
+        <button type="button" className="filter-trigger" onClick={openFilters}>
+          <Icon name="filter" size={16} />
+          분야 · 유형 · 날짜
+          {activeFilterCount > 0 && <em>{activeFilterCount}</em>}
+        </button>
+
+        <dialog ref={filterSheetRef} className="filter-sheet" aria-label="필터">
+          <div className="filter-sheet-header">
+            <h2>필터</h2>
+            <button type="button" onClick={closeFilters} aria-label="닫기"><Icon name="close" size={18} /></button>
+          </div>
+          <div className="filter-sheet-body">
+            <section>
+              <h3>분야</h3>
+              <div className="filter-chips filter-topics" role="group" aria-label="분야">
+                <button className={topic === 'all' ? 'active' : ''} onClick={() => setTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
+                {topics.map((t) => (
+                  <button key={t} className={topic === t ? 'active' : ''} onClick={() => setTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
+                ))}
+              </div>
+            </section>
+            <section>
+              <h3>발표 유형</h3>
+              <div className="filter-chips" role="group" aria-label="발표 유형">
+                {filters.map((f) => (
+                  <button key={f.id} className={filter === f.id ? 'active' : ''} onClick={() => setFilter(f.id)} aria-pressed={filter === f.id}>{f.label}</button>
+                ))}
+              </div>
+            </section>
+            <section>
+              <h3>날짜</h3>
+              <div className="filter-chips filter-days" role="group" aria-label="날짜">
+                <button className={day === 'all' ? 'active' : ''} onClick={() => setDay('all')} aria-pressed={day === 'all'}>전체 날짜</button>
+                {conferenceConfig.dates.map((d) => (
+                  <button key={d} className={day === d ? 'active' : ''} onClick={() => setDay(d)} aria-pressed={day === d}>{dayLabel(d)}</button>
+                ))}
+              </div>
+            </section>
+          </div>
+          <div className="filter-sheet-footer">
+            <button type="button" className="filter-sheet-reset" onClick={resetFilters} disabled={activeFilterCount === 0}>초기화</button>
+            <button type="button" className="filter-sheet-apply" onClick={closeFilters}>결과 {searching ? searchTotal : filtered.length}건 보기</button>
+          </div>
+        </dialog>
 
         {searching ? (
           <>
