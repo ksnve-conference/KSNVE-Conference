@@ -251,6 +251,15 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 /* ---------- more menu ---------- */
 .more-menu a > span{ display:grid; place-items:center; color:var(--brand); }
 .more-menu a > em{ font-style:normal; color:var(--muted); display:flex; }
+/* action row (e.g. "홈 화면에 추가") alongside the usual link rows — same grid, <button> instead of <a> */
+.more-menu > button{
+  display:grid; grid-template-columns:38px 1fr auto; align-items:center; gap:10px;
+  width:100%; padding:15px; border:0; border-bottom:1px solid var(--line);
+  background:transparent; color:inherit; font:inherit; text-align:left;
+}
+.more-menu > button > span{ display:grid; place-items:center; width:36px; height:36px; border-radius:11px; background:var(--tint); color:var(--brand); }
+.more-menu > button > div{ display:flex; flex-direction:column; min-width:0; }
+.more-menu > button > em{ font-style:normal; color:var(--muted); display:flex; }
 
 /* ---------- motion ---------- */
 @media (prefers-reduced-motion: reduce){
