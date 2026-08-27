@@ -30,7 +30,9 @@ export const metadata = {
   description: `${conferenceConfig.koreanTitle} · ${conferenceConfig.locationDisplay}`,
   manifest: '/manifest.json',
   icons: { apple: '/icons/apple-touch-icon.png' },
-  appleWebApp: { capable: true, statusBarStyle: 'default' as const, title: conferenceConfig.shortTitle },
+  // Home-screen label only — kept short on purpose, separate from shortTitle
+  // (which stays "KSNVE 2026 Fall" for OG/calendar contexts where more detail helps).
+  appleWebApp: { capable: true, statusBarStyle: 'default' as const, title: 'KSNVE' },
   openGraph: {
     type: 'website' as const,
     locale: 'ko_KR',
