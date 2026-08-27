@@ -7,6 +7,7 @@ import AppTabs from '@/components/AppTabs';
 import SessionCard from '@/components/SessionCard';
 import TimeSlotRow from '@/components/TimeSlotRow';
 import TimeTravelPanel from '@/components/TimeTravelPanel';
+import InstallPrompt from '@/components/InstallPrompt';
 import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessions, type Session } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
@@ -111,6 +112,7 @@ export default function ProgramPage() {
       <AppHeader unread={unread} />
 
       <section className="today-dashboard">
+        <InstallPrompt />
         {showTimeTravel && <TimeTravelPanel mockNow={mockNow} onChange={changeMockNow} />}
 
         {isBefore && (
