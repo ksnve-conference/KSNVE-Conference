@@ -532,6 +532,7 @@ body{
   display:grid; place-items:center; width:38px; height:38px; flex:none;
   border:0; border-radius:11px; background:var(--tint); color:var(--brand);
 }
+button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .install-prompt > div{ display:flex; min-width:0; flex-direction:column; }
 .install-prompt b{ font-size:var(--type-meta); font-weight:700; color:var(--text); }
 .install-prompt small{
@@ -539,7 +540,7 @@ body{
   font-size:var(--type-caption); color:var(--muted); line-height:1.5;
 }
 .install-prompt-inline-icon{ margin:0 3px; }
-.install-prompt > button:not(.install-prompt-close){
+.install-prompt > button:not(.install-prompt-close):not(.install-prompt-icon){
   padding:9px 14px; border:0; border-radius:var(--r-pill);
   background:var(--brand); color:#fff; font-size:var(--type-caption); font-weight:700;
 }
@@ -547,3 +548,20 @@ body{
   position:absolute; top:8px; right:8px; display:flex; padding:6px;
   border:0; background:transparent; color:var(--muted);
 }
+
+/* ---------- iOS install guide (inside install-prompt, reuses .filter-sheet shell) ---------- */
+.install-guide-steps{ display:flex; flex-direction:column; gap:18px; margin:2px 0 10px; padding:0; list-style:none; }
+.install-guide-step{ display:flex; gap:13px; align-items:flex-start; }
+.install-guide-step-icon{
+  display:grid; place-items:center; flex:none; width:42px; height:42px;
+  border-radius:12px; background:var(--tint); color:var(--brand);
+}
+.install-guide-step b{
+  display:flex; align-items:center; gap:8px;
+  font-size:var(--type-meta); font-weight:800; color:var(--text);
+}
+.install-guide-step b span{
+  display:grid; place-items:center; width:18px; height:18px; flex:none;
+  border-radius:50%; background:var(--brand); color:#fff; font-size:11px; font-weight:800;
+}
+.install-guide-step p{ margin:4px 0 0 26px; font-size:var(--type-caption); color:var(--muted); line-height:1.55; }
