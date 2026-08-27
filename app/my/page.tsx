@@ -31,7 +31,7 @@ export default function MySchedulePage() {
 
   return (
     <main className="shell app-shell">
-      <AppHeader compact />
+      <AppHeader compact showSearch={false} showNotice={false} />
       <section>
         <div className="screen-title"><h1>내 일정</h1><strong>{items.length}</strong></div>
 

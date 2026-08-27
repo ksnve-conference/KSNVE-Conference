@@ -15,8 +15,18 @@ This repository is ready to deploy as a Next.js project on Vercel.
    - Output directory: leave unset (managed by Next.js)
 7. Select **Deploy**.
 
-No environment variables are currently required. Pushes to `main` will trigger
-new production deployments after the GitHub repository is connected to Vercel.
+### Environment variables
+
+Add these in **Project Settings → Environment Variables** (Production and
+Preview). `.env.local` is git-ignored, so it never reaches Vercel's build —
+this has to be set in the dashboard too.
+
+| Name | Purpose |
+|---|---|
+| `NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL` | Published Google Sheet CSV URL for live-editable notices. See `README.md` → "공지사항 (구글 시트)". Optional — without it the app falls back to `data/announcements.json`. |
+
+Pushes to `main` will trigger new production deployments after the GitHub
+repository is connected to Vercel.
 
 ## Verify locally
 

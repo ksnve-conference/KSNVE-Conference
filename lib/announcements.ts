@@ -39,6 +39,8 @@ export function parseCsv(text: string): string[][] {
   return rows;
 }
 
+const HIDDEN_VALUES = new Set(['false', '0', 'n', 'no', 'off', '아니오', '비공개']);
+
 /** Sheet columns are matched by header name so the organiser can reorder them freely. */
 export function rowsToAnnouncements(rows: string[][]): Announcement[] {
   if (rows.length < 2) return [];
@@ -54,11 +56,13 @@ export function rowsToAnnouncements(rows: string[][]): Announcement[] {
   const iTitle = col('title', '제목');
   const iBody = col('body', 'content', '내용');
   const iDate = col('date', '날짜');
-  const iCat = col('category', '분류', '구분');
+  const iCat = col('category', '분류', '구분', 'tag', '태그');
+  const iVisible = col('visible', '공개', '노출');
   const out: Announcement[] = [];
   rows.slice(1).forEach((r, n) => {
     const title = (iTitle >= 0 ? r[iTitle] : '')?.trim();
     if (!title) return;
+    if (iVisible >= 0 && HIDDEN_VALUES.has((r[iVisible] || '').trim().toLowerCase())) return;
     out.push({
       id: (iId >= 0 ? r[iId] : '')?.trim() || `sheet-${n + 1}`,
       title,
@@ -67,7 +71,20 @@ export function rowsToAnnouncements(rows: string[][]): Announcement[] {
       category: (iCat >= 0 ? r[iCat] : '')?.trim() || '공지',
     });
   });
-  return out;
+  return sortByDateDesc(out);
+}
+
+/** Accepts both `2026-11-25` and `2026.11.25` (the two formats organisers tend to use).
+ * Undated announcements sort after every dated one instead of breaking the order. */
+function dateSortKey(date: string): number {
+  const match = date.match(/(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})/);
+  if (!match) return -Infinity;
+  const [, y, m, d] = match;
+  return Number(y) * 10000 + Number(m) * 100 + Number(d);
+}
+
+function sortByDateDesc(items: Announcement[]): Announcement[] {
+  return [...items].sort((a, b) => dateSortKey(b.date) - dateSortKey(a.date));
 }
 
 function readRead(): string[] {
@@ -78,7 +95,7 @@ function readRead(): string[] {
 }
 
 export function useAnnouncements() {
-  const [items, setItems] = useState<Announcement[]>(bundled);
+  const [items, setItems] = useState<Announcement[]>(() => sortByDateDesc(bundled));
   const [source, setSource] = useState<AnnouncementSource>('bundled');
   const [read, setRead] = useState<string[]>([]);
 
@@ -88,7 +105,7 @@ export function useAnnouncements() {
       const cached = localStorage.getItem(CACHE_KEY);
       if (cached) {
         const parsed: unknown = JSON.parse(cached);
-        if (Array.isArray(parsed) && parsed.length) { setItems(parsed as Announcement[]); setSource('cache'); }
+        if (Array.isArray(parsed) && parsed.length) { setItems(sortByDateDesc(parsed as Announcement[])); setSource('cache'); }
       }
     } catch { /* ignore malformed cache */ }
 

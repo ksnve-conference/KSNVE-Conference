@@ -345,7 +345,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 
 .hero-compact{
-  height:56px; min-height:56px; overflow:visible;
+  height:64px; min-height:64px; overflow:visible;
   display:flex; align-items:center; gap:10px;
   padding:0 16px; border:0; border-bottom:1px solid var(--line); border-radius:0;
   background:var(--card); color:var(--brand-dark); box-shadow:none;
@@ -353,11 +353,11 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-compact:after{ display:none; }
 .hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
-.hero-compact .brand-logo{ width:28px; height:auto; flex:none; }
+.hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
 .hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
 .hero-compact .hero-title-block b{
   display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-  font-size:15px; font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
+  font-size:var(--type-screen); font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
 }
 .hero-compact .hero-title-block small,
 .hero-compact .conference-tagline{ display:none; }

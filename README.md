@@ -63,16 +63,29 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 
 재배포 없이 공지를 수정할 수 있도록, 게시된 구글 시트의 CSV를 런타임에 읽습니다.
 
-1. 시트를 만들고 첫 행에 `id, category, title, body, date` 헤더를 넣습니다(한글 헤더도 인식).
+1. 시트를 만들고 첫 행에 헤더를 넣습니다. 열 이름으로 찾으므로 순서는 자유이고, 아래 이름
+   (한글/영문 모두)을 인식합니다.
+
+   | 헤더 | 필수 | 비고 |
+   |---|---|---|
+   | `title` / `제목` | ✅ | 비어 있으면 그 행은 건너뜁니다 |
+   | `date` / `날짜` | | `2026-11-25` 또는 `2026.11.25` — 최신순으로 자동 정렬됩니다 |
+   | `content` / `body` / `내용` | | 본문 |
+   | `category` / `tag` / `분류` / `구분` / `태그` | | 비어 있으면 "공지"로 표시 |
+   | `visible` / `공개` / `노출` | | `FALSE`를 넣으면 해당 행을 앱에 표시하지 않습니다 |
+   | `id` / `번호` | | 안 채우면 자동 부여. 공지를 수정할 때 같은 값을 유지하면 "안 읽음" 표시가 꼬이지 않습니다 |
+
 2. 파일 → 공유 → 웹에 게시 → CSV 형식으로 게시
-3. 발급된 URL을 환경변수로 지정합니다.
+3. 발급된 URL을 환경변수로 지정합니다(로컬은 `.env.local`, 배포 환경은 호스팅 플랫폼의
+   환경변수 설정에도 동일하게 추가해야 합니다 — `.env.local`은 git에 포함되지 않습니다).
 
 ```
-NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL=https://docs.google.com/spreadsheets/d/e/…/pub?gid=0&single=true&output=csv
+NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL=https://docs.google.com/spreadsheets/d/e/…/pub?output=csv
 ```
 
 설정하지 않으면 `data/announcements.json`이 사용됩니다. 시트를 읽지 못하면 마지막으로
-성공한 내용이 브라우저에 캐시되어 표시됩니다.
+성공한 내용이 브라우저에 캐시되어 표시됩니다. 공지 목록은 항상 `date` 기준 최신순으로
+정렬됩니다.
 
 ## 오프라인
 

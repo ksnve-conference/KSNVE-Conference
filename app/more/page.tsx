@@ -21,7 +21,7 @@ export default function MorePage() {
   const { unread } = useAnnouncements();
   return (
     <main className="shell app-shell">
-      <AppHeader compact />
+      <AppHeader compact showSearch={false} showNotice={false} />
       <section>
         <div className="screen-title"><h1>더보기</h1></div>
         <div className="more-menu">

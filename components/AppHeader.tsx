@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 
-type Props = { compact?: boolean; showSearch?: boolean; unread?: number };
+type Props = { compact?: boolean; showSearch?: boolean; showNotice?: boolean; unread?: number };
 
-export default function AppHeader({ compact = false, showSearch = true, unread = 0 }: Props) {
+export default function AppHeader({ compact = false, showSearch = true, showNotice = true, unread = 0 }: Props) {
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
       {!compact && (
@@ -37,17 +37,21 @@ export default function AppHeader({ compact = false, showSearch = true, unread =
           {!compact && <em className="conference-tagline">지속가능한 내일의 소음 진동</em>}
         </div>
       </Link>
-      <nav className="hero-links" aria-label="바로가기">
-        {showSearch && (
-          <Link href="/papers" aria-label="논문 검색">
-            <Icon name="search" size={18} />
-          </Link>
-        )}
-        <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
-          <Icon name="notice" size={18} />
-          {unread > 0 && <i className="hero-badge">{unread}</i>}
-        </Link>
-      </nav>
+      {(showSearch || showNotice) && (
+        <nav className="hero-links" aria-label="바로가기">
+          {showSearch && (
+            <Link href="/papers" aria-label="논문 검색">
+              <Icon name="search" size={18} />
+            </Link>
+          )}
+          {showNotice && (
+            <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
+              <Icon name="notice" size={18} />
+              {unread > 0 && <i className="hero-badge">{unread}</i>}
+            </Link>
+          )}
+        </nav>
+      )}
     </header>
   );
 }
