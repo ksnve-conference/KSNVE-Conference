@@ -242,7 +242,10 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .time-slot-toggle svg{ transition:transform .18s ease; }
 .time-slot-toggle svg.rot{ transform:rotate(180deg); }
-.time-slot-row .star{ position:static; flex:none; width:36px; height:36px; }
+/* Direct child only -- a plain descendant selector here also matched the save
+   star nested inside each expanded PaperCard's own .paper-card, static-ing it
+   out of its top-right corner and dropping it to its own line below the badge. */
+.time-slot-row-main > .star{ position:static; flex:none; width:36px; height:36px; }
 .time-slot-papers{ display:flex; flex-direction:column; gap:9px; padding:0 12px 14px; }
 .time-slot-papers .paper-card{ box-shadow:none; }
 
