@@ -1,14 +1,17 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import SearchBar from '@/components/SearchBar';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
-import { dayLabel, formatSessionTitle, papers, sessions } from '@/lib/conference';
+import { dayLabel, formatSessionTitle, papers, sessions, speakers } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
 import { presentationTypeFor, type PresentationType } from '@/lib/presentation-type';
+import { useRecentSearches } from '@/lib/recent-searches';
 import { useSaved } from '@/lib/saved';
 
 type Filter = 'all' | PresentationType | 'saved';
@@ -27,14 +30,26 @@ const topics = Array.from(new Set(sessions.map((s) => s.category)))
   .sort((a, b) => a.localeCompare(b, 'ko'));
 
 export default function PapersPage() {
+  return (
+    <Suspense fallback={null}>
+      <PapersPageInner />
+    </Suspense>
+  );
+}
+
+function PapersPageInner() {
+  const searchParams = useSearchParams();
   const { savedPapers, togglePaper } = useSaved();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => searchParams.get('q') ?? '');
   const [topic, setTopic] = useState<string>('all');
   const [filter, setFilter] = useState<Filter>('all');
   const [day, setDay] = useState<string>('all');
   const [open, setOpen] = useState<string[]>([]);
 
   const q = query.trim().toLocaleLowerCase('ko');
+  const searching = q.length > 0;
+  const { recent, remove: removeRecent, clear: clearRecent } = useRecentSearches(query);
+
   const filtered = useMemo(() => papers.filter((paper) => {
     if (topic !== 'all' && sessionById.get(paper.sessionId)?.category !== topic) return false;
     if (day !== 'all' && paper.date !== day) return false;
@@ -44,6 +59,14 @@ export default function PapersPage() {
     return [paper.title, paper.authors, paper.presenter, paper.session, paper.venue, ...(paper.keywords ?? [])]
       .join(' ').toLocaleLowerCase('ko').includes(q);
   }), [q, topic, filter, day, savedPapers]);
+
+  // Only matched while actively searching — jump-to results for sessions and
+  // speakers, alongside the paper list the day/type/topic filters already narrow.
+  const matchedSessions = useMemo(() => searching ? sessions.filter((s) =>
+    [s.title, s.chair, s.category, s.venue].join(' ').toLocaleLowerCase('ko').includes(q)) : [], [searching, q]);
+  const matchedSpeakers = useMemo(() => searching ? speakers.filter((s) =>
+    s.name.toLocaleLowerCase('ko').includes(q)) : [], [searching, q]);
+  const searchTotal = filtered.length + matchedSessions.length + matchedSpeakers.length;
 
   // Grouping keeps the DOM small: only the sessions a reader opens are rendered.
   const groups = useMemo(() => {
@@ -62,15 +85,27 @@ export default function PapersPage() {
       });
   }, [filtered]);
 
-  const searching = q.length > 0;
   const toggleOpen = (id: string) => setOpen((c) => c.includes(id) ? c.filter((x) => x !== id) : [...c, id]);
 
   return (
     <main className="shell app-shell">
-      <AppHeader compact />
+      <AppHeader compact showSearch={false} />
       <section>
-        <div className="screen-title"><h1>발표 논문</h1><strong>{filtered.length}</strong></div>
+        <div className="screen-title"><h1>발표 논문</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
         <SearchBar value={query} onChange={setQuery} placeholder="제목, 저자, 발표자, 세션, 장소 검색" />
+
+        {!searching && recent.length > 0 && (
+          <div className="recent-chips" role="group" aria-label="최근 검색">
+            {recent.map((item) => (
+              <button key={item} type="button" onClick={() => setQuery(item)}>
+                <Icon name="search" size={12} />{item}
+              </button>
+            ))}
+            <button type="button" className="recent-chips-clear" onClick={clearRecent} aria-label="최근 검색 모두 지우기">
+              <Icon name="close" size={12} />
+            </button>
+          </div>
+        )}
 
         <div className="filter-chips filter-topics" role="group" aria-label="분야">
           <button className={topic === 'all' ? 'active' : ''} onClick={() => setTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
@@ -90,42 +125,77 @@ export default function PapersPage() {
           ))}
         </div>
 
-        {filtered.length === 0 && (
-          <div className="empty"><span><Icon name="search" size={26} /></span><b>결과가 없습니다</b><p>검색어나 필터를 바꿔 보세요.</p></div>
-        )}
-
         {searching ? (
-          <div className="list paper-list">
-            {filtered.slice(0, 60).map((paper) => (
-              <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
-            ))}
-            {filtered.length > 60 && <p className="list-more">상위 60건을 표시했습니다. 검색어를 좁혀 보세요.</p>}
-          </div>
+          <>
+            {searchTotal === 0 && (
+              <div className="empty"><span><Icon name="search" size={26} /></span><b>결과가 없습니다</b><p>검색어나 필터를 바꿔 보세요.</p></div>
+            )}
+            {matchedSpeakers.length > 0 && (
+              <div className="search-group">
+                <h2>발표자 <span>{matchedSpeakers.length}</span></h2>
+                {matchedSpeakers.slice(0, 20).map((sp) => (
+                  <Link className="result-row" href={`/speakers/${sp.id}`} key={sp.id}>
+                    <span className="mini-avatar">{sp.name.slice(0, 1)}</span>
+                    <div><b>{sp.name}</b><small>발표 {sp.papers.length}건</small></div>
+                    <em><Icon name="chevron" size={16} /></em>
+                  </Link>
+                ))}
+              </div>
+            )}
+            {matchedSessions.length > 0 && (
+              <div className="search-group">
+                <h2>세션 <span>{matchedSessions.length}</span></h2>
+                {matchedSessions.slice(0, 20).map((s) => (
+                  <Link className="result-row" href={`/sessions/${s.id}`} key={s.id}>
+                    <span className="result-icon"><Icon name="calendar" size={16} /></span>
+                    <div><b>{formatSessionTitle(s.title)}</b><small>{dayLabel(s.date)} · {s.time} · {s.venue}</small></div>
+                    <em><Icon name="chevron" size={16} /></em>
+                  </Link>
+                ))}
+              </div>
+            )}
+            {filtered.length > 0 && (
+              <div className="search-group">
+                <h2>논문 <span>{filtered.length}</span></h2>
+                <div className="list paper-list">
+                  {filtered.slice(0, 60).map((paper) => (
+                    <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
+                  ))}
+                </div>
+                {filtered.length > 60 && <p className="list-more">상위 60건을 표시했습니다. 검색어를 좁혀 보세요.</p>}
+              </div>
+            )}
+          </>
         ) : (
-          <div className="paper-groups">
-            {groups.map(({ id, session, list }) => {
-              const isOpen = open.includes(id);
-              return (
-                <section className="paper-group" key={id}>
-                  <button className="paper-group-head" onClick={() => toggleOpen(id)} aria-expanded={isOpen}>
-                    <div>
-                      <b>{formatSessionTitle(session?.title || list[0].session)}</b>
-                      <small>{session ? `${dayLabel(session.date)} · ${session.time} · ${session.venue}` : ''}</small>
-                    </div>
-                    <em>{list.length}</em>
-                    <span className={isOpen ? 'rot' : ''}><Icon name="chevron-down" size={16} /></span>
-                  </button>
-                  {isOpen && (
-                    <div className="list paper-list">
-                      {list.map((paper) => (
-                        <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
-                      ))}
-                    </div>
-                  )}
-                </section>
-              );
-            })}
-          </div>
+          <>
+            {filtered.length === 0 && (
+              <div className="empty"><span><Icon name="search" size={26} /></span><b>결과가 없습니다</b><p>필터를 바꿔 보세요.</p></div>
+            )}
+            <div className="paper-groups">
+              {groups.map(({ id, session, list }) => {
+                const isOpen = open.includes(id);
+                return (
+                  <section className="paper-group" key={id}>
+                    <button className="paper-group-head" onClick={() => toggleOpen(id)} aria-expanded={isOpen}>
+                      <div>
+                        <b>{formatSessionTitle(session?.title || list[0].session)}</b>
+                        <small>{session ? `${dayLabel(session.date)} · ${session.time} · ${session.venue}` : ''}</small>
+                      </div>
+                      <em>{list.length}</em>
+                      <span className={isOpen ? 'rot' : ''}><Icon name="chevron-down" size={16} /></span>
+                    </button>
+                    {isOpen && (
+                      <div className="list paper-list">
+                        {list.map((paper) => (
+                          <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                );
+              })}
+            </div>
+          </>
         )}
       </section>
       <AppTabs />

@@ -3,6 +3,7 @@ import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
 import FloorPlanViewer from '@/components/FloorPlanViewer';
+import Icon from '@/components/Icon';
 import { venues, type Venue } from '@/lib/conference';
 
 const floors = [
@@ -36,6 +37,10 @@ export default function VenueLayoutPage() {
         <p>층별 배치도를 확대해서 확인하고 발표장을 선택하세요.</p>
       </div>
 
+      <p className="section-note">
+        <Icon name="info" size={13} /> 배치도는 임시 자료이며, 추계 학술대회 확정 자료로 교체될 예정입니다. 발표장 위치는 현장 안내를 확인해 주세요.
+      </p>
+
       <div className="venue-floor-list">
         {floors.map((floor) => (
           <section className="venue-floor-section" key={floor.title}>
@@ -44,8 +49,8 @@ export default function VenueLayoutPage() {
             <nav className="floor-room-list" aria-label={`${floor.title} 발표장`}>
               {roomVenues(floor.rooms).map((venue) => (
                 <Link href={`/venues/${venue.id}`} key={venue.id}>
-                  <span>📍 {venue.name}</span>
-                  <b aria-hidden="true">›</b>
+                  <span><Icon name="pin" size={14} /> {venue.name}</span>
+                  <Icon name="chevron" size={16} />
                 </Link>
               ))}
             </nav>

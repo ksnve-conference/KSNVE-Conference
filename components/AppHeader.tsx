@@ -10,16 +10,23 @@ type Props = { compact?: boolean; showSearch?: boolean; unread?: number };
 export default function AppHeader({ compact = false, showSearch = true, unread = 0 }: Props) {
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
+      {!compact && (
+        <div className="hero-photo-stack" aria-hidden="true">
+          <span /><span /><span /><span />
+        </div>
+      )}
       <Link href="/" className="brand-mark">
-        <Image
-          className="brand-logo"
-          src="/images/ksnve-logo-transparent.png"
-          alt="한국소음진동공학회"
-          width={594}
-          height={587}
-          sizes="(max-width: 560px) 76px, 92px"
-          priority
-        />
+        {compact && (
+          <Image
+            className="brand-logo"
+            src="/images/ksnve-logo-transparent.png"
+            alt="한국소음진동공학회"
+            width={594}
+            height={587}
+            sizes="76px"
+            priority
+          />
+        )}
         <div className="hero-title-block">
           <b>{conferenceConfig.headerTitle}</b>
           <small>
@@ -31,7 +38,7 @@ export default function AppHeader({ compact = false, showSearch = true, unread =
       </Link>
       <nav className="hero-links" aria-label="바로가기">
         {showSearch && (
-          <Link href="/search" aria-label="통합 검색">
+          <Link href="/papers" aria-label="논문 검색">
             <Icon name="search" size={18} />
           </Link>
         )}

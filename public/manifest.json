@@ -17,6 +17,6 @@
   ],
   "shortcuts": [
     { "name": "내 일정", "url": "/my" },
-    { "name": "논문 검색", "url": "/search" }
+    { "name": "논문 검색", "url": "/papers" }
   ]
 }

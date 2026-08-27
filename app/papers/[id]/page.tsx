@@ -96,7 +96,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
             <h2>키워드</h2>
             <div className="keyword-list">
               {paper.keywords.map((keyword) => (
-                <Link key={keyword} href={`/search?q=${encodeURIComponent(keyword)}`} className="keyword-chip">
+                <Link key={keyword} href={`/papers?q=${encodeURIComponent(keyword)}`} className="keyword-chip">
                   {keyword}
                 </Link>
               ))}

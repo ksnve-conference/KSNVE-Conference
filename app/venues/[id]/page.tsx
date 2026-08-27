@@ -7,8 +7,9 @@ import Icon from '@/components/Icon';
 import PresentationBadge from '@/components/PresentationBadge';
 import {
   dayLabel,
-  formatSessionTitle,
   papers,
+  sessionTitleWithoutTrack,
+  sessionTrack,
   sessions,
   venues,
   type Paper,
@@ -62,7 +63,8 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
               .filter((paper) => paper.sessionId === session.id)
               .sort(sortPapers);
             const [start, end] = session.time.split('~');
-            const title = formatSessionTitle(session.title);
+            const title = sessionTitleWithoutTrack(session);
+            const track = sessionTrack(session);
 
             return (
               <article className="card venue-session-card" key={session.id}>
@@ -74,7 +76,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                   </div>
 
                   <div className="venue-session-body">
-                    <span className="badge live-badge">{formatSessionTitle(session.category)}</span>
+                    {track && <span className="badge live-badge">{track}</span>}
                     <h3>
                       <Link href={`/sessions/${session.id}`}>{title}</Link>
                     </h3>
@@ -82,7 +84,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                   </div>
 
                   <Link className="chevron" href={`/sessions/${session.id}`} aria-label={`${title} 세션 보기`}>
-                    ›
+                    <Icon name="chevron" size={18} />
                   </Link>
                 </div>
 

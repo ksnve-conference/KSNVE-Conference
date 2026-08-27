@@ -7,7 +7,7 @@ const PAGES = `${VERSION}-pages`;
 const ASSETS = `${VERSION}-assets`;
 const IMAGES = `${VERSION}-images`;
 
-const SHELL_URLS = ['/', '/papers', '/search', '/my', '/more', '/offline', '/manifest.json'];
+const SHELL_URLS = ['/', '/papers', '/my', '/more', '/offline', '/manifest.json'];
 const IMAGE_LIMIT = 160;
 
 self.addEventListener('install', (event) => {

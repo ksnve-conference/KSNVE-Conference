@@ -85,6 +85,14 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .filter-chips button.active{ background:var(--brand); border-color:var(--brand); color:#fff; }
 .filter-days button.active{ background:var(--brand-ink); border-color:var(--brand-ink); }
 
+/* ---------- recent searches (compact row above the filters) ---------- */
+.recent-chips{ align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
+.recent-chips::-webkit-scrollbar{ display:none; }
+.recent-chips button{ display:inline-flex; align-items:center; gap:5px; }
+.recent-chips-clear{
+  flex:none; margin-left:2px; padding:9px !important; color:var(--muted) !important;
+}
+
 /* ---------- grouped paper list ---------- */
 .paper-groups{ display:flex; flex-direction:column; gap:9px; margin-top:14px; }
 .paper-group{ background:var(--card); border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden; }
@@ -191,6 +199,10 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 /* ---------- motion ---------- */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  /* the collapsed-duration rule above would otherwise leave every hero photo
+     at its post-animation opacity:0 — show the first one, statically */
+  .hero-photo-stack span{ animation:none !important; opacity:0; }
+  .hero-photo-stack span:first-child{ opacity:1; }
 }
 
 /* ============================================================
@@ -200,32 +212,72 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
    notices. No per-shell or per-breakpoint overrides.
    ============================================================ */
 .hero-today{
-  height:auto; min-height:0;
-  padding:18px 16px 20px;
-  display:flex; align-items:center; gap:12px;
-  background-color:var(--card);
-  background-image:
-    linear-gradient(90deg, var(--hero-wash-a) 0%, var(--hero-wash-b) 52%, var(--hero-wash-c) 82%),
-    url('/images/ksnve-header-background.png');
-  background-position:right center; background-size:cover; background-repeat:no-repeat;
-  color:var(--hero-ink);
+  position:relative; overflow:hidden;
+  min-height:clamp(220px, 58vw, 300px);
+  padding:22px 18px 24px;
+  display:flex; align-items:flex-end; gap:12px;
+  background:var(--brand-dark); /* shows briefly while the photos decode */
+  color:#fff;
 }
-.hero-today .brand-mark{ display:flex; align-items:center; gap:12px; min-width:0; }
-.hero-today .brand-logo{ width:60px; height:auto; flex:none; }
+/* Four real photos of the venue and Yeosu, cross-fading — same set the
+   conference's own site (conf.ksnve.or.kr) opens with. Pure-CSS animation,
+   no JS carousel: each layer holds the shared cycle for a quarter of it,
+   offset by a negative delay. */
+.hero-photo-stack{ position:absolute; inset:0; z-index:0; }
+.hero-photo-stack span{
+  position:absolute; inset:0;
+  background-size:cover; background-repeat:no-repeat;
+  opacity:0;
+  animation:heroPhotoFade 24s infinite;
+}
+.hero-photo-stack span:nth-child(1){
+  background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 62%;
+  animation-delay:0s;
+}
+.hero-photo-stack span:nth-child(2){
+  background-image:url('/images/hero-yeosu-harbor.webp'); background-position:50% 55%;
+  animation-delay:-6s;
+}
+.hero-photo-stack span:nth-child(3){
+  background-image:url('/images/hero-yeosu-fireworks.webp'); background-position:50% 62%;
+  animation-delay:-12s;
+}
+.hero-photo-stack span:nth-child(4){
+  background-image:url('/images/hero-yeosu-lighthouse.webp'); background-position:50% 32%;
+  animation-delay:-18s;
+}
+@keyframes heroPhotoFade{
+  0%{ opacity:0; }
+  4%{ opacity:1; }
+  21%{ opacity:1; }
+  25%{ opacity:0; }
+  100%{ opacity:0; }
+}
+.hero-today:before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg, rgba(3,17,15,.1) 0%, rgba(3,17,15,.22) 40%, rgba(3,17,15,.8) 100%);
+}
+.hero-today:after{ display:none; }
+.hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-today .hero-title-block{ min-width:0; }
 .hero-today .hero-title-block b{
-  display:block; font-size:19px; line-height:1.26; letter-spacing:-.03em;
-  font-weight:800; text-wrap:balance; color:var(--hero-ink);
+  display:block; font-size:clamp(25px, 7vw, 33px); line-height:1.18; letter-spacing:-.03em;
+  font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 .hero-today .hero-title-block small{
-  display:flex; flex-wrap:wrap; gap:2px 10px; margin-top:6px;
-  font-size:var(--type-caption); font-weight:600; color:var(--hero-ink-2);
+  display:flex; flex-wrap:wrap; gap:3px 8px; margin-top:9px;
+  font-size:clamp(13px, 3.9vw, 14px); font-weight:600; color:rgba(255,255,255,.92);
+  text-shadow:0 1px 5px rgba(0,0,0,.4);
 }
 .hero-today .conference-tagline{
-  display:block; margin-top:5px; font-size:var(--type-caption);
-  font-style:italic; color:var(--hero-ink-2); opacity:.9;
+  display:block; margin-top:7px; font-size:clamp(14px, 4.2vw, 16px);
+  font-style:italic; color:rgba(255,255,255,.82); text-shadow:0 1px 5px rgba(0,0,0,.4);
 }
-.hero-today .hero-links{ position:absolute; top:14px; right:14px; }
+.hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
+.hero-today .hero-links a{
+  border-color:rgba(255,255,255,.4); color:#fff;
+  background:rgba(10,26,22,.32); backdrop-filter:blur(6px);
+}
 
 .hero-compact{
   height:56px; min-height:56px; overflow:visible;
@@ -246,14 +298,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-compact .conference-tagline{ display:none; }
 .hero-compact .hero-links{ position:static; margin-left:auto; }
 .hero-compact .hero-links a{ border-color:var(--line); color:var(--brand-dark); }
-
-:root{
-  --hero-wash-a:rgba(255,255,255,.94);
-  --hero-wash-b:rgba(255,255,255,.72);
-  --hero-wash-c:rgba(255,255,255,0);
-  --hero-ink:#004d43;
-  --hero-ink-2:#2c6157;
-}
 
 /* ---------- bottom nav: opaque so list content never shows through ---------- */
 .bottom{
