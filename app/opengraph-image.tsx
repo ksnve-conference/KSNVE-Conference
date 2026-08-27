@@ -55,28 +55,38 @@ export default function OpengraphImage() {
             padding: '80px 88px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 36 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 28 }}>
             <div
               style={{
                 display: 'flex',
-                width: 68,
-                height: 68,
-                borderRadius: 18,
+                width: 82,
+                height: 82,
+                borderRadius: 20,
                 background: 'rgba(255,255,255,0.96)',
                 alignItems: 'center',
                 justifyContent: 'center',
+                flexShrink: 0,
               }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`data:image/png;base64,${logoBase64}`}
-                width={50}
-                height={50}
+                width={60}
+                height={60}
                 alt=""
                 style={{ objectFit: 'contain' }}
               />
             </div>
-            <div style={{ display: 'flex', fontSize: 34, fontWeight: 700, color: 'rgba(255,255,255,0.94)' }}>
+            <div
+              style={{
+                display: 'flex',
+                fontSize: 66,
+                fontWeight: 800,
+                letterSpacing: '-0.02em',
+                color: 'rgba(255,255,255,0.94)',
+                textShadow: '0 2px 12px rgba(0,0,0,0.4)',
+              }}
+            >
               한국소음진동공학회
             </div>
           </div>
@@ -89,7 +99,7 @@ export default function OpengraphImage() {
               lineHeight: 1.2,
               letterSpacing: '-0.02em',
               color: '#ffffff',
-              maxWidth: 980,
+              maxWidth: 1020,
               textShadow: '0 2px 12px rgba(0,0,0,0.4)',
             }}
           >
@@ -99,19 +109,14 @@ export default function OpengraphImage() {
           <div
             style={{
               display: 'flex',
-              alignItems: 'baseline',
-              marginTop: 32,
-              fontSize: 34,
-              fontWeight: 700,
-              color: 'rgba(255,255,255,0.94)',
+              marginTop: 28,
+              fontSize: 66,
+              fontWeight: 800,
+              letterSpacing: '-0.02em',
+              color: 'rgba(255,255,255,0.9)',
+              textShadow: '0 2px 12px rgba(0,0,0,0.4)',
             }}
           >
-            <span style={{ display: 'flex' }}>{conferenceConfig.displayDate}</span>
-            <span style={{ display: 'flex', margin: '0 16px', color: 'rgba(255,255,255,0.45)' }}>|</span>
-            <span style={{ display: 'flex' }}>{conferenceConfig.venue}</span>
-          </div>
-
-          <div style={{ display: 'flex', marginTop: 22, fontSize: 34, fontWeight: 700, color: 'rgba(255,255,255,0.82)' }}>
             지속가능한 내일의 소음 진동
           </div>
         </div>

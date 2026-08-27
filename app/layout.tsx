@@ -21,7 +21,7 @@ const bodyFont = localFont({
 // 절대 URL로 못박아야 한다. 실제 배포 주소가 정해지면 여기 또는
 // NEXT_PUBLIC_SITE_URL 환경변수로 갱신할 것.
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ksnve-conference.vercel.app';
-const shareDescription = `${conferenceConfig.displayDate} · ${conferenceConfig.venue}`;
+const shareDescription = `${conferenceConfig.displayDate}\n${conferenceConfig.venue}`;
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
