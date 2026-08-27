@@ -35,14 +35,14 @@ export default function OpengraphImage() {
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(180deg, rgba(3,17,15,0.1) 0%, rgba(3,17,15,0.3) 40%, rgba(3,17,15,0.92) 100%)',
+            background: 'linear-gradient(180deg, rgba(3,17,15,0.18) 0%, rgba(3,17,15,0.42) 38%, rgba(3,17,15,0.94) 100%)',
           }}
         />
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(90deg, rgba(3,17,15,0.55) 0%, rgba(3,17,15,0.15) 45%, rgba(3,17,15,0) 75%)',
+            background: 'linear-gradient(90deg, rgba(3,17,15,0.7) 0%, rgba(3,17,15,0.3) 50%, rgba(3,17,15,0) 82%)',
           }}
         />
         <div
