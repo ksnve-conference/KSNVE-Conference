@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import './styles.css';
 import type { Viewport } from 'next';
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <OfflineReady />
         {children}
+        <Analytics />
       </body>
     </html>
   );
