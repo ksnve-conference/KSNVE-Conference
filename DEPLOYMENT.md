@@ -6,7 +6,7 @@ This repository is ready to deploy as a Next.js project on Vercel.
 
 1. Sign in to [Vercel](https://vercel.com) with GitHub.
 2. Select **Add New → Project**.
-3. Import `skim0130/KSNVE-Conference-app`.
+3. Import `ksnve-conference/KSNVE-Conference`.
 4. Keep the detected framework preset as **Next.js**.
 5. Keep the project root as the repository root (`.`).
 6. Use the default install and build settings:
@@ -40,8 +40,10 @@ npm run dev
 ## PWA and static export notes
 
 - `public/manifest.json` is linked from `app/layout.tsx`.
-- The app does not currently register a service worker, so offline caching is not
-  enabled.
+- `public/sw.js` is registered in production (see `components/OfflineReady.tsx`)
+  and caches the app shell, static assets, and images for offline use. It also
+  checks for a new deploy whenever the app returns to the foreground and
+  reloads once one takes over — see `README.md` → "오프라인".
 - Next.js static export (`output: 'export'`) is not enabled and is not required
   for Vercel. Vercel should use the standard Next.js build output.
 - Paper and session detail routes are prerendered through `generateStaticParams`.

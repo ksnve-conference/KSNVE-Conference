@@ -1,3 +1,0 @@
-
-/* the logo artwork is dark; on the dark compact header it needs inverting */
-.hero-compact .brand-logo{ filter:brightness(0) invert(1); opacity:.95; }

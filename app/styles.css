@@ -165,8 +165,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   background:var(--card-2); color:var(--muted); border:1px solid var(--line);
 }
 .star.on{ background:var(--star-bg); color:var(--star); border-color:transparent; }
-.session-star{ position:absolute; right:6px; top:6px; width:44px; height:44px; border-radius:50%; }
-.agenda-card{ position:relative; padding-right:58px; }
 
 /* ---------- my schedule ---------- */
 .schedule-actions{ margin-top:14px; }
@@ -507,7 +505,7 @@ body{
   word-break:keep-all;
 }
 /* minimum legible sizes — Hangul needs more than Latin at the same nominal size */
-.badge, .kicker, .eyebrow, small, .meta, figcaption{ font-size:max(var(--type-caption), 12px); }
+.badge, .kicker, small, .meta, figcaption{ font-size:max(var(--type-caption), 12px); }
 
 /* surfaces that must follow the theme */
 .schedule-panel{ background:var(--line); }
