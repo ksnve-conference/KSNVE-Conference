@@ -208,10 +208,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .time-slot-heading{ display:flex; align-items:baseline; gap:6px; margin:0 3px; }
 .time-slot-heading b{ font-size:var(--type-card); font-weight:800; color:var(--text); font-variant-numeric:tabular-nums; }
 .time-slot-heading > span{ font-size:var(--type-meta); color:var(--muted); font-variant-numeric:tabular-nums; }
-.time-slot-heading em{
-  margin-left:auto; font-style:normal; font-size:var(--type-caption); font-weight:700;
-  color:var(--tint-ink); background:var(--tint); padding:3px 9px; border-radius:var(--r-pill);
-}
 .time-slot-rows{
   overflow:hidden; border:1px solid var(--line); border-radius:var(--r-md);
   background:var(--card); box-shadow:var(--shadow);
@@ -232,7 +228,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .time-slot-info{ min-width:0; }
 .time-slot-info b{
   display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-  font-size:var(--type-meta); font-weight:700; color:var(--text);
+  font-size:var(--type-body); font-weight:700; color:var(--text);
 }
 .time-slot-info small{
   display:block; margin-top:1px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;

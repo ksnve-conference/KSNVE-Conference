@@ -208,7 +208,6 @@ export default function ProgramPage() {
               <div className="time-slot-heading">
                 <b>{time.split('~')[0]}</b>
                 {time.includes('~') && <span>– {time.split('~')[1]}</span>}
-                {slotSessions.length > 1 && <em>{slotSessions.length}개 홀 동시 진행</em>}
               </div>
               <div className="time-slot-rows">
                 {slotSessions.map((session) => (
