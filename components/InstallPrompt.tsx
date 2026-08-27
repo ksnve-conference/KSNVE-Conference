@@ -39,7 +39,11 @@ export default function InstallPrompt() {
     } catch {
       setDismissed(false);
     }
-    if (isIos()) {
+    // Dev-only escape hatch: iOS's install path has no beforeinstallprompt event,
+    // so real UA spoofing is the only other way to preview it — this is faster.
+    const forceIosPreview = process.env.NODE_ENV === 'development'
+      && new URLSearchParams(window.location.search).get('iosPreview') === '1';
+    if (isIos() || forceIosPreview) {
       setShowIosHint(true);
     }
 
