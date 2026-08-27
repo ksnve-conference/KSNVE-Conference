@@ -3,7 +3,7 @@ import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
 import sponsors from '@/data/sponsors.json';
 
-export const metadata = { title: '후원사' };
+export const metadata = { title: '후원 · 전시 참여사' };
 
 export default function SponsorsPage() {
   return (
