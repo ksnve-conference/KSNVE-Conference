@@ -35,7 +35,7 @@ export default function OpengraphImage() {
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(180deg, rgba(3,17,15,0.18) 0%, rgba(3,17,15,0.42) 38%, rgba(3,17,15,0.94) 100%)',
+            background: 'linear-gradient(180deg, rgba(3,17,15,0.82) 0%, rgba(3,17,15,0.5) 32%, rgba(3,17,15,0.18) 60%, rgba(3,17,15,0.3) 100%)',
           }}
         />
         <div
@@ -51,17 +51,17 @@ export default function OpengraphImage() {
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'flex-end',
-            padding: '80px 88px',
+            justifyContent: 'flex-start',
+            padding: '64px 88px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 28 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 22 }}>
             <div
               style={{
                 display: 'flex',
-                width: 82,
-                height: 82,
-                borderRadius: 20,
+                width: 68,
+                height: 68,
+                borderRadius: 17,
                 background: 'rgba(255,255,255,0.96)',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -71,8 +71,8 @@ export default function OpengraphImage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`data:image/png;base64,${logoBase64}`}
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 alt=""
                 style={{ objectFit: 'contain' }}
               />
@@ -80,7 +80,7 @@ export default function OpengraphImage() {
             <div
               style={{
                 display: 'flex',
-                fontSize: 66,
+                fontSize: 54,
                 fontWeight: 800,
                 letterSpacing: '-0.02em',
                 color: 'rgba(255,255,255,0.94)',
@@ -94,23 +94,8 @@ export default function OpengraphImage() {
           <div
             style={{
               display: 'flex',
-              fontSize: 66,
-              fontWeight: 800,
-              lineHeight: 1.2,
-              letterSpacing: '-0.02em',
-              color: '#ffffff',
-              maxWidth: 1020,
-              textShadow: '0 2px 12px rgba(0,0,0,0.4)',
-            }}
-          >
-            {conferenceConfig.koreanTitle}
-          </div>
-
-          <div
-            style={{
-              display: 'flex',
-              marginTop: 28,
-              fontSize: 66,
+              marginTop: 8,
+              fontSize: 54,
               fontWeight: 800,
               letterSpacing: '-0.02em',
               color: 'rgba(255,255,255,0.9)',
