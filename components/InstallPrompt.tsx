@@ -28,7 +28,6 @@ function isIos() {
 export default function InstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showIosHint, setShowIosHint] = useState(false);
-  const [canShare, setCanShare] = useState(false);
   const [dismissed, setDismissed] = useState(true); // default hidden until checked, to avoid a flash
 
   useEffect(() => {
@@ -40,7 +39,6 @@ export default function InstallPrompt() {
     }
     if (isIos()) {
       setShowIosHint(true);
-      setCanShare(typeof navigator.share === 'function');
     }
 
     const onPrompt = (event: Event) => {
@@ -64,23 +62,15 @@ export default function InstallPrompt() {
     dismiss();
   };
 
-  // iOS has no install API — the closest thing to a working button is opening
-  // the native share sheet for them, since "Add to Home Screen" lives inside it.
-  const openShareSheet = () => {
-    navigator.share({ title: document.title, url: window.location.href }).catch(() => undefined);
-  };
-
+  // iOS has no API to trigger Safari's own share sheet or "Add to Home Screen" —
+  // navigator.share() opens a *different*, JS-triggered system sheet that never
+  // includes that option, so it would just be a confusing dead end. The icon
+  // stays a plain, non-interactive visual cue; the instructions below do the work.
   if (dismissed || (!deferredPrompt && !showIosHint)) return null;
 
   return (
     <div className="install-prompt">
-      {canShare ? (
-        <button type="button" className="install-prompt-icon" onClick={openShareSheet} aria-label="공유 시트 열기">
-          <Icon name="download" size={17} />
-        </button>
-      ) : (
-        <span className="install-prompt-icon"><Icon name="download" size={17} /></span>
-      )}
+      <span className="install-prompt-icon"><Icon name="download" size={17} /></span>
       {deferredPrompt ? (
         <div>
           <b>홈 화면에 추가</b>
