@@ -534,7 +534,7 @@ body{
 /* ---------- home-screen install nudge ---------- */
 .install-prompt{
   position:relative; display:grid; grid-template-columns:38px 1fr auto; align-items:center;
-  gap:11px; margin:0 0 14px; padding:13px 34px 13px 13px;
+  gap:11px; margin:12px 0 14px; padding:13px 34px 13px 13px;
   border:1px solid var(--line); border-radius:15px; background:var(--card); box-shadow:var(--shadow);
 }
 .install-prompt-icon{
