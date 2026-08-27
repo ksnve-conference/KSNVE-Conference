@@ -314,8 +314,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 @keyframes heroPhotoFade{
   0%{ opacity:0; }
   4%{ opacity:1; }
-  21%{ opacity:1; }
-  25%{ opacity:0; }
+  25%{ opacity:1; }
+  29%{ opacity:0; }
   100%{ opacity:0; }
 }
 .hero-today:before{
