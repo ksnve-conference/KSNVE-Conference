@@ -51,9 +51,14 @@ export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
   const [showTimeTravel, setShowTimeTravel] = useState(false);
   const { savedPapers, savedSessions, togglePaper, toggleSession } = useSaved();
-  const [openSessions, setOpenSessions] = useState<string[]>([]);
-  const toggleSessionOpen = (id: string) =>
-    setOpenSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
+  // Separate open-state per section: the same session can appear in both
+  // "지금/다음" and the full day timeline, and they must expand independently.
+  const [openNowSessions, setOpenNowSessions] = useState<string[]>([]);
+  const toggleNowSessionOpen = (id: string) =>
+    setOpenNowSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
+  const [openTimelineSessions, setOpenTimelineSessions] = useState<string[]>([]);
+  const toggleTimelineSessionOpen = (id: string) =>
+    setOpenTimelineSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
   const { items: announcements, unread, markRead, read } = useAnnouncements();
 
   const dates = [...conferenceConfig.dates];
@@ -143,8 +148,8 @@ export default function ProgramPage() {
                     key={session.id}
                     session={session}
                     sessionPapers={papers.filter((p) => p.sessionId === session.id)}
-                    isOpen={openSessions.includes(session.id)}
-                    onToggleOpen={() => toggleSessionOpen(session.id)}
+                    isOpen={openNowSessions.includes(session.id)}
+                    onToggleOpen={() => toggleNowSessionOpen(session.id)}
                     savedPapers={savedPapers}
                     onTogglePaper={togglePaper}
                   />
@@ -213,8 +218,8 @@ export default function ProgramPage() {
                     sessionPapers={papers.filter((p) => p.sessionId === session.id)}
                     saved={savedSessions.includes(session.id)}
                     onToggleSession={toggleSession}
-                    isOpen={openSessions.includes(session.id)}
-                    onToggleOpen={() => toggleSessionOpen(session.id)}
+                    isOpen={openTimelineSessions.includes(session.id)}
+                    onToggleOpen={() => toggleTimelineSessionOpen(session.id)}
                     savedPapers={savedPapers}
                     onTogglePaper={togglePaper}
                   />
