@@ -16,7 +16,7 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/conference/registration', icon: 'user', title: '등록안내', desc: '등록비와 현장 등록' },
   { href: '/conference/venue-layout', icon: 'map', title: '행사장 배치도', desc: '층별 배치와 발표장' },
   { href: '/sponsors', icon: 'sponsor', title: '후원사', desc: '함께하는 후원사' },
-  { href: '/app-info', icon: 'info', title: '앱 정보', desc: '서비스 안내와 데이터 출처' },
+  { href: '/app-info', icon: 'info', title: '이용안내', desc: '앱 사용 방법 안내' },
 ];
 
 export default function MorePage() {
