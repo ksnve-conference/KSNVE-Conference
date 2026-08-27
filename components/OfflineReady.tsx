@@ -9,7 +9,30 @@ export default function OfflineReady() {
 
   useEffect(() => {
     if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
-      navigator.serviceWorker.register('/sw.js').catch(() => undefined);
+      navigator.serviceWorker.register('/sw.js').then((registration) => {
+        // A home-screen iOS web app is rarely a fresh load -- iOS suspends and
+        // resumes it instead of reloading, so it can sit on a deploy from days
+        // ago until the app is fully force-quit. Ask the SW to check for an
+        // update every time the app comes back to the foreground instead.
+        const checkForUpdate = () => registration.update().catch(() => undefined);
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'visible') checkForUpdate();
+        });
+        window.addEventListener('pageshow', checkForUpdate);
+      }).catch(() => undefined);
+
+      // sw.js already skipWaiting()+clients.claim()s on activate, so once an
+      // update is found it takes over immediately -- reload once to pick up
+      // the new page. Guarded so the very first activation (no prior
+      // controller) doesn't also trigger a needless reload.
+      let hadController = !!navigator.serviceWorker.controller;
+      let reloading = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController) { hadController = true; return; }
+        if (reloading) return;
+        reloading = true;
+        window.location.reload();
+      });
     }
     const update = () => setOffline(!navigator.onLine);
     update();
