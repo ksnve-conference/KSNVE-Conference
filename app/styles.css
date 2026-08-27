@@ -528,6 +528,9 @@ body{
 .major-event-list b{ font-size:15px; }
 .major-event-list small{ font-size:13px; }
 .announcement-list b{ font-size:15px; font-weight:700; }
+.announcement-list > button.open small{
+  overflow:visible; white-space:normal; text-overflow:clip; line-height:1.5;
+}
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
 

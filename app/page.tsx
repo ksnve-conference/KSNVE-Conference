@@ -61,6 +61,13 @@ export default function ProgramPage() {
   const toggleTimelineSessionOpen = (id: string) =>
     setOpenTimelineSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
   const { items: announcements, unread, markRead, read } = useAnnouncements();
+  // The compact home-page list clips each notice to one line; a tap should
+  // reveal the rest in place rather than only marking it read with no visible change.
+  const [openNotices, setOpenNotices] = useState<string[]>([]);
+  const toggleNotice = (id: string) => {
+    markRead(id);
+    setOpenNotices((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
+  };
 
   const dates = [...conferenceConfig.dates];
   const today = mockNow?.date ?? localDateKey();
@@ -183,7 +190,11 @@ export default function ProgramPage() {
           </div>
           <div className="announcement-list">
             {announcements.slice(0, 2).map((a) => (
-              <button className={read.includes(a.id) ? 'read' : ''} key={a.id} onClick={() => markRead(a.id)}>
+              <button
+                className={[read.includes(a.id) ? 'read' : '', openNotices.includes(a.id) ? 'open' : ''].filter(Boolean).join(' ')}
+                key={a.id}
+                onClick={() => toggleNotice(a.id)}
+              >
                 <span>{a.category}</span>
                 <div><b>{a.title}</b><small>{a.body}</small></div>
                 {!read.includes(a.id) && <em>NEW</em>}
