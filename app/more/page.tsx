@@ -27,7 +27,7 @@ export default function MorePage() {
 
   return (
     <main className="shell app-shell">
-      <AppHeader compact showSearch={false} showNotice={false} />
+      <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>더보기</h1></div>
         <div className="more-menu">

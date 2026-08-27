@@ -281,7 +281,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   min-height:clamp(220px, 58vw, 300px);
   padding:22px 18px 24px;
   display:flex; align-items:flex-end; gap:12px;
-  background:var(--brand-dark); /* shows briefly while the photos decode */
+  background:#000; /* shows briefly while photos decode and between crossfades */
   color:#fff;
 }
 /* Four real photos of the venue and Yeosu, cross-fading — same set the

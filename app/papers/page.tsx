@@ -95,7 +95,7 @@ function PapersPageInner() {
 
   return (
     <main className="shell app-shell">
-      <AppHeader compact showSearch={false} showNotice={false} />
+      <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>발표 논문</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
 

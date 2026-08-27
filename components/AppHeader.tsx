@@ -5,12 +5,13 @@ import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 
-type Props = { compact?: boolean; showSearch?: boolean; showNotice?: boolean; unread?: number };
+type Props = { compact?: boolean; showNotice?: boolean; unread?: number };
 
-// Search/notice shortcuts belong on the home hero only — every compact (detail
+// The notice shortcut belongs on the home hero only — every compact (detail
 // or 더보기-branch) screen already has a back link and the bottom tab bar, so
-// the icons default off there instead of needing every caller to opt out.
-export default function AppHeader({ compact = false, showSearch = !compact, showNotice = !compact, unread = 0 }: Props) {
+// it defaults off there instead of needing every caller to opt out. (Search
+// used to sit alongside it but was dropped — 논문 tab already covers that.)
+export default function AppHeader({ compact = false, showNotice = !compact, unread = 0 }: Props) {
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
       {!compact && (
@@ -40,19 +41,12 @@ export default function AppHeader({ compact = false, showSearch = !compact, show
           {!compact && <em className="conference-tagline">지속가능한 내일의 소음 진동</em>}
         </div>
       </Link>
-      {(showSearch || showNotice) && (
+      {showNotice && (
         <nav className="hero-links" aria-label="바로가기">
-          {showSearch && (
-            <Link href="/papers" aria-label="논문 검색">
-              <Icon name="search" size={18} />
-            </Link>
-          )}
-          {showNotice && (
-            <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
-              <Icon name="notice" size={18} />
-              {unread > 0 && <i className="hero-badge">{unread}</i>}
-            </Link>
-          )}
+          <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
+            <Icon name="notice" size={18} />
+            {unread > 0 && <i className="hero-badge">{unread}</i>}
+          </Link>
         </nav>
       )}
     </header>
