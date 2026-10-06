@@ -5,6 +5,7 @@ import './styles.css';
 import type { Viewport } from 'next';
 import { conferenceConfig } from '@/lib/conference-config';
 import OfflineReady from '@/components/OfflineReady';
+import { Analytics } from '@vercel/analytics/next';
 
 // Pretendard, subsetted to the characters this app renders (2 MB -> 456 KB) and
 // served from our own origin: no CDN request on the critical path, which matters
