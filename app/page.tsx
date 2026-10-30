@@ -45,7 +45,7 @@ function currentOrNextSessions(items: Session[], date: string, now: Date) {
   return upcoming.filter((s) => sessionRange(s).start === nearest);
 }
 
-const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회/i;
+const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회|교양\s*강좌|마술|캐리커쳐/i;
 const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.category}`);
 
 /** Keynotes are talks inside ordinary sessions, not sessions of their own, so the
