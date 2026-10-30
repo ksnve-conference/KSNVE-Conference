@@ -104,6 +104,101 @@ def span_text(span) -> str:
     return out
 
 
+# Equations typed in the HWP / Hancom equation editor come out in its own font
+# with every symbol on a private-use code point instead of the real character.
+# Both fonts share one regular layout, worked out from rendering each glyph.
+EQ_FONT_RE = re.compile(r'HancomEQN|HyhwpEQ', re.I)
+GREEK = 'αβγδεζηθικλμνξοπρστυφχψω'
+EQ_SYMBOLS = {
+    0xe03d: '0', 0xe044: '(', 0xe045: ')', 0xe046: '−', 0xe047: '=', 0xe048: '+', 0xe04d: '|',
+    0xe052: ',', 0xe053: '.', 0xe054: '/', 0xe05b: '∫', 0xe067: '∑', 0xe0c4: '∂', 0xe101: '|',
+    0xe05f: '\u0307', 0xe060: '\u0308',  # dot / double dot over the next letter (u̇, ü)
+}
+# Symbol / Wingdings put their glyphs at U+F000 + the 8-bit code
+SYMBOL_FONT = {'a': 'α', 'b': 'β', 'g': 'γ', 'd': 'δ', 'e': 'ε', 'z': 'ζ', 'h': 'η', 'q': 'θ', 'k': 'κ',
+               'l': 'λ', 'm': 'μ', 'n': 'ν', 'p': 'π', 'r': 'ρ', 's': 'σ', 't': 'τ', 'f': 'φ', 'c': 'χ',
+               'y': 'ψ', 'w': 'ω', 'D': 'Δ', 'F': 'Φ', 'G': 'Γ', 'L': 'Λ', 'P': 'Π', 'S': 'Σ', 'W': 'Ω'}
+SUPERSCRIPT = str.maketrans('0123456789+−=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ')
+SUBSCRIPT = str.maketrans('0123456789+−=()aehijklmnoprstuvx', '₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ')
+
+
+def eq_char(code: int) -> str:
+    if 0xe000 <= code <= 0xe019:
+        return chr(ord('A') + code - 0xe000)
+    if 0xe0e5 <= code <= 0xe0fe:
+        return chr(ord('a') + code - 0xe0e5)
+    if 0xe034 <= code <= 0xe03c:
+        return str(code - 0xe033)
+    if 0xe09d <= code <= 0xe0b4:
+        return GREEK[code - 0xe09d]
+    return EQ_SYMBOLS.get(code, '')  # unidentified glyphs are dropped rather than shown as boxes
+
+
+def decode_private_use(span) -> str:
+    """Real characters for a span's private-use glyphs; other text untouched."""
+    text = span['text']
+    if not any('\ue000' <= ch <= '\uf8ff' for ch in text):
+        return text
+    font = span['font']
+    out = []
+    for ch in text:
+        code = ord(ch)
+        if not 0xe000 <= code <= 0xf8ff:
+            out.append(ch)
+        elif EQ_FONT_RE.search(font):
+            out.append(eq_char(code))
+        elif 'Symbol' in font and 0xf020 <= code <= 0xf0ff:
+            out.append(SYMBOL_FONT.get(chr(code - 0xf000), ''))
+        elif 'Wingdings' in font and code == 0xf09e:
+            out.append('·')
+    text = ''.join(out)
+    # the accent glyph precedes its letter in the PDF; a combining mark follows it
+    return re.sub(r'([\u0307\u0308])(\w)', r'\2\1', text)
+
+
+def script_text(text: str, kind: str) -> str:
+    """m³, ω₀ when every character has a Unicode super/subscript form;
+    otherwise V_AC, λ_A0, e^(ikL) so the text still reads unambiguously."""
+    text = text.replace(' ', '')
+    table = SUPERSCRIPT if kind == 'sup' else SUBSCRIPT
+    converted = text.translate(table)
+    if all(a != b for a, b in zip(text, converted)):
+        return converted
+    mark = '^' if kind == 'sup' else '_'
+    return f'{mark}({text})' if len(text) > 1 and kind == 'sup' else mark + text
+
+
+def join_spans(spans) -> str:
+    """Join a line's spans. Small equation spans sitting above or below the
+    line's baseline become super/subscripts (m³/s, κᵥ); an equation set
+    between Latin text and digits keeps a space on each side."""
+    main = max(spans, key=lambda s: len(s['text'].strip()))
+    base = main['origin'][1]
+    ref = max(s['size'] for s in spans)  # equations are often set larger than the body
+    parts: list[list] = []  # [kind, text]; adjacent scripts of one kind merge
+    prev = None
+    for s in spans:
+        text = decode_private_use(s)
+        is_eq = bool(EQ_FONT_RE.search(s['font']))
+        kind = 'text'
+        if is_eq and s['size'] < ref * 0.8 and text.strip():
+            if s['origin'][1] < base - s['size'] * 0.2:
+                kind = 'sup'
+            elif s['origin'][1] > base + s['size'] * 0.2:
+                kind = 'sub'
+        if kind == 'text' and prev is not None and text and parts and (is_eq or prev['is_eq']) \
+                and s['bbox'][0] - prev['bbox'][2] > 0.45:
+            last = parts[-1][1]
+            if last and last[-1].isascii() and last[-1].isalnum() and text[0].isascii() and text[0].isalnum():
+                text = ' ' + text
+        if parts and parts[-1][0] == kind and kind != 'text':
+            parts[-1][1] += text
+        else:
+            parts.append([kind, text])
+        prev = {'bbox': s['bbox'], 'is_eq': is_eq}
+    return ''.join(text if kind == 'text' else script_text(text, kind) for kind, text in parts)
+
+
 def page_lines(page):
     """Lines as dicts: text (spans joined), size (dominant by chars), bbox."""
     out = []
@@ -113,7 +208,7 @@ def page_lines(page):
         for line in block['lines']:
             for s in line['spans']:
                 s['text'] = span_text(s)
-            text = ''.join(s['text'] for s in line['spans'])
+            text = join_spans(line['spans'])
             if not text.strip():
                 continue
             weight = Counter()
