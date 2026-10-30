@@ -23,7 +23,7 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 | `/` | 프로그램 | 카운트다운/진행 상황, 주요 일정, 공지 요약, 날짜별 전체 일정 |
 | `/papers` | 논문 | 분야·유형·날짜 필터, 세션별 접이식 목록. 검색어를 입력하면 논문·세션·발표자 통합 검색 결과로 전환 |
 | `/my` | 내 일정 | 저장한 논문·세션, 시간 충돌 경고, `.ics` 내보내기 |
-| `/more` | 더보기 | 공지, 행사개요, 등록안내, 배치도, 후원사, 앱 정보, 발표장 |
+| `/more` | 더보기 | 공지, 행사개요, 등록안내, 배치도, 후원·전시 참여사, 이용안내, 발표장 |
 
 헤더의 돋보기 아이콘도 `/papers`로 연결됩니다 — 검색은 별도 화면이 아니라 논문 탭의
 검색어 입력으로 통합되어 있습니다. 상세 화면은 `/papers/[id]`,
@@ -38,10 +38,10 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 |---|---|
 | `sessions.json` | 논문 발표 세션 |
 | `official-events.json` | 개회식·키노트·만찬·포스터·대토론회 등 공식 일정 |
-| `papers-with-abstracts.json` | 논문 248건 (앱의 주 데이터) |
-| `poster-papers.json` | 포스터 논문 71건 |
+| `papers-with-abstracts.json` | 구두 발표 271건 — 확장요약문 초록·키워드 포함 (앱의 주 데이터) |
+| `poster-papers.json` | 포스터 발표 90건 |
 | `papers-index.json` | 위 두 파일에서 생성되는 경량 색인 (초록 제외). 직접 수정하지 말고 `npm run build:paper-index`로 재생성 |
-| `papers.json` | 프로그램북 원본 메타데이터 (추출 파이프라인 전용, 수정하지 않음) |
+| `papers.json` | 프로그램북에서 파싱한 발표 메타데이터 (아래 파이프라인의 중간 산출물) |
 | `speakers.json` | 발표자 색인 |
 | `venues.json` | 발표장 |
 | `announcements.json` | 공지 (구글 시트 연결 실패 시 폴백) |
@@ -49,6 +49,27 @@ npm run test:mock-time  # 대시보드 시간 로직 테스트
 | `sponsors.json` | 후원·전시 참여사 |
 
 대회 메타데이터(명칭, 기간, 장소)는 `lib/conference-config.ts`에 있습니다.
+
+### 추계 데이터 파이프라인
+
+원본은 `source-pdf/`에 둡니다(git 제외): `program.pdf`(프로그램북)와
+`확장요약문_세션별/<세션 폴더>/<접수번호>_<발표자>.pdf`.
+
+```bash
+npm run parse:program      # 프로그램북 → sessions.json, papers.json (+ .paper-extraction/fall/program-report.md)
+npm run extract:abstracts  # 확장요약문 PDF ↔ 논문 매칭, 초록·키워드 추출, public/paper-pages/*.webp 렌더링
+npm run assemble:data      # papers-with-abstracts.json, poster-papers.json, speakers.json 생성
+npm run build:paper-index
+npm run validate:data
+npm run build:font
+```
+
+`extract:abstracts`는 PyMuPDF·Pillow가 필요하고, 매칭·추출 결과를
+`.paper-extraction/fall/abstract-report.md`에 남깁니다(제목이 달라 발표자명으로 연결한 건,
+텍스트를 쓸 수 없어 원문 이미지만 표시하는 건, 확장요약문이 없는 건). 요약문을 새로 받으면
+해당 세션 폴더에 넣고 `extract:abstracts`부터 다시 실행하면 됩니다.
+`official-events.json`, `venues.json`, `conference-info.json`, `sponsors.json`은 프로그램북을
+보고 직접 관리합니다.
 
 ### 실데이터 교체 절차
 
@@ -101,7 +122,8 @@ NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL=https://docs.google.com/spreadsheets/d/e/…
 ## 폰트
 
 Pretendard를 앱이 실제로 쓰는 문자만 남겨 서브셋(2MB → 456KB)하고 self-host 합니다.
-데이터를 교체한 뒤에는 `npm run build:font`로 다시 생성하세요.
+데이터를 교체한 뒤에는 `npm run build:font`로 다시 생성하세요(fontTools와 brotli 파이썬
+패키지가 필요합니다).
 
 ## 저장되는 개인 데이터
 

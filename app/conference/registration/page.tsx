@@ -14,6 +14,27 @@ export default function RegistrationGuidePage() {
         ))}
       </div>
 
+      <h2 className="info-subhead">등록회비</h2>
+      <div className="fee-table-wrap">
+        <table className="fee-table">
+          <thead>
+            <tr><th scope="col" colSpan={2}>구분</th>{registration.fees.columns.map((c) => <th scope="col" key={c}>{c}</th>)}</tr>
+          </thead>
+          {registration.fees.groups.map((group) => (
+            <tbody key={group.label}>
+              {group.rows.map((row, i) => (
+                <tr key={row.label}>
+                  {i === 0 && <th scope="rowgroup" rowSpan={group.rows.length}>{group.label}</th>}
+                  <th scope="row">{row.label}</th>
+                  {row.values.map((v, j) => <td key={registration.fees.columns[j]}>{v}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </div>
+      <p className="info-note">{registration.fees.unit}</p>
+
       <h2 className="info-subhead">등록회비 제공 내용</h2>
       <div className="keyword-list">
         {registration.includes.map((x) => <span className="keyword-chip" key={x}>{x}</span>)}
