@@ -19,9 +19,12 @@ export default function SponsorsPage() {
       {sponsors.tiers.map((group) => (
         <section className="sponsor-tier" key={group.tier}>
           <h3>{group.tier}</h3>
-          <div className="sponsor-grid">
-            {group.companies.map((name) => (
-              <article className="sponsor" key={name}><strong>{name}</strong></article>
+          {/* Logos cut from the programme book's sponsor page; GOLD gets a full row. */}
+          <div className={`sponsor-logos tier-${group.key}`}>
+            {group.companies.map((company) => (
+              <div className="sponsor-logo" key={company.name}>
+                <img src={company.logo} alt={company.name} width={company.width} height={company.height} loading="lazy" />
+              </div>
             ))}
           </div>
         </section>

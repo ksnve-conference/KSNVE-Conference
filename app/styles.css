@@ -499,12 +499,19 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .fee-table-wrap + .info-note{ margin-top:8px; }
 .info-note{ margin:18px 2px 0; font-size:var(--type-caption); line-height:1.65; color:var(--muted); }
 .section-note{ margin:8px 2px 0; font-size:var(--type-meta); color:var(--muted); }
-.sponsor-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:9px; margin-top:16px; }
-.sponsor{ padding:18px 14px; text-align:center; background:var(--card); border:1px solid var(--line); border-radius:var(--r-md); }
-.sponsor strong{ font-size:var(--type-meta); font-weight:700; color:var(--text-2); }
 .sponsor-tier + .sponsor-tier{ margin-top:18px; }
 .sponsor-tier h3{ margin:0 2px; font-size:var(--type-caption); font-weight:700; letter-spacing:.06em; color:var(--muted); }
-.sponsor-tier .sponsor-grid{ margin-top:8px; }
+.sponsor-logos{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin-top:8px; }
+.sponsor-logos.tier-gold{ grid-template-columns:1fr; }
+/* logos are cut from a white page, so the tile stays white */
+.sponsor-logo{
+  display:flex; align-items:center; justify-content:center; height:72px; padding:12px 14px;
+  background:#fff; border:1px solid var(--line); border-radius:var(--r-md);
+}
+.tier-gold .sponsor-logo{ height:112px; padding:18px 28px; }
+.tier-silver .sponsor-logo{ height:88px; }
+.tier-etc .sponsor-logo{ height:64px; padding:10px 12px; }
+.sponsor-logo img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
 .sponsor-count{ margin-left:4px; font-style:normal; color:var(--brand); }
 .exhibitor-list{ display:flex; flex-direction:column; gap:7px; margin-top:14px; }
 .exhibitor{
