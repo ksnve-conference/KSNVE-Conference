@@ -554,8 +554,10 @@ body{
 .major-event-list small{ font-size:13px; }
 .announcement-list b{ font-size:15px; font-weight:700; }
 .announcement-list > button.open small{
-  overflow:visible; white-space:normal; text-overflow:clip; line-height:1.5;
+  overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5;
 }
+/* keep the line breaks the organiser types into a sheet cell (Cmd/Ctrl+Enter) */
+.announcement-card p{ white-space:pre-line; }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
 
