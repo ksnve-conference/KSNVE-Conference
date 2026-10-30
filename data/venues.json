@@ -1,67 +1,72 @@
 [
  {
   "id": "v01",
-  "name": "B1층 로비",
+  "name": "세미나실[1]",
   "floor": "B1F"
  },
  {
   "id": "v02",
-  "name": "그랜드볼룸[1]",
-  "floor": "1F"
+  "name": "LIG D&A홀",
+  "floor": "B1F"
  },
  {
   "id": "v03",
-  "name": "그랜드볼룸[2]",
-  "floor": "1F"
+  "name": "세미나실[3]",
+  "floor": "B1F"
  },
  {
   "id": "v04",
-  "name": "릴리홀[1]",
+  "name": "세미나실[4]",
   "floor": "B1F"
  },
  {
   "id": "v05",
-  "name": "릴리홀[2]",
+  "name": "세미나실[5]",
   "floor": "B1F"
  },
  {
   "id": "v06",
-  "name": "사파이어홀[1]",
+  "name": "세미나실[6]",
   "floor": "B1F"
  },
  {
   "id": "v07",
-  "name": "사파이어홀[2]",
+  "name": "세미나실[7]",
   "floor": "B1F"
  },
  {
   "id": "v08",
-  "name": "에메랄드홀",
-  "floor": "1F"
+  "name": "세미나실[8]",
+  "floor": "B1F"
  },
  {
   "id": "v09",
-  "name": "오팔홀[1]",
-  "floor": "1F"
+  "name": "세미나실[10]",
+  "floor": "B1F"
  },
  {
   "id": "v10",
-  "name": "오팔홀[2]",
+  "name": "컨퍼런스홀",
   "floor": "1F"
  },
  {
   "id": "v11",
-  "name": "1층 로비",
-  "floor": "1F"
+  "name": "엑스포홀",
+  "floor": "2F"
  },
  {
   "id": "v12",
-  "name": "오션힐",
-  "floor": "1F"
+  "name": "엑스포홀 로비",
+  "floor": "2F"
  },
  {
   "id": "v13",
-  "name": "그랜드볼룸",
-  "floor": "1F"
+  "name": "2층 연회장",
+  "floor": "2F"
+ },
+ {
+  "id": "v14",
+  "name": "3층 연회장",
+  "floor": "3F"
  }
 ]

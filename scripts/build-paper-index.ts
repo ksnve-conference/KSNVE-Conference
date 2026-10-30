@@ -16,6 +16,8 @@ import posterPapersData from '../data/poster-papers.json';
 type SourceRecord = Record<string, unknown>;
 
 const summarize = (paper: SourceRecord) => ({
+  // Display number (P201 for posters); falls back to id in the badge.
+  paper_id: paper.paper_id,
   id: paper.id,
   sessionId: paper.sessionId ?? paper.session_id,
   date: paper.date,
