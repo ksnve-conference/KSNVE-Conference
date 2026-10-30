@@ -2,28 +2,28 @@
    Design tokens — the single source of colour for the whole app.
    ============================================================ */
 :root{
-  --bg:#f3f5f2;
+  --bg:#f3f5f8;
   --card:#ffffff;
-  --card-2:#f7f9f7;
+  --card-2:#f7f9fb;
   --chrome:rgba(255,255,255,.94);
-  --text:#15221f;
-  --text-2:#33403c;
-  --muted:#5f6c69;
-  --line:#dde3df;
-  --line-soft:#e9eeeb;
-  --brand:#006b5b;
-  --brand-dark:#004d43;
-  --brand-ink:#00584a;
-  --accent:#d5ee88;
-  --tint:#e4f3ef;
-  --tint-ink:#005b4d;
+  --text:#151f2b;
+  --text-2:#333e4a;
+  --muted:#5e6a77;
+  --line:#dde3ea;
+  --line-soft:#e9edf2;
+  --brand:#076db0;
+  --brand-dark:#05507f;
+  --brand-ink:#065c94;
+  --accent:#ffe08a;
+  --tint:#e7f1f9;
+  --tint-ink:#055a91;
   --warn:#8a5a00;
   --warn-bg:#fdf3dc;
   --danger:#b3341f;
   --danger-bg:#fbeeea;
   --star:#a97f00;
   --star-bg:#f7f0d4;
-  --shadow:0 1px 2px rgba(24,56,48,.04), 0 10px 30px rgba(24,56,48,.07);
+  --shadow:0 1px 2px rgba(22,48,74,.04), 0 10px 30px rgba(22,48,74,.07);
 
   /* type scale */
   --type-hero:30px;
@@ -114,7 +114,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   max-height:82vh; padding:0; border:0; border-radius:20px 20px 0 0;
   background:var(--card); color:var(--text);
 }
-.filter-sheet::backdrop{ background:rgba(8,18,16,.5); }
+.filter-sheet::backdrop{ background:rgba(6,16,26,.5); }
 .filter-sheet-header{
   display:flex; align-items:center; justify-content:space-between;
   padding:16px 18px; border-bottom:1px solid var(--line);
@@ -321,7 +321,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today:before{
   content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(3,17,15,.1) 0%, rgba(3,17,15,.22) 40%, rgba(3,17,15,.8) 100%);
+  background:linear-gradient(180deg, rgba(3,14,24,.1) 0%, rgba(3,14,24,.22) 40%, rgba(3,14,24,.8) 100%);
 }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
@@ -347,7 +347,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
 .hero-today .hero-links a{
   border-color:rgba(255,255,255,.4); color:#fff;
-  background:rgba(10,26,22,.32); backdrop-filter:blur(6px);
+  background:rgba(8,22,36,.32); backdrop-filter:blur(6px);
 }
 
 .hero-compact{
