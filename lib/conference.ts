@@ -19,6 +19,10 @@ export type Paper = {
   session: string;
   chair?: string;
   flags: string;
+  /** Set per paper when a talk differs from its session's kind (keynotes inside ordinary sessions). */
+  presentationType?: 'ORAL' | 'POSTER' | 'KEYNOTE' | 'INVITED';
+  /** Official programme-book keynote number (키노트[n]) — not chronological. */
+  keynoteNo?: number;
   title: string;
   authors: string;
   presenter: string;

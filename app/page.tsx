@@ -28,7 +28,7 @@ function formatKoreanDate(date: string) {
 const daysBetween = (from: string, to: string) =>
   Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000);
 
-function sessionRange(session: Session) {
+function sessionRange(session: Pick<Session, 'date' | 'time'>) {
   const [start, end] = session.time.split(/[~–-]/);
   const startsAt = new Date(`${session.date}T${(start || '00:00').trim()}:00+09:00`).getTime();
   return { start: startsAt, end: end ? new Date(`${session.date}T${end.trim()}:00+09:00`).getTime() : startsAt + 2 * 60 * 60 * 1000 };
@@ -47,6 +47,20 @@ function currentOrNextSessions(items: Session[], date: string, now: Date) {
 
 const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회/i;
 const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.category}`);
+
+/** Keynotes are talks inside ordinary sessions, not sessions of their own, so the
+ * 주요 일정 list picks them out of the paper list and links to the talk itself. */
+type MajorItem = { key: string; href: string; date: string; time: string; title: string; venue: string };
+const keynoteItems: MajorItem[] = papers
+  .filter((p) => p.presentationType === 'KEYNOTE')
+  .map((p) => ({
+    key: p.id,
+    href: `/papers/${p.id}`,
+    date: p.date,
+    time: p.time,
+    title: `${p.keynoteNo ? `키노트 강연 ${p.keynoteNo}` : '키노트 강연'} - ${p.title}`,
+    venue: p.venue,
+  }));
 
 export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
@@ -87,8 +101,13 @@ export default function ProgramPage() {
 
   const now = mockNow?.instant ?? new Date();
   const currentOrNext = useMemo(() => currentOrNextSessions(sessions, dashboardDate, now), [dashboardDate, now]);
-  const majorEvents = useMemo(() => sessions
-    .filter((s) => s.date === dashboardDate && isMajorEvent(s) && sessionRange(s).end > now.getTime())
+  const majorEvents = useMemo(() => [
+    ...sessions.filter(isMajorEvent).map((s): MajorItem => ({
+      key: s.id, href: `/sessions/${s.id}`, date: s.date, time: s.time, title: formatSessionTitle(s.title), venue: s.venue,
+    })),
+    ...keynoteItems,
+  ]
+    .filter((item) => item.date === dashboardDate && sessionRange(item).end > now.getTime())
     .sort((a, b) => sessionRange(a).start - sessionRange(b).start), [dashboardDate, now]);
   const daySessions = useMemo(() => sessions
     .filter((s) => s.date === date)
@@ -170,10 +189,10 @@ export default function ProgramPage() {
             <div className="dashboard-section">
               <div className="dashboard-heading"><h2>주요 일정</h2></div>
               <div className="major-event-list">
-                {majorEvents.map((session) => (
-                  <Link href={`/sessions/${session.id}`} key={session.id}>
-                    <time>{session.time.split('~')[0]}</time>
-                    <div><b>{formatSessionTitle(session.title)}</b><small>{session.venue}</small></div>
+                {majorEvents.map((item) => (
+                  <Link href={item.href} key={item.key}>
+                    <time>{item.time.split('~')[0]}</time>
+                    <div><b>{item.title}</b><small>{item.venue}</small></div>
                     <span><Icon name="chevron" size={16} /></span>
                   </Link>
                 ))}

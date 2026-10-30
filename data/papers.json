@@ -1320,7 +1320,8 @@
   "presenter": "이호성",
   "affiliations": [
    "고려대"
-  ]
+  ],
+  "keynoteNo": 1
  },
  {
   "paper_id": "p073",
@@ -1987,7 +1988,8 @@
   "presenter": "류종관",
   "affiliations": [
    "전남대"
-  ]
+  ],
+  "keynoteNo": 3
  },
  {
   "paper_id": "p109",
@@ -2461,7 +2463,8 @@
   "presenter": "김상용",
   "affiliations": [
    "국방과학연"
-  ]
+  ],
+  "keynoteNo": 2
  },
  {
   "paper_id": "p135",
@@ -2551,7 +2554,8 @@
   "presenter": "배성원",
   "affiliations": [
    "LG전자"
-  ]
+  ],
+  "keynoteNo": 4
  },
  {
   "paper_id": "p140",
@@ -2867,7 +2871,8 @@
   "presenter": "오기용",
   "affiliations": [
    "한양대"
-  ]
+  ],
+  "keynoteNo": 5
  },
  {
   "paper_id": "p157",
@@ -2885,7 +2890,8 @@
   "presenter": "김성현",
   "affiliations": [
    "현대차"
-  ]
+  ],
+  "keynoteNo": 6
  },
  {
   "paper_id": "p158",

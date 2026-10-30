@@ -26,6 +26,8 @@ const summarize = (paper: SourceRecord) => ({
   session: paper.session,
   chair: paper.chair,
   flags: paper.flags,
+  presentationType: paper.presentationType,
+  keynoteNo: paper.keynoteNo,
   title: paper.title,
   authors: paper.authors,
   presenter: paper.presenter,

@@ -10,6 +10,7 @@ export const presentationTypeMeta: Record<PresentationType, { label: Presentatio
 };
 
 export function presentationTypeFor(paper: Paper, session?: Session): PresentationType {
+  if (paper.presentationType && paper.presentationType !== 'ORAL') return paper.presentationType;
   const metadata = `${session?.title ?? paper.session} ${session?.category ?? ''}`;
   if (/포스터|poster/i.test(metadata)) return 'POSTER';
   if (/키노트|keynote|기조\s*강연/i.test(metadata)) return 'KEYNOTE';

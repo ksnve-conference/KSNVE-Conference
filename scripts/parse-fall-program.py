@@ -5,6 +5,8 @@ session / paper / poster data.
 Source sections (PDF page numbers, not the printed folios):
   42–68  세션별 발표논문  — sessions, papers, posters (the canonical names)
   37–41  발표자별 시간표  — cross-check only: per-slot presentation counts
+  13–15  키노트 안내      — official keynote numbers (키노트[n]); not chronological,
+                           so matched to the keynote papers by date/start/room
 
 Session names follow the programme book exactly (the abstract folders use
 slightly different spellings; those are matched back to these in step 2).
@@ -32,6 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PAPER_PAGES = (42, 68)
 PRESENTER_PAGES = (37, 41)
+KEYNOTE_PAGES = (13, 15)
 YEAR_MONTH = '2026-11'
 
 # Programme-book room labels -> the venue names used across the app.
@@ -176,7 +179,8 @@ def parse_entries(lines: list[str], start: re.Pattern, notes: list[str], where: 
         if len(rest) - author_at > 1 or author_at > 0:
             notes.append(f'{where}: 여러 줄 항목 확인 — 제목={title!r} / 저자={authors!r}')
         if entries and entries[-1]['title'] == title and entries[-1]['authors'] == authors:
-            notes.append(f'{where}: 프로그램북 중복 인쇄로 보이는 항목 제외 — {m.group(1)} {title!r}')
+            # The book repeats a paper in slots whose extra papers aren't confirmed yet.
+            notes.append(f'{where}: 미확정 슬롯(직전 논문 반복 인쇄) 제외 — {m.group(1)} {title!r}')
             continue
         entries.append({'m': m, 'title': title, 'authors': authors, 'keynote': keynote})
     return entries
@@ -266,6 +270,24 @@ def main():
                 'affiliations': affiliations(e['authors']),
             })
 
+    # --- official keynote numbers: '키노트[n]' then '2026년 11월 26일(목) 09:40~10:10│LIG D&A홀 (B1F)' ---
+    kn_text = pdf_text(pdf, *KEYNOTE_PAGES)
+    kn_re = re.compile(
+        r'키노트\[(\d+)\]\s*\n\s*2026년\s*11월\s*(\d{1,2})일\(.\)\s*(\d{2}:\d{2})~\d{2}:\d{2}\s*│\s*([^\n(]+)'
+    )
+    keynote_no = {
+        (f'{YEAR_MONTH}-{int(day):02d}', start, normalize_venue(room)): int(n)
+        for n, day, start, room in kn_re.findall(kn_text)
+    }
+    for p in papers:
+        if p['presentationType'] != 'KEYNOTE':
+            continue
+        n = keynote_no.get((p['date'], p['time'][:5], p['venue']))
+        if n:
+            p['keynoteNo'] = n
+        else:
+            notes.append(f'키노트 번호를 찾지 못함 — {p["id"]} {p["date"]} {p["time"]} {p["venue"]}')
+
     # --- cross-check against 발표자별 시간표: presentations per (day, time) slot ---
     table = pdf_text(pdf, *PRESENTER_PAGES)
     slot_re = re.compile(r'(\d{2})일\(.\)\s+(\d{2}:\d{2}~\d{2}:\d{2})')
@@ -302,7 +324,8 @@ def main():
         *([] if slot_diffs else ['- 없음']),
         '',
         '## 키노트',
-        *(f'- {p["id"]} {p["session"]} {p["time"]} — {p["title"]} / {p["authors"]}' for p in keynotes),
+        *(f'- 키노트[{p.get("keynoteNo", "?")}] {p["id"]} {p["session"]} {p["time"]} — {p["title"]} / {p["authors"]}'
+          for p in sorted(keynotes, key=lambda p: p.get('keynoteNo', 99))),
         '',
         '## 검토 메모',
         *(f'- {n}' for n in notes),
