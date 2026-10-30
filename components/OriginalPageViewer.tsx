@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type OriginalPageViewerProps = {
   src: string;
@@ -10,7 +10,15 @@ type OriginalPageViewerProps = {
 
 export default function OriginalPageViewer({ src, title, sourcePage }: OriginalPageViewerProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const previewRef = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
+
+  // A cached image can finish loading before hydration attaches onLoad, which
+  // then never fires and leaves the preview stuck at opacity 0 — check on mount.
+  useEffect(() => {
+    const img = previewRef.current;
+    if (img?.complete && img.naturalWidth > 0) setLoaded(true);
+  }, [src]);
   const [zoomed, setZoomed] = useState(false);
 
   const openViewer = () => {
@@ -45,6 +53,7 @@ export default function OriginalPageViewer({ src, title, sourcePage }: OriginalP
       <button className="page-preview" type="button" onClick={openViewer} aria-label="원문 페이지 확대 보기">
         {!loaded && <span className="page-skeleton" aria-hidden="true" />}
         <img
+          ref={previewRef}
           className={loaded ? 'loaded' : ''}
           src={src}
           alt={`${title} 원문 페이지`}
