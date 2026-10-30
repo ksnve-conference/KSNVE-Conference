@@ -6,7 +6,6 @@ import speakersData from '@/data/speakers.json';
 import announcementsData from '@/data/announcements.json';
 import { conferenceConfig } from '@/lib/conference-config';
 
-export type PaperFigure = { id?: string; caption?: string; image?: string };
 
 export type Paper = {
   paper_id?: string;
@@ -29,12 +28,8 @@ export type Paper = {
   affiliations?: string[] | string;
   abstract?: string;
   keywords?: string[];
-  sourcePage?: number;
-  /** How the abstract was obtained: font-decode | ocr-300dpi | no-page */
+  /** pdf-text: abstract taken from the PDF's text · image-only: only the page image is usable */
   extractionStatus?: string;
-  /** 0–1 confidence in the extracted text; low values are worth a human check. */
-  extractionQuality?: number;
-  figures?: PaperFigure[];
   pageImage?: string;
   /** Per-paper PDF, supplied for the autumn conference. */
   paperPdf?: string;

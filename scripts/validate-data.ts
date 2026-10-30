@@ -10,6 +10,7 @@ import posters from '../data/poster-papers.json';
 import venues from '../data/venues.json';
 import speakers from '../data/speakers.json';
 import announcements from '../data/announcements.json';
+import { existsSync } from 'node:fs';
 import { conferenceConfig } from '../lib/conference-config';
 
 const errors: string[] = [];
@@ -53,11 +54,12 @@ if (ghosts.length) fail(`speakers.json이 존재하지 않는 논문을 참조: 
 const emptyDays = conferenceConfig.dates.filter((d) => !allSessions.some((s) => s.date === d));
 if (emptyDays.length) warn(`일정이 하나도 없는 날: ${emptyDays.join(', ')}`);
 
-const noAbstract = papers.filter((p) => !(p as { abstract?: string }).abstract);
-if (noAbstract.length) warn(`초록이 비어 있는 논문 ${noAbstract.length}건: ${noAbstract.map((p) => p.id).join(', ')}`);
+type Extended = { id: string; abstract?: string; pageImage?: string };
+const noAbstract = (allPapers as Extended[]).filter((p) => !p.abstract);
+if (noAbstract.length) warn(`초록 텍스트가 없는 논문 ${noAbstract.length}건 (원문 이미지만 또는 프로그램 정보만): ${noAbstract.map((p) => p.id).join(', ')}`);
 
-const lowQuality = papers.filter((p) => ((p as { extractionQuality?: number }).extractionQuality ?? 1) < 0.55);
-if (lowQuality.length) warn(`추출 품질이 낮아 검수가 필요한 논문 ${lowQuality.length}건: ${lowQuality.map((p) => p.id).join(', ')}`);
+const missingImage = (allPapers as Extended[]).filter((p) => p.pageImage && !existsSync(`public${p.pageImage}`));
+if (missingImage.length) fail(`확장요약문 이미지 파일 없음: ${missingImage.map((p) => p.id).join(', ')}`);
 
 if (!announcements.length) warn('공지사항이 비어 있습니다.');
 

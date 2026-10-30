@@ -1,7 +1,7 @@
 /**
  * Generates data/papers-index.json — a lightweight paper list for screens
  * that only browse (program, paper list, search, my schedule). Full
- * abstracts, figures and page images stay in papers-with-abstracts.json /
+ * abstracts and page images stay in papers-with-abstracts.json /
  * poster-papers.json, which only the paper detail route (a server
  * component) reads directly. Keywords are included here — short strings,
  * cheap enough to keep client-side for keyword search and links.

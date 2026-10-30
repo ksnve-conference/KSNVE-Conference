@@ -23,7 +23,6 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
   const speaker = speakers.find((s) => s.papers.includes(paper.id));
   const venue = venueByName.get(paper.venue);
   const affiliations = Array.isArray(paper.affiliations) ? paper.affiliations : paper.affiliations ? [paper.affiliations] : [];
-  const needsReview = (paper.extractionQuality ?? 1) < 0.55 && Boolean(paper.abstract);
 
   const sessionPapers = papers
     .filter((p) => p.sessionId === paper.sessionId)
@@ -88,7 +87,6 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
               : formatSessionTitle(paper.session)}</dd>
           </div>
           <div><dt>좌장</dt><dd>{session?.chair && session.chair !== '-' ? session.chair : '-'}</dd></div>
-          {paper.sourcePage ? <div><dt>초록집 페이지</dt><dd>{paper.sourcePage}쪽</dd></div> : null}
         </dl>
 
         {paper.keywords && paper.keywords.length > 0 && (
@@ -104,21 +102,17 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           </section>
         )}
 
-        <section className="abstract">
-          <h2>초록</h2>
-          {paper.abstract
-            ? <p className="abstract-text">{paper.abstract}</p>
-            : <p className="abstract-empty">이 발표는 초록집에 초록이 수록되어 있지 않습니다.</p>}
-          {needsReview && (
-            <p className="extraction-note">
-              <Icon name="info" size={14} /> 자동 추출된 초록으로, 일부 문자가 정확하지 않을 수 있습니다. 정확한 내용은 원문 페이지를 확인해 주세요.
-            </p>
-          )}
-        </section>
-
-        {paper.pageImage && (
-          <OriginalPageViewer src={paper.pageImage} title={paper.title} sourcePage={paper.sourcePage} />
+        {/* Talks without an extended abstract show the programme information only. */}
+        {paper.abstract && (
+          <section className="abstract">
+            <h2>초록</h2>
+            {paper.abstract.split('\n\n').map((paragraph, index) => (
+              <p className="abstract-text" key={index}>{paragraph}</p>
+            ))}
+          </section>
         )}
+
+        {paper.pageImage && <OriginalPageViewer src={paper.pageImage} title={paper.title} />}
       </article>
 
       {(prevPaper || nextPaper) && (

@@ -434,12 +434,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .pdf-cta small{ display:block; margin-top:2px; font-size:var(--type-caption); opacity:.8; }
 
 .abstract-text{ font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
-.abstract-empty{ font-size:var(--type-meta); color:var(--muted); }
-.extraction-note{
-  display:flex; align-items:flex-start; gap:7px;
-  margin-top:12px; padding:11px 13px; border-radius:var(--r-sm);
-  background:var(--card-2); color:var(--muted); font-size:var(--type-caption); line-height:1.6;
-}
+.abstract-text + .abstract-text{ margin-top:.75em; }
 .keyword-list{ display:flex; flex-wrap:wrap; gap:6px; }
 .keyword-chip{
   padding:6px 11px; border-radius:var(--r-pill); background:var(--tint); color:var(--tint-ink);

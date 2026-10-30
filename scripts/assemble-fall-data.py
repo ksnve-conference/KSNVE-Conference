@@ -41,7 +41,8 @@ def main():
 
     merged = []
     for paper in papers:
-        extra = abstracts.get(paper['id'], {})
+        # sourcePdf stays in abstracts.json for tracing; the app has no use for it
+        extra = {k: v for k, v in abstracts.get(paper['id'], {}).items() if k != 'sourcePdf'}
         merged.append({**paper, **extra})
 
     orals = [p for p in merged if not p['id'].startswith('poster-')]
