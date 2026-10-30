@@ -265,6 +265,7 @@ def extract(pdf: Path) -> dict:
     note_line = None  # last line of the caption/footnote being skipped
     # the body's left margin: where most lines start (an indented first line starts further right)
     left = Counter(round(c['x0']) for c in candidates).most_common(1)[0][0] if candidates else 0
+    right = sorted(c['x1'] for c in candidates)[int(len(candidates) * 0.9)] if candidates else 0
     # line spacing differs between templates; a paragraph break is a gap clearly
     # wider than this file's usual one
     line_gaps = sorted(b['y0'] - a['y1'] for a, b in zip(candidates, candidates[1:])
@@ -286,8 +287,15 @@ def extract(pdf: Path) -> dict:
             continue
         prev = paragraphs[-1][-1] if paragraphs and paragraphs[-1] else None
         gap = l['y0'] - prev['y1'] if prev and prev['page'] == l['page'] else 99
+        # Many templates indent a new paragraph by only half a character (~4pt);
+        # that small indent counts when the line before it ended the paragraph
+        # (a finished sentence, or a line stopping well short of the right margin).
+        indent = l['x0'] - left
+        prev_ended = prev is not None and (SENTENCE_END_RE.search(prev['text'].strip())
+                                           or prev['x1'] < right - body_size * 2)
         new_para = (prev is None or gap > para_gap
-                    or (l['x0'] - left > body_size * 0.6 and not two_col))
+                    or (not two_col and (indent > body_size * 0.6
+                                         or (indent > body_size * 0.3 and prev_ended))))
         if new_para:
             paragraphs.append([l])
         else:
