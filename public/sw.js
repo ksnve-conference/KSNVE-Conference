@@ -1,7 +1,10 @@
 /* KSNVE conference app — offline support.
    Conference wifi is saturated by definition, so the programme has to work
    without the network. Everything here is static, which makes caching safe. */
-const VERSION = 'ksnve-v1';
+// Bump when cached files change under the same URL: activate deletes every
+// cache from an older version. v2 — autumn data replaced the spring
+// /paper-pages/*.webp images, which v1 caches kept serving.
+const VERSION = 'ksnve-v2';
 const SHELL = `${VERSION}-shell`;
 const PAGES = `${VERSION}-pages`;
 const ASSETS = `${VERSION}-assets`;

@@ -13,6 +13,7 @@ Then run `npm run build:paper-index` and `npm run validate:data`.
 Usage:
   python3 scripts/assemble-fall-data.py
 """
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -30,6 +31,14 @@ def dump(path: Path, value) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 
 
+def versioned(url: str) -> str:
+    """Append a content hash: the service worker serves page images cache-first,
+    so a replaced image must get a new URL to reach phones that saw the old one."""
+    path = ROOT / 'public' / url.split('?')[0].lstrip('/')
+    digest = hashlib.md5(path.read_bytes()).hexdigest()[:8]
+    return f"{url.split('?')[0]}?v={digest}"
+
+
 def presenter_affiliation(authors: str) -> str:
     m = re.search(r'\(([^)]+)\)', authors)
     return m.group(1).strip() if m else ''
@@ -43,6 +52,8 @@ def main():
     for paper in papers:
         # sourcePdf stays in abstracts.json for tracing; the app has no use for it
         extra = {k: v for k, v in abstracts.get(paper['id'], {}).items() if k != 'sourcePdf'}
+        if extra.get('pageImage'):
+            extra['pageImage'] = versioned(extra['pageImage'])
         merged.append({**paper, **extra})
 
     orals = [p for p in merged if not p['id'].startswith('poster-')]

@@ -58,7 +58,7 @@ type Extended = { id: string; abstract?: string; pageImage?: string };
 const noAbstract = (allPapers as Extended[]).filter((p) => !p.abstract);
 if (noAbstract.length) warn(`초록 텍스트가 없는 논문 ${noAbstract.length}건 (원문 이미지만 또는 프로그램 정보만): ${noAbstract.map((p) => p.id).join(', ')}`);
 
-const missingImage = (allPapers as Extended[]).filter((p) => p.pageImage && !existsSync(`public${p.pageImage}`));
+const missingImage = (allPapers as Extended[]).filter((p) => p.pageImage && !existsSync(`public${p.pageImage.split('?')[0]}`));
 if (missingImage.length) fail(`확장요약문 이미지 파일 없음: ${missingImage.map((p) => p.id).join(', ')}`);
 
 if (!announcements.length) warn('공지사항이 비어 있습니다.');
