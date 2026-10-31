@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
+import BackLink from '@/components/BackLink';
 import OriginalPageViewer from '@/components/OriginalPageViewer';
 import PaperActions from '@/components/PaperActions';
 import PresentationBadge from '@/components/PresentationBadge';
@@ -43,9 +44,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
   return (
     <main className="shell detail-shell paper-detail">
       <AppHeader compact />
-      <Link href={session ? `/sessions/${session.id}` : '/papers'} className="back">
-        <Icon name="back" size={16} />목록으로
-      </Link>
+      <BackLink fallback={session ? `/sessions/${session.id}` : '/papers'} label="목록으로" />
 
       <article className="detail-card">
         <PresentationBadge paper={paper} showId />

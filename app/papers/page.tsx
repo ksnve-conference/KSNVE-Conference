@@ -43,11 +43,32 @@ function PapersPageInner() {
   const searchParams = useSearchParams();
   const { savedPapers, togglePaper } = useSaved();
   const [query, setQuery] = useState(() => searchParams.get('q') ?? '');
-  const [topic, setTopic] = useState<string>('all');
-  const [filter, setFilter] = useState<Filter>('all');
-  const [day, setDay] = useState<string>('all');
+  const [topic, setTopic] = useState<string>(() => {
+    const value = searchParams.get('topic');
+    return value && topics.includes(value) ? value : 'all';
+  });
+  const [filter, setFilter] = useState<Filter>(() => filters.find((f) => f.id === searchParams.get('type'))?.id ?? 'all');
+  const [day, setDay] = useState<string>(() => {
+    const value = searchParams.get('day');
+    return conferenceConfig.dates.find((d) => d === value) ?? 'all';
+  });
   const [open, setOpen] = useState<string[]>([]);
   const filterSheetRef = useRef<HTMLDialogElement>(null);
+
+  // Keep the current history entry self-contained. Returning from a detail
+  // page must not depend on the timing of the popstate/sessionStorage restore.
+  const updateSearchUrl = (values: Record<string, string>) => {
+    const url = new URL(window.location.href);
+    for (const [key, value] of Object.entries(values)) {
+      if (!value || value === 'all') url.searchParams.delete(key);
+      else url.searchParams.set(key, value);
+    }
+    window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}${url.hash}`);
+  };
+  const changeQuery = (value: string) => { updateSearchUrl({ q: value }); setQuery(value); };
+  const changeTopic = (value: string) => { updateSearchUrl({ topic: value }); setTopic(value); };
+  const changeFilter = (value: Filter) => { updateSearchUrl({ type: value }); setFilter(value); };
+  const changeDay = (value: string) => { updateSearchUrl({ day: value }); setDay(value); };
 
   // Back from a paper: same search, filters, opened sessions and scroll.
   useViewState('papers', { query, topic, filter, day, open }, (saved) => {
@@ -65,7 +86,7 @@ function PapersPageInner() {
   const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
   const openFilters = () => filterSheetRef.current?.showModal();
   const closeFilters = () => filterSheetRef.current?.close();
-  const resetFilters = () => { setTopic('all'); setFilter('all'); setDay('all'); };
+  const resetFilters = () => { updateSearchUrl({ topic: 'all', type: 'all', day: 'all' }); setTopic('all'); setFilter('all'); setDay('all'); };
 
   const filtered = useMemo(() => papers.filter((paper) => {
     if (topic !== 'all' && sessionById.get(paper.sessionId)?.category !== topic) return false;
@@ -77,10 +98,13 @@ function PapersPageInner() {
       .join(' ').toLocaleLowerCase('ko').includes(q);
   }), [q, topic, filter, day, savedPapers]);
 
-  // Only matched while actively searching — jump-to results for sessions and
-  // speakers, alongside the paper list the day/type/topic filters already narrow.
-  const matchedSessions = useMemo(() => searching ? sessions.filter((s) =>
-    [s.title, s.chair, s.category, s.venue].join(' ').toLocaleLowerCase('ko').includes(q)) : [], [searching, q]);
+  // Invited lectures can be standalone events without a paper record.
+  const matchedSessions = useMemo(() => searching || filter === 'INVITED' ? sessions.filter((s) => {
+    if (filter === 'INVITED' && !/초청|invited/i.test(`${s.title} ${s.category}`)) return false;
+    if (topic !== 'all' && s.category !== topic) return false;
+    if (day !== 'all' && s.date !== day) return false;
+    return [s.title, s.speaker, s.chair, s.category, s.venue].join(' ').toLocaleLowerCase('ko').includes(q);
+  }) : [], [searching, q, filter, topic, day]);
   const matchedSpeakers = useMemo(() => searching ? speakers.filter((s) =>
     s.name.toLocaleLowerCase('ko').includes(q)) : [], [searching, q]);
   const searchTotal = filtered.length + matchedSessions.length + matchedSpeakers.length;
@@ -108,14 +132,14 @@ function PapersPageInner() {
     <main className="shell app-shell">
       <AppHeader compact showNotice={false} />
       <section>
-        <div className="screen-title"><h1>통합검색</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
+        <div className="screen-title"><h1>통합검색</h1><strong>{searchTotal}</strong></div>
 
         <div className="search-cluster">
-          <SearchBar value={query} onChange={setQuery} placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색" />
+          <SearchBar value={query} onChange={changeQuery} placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색" />
           {recent.length > 0 && (
             <div className="recent-chips" role="group" aria-label="최근 검색">
               {recent.map((item) => (
-                <button key={item} type="button" onClick={() => setQuery(item)}>
+                <button key={item} type="button" onClick={() => changeQuery(item)}>
                   <Icon name="search" size={12} />{item}
                 </button>
               ))}
@@ -141,9 +165,9 @@ function PapersPageInner() {
             <section>
               <h3>분야</h3>
               <div className="filter-chips filter-topics" role="group" aria-label="분야">
-                <button className={topic === 'all' ? 'active' : ''} onClick={() => setTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
+                <button className={topic === 'all' ? 'active' : ''} onClick={() => changeTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
                 {topics.map((t) => (
-                  <button key={t} className={topic === t ? 'active' : ''} onClick={() => setTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
+                  <button key={t} className={topic === t ? 'active' : ''} onClick={() => changeTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
                 ))}
               </div>
             </section>
@@ -151,27 +175,27 @@ function PapersPageInner() {
               <h3>발표 유형</h3>
               <div className="filter-chips" role="group" aria-label="발표 유형">
                 {filters.map((f) => (
-                  <button key={f.id} className={filter === f.id ? 'active' : ''} onClick={() => setFilter(f.id)} aria-pressed={filter === f.id}>{f.label}</button>
+                  <button key={f.id} className={filter === f.id ? 'active' : ''} onClick={() => changeFilter(f.id)} aria-pressed={filter === f.id}>{f.label}</button>
                 ))}
               </div>
             </section>
             <section>
               <h3>날짜</h3>
               <div className="filter-chips filter-days" role="group" aria-label="날짜">
-                <button className={day === 'all' ? 'active' : ''} onClick={() => setDay('all')} aria-pressed={day === 'all'}>전체 날짜</button>
+                <button className={day === 'all' ? 'active' : ''} onClick={() => changeDay('all')} aria-pressed={day === 'all'}>전체 날짜</button>
                 {conferenceConfig.dates.map((d) => (
-                  <button key={d} className={day === d ? 'active' : ''} onClick={() => setDay(d)} aria-pressed={day === d}>{dayLabel(d)}</button>
+                  <button key={d} className={day === d ? 'active' : ''} onClick={() => changeDay(d)} aria-pressed={day === d}>{dayLabel(d)}</button>
                 ))}
               </div>
             </section>
           </div>
           <div className="filter-sheet-footer">
             <button type="button" className="filter-sheet-reset" onClick={resetFilters} disabled={activeFilterCount === 0}>초기화</button>
-            <button type="button" className="filter-sheet-apply" onClick={closeFilters}>결과 {searching ? searchTotal : filtered.length}건 보기</button>
+            <button type="button" className="filter-sheet-apply" onClick={closeFilters}>결과 {searchTotal}건 보기</button>
           </div>
         </dialog>
 
-        {searching ? (
+        {searching || filter === 'INVITED' || filter === 'KEYNOTE' ? (
           <>
             {searchTotal === 0 && (
               <div className="empty"><span><Icon name="search" size={26} /></span><b>결과가 없습니다</b><p>검색어나 필터를 바꿔 보세요.</p></div>
@@ -194,7 +218,7 @@ function PapersPageInner() {
                 {matchedSessions.slice(0, 20).map((s) => (
                   <Link className="result-row" href={`/sessions/${s.id}`} key={s.id}>
                     <span className="result-icon"><Icon name="calendar" size={16} /></span>
-                    <div><b>{formatSessionTitle(s.title)}</b><small>{dayLabel(s.date)} · {s.time} · {s.venue}</small></div>
+                    <div><b>{formatSessionTitle(s.title)}</b>{s.speaker && <small>{s.speaker}</small>}<small>{dayLabel(s.date)} · {s.time} · {s.venue}</small></div>
                     <em><Icon name="chevron" size={16} /></em>
                   </Link>
                 ))}
@@ -202,7 +226,7 @@ function PapersPageInner() {
             )}
             {filtered.length > 0 && (
               <div className="search-group">
-                <h2>논문 <span>{filtered.length}</span></h2>
+                <h2>{filter === 'KEYNOTE' ? '키노트 발표' : '논문'} <span>{filtered.length}</span></h2>
                 <div className="list paper-list">
                   {filtered.slice(0, 60).map((paper) => (
                     <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
