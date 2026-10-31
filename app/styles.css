@@ -294,7 +294,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today{
   position:relative; overflow:hidden;
   min-height:clamp(268px, 72vw, 340px);
-  padding:22px 18px 22px;
+  /* top padding keeps the text clear of the emblem; on narrow phones the
+     hero grows taller instead of the logo running into it */
+  padding:calc(14px + clamp(58px, 16vw, 72px) + 12px) 18px 22px;
   display:flex; align-items:flex-end; gap:12px;
   background:#000; /* shows briefly while photos decode and between crossfades */
   color:#fff;
@@ -346,7 +348,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
-.hero-today .hero-title-block{ min-width:0; }
+.hero-today .brand-mark{ flex:1; }
+.hero-today .hero-title-block{ min-width:0; flex:1; }
 .hero-today .hero-org-name{
   display:block; margin-bottom:3px; font-size:clamp(14px, 4.2vw, 16px);
   font-weight:800; letter-spacing:.02em; color:rgba(255,255,255,.85);
@@ -365,8 +368,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   padding:4px 10px; border-radius:var(--r-pill);
   background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px);
 }
+.hero-today .hero-bottom-row{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:10px; margin-top:10px; }
 .hero-today .conference-tagline{
-  display:block; margin-top:10px; padding-right:96px; /* clears the status badge */
+  display:block; min-width:0;
   font-size:clamp(14px, 4vw, 16px); font-weight:600; letter-spacing:-.01em;
   font-style:normal; color:rgba(255,255,255,.88); text-shadow:0 1px 5px rgba(0,0,0,.35);
 }
@@ -381,7 +385,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   box-shadow:0 4px 14px rgba(0,0,0,.28);
 }
 .hero-status{
-  position:absolute; right:16px; bottom:22px; z-index:2;
+  flex:none;
   padding:6px 13px; border-radius:var(--r-pill);
   background:#fff; color:var(--brand-dark);
   font-size:clamp(15px, 4.4vw, 18px); font-weight:800; letter-spacing:-.01em;
