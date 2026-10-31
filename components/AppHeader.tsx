@@ -46,10 +46,8 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
         )}
         <div className="hero-title-block">
           {!compact && (
-            <span className="hero-org-name">
-              <img src="/images/ksnve-mark-white.png" alt="" width={36} height={24} />
-              한국소음진동공학회
-            </span>
+            // Official horizontal CI (white, for coloured backgrounds) from KSNVE_CI.ai
+            <img className="hero-ci" src="/images/ksnve-ci-horizontal-white.webp" alt="사단법인 한국소음진동공학회" width={900} height={179} />
           )}
           <b>{conferenceConfig.headerTitle}</b>
           <small>
