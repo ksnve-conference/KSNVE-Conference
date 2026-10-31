@@ -8,6 +8,7 @@ import SessionCard from '@/components/SessionCard';
 import TimeSlotRow from '@/components/TimeSlotRow';
 import TimeTravelPanel from '@/components/TimeTravelPanel';
 import InstallPrompt from '@/components/InstallPrompt';
+import WelcomeIntro from '@/components/WelcomeIntro';
 import Icon, { type IconName } from '@/components/Icon';
 import { dayLabel, papers, sessions, type Session } from '@/lib/conference';
 import { allMajorItems, sessionRange, shortDate } from '@/lib/major-events';
@@ -182,6 +183,7 @@ export default function ProgramPage() {
 
   return (
     <main className="shell app-shell">
+      <WelcomeIntro />
       <AppHeader unread={unread} status={heroStatus} live={isDuring} />
 
       <a href="#program" className="program-shortcut" onClick={(event) => {
