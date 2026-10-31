@@ -266,6 +266,11 @@ def join(lines: list[str]) -> str:
 
 
 def split_keywords(text: str) -> list[str]:
+    # a doubled "((" typo would otherwise keep every later comma inside parentheses
+    text = re.sub(r'\(\s*\(', '(', text)
+    # some authors quote each keyword instead of separating them with commas
+    if text.count('“') >= 2 and ',' not in text:
+        return [q.strip(' .') for q in re.findall(r'“([^”]+)”', text) if q.strip(' .')]
     parts, depth, cur = [], 0, ''
     for ch in text:
         if ch in '([':
@@ -282,6 +287,7 @@ def split_keywords(text: str) -> list[str]:
     for p in parts:
         # "Early Warning( )": the Korean gloss did not come through
         p = re.sub(r'\(\s*\)', '', p)
+        p = re.sub(r'\(\s+', '(', re.sub(r'\s+\)', ')', p))
         if p.count('(') > p.count(')'):
             p = p[:p.rfind('(')]
         p = p.strip(' .')
@@ -317,6 +323,13 @@ def extract(pdf: Path) -> dict:
     if kw_idx is not None:
         kw = ordered[kw_idx]
         kw_lines = [KEYWORDS_RE.sub('', kw['text'], count=1)]
+        # A line can be stored slightly above the "Key Words" line it continues
+        # (p121: "Digital Twin(" … "디지털트윈), Query Interface(…"). Take it
+        # when the keyword text breaks off inside parentheses.
+        above = ordered[kw_idx - 1] if kw_idx > 0 else None
+        if above is not None and kw_lines[0].count('(') > kw_lines[0].count(')') \
+                and abs(above['size'] - kw['size']) < 0.15 and above['y1'] > kw['y0'] - 1:
+            kw_lines.append(above['text'])
         j = kw_idx + 1
         # continuation: same size, directly below, before the body starts
         # keywords run to two lines at most; a numbered heading or a finished

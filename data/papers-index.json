@@ -215,7 +215,10 @@
     "presenter": "라치웅",
     "hasAbstract": true,
     "keywords": [
-      "Substructuring analysis((서브구조화분석), Reactor vessel internals(원자로내부구조물), Acoustic induced vibration(음향유발진동), Fluid-structure interaction"
+      "Substructuring analysis(서브구조화분석)",
+      "Reactor vessel internals(원자로내부구조물)",
+      "Acoustic induced vibration(음향유발진동)",
+      "Fluid-structure interaction(유체-구조 연성)"
     ]
   },
   {
@@ -2553,7 +2556,7 @@
     "hasAbstract": false,
     "keywords": [
       "Floor Impact Sound",
-      "Acoustic Measurement System( 음향 측정시스템 )",
+      "Acoustic Measurement System(음향 측정시스템)",
       "Measurement"
     ]
   },
@@ -2640,7 +2643,10 @@
     "presenter": "이경현",
     "hasAbstract": true,
     "keywords": [
-      "Digital Twin( 모니터링)"
+      "Digital Twin(디지털트윈)",
+      "Query Interface(질의인터페이스)",
+      "Force Identification(가진력추정)",
+      "Real-time Monitoring(실시간 모니터링)"
     ]
   },
   {
@@ -3645,7 +3651,11 @@
     "presenter": "서명진",
     "hasAbstract": true,
     "keywords": [
-      "“Aviation equipment(항공장비)” “Thermal fluid(열유체)” “CFD(전산유체해석)” “Experiment(실험)” “Verification(검증)”"
+      "Aviation equipment(항공장비)",
+      "Thermal fluid(열유체)",
+      "CFD(전산유체해석)",
+      "Experiment(실험)",
+      "Verification(검증)"
     ]
   },
   {
@@ -4370,8 +4380,8 @@
     "presenter": "최원재",
     "hasAbstract": false,
     "keywords": [
-      "Non-Destructive Testing ( 비파괴검사 )",
-      "Ultrasonic Testing ( 초음파검사 )",
+      "Non-Destructive Testing (비파괴검사)",
+      "Ultrasonic Testing (초음파검사)",
       "Artificial Intelligence"
     ]
   },
@@ -4698,7 +4708,7 @@
     "presenter": "손상민",
     "hasAbstract": false,
     "keywords": [
-      "Source-doublet Panel Method(Source-Doublet )",
+      "Source-doublet Panel Method(Source-Doublet)",
       "Vortex Particle Method"
     ]
   },
@@ -5649,7 +5659,7 @@
     "hasAbstract": true,
     "keywords": [
       "Ballet Theaters(오페라극장)",
-      "Acoustic design( 음향설계)",
+      "Acoustic design(음향설계)",
       "Acoustic Performance Prediction(음향성능 예측)",
       "Scale model(축소모형)"
     ]
