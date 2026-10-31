@@ -12,7 +12,8 @@ export function sessionRange(session: Pick<Session, 'date' | 'time'>) {
   return { start: startsAt, end: end ? new Date(`${session.date}T${end.trim()}:00+09:00`).getTime() : startsAt + 2 * 60 * 60 * 1000 };
 }
 
-const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회|교양\s*강좌|마술|캐리커쳐|학회발전\s*TF|친선교류회|학생\s*멘토링/i;
+const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회|교양\s*강좌|마술|캐리커쳐|학회발전\s*TF|친선교류회|학생\s*멘토링/i;
+// (기업)특별세션 is a sponsor session, so it stays in the programme but not in 주요 일정.
 const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.category}`);
 
 export type MajorItem = { key: string; href: string; date: string; time: string; title: string; venue: string; speaker?: string };
