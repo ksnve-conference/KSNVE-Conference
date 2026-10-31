@@ -3,6 +3,7 @@
 import { Suspense, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { useViewState } from '@/lib/view-state';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import SearchBar from '@/components/SearchBar';
@@ -46,6 +47,15 @@ function PapersPageInner() {
   const [day, setDay] = useState<string>('all');
   const [open, setOpen] = useState<string[]>([]);
   const filterSheetRef = useRef<HTMLDialogElement>(null);
+
+  // Back from a paper: same search, filters, opened sessions and scroll.
+  useViewState('papers', { query, topic, filter, day, open }, (saved) => {
+    if (typeof saved.query === 'string') setQuery(saved.query);
+    if (typeof saved.topic === 'string') setTopic(saved.topic);
+    if (typeof saved.filter === 'string') setFilter(saved.filter as Filter);
+    if (typeof saved.day === 'string') setDay(saved.day);
+    if (Array.isArray(saved.open)) setOpen(saved.open as string[]);
+  });
 
   const q = query.trim().toLocaleLowerCase('ko');
   const searching = q.length > 0;

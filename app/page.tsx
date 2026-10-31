@@ -14,6 +14,7 @@ import { conferenceConfig } from '@/lib/conference-config';
 import { parseMockNow, type MockNow } from '@/lib/dashboard-time';
 import { useSaved } from '@/lib/saved';
 import { useAnnouncements } from '@/lib/announcements';
+import { useViewState } from '@/lib/view-state';
 
 function localDateKey() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
@@ -98,6 +99,17 @@ export default function ProgramPage() {
   }, []);
 
   useEffect(() => { setDate(dashboardDate); }, [dashboardDate]);
+
+  // Back from a paper or session: same day, same sessions open, same scroll.
+  useViewState(
+    'program',
+    { date, openTimelineSessions, openNowSessions },
+    (saved) => {
+      if (typeof saved.date === 'string' && (dates as string[]).includes(saved.date)) setDate(saved.date);
+      if (Array.isArray(saved.openTimelineSessions)) setOpenTimelineSessions(saved.openTimelineSessions as string[]);
+      if (Array.isArray(saved.openNowSessions)) setOpenNowSessions(saved.openNowSessions as string[]);
+    },
+  );
 
   const now = mockNow?.instant ?? new Date();
   const currentOrNext = useMemo(() => currentOrNextSessions(sessions, dashboardDate, now), [dashboardDate, now]);
