@@ -504,7 +504,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .keynote-profile{ display:flex; align-items:center; gap:14px; margin-bottom:6px; }
 .keynote-profile img{ flex:0 0 auto; width:84px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r-md); border:1px solid var(--line-soft); background:var(--card-2); }
 .keynote-profile b{ display:block; font-size:var(--type-card); }
-.keynote-profile small{ display:block; margin-top:3px; font-size:var(--type-meta); color:var(--muted); line-height:1.5; }
+.keynote-profile small{ display:block; margin-top:3px; font-size:var(--type-meta); color:var(--muted); line-height:1.5; font-weight:500; }
 .keynote-speaker h3{ margin:18px 0 0; font-size:var(--type-body); font-weight:700; }
 .event-poster{ display:block; margin:0 0 18px; overflow:hidden; border-radius:var(--r-md); border:1px solid var(--line-soft); }
 .event-poster img{ display:block; width:100%; height:auto; }

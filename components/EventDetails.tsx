@@ -54,7 +54,12 @@ export default function EventDetailsView({ details }: { details: EventDetails })
         <>
           <h2>{details.profile.title}</h2>
           <div className="event-profile">
-            <b>{details.profile.name}</b>
+            {details.profile.photo ? (
+              <div className="keynote-profile">
+                <img src={details.profile.photo} alt={`${details.profile.name.split(' · ')[0]} 사진`} width={120} height={156} loading="lazy" />
+                <b>{details.profile.name.split(' · ')[0]}<small>{details.profile.name.split(' · ')[1]}</small></b>
+              </div>
+            ) : <b>{details.profile.name}</b>}
             <ul>
               {details.profile.lines.map((line) => <li key={line}>{line}</li>)}
             </ul>

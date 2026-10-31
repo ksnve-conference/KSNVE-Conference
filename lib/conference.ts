@@ -61,7 +61,7 @@ export type EventDetails = {
   program?: { time: string; title: string; desc?: string; speaker?: string }[];
   topicsTitle?: string;
   topics?: string[];
-  profile?: { title: string; name: string; lines: string[] };
+  profile?: { title: string; name: string; lines: string[]; photo?: string };
   notes?: string[];
   links?: { label: string; href: string }[];
 };
