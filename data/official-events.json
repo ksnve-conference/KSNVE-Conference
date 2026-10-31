@@ -418,6 +418,12 @@
   "category": "공식 행사",
   "details": {
    "lead": "학술대회 참가 경품 행사",
+   "image": {
+    "src": "/images/events/raffle-prizes.png",
+    "alt": "경품 안내: 1등 맥북 네오 13 1명, 협찬 경품 LG전자 공기청정기 1명, 2등 메디큐브 AGE-R 1명",
+    "width": 1530,
+    "height": 594
+   },
    "intro": "학술대회 참가 등록자 모두에게 경품권을 드리며, 정기총회가 끝난 뒤 경품 추첨을 진행합니다.",
    "rows": [
     {
