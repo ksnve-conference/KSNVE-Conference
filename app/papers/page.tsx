@@ -27,7 +27,8 @@ const filters: { id: Filter; label: string }[] = [
 
 const sessionById = new Map(sessions.map((s) => [s.id, s]));
 
-const topics = Array.from(new Set(sessions.map((s) => s.category)))
+// Only categories that hold papers: event-only ones (공식 행사, 교양강좌 …) would always give 0 results.
+const topics = Array.from(new Set(papers.map((p) => sessionById.get(p.sessionId)?.category).filter((c): c is string => Boolean(c))))
   .sort((a, b) => a.localeCompare(b, 'ko'));
 
 export default function PapersPage() {
@@ -51,7 +52,7 @@ function PapersPageInner() {
   // Back from a paper: same search, filters, opened sessions and scroll.
   useViewState('papers', { query, topic, filter, day, open }, (saved) => {
     if (typeof saved.query === 'string') setQuery(saved.query);
-    if (typeof saved.topic === 'string') setTopic(saved.topic);
+    if (typeof saved.topic === 'string' && topics.includes(saved.topic)) setTopic(saved.topic);
     if (typeof saved.filter === 'string') setFilter(saved.filter as Filter);
     if (typeof saved.day === 'string') setDay(saved.day);
     if (Array.isArray(saved.open)) setOpen(saved.open as string[]);
