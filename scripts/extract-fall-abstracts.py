@@ -593,7 +593,7 @@ def main():
             why = ' (텍스트 레이어 중복·깨짐 → 원문 이미지만)' if info['broken_text'] else ''
             empties.append(f'- {pid} 초록 {len(info["abstract"])}자 · 키워드 {len(info["keywords"])}개{why} — {rel}')
         folder_norm = norm(re.sub(r'\[\d+\]', '', info['folder']))
-        session_norm = norm(re.sub(r'^(기획|부문|특별)\s+|\s*\[\d+\]', '', paper['session']).split(' ; ')[0])
+        session_norm = norm(re.sub(r'^(기획|부문|특별)\s+|\s*\[\d+\]', '', paper['session']).split(': ')[0])
         poster = paper['id'].startswith('poster-')
         if not poster and info['folder'] != '키노트' and not (folder_norm in session_norm or session_norm in folder_norm):
             folder_diff.append(f'- {pid} 세션 "{paper["session"]}" ↔ 폴더 "{info["folder"]}"')
