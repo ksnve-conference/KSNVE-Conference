@@ -4710,10 +4710,12 @@
     "title": "동축 반전 프로펠러의 초기 위상차를 통한 공력소음 저감 메커니즘 분석",
     "authors": "손상민, 정다빈, 변은진, 명노신, 이학진(경상국립대)",
     "presenter": "손상민",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
-      "Source-doublet Panel Method(Source-Doublet)",
-      "Vortex Particle Method"
+      "Source-doublet Panel Method(Source-Doublet 패널법)",
+      "Vortex Particle Method(와류 입자법)",
+      "Propeller-Airframe Interaction(프로펠러-에어프레임 상호간섭)",
+      "Initial Phase control(초기 위상차 제어)"
     ]
   },
   {

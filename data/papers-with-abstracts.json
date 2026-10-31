@@ -5855,13 +5855,15 @@
   "affiliations": [
    "경상국립대"
   ],
-  "abstract": "",
+  "abstract": "도심 항공 모빌리티(Urban Air Mobility)와 같은 차세대 항공 모빌리티에는 다수의 전기 추진기를 사용하는 분산전기추진(Distributed Electric Propulsion) 시스템이 널리 고려되고 있다. 다수의 프로펠러가 인접하게 배치되는 구성에서는 프로펠러 간 후류 간섭과 에어프레임과의 공기역학적 상호작용이 발생하며, 이로 인해 비정상 공력하중과 간섭소음이 증가할 수 있다. 본 연구에서는 동축반전 프로펠러의 초기 위상차에 따른 비정상 공력하중 및 하중소음 특성을 분석하고, 초기 위상차 조절에 따른 소음 저감 가능성을 평가하였다. 이를 위해 DJI 9443 프로펠러와 에어프레임 형상을 이용하여 동축반전 프로펠러 시스템을 구성하였으며, 초기 위상차 0°, 45°, 90°, 135° 조건을 고려하였다. 비정상 공력하중은 패널법(Panel Method)과 와류입자법(Vortex Particle Method)을 이용하여 예측하였으며, Ffowcs Williams–Hawkings 음향상사법을 적용하여 방사 소음을 계산하였다. 해석 결과, 프로펠러 간 초기 위상차 변화는 공기역학적 상호작용에 따른 표면 압력 변동과 하중소음의 방사 방향성을 변화시키는 것으로 나타났다. 특히 초기 위상차 135° 조건에서는 하부 프로펠러의 비정상 하중소음이 0° 조건 대비 약 2.3 dB 감소하였다. 이러한 결과는 동축반전 프로펠러의 초기 위상차 조절을 통해 공기역학적 간섭에 의한 하중소음을 저감할 수 있음을 보여준다.",
   "keywords": [
-   "Source-doublet Panel Method(Source-Doublet)",
-   "Vortex Particle Method"
+   "Source-doublet Panel Method(Source-Doublet 패널법)",
+   "Vortex Particle Method(와류 입자법)",
+   "Propeller-Airframe Interaction(프로펠러-에어프레임 상호간섭)",
+   "Initial Phase control(초기 위상차 제어)"
   ],
   "pageImage": "/paper-pages/p215.webp?v=1b73af1d",
-  "extractionStatus": "image-only"
+  "extractionStatus": "manual-transcription"
  },
  {
   "paper_id": "p216",
