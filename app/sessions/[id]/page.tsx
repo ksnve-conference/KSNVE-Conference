@@ -29,7 +29,7 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
   return (
     <main className="shell detail-shell">
       <AppHeader compact />
-      <Link href="/" className="back">
+      <Link href={`/?date=${session.date}#program`} className="back">
         <Icon name="back" size={16} />프로그램 목록으로
       </Link>
 

@@ -100,7 +100,26 @@ export default function ProgramPage() {
     setMockNow(parseMockNow(params.get('mockNow')));
   }, []);
 
-  useEffect(() => { setDate(dashboardDate); }, [dashboardDate]);
+  useEffect(() => {
+    const requestedDate = new URLSearchParams(window.location.search).get('date');
+    setDate(requestedDate && (conferenceConfig.dates as readonly string[]).includes(requestedDate)
+      ? requestedDate : dashboardDate);
+  }, [dashboardDate]);
+
+  // Align the program section after the selected day's content has rendered.
+  useEffect(() => {
+    if (window.location.hash !== '#program') return;
+    let secondFrame = 0;
+    const firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => {
+        document.getElementById('program')?.scrollIntoView({ behavior: 'instant', block: 'start' });
+      });
+    });
+    return () => {
+      cancelAnimationFrame(firstFrame);
+      cancelAnimationFrame(secondFrame);
+    };
+  }, []);
 
   // Back from a paper or session: same day, same sessions open, same scroll.
   useViewState(
@@ -246,7 +265,7 @@ export default function ProgramPage() {
         </div>
       </section>
 
-      <section className="program-block">
+      <section id="program" className="program-block">
         <div className="screen-title"><h1>전체 프로그램</h1></div>
         <div className="date-strip">
           {dates.map((item) => (
