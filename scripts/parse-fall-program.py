@@ -94,6 +94,14 @@ def normalize_session_title(raw: str) -> str:
     return title
 
 
+# Display titles the organisers asked for, keyed by the normalized programme title.
+# The filter category is still taken from the programme title.
+SESSION_TITLE_OVERRIDES = {
+    '특별 학회발전TF ; AI/ML 응용을 위한 소음진동데이터베이스 구축 및 품질관리':
+        '특별 학회발전TF: AI/ML 응용을 위한 소음진동데이터베이스 구축 및 품질관리',
+}
+
+
 def session_category(title: str) -> str:
     """Filter group: drop the [n] counter and the ' ; subtitle' so numbered parts share one chip."""
     category = re.sub(r'\s*\[\d+\]', '', title)
@@ -207,6 +215,8 @@ def main():
         m = SESSION_HEADER.match(lines[h])
         day, weekday, t0, t1, venue_raw, chair = m.groups()
         title = normalize_session_title(lines[h - 1])
+        category = session_category(title)
+        title = SESSION_TITLE_OVERRIDES.get(title, title)
         body_end = headers[n + 1] - 1 if n + 1 < len(headers) else len(lines)
         body = lines[h + 1:body_end]
         date = f'{YEAR_MONTH}-{int(day):02d}'
@@ -248,7 +258,7 @@ def main():
             'time': f'{t0}~{t1}',
             'venue': venue,
             'chair': clean(chair) if chair else '-',
-            'category': session_category(title),
+            'category': category,
         })
         for e in parse_entries(body, ORAL_START, notes, title):
             paper_no += 1
