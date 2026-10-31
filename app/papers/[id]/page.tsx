@@ -7,7 +7,7 @@ import PaperActions from '@/components/PaperActions';
 import PresentationBadge from '@/components/PresentationBadge';
 import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
-import { getPaperDetail } from '@/lib/paper-detail';
+import { getPaperDetail, getPresenterAffiliation } from '@/lib/paper-detail';
 import { keynoteByNo } from '@/lib/keynotes';
 
 export function generateStaticParams() {
@@ -24,6 +24,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
   const speaker = speakers.find((s) => s.papers.includes(paper.id));
   const venue = venueByName.get(paper.venue);
   const affiliations = Array.isArray(paper.affiliations) ? paper.affiliations : paper.affiliations ? [paper.affiliations] : [];
+  const presenterAffiliation = getPresenterAffiliation(paper);
 
   const sessionPapers = papers
     .filter((p) => p.sessionId === paper.sessionId)
@@ -47,12 +48,14 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           <span>{paper.presenter?.slice(0, 1) || '?'}</span>
           <div>
             <small>발표자</small>
-            <b>
-              {speaker
-                ? <Link className="text-link" href={`/speakers/${speaker.id}`}>{paper.presenter} <Icon name="chevron" size={13} /></Link>
-                : paper.presenter}
-            </b>
-            <p>{paper.authors}</p>
+            <div className="presenter-byline">
+              <b>
+                {speaker
+                  ? <Link className="text-link" href={`/speakers/${speaker.id}`}>{paper.presenter} <Icon name="chevron" size={13} /></Link>
+                  : paper.presenter}
+              </b>
+              {presenterAffiliation && <p>{presenterAffiliation}</p>}
+            </div>
           </div>
         </div>
 

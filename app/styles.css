@@ -647,6 +647,11 @@ body{
    well below the rest of the page's text scale */
 .presenter small{ font-size:var(--type-meta); }
 .presenter p{ font-size:var(--type-meta); }
+.paper-detail .presenter{ padding:12px 0 0; }
+.paper-detail .presenter>span{ width:40px; height:40px; flex-basis:40px; font-size:17px; }
+.presenter-byline{ display:flex; align-items:baseline; flex-wrap:wrap; column-gap:8px; row-gap:2px; margin-top:2px; }
+.presenter .presenter-byline b{ margin:0; overflow-wrap:anywhere; }
+.presenter .presenter-byline p{ margin:0; white-space:normal; overflow:visible; overflow-wrap:anywhere; }
 
 /* home dashboard: major events + announcements — titles matched the rest
    of the app's card titles (15px), announcement titles were only 12px */
