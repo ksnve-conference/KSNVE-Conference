@@ -181,6 +181,12 @@ export default function ProgramPage() {
     <main className="shell app-shell">
       <AppHeader unread={unread} status={heroStatus} />
 
+      <a href="#program" className="program-shortcut">
+        <Icon name="calendar" size={20} />
+        <span>전체 프로그램 바로가기</span>
+        <Icon name="chevron-down" size={18} />
+      </a>
+
       <section className="today-dashboard">
         <InstallPrompt />
         {showTimeTravel && <TimeTravelPanel mockNow={mockNow} onChange={changeMockNow} />}
@@ -269,7 +275,7 @@ export default function ProgramPage() {
         </div>
       </section>
 
-      <section id="program" className="program-block">
+      <section id="program" className="program-block" tabIndex={-1}>
         <div className="screen-title"><h1>전체 프로그램</h1></div>
         <div className="date-strip">
           {dates.map((item) => (
