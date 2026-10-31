@@ -9,7 +9,8 @@
           "name": "LIG D&A",
           "logo": "/images/sponsors/lig-da.webp",
           "width": 822,
-          "height": 172
+          "height": 172,
+          "url": "https://www.ligdefenseaerospace.com"
         }
       ]
     },
@@ -21,13 +22,15 @@
           "name": "NSV",
           "logo": "/images/sponsors/nsv.webp",
           "width": 334,
-          "height": 184
+          "height": 184,
+          "url": "https://www.nsv.co.kr"
         },
         {
           "name": "(주)엔브이티",
           "logo": "/images/sponsors/nvt.webp",
           "width": 547,
-          "height": 142
+          "height": 142,
+          "url": "http://www.nvt.co.kr"
         }
       ]
     },
@@ -39,7 +42,8 @@
           "name": "한국환경공단",
           "logo": "/images/sponsors/keco.webp",
           "width": 531,
-          "height": 159
+          "height": 159,
+          "url": "https://www.keco.or.kr"
         },
         {
           "name": "(주)한나래인터내셔날",
@@ -51,13 +55,15 @@
           "name": "(주)삼정오토메이션",
           "logo": "/images/sponsors/samjung-automation.webp",
           "width": 591,
-          "height": 159
+          "height": 159,
+          "url": "https://sjautomation.com"
         },
         {
           "name": "컨트롤팩토리",
           "logo": "/images/sponsors/control-factory.webp",
           "width": 480,
-          "height": 159
+          "height": 159,
+          "url": "http://www.controlfactory.co.kr"
         }
       ]
     },
@@ -69,55 +75,64 @@
           "name": "뮐러비비엠코리아",
           "logo": "/images/sponsors/muller-bbm.webp",
           "width": 475,
-          "height": 125
+          "height": 125,
+          "url": "https://www.paksystem.co.kr"
         },
         {
           "name": "삼성전자",
           "logo": "/images/sponsors/samsung-electronics.webp",
           "width": 270,
-          "height": 110
+          "height": 110,
+          "url": "https://www.samsung.com/sec/"
         },
         {
           "name": "삼성물산 건설부문",
           "logo": "/images/sponsors/samsung-cnt.webp",
           "width": 354,
-          "height": 82
+          "height": 82,
+          "url": "https://www.secc.co.kr"
         },
         {
           "name": "한화에어로스페이스",
           "logo": "/images/sponsors/hanwha-aerospace.webp",
           "width": 509,
-          "height": 125
+          "height": 125,
+          "url": "https://www.hanwhaaerospace.com"
         },
         {
           "name": "국립금오공과대학교",
           "logo": "/images/sponsors/kumoh.webp",
           "width": 609,
-          "height": 108
+          "height": 108,
+          "url": "https://www.kumoh.ac.kr"
         },
         {
           "name": "LG전자",
           "logo": "/images/sponsors/lg-electronics.webp",
           "width": 382,
-          "height": 123
+          "height": 123,
+          "url": "https://www.lge.co.kr"
         },
         {
           "name": "여수시",
           "logo": "/images/sponsors/yeosu.webp",
           "width": 335,
-          "height": 117
+          "height": 117,
+          "url": "https://www.yeosu.go.kr"
         },
         {
           "name": "전라남도관광재단",
           "logo": "/images/sponsors/jeonnam-tourism.webp",
           "width": 436,
-          "height": 117
+          "height": 117,
+          "url": "https://ijnto.or.kr"
         },
         {
           "name": "한국과학기술단체총연합회",
           "logo": "/images/sponsors/kofst.webp",
           "width": 294,
-          "height": 114
+          "height": 114,
+          "url": "https://www.kofst.or.kr"
         }
       ]
     }

@@ -21,11 +21,19 @@ export default function SponsorsPage() {
           <h3>{group.tier}</h3>
           {/* Logos cut from the programme book's sponsor page; GOLD gets a full row. */}
           <div className={`sponsor-logos tier-${group.key}`}>
-            {group.companies.map((company) => (
-              <div className="sponsor-logo" key={company.name}>
-                <img src={company.logo} alt={company.name} width={company.width} height={company.height} loading="lazy" />
-              </div>
-            ))}
+            {group.companies.map((company) => {
+              const logo = <img src={company.logo} alt={company.name} width={company.width} height={company.height} loading="lazy" />;
+              // Opens the sponsor's site like the exhibitor list; a company
+              // without a confirmed official site stays a plain logo.
+              return 'url' in company && company.url ? (
+                <a className="sponsor-logo" key={company.name} href={company.url} target="_blank" rel="noreferrer" aria-label={`${company.name} 홈페이지`}>
+                  {logo}
+                  <Icon name="external" size={13} className="sponsor-link-icon" />
+                </a>
+              ) : (
+                <div className="sponsor-logo" key={company.name}>{logo}</div>
+              );
+            })}
           </div>
         </section>
       ))}

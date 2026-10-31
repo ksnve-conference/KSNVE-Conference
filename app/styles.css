@@ -611,6 +611,9 @@ ol.info-list{ padding-left:21px; }
 .tier-gold .sponsor-logo{ height:112px; padding:18px 28px; }
 .tier-silver .sponsor-logo{ height:88px; }
 .tier-etc .sponsor-logo{ height:64px; padding:10px 12px; }
+a.sponsor-logo{ position:relative; }
+a.sponsor-logo:active{ background:var(--card-2); }
+.sponsor-link-icon{ position:absolute; top:7px; right:7px; color:var(--muted); opacity:.7; }
 .sponsor-logo img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
 .sponsor-count{ margin-left:4px; font-style:normal; color:var(--brand); }
 .exhibitor-list{ display:flex; flex-direction:column; gap:7px; margin-top:14px; }
