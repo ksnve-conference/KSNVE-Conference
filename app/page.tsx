@@ -8,7 +8,7 @@ import SessionCard from '@/components/SessionCard';
 import TimeSlotRow from '@/components/TimeSlotRow';
 import TimeTravelPanel from '@/components/TimeTravelPanel';
 import InstallPrompt from '@/components/InstallPrompt';
-import Icon from '@/components/Icon';
+import Icon, { type IconName } from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessions, type Session } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
 import { parseMockNow, type MockNow } from '@/lib/dashboard-time';
@@ -68,6 +68,36 @@ const allMajorItems: MajorItem[] = [
   })),
   ...keynoteItems,
 ];
+
+/**
+ * Before the conference there is nothing "in progress", and the earliest item
+ * is the off-site 친선교류회 — so the home screen offers preparation links
+ * instead. Deadline items drop off once their deadline has passed.
+ */
+const REGISTRATION_DEADLINE = new Date('2026-11-11T18:00:00+09:00');
+const LODGING_DEADLINE = new Date('2026-11-13T23:59:59+09:00');
+
+/** "사전등록 마감 D-6", or "사전등록 오늘 마감" on the day itself. */
+function deadlineTitle(label: string, deadline: Date, now: Date) {
+  const day = (d: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(d);
+  const n = daysBetween(day(now), day(deadline));
+  return n === 0 ? `${label} 오늘 마감` : `${label} 마감 D-${n}`;
+}
+
+function prepItems(now: Date): { href: string; icon: IconName; title: string; desc: string }[] {
+  return [
+    ...(now < REGISTRATION_DEADLINE ? [{
+      href: '/conference/registration', icon: 'user' as IconName,
+      title: deadlineTitle('사전등록', REGISTRATION_DEADLINE, now), desc: '11/11(수) 18:00까지 · 이후 당일등록 회비 적용',
+    }] : []),
+    ...(now < LODGING_DEADLINE ? [{
+      href: '/conference/lodging', icon: 'bed' as IconName,
+      title: deadlineTitle('숙박 할인 예약', LODGING_DEADLINE, now), desc: '11/13(금)까지 · 신라스테이 여수 등 할인 숙소',
+    }] : []),
+    { href: '/my', icon: 'star', title: '관심 발표를 ☆로 저장하세요', desc: '저장한 발표는 「내 일정」에 시간순으로 모입니다' },
+    { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX 여수EXPO역 도보 5분 · 주차 할인' },
+  ];
+}
 
 /** "11.26 (목)" for the 주요 일정 heading. */
 function shortDate(date: string) {
@@ -196,6 +226,20 @@ export default function ProgramPage() {
 
         {!isAfter && (
           <>
+            {isBefore ? (
+              <div className="dashboard-section">
+                <div className="dashboard-heading"><h2>행사 준비</h2></div>
+                <div className="more-menu prep-list">
+                  {prepItems(now).map((item) => (
+                    <Link href={item.href} key={item.href}>
+                      <span><Icon name={item.icon} size={19} /></span>
+                      <div><b>{item.title}</b><small>{item.desc}</small></div>
+                      <em><Icon name="chevron" size={16} /></em>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
             <div className="dashboard-section">
               <div className="dashboard-heading"><h2>현재 진행 중 / 다음 세션</h2></div>
               <div className="dashboard-sessions">
@@ -213,6 +257,7 @@ export default function ProgramPage() {
                 {currentOrNext.length === 0 && <div className="compact-empty">현재 진행 중이거나 예정된 세션이 없습니다.</div>}
               </div>
             </div>
+            )}
 
             <div className="dashboard-section">
               <div className="dashboard-heading">

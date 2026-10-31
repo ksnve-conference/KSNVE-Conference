@@ -15,6 +15,10 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/conference/overview', icon: 'info', title: '행사개요', desc: '주제, 일정, 주최' },
   { href: '/conference/registration', icon: 'user', title: '등록안내', desc: '등록비와 현장 등록' },
   { href: '/conference/venue-layout', icon: 'map', title: '행사장 배치도', desc: '층별 배치와 발표장' },
+  { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX·자가용·주차 안내' },
+  { href: '/conference/facilities', icon: 'coffee', title: '편의시설', desc: '행사장 카페·식당·편의점' },
+  { href: '/conference/lodging', icon: 'bed', title: '숙박 안내', desc: '참가자 할인 숙소와 예약' },
+  { href: '/conference/tourism', icon: 'camera', title: '주변 관광', desc: '여수 가볼 만한 곳' },
   { href: '/sponsors', icon: 'sponsor', title: '후원 · 전시 참여사', desc: '함께하는 후원·전시 참여사' },
   { href: '/app-info', icon: 'info', title: '이용안내', desc: '앱 사용 방법 안내' },
 ];

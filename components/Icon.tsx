@@ -4,7 +4,8 @@ export type IconName =
   | 'calendar' | 'papers' | 'search' | 'star' | 'star-filled' | 'more'
   | 'pin' | 'clock' | 'chevron' | 'chevron-down' | 'back' | 'close'
   | 'bell' | 'check' | 'info' | 'sponsor' | 'notice' | 'map' | 'download'
-  | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand' | 'filter' | 'share';
+  | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand' | 'filter' | 'share'
+  | 'train' | 'coffee' | 'bed' | 'camera' | 'phone';
 
 const paths: Record<IconName, React.ReactNode> = {
   calendar: <><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></>,
@@ -34,6 +35,11 @@ const paths: Record<IconName, React.ReactNode> = {
   expand: <><path d="M9 4.5H4.5V9M15 4.5h4.5V9M9 19.5H4.5V15M15 19.5h4.5V15"/></>,
   filter: <path d="M4 5.5h16M7.5 12h9M10.5 18.5h3"/>,
   share: <><path d="M12 14V3.5"/><path d="m8 7.2 4-3.7 4 3.7"/><path d="M4.5 13v4.5A1.5 1.5 0 0 0 6 19h12a1.5 1.5 0 0 0 1.5-1.5V13"/></>,
+  train: <><rect x="6" y="3.5" width="12" height="13" rx="3"/><path d="M6 10.5h12M9.5 13.5h.01M14.5 13.5h.01M8.5 20.5l1.5-4M15.5 20.5l-1.5-4"/></>,
+  coffee: <><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z"/><path d="M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M8.5 3.5v2.5M12 3.5v2.5"/></>,
+  bed: <><path d="M3.5 19.5v-12M3.5 15h17v4.5M20.5 15v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11.5" r="1.8"/></>,
+  camera: <><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2.3l1.6-2.5h5.2L16.2 7h2.3A1.5 1.5 0 0 1 20 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5v-9Z"/><circle cx="12" cy="12.8" r="3.2"/></>,
+  phone: <path d="M6.6 3.8 9 3.5l1.6 4-2 1.3a10.5 10.5 0 0 0 6.6 6.6l1.3-2 4 1.6-.3 2.4a2 2 0 0 1-2 1.6A15.5 15.5 0 0 1 5 5.8a2 2 0 0 1 1.6-2Z"/>,
 };
 
 export default function Icon({ name, size = 20, className, strokeWidth = 1.7 }: IconProps) {
