@@ -5,6 +5,12 @@ import BackLink from '@/components/BackLink';
 import PaperCard from '@/components/PaperCard';
 import { papers, speakers } from '@/lib/conference';
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const speaker = speakers.find((item) => item.id === id);
+  return speaker ? { title: `${speaker.name} 발표` } : {};
+}
+
 export function generateStaticParams() {
   return speakers.map((s) => ({ id: s.id }));
 }

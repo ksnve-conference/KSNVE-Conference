@@ -17,6 +17,12 @@ import {
 
 const isTalkSession = (session: Session) => /키노트|초청/.test(session.category);
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const venue = venues.find((item) => item.id === id);
+  return venue ? { title: venue.name } : {};
+}
+
 export function generateStaticParams() {
   return venues.map((venue) => ({ id: venue.id }));
 }

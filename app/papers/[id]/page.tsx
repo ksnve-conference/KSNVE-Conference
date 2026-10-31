@@ -10,6 +10,13 @@ import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByNam
 import { getPaperDetail, getPresenterAffiliation } from '@/lib/paper-detail';
 import { keynoteByNo } from '@/lib/keynotes';
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const paper = getPaperDetail((await params).id);
+  if (!paper) return {};
+  const description = `${paper.presenter} · ${dayLabel(paper.date)} ${paper.time} · ${paper.venue}`;
+  return { title: paper.title, description, openGraph: { title: paper.title, description } };
+}
+
 export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
 }

@@ -37,8 +37,11 @@ const shareDescription = `${conferenceConfig.displayDate}\n${conferenceConfig.ve
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
-  title: conferenceConfig.englishTitle,
-  description: `${conferenceConfig.koreanTitle} · ${conferenceConfig.locationDisplay}`,
+  // Pages set their own title ("주요 일정", a paper title …) and get the
+  // conference name appended; the home screen shows the name alone.
+  title: { default: conferenceConfig.headerTitle, template: `%s | ${conferenceConfig.headerTitle}` },
+  description: `한국소음진동공학회 ${conferenceConfig.koreanTitle} · ${conferenceConfig.displayDate} · ${conferenceConfig.venue}. 프로그램, 발표논문 확장요약문, 내 일정, 행사장 안내.`,
+  applicationName: conferenceConfig.headerTitle,
   manifest: '/manifest.json',
   icons: { apple: '/icons/apple-touch-icon.png' },
   // Home-screen label only — kept short on purpose, separate from shortTitle
@@ -47,7 +50,7 @@ export const metadata = {
   openGraph: {
     type: 'website' as const,
     locale: 'ko_KR',
-    siteName: conferenceConfig.shortTitle,
+    siteName: '한국소음진동공학회',
     title: conferenceConfig.koreanTitle,
     description: shareDescription,
   },

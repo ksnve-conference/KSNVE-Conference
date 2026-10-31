@@ -7,6 +7,15 @@ import Icon from '@/components/Icon';
 import EventDetailsView from '@/components/EventDetails';
 import { dayLabel, formatSessionTitle, papers, sessions, venues } from '@/lib/conference';
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const session = sessions.find((item) => item.id === id);
+  if (!session) return {};
+  const title = formatSessionTitle(session.title);
+  const description = `${dayLabel(session.date)} ${session.time} · ${session.venue}`;
+  return { title, description, openGraph: { title, description } };
+}
+
 export function generateStaticParams() {
   return sessions.map((session) => ({ id: session.id }));
 }
