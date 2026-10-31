@@ -138,8 +138,9 @@ export default function ProgramPage() {
 
   const now = mockNow?.instant ?? new Date();
   // D-day / day number / finished, shown as the hero badge (replaces the status cards)
+  // short enough to sit beside the theme on one line; the red dot marks "in progress"
   const heroStatus = isBefore ? `D-${daysBetween(today, conferenceConfig.startDate)}`
-    : isDuring ? `${(conferenceConfig.dates as readonly string[]).indexOf(today) + 1}일차 진행 중` : '종료';
+    : isDuring ? `${(conferenceConfig.dates as readonly string[]).indexOf(today) + 1}일차` : '종료';
   const currentOrNext = useMemo(() => currentOrNextSessions(sessions, dashboardDate, now), [dashboardDate, now]);
   // Once the day's last major event has started, the list turns to the next
   // day's instead of sitting empty through the evening.
@@ -179,7 +180,7 @@ export default function ProgramPage() {
 
   return (
     <main className="shell app-shell">
-      <AppHeader unread={unread} status={heroStatus} />
+      <AppHeader unread={unread} status={heroStatus} live={isDuring} />
 
       <a href="#program" className="program-shortcut" onClick={(event) => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

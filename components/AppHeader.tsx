@@ -6,13 +6,13 @@ import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 
 /** `status` is the home hero's badge: "D-25" before, "2일차 진행 중" during, "종료" after. */
-type Props = { compact?: boolean; showNotice?: boolean; unread?: number; status?: string };
+type Props = { compact?: boolean; showNotice?: boolean; unread?: number; status?: string; live?: boolean };
 
 // The notice shortcut belongs on the home hero only — every compact (detail
 // or 더보기-branch) screen already has a back link and the bottom tab bar, so
 // it defaults off there instead of needing every caller to opt out. (Search
 // used to sit alongside it but was dropped — 논문 tab already covers that.)
-export default function AppHeader({ compact = false, showNotice = !compact, unread = 0, status }: Props) {
+export default function AppHeader({ compact = false, showNotice = !compact, unread = 0, status, live = false }: Props) {
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
       {!compact && (
@@ -50,7 +50,12 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
             // theme and status badge share a row, so a tall badge can't ride up into the chips
             <div className="hero-bottom-row">
               <em className="conference-tagline">“{conferenceConfig.theme}”</em>
-              {status && <span className="hero-status">{status}</span>}
+              {status && (
+                <span className={`hero-status${live ? ' is-live' : ''}`}>
+                  {live && <i className="hero-live-dot" aria-label="진행 중" />}
+                  {status}
+                </span>
+              )}
             </div>
           )}
         </div>
