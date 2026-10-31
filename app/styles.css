@@ -501,6 +501,11 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .event-details{ margin-top:12px; }
 .event-details h2{ margin:24px 0 10px; font-size:var(--type-section); font-weight:700; }
 .event-details > :first-child{ margin-top:0; }
+.keynote-profile{ display:flex; align-items:center; gap:14px; margin-bottom:6px; }
+.keynote-profile img{ flex:0 0 auto; width:84px; height:auto; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r-md); border:1px solid var(--line-soft); background:var(--card-2); }
+.keynote-profile b{ display:block; font-size:var(--type-card); }
+.keynote-profile small{ display:block; margin-top:3px; font-size:var(--type-meta); color:var(--muted); line-height:1.5; }
+.keynote-speaker h3{ margin:18px 0 0; font-size:var(--type-body); font-weight:700; }
 .event-poster{ display:block; margin:0 0 18px; overflow:hidden; border-radius:var(--r-md); border:1px solid var(--line-soft); }
 .event-poster img{ display:block; width:100%; height:auto; }
 .event-lead{ margin:0 0 8px; font-size:var(--type-body); font-weight:700; color:var(--brand-ink); }

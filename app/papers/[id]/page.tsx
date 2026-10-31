@@ -9,6 +9,7 @@ import PresentationBadge from '@/components/PresentationBadge';
 import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
 import { getPaperDetail } from '@/lib/paper-detail';
+import { keynoteByNo } from '@/lib/keynotes';
 
 export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
@@ -20,6 +21,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
   if (!paper) notFound();
 
   const session = sessionById.get(paper.sessionId);
+  const keynote = paper.presentationType === 'KEYNOTE' && paper.keynoteNo ? keynoteByNo.get(paper.keynoteNo) : undefined;
   const speaker = speakers.find((s) => s.papers.includes(paper.id));
   const venue = venueByName.get(paper.venue);
   const affiliations = Array.isArray(paper.affiliations) ? paper.affiliations : paper.affiliations ? [paper.affiliations] : [];
@@ -88,6 +90,26 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           </div>
           <div><dt>좌장</dt><dd>{session?.chair && session.chair !== '-' ? session.chair : '-'}</dd></div>
         </dl>
+
+        {keynote && (
+          <section className="abstract keynote-speaker">
+            <h2>연사 소개</h2>
+            <div className="keynote-profile">
+              <img src={keynote.photo} alt={`${keynote.name} 사진`} width={120} height={156} loading="lazy" />
+              <div>
+                <b>{keynote.name}</b>
+                <small>{keynote.affiliation}</small>
+              </div>
+            </div>
+            <ul className="info-list">
+              {keynote.bio.map((line) => <li key={line}>{line}</li>)}
+            </ul>
+            <h3>강연 내용</h3>
+            <ul className="info-list">
+              {keynote.topics.map((topic) => <li key={topic}>{topic}</li>)}
+            </ul>
+          </section>
+        )}
 
         {paper.keywords && paper.keywords.length > 0 && (
           <section className="abstract">

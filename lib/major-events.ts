@@ -4,6 +4,7 @@
  * all-days 주요 일정 page, so both always show the same set.
  */
 import { dayLabel, formatSessionTitle, papers, sessions, type Session } from '@/lib/conference';
+import { keynoteByNo } from '@/lib/keynotes';
 
 export function sessionRange(session: Pick<Session, 'date' | 'time'>) {
   const [start, end] = session.time.split(/[~–-]/);
@@ -27,6 +28,10 @@ const keynoteItems: MajorItem[] = papers
     time: p.time,
     title: `${p.keynoteNo ? `키노트 강연 ${p.keynoteNo}` : '키노트 강연'} - ${p.title}`,
     venue: p.venue,
+    speaker: (() => {
+      const k = p.keynoteNo ? keynoteByNo.get(p.keynoteNo) : undefined;
+      return k ? `${k.name} (${k.affiliation})` : p.presenter;
+    })(),
   }));
 
 export const allMajorItems: MajorItem[] = [
