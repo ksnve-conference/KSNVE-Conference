@@ -5,6 +5,16 @@ import Icon from '@/components/Icon';
 import { papers } from '@/lib/conference';
 
 const notifiedKey = 'ksnveNotifiedPapers';
+// The browser permission can't be withdrawn from a web page once granted, so
+// the app keeps its own on/off switch on top of it.
+const enabledKey = 'ksnveNotificationsOn';
+
+function readEnabled() {
+  try { return localStorage.getItem(enabledKey) !== 'off'; } catch { return true; }
+}
+function writeEnabled(on: boolean) {
+  try { localStorage.setItem(enabledKey, on ? 'on' : 'off'); } catch { /* private mode */ }
+}
 
 /** Conference times are Korea Standard Time regardless of the device's own zone. */
 function paperStartMs(date: string, time: string) {
@@ -15,13 +25,17 @@ function paperStartMs(date: string, time: string) {
 
 export default function NotificationManager({ favoriteIds }: { favoriteIds: string[] }) {
   const [permission, setPermission] = useState<NotificationPermission | 'unsupported'>('default');
+  const [enabled, setEnabled] = useState(true);
 
   useEffect(() => {
     setPermission('Notification' in window ? Notification.permission : 'unsupported');
+    setEnabled(readEnabled());
   }, []);
 
+  const toggle = (on: boolean) => { writeEnabled(on); setEnabled(on); };
+
   useEffect(() => {
-    if (permission !== 'granted') return;
+    if (permission !== 'granted' || !enabled) return;
     const check = () => {
       const now = Date.now();
       let notified: string[] = [];
@@ -44,16 +58,27 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
     check();
     const timer = window.setInterval(check, 30_000);
     return () => window.clearInterval(timer);
-  }, [favoriteIds, permission]);
+  }, [favoriteIds, permission, enabled]);
 
   if (permission === 'unsupported') return null;
 
-  if (permission === 'granted') {
+  if (permission === 'granted' && enabled) {
     return (
-      <div className="notification-status">
+      <button type="button" className="notification-status notification-on" onClick={() => toggle(false)}>
         <span><Icon name="check" size={16} /></span>
         <div><b>일정 알림 켜짐</b><small>앱이 열려 있는 동안 발표 10분 전에 알려드립니다.</small></div>
-      </div>
+        <em>끄기</em>
+      </button>
+    );
+  }
+
+  if (permission === 'granted') {
+    return (
+      <button type="button" className="notification-prompt" onClick={() => toggle(true)}>
+        <span><Icon name="bell" size={17} /></span>
+        <div><b>일정 알림 꺼짐</b><small>켜면 앱이 열려 있는 동안 발표 10분 전에 알려드립니다.</small></div>
+        <em>켜기</em>
+      </button>
     );
   }
 
@@ -66,7 +91,11 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
     );
   }
 
-  const request = async () => setPermission(await Notification.requestPermission());
+  const request = async () => {
+    const result = await Notification.requestPermission();
+    if (result === 'granted') toggle(true);
+    setPermission(result);
+  };
   return (
     <button className="notification-prompt" onClick={request}>
       <span><Icon name="bell" size={17} /></span>

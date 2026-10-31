@@ -498,6 +498,13 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 
 /* ---------- notification card icons ---------- */
 .notification-status > span, .notification-prompt > span{ display:grid; place-items:center; }
+/* granted and on: same card with a 끄기 control (the browser permission itself can't be revoked by the page) */
+.notification-status.notification-on{ grid-template-columns:38px 1fr auto; cursor:pointer; }
+.notification-on em{
+  padding:6px 10px; border-radius:9px; border:1px solid rgba(255,255,255,.55);
+  color:#fff; font-size:var(--type-caption); font-style:normal; font-weight:700;
+}
+.notification-prompt em{ font-size:var(--type-caption); font-weight:700; }
 
 /* ---------- detail page bottom padding for the fixed nav ---------- */
 .detail-shell{ padding-bottom:96px; }
