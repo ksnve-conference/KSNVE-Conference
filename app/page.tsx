@@ -21,12 +21,6 @@ function localDateKey() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 }
 
-function formatKoreanDate(date: string) {
-  return new Date(`${date}T00:00:00+09:00`).toLocaleDateString('ko-KR', {
-    timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric', weekday: 'short',
-  });
-}
-
 const daysBetween = (from: string, to: string) =>
   Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000);
 
@@ -120,6 +114,9 @@ export default function ProgramPage() {
   );
 
   const now = mockNow?.instant ?? new Date();
+  // D-day / day number / finished, shown as the hero badge (replaces the status cards)
+  const heroStatus = isBefore ? `D-${daysBetween(today, conferenceConfig.startDate)}`
+    : isDuring ? `${(conferenceConfig.dates as readonly string[]).indexOf(today) + 1}일차 진행 중` : '종료';
   const currentOrNext = useMemo(() => currentOrNextSessions(sessions, dashboardDate, now), [dashboardDate, now]);
   // Once the day's last major event has started, the list turns to the next
   // day's instead of sitting empty through the evening.
@@ -159,29 +156,11 @@ export default function ProgramPage() {
 
   return (
     <main className="shell app-shell">
-      <AppHeader unread={unread} />
+      <AppHeader unread={unread} status={heroStatus} />
 
       <section className="today-dashboard">
         <InstallPrompt />
         {showTimeTravel && <TimeTravelPanel mockNow={mockNow} onChange={changeMockNow} />}
-
-        {isBefore && (
-          <section className="conference-status-card before-conference">
-            <div className="conference-status-meta"><time>{formatKoreanDate(today)}</time><strong>D-{daysBetween(today, conferenceConfig.startDate)}</strong></div>
-            <h2>{conferenceConfig.koreanTitle}</h2>
-            <p className="countdown-copy">
-              <strong>학술대회가 {daysBetween(today, conferenceConfig.startDate)}일 남았습니다.</strong>
-              <span>첫 행사일 프로그램을 미리 살펴보세요.</span>
-            </p>
-          </section>
-        )}
-
-        {isDuring && (
-          <div className="conference-live-status">
-            <span>진행중</span>
-            <div><b>학술대회 진행 중</b><small>{formatKoreanDate(today)} · {conferenceConfig.venue}</small></div>
-          </div>
-        )}
 
         {isAfter && (
           <section className="conference-status-card after-conference">

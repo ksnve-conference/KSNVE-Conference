@@ -279,8 +279,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
    ============================================================ */
 .hero-today{
   position:relative; overflow:hidden;
-  min-height:clamp(220px, 58vw, 300px);
-  padding:22px 18px 24px;
+  min-height:clamp(268px, 72vw, 340px);
+  padding:22px 18px 22px;
   display:flex; align-items:flex-end; gap:12px;
   background:#000; /* shows briefly while photos decode and between crossfades */
   color:#fff;
@@ -294,7 +294,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   position:absolute; inset:0;
   background-size:cover; background-repeat:no-repeat;
   opacity:0;
-  animation:heroPhotoFade 12s infinite;
+  /* each photo drifts slowly closer while it is on screen (Ken Burns) */
+  animation:heroPhotoFade 12s infinite, heroPhotoZoom 12s infinite linear;
 }
 .hero-photo-stack span:nth-child(1){
   background-image:url('/images/hero-yeosu-lighthouse.webp'); background-position:50% 32%;
@@ -312,6 +313,11 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 62%;
   animation-delay:-9s;
 }
+@keyframes heroPhotoZoom{
+  0%{ transform:scale(1); }
+  29%{ transform:scale(1.07); }
+  30%, 100%{ transform:scale(1); }
+}
 @keyframes heroPhotoFade{
   0%{ opacity:0; }
   4%{ opacity:1; }
@@ -321,7 +327,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today:before{
   content:""; position:absolute; inset:0; z-index:1;
-  background:linear-gradient(180deg, rgba(3,14,24,.1) 0%, rgba(3,14,24,.22) 40%, rgba(3,14,24,.8) 100%);
+  /* darkened top for the emblem and notice button, society blue under the text */
+  background:linear-gradient(180deg, rgba(3,14,24,.32) 0%, rgba(3,14,24,.08) 30%, rgba(4,52,88,.62) 62%, rgba(4,44,76,.94) 100%);
 }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
@@ -336,15 +343,36 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 .hero-today .hero-title-block small{
-  display:flex; flex-wrap:wrap; gap:3px 8px; margin-top:9px;
-  font-size:clamp(14px, 4.2vw, 16px); font-weight:800; letter-spacing:-.01em; color:rgba(255,255,255,.92);
-  text-shadow:0 1px 5px rgba(0,0,0,.4);
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:11px;
+  font-size:clamp(13px, 3.8vw, 15px); font-weight:700; letter-spacing:-.01em; color:#fff;
+}
+/* date and venue as two glassy chips */
+.hero-today .hero-title-block small span{
+  padding:4px 10px; border-radius:var(--r-pill);
+  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px);
 }
 .hero-today .conference-tagline{
-  display:block; margin-top:7px; font-size:clamp(14px, 4.2vw, 16px); font-weight:800; letter-spacing:-.01em;
-  font-style:normal; color:rgba(255,255,255,.82); text-shadow:0 1px 5px rgba(0,0,0,.4);
+  display:block; margin-top:10px; padding-right:96px; /* clears the status badge */
+  font-size:clamp(14px, 4vw, 16px); font-weight:600; letter-spacing:-.01em;
+  font-style:normal; color:rgba(255,255,255,.88); text-shadow:0 1px 5px rgba(0,0,0,.35);
 }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
+.hero-emblem{
+  position:absolute; top:14px; left:16px; z-index:2;
+  width:clamp(58px, 16vw, 72px); height:auto; border-radius:50%;
+  box-shadow:0 4px 14px rgba(0,0,0,.28);
+}
+.hero-wave{
+  position:absolute; right:-6px; bottom:16px; z-index:1;
+  width:58%; height:46%; fill:#fff; opacity:.13; pointer-events:none;
+}
+.hero-status{
+  position:absolute; right:16px; bottom:22px; z-index:2;
+  padding:6px 13px; border-radius:var(--r-pill);
+  background:#fff; color:var(--brand-dark);
+  font-size:clamp(15px, 4.4vw, 18px); font-weight:800; letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
 .hero-today .hero-links a{
   border-color:rgba(255,255,255,.4); color:#fff;
   background:rgba(8,22,36,.32); backdrop-filter:blur(6px);

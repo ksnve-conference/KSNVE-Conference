@@ -13,6 +13,10 @@ export const conferenceConfig = {
   endDate: '2026-11-28',
   dates: ['2026-11-25', '2026-11-26', '2026-11-27', '2026-11-28'],
   displayDate: '2026. 11. 25.(수) ~ 28.(토)',
+  /** Compact form for the home hero's date chip. */
+  heroDate: '11.25(수) – 28(토)',
+  /** Official theme as printed in the programme book. */
+  theme: '지속 가능한 내일의 소음진동',
   venue: '여수 엑스포컨벤션센터',
   locationDisplay: 'Yeosu Expo Convention Center, Yeosu, Korea',
   /** Weekday labels for the date strip, derived from `dates`. */
