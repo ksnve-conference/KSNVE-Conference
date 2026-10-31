@@ -23,7 +23,9 @@ export default function EventDetailsView({ details }: { details: EventDetails })
         </a>
       )}
       {details.lead && <p className="event-lead">{details.lead}</p>}
-      {details.intro && <p className="event-intro">{details.intro}</p>}
+      {details.intro?.split(/\n\s*\n/).map((paragraph) => (
+        <p className="event-intro" key={paragraph}>{paragraph}</p>
+      ))}
 
       {details.rows && details.rows.length > 0 && (
         <dl className="info-table">
