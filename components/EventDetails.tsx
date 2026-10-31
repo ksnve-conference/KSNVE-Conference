@@ -7,6 +7,11 @@ import type { EventDetails } from '@/lib/conference';
 export default function EventDetailsView({ details }: { details: EventDetails }) {
   return (
     <section className="detail-card event-details">
+      {details.image && (
+        <a className="event-poster" href={details.image.src} target="_blank" rel="noreferrer">
+          <img src={details.image.src} alt={details.image.alt} width={details.image.width} height={details.image.height} loading="lazy" />
+        </a>
+      )}
       {details.lead && <p className="event-lead">{details.lead}</p>}
       {details.intro && <p className="event-intro">{details.intro}</p>}
 

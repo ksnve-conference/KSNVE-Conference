@@ -501,6 +501,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .event-details{ margin-top:12px; }
 .event-details h2{ margin:24px 0 10px; font-size:var(--type-section); font-weight:700; }
 .event-details > :first-child{ margin-top:0; }
+.event-poster{ display:block; margin:0 0 18px; overflow:hidden; border-radius:var(--r-md); border:1px solid var(--line-soft); }
+.event-poster img{ display:block; width:100%; height:auto; }
 .event-lead{ margin:0 0 8px; font-size:var(--type-body); font-weight:700; color:var(--brand-ink); }
 .event-intro{ margin:0; font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
 .event-details .info-table{ margin-top:14px; }
