@@ -880,7 +880,7 @@
     "title": "상태 변화 분석과 이상 근거 결합을 통한 조기경보 판정 고도화",
     "authors": "김상진, 지근석, 조만영, 이대연(가온플랫폼)",
     "presenter": "김상진",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
       "Early Warning",
       "State Change Analysis",
@@ -901,7 +901,7 @@
     "title": "양수발전소 CBM을 위한 RUL 예측모델 및 정비 현황 대시보드 개발",
     "authors": "안준원, 정래혁, 정현종, 방인권, 최은창(스마트프로)",
     "presenter": "안준원",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
       "Condition-Based Maintenance",
       "Failure Mode and Effects Analysis"
@@ -1728,7 +1728,6 @@
     "presenter": "이웅용",
     "hasAbstract": true,
     "keywords": [
-      "고속도로 소음예측(Highway noise prediction)",
       "고속도로 소음예측(Highway noise prediction)"
     ]
   },
