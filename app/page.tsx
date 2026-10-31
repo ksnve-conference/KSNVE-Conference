@@ -24,15 +24,17 @@ function localDateKey() {
 const daysBetween = (from: string, to: string) =>
   Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000);
 
-function currentOrNextSessions(items: Session[], date: string, now: Date) {
+/** Sessions running now; between sessions (or before the day starts) the next
+ * ones instead, so the heading says which of the two it is showing. */
+function currentOrNextSessions(items: Session[], date: string, now: Date): { running: boolean; items: Session[] } {
   const dated = items.filter((s) => s.date === date);
   const nowTime = now.getTime();
   const running = dated.filter((s) => { const r = sessionRange(s); return r.start <= nowTime && nowTime < r.end; });
-  if (running.length > 0) return running;
+  if (running.length > 0) return { running: true, items: running };
   const upcoming = dated.filter((s) => sessionRange(s).start > nowTime);
-  if (upcoming.length === 0) return [];
+  if (upcoming.length === 0) return { running: false, items: [] };
   const nearest = Math.min(...upcoming.map((s) => sessionRange(s).start));
-  return upcoming.filter((s) => sessionRange(s).start === nearest);
+  return { running: false, items: upcoming.filter((s) => sessionRange(s).start === nearest) };
 }
 
 /**
@@ -223,9 +225,12 @@ export default function ProgramPage() {
               </div>
             ) : (
             <div className="dashboard-section">
-              <div className="dashboard-heading"><h2>현재 진행 중 / 다음 세션</h2></div>
+              <div className="dashboard-heading">
+                <h2>{currentOrNext.running || currentOrNext.items.length === 0 ? '현재 진행 중' : '다음 세션'}</h2>
+                {!currentOrNext.running && currentOrNext.items[0] && <span className="dashboard-heading-date">{currentOrNext.items[0].time.split(/[~–-]/)[0]} 시작</span>}
+              </div>
               <div className="dashboard-sessions">
-                {currentOrNext.map((session) => (
+                {currentOrNext.items.map((session) => (
                   <SessionCard
                     key={session.id}
                     session={session}
@@ -236,7 +241,7 @@ export default function ProgramPage() {
                     onTogglePaper={togglePaper}
                   />
                 ))}
-                {currentOrNext.length === 0 && <div className="compact-empty">현재 진행 중이거나 예정된 세션이 없습니다.</div>}
+                {currentOrNext.items.length === 0 && <div className="compact-empty">오늘 남은 세션이 없습니다.</div>}
               </div>
             </div>
             )}
