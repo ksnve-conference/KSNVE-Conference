@@ -48,6 +48,20 @@ export type Session = {
   category: string;
   /** Invited lecture / 교양강좌 speaker, shown on its own line rather than in the title. */
   speaker?: string;
+  /** The programme book's introduction page for an official event. */
+  details?: EventDetails;
+};
+
+export type EventDetails = {
+  lead?: string;
+  intro?: string;
+  rows?: { label: string; value: string }[];
+  program?: { time: string; title: string; desc?: string; speaker?: string }[];
+  topicsTitle?: string;
+  topics?: string[];
+  profile?: { title: string; name: string; lines: string[] };
+  notes?: string[];
+  links?: { label: string; href: string }[];
 };
 
 export type Venue = { id: string; name: string; floor: string };

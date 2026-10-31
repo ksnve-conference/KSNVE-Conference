@@ -5,6 +5,7 @@ import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
+import EventDetailsView from '@/components/EventDetails';
 import { dayLabel, formatSessionTitle, papers, sessions, venues } from '@/lib/conference';
 
 export function generateStaticParams() {
@@ -45,6 +46,8 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
         <h1>{formatSessionTitle(session.title)}</h1>
         {metaText && <p className="meta large">{metaText}</p>}
       </section>
+
+      {session.details && <EventDetailsView details={session.details} />}
 
       {sessionPapers.length > 0 && (
         <>
