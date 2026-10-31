@@ -25,7 +25,12 @@
    "Personal sound"
   ],
   "pageImage": "/paper-pages/p001.webp?v=cf0c4a6e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p001-figures.webp?v=351b8158f6",
+   "width": 1234,
+   "height": 456
+  }
  },
  {
   "paper_id": "p002",
@@ -79,7 +84,12 @@
    "Real-time processing(실시간 처리)"
   ],
   "pageImage": "/paper-pages/p003.webp?v=f01cf91b",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p003-figures.webp?v=de40da73a5",
+   "width": 1231,
+   "height": 216
+  }
  },
  {
   "paper_id": "p004",
@@ -106,7 +116,12 @@
    "SED"
   ],
   "pageImage": "/paper-pages/p004.webp?v=c9367e9d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p004-figures.webp?v=da68f48b2b",
+   "width": 1234,
+   "height": 356
+  }
  },
  {
   "paper_id": "p005",
@@ -247,7 +262,12 @@
    "Instant neural graphics primitives"
   ],
   "pageImage": "/paper-pages/p009.webp?v=3dec4b09",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p009-figures.webp?v=21882c7c29",
+   "width": 1234,
+   "height": 427
+  }
  },
  {
   "paper_id": "p010",
@@ -300,7 +320,12 @@
    "Self-Righting Latching Device(자가 기립 래치 장치)"
   ],
   "pageImage": "/paper-pages/p011.webp?v=58db10e7",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p011-figures.webp?v=b045920ac5",
+   "width": 1234,
+   "height": 505
+  }
  },
  {
   "paper_id": "p012",
@@ -328,7 +353,12 @@
    "Non-destructive evaluation"
   ],
   "pageImage": "/paper-pages/p012.webp?v=4efc060d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p012-figures.webp?v=15acc80a10",
+   "width": 1234,
+   "height": 474
+  }
  },
  {
   "paper_id": "p013",
@@ -356,7 +386,12 @@
    "Aerodynamic Performance(공력성능)"
   ],
   "pageImage": "/paper-pages/p013.webp?v=aea7fbde",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p013-figures.webp?v=2f35237ae9",
+   "width": 1231,
+   "height": 378
+  }
  },
  {
   "paper_id": "p014",
@@ -384,7 +419,12 @@
    "Vehicle Simulation (차량 시뮬레이션)"
   ],
   "pageImage": "/paper-pages/p014.webp?v=949eff2e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p014-figures.webp?v=9bf8b399b1",
+   "width": 1231,
+   "height": 398
+  }
  },
  {
   "paper_id": "p015",
@@ -412,7 +452,12 @@
    "High-temperature Creep(고온 크리프)"
   ],
   "pageImage": "/paper-pages/p015.webp?v=5bf64d2b",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p015-figures.webp?v=ffbf8c6e2b",
+   "width": 1234,
+   "height": 391
+  }
  },
  {
   "paper_id": "p016",
@@ -471,7 +516,12 @@
    "Sensor and Virtual Point Placement (센서 및 가상점 배치)"
   ],
   "pageImage": "/paper-pages/p017.webp?v=44e6fc6a",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p017-figures.webp?v=1e75285702",
+   "width": 1233,
+   "height": 424
+  }
  },
  {
   "paper_id": "p018",
@@ -500,7 +550,12 @@
    "Conditional Autoencoder(조건부 오토인코더)"
   ],
   "pageImage": "/paper-pages/p018.webp?v=2ccbb40f",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p018-figures.webp?v=c9191a9bd3",
+   "width": 1234,
+   "height": 425
+  }
  },
  {
   "paper_id": "p019",
@@ -527,7 +582,12 @@
    "Vibration response(진동 응답)"
   ],
   "pageImage": "/paper-pages/p019.webp?v=5db67d23",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p019-figures.webp?v=fa4ab942fc",
+   "width": 1234,
+   "height": 480
+  }
  },
  {
   "paper_id": "p020",
@@ -583,7 +643,12 @@
    "Modal analysis(모달 해석)"
   ],
   "pageImage": "/paper-pages/p021.webp?v=9017725e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p021-figures.webp?v=60dd02287b",
+   "width": 1233,
+   "height": 383
+  }
  },
  {
   "paper_id": "p022",
@@ -610,7 +675,12 @@
    "Out-of-Distribution Generalization (분포 외 일반화)"
   ],
   "pageImage": "/paper-pages/p022.webp?v=8006ca91",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p022-figures.webp?v=35d9e430e7",
+   "width": 1233,
+   "height": 446
+  }
  },
  {
   "paper_id": "p023",
@@ -638,7 +708,12 @@
    "Full-Field (전역장)"
   ],
   "pageImage": "/paper-pages/p023.webp?v=52eab530",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p023-figures.webp?v=fa36f0d8c6",
+   "width": 1233,
+   "height": 456
+  }
  },
  {
   "paper_id": "p024",
@@ -667,7 +742,12 @@
    "진단(Diagnosis)"
   ],
   "pageImage": "/paper-pages/p024.webp?v=874e446a",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p024-figures.webp?v=28ee549adf",
+   "width": 1231,
+   "height": 438
+  }
  },
  {
   "paper_id": "p025",
@@ -694,7 +774,12 @@
    "Displacement reconstruction (변위 복원)"
   ],
   "pageImage": "/paper-pages/p025.webp?v=5241e13e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p025-figures.webp?v=df5699a9a9",
+   "width": 1234,
+   "height": 636
+  }
  },
  {
   "paper_id": "p026",
@@ -775,7 +860,12 @@
    "Complex Steerable Pyramid"
   ],
   "pageImage": "/paper-pages/p028.webp?v=41ddd9a3",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p028-figures.webp?v=e101a57b53",
+   "width": 1233,
+   "height": 445
+  }
  },
  {
   "paper_id": "p029",
@@ -804,7 +894,12 @@
    "Equivalent Beam Model(등가 보 모델)"
   ],
   "pageImage": "/paper-pages/p029.webp?v=bd0faecb",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p029-figures.webp?v=066b2698de",
+   "width": 1234,
+   "height": 384
+  }
  },
  {
   "paper_id": "p030",
@@ -831,7 +926,12 @@
    "Surrogate Model(대리모델)"
   ],
   "pageImage": "/paper-pages/p030.webp?v=70036339",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p030-figures.webp?v=dfe1a3aef2",
+   "width": 1234,
+   "height": 480
+  }
  },
  {
   "paper_id": "p031",
@@ -859,7 +959,12 @@
    "Vibration Attenuation"
   ],
   "pageImage": "/paper-pages/p031.webp?v=1248f1b3",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p031-figures.webp?v=d4e210d8a0",
+   "width": 1233,
+   "height": 412
+  }
  },
  {
   "paper_id": "p032",
@@ -941,7 +1046,12 @@
    "Brazil nut effect(브라질넛 효과)"
   ],
   "pageImage": "/paper-pages/p034.webp?v=20889a30",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p034-figures.webp?v=6d08db2736",
+   "width": 1234,
+   "height": 492
+  }
  },
  {
   "paper_id": "p035",
@@ -969,7 +1079,12 @@
    "Cross-Spectrum(교차 스펙트럼)"
   ],
   "pageImage": "/paper-pages/p035.webp?v=472f48b1",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p035-figures.webp?v=eb0ac749e7",
+   "width": 1234,
+   "height": 228
+  }
  },
  {
   "paper_id": "p036",
@@ -994,7 +1109,12 @@
    "Binaural Speech Separation (바이노럴 음성 분리)"
   ],
   "pageImage": "/paper-pages/p036.webp?v=a135f38d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p036-figures.webp?v=bb26154070",
+   "width": 1231,
+   "height": 362
+  }
  },
  {
   "paper_id": "p037",
@@ -1019,7 +1139,12 @@
    "Negative clue (간섭 화자 단서)"
   ],
   "pageImage": "/paper-pages/p037.webp?v=71dc7885",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p037-figures.webp?v=864d6247ea",
+   "width": 1234,
+   "height": 433
+  }
  },
  {
   "paper_id": "p038",
@@ -1044,7 +1169,12 @@
    "Generative Speech Enhancement (생성형 음성 소음 제거)"
   ],
   "pageImage": "/paper-pages/p038.webp?v=f8df50e0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p038-figures.webp?v=6e81001680",
+   "width": 1231,
+   "height": 354
+  }
  },
  {
   "paper_id": "p039",
@@ -1101,7 +1231,12 @@
    "Evidence Fusion"
   ],
   "pageImage": "/paper-pages/p040.webp?v=12ab563d",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p040-figures.webp?v=38b1b9b0ef",
+   "width": 1233,
+   "height": 314
+  }
  },
  {
   "paper_id": "p041",
@@ -1154,7 +1289,12 @@
    "Ensemble Analysis(앙상블 분석)"
   ],
   "pageImage": "/paper-pages/p042.webp?v=022f23c0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p042-figures.webp?v=3b3dedc53c",
+   "width": 1231,
+   "height": 493
+  }
  },
  {
   "paper_id": "p043",
@@ -1182,7 +1322,12 @@
    "Tonal components(순음 성분)"
   ],
   "pageImage": "/paper-pages/p043.webp?v=09ef9ae1",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p043-figures.webp?v=cf1c221d88",
+   "width": 1234,
+   "height": 272
+  }
  },
  {
   "paper_id": "p044",
@@ -1209,7 +1354,12 @@
    "SVD (특이값 분해)"
   ],
   "pageImage": "/paper-pages/p044.webp?v=dff13466",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p044-figures.webp?v=3c01961969",
+   "width": 1233,
+   "height": 384
+  }
  },
  {
   "paper_id": "p045",
@@ -1235,7 +1385,12 @@
    "중력보상기구(Gravity Compensation device)"
   ],
   "pageImage": "/paper-pages/p045.webp?v=9e83f662",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p045-figures.webp?v=a77b0fa414",
+   "width": 1231,
+   "height": 438
+  }
  },
  {
   "paper_id": "p046",
@@ -1263,7 +1418,12 @@
    "Tactical reconnaissance"
   ],
   "pageImage": "/paper-pages/p046.webp?v=743effbb",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p046-figures.webp?v=75f5e0f59b",
+   "width": 1234,
+   "height": 535
+  }
  },
  {
   "paper_id": "p047",
@@ -1347,7 +1507,12 @@
    "Random Forest(랜덤 포레스트)"
   ],
   "pageImage": "/paper-pages/p049.webp?v=a0c30564",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p049-figures.webp?v=edda137b00",
+   "width": 1234,
+   "height": 386
+  }
  },
  {
   "paper_id": "p050",
@@ -1400,7 +1565,12 @@
    "Magnetic field(자기장)"
   ],
   "pageImage": "/paper-pages/p051.webp?v=adc4cd21",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p051-figures.webp?v=fd1dd2e9ba",
+   "width": 1234,
+   "height": 406
+  }
  },
  {
   "paper_id": "p052",
@@ -1452,7 +1622,12 @@
    "Video stabilization(영상 보정)"
   ],
   "pageImage": "/paper-pages/p053.webp?v=1d1d2b62",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p053-figures.webp?v=700ddd7167",
+   "width": 1234,
+   "height": 480
+  }
  },
  {
   "paper_id": "p054",
@@ -1507,7 +1682,12 @@
    "Photogrammetry (사진 측량)"
   ],
   "pageImage": "/paper-pages/p055.webp?v=7bc44bc1",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p055-figures.webp?v=b4d5c9f27e",
+   "width": 1234,
+   "height": 419
+  }
  },
  {
   "paper_id": "p056",
@@ -1533,7 +1713,12 @@
    "Condition monitoring"
   ],
   "pageImage": "/paper-pages/p056.webp?v=f19b458f",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p056-figures.webp?v=91c0a8ab92",
+   "width": 1231,
+   "height": 463
+  }
  },
  {
   "paper_id": "p057",
@@ -1615,7 +1800,12 @@
    "Degradation trend prediction(열화추세 예측)"
   ],
   "pageImage": "/paper-pages/p059.webp?v=1ed239c7",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p059-figures.webp?v=03b3c21322",
+   "width": 1231,
+   "height": 362
+  }
  },
  {
   "paper_id": "p060",
@@ -1671,7 +1861,12 @@
    "Proximal policy optimization (근접 정책 최적화)"
   ],
   "pageImage": "/paper-pages/p061.webp?v=b355560d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p061-figures.webp?v=6361e088b6",
+   "width": 1234,
+   "height": 429
+  }
  },
  {
   "paper_id": "p062",
@@ -1698,7 +1893,12 @@
    "Proper Orthogonal Decomposition(적합 직교 분해)"
   ],
   "pageImage": "/paper-pages/p062.webp?v=f5e82f02",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p062-figures.webp?v=01184d9167",
+   "width": 1233,
+   "height": 490
+  }
  },
  {
   "paper_id": "p063",
@@ -1727,7 +1927,12 @@
    "infrared thermography (열화상 카메라)"
   ],
   "pageImage": "/paper-pages/p063.webp?v=420933b6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p063-figures.webp?v=d59384eb3d",
+   "width": 1453,
+   "height": 485
+  }
  },
  {
   "paper_id": "p064",
@@ -1805,7 +2010,12 @@
    "Bayesian optimization (베이지안 최적화)"
   ],
   "pageImage": "/paper-pages/p066.webp?v=1aae55f7",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p066-figures.webp?v=a31afbef33",
+   "width": 1234,
+   "height": 449
+  }
  },
  {
   "paper_id": "p067",
@@ -1857,7 +2067,12 @@
    "Grad-CAM(그래드캠)"
   ],
   "pageImage": "/paper-pages/p068.webp?v=45a3e2ee",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p068-figures.webp?v=8a39f2e16b",
+   "width": 1231,
+   "height": 239
+  }
  },
  {
   "paper_id": "p069",
@@ -1885,7 +2100,12 @@
    "Margin of Safety(안전여유)"
   ],
   "pageImage": "/paper-pages/p069.webp?v=06b3b222",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p069-figures.webp?v=718a86e3a3",
+   "width": 1231,
+   "height": 559
+  }
  },
  {
   "paper_id": "p070",
@@ -1939,7 +2159,12 @@
    "Firing Frequency"
   ],
   "pageImage": "/paper-pages/p071.webp?v=d718465e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p071-figures.webp?v=9f64a50b50",
+   "width": 1231,
+   "height": 234
+  }
  },
  {
   "paper_id": "p072",
@@ -1995,7 +2220,12 @@
    "Retuning(재동조)"
   ],
   "pageImage": "/paper-pages/p073.webp?v=36816f36",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p073-figures.webp?v=5fed27088c",
+   "width": 1234,
+   "height": 470
+  }
  },
  {
   "paper_id": "p074",
@@ -2066,7 +2296,12 @@
    "Acoustic Impedance(음향 임피던스)"
   ],
   "pageImage": "/paper-pages/p076.webp?v=12903231",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p076-figures.webp?v=7075c3fb00",
+   "width": 1234,
+   "height": 395
+  }
  },
  {
   "paper_id": "p077",
@@ -2122,7 +2357,12 @@
    "Noise Assessment(소음평가)"
   ],
   "pageImage": "/paper-pages/p078.webp?v=b21e3af5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p078-figures.webp?v=6730c9e1bc",
+   "width": 1231,
+   "height": 484
+  }
  },
  {
   "paper_id": "p079",
@@ -2199,7 +2439,12 @@
    "Moving noise source(이동소음원)"
   ],
   "pageImage": "/paper-pages/p081.webp?v=66edaaff",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p081-figures.webp?v=5afbd7d1ec",
+   "width": 1231,
+   "height": 491
+  }
  },
  {
   "paper_id": "p082",
@@ -2226,7 +2471,12 @@
    "Wall Type Apartment(벽식구조 공동주택)"
   ],
   "pageImage": "/paper-pages/p082.webp?v=b7e812da",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p082-figures.webp?v=f02a58e04f",
+   "width": 1231,
+   "height": 548
+  }
  },
  {
   "paper_id": "p083",
@@ -2254,7 +2504,12 @@
    "Loudness(라우드니스)"
   ],
   "pageImage": "/paper-pages/p083.webp?v=3416d185",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p083-figures.webp?v=369ba92570",
+   "width": 1231,
+   "height": 470
+  }
  },
  {
   "paper_id": "p084",
@@ -2282,7 +2537,12 @@
    "Annoyance (신경쓰임)"
   ],
   "pageImage": "/paper-pages/p084.webp?v=cb5bf4b1",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p084-figures.webp?v=5be8454020",
+   "width": 1231,
+   "height": 468
+  }
  },
  {
   "paper_id": "p085",
@@ -2309,7 +2569,12 @@
    "Structural type (구조형식)"
   ],
   "pageImage": "/paper-pages/p085.webp?v=1f694746",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p085-figures.webp?v=901f6980ec",
+   "width": 1231,
+   "height": 486
+  }
  },
  {
   "paper_id": "p086",
@@ -2363,7 +2628,12 @@
    "International Standardization(국제표준화)"
   ],
   "pageImage": "/paper-pages/p087.webp?v=7cc439a0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p087-figures.webp?v=02201ab79b",
+   "width": 1231,
+   "height": 286
+  }
  },
  {
   "paper_id": "p088",
@@ -2443,7 +2713,12 @@
    "Prominence(두드러짐)"
   ],
   "pageImage": "/paper-pages/p090.webp?v=dfc778a6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p090-figures.webp?v=545881c059",
+   "width": 1231,
+   "height": 473
+  }
  },
  {
   "paper_id": "p091",
@@ -2471,7 +2746,12 @@
    "Standardization(표준화)"
   ],
   "pageImage": "/paper-pages/p091.webp?v=138f1fe5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p091-figures.webp?v=344907c658",
+   "width": 1231,
+   "height": 479
+  }
  },
  {
   "paper_id": "p092",
@@ -2532,7 +2812,12 @@
    "Enclosure(엔클로져)"
   ],
   "pageImage": "/paper-pages/p093.webp?v=afd525d5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p093-figures.webp?v=13fee3b5be",
+   "width": 1469,
+   "height": 592
+  }
  },
  {
   "paper_id": "p094",
@@ -2561,7 +2846,12 @@
    "Field Verification(현장 검증)"
   ],
   "pageImage": "/paper-pages/p094.webp?v=1c959252",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p094-figures.webp?v=cccd48d9a0",
+   "width": 1233,
+   "height": 337
+  }
  },
  {
   "paper_id": "p095",
@@ -2588,7 +2878,12 @@
    "Adhesive(접착제)"
   ],
   "pageImage": "/paper-pages/p095.webp?v=a9d9e8f5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p095-figures.webp?v=2d681d4e62",
+   "width": 1231,
+   "height": 506
+  }
  },
  {
   "paper_id": "p096",
@@ -2614,7 +2909,12 @@
    "Radiation noise(방사소음)"
   ],
   "pageImage": "/paper-pages/p096.webp?v=35aa4145",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p096-figures.webp?v=47fbbb1b36",
+   "width": 1255,
+   "height": 365
+  }
  },
  {
   "paper_id": "p097",
@@ -2642,7 +2942,12 @@
    "HD Enveloping Method (고정밀 포락선법)"
   ],
   "pageImage": "/paper-pages/p097.webp?v=9049ef11",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p097-figures.webp?v=4f8159bf9c",
+   "width": 1231,
+   "height": 590
+  }
  },
  {
   "paper_id": "p098",
@@ -2667,7 +2972,12 @@
    "Stability analysis(안정성 해석)"
   ],
   "pageImage": "/paper-pages/p098.webp?v=64fff057",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p098-figures.webp?v=e8d2293b5d",
+   "width": 1228,
+   "height": 616
+  }
  },
  {
   "paper_id": "p099",
@@ -2695,7 +3005,12 @@
    "Stability(안정성)"
   ],
   "pageImage": "/paper-pages/p099.webp?v=a43723e2",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p099-figures.webp?v=e86112b693",
+   "width": 1234,
+   "height": 337
+  }
  },
  {
   "paper_id": "p100",
@@ -2722,7 +3037,12 @@
    "Contact Normal Load(접촉 수직하중)"
   ],
   "pageImage": "/paper-pages/p100.webp?v=64c2aa63",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p100-figures.webp?v=a6792d9359",
+   "width": 1231,
+   "height": 451
+  }
  },
  {
   "paper_id": "p101",
@@ -2749,7 +3069,12 @@
    "Bouc-Wen Model(Bouc-Wen 모델)"
   ],
   "pageImage": "/paper-pages/p101.webp?v=9fe430af",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p101-figures.webp?v=c1850fbf21",
+   "width": 1234,
+   "height": 620
+  }
  },
  {
   "paper_id": "p102",
@@ -2776,7 +3101,12 @@
    "Unbalanced rotor(불평형 로터)"
   ],
   "pageImage": "/paper-pages/p102.webp?v=da136910",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p102-figures.webp?v=08be146df9",
+   "width": 1231,
+   "height": 446
+  }
  },
  {
   "paper_id": "p103",
@@ -2891,7 +3221,12 @@
    "Thermal-Hydraulic Response(열수력 응답)"
   ],
   "pageImage": "/paper-pages/p106.webp?v=2d98aabf",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p106-figures.webp?v=f26c5b5400",
+   "width": 1234,
+   "height": 385
+  }
  },
  {
   "paper_id": "p107",
@@ -2918,7 +3253,12 @@
    "Rotor Wake(로터 후류)"
   ],
   "pageImage": "/paper-pages/p107.webp?v=a402c617",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p107-figures.webp?v=aba93c83ba",
+   "width": 1231,
+   "height": 227
+  }
  },
  {
   "paper_id": "p108",
@@ -2944,7 +3284,12 @@
    "Personalized percepton-emotion model(지각-정서모델)"
   ],
   "pageImage": "/paper-pages/p108.webp?v=4ba85d7c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p108-figures.webp?v=f2b721723a",
+   "width": 1231,
+   "height": 347
+  }
  },
  {
   "paper_id": "p109",
@@ -3075,7 +3420,12 @@
    "Mock-up Test(목업실험)"
   ],
   "pageImage": "/paper-pages/p113.webp?v=e91b6b54",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p113-figures.webp?v=2c890546f1",
+   "width": 1234,
+   "height": 399
+  }
  },
  {
   "paper_id": "p114",
@@ -3102,7 +3452,12 @@
    "Method for Prediction(예측기법)"
   ],
   "pageImage": "/paper-pages/p114.webp?v=da21665f",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p114-figures.webp?v=4ea4c6a5c9",
+   "width": 1245,
+   "height": 383
+  }
  },
  {
   "paper_id": "p115",
@@ -3127,7 +3482,12 @@
    "FEM(유한요소해석)"
   ],
   "pageImage": "/paper-pages/p115.webp?v=c8b8bb56",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p115-figures.webp?v=fee6791002",
+   "width": 1234,
+   "height": 535
+  }
  },
  {
   "paper_id": "p116",
@@ -3153,7 +3513,12 @@
    "Monolitic Topping(일체타설)"
   ],
   "pageImage": "/paper-pages/p116.webp?v=5e165444",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p116-figures.webp?v=94484bbf3c",
+   "width": 1234,
+   "height": 514
+  }
  },
  {
   "paper_id": "p117",
@@ -3210,7 +3575,12 @@
    "Measurement uncertainty(측정불확도)"
   ],
   "pageImage": "/paper-pages/p118.webp?v=bcf8bb50",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p118-figures.webp?v=2a00f50a9c",
+   "width": 1231,
+   "height": 459
+  }
  },
  {
   "paper_id": "p119",
@@ -3238,7 +3608,12 @@
    "Wi-Fi-based System (와이파이 기반 시스템)"
   ],
   "pageImage": "/paper-pages/p119.webp?v=63262ab5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p119-figures.webp?v=c24fb24415",
+   "width": 1231,
+   "height": 385
+  }
  },
  {
   "paper_id": "p120",
@@ -3265,7 +3640,12 @@
    "Improvement measures"
   ],
   "pageImage": "/paper-pages/p120.webp?v=c7fca61c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p120-figures.webp?v=5375bf9870",
+   "width": 1231,
+   "height": 484
+  }
  },
  {
   "paper_id": "p121",
@@ -3292,7 +3672,12 @@
    "Real-time Monitoring(실시간 모니터링)"
   ],
   "pageImage": "/paper-pages/p121.webp?v=0d35870f",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p121-figures.webp?v=d9a2b50b83",
+   "width": 1234,
+   "height": 138
+  }
  },
  {
   "paper_id": "p122",
@@ -3319,7 +3704,12 @@
    "Condition Monitoring(상태 감시)"
   ],
   "pageImage": "/paper-pages/p122.webp?v=e6cedea0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p122-figures.webp?v=dc29794b1b",
+   "width": 1234,
+   "height": 546
+  }
  },
  {
   "paper_id": "p123",
@@ -3346,7 +3736,12 @@
    "optimization(최적화)"
   ],
   "pageImage": "/paper-pages/p123.webp?v=b499f967",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p123-figures.webp?v=c86cb12082",
+   "width": 1231,
+   "height": 437
+  }
  },
  {
   "paper_id": "p124",
@@ -3373,7 +3768,12 @@
    "Boundary Element Method(BEM)"
   ],
   "pageImage": "/paper-pages/p124.webp?v=5e6322c4",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p124-figures.webp?v=251e7eb34b",
+   "width": 1234,
+   "height": 488
+  }
  },
  {
   "paper_id": "p125",
@@ -3426,7 +3826,12 @@
    "Isolated response (고립 해)"
   ],
   "pageImage": "/paper-pages/p126.webp?v=0cdb03fd",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p126-figures.webp?v=96396d07e3",
+   "width": 1234,
+   "height": 572
+  }
  },
  {
   "paper_id": "p127",
@@ -3453,7 +3858,12 @@
    "shape optimization(형상 최적화)"
   ],
   "pageImage": "/paper-pages/p127.webp?v=0012b6c9",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p127-figures.webp?v=33da9cf7fb",
+   "width": 1231,
+   "height": 431
+  }
  },
  {
   "paper_id": "p128",
@@ -3482,7 +3892,12 @@
    "Fold curve(접힘 분기 곡선)"
   ],
   "pageImage": "/paper-pages/p128.webp?v=3b771afc",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p128-figures.webp?v=7c2bb45fe8",
+   "width": 1231,
+   "height": 480
+  }
  },
  {
   "paper_id": "p129",
@@ -3509,7 +3924,12 @@
    "Mean configuration shift(평균 형상 이동)"
   ],
   "pageImage": "/paper-pages/p129.webp?v=5a121857",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p129-figures.webp?v=13ce79aa2a",
+   "width": 1231,
+   "height": 390
+  }
  },
  {
   "paper_id": "p130",
@@ -3535,7 +3955,12 @@
    "Structural Static Condensation(구조 정적 축약)"
   ],
   "pageImage": "/paper-pages/p130.webp?v=9658fcd6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p130-figures.webp?v=1bd631c035",
+   "width": 1231,
+   "height": 454
+  }
  },
  {
   "paper_id": "p131",
@@ -3563,7 +3988,12 @@
    "Sparsity-Pattern Reuse(희소행렬 구조 재사용)"
   ],
   "pageImage": "/paper-pages/p131.webp?v=8352228c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p131-figures.webp?v=1a58a2d7a4",
+   "width": 1234,
+   "height": 442
+  }
  },
  {
   "paper_id": "p132",
@@ -3593,7 +4023,12 @@
    "Open-Space Test(개방공간 시험)"
   ],
   "pageImage": "/paper-pages/p132.webp?v=08e87946",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p132-figures.webp?v=a94ec30abc",
+   "width": 1233,
+   "height": 221
+  }
  },
  {
   "paper_id": "p133",
@@ -3620,7 +4055,12 @@
    "“Bearing Preload(베어링 프리로드)”"
   ],
   "pageImage": "/paper-pages/p133.webp?v=dad4d48a",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p133-figures.webp?v=2f6a45b115",
+   "width": 1234,
+   "height": 573
+  }
  },
  {
   "paper_id": "p134",
@@ -3651,7 +4091,12 @@
    "유무인협업"
   ],
   "pageImage": "/paper-pages/p134.webp?v=b66012e2",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p134-figures.webp?v=6b11823717",
+   "width": 1234,
+   "height": 329
+  }
  },
  {
   "paper_id": "p135",
@@ -3678,7 +4123,12 @@
    "Statistical Assessment(통계 평가)"
   ],
   "pageImage": "/paper-pages/p135.webp?v=a48f4dd7",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p135-figures.webp?v=cc9748852f",
+   "width": 1231,
+   "height": 574
+  }
  },
  {
   "paper_id": "p136",
@@ -3704,7 +4154,12 @@
    "Vibration(진동)"
   ],
   "pageImage": "/paper-pages/p136.webp?v=e55e7a0c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p136-figures.webp?v=1b8f26a8f5",
+   "width": 1231,
+   "height": 354
+  }
  },
  {
   "paper_id": "p137",
@@ -3807,7 +4262,12 @@
    "Refrigerant Noise(냉매소음)"
   ],
   "pageImage": "/paper-pages/p140.webp?v=6dbf7940",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p140-figures.webp?v=f7b927c82c",
+   "width": 1234,
+   "height": 332
+  }
  },
  {
   "paper_id": "p141",
@@ -3859,7 +4319,12 @@
    "올담링(Oldham-ring)"
   ],
   "pageImage": "/paper-pages/p142.webp?v=a77a968c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p142-figures.webp?v=266ad01812",
+   "width": 1233,
+   "height": 523
+  }
  },
  {
   "paper_id": "p143",
@@ -3886,7 +4351,12 @@
    "impact-borne noise (충격음)"
   ],
   "pageImage": "/paper-pages/p143.webp?v=b69278a1",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p143-figures.webp?v=d0fbf714a1",
+   "width": 1234,
+   "height": 441
+  }
  },
  {
   "paper_id": "p144",
@@ -3913,7 +4383,12 @@
    "active grid wall (능동역 그리드월)"
   ],
   "pageImage": "/paper-pages/p144.webp?v=0586c7e7",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p144-figures.webp?v=803aff56a0",
+   "width": 1234,
+   "height": 373
+  }
  },
  {
   "paper_id": "p145",
@@ -3941,7 +4416,12 @@
    "Active Tuned Mass Damper(능동형 동조 질량 감쇠기)"
   ],
   "pageImage": "/paper-pages/p145.webp?v=7aff85d4",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p145-figures.webp?v=7a3fc69266",
+   "width": 1233,
+   "height": 604
+  }
  },
  {
   "paper_id": "p146",
@@ -3971,7 +4451,12 @@
    "Pumpability(펌핑성능)"
   ],
   "pageImage": "/paper-pages/p146.webp?v=d9a1e273",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p146-figures.webp?v=72899af946",
+   "width": 1234,
+   "height": 427
+  }
  },
  {
   "paper_id": "p147",
@@ -3997,7 +4482,12 @@
    "Metamaterials(메타물질)"
   ],
   "pageImage": "/paper-pages/p147.webp?v=d7b926de",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p147-figures.webp?v=154315bb57",
+   "width": 1231,
+   "height": 543
+  }
  },
  {
   "paper_id": "p148",
@@ -4025,7 +4515,12 @@
    "Dynamic Stiffness(동탄성계수)"
   ],
   "pageImage": "/paper-pages/p148.webp?v=44379fa0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p148-figures.webp?v=5f4e4aa455",
+   "width": 1231,
+   "height": 486
+  }
  },
  {
   "paper_id": "p149",
@@ -4051,7 +4546,12 @@
    "Site-specific calibration(현장 보정)"
   ],
   "pageImage": "/paper-pages/p149.webp?v=5a08289a",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p149-figures.webp?v=bb106a98fa",
+   "width": 1234,
+   "height": 383
+  }
  },
  {
   "paper_id": "p150",
@@ -4079,7 +4579,12 @@
    "Probabilistic prediction(확률론적 예측)"
   ],
   "pageImage": "/paper-pages/p150.webp?v=f01bd7f5",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p150-figures.webp?v=43819fb1d2",
+   "width": 1233,
+   "height": 648
+  }
  },
  {
   "paper_id": "p151",
@@ -4106,7 +4611,12 @@
    "Dominant band (지배대역)"
   ],
   "pageImage": "/paper-pages/p151.webp?v=e1cf551c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p151-figures.webp?v=94cd39ab35",
+   "width": 1234,
+   "height": 404
+  }
  },
  {
   "paper_id": "p152",
@@ -4248,7 +4758,12 @@
    "physical AI"
   ],
   "pageImage": "/paper-pages/p156.webp?v=436fa580",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p156-figures.webp?v=999d57f779",
+   "width": 1233,
+   "height": 504
+  }
  },
  {
   "paper_id": "p157",
@@ -4330,7 +4845,12 @@
    "V2X (차량·사물 간 통신)"
   ],
   "pageImage": "/paper-pages/p159.webp?v=1597e1b8",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p159-figures.webp?v=aad97f6937",
+   "width": 1231,
+   "height": 421
+  }
  },
  {
   "paper_id": "p160",
@@ -4356,7 +4876,12 @@
    "Metal-phenolic network (금속-페놀 네트워크)"
   ],
   "pageImage": "/paper-pages/p160.webp?v=e57aefa2",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p160-figures.webp?v=e5482a06dc",
+   "width": 1260,
+   "height": 390
+  }
  },
  {
   "paper_id": "p161",
@@ -4382,7 +4907,12 @@
    "Electrochemical sensor (전기화학 센서)"
   ],
   "pageImage": "/paper-pages/p161.webp?v=bc0a05e8",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p161-figures.webp?v=ee954d7193",
+   "width": 1234,
+   "height": 454
+  }
  },
  {
   "paper_id": "p162",
@@ -4408,7 +4938,12 @@
    "Machine learning (머신러닝)"
   ],
   "pageImage": "/paper-pages/p162.webp?v=2a4f7177",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p162-figures.webp?v=95f5d5065e",
+   "width": 1231,
+   "height": 535
+  }
  },
  {
   "paper_id": "p163",
@@ -4434,7 +4969,12 @@
    "Biomimetic (생체모사)"
   ],
   "pageImage": "/paper-pages/p163.webp?v=b42e70c6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p163-figures.webp?v=fad90f3ee4",
+   "width": 1235,
+   "height": 428
+  }
  },
  {
   "paper_id": "p164",
@@ -4462,7 +5002,12 @@
    "Frequency Response(주파수응답)"
   ],
   "pageImage": "/paper-pages/p164.webp?v=81174b79",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p164-figures.webp?v=f202af4d7a",
+   "width": 1234,
+   "height": 467
+  }
  },
  {
   "paper_id": "p165",
@@ -4549,7 +5094,12 @@
    "Verification(검증)"
   ],
   "pageImage": "/paper-pages/p167.webp?v=5616eec0",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p167-figures.webp?v=b86896780f",
+   "width": 1233,
+   "height": 396
+  }
  },
  {
   "paper_id": "p168",
@@ -4635,7 +5185,12 @@
    "Random Vibraion(랜덤 진동)"
   ],
   "pageImage": "/paper-pages/p170.webp?v=8d3699cf",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p170-figures.webp?v=71bcee4176",
+   "width": 1231,
+   "height": 527
+  }
  },
  {
   "paper_id": "p171",
@@ -4662,7 +5217,12 @@
    "Dynamic Design and Analysis Method(동적 설계 해석법)"
   ],
   "pageImage": "/paper-pages/p171.webp?v=4526ce65",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p171-figures.webp?v=b55f4e01de",
+   "width": 1234,
+   "height": 427
+  }
  },
  {
   "paper_id": "p172",
@@ -4716,7 +5276,12 @@
    "Reciprocity(상반성)"
   ],
   "pageImage": "/paper-pages/p173.webp?v=af2f3173",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p173-figures.webp?v=80475119e2",
+   "width": 1231,
+   "height": 506
+  }
  },
  {
   "paper_id": "p174",
@@ -4855,7 +5420,12 @@
    "Optimization"
   ],
   "pageImage": "/paper-pages/p178.webp?v=b21daf0b",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p178-figures.webp?v=07b9214e52",
+   "width": 1234,
+   "height": 377
+  }
  },
  {
   "paper_id": "p179",
@@ -4910,7 +5480,12 @@
    "Suspension(현가장치)"
   ],
   "pageImage": "/paper-pages/p180.webp?v=7ee3266e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p180-figures.webp?v=68ab624b61",
+   "width": 1234,
+   "height": 320
+  }
  },
  {
   "paper_id": "p181",
@@ -4939,7 +5514,12 @@
    "Automation(자동화)"
   ],
   "pageImage": "/paper-pages/p181.webp?v=3a62e36e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p181-figures.webp?v=83fcfc4cdd",
+   "width": 1233,
+   "height": 157
+  }
  },
  {
   "paper_id": "p182",
@@ -4966,7 +5546,12 @@
    "Micro-pressure wave"
   ],
   "pageImage": "/paper-pages/p182.webp?v=7e41795c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p182-figures.webp?v=c812779d61",
+   "width": 1231,
+   "height": 372
+  }
  },
  {
   "paper_id": "p183",
@@ -5102,7 +5687,12 @@
    "Apartment Building"
   ],
   "pageImage": "/paper-pages/p187.webp?v=02d305bd",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p187-figures.webp?v=e894e544bf",
+   "width": 1234,
+   "height": 484
+  }
  },
  {
   "paper_id": "p188",
@@ -5131,7 +5721,12 @@
    "Vibration(진동)"
   ],
   "pageImage": "/paper-pages/p188.webp?v=7f5bf7c2",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p188-figures.webp?v=8fb8619d75",
+   "width": 1231,
+   "height": 364
+  }
  },
  {
   "paper_id": "p189",
@@ -5183,7 +5778,12 @@
    "Metamaterial(메타물질)"
   ],
   "pageImage": "/paper-pages/p190.webp?v=d9cc3f78",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p190-figures.webp?v=e7b4d00db1",
+   "width": 1454,
+   "height": 487
+  }
  },
  {
   "paper_id": "p191",
@@ -5210,7 +5810,12 @@
    "Survivability(생존성)"
   ],
   "pageImage": "/paper-pages/p191.webp?v=b188de79",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p191-figures.webp?v=07e9923c6b",
+   "width": 1234,
+   "height": 417
+  }
  },
  {
   "paper_id": "p192",
@@ -5264,7 +5869,12 @@
    "Shock Energy Absorption(충격 에너지 흡수)"
   ],
   "pageImage": "/paper-pages/p193.webp?v=f2a7dd85",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p193-figures.webp?v=23820053db",
+   "width": 1454,
+   "height": 418
+  }
  },
  {
   "paper_id": "p194",
@@ -5376,7 +5986,12 @@
    "Lateral excitation(측방향 가진)"
   ],
   "pageImage": "/paper-pages/p197.webp?v=27b6ab95",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p197-figures.webp?v=0864e92294",
+   "width": 1231,
+   "height": 253
+  }
  },
  {
   "paper_id": "p198",
@@ -5403,7 +6018,12 @@
    "부수 변수법(adjoint variable method)"
   ],
   "pageImage": "/paper-pages/p198.webp?v=e190638a",
-  "extractionStatus": "image-only"
+  "extractionStatus": "image-only",
+  "figureImage": {
+   "src": "/paper-pages/p198-figures.webp?v=af177c599f",
+   "width": 1231,
+   "height": 349
+  }
  },
  {
   "paper_id": "p199",
@@ -5430,7 +6050,12 @@
    "Data quality(데이터 품질)"
   ],
   "pageImage": "/paper-pages/p199.webp?v=5c21e26e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p199-figures.webp?v=4c615dadea",
+   "width": 1234,
+   "height": 130
+  }
  },
  {
   "paper_id": "p200",
@@ -5564,7 +6189,12 @@
    "Design Chart(설계차트)"
   ],
   "pageImage": "/paper-pages/p204.webp?v=afbcda45",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p204-figures.webp?v=d8d61579f0",
+   "width": 1234,
+   "height": 335
+  }
  },
  {
   "paper_id": "p205",
@@ -5592,7 +6222,12 @@
    "마스트(Mast)"
   ],
   "pageImage": "/paper-pages/p205.webp?v=4c8ac610",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p205-figures.webp?v=d6d76a50a5",
+   "width": 1234,
+   "height": 436
+  }
  },
  {
   "paper_id": "p206",
@@ -5620,7 +6255,12 @@
    "Finite Element Method(유한 요소 해석)"
   ],
   "pageImage": "/paper-pages/p206.webp?v=fc23294b",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p206-figures.webp?v=0a4dff2f39",
+   "width": 1231,
+   "height": 554
+  }
  },
  {
   "paper_id": "p207",
@@ -5674,7 +6314,12 @@
    "Road noise(노면소음)"
   ],
   "pageImage": "/paper-pages/p208.webp?v=a114d0af",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p208-figures.webp?v=647a7e017b",
+   "width": 1234,
+   "height": 538
+  }
  },
  {
   "paper_id": "p209",
@@ -5758,7 +6403,12 @@
    "Embedded GPU(임베디드 GPU)"
   ],
   "pageImage": "/paper-pages/p211.webp?v=40eb073d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p211-figures.webp?v=40f9af7124",
+   "width": 1231,
+   "height": 349
+  }
  },
  {
   "paper_id": "p212",
@@ -5810,7 +6460,12 @@
    "Passive Flow Control(수동 유동제어)"
   ],
   "pageImage": "/paper-pages/p213.webp?v=0b67b383",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p213-figures.webp?v=39dee8439c",
+   "width": 1237,
+   "height": 543
+  }
  },
  {
   "paper_id": "p214",
@@ -5836,7 +6491,12 @@
    "Passive Flow Control(수동 유동제어)"
   ],
   "pageImage": "/paper-pages/p214.webp?v=733bedd2",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p214-figures.webp?v=29764140d6",
+   "width": 1231,
+   "height": 481
+  }
  },
  {
   "paper_id": "p215",
@@ -5863,7 +6523,12 @@
    "Initial Phase control(초기 위상차 제어)"
   ],
   "pageImage": "/paper-pages/p215.webp?v=1b73af1d",
-  "extractionStatus": "manual-transcription"
+  "extractionStatus": "manual-transcription",
+  "figureImage": {
+   "src": "/paper-pages/p215-figures.webp?v=d16e48b5eb",
+   "width": 1234,
+   "height": 556
+  }
  },
  {
   "paper_id": "p216",
@@ -5890,7 +6555,12 @@
    "Blade-Vortex Interaction noise(BVI, 블레이드-와류 상호작용 소음)"
   ],
   "pageImage": "/paper-pages/p216.webp?v=fab31115",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p216-figures.webp?v=1df79eb686",
+   "width": 1234,
+   "height": 579
+  }
  },
  {
   "paper_id": "p217",
@@ -5944,7 +6614,12 @@
    "이벤트성 평가지표(event-based metrics)"
   ],
   "pageImage": "/paper-pages/p218.webp?v=2b006039",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p218-figures.webp?v=5fb7959714",
+   "width": 1228,
+   "height": 353
+  }
  },
  {
   "paper_id": "p219",
@@ -5997,7 +6672,12 @@
    "Grounded theory (근거이론)"
   ],
   "pageImage": "/paper-pages/p220.webp?v=f2325e0e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p220-figures.webp?v=f42c360854",
+   "width": 1231,
+   "height": 547
+  }
  },
  {
   "paper_id": "p221",
@@ -6025,7 +6705,12 @@
    "Variable Composition(가변 구성)"
   ],
   "pageImage": "/paper-pages/p221.webp?v=643b0078",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p221-figures.webp?v=6252195001",
+   "width": 1231,
+   "height": 420
+  }
  },
  {
   "paper_id": "p222",
@@ -6078,7 +6763,12 @@
    "Noise occurrence characteristics(소음발생특성)"
   ],
   "pageImage": "/paper-pages/p223.webp?v=ace242e6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p223-figures.webp?v=bee98ddc8f",
+   "width": 1231,
+   "height": 510
+  }
  },
  {
   "paper_id": "p224",
@@ -6108,7 +6798,12 @@
    "KS B ISO 10813"
   ],
   "pageImage": "/paper-pages/p224.webp?v=a97fefb6",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p224-figures.webp?v=f875281620",
+   "width": 1231,
+   "height": 262
+  }
  },
  {
   "paper_id": "p225",
@@ -6214,7 +6909,12 @@
    "BV043(건조 규정 043)"
   ],
   "pageImage": "/paper-pages/p228.webp?v=8f8193ff",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p228-figures.webp?v=8581a51f76",
+   "width": 1231,
+   "height": 342
+  }
  },
  {
   "paper_id": "p229",
@@ -6322,7 +7022,12 @@
    "Binding reinforcement (바인딩 보강)"
   ],
   "pageImage": "/paper-pages/p232.webp?v=a1bd0069",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p232-figures.webp?v=c5fdeed719",
+   "width": 1231,
+   "height": 273
+  }
  },
  {
   "paper_id": "p233",
@@ -6374,7 +7079,12 @@
    "Engineering Performance Prediction(공학 성능 예측)"
   ],
   "pageImage": "/paper-pages/p234.webp?v=016bcbf4",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p234-figures.webp?v=a8b8d192ac",
+   "width": 1240,
+   "height": 422
+  }
  },
  {
   "paper_id": "p235",
@@ -6403,7 +7113,12 @@
    "Model Calibration(모델보정)"
   ],
   "pageImage": "/paper-pages/p235.webp?v=80ae0e50",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p235-figures.webp?v=45561a3e4f",
+   "width": 1234,
+   "height": 626
+  }
  },
  {
   "paper_id": "p236",
@@ -6519,7 +7234,12 @@
    "Broadband Sound Absorption(광대역 흡음)"
   ],
   "pageImage": "/paper-pages/p239.webp?v=f3861313",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p239-figures.webp?v=a331ffa7f9",
+   "width": 1234,
+   "height": 330
+  }
  },
  {
   "paper_id": "p240",
@@ -6548,7 +7268,12 @@
    "Control filter generation (제어필터 생성)"
   ],
   "pageImage": "/paper-pages/p240.webp?v=c7235878",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p240-figures.webp?v=24e0bd70bc",
+   "width": 1234,
+   "height": 415
+  }
  },
  {
   "paper_id": "p241",
@@ -6575,7 +7300,12 @@
    "Nuclear power plant"
   ],
   "pageImage": "/paper-pages/p241.webp?v=93d21146",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p241-figures.webp?v=fc59d98a30",
+   "width": 1231,
+   "height": 588
+  }
  },
  {
   "paper_id": "p242",
@@ -6602,7 +7332,12 @@
    "Structural Health Monitoring"
   ],
   "pageImage": "/paper-pages/p242.webp?v=b8ecb315",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p242-figures.webp?v=30eaa41ae8",
+   "width": 1234,
+   "height": 595
+  }
  },
  {
   "paper_id": "p243",
@@ -6656,7 +7391,12 @@
    "Vehicle-Bridge Interaction"
   ],
   "pageImage": "/paper-pages/p244.webp?v=695695d9",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p244-figures.webp?v=aad9286e08",
+   "width": 1231,
+   "height": 460
+  }
  },
  {
   "paper_id": "p245",
@@ -6709,7 +7449,12 @@
    "GV90"
   ],
   "pageImage": "/paper-pages/p246.webp?v=f09c892e",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p246-figures.webp?v=85fcf01bd0",
+   "width": 1233,
+   "height": 354
+  }
  },
  {
   "paper_id": "p247",
@@ -6792,7 +7537,12 @@
    "Multiple Coherence(다중 기여도)"
   ],
   "pageImage": "/paper-pages/p249.webp?v=6a7c4300",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p249-figures.webp?v=95d80f2c8f",
+   "width": 1231,
+   "height": 411
+  }
  },
  {
   "paper_id": "p250",
@@ -6844,7 +7594,12 @@
    "Transient Flight Condition(천이비행 조건)"
   ],
   "pageImage": "/paper-pages/p251.webp?v=ead16c4c",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p251-figures.webp?v=dbd308f74f",
+   "width": 1231,
+   "height": 536
+  }
  },
  {
   "paper_id": "p252",
@@ -6871,7 +7626,12 @@
    "Active Noise Control(능동소음제어)"
   ],
   "pageImage": "/paper-pages/p252.webp?v=4adc38cd",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p252-figures.webp?v=cbb0a72984",
+   "width": 1231,
+   "height": 400
+  }
  },
  {
   "paper_id": "p253",
@@ -6899,7 +7659,12 @@
    "Cell density(코어 밀도)"
   ],
   "pageImage": "/paper-pages/p253.webp?v=d5dd8c74",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p253-figures.webp?v=aeb9405529",
+   "width": 1234,
+   "height": 416
+  }
  },
  {
   "paper_id": "p254",
@@ -6927,7 +7692,12 @@
    "Multiple regression(다중회귀분석)"
   ],
   "pageImage": "/paper-pages/p254.webp?v=a819aa4b",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p254-figures.webp?v=412ec94c95",
+   "width": 1241,
+   "height": 452
+  }
  },
  {
   "paper_id": "p255",
@@ -6955,7 +7725,12 @@
    "Acoustic design(음향설계)"
   ],
   "pageImage": "/paper-pages/p255.webp?v=d75ceb42",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p255-figures.webp?v=7f57576a4e",
+   "width": 1234,
+   "height": 273
+  }
  },
  {
   "paper_id": "p256",
@@ -6985,7 +7760,12 @@
    "Design Procedure(설계 절차)"
   ],
   "pageImage": "/paper-pages/p256.webp?v=7e6c7b40",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p256-figures.webp?v=523be16111",
+   "width": 1231,
+   "height": 425
+  }
  },
  {
   "paper_id": "p257",
@@ -7017,7 +7797,12 @@
    "실내 반사면(Interior Reflective Surfaces)"
   ],
   "pageImage": "/paper-pages/p257.webp?v=8e32845d",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p257-figures.webp?v=bede39c459",
+   "width": 1231,
+   "height": 434
+  }
  },
  {
   "paper_id": "p258",
@@ -7047,7 +7832,12 @@
    "Scale model(축소모형)"
   ],
   "pageImage": "/paper-pages/p258.webp?v=fdf18f61",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p258-figures.webp?v=32c75cd241",
+   "width": 1231,
+   "height": 440
+  }
  },
  {
   "paper_id": "p259",
@@ -7214,7 +8004,12 @@
    "WAFTR(와이블 가속수명 회귀)"
   ],
   "pageImage": "/paper-pages/p264.webp?v=0afe03eb",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p264-figures.webp?v=a64b9f3300",
+   "width": 1233,
+   "height": 596
+  }
  },
  {
   "paper_id": "p265",
@@ -7241,7 +8036,12 @@
    "Resonance Frequency(공진주파수)"
   ],
   "pageImage": "/paper-pages/p265.webp?v=2f57b980",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p265-figures.webp?v=1de6d93da6",
+   "width": 1231,
+   "height": 430
+  }
  },
  {
   "paper_id": "p266",
@@ -7267,7 +8067,12 @@
    "Vibration(진동)"
   ],
   "pageImage": "/paper-pages/p266.webp?v=2ff1025a",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p266-figures.webp?v=b8f368d45d",
+   "width": 1231,
+   "height": 373
+  }
  },
  {
   "paper_id": "p267",
@@ -7294,7 +8099,12 @@
    "Mesh stiffness(맞물림 강성)"
   ],
   "pageImage": "/paper-pages/p267.webp?v=a95574e5",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p267-figures.webp?v=d786152945",
+   "width": 1234,
+   "height": 580
+  }
  },
  {
   "paper_id": "p268",
@@ -7351,7 +8161,12 @@
    "Orientation Robustness(방향 강건성)"
   ],
   "pageImage": "/paper-pages/p269.webp?v=3118bd4b",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p269-figures.webp?v=9f0e03a088",
+   "width": 1252,
+   "height": 358
+  }
  },
  {
   "paper_id": "p270",
@@ -7377,7 +8192,12 @@
    "SINDy (비선형 동역학 희소 식별)"
   ],
   "pageImage": "/paper-pages/p270.webp?v=9fae9731",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p270-figures.webp?v=7450fa95aa",
+   "width": 1231,
+   "height": 637
+  }
  },
  {
   "paper_id": "p271",
@@ -7405,6 +8225,11 @@
    "Induction Motor(유도전동기)"
   ],
   "pageImage": "/paper-pages/p271.webp?v=548bc715",
-  "extractionStatus": "pdf-text"
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p271-figures.webp?v=37218dac47",
+   "width": 1233,
+   "height": 423
+  }
  }
 ]

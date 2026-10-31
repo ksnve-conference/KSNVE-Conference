@@ -144,6 +144,10 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           </section>
         )}
 
+        {paper.figureImage && (
+          <OriginalPageViewer {...paper.figureImage} title={paper.title} variant="figures" />
+        )}
+
         {paper.pageImage && <OriginalPageViewer src={paper.pageImage} title={paper.title} />}
       </article>
 

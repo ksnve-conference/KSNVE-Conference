@@ -5,9 +5,14 @@ import { useEffect, useRef, useState } from 'react';
 type OriginalPageViewerProps = {
   src: string;
   title: string;
+  variant?: 'original' | 'figures';
+  width?: number;
+  height?: number;
 };
 
-export default function OriginalPageViewer({ src, title }: OriginalPageViewerProps) {
+export default function OriginalPageViewer({ src, title, variant = 'original', width = 1434, height = 2024 }: OriginalPageViewerProps) {
+  const isFigures = variant === 'figures';
+  const label = isFigures ? '그림·표' : '확장요약문 원문';
   const dialogRef = useRef<HTMLDialogElement>(null);
   const previewRef = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -30,32 +35,24 @@ export default function OriginalPageViewer({ src, title }: OriginalPageViewerPro
     dialogRef.current?.close();
   };
 
-  const enterFullscreen = async () => {
-    const dialog = dialogRef.current;
-    if (dialog?.requestFullscreen) await dialog.requestFullscreen();
-  };
-
   return (
-    <section className="abstract original-page">
-      <div className="original-page-heading">
+    <section className={`abstract original-page${isFigures ? ' paper-figures' : ''}`}>
+      {!isFigures && <div className="original-page-heading">
         <div>
-          <h2>확장요약문 원문</h2>
+          <h2>{label}</h2>
           <p>학술대회 제출 원문</p>
         </div>
-        <a href={src} target="_blank" rel="noreferrer">
-          원문 열기
-        </a>
-      </div>
+      </div>}
 
-      <button className="page-preview" type="button" onClick={openViewer} aria-label="확장요약문 확대 보기">
+      <button className="page-preview" type="button" onClick={openViewer} aria-label={`${label} 확대 보기`}>
         {!loaded && <span className="page-skeleton" aria-hidden="true" />}
         <img
           ref={previewRef}
           className={loaded ? 'loaded' : ''}
           src={src}
-          alt={`${title} 확장요약문`}
-          width="1434"
-          height="2024"
+          alt={`${title} ${label}`}
+          width={width}
+          height={height}
           loading="lazy"
           onLoad={() => setLoaded(true)}
         />
@@ -65,7 +62,7 @@ export default function OriginalPageViewer({ src, title }: OriginalPageViewerPro
       <dialog
         ref={dialogRef}
         className="page-viewer"
-        aria-label={`${title} 확장요약문 전체 화면`}
+        aria-label={`${title} ${label} 전체 화면`}
         onClose={() => setZoomed(false)}
         onClick={(event) => {
           if (event.target === event.currentTarget) closeViewer();
@@ -73,16 +70,14 @@ export default function OriginalPageViewer({ src, title }: OriginalPageViewerPro
       >
         <header>
           <div>
-            <b>확장요약문 원문</b>
+            <b>{label}</b>
             <span>{title}</span>
           </div>
-          <button type="button" onClick={enterFullscreen}>전체 화면</button>
-          <a href={src} target="_blank" rel="noreferrer">원본 열기</a>
           <button type="button" onClick={closeViewer} aria-label="닫기">×</button>
         </header>
         <div className={`page-viewer-canvas${zoomed ? ' zoomed' : ''}`}>
           <button type="button" onClick={() => setZoomed((current) => !current)} aria-label={zoomed ? '축소하기' : '확대하기'}>
-            <img src={src} alt={`${title} 확장요약문 확대`} width="1434" height="2024" />
+            <img src={src} alt={`${title} ${label} 확대`} width={width} height={height} />
           </button>
         </div>
       </dialog>
