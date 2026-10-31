@@ -73,7 +73,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${bodyFont.variable} ${ciFont.variable}`}>
+    <html lang="ko" data-scroll-behavior="smooth" className={`${bodyFont.variable} ${ciFont.variable}`}>
       <body>
         <OfflineReady />
         {children}

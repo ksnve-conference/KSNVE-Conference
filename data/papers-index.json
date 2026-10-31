@@ -6284,11 +6284,13 @@
     "title": "실차 계측 기반 진동시험을 통한 상용차 에어탱크 모듈의 컴프레셔 충전 진동 발생 원인 분석",
     "authors": "홍명기, 박현우, 조성근, 장재혁, 이세진, 조익현(자동차융합기술원)",
     "presenter": "홍명기",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
-      "Commercial Vehicle",
-      "Air tank module",
-      "PSD"
+      "Commercial Vehicle(상용차량)",
+      "Air tank module(에어탱크 모듈)",
+      "PSD(파워스펙트럼밀도)",
+      "Random Vibration Test(랜덤진동시험)",
+      "Compressor(컴프레셔)"
     ]
   },
   {

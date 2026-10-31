@@ -101,25 +101,31 @@ export function useAnnouncements() {
 
   useEffect(() => {
     setRead(readRead());
+    // A disabled or changed sheet must not revive notices from the old source.
+    if (!SHEET_URL) return;
     try {
       const cached = localStorage.getItem(CACHE_KEY);
       if (cached) {
         const parsed: unknown = JSON.parse(cached);
-        if (Array.isArray(parsed) && parsed.length) { setItems(sortByDateDesc(parsed as Announcement[])); setSource('cache'); }
+        if (parsed && typeof parsed === 'object' && 'url' in parsed && parsed.url === SHEET_URL && 'items' in parsed && Array.isArray(parsed.items) && parsed.items.every((item) => item && ['id', 'title', 'body', 'date', 'category'].every((key) => typeof item[key] === 'string'))) {
+          setItems(sortByDateDesc(parsed.items));
+          setSource('cache');
+        }
       }
     } catch { /* ignore malformed cache */ }
 
-    if (!SHEET_URL) return;
     const controller = new AbortController();
     const timer = window.setTimeout(() => controller.abort(), 8000);
     fetch(SHEET_URL, { signal: controller.signal, cache: 'no-store' })
       .then((res) => (res.ok ? res.text() : Promise.reject(new Error(String(res.status)))))
       .then((text) => {
-        const next = rowsToAnnouncements(parseCsv(text));
-        if (!next.length) return;
+        const rows = parseCsv(text);
+        // Accept a valid empty sheet (all notices removed), but not an HTML error page.
+        if (!rows[0]?.some((cell) => ['title', '제목'].includes(cell.trim().toLowerCase()))) return;
+        const next = rowsToAnnouncements(rows);
         setItems(next);
         setSource('sheet');
-        try { localStorage.setItem(CACHE_KEY, JSON.stringify(next)); } catch { /* quota */ }
+        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ url: SHEET_URL, items: next })); } catch { /* quota */ }
       })
       .catch(() => { /* offline or sheet unreachable — cached/bundled notices stay */ })
       .finally(() => window.clearTimeout(timer));

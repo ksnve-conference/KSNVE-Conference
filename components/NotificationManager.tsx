@@ -36,7 +36,11 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
 
   useEffect(() => {
     if (permission !== 'granted' || !enabled) return;
-    const check = () => {
+    let checking = false;
+    let stopped = false;
+    const check = async () => {
+      if (checking || stopped) return;
+      checking = true;
       const now = Date.now();
       let notified: string[] = [];
       try {
@@ -44,20 +48,27 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
         if (Array.isArray(value)) notified = value.filter((item): item is string => typeof item === 'string');
       } catch { notified = []; }
       const next = new Set(notified);
-      papers.filter((paper) => favoriteIds.includes(paper.id)).forEach((paper) => {
+      for (const paper of papers.filter((paper) => favoriteIds.includes(paper.id))) {
         const start = paperStartMs(paper.date, paper.time);
-        if (!start) return;
+        if (!start || stopped) continue;
         const notifyAt = start - 10 * 60 * 1000;
         if (now >= notifyAt && now < start && !next.has(paper.id)) {
-          new Notification('발표가 10분 후 시작됩니다', { body: `${paper.title} · ${paper.venue}`, tag: `paper-${paper.id}` });
-          next.add(paper.id);
+          try {
+            const options = { body: `${paper.title} · ${paper.venue}`, tag: `paper-${paper.id}` };
+            const registration = 'serviceWorker' in navigator ? await navigator.serviceWorker.getRegistration() : undefined;
+            if (stopped) break;
+            if (registration?.active) await registration.showNotification('발표가 곧 시작됩니다', options);
+            else new Notification('발표가 곧 시작됩니다', options);
+            next.add(paper.id);
+          } catch { /* Unsupported or revoked permission: retry on the next check. */ }
         }
-      });
+      }
+      checking = false;
       try { localStorage.setItem(notifiedKey, JSON.stringify([...next])); } catch { /* quota */ }
     };
     check();
     const timer = window.setInterval(check, 30_000);
-    return () => window.clearInterval(timer);
+    return () => { stopped = true; window.clearInterval(timer); };
   }, [favoriteIds, permission, enabled]);
 
   if (permission === 'unsupported') return null;
@@ -66,7 +77,7 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
     return (
       <button type="button" className="notification-status notification-on" onClick={() => toggle(false)}>
         <span><Icon name="check" size={16} /></span>
-        <div><b>일정 알림 켜짐</b><small>앱이 열려 있는 동안 발표 10분 전에 알려드립니다.</small></div>
+        <div><b>일정 알림 켜짐</b><small>내 일정 화면이 열려 있는 동안 발표 시작 전 10분 이내에 알려드립니다.</small></div>
         <em>끄기</em>
       </button>
     );
@@ -76,7 +87,7 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
     return (
       <button type="button" className="notification-prompt" onClick={() => toggle(true)}>
         <span><Icon name="bell" size={17} /></span>
-        <div><b>일정 알림 꺼짐</b><small>켜면 앱이 열려 있는 동안 발표 10분 전에 알려드립니다.</small></div>
+        <div><b>일정 알림 꺼짐</b><small>켜면 내 일정 화면이 열려 있는 동안 발표 시작 전 10분 이내에 알려드립니다.</small></div>
         <em>켜기</em>
       </button>
     );
@@ -99,7 +110,7 @@ export default function NotificationManager({ favoriteIds }: { favoriteIds: stri
   return (
     <button className="notification-prompt" onClick={request}>
       <span><Icon name="bell" size={17} /></span>
-      <div><b>발표 알림 받기</b><small>앱이 열려 있는 동안 발표 10분 전에 알려드립니다.</small></div>
+      <div><b>발표 알림 받기</b><small>내 일정 화면이 열려 있는 동안 발표 시작 전 10분 이내에 알려드립니다.</small></div>
       <em>켜기</em>
     </button>
   );
