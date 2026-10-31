@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
-import BackLink from '@/components/BackLink';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
 import EventDetailsView from '@/components/EventDetails';
@@ -30,7 +29,9 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
   return (
     <main className="shell detail-shell">
       <AppHeader compact />
-      <BackLink fallback="/" label="뒤로" />
+      <Link href="/" className="back">
+        <Icon name="back" size={16} />프로그램 목록으로
+      </Link>
 
       <section className="detail-card">
         <div className="badges">
