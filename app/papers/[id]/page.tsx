@@ -154,13 +154,13 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
       {(prevPaper || nextPaper) && (
         <nav className="paper-siblings" aria-label="같은 세션의 다른 발표">
           {prevPaper ? (
-            <Link href={`/papers/${prevPaper.id}`} className="paper-sibling prev">
+            <Link href={`/papers/${prevPaper.id}`} replace className="paper-sibling prev">
               <Icon name="back" size={15} />
               <div><small>이전 발표</small><b>{prevPaper.title}</b></div>
             </Link>
           ) : <span />}
           {nextPaper ? (
-            <Link href={`/papers/${nextPaper.id}`} className="paper-sibling next">
+            <Link href={`/papers/${nextPaper.id}`} replace className="paper-sibling next">
               <div><small>다음 발표</small><b>{nextPaper.title}</b></div>
               <Icon name="chevron" size={15} />
             </Link>
