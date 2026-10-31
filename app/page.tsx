@@ -181,7 +181,14 @@ export default function ProgramPage() {
     <main className="shell app-shell">
       <AppHeader unread={unread} status={heroStatus} />
 
-      <a href="#program" className="program-shortcut">
+      <a href="#program" className="program-shortcut" onClick={(event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const program = document.getElementById('program');
+        if (!program) return;
+        event.preventDefault();
+        program.focus({ preventScroll: true });
+        program.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }}>
         <Icon name="calendar" size={20} />
         <span>전체 프로그램 바로가기</span>
         <Icon name="chevron-down" size={18} />
