@@ -366,10 +366,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   width:clamp(58px, 16vw, 72px); height:auto; border-radius:50%;
   box-shadow:0 4px 14px rgba(0,0,0,.28);
 }
-.hero-wave{
-  position:absolute; right:-6px; bottom:16px; z-index:1;
-  width:58%; height:46%; fill:#fff; opacity:.13; pointer-events:none;
-}
 .hero-status{
   position:absolute; right:16px; bottom:22px; z-index:2;
   padding:6px 13px; border-radius:var(--r-pill);
@@ -391,12 +387,14 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-compact:after{ display:none; }
 .hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
-.hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
+.hero-compact .brand-ci{ width:auto; height:30px; flex:none; }
+.hero-compact .brand-divider{ flex:none; width:1px; height:28px; background:var(--line); }
 .hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
 .hero-compact .hero-title-block b{
-  display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-  font-size:var(--type-screen); font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
+  display:flex; flex-direction:column; white-space:nowrap;
+  font-size:15px; line-height:1.25; font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
 }
+.hero-compact .hero-title-block b span:first-child{ font-size:12px; font-weight:600; color:var(--muted); }
 .hero-compact .hero-title-block small,
 .hero-compact .conference-tagline{ display:none; }
 .hero-compact .hero-links{ position:static; margin-left:auto; }
