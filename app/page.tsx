@@ -9,7 +9,8 @@ import TimeSlotRow from '@/components/TimeSlotRow';
 import TimeTravelPanel from '@/components/TimeTravelPanel';
 import InstallPrompt from '@/components/InstallPrompt';
 import Icon, { type IconName } from '@/components/Icon';
-import { dayLabel, formatSessionTitle, papers, sessions, type Session } from '@/lib/conference';
+import { dayLabel, papers, sessions, type Session } from '@/lib/conference';
+import { allMajorItems, sessionRange, shortDate } from '@/lib/major-events';
 import { conferenceConfig } from '@/lib/conference-config';
 import { parseMockNow, type MockNow } from '@/lib/dashboard-time';
 import { useSaved } from '@/lib/saved';
@@ -29,12 +30,6 @@ function formatKoreanDate(date: string) {
 const daysBetween = (from: string, to: string) =>
   Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000);
 
-function sessionRange(session: Pick<Session, 'date' | 'time'>) {
-  const [start, end] = session.time.split(/[~–-]/);
-  const startsAt = new Date(`${session.date}T${(start || '00:00').trim()}:00+09:00`).getTime();
-  return { start: startsAt, end: end ? new Date(`${session.date}T${end.trim()}:00+09:00`).getTime() : startsAt + 2 * 60 * 60 * 1000 };
-}
-
 function currentOrNextSessions(items: Session[], date: string, now: Date) {
   const dated = items.filter((s) => s.date === date);
   const nowTime = now.getTime();
@@ -45,29 +40,6 @@ function currentOrNextSessions(items: Session[], date: string, now: Date) {
   const nearest = Math.min(...upcoming.map((s) => sessionRange(s).start));
   return upcoming.filter((s) => sessionRange(s).start === nearest);
 }
-
-const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회|교양\s*강좌|마술|캐리커쳐|학회발전\s*TF/i;
-const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.category}`);
-
-/** Keynotes are talks inside ordinary sessions, not sessions of their own, so the
- * 주요 일정 list picks them out of the paper list and links to the talk itself. */
-type MajorItem = { key: string; href: string; date: string; time: string; title: string; venue: string };
-const keynoteItems: MajorItem[] = papers
-  .filter((p) => p.presentationType === 'KEYNOTE')
-  .map((p) => ({
-    key: p.id,
-    href: `/papers/${p.id}`,
-    date: p.date,
-    time: p.time,
-    title: `${p.keynoteNo ? `키노트 강연 ${p.keynoteNo}` : '키노트 강연'} - ${p.title}`,
-    venue: p.venue,
-  }));
-const allMajorItems: MajorItem[] = [
-  ...sessions.filter(isMajorEvent).map((s): MajorItem => ({
-    key: s.id, href: `/sessions/${s.id}`, date: s.date, time: s.time, title: formatSessionTitle(s.title), venue: s.venue,
-  })),
-  ...keynoteItems,
-];
 
 /**
  * Before the conference there is nothing "in progress", and the earliest item
@@ -94,14 +66,9 @@ function prepItems(now: Date): { href: string; icon: IconName; title: string; de
       href: '/conference/lodging', icon: 'bed' as IconName,
       title: deadlineTitle('숙박 할인 예약', LODGING_DEADLINE, now), desc: '11/13(금)까지 · 신라스테이 여수 등 할인 숙소',
     }] : []),
+    { href: '/conference/schedule', icon: 'calendar', title: '주요 일정 한눈에 보기', desc: '4일간 키노트·초청특별강연·총회·만찬' },
     { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX 여수EXPO역 도보 5분 · 주차 할인' },
   ];
-}
-
-/** "11.26 (목)" for the 주요 일정 heading. */
-function shortDate(date: string) {
-  const [, month, day] = date.split('-');
-  return `${Number(month)}.${Number(day)} (${dayLabel(date).split(' ')[1] ?? ''})`;
 }
 
 export default function ProgramPage() {
