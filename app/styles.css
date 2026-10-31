@@ -318,7 +318,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   animation-delay:0s;
 }
 .hero-photo-stack span:nth-child(2){
-  background-image:url('/images/hero-yeosu-fireworks.webp'); background-position:50% 62%;
+  /* the busy fireworks frame gets extra shade under the text (it fades with the photo) */
+  background-image:linear-gradient(180deg, rgba(4,44,76,0) 40%, rgba(4,44,76,.35) 75%, rgba(4,40,70,.5) 100%), url('/images/hero-yeosu-fireworks.webp');
+  background-size:100% 100%, cover; background-position:0 0, 50% 62%;
   animation-delay:-3s;
 }
 .hero-photo-stack span:nth-child(3){
@@ -343,8 +345,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today:before{
   content:""; position:absolute; inset:0; z-index:1;
-  /* darkened top for the emblem and notice button, society blue under the text */
-  background:linear-gradient(180deg, rgba(3,14,24,.32) 0%, rgba(3,14,24,.08) 30%, rgba(4,52,88,.62) 62%, rgba(4,44,76,.94) 100%);
+  /* light: a touch of shade behind the notice button, the photo left clear in
+     the middle, society blue only under the text */
+  background:linear-gradient(180deg, rgba(3,14,24,.22) 0%, rgba(3,14,24,0) 22%, rgba(3,14,24,0) 45%, rgba(4,44,76,.45) 72%, rgba(4,40,70,.72) 100%);
 }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
@@ -357,7 +360,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today .hero-title-block b{
   display:block; font-size:clamp(25px, 7vw, 33px); line-height:1.18; letter-spacing:-.03em;
-  font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,.4);
+  font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);
 }
 .hero-today .hero-title-block small{
   display:flex; flex-wrap:wrap; gap:6px; margin-top:11px;
@@ -372,12 +375,12 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .conference-tagline{
   display:block; min-width:0; white-space:nowrap; /* the theme stays on one line */
   font-size:clamp(13px, 3.8vw, 16px); font-weight:600; letter-spacing:-.01em;
-  font-style:normal; color:rgba(255,255,255,.88); text-shadow:0 1px 5px rgba(0,0,0,.35);
+  font-style:normal; color:rgba(255,255,255,.9); text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);
 }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
 .hero-ci{
   display:block; width:clamp(190px, 56vw, 240px); height:auto; margin-bottom:10px;
-  filter:drop-shadow(0 1px 4px rgba(0,0,0,.35));
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));
 }
 .hero-status{
   flex:none; display:inline-flex; align-items:center; gap:5px;
