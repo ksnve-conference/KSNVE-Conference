@@ -71,7 +71,7 @@ const allMajorItems: MajorItem[] = [
 
 /**
  * Before the conference there is nothing "in progress", and the earliest item
- * is the off-site 친선교류회 — so the home screen offers preparation links
+ * is the off-site 친선교류회 — so the home screen shows 참가 안내 links
  * instead. Deadline items drop off once their deadline has passed.
  */
 const REGISTRATION_DEADLINE = new Date('2026-11-11T18:00:00+09:00');
@@ -94,7 +94,6 @@ function prepItems(now: Date): { href: string; icon: IconName; title: string; de
       href: '/conference/lodging', icon: 'bed' as IconName,
       title: deadlineTitle('숙박 할인 예약', LODGING_DEADLINE, now), desc: '11/13(금)까지 · 신라스테이 여수 등 할인 숙소',
     }] : []),
-    { href: '/my', icon: 'star', title: '관심 발표를 ☆로 저장하세요', desc: '저장한 발표는 「내 일정」에 시간순으로 모입니다' },
     { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX 여수EXPO역 도보 5분 · 주차 할인' },
   ];
 }
@@ -228,7 +227,7 @@ export default function ProgramPage() {
           <>
             {isBefore ? (
               <div className="dashboard-section">
-                <div className="dashboard-heading"><h2>행사 준비</h2></div>
+                <div className="dashboard-heading"><h2>참가 안내</h2></div>
                 <div className="more-menu prep-list">
                   {prepItems(now).map((item) => (
                     <Link href={item.href} key={item.href}>
