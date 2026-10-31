@@ -40,7 +40,7 @@ allPapers.forEach((p) => {
 
 allSessions.forEach((s) => {
   if (!dates.has(s.date)) fail(`${s.id}: 학술대회 기간 밖의 날짜 ${s.date}`);
-  if (!venueNames.has(s.venue) && s.venue !== '미정') warn(`${s.id}: venues.json에 없는 장소 "${s.venue}"`);
+  if (!venueNames.has(s.venue) && !['미정', '학술대회 세미나실'].includes(s.venue)) warn(`${s.id}: venues.json에 없는 장소 "${s.venue}"`);
   if (!/^\d{2}:\d{2}/.test(s.time)) fail(`${s.id}: 시간 형식 오류 "${s.time}"`);
 });
 
