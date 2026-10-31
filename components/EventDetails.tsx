@@ -5,6 +5,7 @@ import type { EventDetails } from '@/lib/conference';
 /** An official event's introduction from the programme book: what it is,
  * its running order, the speaker or mentor, and practical notes. */
 export default function EventDetailsView({ details }: { details: EventDetails }) {
+  const hasBody = Boolean(details.image || details.lead || details.intro || details.rows?.length || details.program?.length || details.topics?.length || details.profile || details.notes?.length || details.links?.length);
   return (
     <>
       {details.preface && (
@@ -15,7 +16,7 @@ export default function EventDetailsView({ details }: { details: EventDetails })
           ))}
         </section>
       )}
-    <section className="detail-card event-details">
+    {hasBody && <section className="detail-card event-details">
       {details.image && (
         <a className="event-poster" href={details.image.src} target="_blank" rel="noreferrer">
           <img src={details.image.src} alt={details.image.alt} width={details.image.width} height={details.image.height} loading="lazy" />
@@ -98,7 +99,7 @@ export default function EventDetailsView({ details }: { details: EventDetails })
           <em><Icon name="chevron" size={17} /></em>
         </a>
       ))}
-    </section>
+    </section>}
     </>
   );
 }
