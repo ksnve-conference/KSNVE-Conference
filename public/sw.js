@@ -2,9 +2,9 @@
    Conference wifi is saturated by definition, so the programme has to work
    without the network. Everything here is static, which makes caching safe. */
 // Bump when cached files change under the same URL: activate deletes every
-// cache from an older version. v2 — autumn data replaced the spring
-// /paper-pages/*.webp images, which v1 caches kept serving.
-const VERSION = 'ksnve-v2';
+// cache from an older version. v3 brings existing visitors onto the welcome
+// intro and deployment-version checks. Saved schedules live outside these caches.
+const VERSION = 'ksnve-v3';
 const SHELL = `${VERSION}-shell`;
 const PAGES = `${VERSION}-pages`;
 const ASSETS = `${VERSION}-assets`;
