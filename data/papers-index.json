@@ -4162,8 +4162,12 @@
     "title": "함정 생존성 향상을 위한 기술 동향 고찰",
     "authors": "서영수, 이주엽(국방과학연)",
     "presenter": "서영수",
-    "hasAbstract": false,
-    "keywords": []
+    "hasAbstract": true,
+    "keywords": [
+      "Underwater radiated noise(수중방사소음)",
+      "Elastic mount(탄성마운트)",
+      "Metamaterial(메타물질)"
+    ]
   },
   {
     "paper_id": "p191",
