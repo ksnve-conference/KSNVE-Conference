@@ -98,9 +98,11 @@ export function useAnnouncements() {
   const [items, setItems] = useState<Announcement[]>(() => sortByDateDesc(bundled));
   const [source, setSource] = useState<AnnouncementSource>('bundled');
   const [read, setRead] = useState<string[]>([]);
+  const [readReady, setReadReady] = useState(false);
 
   useEffect(() => {
     setRead(readRead());
+    setReadReady(true);
     // A disabled or changed sheet must not revive notices from the old source.
     if (!SHEET_URL) return;
     try {
@@ -141,6 +143,8 @@ export function useAnnouncements() {
     });
   }, []);
 
-  const unread = items.filter((a) => !read.includes(a.id)).length;
+  // The server cannot know this browser's read history. Hide the badge until
+  // that history is loaded instead of briefly treating every notice as unread.
+  const unread = readReady ? items.filter((a) => !read.includes(a.id)).length : 0;
   return { items, source, read, unread, markRead };
 }
