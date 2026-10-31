@@ -46,6 +46,10 @@ export default function SponsorsPage() {
         {sponsors.exhibitors.map((company) => (
           <a className="exhibitor" key={company.name} href={company.url} target="_blank" rel="noreferrer">
             <span className="exhibitor-booth"><small>부스</small>{company.booth}</span>
+            {/* logo from the company's page in the programme book (pp. 18–26) */}
+            <span className="exhibitor-logo">
+              <img src={company.logo} alt="" width={company.logoWidth} height={company.logoHeight} loading="lazy" />
+            </span>
             <strong>{company.name}</strong>
             <Icon name="external" size={15} />
           </a>

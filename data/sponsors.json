@@ -141,137 +141,218 @@
     {
       "name": "싸이러스",
       "booth": "1, 2",
-      "url": "https://www.cylos.co.kr"
+      "url": "https://www.cylos.co.kr",
+      "logo": "/images/exhibitors/exhibitor-01.webp",
+      "logoWidth": 228,
+      "logoHeight": 166
     },
     {
       "name": "비앤피인스트루먼트",
       "booth": "3",
-      "url": "https://www.bandp.co.kr"
+      "url": "https://www.bandp.co.kr",
+      "logo": "/images/exhibitors/exhibitor-02.webp",
+      "logoWidth": 232,
+      "logoHeight": 137
     },
     {
       "name": "유아이티",
       "booth": "4",
-      "url": "https://www.uitsolutions.com"
+      "url": "https://www.uitsolutions.com",
+      "logo": "/images/exhibitors/exhibitor-03.webp",
+      "logoWidth": 186,
+      "logoHeight": 71
     },
     {
       "name": "미래엔시스",
       "booth": "5",
-      "url": "http://www.mres.co.kr"
+      "url": "http://www.mres.co.kr",
+      "logo": "/images/exhibitors/exhibitor-04.webp",
+      "logoWidth": 300,
+      "logoHeight": 63
     },
     {
       "name": "에스알테크",
       "booth": "6",
-      "url": "http://www.sunilrion.co.kr"
+      "url": "http://www.sunilrion.co.kr",
+      "logo": "/images/exhibitors/exhibitor-05.webp",
+      "logoWidth": 130,
+      "logoHeight": 134
     },
     {
       "name": "팜테크",
       "booth": "7",
-      "url": "https://www.famtech.co.kr"
+      "url": "https://www.famtech.co.kr",
+      "logo": "/images/exhibitors/exhibitor-06.webp",
+      "logoWidth": 302,
+      "logoHeight": 98
     },
     {
       "name": "카인큐텍",
       "booth": "8",
-      "url": "http://www.kineqt.com"
+      "url": "http://www.kineqt.com",
+      "logo": "/images/exhibitors/exhibitor-07.webp",
+      "logoWidth": 281,
+      "logoHeight": 111
     },
     {
       "name": "뮐러비비엠코리아",
       "booth": "9, 10",
-      "url": "https://www.paksystem.co.kr"
+      "url": "https://www.paksystem.co.kr",
+      "logo": "/images/exhibitors/exhibitor-08.webp",
+      "logoWidth": 315,
+      "logoHeight": 76
     },
     {
       "name": "에스앤브이코리아",
       "booth": "11",
-      "url": "http://www.snvkorea.co.kr"
+      "url": "http://www.snvkorea.co.kr",
+      "logo": "/images/exhibitors/exhibitor-09.webp",
+      "logoWidth": 272,
+      "logoHeight": 180
     },
     {
       "name": "키슬러코리아",
       "booth": "12",
-      "url": "https://www.kistler.com/KR/ko"
+      "url": "https://www.kistler.com/KR/ko",
+      "logo": "/images/exhibitors/exhibitor-10.webp",
+      "logoWidth": 266,
+      "logoHeight": 95
     },
     {
       "name": "인페이스",
       "booth": "13, 14",
-      "url": "https://www.infaith.kr"
+      "url": "https://www.infaith.kr",
+      "logo": "/images/exhibitors/exhibitor-11.webp",
+      "logoWidth": 297,
+      "logoHeight": 68
     },
     {
       "name": "한국데베소프트",
       "booth": "15",
-      "url": "https://dewesoft.com/ko"
+      "url": "https://dewesoft.com/ko",
+      "logo": "/images/exhibitors/exhibitor-12.webp",
+      "logoWidth": 294,
+      "logoHeight": 56
     },
     {
       "name": "에스피씨테크놀로지",
       "booth": "16",
-      "url": "https://www.spctech.co.kr"
+      "url": "https://www.spctech.co.kr",
+      "logo": "/images/exhibitors/exhibitor-13.webp",
+      "logoWidth": 341,
+      "logoHeight": 50
     },
     {
       "name": "앤플럭스",
       "booth": "17",
-      "url": "https://www.anflux.com"
+      "url": "https://www.anflux.com",
+      "logo": "/images/exhibitors/exhibitor-14.webp",
+      "logoWidth": 296,
+      "logoHeight": 147
     },
     {
       "name": "프레스토솔루션",
       "booth": "18",
-      "url": "https://www.prestosolution.co.kr"
+      "url": "https://www.prestosolution.co.kr",
+      "logo": "/images/exhibitors/exhibitor-15.webp",
+      "logoWidth": 340,
+      "logoHeight": 123
     },
     {
       "name": "헤드어쿠스틱스코리아",
       "booth": "19",
-      "url": "https://www.head-acoustics.com"
+      "url": "https://www.head-acoustics.com",
+      "logo": "/images/exhibitors/exhibitor-16.webp",
+      "logoWidth": 282,
+      "logoHeight": 154
     },
     {
       "name": "동성케미컬",
       "booth": "20",
-      "url": "https://idongsung.com"
+      "url": "https://idongsung.com",
+      "logo": "/images/exhibitors/exhibitor-17.webp",
+      "logoWidth": 190,
+      "logoHeight": 180
     },
     {
       "name": "케이티엠엔지니어링",
       "booth": "21",
-      "url": "http://www.ktmeng.com"
+      "url": "http://www.ktmeng.com",
+      "logo": "/images/exhibitors/exhibitor-18.webp",
+      "logoWidth": 293,
+      "logoHeight": 93
     },
     {
       "name": "케이티엠테크놀로지",
       "booth": "22",
-      "url": "http://www.ktme.com"
+      "url": "http://www.ktme.com",
+      "logo": "/images/exhibitors/exhibitor-19.webp",
+      "logoWidth": 279,
+      "logoHeight": 96
     },
     {
       "name": "지멘스 인더스트리 소프트웨어",
       "booth": "23",
-      "url": "https://siemens.com/plm"
+      "url": "https://siemens.com/plm",
+      "logo": "/images/exhibitors/exhibitor-20.webp",
+      "logoWidth": 296,
+      "logoHeight": 58
     },
     {
       "name": "하이센이노텍",
       "booth": "24",
-      "url": "http://www.hysen.com"
+      "url": "http://www.hysen.com",
+      "logo": "/images/exhibitors/exhibitor-21.webp",
+      "logoWidth": 281,
+      "logoHeight": 70
     },
     {
       "name": "윈코스",
       "booth": "25",
-      "url": "https://wincos.co.kr"
+      "url": "https://wincos.co.kr",
+      "logo": "/images/exhibitors/exhibitor-22.webp",
+      "logoWidth": 305,
+      "logoHeight": 77
     },
     {
       "name": "에이티에스",
       "booth": "26",
-      "url": "https://www.ats2013.com"
+      "url": "https://www.ats2013.com",
+      "logo": "/images/exhibitors/exhibitor-23.webp",
+      "logoWidth": 341,
+      "logoHeight": 178
     },
     {
       "name": "게르브코리아",
       "booth": "27",
-      "url": "https://ko.gerb.com"
+      "url": "https://ko.gerb.com",
+      "logo": "/images/exhibitors/exhibitor-24.webp",
+      "logoWidth": 344,
+      "logoHeight": 130
     },
     {
       "name": "세안기술",
       "booth": "28",
-      "url": "http://www.sae-an.co.kr"
+      "url": "http://www.sae-an.co.kr",
+      "logo": "/images/exhibitors/exhibitor-25.webp",
+      "logoWidth": 337,
+      "logoHeight": 82
     },
     {
       "name": "한국원자력연구원",
       "booth": "29",
-      "url": "https://www.kaeri.re.kr"
+      "url": "https://www.kaeri.re.kr",
+      "logo": "/images/exhibitors/exhibitor-26.webp",
+      "logoWidth": 316,
+      "logoHeight": 155
     },
     {
       "name": "한국건설생활환경시험연구원",
       "booth": "30, 31",
-      "url": "https://kcl.re.kr"
+      "url": "https://kcl.re.kr",
+      "logo": "/images/exhibitors/exhibitor-27.webp",
+      "logoWidth": 220,
+      "logoHeight": 166
     }
   ]
 }
