@@ -45,7 +45,12 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
           />
         )}
         <div className="hero-title-block">
-          {!compact && <span className="hero-org-name">한국소음진동공학회</span>}
+          {!compact && (
+            <span className="hero-org-name">
+              <img src="/images/ksnve-mark-white.png" alt="" width={36} height={24} />
+              한국소음진동공학회
+            </span>
+          )}
           <b>{conferenceConfig.headerTitle}</b>
           <small>
             <span>{compact ? conferenceConfig.displayDate : conferenceConfig.heroDate}</span>
