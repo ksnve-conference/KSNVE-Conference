@@ -14,7 +14,7 @@ export function sessionRange(session: Pick<Session, 'date' | 'time'>) {
 const majorEventPattern = /평의원회|개회|개막|키노트|keynote|기조\s*강연|plenary|초청.*강연|특별\s*초청강연|특별세션|총회|시상|만찬|웰컴\s*리셉션|웰컴리셉션|폐회|폐막|대토론회|교양\s*강좌|마술|캐리커쳐|학회발전\s*TF|친선교류회/i;
 const isMajorEvent = (s: Session) => majorEventPattern.test(`${s.title} ${s.category}`);
 
-export type MajorItem = { key: string; href: string; date: string; time: string; title: string; venue: string };
+export type MajorItem = { key: string; href: string; date: string; time: string; title: string; venue: string; speaker?: string };
 
 /** Keynotes are talks inside ordinary sessions, not sessions of their own, so
  * they are picked out of the paper list and link to the talk itself. */
@@ -32,6 +32,7 @@ const keynoteItems: MajorItem[] = papers
 export const allMajorItems: MajorItem[] = [
   ...sessions.filter(isMajorEvent).map((s): MajorItem => ({
     key: s.id, href: `/sessions/${s.id}`, date: s.date, time: s.time, title: formatSessionTitle(s.title), venue: s.venue,
+    speaker: s.speaker,
   })),
   ...keynoteItems,
 ].sort((a, b) => sessionRange(a).start - sessionRange(b).start);

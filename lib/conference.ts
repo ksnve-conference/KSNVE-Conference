@@ -46,6 +46,8 @@ export type Session = {
   venue: string;
   chair: string;
   category: string;
+  /** Invited lecture / 교양강좌 speaker, shown on its own line rather than in the title. */
+  speaker?: string;
 };
 
 export type Venue = { id: string; name: string; floor: string };

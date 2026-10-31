@@ -20,7 +20,8 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
   const venue = venues.find((item) => item.name === session.venue);
   const hasChair = Boolean(session.chair && session.chair !== '-');
   const isTalk = /키노트|초청/.test(session.category);
-  const metaText = isTalk && sessionPapers.length > 0
+  const metaText = session.speaker ? `연사 ${session.speaker}`
+    : isTalk && sessionPapers.length > 0
     ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
     : [hasChair ? `좌장 ${session.chair}` : null, sessionPapers.length > 0 ? `발표 ${sessionPapers.length}건` : null]
       .filter(Boolean).join(' · ');

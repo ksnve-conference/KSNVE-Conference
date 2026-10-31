@@ -236,7 +236,7 @@ export default function ProgramPage() {
                 {majorEvents.map((item) => (
                   <Link href={item.href} key={item.key}>
                     <time>{item.time.split('~')[0]}</time>
-                    <div><b>{item.title}</b><small>{item.venue}</small></div>
+                    <div><b>{item.title}</b><small>{item.speaker ? `${item.venue} · 연사 ${item.speaker}` : item.venue}</small></div>
                     <span><Icon name="chevron" size={16} /></span>
                   </Link>
                 ))}

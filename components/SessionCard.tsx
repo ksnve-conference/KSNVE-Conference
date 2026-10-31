@@ -20,7 +20,8 @@ export default function SessionCard({
 }: Props) {
   const [start, end] = session.time.split('~');
   const title = formatSessionTitle(session.title);
-  const metaText = isTalkSession(session) && sessionPapers.length > 0
+  const metaText = session.speaker ? `연사 ${session.speaker}`
+    : isTalkSession(session) && sessionPapers.length > 0
     ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
     : session.chair && session.chair !== '-' ? `좌장 ${session.chair}` : '';
 
