@@ -20,10 +20,6 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
           <span /><span /><span /><span />
         </div>
       )}
-      {!compact && (
-        // The programme book's emblem, so the app reads as the same event
-        <img className="hero-emblem" src="/images/hero-emblem.webp" alt="" width={64} height={64} />
-      )}
       <Link href="/" className="brand-mark">
         {compact && (
           <Image

@@ -294,9 +294,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today{
   position:relative; overflow:hidden;
   min-height:clamp(268px, 72vw, 340px);
-  /* top padding keeps the text clear of the emblem; on narrow phones the
-     hero grows taller instead of the logo running into it */
-  padding:calc(14px + clamp(58px, 16vw, 72px) + 12px) 18px 22px;
+  /* top padding clears the notice button; on narrow phones the hero grows
+     taller instead of the text running into it */
+  padding:66px 18px 22px;
   display:flex; align-items:flex-end; gap:12px;
   background:#000; /* shows briefly while photos decode and between crossfades */
   color:#fff;
@@ -378,11 +378,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-ci{
   display:block; width:clamp(190px, 56vw, 240px); height:auto; margin-bottom:10px;
   filter:drop-shadow(0 1px 4px rgba(0,0,0,.35));
-}
-.hero-emblem{
-  position:absolute; top:14px; left:16px; z-index:2;
-  width:clamp(58px, 16vw, 72px); height:auto; border-radius:50%;
-  box-shadow:0 4px 14px rgba(0,0,0,.28);
 }
 .hero-status{
   flex:none; display:inline-flex; align-items:center; gap:5px;
@@ -533,6 +528,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .detail-shell{ padding-bottom:96px; }
 
 /* ---------- information pages ---------- */
+/* 행사개요: the programme book's emblem above the introduction */
+.conference-emblem{ display:block; width:clamp(132px, 38vw, 168px); height:auto; margin:14px auto 4px; border-radius:50%; box-shadow:0 6px 18px rgba(22,48,74,.12); }
 .info-intro{ margin:6px 2px 0; font-size:var(--type-body); line-height:1.7; color:var(--text-2); }
 .info-subhead{ margin:28px 2px 12px; font-size:var(--type-section); font-weight:700; letter-spacing:-.02em; }
 .info-table{
