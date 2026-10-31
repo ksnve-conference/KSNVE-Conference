@@ -62,6 +62,18 @@ const keynoteItems: MajorItem[] = papers
     title: `${p.keynoteNo ? `키노트 강연 ${p.keynoteNo}` : '키노트 강연'} - ${p.title}`,
     venue: p.venue,
   }));
+const allMajorItems: MajorItem[] = [
+  ...sessions.filter(isMajorEvent).map((s): MajorItem => ({
+    key: s.id, href: `/sessions/${s.id}`, date: s.date, time: s.time, title: formatSessionTitle(s.title), venue: s.venue,
+  })),
+  ...keynoteItems,
+];
+
+/** "11.26 (목)" for the 주요 일정 heading. */
+function shortDate(date: string) {
+  const [, month, day] = date.split('-');
+  return `${Number(month)}.${Number(day)} (${dayLabel(date).split(' ')[1] ?? ''})`;
+}
 
 export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
@@ -113,14 +125,18 @@ export default function ProgramPage() {
 
   const now = mockNow?.instant ?? new Date();
   const currentOrNext = useMemo(() => currentOrNextSessions(sessions, dashboardDate, now), [dashboardDate, now]);
-  const majorEvents = useMemo(() => [
-    ...sessions.filter(isMajorEvent).map((s): MajorItem => ({
-      key: s.id, href: `/sessions/${s.id}`, date: s.date, time: s.time, title: formatSessionTitle(s.title), venue: s.venue,
-    })),
-    ...keynoteItems,
-  ]
-    .filter((item) => item.date === dashboardDate && sessionRange(item).end > now.getTime())
-    .sort((a, b) => sessionRange(a).start - sessionRange(b).start), [dashboardDate, now]);
+  // Once the day's last major event has started, the list turns to the next
+  // day's instead of sitting empty through the evening.
+  const { majorDate, majorEvents } = useMemo(() => {
+    const upcomingOn = (day: string) => allMajorItems
+      .filter((item) => item.date === day && sessionRange(item).end > now.getTime())
+      .sort((a, b) => sessionRange(a).start - sessionRange(b).start);
+    const todays = upcomingOn(dashboardDate);
+    const nextDate = (dates as string[])[(dates as string[]).indexOf(dashboardDate) + 1];
+    if (todays.length === 0 && isDuring && nextDate) return { majorDate: nextDate, majorEvents: upcomingOn(nextDate) };
+    return { majorDate: dashboardDate, majorEvents: todays };
+  }, [dashboardDate, now]); // eslint-disable-line react-hooks/exhaustive-deps
+  const majorDayNo = (dates as string[]).indexOf(majorDate) + 1;
   const daySessions = useMemo(() => sessions
     .filter((s) => s.date === date)
     .sort((a, b) => a.time.localeCompare(b.time)), [date]);
@@ -199,7 +215,12 @@ export default function ProgramPage() {
             </div>
 
             <div className="dashboard-section">
-              <div className="dashboard-heading"><h2>주요 일정</h2></div>
+              <div className="dashboard-heading">
+                <h2>{majorDayNo}일차 주요 일정</h2>
+                <span className="dashboard-heading-date">
+                  {isDuring && majorDate !== dashboardDate ? '내일 · ' : ''}{shortDate(majorDate)}
+                </span>
+              </div>
               <div className="major-event-list">
                 {majorEvents.map((item) => (
                   <Link href={item.href} key={item.key}>

@@ -553,6 +553,7 @@ body{
 .major-event-list b{ font-size:15px; }
 .major-event-list small{ font-size:13px; }
 .announcement-list b{ font-size:15px; font-weight:700; }
+.dashboard-heading-date{ font-size:var(--type-caption); font-weight:600; color:var(--muted); }
 .announcement-list > button.open small{
   overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5; color:var(--text-2);
 }
