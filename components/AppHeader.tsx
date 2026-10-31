@@ -26,29 +26,22 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
       )}
       <Link href="/" className="brand-mark">
         {compact && (
-          <>
-            {/* Official horizontal CI (colour) from KSNVE_CI.ai */}
-            <Image
-              className="brand-ci"
-              src="/images/ksnve-ci-horizontal.webp"
-              alt="사단법인 한국소음진동공학회"
-              width={600}
-              height={119}
-              sizes="160px"
-              priority
-            />
-            <span className="brand-divider" aria-hidden="true" />
-          </>
+          <Image
+            className="brand-logo"
+            src="/images/ksnve-logo-transparent.png"
+            alt="한국소음진동공학회"
+            width={594}
+            height={587}
+            sizes="76px"
+            priority
+          />
         )}
         <div className="hero-title-block">
           {!compact && (
             // Official horizontal CI (white, for coloured backgrounds) from KSNVE_CI.ai
             <img className="hero-ci" src="/images/ksnve-ci-horizontal-white.webp" alt="사단법인 한국소음진동공학회" width={900} height={179} />
           )}
-          {compact ? (
-            // two short lines beside the CI instead of one long ellipsized line
-            <b><span>{conferenceConfig.headerTitle.split(' ').slice(0, 2).join(' ')}</span><span>{conferenceConfig.headerTitle.split(' ').slice(2).join(' ')}</span></b>
-          ) : <b>{conferenceConfig.headerTitle}</b>}
+          <b>{conferenceConfig.headerTitle}</b>
           <small>
             <span>{compact ? conferenceConfig.displayDate : conferenceConfig.heroDate}</span>
             <span>{conferenceConfig.venue}</span>

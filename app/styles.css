@@ -378,6 +378,15 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   background:rgba(8,22,36,.32); backdrop-filter:blur(6px);
 }
 
+/* Conference name and hero details in the CI typeface (고도M, one weight —
+   no synthetic bold, which would smear its strokes) */
+.hero .hero-title-block b,
+.hero-today .hero-title-block small,
+.hero-today .conference-tagline,
+.hero-status{
+  font-family:var(--font-ci), var(--font-body), sans-serif;
+  font-weight:500; font-synthesis:none;
+}
 .hero-compact{
   height:64px; min-height:64px; overflow:visible;
   display:flex; align-items:center; gap:10px;
@@ -387,14 +396,12 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-compact:after{ display:none; }
 .hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
-.hero-compact .brand-ci{ width:auto; height:30px; flex:none; }
-.hero-compact .brand-divider{ flex:none; width:1px; height:28px; background:var(--line); }
+.hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
 .hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
 .hero-compact .hero-title-block b{
-  display:flex; flex-direction:column; white-space:nowrap;
-  font-size:15px; line-height:1.25; font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
+  display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:var(--type-screen); font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
 }
-.hero-compact .hero-title-block b span:first-child{ font-size:12px; font-weight:600; color:var(--muted); }
 .hero-compact .hero-title-block small,
 .hero-compact .conference-tagline{ display:none; }
 .hero-compact .hero-links{ position:static; margin-left:auto; }

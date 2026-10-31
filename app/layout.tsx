@@ -18,6 +18,17 @@ const bodyFont = localFont({
   fallback: ['-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'],
 });
 
+// 고도M, the KSNVE CI typeface, subset to the conference name and the hero's
+// date/venue/theme/badge text (~5 KB). Regenerate with scripts/subset-ci-font.py.
+const ciFont = localFont({
+  src: './fonts/GodoM.subset.woff2',
+  weight: '500',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-ci',
+  fallback: ['sans-serif'],
+});
+
 // KakaoTalk/Slack/등 링크 미리보기 크롤러는 상대 경로 og:image를 못 읽는 경우가 많아
 // 절대 URL로 못박아야 한다. 실제 배포 주소가 정해지면 여기 또는
 // NEXT_PUBLIC_SITE_URL 환경변수로 갱신할 것.
@@ -59,7 +70,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={bodyFont.variable}>
+    <html lang="ko" className={`${bodyFont.variable} ${ciFont.variable}`}>
       <body>
         <OfflineReady />
         {children}
