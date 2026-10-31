@@ -81,5 +81,8 @@ body{font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-ser
 @media(max-width:560px){.venue-session-row{grid-template-columns:64px minmax(0,1fr) 16px}.venue-paper-list{padding-left:76px}.venue-session-body h3{font-size:17px}}
 
 /* Figure strips retain the original aspect ratio; the hint never covers captions. */
+.abstract:has(+ .paper-figures) .abstract-text:last-child{margin-bottom:0}
+.paper-figures{padding-top:12px}
+.paper-figures + .original-page{padding-top:12px}
 .paper-figures .page-preview{min-height:0;background:#fff;box-shadow:none}
 .paper-figures .zoom-hint{position:static;display:block;border-radius:0;background:var(--card-2);color:var(--brand);text-align:right}
