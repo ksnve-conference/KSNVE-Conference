@@ -9,6 +9,7 @@ import { venues, type Venue } from '@/lib/conference';
 // Cropped from the programme book's 행사장 배치도 (PDF p21, rendered at 300dpi).
 const floors = [
   {
+    id: 'floor-b1',
     title: 'B1층 · 세미나실',
     src: '/images/Venue_layout_B1.webp',
     width: 1322,
@@ -16,6 +17,8 @@ const floors = [
     rooms: ['세미나실[1]', 'LIG D&A홀', '세미나실[3]', '세미나실[4]', '세미나실[5]', '세미나실[6]', '세미나실[7]', '세미나실[8]', '세미나실[10]'],
   },
   {
+    // linked from the sponsors page (전시부스) as #floor-1f
+    id: 'floor-1f',
     title: '1층 · 컨퍼런스홀',
     src: '/images/Venue_layout_1F.webp',
     width: 1672,
@@ -47,7 +50,7 @@ export default function VenueLayoutPage() {
 
       <div className="venue-floor-list">
         {floors.map((floor) => (
-          <section className="venue-floor-section" key={floor.title}>
+          <section className="venue-floor-section" id={floor.id} key={floor.id}>
             <h2>{floor.title}</h2>
             <FloorPlanViewer floor={floor.title} src={floor.src} width={floor.width} height={floor.height} />
             <nav className="floor-room-list" aria-label={`${floor.title} 발표장`}>

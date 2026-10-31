@@ -40,7 +40,7 @@ export default function SponsorsPage() {
 
       <h2 className="info-subhead">전시회 출품 업체 <em className="sponsor-count">{sponsors.exhibitors.length}</em></h2>
       <p className="section-note">
-        전시부스는 1층 컨퍼런스홀과 로비에 있습니다. <Link className="text-link" href="/conference/venue-layout">행사장 배치도 <Icon name="chevron" size={13} /></Link>
+        전시부스는 1층 컨퍼런스홀과 로비에 있습니다. <Link className="text-link" href="/conference/venue-layout#floor-1f">행사장 배치도 <Icon name="chevron" size={13} /></Link>
       </p>
       <div className="exhibitor-list">
         {sponsors.exhibitors.map((company) => (
