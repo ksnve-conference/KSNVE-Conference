@@ -53,6 +53,7 @@ export type Session = {
 };
 
 export type EventDetails = {
+  preface?: { title: string; paragraphs: string[] };
   /** Poster or banner cut from the programme page */
   image?: { src: string; alt: string; width: number; height: number };
   lead?: string;

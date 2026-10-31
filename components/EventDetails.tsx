@@ -6,6 +6,15 @@ import type { EventDetails } from '@/lib/conference';
  * its running order, the speaker or mentor, and practical notes. */
 export default function EventDetailsView({ details }: { details: EventDetails }) {
   return (
+    <>
+      {details.preface && (
+        <section className="detail-card event-details">
+          <h2>{details.preface.title}</h2>
+          {details.preface.paragraphs.map((paragraph) => (
+            <p className="event-intro" key={paragraph}>{paragraph}</p>
+          ))}
+        </section>
+      )}
     <section className="detail-card event-details">
       {details.image && (
         <a className="event-poster" href={details.image.src} target="_blank" rel="noreferrer">
@@ -90,5 +99,6 @@ export default function EventDetailsView({ details }: { details: EventDetails })
         </a>
       ))}
     </section>
+    </>
   );
 }

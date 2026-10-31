@@ -555,6 +555,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .event-lead{ margin:0 0 8px; font-size:var(--type-body); font-weight:700; color:var(--brand-ink); }
 .event-intro{ margin:0; font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
 .event-details .info-table{ margin-top:14px; }
+.event-intro + .event-intro{ margin-top:14px; }
 .event-program{ margin:0; padding:0; list-style:none; }
 .event-program li{ display:grid; grid-template-columns:86px 1fr; gap:12px; padding:13px 0; border-top:1px solid var(--line-soft); }
 .event-program li:first-child{ border-top:0; padding-top:2px; }
