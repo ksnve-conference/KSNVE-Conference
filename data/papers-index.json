@@ -2549,11 +2549,13 @@
     "title": "바닥충격음 측정장비의 측정결과 비교 및 측정 소급성 검토",
     "authors": "문완기, 연준오, 문순성(조선해양기자재연)",
     "presenter": "문완기",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
-      "Floor Impact Sound",
+      "Floor Impact Sound(바닥충격음)",
       "Acoustic Measurement System(음향 측정시스템)",
-      "Measurement"
+      "Measurement Comparison(측정결과 비교)",
+      "One-Third Octave Band(1/3 옥타브밴드 분석)",
+      "Measurement Agreement(측정결과 일치성)"
     ]
   },
   {
