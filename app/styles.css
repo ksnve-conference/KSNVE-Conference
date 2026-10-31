@@ -594,6 +594,9 @@ body{
 .major-event-list b{ font-size:15px; }
 .major-event-list small{ font-size:13px; }
 .announcement-list b{ font-size:15px; font-weight:700; }
+/* notice text was 13px with a 9px tag — the smallest text on the home screen */
+.announcement-list small{ font-size:var(--type-meta); line-height:1.55; }
+.announcement-list > button > span{ font-size:11px; padding:4px 5px; }
 .dashboard-heading-date{ font-size:var(--type-caption); font-weight:600; color:var(--muted); }
 .announcement-list > button.open small{
   overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5; color:var(--text-2);
