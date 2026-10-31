@@ -106,13 +106,17 @@ export default function ProgramPage() {
       ? requestedDate : dashboardDate);
   }, [dashboardDate]);
 
-  // Align the program section after the selected day's content has rendered.
+  // Locate the session after the selected day's content has rendered.
   useEffect(() => {
-    if (window.location.hash !== '#program') return;
+    const anchor = window.location.hash.slice(1);
+    if (anchor !== 'program' && !anchor.startsWith('session-')) return;
     let secondFrame = 0;
     const firstFrame = requestAnimationFrame(() => {
       secondFrame = requestAnimationFrame(() => {
-        document.getElementById('program')?.scrollIntoView({ behavior: 'instant', block: 'start' });
+        const sessionRow = anchor.startsWith('session-') ? document.getElementById(anchor) : null;
+        (sessionRow ?? document.getElementById('program'))?.scrollIntoView({
+          behavior: 'instant', block: sessionRow ? 'center' : 'start',
+        });
       });
     });
     return () => {

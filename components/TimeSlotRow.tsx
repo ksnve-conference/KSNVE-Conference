@@ -30,7 +30,7 @@ export default function TimeSlotRow({
     : session.chair && session.chair !== '-' ? `좌장 ${session.chair}` : '';
 
   return (
-    <div className={`time-slot-row${saved ? ' mine' : ''}`}>
+    <div id={`session-${session.id}`} className={`time-slot-row${saved ? ' mine' : ''}`}>
       <div className="time-slot-row-main">
         <Link href={`/sessions/${session.id}`} className="time-slot-row-link">
           <span className="time-slot-hall">{session.venue}</span>
