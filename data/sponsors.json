@@ -79,17 +79,10 @@
           "url": "https://www.paksystem.co.kr"
         },
         {
-          "name": "삼성전자",
-          "logo": "/images/sponsors/samsung-electronics.webp",
-          "width": 270,
-          "height": 110,
-          "url": "https://www.samsung.com/sec/"
-        },
-        {
           "name": "삼성물산 건설부문",
-          "logo": "/images/sponsors/samsung-cnt.webp",
-          "width": 354,
-          "height": 82,
+          "logo": "/images/sponsors/samsung-cnt-ci.webp",
+          "width": 638,
+          "height": 110,
           "url": "https://www.secc.co.kr"
         },
         {
