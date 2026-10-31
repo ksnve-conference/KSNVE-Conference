@@ -39,7 +39,7 @@ export default function OriginalPageViewer({ src, title }: OriginalPageViewerPro
     <section className="abstract original-page">
       <div className="original-page-heading">
         <div>
-          <h2>확장요약문</h2>
+          <h2>확장요약문 원문</h2>
           <p>학술대회 제출 원문</p>
         </div>
         <a href={src} target="_blank" rel="noreferrer">
@@ -73,7 +73,7 @@ export default function OriginalPageViewer({ src, title }: OriginalPageViewerPro
       >
         <header>
           <div>
-            <b>확장요약문</b>
+            <b>확장요약문 원문</b>
             <span>{title}</span>
           </div>
           <button type="button" onClick={enterFullscreen}>전체 화면</button>

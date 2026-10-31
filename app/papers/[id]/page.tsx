@@ -105,7 +105,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
         {/* Talks without an extended abstract show the programme information only. */}
         {paper.abstract && (
           <section className="abstract">
-            <h2>초록</h2>
+            <h2>확장요약문</h2>
             {paper.abstract.split('\n\n').map((paragraph, index) => (
               <p className="abstract-text" key={index}>{paragraph}</p>
             ))}
