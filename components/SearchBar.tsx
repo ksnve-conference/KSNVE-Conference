@@ -7,10 +7,10 @@ type Props = {
   autoFocus?: boolean;
 };
 
-export default function SearchBar({ value, onChange, placeholder = '제목, 저자, 발표자, 세션, 장소 검색', autoFocus = false }: Props) {
+export default function SearchBar({ value, onChange, placeholder = '논문 제목, 저자, 발표자, 세션, 장소 검색', autoFocus = false }: Props) {
   return (
     <label className="search-wrap">
-      <span className="sr-only">학술대회 검색</span>
+      <span className="sr-only">통합검색</span>
       <span className="search-icon"><Icon name="search" size={18} /></span>
       <input
         type="search"

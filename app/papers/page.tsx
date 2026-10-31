@@ -107,10 +107,10 @@ function PapersPageInner() {
     <main className="shell app-shell">
       <AppHeader compact showNotice={false} />
       <section>
-        <div className="screen-title"><h1>발표 논문</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
+        <div className="screen-title"><h1>통합검색</h1><strong>{searching ? searchTotal : filtered.length}</strong></div>
 
         <div className="search-cluster">
-          <SearchBar value={query} onChange={setQuery} placeholder="제목, 저자, 발표자, 세션, 장소 검색" />
+          <SearchBar value={query} onChange={setQuery} placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색" />
           {recent.length > 0 && (
             <div className="recent-chips" role="group" aria-label="최근 검색">
               {recent.map((item) => (

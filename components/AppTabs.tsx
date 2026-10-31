@@ -6,7 +6,7 @@ import Icon, { type IconName } from '@/components/Icon';
 
 const items: { href: string; label: string; icon: IconName; match: (path: string) => boolean }[] = [
   { href: '/', label: '프로그램', icon: 'calendar', match: (p) => p === '/' || p.startsWith('/sessions') },
-  { href: '/papers', label: '논문', icon: 'papers', match: (p) => p.startsWith('/papers') },
+  { href: '/papers', label: '통합검색', icon: 'search', match: (p) => p.startsWith('/papers') },
   { href: '/my', label: '내 일정', icon: 'star', match: (p) => p.startsWith('/my') },
   { href: '/more', label: '더보기', icon: 'more', match: (p) => p.startsWith('/more') || p.startsWith('/venues') || p.startsWith('/notices') || p.startsWith('/sponsors') || p.startsWith('/conference') || p.startsWith('/app-info') },
 ];
