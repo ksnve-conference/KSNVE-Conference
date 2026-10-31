@@ -48,6 +48,8 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
     (count, session) => count + papers.filter((paper) => paper.sessionId === session.id).length,
     0,
   );
+  // 엑스포홀·연회장 같은 행사 전용 장소는 발표논문이 없으니 일정만 보여 준다.
+  const hasPapers = paperCount > 0;
 
   return (
     <main className="shell detail-shell venue-detail">
@@ -56,12 +58,12 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
 
       <section className="profile-hero venue-hero">
         <span><Icon name="pin" size={28} /></span>
-        <p className="kicker">발표장</p>
+        <p className="kicker">{hasPapers ? '발표장' : '행사장'}</p>
         <h1>{venue.name}</h1>
-        <p>예정 세션 {venueSessions.length}개 · 발표논문 {paperCount}건</p>
+        <p>{hasPapers ? `예정 세션 ${venueSessions.length}개 · 발표논문 ${paperCount}건` : `예정 일정 ${venueSessions.length}개`}</p>
       </section>
 
-      <h2 className="section-title">이 장소의 세션과 발표논문</h2>
+      <h2 className="section-title">{hasPapers ? '이 장소의 세션과 발표논문' : '이 장소의 일정'}</h2>
 
       {venueSessions.length ? (
         <div className="venue-session-list">
@@ -73,7 +75,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
             const title = formatSessionTitle(session.title);
             const metaText = isTalkSession(session) && sessionPapers.length > 0
               ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
-              : [session.chair && session.chair !== '-' ? `좌장 ${session.chair}` : null, `발표 ${sessionPapers.length}건`]
+              : [session.chair && session.chair !== '-' ? `좌장 ${session.chair}` : null, sessionPapers.length > 0 ? `발표 ${sessionPapers.length}건` : null]
                 .filter(Boolean).join(' · ');
 
             return (
@@ -89,7 +91,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                     <h3>
                       <Link href={`/sessions/${session.id}`}>{title}</Link>
                     </h3>
-                    <p>{metaText}</p>
+                    {metaText && <p>{metaText}</p>}
                   </div>
 
                   <Link className="chevron" href={`/sessions/${session.id}`} aria-label={`${title} 세션 보기`}>
@@ -97,7 +99,7 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                   </Link>
                 </div>
 
-                {sessionPapers.length > 0 ? (
+                {sessionPapers.length > 0 && (
                   <div className="venue-paper-list">
                     {sessionPapers.map((paper) => (
                       <Link className="venue-paper-item" href={`/papers/${paper.id}`} key={paper.id}>
@@ -107,8 +109,6 @@ export default async function VenueDetail({ params }: { params: Promise<{ id: st
                       </Link>
                     ))}
                   </div>
-                ) : (
-                  <p className="venue-paper-empty">등록된 발표논문이 없는 공식 일정입니다.</p>
                 )}
               </article>
             );
