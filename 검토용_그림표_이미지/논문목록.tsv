@@ -1,0 +1,212 @@
+﻿논문번호	논문제목	이미지파일
+p001	소형 개인 음환경을 위한 메타물질 결합 초음파 트랜스듀서 설계 방법	p001-figures.webp
+p003	Advancing Automatic Audio Panning: Dynamic Performer Spatial Mapping and Real-Time Implementation	p003-figures.webp
+p004	Transformer 기반 민간항공기 소음 이벤트 감지 모델의 소음평가 적용성 분석	p004-figures.webp
+p009	우주 쓰레기 제거를 위한 레이저 유도 플라즈마의 Neural Representation 모델링	p009-figures.webp
+p011	풍력터빈 블레이드용 병진형 전자기 에너지 하베스터의 성능 향상	p011-figures.webp
+p012	Acoustic Emission–force Coupling Behavior during Drop-weight Impact of Lithium-ion Batteries	p012-figures.webp
+p013	EAA 축류팬의 정상 및 비정상 유동해석에 따른 공력성능 비교	p013-figures.webp
+p014	공력성능 개선에 따른 초소형 전기소방차의 주행가능거리 예측	p014-figures.webp
+p015	적층제조 Inconel 718의 상별 크리프 거동 분자동역학 해석: 기하 정규화를 통한 쌍정경계 효과 분리	p015-figures.webp
+p017	VPT 기반 LM-FBS에서 센서 및 Virtual Point 배치에 따른 결합 정확도 분석	p017-figures.webp
+p018	세탁기 소음 스펙트럼 예측을 위한 조건부 잠재공간 모델링	p018-figures.webp
+p019	Acoustic black hole beam의 진동 응답 예측을 위한 역학적 일관성 강화 물리정보 신경망	p019-figures.webp
+p021	물리 정보 기반 신경망을 이용한 평판의 실험 진동 고유모드 파악	p021-figures.webp
+p022	A Reliable, Physics-informed Model for Assessing Battery State of Health Across Diverse Battery Types	p022-figures.webp
+p023	비전 기반 역하중 식별을 통한 미계측 지점 진동 응답 추정	p023-figures.webp
+p024	산업용 모터 진단을 위한 Conventional Feature 및 Condition Index의 특징 기여도 분석	p024-figures.webp
+p025	다중 소수 샘플링률 저프레임 영상 기반 고주파 진동 변위 복원	p025-figures.webp
+p028	다중 스케일 텐서 패킹을 통한 위상기반 모션 증폭의 GPU 연산 최적화	p028-figures.webp
+p029	Spectral Element Method 기반 탄성지지 등가 보 모델을 이용한 차량 테일게이트의 진동 응답 예측	p029-figures.webp
+p030	CAD 형상 정보를 활용한 딥러닝 기반 구조물 고유진동수 예측	p030-figures.webp
+p031	허브형 음향 블랙홀 구조를 통한 저주파 밴드갭 형성	p031-figures.webp
+p034	Vibration-driven tunable acoustic absorber utilizing granular segregation	p034-figures.webp
+p035	다채널 가속도 주파수 특징 설계 및 모델 최적화를 통한 작동 음압 예측	p035-figures.webp
+p036	바이노럴 음원 분리	p036-figures.webp
+p037	목표 음성 추출을 위한 센트로이드 공간 매핑 기반 간섭 화자 단서 추정	p037-figures.webp
+p038	전역, 국소, 주기적 음성패턴을 활용한 음성 소음 감소	p038-figures.webp
+p040	상태 변화 분석과 이상 근거 결합을 통한 조기경보 판정 고도화	p040-figures.webp
+p042	기존 기술의 한계 분석을 통한 양수발전 예측진단 AI 모델 고도화	p042-figures.webp
+p043	청소기 소음에 대한 Bark Wavelet Transform의 Tonal 성분 오차 완화	p043-figures.webp
+p044	잔차 기저 선정에 따른 VPT 기반 LM-FBS의 결합 정확도 분석	p044-figures.webp
+p045	자기감속기와 자기식 중력보상기구를 결합한 로봇팔 개발	p045-figures.webp
+p046	Optical Design of a 6x Continuous Zoom Long-Wave Infrared (LWIR) Optical System for Tactical Reconnaissance	p046-figures.webp
+p049	능동학습 기반 세탁기 소음 실험 조건의 적응형 샘플링	p049-figures.webp
+p051	자기장을 이용한 친소수성 제어 연구	p051-figures.webp
+p053	카메라 외란 환경에서 구조물 변위 측정을 위한 딥러닝 기반 영상 보정	p053-figures.webp
+p055	미세 회전 운동 계측을 위한 비전 기반 고정밀 각도 측정 기술 개발	p055-figures.webp
+p056	다중 위상 영상 기반 3차원 모션 계측을 활용한 회전 블레이드 상태 모니터링	p056-figures.webp
+p059	Condition Index를 활용한 Zero-shot Learning 기반 결함진단 기법 제안	p059-figures.webp
+p061	Variable-thickness QZS Structure for Multi-purpose Low-frequency Vibration Isolation	p061-figures.webp
+p062	롤링셔터 보정을 이용한 스마트폰 영상 기반 진동 응답 측정	p062-figures.webp
+p063	유아용 카시트 소재에 따른 열적거동 분석	p063-figures.webp
+p066	전자식 변속 액추에이터 웜-헬리컬 감속기의 치면 최적설계를 통한 방사소음 저감 해석 연구	p066-figures.webp
+p068	선체 부착 가속도 센서 및 AI 학습을 통한 함정 캐비테이션 발생 속도 추정 연구	p068-figures.webp
+p069	충격 환경을 고려한 항공전자장비의 등가정적해석 타당성 연구	p069-figures.webp
+p071	함포 사격 시 발생되는 주파수 성분과 총열 및 시험치구의 고유진동수 분석	p071-figures.webp
+p073	국부 감육된 압전 RL 션트 패널의 동조이탈 및 재동조가 음향 저감 성능에 미치는 영향	p073-figures.webp
+p076	Helmholtz Resonator Array를 통한 저주파 대역 흡음특성 비교	p076-figures.webp
+p078	도로교통소음이 공동주택 단지설계에 미치는 영향 분석	p078-figures.webp
+p081	미시적 도로교통 소음 계산을 위한 AI에이전트 개발 연구	p081-figures.webp
+p082	벽식구조 공동주택의 인접세대 위치에 따른 바닥충격음 전달특성	p082-figures.webp
+p083	동일 평면 공동주택의 경량충격음 공통 신호 특성과 세대 간 차이	p083-figures.webp
+p084	공동주택 구조 형식에 따른 바닥충격음 신경쓰임 및 잔향감 평가	p084-figures.webp
+p085	31.5Hz 대역의 변화에 따른 라멘·벽식구조 중량충격음 인지 특성	p085-figures.webp
+p087	ISO TC43 SC1 2026년 총회 결과 및 동향	p087-figures.webp
+p090	ISO/PAS 1996-3에 따른 환경소음 중 충격음의 두드러짐 평가방법	p090-figures.webp
+p091	ISO 15665 및 배관 차음성능 시험방법 표준화 동향	p091-figures.webp
+p093	산업가스플랜트 소음 기준 만족을 위한 복합 방음대책 설계 및 현장 적용 사례	p093-figures.webp
+p094	공동주택 지하주차장 슬래브 구조진동의 원인분석 및 저감대책에 관한 연구	p094-figures.webp
+p095	공동주택 바닥마감재 시공 전후의 성능 편차 및 개선 공법	p095-figures.webp
+p096	차량용 PRA의 커버 구조 변화에 따른 소음특성 분석 연구	p096-figures.webp
+p097	기어 펌프용 롤러 베어링의 상태 진단	p097-figures.webp
+p098	변위 의존 마찰 진동계의 동적 응답과 안정성 특성	p098-figures.webp
+p099	가변 수직항력을 이용한 비선형 에너지 싱크의 에너지 소산 성능 향상	p099-figures.webp
+p100	블레이디드 디스크용 언더플랫폼 댐퍼의 진동 저감 성능에 대한 실험적 평가	p100-figures.webp
+p101	유격 마찰 댐퍼 로터의 완전접촉 전이 회전속도 예측	p101-figures.webp
+p102	댐퍼 임팩트를 고려한 불평형 로터 시스템의 회전속도 변화에 따른 동특성 분석	p102-figures.webp
+p106	Integrated Safety Analysis of Nuclear-powered Ships Based on a Multiphysics Approach	p106-figures.webp
+p107	Lagrangian Analysis of Chaff Particle Behavior for Different Ejection Angles under Helicopter Forward Flight	p107-figures.webp
+p108	인간중심 음향 엔지니어링: 개인화 지각-정서 모델	p108-figures.webp
+p113	단위 시편 및 Mock-up Test의 바닥충격음 비교/분석	p113-figures.webp
+p114	AI 데이터 분석기술을 이용한 층간소음예측 모델 개발 Ⅱ(부제 : 회귀분석 방법에 따른 바닥충격음 예측 신뢰도 분석 연구)	p114-figures.webp
+p115	중량충격음 예측을 위한 골조 및 완충재 해석	p115-figures.webp
+p116	바닥몰탈의 일체화 타설이 중량충격음에 미치는 영향 검토	p116-figures.webp
+p118	동일 모델 고무공 충격원의 경도 및 반발특성과 중량 바닥충격음 측정 변동성의 관계	p118-figures.webp
+p119	간소화 동시계측 바닥충격음 측정 평가 시스템	p119-figures.webp
+p120	공동주택 바닥충격음 차단구조 인정 제도 현황 및 개선 방안	p120-figures.webp
+p121	질의 기반 디지털 트윈을 이용한 선박 실시간 모니터링	p121-figures.webp
+p122	수치 응답을 활용한 계측 기반 진동 및 방사소음 예측의 성능 향상	p122-figures.webp
+p123	음향 디지털 트윈을 위한 최적화기반 선체 응답 예측 연구	p123-figures.webp
+p124	실험–해석 융합 음향 디지털 트윈을 이용한 수중방사소음 예측 고도화	p124-figures.webp
+p126	비보존 비선형 시스템의 해 탐색을 위한 진폭 섭동 기반 조화파 단위 힘 균형법	p126-figures.webp
+p127	타원형 아치 빔을 이용한 준영강성 진동 절연기의 형상 최적화 및 조화 균형법 기반 진폭 절연 특성 해석	p127-figures.webp
+p128	가진 전압과 Q-factor에 따른 정전 구동 CNT 공진기의 비선형 주파수 응답 및 분기 구조 해석	p128-figures.webp
+p129	외부 가진과 구성력에 의해 유발되는 가변 길이 유연 빔 구조물에 대한 비선형 동역학	p129-figures.webp
+p130	구조 정적 축약을 활용한 MeshGraphNet 학습 경량화	p130-figures.webp
+p131	희소행렬 구조 재사용을 통한 터널 내 주행 차량 음향장의 2.5D 해석 가속화	p131-figures.webp
+p132	기어 변속 모듈 내 소형 부품의 소음 영향성 분석을 위한 등가 가진력 역추정 및 역전달경로 분석	p132-figures.webp
+p133	베어링 마모 원인 규명 및 예압 최적화를 통한 하이포이드 기어 소음의 내구 안정성 확보 연구	p133-figures.webp
+p134	저피탐(스텔스) 무인편대기 기체구조 기술	p134-figures.webp
+p135	항공용 가스터빈 엔진 랜덤진동 데이터의 통계적 특성 평가 절차 연구	p135-figures.webp
+p136	차량 위성단말용 고출력 증폭장치의 진동 영향 분석 및 내진동 구조 설계	p136-figures.webp
+p140	에어컨 실내기 Path Balance 설계를 통한 냉매소음 저감	p140-figures.webp
+p142	스크롤 진동소음 저감을 위한 올담링 구조 설계	p142-figures.webp
+p143	층간소음 능동제어 기술 및 상용화 시스템 개발	p143-figures.webp
+p144	환경·산업소음 능동제어 기술 및 제어 유형 개발	p144-figures.webp
+p145	층간소음 저감을 위한 Higher Harmonic Control 기반 능동진동제어 시스템 개발	p145-figures.webp
+p146	단위수량 조절을 통한 아연슬래그 활용 층간소음 저감 바닥용 모르타르의 품질 최적화에 관한 연구	p146-figures.webp
+p147	중량충격음 저감을 위한 다층구조 메타물질 적용 및 특성평가	p147-figures.webp
+p148	공동주택 전용면적에 따른 바닥구조의 바닥충격음 영향 분석 연구	p148-figures.webp
+p149	바닥충격음 예측 모델 개발 및 현장별 데이터 적합을 통한 검증	p149-figures.webp
+p150	다중 충실도 물리 정보 신경망을 활용한 바닥충격음 불확실성 정량화 및 최적 역설계	p150-figures.webp
+p151	이론 모델에 근거한 완충재 동탄성계수와 중량충격음 단일수치 평가량의 관계 연구	p151-figures.webp
+p156	보고, 이해하고, 스스로 움직이다: 멀티모달 융합 정보 기반 자율 모빌리티	p156-figures.webp
+p159	자율·비자율 혼합 주행 지원 플랫폼의 데이터 서비스 구축 및 활용	p159-figures.webp
+p160	커피박 유래 금속–페놀 네트워크 나노입자를 이용한 망간 이온의 전기화학적 검출	p160-figures.webp
+p161	진동 유도 확산층 박막화를 이용한 휴대형 망간 이온의 광범위 고감도 전기화학 검출	p161-figures.webp
+p162	머신러닝 기반 Au@Ag 나노필라 SERS 플랫폼을 이용한 뇌척수액 비루의 신속 판별	p162-figures.webp
+p163	티람 검출을 위한 생체모사 산호형 Au/Ag 나노구조 기반 표면증강 라만 분광 분석	p163-figures.webp
+p164	다중해를 갖는 주파수 응답곡선의 물리정보 신경망 해석: 초기값 정식화의 한계와 호길이 연속법	p164-figures.webp
+p167	항공전자장비 열거동 특성의 CFD·실험 통합검증 및 열적 안정성 평가	p167-figures.webp
+p170	항공전자장비의 장착 조건에 따른 진동 및 충격 응답 비교	p170-figures.webp
+p171	DDAM 해석기법을 이용한 함정 탑재 냉각모듈의 내충격 설계	p171-figures.webp
+p173	Component-based TPA 를 이용한 전투차량 파워팩 구조기인 실내소음 예측	p173-figures.webp
+p178	최적화를 통한 전기기관차의 승차감 개선에 관한 연구	p178-figures.webp
+p180	철도차량 현가 장치용 볼스크류 이너터	p180-figures.webp
+p181	베이지안 최적화를 활용한 헬름홀츠형 방음벽용 패널 설계	p181-figures.webp
+p182	고속열차 증속에 따른 터널 출구 미기압파 특성과 터널 후드 경사각의 저감 효과	p182-figures.webp
+p187	공동주택 커뮤니티시설 골프연습장 소음 진동 전달 특성 연구	p187-figures.webp
+p188	전자기-구조 연성 해석을 이용한 축 방향 자속 모터-마그네틱 기어 통합 모듈의 진동 특성 분석	p188-figures.webp
+p190	함정 생존성 향상을 위한 기술 동향 고찰	p190-figures.webp
+p191	함정 생존성 향상을 위한 탑재장비 내충격 및 음향스텔스 성능 시험 방안	p191-figures.webp
+p193	소성변형 에너지 흡수형 마운트의 정·동적 특성 및 충격응답에 관한 실험적 연구	p193-figures.webp
+p197	곡선형 음향 블랙홀의 형상에 따른 진동 응답 및 굽힘파 반사 특성 분석	p197-figures.webp
+p198	점탄성 물질 위상최적화를 적용한 평판형 음향블랙홀의 과도진동 저감 성능 연구	p198-figures.webp
+p199	바닥충격음 예측을 위한 데이터 수집 및 관리	p199-figures.webp
+p204	에이전트 AI를 활용한 진동시험 치구 설계 대체모델 구축	p204-figures.webp
+p205	근접 배치 마스트의 풍하중 동적 거동 및 구조 건전성 분석	p205-figures.webp
+p206	캔틸레버 구조 원형 배열안테나의 1차 고유진동수 최적화 분석	p206-figures.webp
+p208	다중입출력 차량 ANC 시스템의 차실 공간별 로컬 제어	p208-figures.webp
+p211	임베디드 GPU를 활용한 CRN 기반 능동소음제어 기법의 실험적 구현 및 성능 평가	p211-figures.webp
+p213	Slot이 적용된 sUAS 프로펠러의 블레이드 매수별 음질 특성 변화 분석 연구	p213-figures.webp
+p214	Slot이 적용된 sUAS 프로펠러의 블레이드 매수별 공력 및 소음 특성 변화 분석 연구	p214-figures.webp
+p215	동축 반전 프로펠러의 초기 위상차를 통한 공력소음 저감 메커니즘 분석	p215-figures.webp
+p216	이중 하반각을 적용한 eVTOL 틸팅 프로펠러의 BVI 소음 해석	p216-figures.webp
+p218	항공기소음 노출지역에서 개별 소음원의 이벤트성 평가지표와 신경쓰임 간의 관계: 청감실험과 현장 측정의 비교	p218-figures.webp
+p220	공동주택 거주자의 음환경 인지 및 대처 과정: 단계별 맥락구조와 개념적 모형 도출	p220-figures.webp
+p221	AI 활용 제작 도구를 통한 공동주택 조경 공간의 사운드스케이프 음원 가변 구성	p221-figures.webp
+p223	항공기소음 노출지역의 복합소음 환경에서 소음원별 발생 특성과 거주민의 주관적 반응 관계	p223-figures.webp
+p224	KS B ISO 10813-2 및 10813-4 제정 및 주요 내용 소개	p224-figures.webp
+p228	독일 함정 충격규정 BV043 해설 및 적용	p228-figures.webp
+p232	발전기 고정자 단부권선의 진동 특성 평가 및 공진 회피 사례 연구	p232-figures.webp
+p234	CAD 기반 그래프 신경망을 이용한 제품의 구조 및 진동·소음 성능 예측	p234-figures.webp
+p235	복소 FRFSM(cFRFSM)과 자동 모델 개선	p235-figures.webp
+p239	A Multi-Sensor Feedback Control Framework for Active-Passive Sound Absorption	p239-figures.webp
+p240	딥러닝 기반 실시간 제어필터 생성형 노면소음 능동제어	p240-figures.webp
+p241	실규모 전기캐비닛 7종의 지진손상 및 한계상태 평가를 위한 3축 진동대 실험	p241-figures.webp
+p242	진동 기반 FE모델 업데이팅을 이용한 트러스 교량의 Scan-to-FEM	p242-figures.webp
+p244	온도 영향과 국부 손상의 디커플링을 위한 다채널 푸리에 신경 연산자(FNO) 기반 교량 상태 추정	p244-figures.webp
+p246	Bang & Olufsen Audio Experience for a Premium Vehicle	p246-figures.webp
+p249	첨단항공모빌리티 축소기 비행 시 객실 소음 저감을 위한 실시간 능동소음제어	p249-figures.webp
+p251	시스템 모델에 따른 프롭 로터 허브 진동 저감 시뮬레이션 비교	p251-figures.webp
+p252	AAM 모사환경 기반 진동음향 해석 타당성 검증을 위한 능동소음제어 성능 비교	p252-figures.webp
+p253	다양한 코어 밀도의 알루미늄 허니컴 코어를 적용한 착륙 다리를 갖는 재사용 발사체의 착륙 시뮬레이션	p253-figures.webp
+p254	잔향실 온습도 조건에 따른 재료의 흡음특성 변화	p254-figures.webp
+p255	흡음재를 이용한 실내 스포츠 시설의 음환경 개선 계획	p255-figures.webp
+p256	오페라극장 음향설계 단계의 AI 기반 성능 예측 적용성 평가	p256-figures.webp
+p257	1/50 및 1/25 축소모형을 이용한 1800석 오페라하우스의 가변음향 성능과 실내반사면의 유효성 평가	p257-figures.webp
+p258	1/50 및 1/25 축소모형을 이용한 800석 발레극장의 가변음향 성능과 실내반사면의 유효성 평가	p258-figures.webp
+p264	Remaining Useful Life Prediction of Bearings Using Statistical Distributions Integrated into Neural Networks	p264-figures.webp
+p265	고온(700℃) 진동시험에서 열전대 온도와 유효 모달 온도의 차이 - LDV 기반 공진주파수 해석, 코팅 유무에 따른 고온 물성평가	p265-figures.webp
+p266	회전기기 건전성 평가 및 정비 의사결정 방법론	p266-figures.webp
+p267	스퍼 기어의 마모 모니터링을 위한 맞물림 강성과 전달오차 해석	p267-figures.webp
+p269	부착 방향에 강건한 Cochlea-inspired Vibration Absorber 제안 및 해석	p269-figures.webp
+p270	Dynamic Response-based Identification of Wind-induced Signatures	p270-figures.webp
+p271	유도전동기 방사소음 재구성을 위한 모드확장법의 데이터 기반 모드선정	p271-figures.webp
+poster-p101	회전기 적용 흡음재의 음향물성 식별 및 FEM 음향해석 적용 연구	poster-p101-figures.webp
+poster-p102	음향방사효율 수치해석 및 실험을 통한 해석 신뢰도 검증	poster-p102-figures.webp
+poster-p103	Guiding Crack Instance Segmentation From On-Board Videos With Semantic Road-Region Knowledge	poster-p103-figures.webp
+poster-p107	후방 적재랙(포구 청소기)구조 분석	poster-p107-figures.webp
+poster-p113	다양하게 응용되는 자율주행 센서기술	poster-p113-figures.webp
+poster-p114	컬러 표면기술을 적용한 제진 복합소재의 특성 및 외장적용 가능성	poster-p114-figures.webp
+poster-p115	태양지향형 저궤도 위성의 자세 제어를 위한 자이로 바이어스에 관한 연구	poster-p115-figures.webp
+poster-p116	실차 계측 기반 진동시험을 통한 상용차 에어탱크 모듈의 컴프레셔 충전 진동 발생 원인 분석	poster-p116-figures.webp
+poster-p117	A Study on the Optimal Layout of Anti-vibration Mounts Based on Equipment Environmental Conditions	poster-p117-figures.webp
+poster-p120	엔지니어링 플라스틱 및 구조용 폼 기반 차체 보강 구조의 NVH 성능 검증과 시험-해석 Correlation 연구	poster-p120-figures.webp
+poster-p121	시트 위치 변화에 따른 VPTF및 SPTF 변동 비교와 ARNC 강건성에 대한 고찰	poster-p121-figures.webp
+poster-p126	러시아향 운송환경 계측 및 분석에 대한 연구	poster-p126-figures.webp
+poster-p127	LDV를 활용한 박판 시편의 크랙 분류에 대한 연구	poster-p127-figures.webp
+poster-p128	탄성 변위량 특성이 주파수별 차음성능에 미치는 영향 - 투명방음판	poster-p128-figures.webp
+poster-p129	WNSS역채점 문항과 긍정 변형문 간의 응답 비교	poster-p129-figures.webp
+poster-p130	바닥충격음 수음점 가진점 위치에 따른 단일수치평가량 분석	poster-p130-figures.webp
+poster-p131	바닥완충재 소재별 성능예측 모델 개발을 위한 동특성 인자 실험 및 관계분석	poster-p131-figures.webp
+poster-p132	열반 및 정착부 콘크리트 균열을 고려한 단순화 전기 캐비닛의 내진성능 평가	poster-p132-figures.webp
+poster-p133	선형 공진 액추에이터 가진에 따른 콘크리트 구조물의 진동응답 특성에 관한 유한요소해석	poster-p133-figures.webp
+poster-p134	타일 마감재의 벽체 접촉 조건에 따른 뜬바닥 구조의 바닥충격음 변화	poster-p134-figures.webp
+poster-p136	혁신형 SMR의 구조상태감시용 진동신호 분석기법에 대한 연구	poster-p136-figures.webp
+poster-p138	양수발전 설비 지능형 열화상감시시스템(FIMS) 구축 적용	poster-p138-figures.webp
+poster-p143	도시·농촌지역 소음특성 비교 연구	poster-p143-figures.webp
+poster-p144	AI 항공기소음 자동선별 구축 방안 연구	poster-p144-figures.webp
+poster-p145	디자인 지향 소음저감 제품의 실내 성능 평가를 위한 오피스 테스트베드 설계	poster-p145-figures.webp
+poster-p146	Comparison of Road Traffic Noise Characteristics Before and After Low-noise Pavement Application in an Underpass	poster-p146-figures.webp
+poster-p148	대형차용 타이어 소음도 평가 설비 구축 및 운영계획	poster-p148-figures.webp
+poster-p201	Hybrid Optimisation of the Sensing Matrix for a Multi-Sensor Active-Passive Sound Absorption System	poster-p201-figures.webp
+poster-p205	Experimental Investigation of Drilling Performance under Simulated Space Thermal-Vacuum Conditions	poster-p205-figures.webp
+poster-p208	Tonpilz 트랜스듀서의 공기 중 초음파 방사 효율 향상을 위한 메타구조 음향창 설계	poster-p208-figures.webp
+poster-p214	다물체 동역학 기반 전차량 모델의 실지형 험로 주행 실시간 해석 및 가상환경 연동	poster-p214-figures.webp
+poster-p215	철도차량용 공기스프링 설계파라미터 변화에 따른 비선형 거동 특성 분석	poster-p215-figures.webp
+poster-p217	전기차 구동모터의 조립 단계별 동특성 해석 모델 개발	poster-p217-figures.webp
+poster-p219	원자력 발전소용 압력용기 지지구조의 지진해석 응답 특성 비교	poster-p219-figures.webp
+poster-p220	야외 태양광 기반 패시브 적외선 열화상 및 UAV를 활용한 콘크리트 구조물 표면 미세 균열 탐지 기법 연구	poster-p220-figures.webp
+poster-p221	직렬 열전발전 시스템의 고저항 결함 진단을 위한 전기 상태지표 분석	poster-p221-figures.webp
+poster-p222	가공 진동 특징량과 CMM 형상계측을 이용한 알루미늄 가공품의 공정 품질특성 분석	poster-p222-figures.webp
+poster-p227	대리모델 기반 질량 부착 막형 음향 메타물질의 저주파 차음성능 최적화 및 임피던스 튜브 검증	poster-p227-figures.webp
+poster-p228	TPMS 다공성 구조체의 유효물성치 산출 및 흡음 특성에 대한 수치해석 연구	poster-p228-figures.webp
+poster-p229	굽힘파 음향 메타물질의 밴드갭을 이용한 차음 성능 향상 연구	poster-p229-figures.webp
+poster-p232	Motor Driven Roller 기반 컨베이어 구조물의 공진회피 최적 설계	poster-p232-figures.webp
+poster-p234	볼스크류-플라이휠 방식 이너터의 이론적 이너턴스 예측값과 실험값 비교	poster-p234-figures.webp
+poster-p235	서포트의 재료 및 형상이 공동주택 중량 바닥충격음에 미치는 영향	poster-p235-figures.webp
+poster-p239	기존 CubeSat 구조와 격자형 수정 구조의 유한요소 구조해석 비교	poster-p239-figures.webp
+poster-p240	Python 기반 도로교통소음의 A가중 소음레벨 예측 오픈소스 소프트웨어 개발	poster-p240-figures.webp
+poster-p242	비접촉 공기 초음파 신호 특성을 이용한 팬 상태 예측 모델 개발	poster-p242-figures.webp
