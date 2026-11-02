@@ -5,6 +5,8 @@ import { announcements as bundled, type Announcement } from '@/lib/conference';
 
 const READ_KEY = 'ksnveReadAnnouncements';
 const CACHE_KEY = 'ksnveAnnouncementsCache';
+const LEGACY_KEY = 'ksnveAnnouncementIdsV2';
+const LEGACY_DONE = () => { try { return localStorage.getItem(LEGACY_KEY) === '1'; } catch { return true; } };
 const SHEET_URL = process.env.NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL;
 
 export type AnnouncementSource = 'sheet' | 'cache' | 'bundled';
@@ -39,10 +41,20 @@ export function parseCsv(text: string): string[][] {
   return rows;
 }
 
+/** Short stable hash (FNV-1a) for content-derived notice ids. */
+function hashId(text: string): string {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < text.length; i += 1) {
+    h ^= text.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return (h >>> 0).toString(36);
+}
+
 const HIDDEN_VALUES = new Set(['false', '0', 'n', 'no', 'off', '아니오', '비공개']);
 
 /** Sheet columns are matched by header name so the organiser can reorder them freely. */
-export function rowsToAnnouncements(rows: string[][]): Announcement[] {
+export function rowsToAnnouncements(rows: string[][]): (Announcement & { legacyId?: string })[] {
   if (rows.length < 2) return [];
   const header = rows[0].map((h) => h.trim().toLowerCase());
   const col = (...names: string[]) => {
@@ -58,16 +70,21 @@ export function rowsToAnnouncements(rows: string[][]): Announcement[] {
   const iDate = col('date', '날짜');
   const iCat = col('category', '분류', '구분', 'tag', '태그');
   const iVisible = col('visible', '공개', '노출');
-  const out: Announcement[] = [];
+  const out: (Announcement & { legacyId?: string })[] = [];
   rows.slice(1).forEach((r, n) => {
+    const date = (iDate >= 0 ? r[iDate] : '')?.trim() || '';
     const title = (iTitle >= 0 ? r[iTitle] : '')?.trim();
     if (!title) return;
     if (iVisible >= 0 && HIDDEN_VALUES.has((r[iVisible] || '').trim().toLowerCase())) return;
+    const ownId = (iId >= 0 ? r[iId] : '')?.trim();
     out.push({
-      id: (iId >= 0 ? r[iId] : '')?.trim() || `sheet-${n + 1}`,
+      // Without an id column, key the notice by its date and title rather than its row:
+      // inserting a row must not hand a new notice the id of one already read.
+      id: ownId || `sheet-${hashId(`${date}|${title}`)}`,
+      legacyId: ownId ? undefined : `sheet-${n + 1}`,
       title,
       body: (iBody >= 0 ? r[iBody] : '')?.trim() || '',
-      date: (iDate >= 0 ? r[iDate] : '')?.trim() || '',
+      date,
       category: (iCat >= 0 ? r[iCat] : '')?.trim() || '공지',
     });
   });
@@ -125,9 +142,19 @@ export function useAnnouncements() {
         // Accept a valid empty sheet (all notices removed), but not an HTML error page.
         if (!rows[0]?.some((cell) => ['title', '제목'].includes(cell.trim().toLowerCase()))) return;
         const next = rowsToAnnouncements(rows);
-        setItems(next);
+        // Notices read under the old row-position ids stay read under their new ids.
+        if (!LEGACY_DONE()) {
+          const stored = readRead();
+          const carried = next.filter((a) => a.legacyId && stored.includes(a.legacyId) && !stored.includes(a.id)).map((a) => a.id);
+          try {
+            if (carried.length) localStorage.setItem(READ_KEY, JSON.stringify([...stored, ...carried]));
+            localStorage.setItem(LEGACY_KEY, '1');
+          } catch { /* quota */ }
+          if (carried.length) setRead([...stored, ...carried]);
+        }
+        setItems(next.map(({ legacyId: _legacy, ...a }) => a));
         setSource('sheet');
-        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ url: SHEET_URL, items: next })); } catch { /* quota */ }
+        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ url: SHEET_URL, items: next.map(({ legacyId: _legacy, ...a }) => a) })); } catch { /* quota */ }
       })
       .catch(() => { /* offline or sheet unreachable — cached/bundled notices stay */ })
       .finally(() => window.clearTimeout(timer));
