@@ -93,7 +93,8 @@ export const MESSAGE_MAX = 1000;
 export const EMAIL_MAX = 120;
 export const DEVICE_MAX = 300;
 
-export type FeedbackData = { category: string; message: string; email: string; device: string };
+export type FeedbackData = { category: string; message: string; sender: string; email: string; device: string };
+export const SENDER_MAX = 100;
 export type SurveyData = {
   role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
@@ -117,7 +118,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     const email = text(data.email, EMAIL_MAX);
     if (!(feedbackCategories as readonly string[]).includes(category) || !message) return null;
     if (email && !EMAIL.test(email)) return null;
-    return { kind, data: { category, message, email, device: text(data.device, DEVICE_MAX) } };
+    return { kind, data: { category, message, sender: text(data.sender, SENDER_MAX), email, device: text(data.device, DEVICE_MAX) } };
   }
   if (kind === 'survey') {
     const role = text(data.role, 20);

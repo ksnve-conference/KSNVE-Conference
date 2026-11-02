@@ -10,7 +10,7 @@
  *  4. In Vercel set FEEDBACK_SCRIPT_URL (the /exec URL) and FEEDBACK_SECRET.
  */
 
-const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
+const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '성함·소속', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
 const RATING_IDS = ['overall', 'program_level', 'program_qa', 'program_chair', 'program_facility', 'program_poster', 'venue', 'location', 'lodging', 'meal_reception', 'meal_lunch', 'meal_dinner', 'souvenir', 'app'];
 const SURVEY_EVENTS = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'];
 const SURVEY_HEADERS = ['제출 시각', '참가 유형', '주요 역할', '참가 횟수', '전반 만족도', '학술: 발표 수준', '학술: 질의응답·토론', '학술: 좌장 진행', '학술: 발표장 시설', '학술: 포스터 세션', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
@@ -32,11 +32,11 @@ function doPost(e) {
     const book = SpreadsheetApp.getActiveSpreadsheet();
     if (body.kind === 'feedback') {
       const f = body.data;
-      sheetFor(book, '건의', FEEDBACK_HEADERS).appendRow([new Date(), f.category, f.message, f.email, f.device, body.version, '접수', ''].map(cell));
+      sheetFor(book, '건의', FEEDBACK_HEADERS).appendRow([new Date(), f.category, f.message, f.sender, f.email, f.device, body.version, '접수', ''].map(cell));
       MailApp.sendEmail({
         to: Session.getEffectiveUser().getEmail(),
         subject: `[KSNVE 학술대회 앱] 새 건의 · ${f.category}`,
-        body: `${f.message}\n\n답변 받을 이메일: ${f.email || '(없음)'}\n기기: ${f.device || '-'}\n\n전체 목록: ${book.getUrl()}`,
+        body: `${f.message}\n\n성함·소속: ${f.sender || '(익명)'}\n답변 받을 이메일: ${f.email || '(없음)'}\n기기: ${f.device || '-'}\n\n전체 목록: ${book.getUrl()}`,
       });
     } else if (body.kind === 'survey') {
       const s = body.data;
@@ -58,8 +58,11 @@ function sheetFor(book, name, headers) {
     sheet = book.insertSheet(name);
     sheet.appendRow(headers);
     sheet.setFrozenRows(1);
-    sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
+  } else if (sheet.getRange(1, 1, 1, headers.length).getValues()[0].join('|') !== headers.join('|')) {
+    // Columns changed in a new version: rewrite the title row (rows already there keep the old order).
+    sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
   }
+  sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
   return sheet;
 }
 

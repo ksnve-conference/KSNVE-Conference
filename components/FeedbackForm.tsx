@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
-import { EMAIL_MAX, MESSAGE_MAX, feedbackCategories, sendFeedback } from '@/lib/feedback';
+import { EMAIL_MAX, MESSAGE_MAX, SENDER_MAX, feedbackCategories, sendFeedback } from '@/lib/feedback';
 
 const APP_ISSUE = '앱 오류 · 개선';
 
@@ -15,6 +15,7 @@ function deviceSummary() {
 export default function FeedbackForm() {
   const [category, setCategory] = useState('');
   const [message, setMessage] = useState('');
+  const [sender, setSender] = useState('');
   const [email, setEmail] = useState('');
   const [website, setWebsite] = useState('');
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
@@ -28,7 +29,7 @@ export default function FeedbackForm() {
     const ok = await sendFeedback({
       kind: 'feedback',
       website,
-      data: { category, message, email, device: category === APP_ISSUE ? deviceSummary() : '' },
+      data: { category, message, sender, email, device: category === APP_ISSUE ? deviceSummary() : '' },
     });
     setState(ok ? 'done' : 'error');
   };
@@ -39,7 +40,7 @@ export default function FeedbackForm() {
         <span><Icon name="check" size={22} /></span>
         <b>접수되었습니다</b>
         <p>소중한 의견 감사합니다. {email ? '답변이 필요한 내용은 남겨주신 이메일로 연락드리겠습니다.' : '여러 분께 해당하는 내용은 공지사항으로 안내하겠습니다.'}</p>
-        <button type="button" onClick={() => { setCategory(''); setMessage(''); setEmail(''); setState('idle'); }}>다른 의견 보내기</button>
+        <button type="button" onClick={() => { setCategory(''); setMessage(''); setSender(''); setEmail(''); setState('idle'); }}>다른 의견 보내기</button>
       </div>
     );
   }
@@ -65,6 +66,12 @@ export default function FeedbackForm() {
           required
         />
         <small>{message.length} / {MESSAGE_MAX}</small>
+      </label>
+
+      <label className="form-field">
+        <span>성함과 소속 <i>선택</i></span>
+        <input value={sender} maxLength={SENDER_MAX} autoComplete="name" onChange={(e) => setSender(e.target.value)} placeholder="예: 홍길동 / 한국대학교" />
+        <small>남겨 주셔도 좋고, 비워 두시면 익명으로 접수됩니다.</small>
       </label>
 
       <label className="form-field">
