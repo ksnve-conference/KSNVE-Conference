@@ -13,8 +13,8 @@
 const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
 const RATING_IDS = ['overall', 'program', 'venue', 'location', 'lodging', 'meal_reception', 'meal_lunch', 'meal_dinner', 'souvenir', 'app'];
 const SURVEY_EVENTS = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'];
-const SURVEY_HEADERS = ['제출 시각', '참가 유형', '성별', '연령대', '참가 횟수', '전반 만족도', '프로그램', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
-  .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '자유 의견', '앱 버전']);
+const SURVEY_HEADERS = ['제출 시각', '참가 유형', '역할', '참가 횟수', '전반 만족도', '프로그램', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
+  .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '다뤘으면 하는 주제·연사', '자유 의견', '성별', '연령대', '앱 버전']);
 
 function doPost(e) {
   let body;
@@ -41,8 +41,8 @@ function doPost(e) {
     } else if (body.kind === 'survey') {
       const s = body.data;
       const events = s.events || {};
-      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, s.gender, s.age, s.visits, ...RATING_IDS.map((id) => (s.ratings || {})[id]), (s.fields || []).join(' / ')]
-        .concat(SURVEY_EVENTS.map((name) => events[name] || ''), [s.again, s.comment, body.version]).map(cell));
+      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, (s.participation || []).join(' / '), s.visits, ...RATING_IDS.map((id) => (s.ratings || {})[id]), (s.fields || []).join(' / ')]
+        .concat(SURVEY_EVENTS.map((name) => events[name] || ''), [s.again, s.wishes, s.comment, s.gender, s.age, body.version]).map(cell));
     } else {
       return reply({ ok: false, error: 'bad-kind' });
     }

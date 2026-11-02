@@ -23,7 +23,7 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/conference/lodging', icon: 'bed', title: '숙박 안내', desc: '참가자 할인 숙소와 예약' },
   { href: '/conference/tourism', icon: 'camera', title: '주변 관광', desc: '여수 가볼 만한 곳' },
   { href: '/feedback', icon: 'message', title: '건의 · 피드백', desc: '불편한 점과 건의사항 보내기' },
-  { href: '/survey', icon: 'check', title: '참가 만족도 설문', desc: '11/27(금)부터 · 약 4분' },
+  { href: '/survey', icon: 'check', title: '참가 만족도 설문', desc: '11/27(금)부터 · 약 5분' },
   { href: '/app-info', icon: 'info', title: '이용안내', desc: '앱 사용 방법 안내' },
 ];
 

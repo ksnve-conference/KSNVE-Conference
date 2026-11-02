@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingBlocks, ratingLabels, ratingsComplete, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyRoles, surveyVisits,
+  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingBlocks, ratingLabels, ratingsComplete, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyParticipation, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -62,6 +62,8 @@ export default function SurveyForm() {
   const [done, setDone] = useState(false);
   const [role, setRole] = useState('');
   const [ratings, setRatings] = useState<Record<string, number>>({});
+  const [participation, setParticipation] = useState<string[]>([]);
+  const [wishes, setWishes] = useState('');
   const [gender, setGender] = useState('');
   const [age, setAge] = useState('');
   const [visits, setVisits] = useState('');
@@ -95,7 +97,7 @@ export default function SurveyForm() {
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 
-  const complete = role && gender && age && visits && again && fieldsComplete(fields) && ratingsComplete(ratings);
+  const complete = role && participation.length > 0 && gender && age && visits && again && fieldsComplete(fields) && ratingsComplete(ratings);
 
   // 해당 없음 clears the group's other choices, and picking one of them clears 해당 없음.
   const toggleField = (group: { label: string; items: string[] }, item: string) => setFields((current) => {
@@ -110,7 +112,7 @@ export default function SurveyForm() {
     event.preventDefault();
     if (!complete || state === 'sending') return;
     setState('sending');
-    const ok = await sendFeedback({ kind: 'survey', website, data: { role, gender, age, visits, again, comment, fields, events, ratings } });
+    const ok = await sendFeedback({ kind: 'survey', website, data: { role, participation, gender, age, visits, again, wishes, comment, fields, events, ratings } });
     if (!ok) {
       setState('error');
       return;
@@ -135,25 +137,19 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>2. 성별</legend>
+        <legend>2. 이번 학술대회에서의 역할 <i>복수 선택 가능</i></legend>
         <div className="form-choices">
-          {surveyGenders.map((g) => (
-            <button key={g} type="button" className={gender === g ? 'active' : ''} aria-pressed={gender === g} onClick={() => setGender(g)}>{g}</button>
-          ))}
+          {surveyParticipation.map((p) => {
+            const on = participation.includes(p);
+            return (
+              <button key={p} type="button" className={on ? 'active' : ''} aria-pressed={on} onClick={() => setParticipation((current) => (on ? current.filter((x) => x !== p) : [...current, p]))}>{p}</button>
+            );
+          })}
         </div>
       </fieldset>
 
       <fieldset>
-        <legend>3. 연령대</legend>
-        <div className="form-choices">
-          {surveyAges.map((a) => (
-            <button key={a} type="button" className={age === a ? 'active' : ''} aria-pressed={age === a} onClick={() => setAge(a)}>{a}</button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>4. 학술대회 참가 횟수</legend>
+        <legend>3. 학술대회 참가 횟수</legend>
         <div className="form-choices">
           {surveyVisits.map((v) => (
             <button key={v} type="button" className={visits === v ? 'active' : ''} aria-pressed={visits === v} onClick={() => setVisits(v)}>{v}</button>
@@ -171,7 +167,7 @@ export default function SurveyForm() {
         if (q.group) {
           return (
             <fieldset key={q.group}>
-              <legend>{i + 5}. {q.group}{q.optional && <i>{q.optional}</i>}</legend>
+              <legend>{i + 4}. {q.group}{q.optional && <i>{q.optional}</i>}</legend>
               <div className="form-event-ratings">
                 {block.map((row) => (
                   <div key={row.id}>
@@ -186,7 +182,7 @@ export default function SurveyForm() {
         }
         return (
           <fieldset key={q.id}>
-            <legend>{i + 5}. {q.label}{q.optional && <i>선택</i>}</legend>
+            <legend>{i + 4}. {q.label}{q.optional && <i>선택</i>}</legend>
             <RatingRow label={q.label} clearable={Boolean(q.optional)} value={ratings[q.id]} onChange={setRating(q.id)} />
             {q.optional && <p className="form-hint">{q.optional}. 선택한 점수를 다시 누르면 지워집니다.</p>}
           </fieldset>
@@ -194,7 +190,7 @@ export default function SurveyForm() {
       })}
 
       <fieldset>
-        <legend>13. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
+        <legend>12. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
         <p className="form-hint form-hint-top">묶음마다 하나 이상 골라 주세요. 듣지 않은 묶음은 &lsquo;{FIELD_NONE}&rsquo;을 누르면 됩니다. ({answeredGroups}/{surveyFieldGroups.length} 묶음 응답)</p>
         {surveyFieldGroups.map((group) => (
           <div className="form-choice-group" key={group.label}>
@@ -218,7 +214,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>14. 부대행사(프로그램·진행)는 어떠셨나요? <i>참가한 행사만</i></legend>
+        <legend>13. 부대행사(프로그램·진행)는 어떠셨나요? <i>참가한 행사만</i></legend>
         <div className="form-event-ratings">
           {surveyEvents.map((name) => (
             <div key={name}>
@@ -240,7 +236,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>15. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
+        <legend>14. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
         <div className="form-choices">
           {surveyAgain.map((a) => (
             <button key={a} type="button" className={again === a ? 'active' : ''} aria-pressed={again === a} onClick={() => setAgain(a)}>{a}</button>
@@ -249,10 +245,35 @@ export default function SurveyForm() {
       </fieldset>
 
       <label className="form-field">
+        <span>15. 다음 학술대회에서 다뤘으면 하는 주제나 초청 연사 <i>선택</i></span>
+        <textarea value={wishes} onChange={(e) => setWishes(e.target.value.slice(0, MESSAGE_MAX))} rows={3} placeholder="예: 기획세션 주제, 모시고 싶은 연사" />
+        <small>{wishes.length} / {MESSAGE_MAX}</small>
+      </label>
+
+      <label className="form-field">
         <span>16. 좋았던 점이나 개선할 점 <i>선택</i></span>
         <textarea value={comment} onChange={(e) => setComment(e.target.value.slice(0, MESSAGE_MAX))} rows={5} placeholder="자유롭게 적어 주세요." />
         <small>{comment.length} / {MESSAGE_MAX}</small>
       </label>
+
+      <fieldset>
+        <legend>17. 성별</legend>
+        <div className="form-choices">
+          {surveyGenders.map((g) => (
+            <button key={g} type="button" className={gender === g ? 'active' : ''} aria-pressed={gender === g} onClick={() => setGender(g)}>{g}</button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>18. 연령대</legend>
+        <div className="form-choices">
+          {surveyAges.map((a) => (
+            <button key={a} type="button" className={age === a ? 'active' : ''} aria-pressed={age === a} onClick={() => setAge(a)}>{a}</button>
+          ))}
+        </div>
+      </fieldset>
+
 
       <input className="form-trap" tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} name="website" />
 

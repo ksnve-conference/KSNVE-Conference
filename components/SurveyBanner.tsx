@@ -13,7 +13,7 @@ export default function SurveyBanner({ now }: { now: Date }) {
   return (
     <Link href="/survey" className="notification-prompt survey-banner">
       <span><Icon name="message" size={19} /></span>
-      <div><b>참가 만족도 설문에 참여해 주세요</b><small>16개 문항 · 약 4분</small></div>
+      <div><b>참가 만족도 설문에 참여해 주세요</b><small>18개 문항 · 약 5분</small></div>
       <em>참여하기</em>
     </Link>
   );

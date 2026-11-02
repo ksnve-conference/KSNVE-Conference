@@ -5,6 +5,7 @@ import sessionsData from '@/data/sessions.json';
 export const feedbackCategories = ['행사 운영', '발표장 · 시설', '앱 오류 · 개선', '기타'] as const;
 export const surveyRoles = ['학계', '연구계', '산업계', '학생', '기타'] as const;
 export const surveyAgain = ['예', '아직 모르겠음', '아니오'] as const;
+export const surveyParticipation = ['구두 발표', '포스터 발표', '좌장', '청중', '전시 참가'] as const;
 export const surveyGenders = ['남성', '여성', '응답하지 않음'] as const;
 export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대 이상', '응답하지 않음'] as const;
 export const surveyVisits = ['처음', '2~3회', '4~5회', '6회 이상'] as const;
@@ -72,7 +73,7 @@ export const DEVICE_MAX = 300;
 
 export type FeedbackData = { category: string; message: string; email: string; device: string };
 export type SurveyData = {
-  role: string; gender: string; age: string; visits: string; ratings: Record<string, number | ''>;
+  role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number | ''>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
@@ -98,6 +99,9 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
   }
   if (kind === 'survey') {
     const role = text(data.role, 20);
+    const participation = Array.isArray(data.participation)
+      ? (surveyParticipation as readonly string[]).filter((p) => (data.participation as unknown[]).includes(p)) : [];
+    if (participation.length === 0) return null;
     const gender = text(data.gender, 20);
     const age = text(data.age, 20);
     const visits = text(data.visits, 20);
@@ -120,7 +124,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     return {
       kind,
       data: {
-        role, gender, age, visits, again, fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
+        role, participation, gender, age, visits, again, wishes: text(data.wishes, MESSAGE_MAX), fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
         ratings,
       },
     };
