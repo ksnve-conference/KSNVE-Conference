@@ -10,6 +10,7 @@ import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
 import { getPaperDetail, getPresenterAffiliation } from '@/lib/paper-detail';
 import { keynoteByNo } from '@/lib/keynotes';
+import { conferenceConfig } from '@/lib/conference-config';
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const paper = getPaperDetail((await params).id);
@@ -148,7 +149,14 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           <OriginalPageViewer {...paper.figureImage} title={paper.title} variant="figures" />
         )}
 
-        {paper.pageImage && <OriginalPageViewer src={paper.pageImage} title={paper.title} />}
+        {paper.pageImage && (conferenceConfig.originalPagesPublic
+          ? <OriginalPageViewer src={paper.pageImage} title={paper.title} />
+          : (
+            <section className="abstract original-page">
+              <div className="original-page-heading"><div><h2>확장요약문 원문</h2></div></div>
+              <div className="original-pending"><Icon name="clock" size={18} /><span>학술대회 기간 중 공개예정</span></div>
+            </section>
+          ))}
       </article>
 
       {(prevPaper || nextPaper) && (

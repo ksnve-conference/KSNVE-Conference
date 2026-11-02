@@ -86,3 +86,7 @@ body{font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-ser
 .paper-figures + .original-page{padding-top:12px}
 .paper-figures .page-preview{min-height:0;background:#fff;box-shadow:none}
 .paper-figures .zoom-hint{position:static;display:block;border-radius:0;background:var(--card-2);color:var(--brand);text-align:right}
+
+/* Placeholder while the submitted original pages are private (conferenceConfig.originalPagesPublic). */
+.original-pending{display:flex;align-items:center;justify-content:center;gap:8px;padding:28px 16px;border:1px dashed var(--line);border-radius:13px;background:var(--card-2);color:var(--muted);font-size:15px;font-weight:700}
+.original-pending svg{color:var(--brand)}

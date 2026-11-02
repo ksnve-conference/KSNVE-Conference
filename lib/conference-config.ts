@@ -21,6 +21,12 @@ export const conferenceConfig = {
   locationDisplay: 'Yeosu Expo Convention Center, Yeosu, Korea',
   /** Weekday labels for the date strip, derived from `dates`. */
   dayNames: ['수', '목', '금', '토'],
+  /**
+   * Authors' submitted extended-abstract pages (public/paper-pages/pNNN.webp).
+   * Kept private until the secretariat finishes the bibliographic edit; while
+   * false the paper page shows a notice and proxy.ts answers 404 for the files.
+   */
+  originalPagesPublic: false,
 } as const;
 
 export type ConferenceConfig = typeof conferenceConfig;
