@@ -491,7 +491,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .pdf-cta b{ display:block; font-size:var(--type-body); font-weight:700; }
 .pdf-cta small{ display:block; margin-top:2px; font-size:var(--type-caption); opacity:.8; }
 
-.abstract-text{ font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
+.abstract-text{ font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; text-align:justify; }
 .abstract-text + .abstract-text{ margin-top:.75em; }
 .keyword-list{ display:flex; flex-wrap:wrap; gap:6px; }
 .keyword-chip{
