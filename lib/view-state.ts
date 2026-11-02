@@ -1,5 +1,6 @@
 'use client';
 
+import { getScrollY, scrollToY } from '@/lib/scroll';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 /**
@@ -53,7 +54,7 @@ export function useViewState(
   const latest = useRef(snapshot);
   latest.current = snapshot;
   const save = useCallback(() => {
-    writeStored(screen, { ...latest.current, scrollY: window.scrollY });
+    writeStored(screen, { ...latest.current, scrollY: getScrollY() });
   }, [screen]);
   const pendingScroll = useRef<number | null>(null);
   const restoreRef = useRef(restore);
@@ -75,7 +76,7 @@ export function useViewState(
     const y = pendingScroll.current;
     pendingScroll.current = null;
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      window.scrollTo({ top: y, behavior: 'instant' });  // not the page's smooth scroll
+      scrollToY(y, 'instant');  // not the page's smooth scroll
       save();  // the save on mount ran before this jump and stored the top
     }));
   }, [ready]); // eslint-disable-line react-hooks/exhaustive-deps

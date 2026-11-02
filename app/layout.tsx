@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" data-scroll-behavior="smooth" className={`${bodyFont.variable} ${ciFont.variable}`}>
       <body>
         <OfflineReady />
-        {children}
+        <div id="app-scroll">{children}</div>
         <Analytics />
       </body>
     </html>
