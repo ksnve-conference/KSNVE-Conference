@@ -14,6 +14,7 @@ export default function AppInfoPage() {
         <li>내 일정은 캘린더 파일(.ics)로 내보낼 수 있습니다.</li>
         <li>저장한 일정과 읽은 공지는 이 기기의 브라우저에만 보관되며 서버로 전송되지 않습니다.</li>
         <li>한 번 열어 본 프로그램과 초록은 네트워크가 끊겨도 다시 볼 수 있습니다.</li>
+        <li>서비스 개선을 위해 Google Analytics를 사용하여 방문 페이지와 이용 통계를 수집합니다. 쿠키가 사용되며, 검색어와 저장한 일정은 Google Analytics로 전송하지 않습니다. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer">Google의 데이터 이용 안내</a></li>
       </ul>
     </InfoPage>
   );

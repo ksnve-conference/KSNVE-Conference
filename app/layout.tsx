@@ -5,6 +5,7 @@ import './styles.css';
 import type { Viewport } from 'next';
 import { conferenceConfig } from '@/lib/conference-config';
 import OfflineReady from '@/components/OfflineReady';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 // Pretendard, subsetted to the characters this app renders (2 MB -> 456 KB) and
 // served from our own origin: no CDN request on the critical path, which matters
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <OfflineReady />
         <div id="app-scroll">{children}</div>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
