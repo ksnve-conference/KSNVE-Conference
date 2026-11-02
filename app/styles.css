@@ -793,3 +793,16 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .form-hint-top{ margin:-4px 2px 12px; }
 .form-choices .form-choice-none{ border-style:dashed; color:var(--muted); }
 .form-choices .form-choice-none.active{ border-style:solid; background:var(--text-2); border-color:var(--text-2); color:#fff; }
+.form-rating-row{ display:flex; flex-direction:column; gap:6px; }
+.form-rating-none{ align-self:flex-end; padding:6px 12px; border:1px dashed var(--line); border-radius:var(--r-pill); background:var(--card); color:var(--muted); font:inherit; font-size:var(--type-caption); font-weight:600; }
+.form-rating-none.active{ border-style:solid; border-color:var(--text-2); background:var(--text-2); color:#fff; }
+.survey-progress{ position:sticky; top:64px; z-index:2; display:flex; align-items:center; gap:10px; margin:0 -2px; padding:10px 2px; background:var(--bg); font-size:var(--type-caption); font-weight:600; color:var(--text-2); }
+.survey-progress > div{ flex:1; height:6px; border-radius:var(--r-pill); background:var(--line); overflow:hidden; }
+.survey-progress i{ display:block; height:100%; background:var(--brand); transition:width .2s ease; }
+.raffle-form{ display:flex; flex-direction:column; gap:10px; width:100%; margin-top:14px; padding-top:16px; border-top:1px solid var(--line); text-align:left; }
+.raffle-form b{ font-size:var(--type-body); }
+.raffle-form b i{ margin-left:4px; font-size:var(--type-caption); font-style:normal; font-weight:500; color:var(--muted); }
+.raffle-form input:not([type]){ width:100%; padding:12px 13px; border:1px solid var(--line); border-radius:var(--r-md); background:var(--card); color:var(--text); font:inherit; font-size:16px; }
+.raffle-consent{ display:flex; gap:8px; align-items:flex-start; font-size:var(--type-caption); line-height:1.55; color:var(--text-2); word-break:keep-all; }
+.raffle-consent input{ margin-top:3px; }
+.form-event-ratings .form-rating small{ white-space:nowrap; letter-spacing:-.03em; }

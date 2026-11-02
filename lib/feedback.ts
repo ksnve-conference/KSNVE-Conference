@@ -35,28 +35,35 @@ export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) 
   return picked.length > 0 && (!picked.includes(fieldNone(g.label)) || picked.length === 1);
 });
 
-/** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
 /** 웰컴 리셉션 and 만찬 appear here for the event itself and under 식사 for the food. */
 export const surveyEvents = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
+
 /**
- * `optional` ones can be left blank by people who didn't use that service (e.g. no hotel).
+ * Rows people may not have experienced take an explicit 해당 없음 (stored as 0)
+ * instead of a blank, so a skipped row can't be mistaken for an unused service.
+ * `notApplicable: 'always'` offers it to everyone; `'exhibitOnly'` only to
+ * people whose sole role was 전시 참가 (they didn't sit in sessions).
  * Consecutive entries with the same `group` are asked as one question with a row each.
  */
-export type RatingQuestion = { id: string; label: string; optional?: string; group?: string };
+export const NOT_APPLICABLE = 0;
+export const NOT_APPLICABLE_LABEL = '해당 없음';
+export type RatingQuestion = { id: string; label: string; group?: string; notApplicable?: 'always' | 'exhibitOnly' };
+const ACADEMIC = '학술 프로그램은 어떠셨나요?';
+const MEALS = '식사(음식)는 어떠셨나요?';
 export const ratingQuestions: readonly RatingQuestion[] = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
-  { id: 'program_level', label: '발표 내용의 수준', group: '학술 프로그램은 어떠셨나요?' },
-  { id: 'program_qa', label: '질의응답·토론', group: '학술 프로그램은 어떠셨나요?' },
-  { id: 'program_chair', label: '좌장 진행', group: '학술 프로그램은 어떠셨나요?' },
-  { id: 'program_facility', label: '발표장 시설 (음향·영상·노트북)', group: '학술 프로그램은 어떠셨나요?' },
-  { id: 'program_poster', label: '포스터 세션 운영', group: '학술 프로그램은 어떠셨나요?', optional: '선택' },
+  { id: 'program_level', label: '발표 내용의 수준', group: ACADEMIC, notApplicable: 'exhibitOnly' },
+  { id: 'program_qa', label: '질의응답·토론', group: ACADEMIC, notApplicable: 'exhibitOnly' },
+  { id: 'program_chair', label: '좌장 진행', group: ACADEMIC, notApplicable: 'exhibitOnly' },
+  { id: 'program_facility', label: '발표장 시설 (음향·영상·노트북)', group: ACADEMIC, notApplicable: 'exhibitOnly' },
+  { id: 'program_poster', label: '포스터 세션 운영', group: ACADEMIC, notApplicable: 'always' },
   { id: 'venue', label: '행사장과 현장 운영은 어떠셨나요?' },
   { id: 'location', label: '행사장 위치(교통·접근성)는 어떠셨나요?' },
-  { id: 'lodging', label: '주변 숙소는 어떠셨나요?', optional: '숙소를 이용하지 않았다면 비워 두세요' },
-  { id: 'meal_reception', label: '웰컴 리셉션', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
-  { id: 'meal_lunch', label: '점심', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
-  { id: 'meal_dinner', label: '만찬', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'lodging', label: '주변 숙소는 어떠셨나요?', notApplicable: 'always' },
+  { id: 'meal_reception', label: '웰컴 리셉션', group: MEALS, notApplicable: 'always' },
+  { id: 'meal_lunch', label: '점심', group: MEALS, notApplicable: 'always' },
+  { id: 'meal_dinner', label: '만찬', group: MEALS, notApplicable: 'always' },
   { id: 'souvenir', label: '기념품은 어떠셨나요?' },
   { id: 'app', label: '학술대회 앱은 도움이 되었나요?' },
 ];
@@ -66,9 +73,21 @@ export const ratingBlocks = ratingQuestions.reduce<RatingQuestion[][]>((blocks, 
   if (q.group && last?.[0].group === q.group) last.push(q); else blocks.push([q]);
   return blocks;
 }, []);
-export const ratingsComplete = (ratings: Record<string, unknown>) => ratingQuestions.every((q) => (
-  q.optional ? ratings[q.id] === undefined || isRating(ratings[q.id]) : isRating(ratings[q.id])
-));
+
+export const exhibitOnly = (participation: readonly string[]) => participation.length === 1 && participation[0] === '전시 참가';
+export const allowsNotApplicable = (q: RatingQuestion, participation: readonly string[]) => (
+  q.notApplicable === 'always' || (q.notApplicable === 'exhibitOnly' && exhibitOnly(participation))
+);
+const isAnswer = (value: unknown, noneAllowed: boolean) => isRating(value) || (noneAllowed && value === NOT_APPLICABLE);
+export const ratingAnswered = (q: RatingQuestion, value: unknown, participation: readonly string[]) => (
+  isAnswer(value, allowsNotApplicable(q, participation))
+);
+/** Every row needs a score, or 해당 없음 where that row allows it. */
+export const ratingsComplete = (ratings: Record<string, unknown>, participation: readonly string[]) => (
+  ratingQuestions.every((q) => ratingAnswered(q, ratings[q.id], participation))
+);
+/** Every 부대행사 needs a score or 해당 없음. */
+export const eventsComplete = (events: Record<string, unknown>) => surveyEvents.every((e) => isAnswer(events[e], true));
 
 export const MESSAGE_MAX = 1000;
 export const EMAIL_MAX = 120;
@@ -76,12 +95,16 @@ export const DEVICE_MAX = 300;
 
 export type FeedbackData = { category: string; message: string; email: string; device: string };
 export type SurveyData = {
-  role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number | ''>;
+  role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
+/** 경품 응모: kept apart from the survey row so answers stay anonymous. */
+export type RaffleData = { contact: string; consent?: true };
+export const CONTACT_MAX = 100;
 export type FeedbackPayload =
   | { kind: 'feedback'; data: FeedbackData; website?: string }
-  | { kind: 'survey'; data: SurveyData; website?: string };
+  | { kind: 'survey'; data: SurveyData; website?: string }
+  | { kind: 'raffle'; data: RaffleData; website?: string };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const isRating = (value: unknown) => Number.isInteger(value) && (value as number) >= 1 && (value as number) <= 5;
@@ -104,7 +127,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     const role = text(data.role, 20);
     const participation = Array.isArray(data.participation)
       ? (surveyParticipation as readonly string[]).filter((p) => (data.participation as unknown[]).includes(p)) : [];
-    if (participation.length === 0) return null;
+    if (participation.length !== 1) return null;  // 주요 역할: exactly one
     const gender = text(data.gender, 20);
     const age = text(data.age, 20);
     const visits = text(data.visits, 20);
@@ -113,17 +136,13 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     if (!(surveyVisits as readonly string[]).includes(visits)) return null;
     if (!(surveyGenders as readonly string[]).includes(gender) || !(surveyAges as readonly string[]).includes(age)) return null;
     const rawRatings = data.ratings && typeof data.ratings === 'object' ? data.ratings as Record<string, unknown> : {};
-    if (!ratingsComplete(rawRatings)) return null;
-    const ratings: Record<string, number | ''> = Object.fromEntries(ratingQuestions.map((q) => [q.id, (rawRatings[q.id] as number | undefined) ?? ''] as const));
+    if (!ratingsComplete(rawRatings, participation)) return null;
+    const ratings = Object.fromEntries(ratingQuestions.map((q) => [q.id, rawRatings[q.id] as number]));
     const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
     if (!fields.every((f) => fieldGroupOf.has(f)) || !fieldsComplete(fields)) return null;
     const rawEvents = data.events && typeof data.events === 'object' ? data.events as Record<string, unknown> : {};
-    const events: Record<string, number> = {};
-    for (const name of surveyEvents) {
-      if (rawEvents[name] === undefined) continue;
-      if (!isRating(rawEvents[name])) return null;
-      events[name] = rawEvents[name] as number;
-    }
+    if (!eventsComplete(rawEvents)) return null;
+    const events = Object.fromEntries(surveyEvents.map((e) => [e, rawEvents[e] as number]));
     return {
       kind,
       data: {
@@ -131,6 +150,11 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
         ratings,
       },
     };
+  }
+  if (kind === 'raffle') {
+    const contact = text(data.contact, CONTACT_MAX);
+    if (contact.length < 5 || data.consent !== true) return null;
+    return { kind, data: { contact } };
   }
   return null;
 }
