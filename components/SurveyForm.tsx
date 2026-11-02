@@ -17,6 +17,16 @@ export function surveyPhase(now: Date): Phase {
   return 'open';
 }
 
+/** "11월 27일(금)", plus the hour when the survey doesn't open at midnight (KST). */
+function openingLabel() {
+  const [date, time] = conferenceConfig.surveyOpensAt.split('T');
+  const [, month, day] = date.split('-').map(Number);
+  const index = (conferenceConfig.dates as readonly string[]).indexOf(date);
+  const weekday = index >= 0 ? `(${conferenceConfig.dayNames[index]})` : '';
+  const hour = Number(time.slice(0, 2));
+  return `${month}월 ${day}일${weekday}${hour ? ` ${hour}시` : ''}`;
+}
+
 export function surveyDone() {
   try {
     return localStorage.getItem(SURVEY_DONE_KEY) === '1';
@@ -80,8 +90,7 @@ export default function SurveyForm() {
     );
   }
   if (phase === 'before') {
-    const opens = new Date(conferenceConfig.surveyOpensAt);
-    return <p className="guide-callout">만족도 설문은 {opens.getMonth() + 1}월 {opens.getDate()}일(토) 낮 12시부터 참여하실 수 있습니다. 행사 중 건의사항은 &lsquo;건의 · 피드백&rsquo;으로 보내 주세요.</p>;
+    return <p className="guide-callout">만족도 설문은 {openingLabel()}부터 참여하실 수 있습니다. 행사 중 건의사항은 &lsquo;건의 · 피드백&rsquo;으로 보내 주세요.</p>;
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 

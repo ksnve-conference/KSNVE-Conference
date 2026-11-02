@@ -188,6 +188,7 @@ export default function ProgramPage() {
     <main className="shell app-shell">
       <WelcomeIntro />
       <AppHeader unread={unread} status={heroStatus} live={isDuring} />
+      <SurveyBanner now={now} />
 
       <a href="#program" className="program-shortcut" onClick={(event) => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -204,7 +205,6 @@ export default function ProgramPage() {
 
       <section className="today-dashboard">
         <InstallPrompt />
-        <SurveyBanner now={now} />
         {showTimeTravel && <TimeTravelPanel mockNow={mockNow} onChange={changeMockNow} />}
 
         {isAfter && (
