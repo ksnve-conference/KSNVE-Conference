@@ -585,8 +585,8 @@
     ]
   },
   {
-    "paper_id": "p027",
-    "id": "p027",
+    "paper_id": "p268",
+    "id": "p268",
     "sessionId": "s007",
     "date": "2026-11-25",
     "time": "15:00~15:15",
@@ -595,16 +595,16 @@
     "chair": "김재현(영남대)",
     "flags": "+",
     "presentationType": "ORAL",
-    "title": "모터 진동 저감을 위한 구조 위상최적화 연구",
-    "authors": "김종욱, 윤태영(창원대)",
-    "presenter": "김종욱",
-    "hasAbstract": true,
+    "title": "Vold-Kalman Filter 최적화 기반 다중 회전체 오더 성분 분리",
+    "authors": "장재준(서울대), 김준구(현대차), 김현균, 강연준(서울대)",
+    "presenter": "장재준",
+    "hasAbstract": false,
     "keywords": [
-      "Topology Optimization(위상최적화)",
-      "Motor Housing(모터 하우징)",
-      "Random Vibration(랜덤 진동)",
-      "Local Resonator(국소공진기)",
-      "Vibration Reduction(진동 저감)"
+      "Vold-Kalman Filter (볼드-칼만 필터)",
+      "Order Tracking (오더 트래킹)",
+      "Multiple Rotating Machinery (다중 회전체)",
+      "Order Component Separation (오더 성분 분리)",
+      "Bandwidth Optimization (대역폭 최적화)"
     ]
   },
   {
@@ -5870,8 +5870,8 @@
     ]
   },
   {
-    "paper_id": "p268",
-    "id": "p268",
+    "paper_id": "p027",
+    "id": "p027",
     "sessionId": "s061",
     "date": "2026-11-27",
     "time": "10:40~10:55",
@@ -5880,16 +5880,16 @@
     "chair": "김진오(숭실대)",
     "flags": "+",
     "presentationType": "ORAL",
-    "title": "Vold-Kalman Filter 최적화 기반 다중 회전체 오더 성분 분리",
-    "authors": "장재준(서울대), 김준구(현대차), 김현균, 강연준(서울대)",
-    "presenter": "장재준",
-    "hasAbstract": false,
+    "title": "모터 진동 저감을 위한 구조 위상최적화 연구",
+    "authors": "김종욱, 윤태영(창원대)",
+    "presenter": "김종욱",
+    "hasAbstract": true,
     "keywords": [
-      "Vold-Kalman Filter (볼드-칼만 필터)",
-      "Order Tracking (오더 트래킹)",
-      "Multiple Rotating Machinery (다중 회전체)",
-      "Order Component Separation (오더 성분 분리)",
-      "Bandwidth Optimization (대역폭 최적화)"
+      "Topology Optimization(위상최적화)",
+      "Motor Housing(모터 하우징)",
+      "Random Vibration(랜덤 진동)",
+      "Local Resonator(국소공진기)",
+      "Vibration Reduction(진동 저감)"
     ]
   },
   {

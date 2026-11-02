@@ -478,8 +478,8 @@
   ]
  },
  {
-  "paper_id": "p027",
-  "id": "p027",
+  "paper_id": "p268",
+  "id": "p268",
   "sessionId": "s007",
   "session": "진동, 동역학 및 제어이론 [1]",
   "date": "2026-11-25",
@@ -488,11 +488,12 @@
   "chair": "김재현(영남대)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "모터 진동 저감을 위한 구조 위상최적화 연구",
-  "authors": "김종욱, 윤태영(창원대)",
-  "presenter": "김종욱",
+  "title": "Vold-Kalman Filter 최적화 기반 다중 회전체 오더 성분 분리",
+  "authors": "장재준(서울대), 김준구(현대차), 김현균, 강연준(서울대)",
+  "presenter": "장재준",
   "affiliations": [
-   "창원대"
+   "서울대",
+   "현대차"
   ]
  },
  {
@@ -4910,8 +4911,8 @@
   ]
  },
  {
-  "paper_id": "p268",
-  "id": "p268",
+  "paper_id": "p027",
+  "id": "p027",
   "sessionId": "s061",
   "session": "진동, 동역학 및 제어이론 [4]",
   "date": "2026-11-27",
@@ -4920,12 +4921,11 @@
   "chair": "김진오(숭실대)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "Vold-Kalman Filter 최적화 기반 다중 회전체 오더 성분 분리",
-  "authors": "장재준(서울대), 김준구(현대차), 김현균, 강연준(서울대)",
-  "presenter": "장재준",
+  "title": "모터 진동 저감을 위한 구조 위상최적화 연구",
+  "authors": "김종욱, 윤태영(창원대)",
+  "presenter": "김종욱",
   "affiliations": [
-   "서울대",
-   "현대차"
+   "창원대"
   ]
  },
  {
