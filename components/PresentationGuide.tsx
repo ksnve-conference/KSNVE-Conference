@@ -146,12 +146,13 @@ const isTab = (value: string): value is TabId => TABS.some((tab) => tab.id === v
 
 /** Tabbed guide; the hash (#chair, #oral, #poster, #award) picks the tab so session pages can link straight to one. */
 export default function PresentationGuide() {
-  const [tab, setTab] = useState<TabId>('chair');
+  // Unknown until the hash is read, so a link to #poster never flashes the 좌장 tab first.
+  const [tab, setTab] = useState<TabId | null>(null);
 
   useEffect(() => {
     const fromHash = () => {
       const hash = window.location.hash.slice(1);
-      if (isTab(hash)) setTab(hash);
+      setTab((current) => (isTab(hash) ? hash : current ?? 'chair'));
     };
     fromHash();
     window.addEventListener('hashchange', fromHash);
@@ -163,7 +164,7 @@ export default function PresentationGuide() {
     window.history.replaceState(window.history.state, '', `#${id}`);
   };
 
-  const Panel = PANELS[tab];
+  const Panel = tab ? PANELS[tab] : null;
   return (
     <>
       <div className="date-strip guide-tabs" role="tablist" aria-label="참가요령 구분">
@@ -173,7 +174,7 @@ export default function PresentationGuide() {
           </button>
         ))}
       </div>
-      <div role="tabpanel" className="guide-panel"><Panel /></div>
+      <div role="tabpanel" className="guide-panel">{Panel && <Panel />}</div>
     </>
   );
 }
