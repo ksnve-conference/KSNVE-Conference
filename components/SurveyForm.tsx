@@ -4,14 +4,13 @@ import { useEffect, useRef, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  CONTACT_MAX, FIELD_NONE, MESSAGE_MAX, NOT_APPLICABLE, NOT_APPLICABLE_LABEL, allowsNotApplicable, eventsComplete, exhibitOnly, fieldNone,
+  FIELD_NONE, MESSAGE_MAX, NOT_APPLICABLE, NOT_APPLICABLE_LABEL, allowsNotApplicable, eventsComplete, exhibitOnly, fieldNone,
   fieldsComplete, ratingAnswered, ratingBlocks, ratingLabels, ratingQuestions, ratingsComplete, sendFeedback, surveyAgain, surveyAges,
   surveyEvents, surveyFieldGroups, surveyGenders, surveyParticipation, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
 const DRAFT_KEY = 'ksnveSurveyDraft';
-const RAFFLE_KEY = 'ksnveRaffleDone';
 
 type Phase = 'before' | 'open' | 'closed';
 
@@ -89,42 +88,6 @@ function readDraft(): Draft {
   }
 }
 
-/** After the survey: optional 경품 응모, sent separately so the contact can't be tied to the answers. */
-function Raffle() {
-  const [entered, setEntered] = useState(() => readFlag(RAFFLE_KEY));
-  const [contact, setContact] = useState('');
-  const [consent, setConsent] = useState(false);
-  const [state, setState] = useState<'idle' | 'sending' | 'error'>('idle');
-  if (entered) return <p className="form-hint">경품 추첨에 응모되었습니다. 당첨되시면 남겨 주신 연락처로 안내드립니다.</p>;
-  const ready = contact.trim().length >= 5 && consent && state !== 'sending';
-  return (
-    <form
-      className="raffle-form"
-      onSubmit={async (event) => {
-        event.preventDefault();
-        if (!ready) return;
-        setState('sending');
-        const ok = await sendFeedback({ kind: 'raffle', data: { contact, consent: true } });
-        if (!ok) {
-          setState('error');
-          return;
-        }
-        writeStorage(RAFFLE_KEY, '1');
-        setEntered(true);
-      }}
-    >
-      <b>경품 추첨 응모 <i>선택</i></b>
-      <input value={contact} maxLength={CONTACT_MAX} onChange={(e) => setContact(e.target.value)} placeholder="휴대전화 번호 또는 이메일" autoComplete="tel" />
-      <label className="raffle-consent">
-        <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
-        <span>연락처는 경품 당첨 안내에만 사용하고 추첨 후 삭제합니다. 설문 응답과는 따로 저장되어 연결되지 않습니다. 이에 동의합니다.</span>
-      </label>
-      {state === 'error' && <p className="form-error" role="alert">응모하지 못했습니다. 잠시 후 다시 시도해 주세요.</p>}
-      <button type="submit" className="form-submit" disabled={!ready}>{state === 'sending' ? '보내는 중…' : '응모하기'}</button>
-    </form>
-  );
-}
-
 export default function SurveyForm() {
   // null until mounted: the phase, the done flag and the draft depend on this phone's clock and storage.
   const [phase, setPhase] = useState<Phase | null>(null);
@@ -156,7 +119,6 @@ export default function SurveyForm() {
         <span><Icon name="check" size={22} /></span>
         <b>설문에 참여해 주셔서 감사합니다</b>
         <p>보내주신 의견은 다음 학술대회 준비에 반영하겠습니다.</p>
-        {conferenceConfig.surveyRaffle && <Raffle />}
       </div>
     );
   }

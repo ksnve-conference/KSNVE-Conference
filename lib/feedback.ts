@@ -98,13 +98,9 @@ export type SurveyData = {
   role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
-/** 경품 응모: kept apart from the survey row so answers stay anonymous. */
-export type RaffleData = { contact: string; consent?: true };
-export const CONTACT_MAX = 100;
 export type FeedbackPayload =
   | { kind: 'feedback'; data: FeedbackData; website?: string }
-  | { kind: 'survey'; data: SurveyData; website?: string }
-  | { kind: 'raffle'; data: RaffleData; website?: string };
+  | { kind: 'survey'; data: SurveyData; website?: string };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const isRating = (value: unknown) => Number.isInteger(value) && (value as number) >= 1 && (value as number) <= 5;
@@ -150,11 +146,6 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
         ratings,
       },
     };
-  }
-  if (kind === 'raffle') {
-    const contact = text(data.contact, CONTACT_MAX);
-    if (contact.length < 5 || data.consent !== true) return null;
-    return { kind, data: { contact } };
   }
   return null;
 }

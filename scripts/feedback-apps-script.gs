@@ -43,9 +43,6 @@ function doPost(e) {
       const events = s.events || {};
       sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, (s.participation || []).join(' / '), s.visits, ...RATING_IDS.map((id) => score((s.ratings || {})[id])), (s.fields || []).join(' / ')]
         .concat(SURVEY_EVENTS.map((name) => score(events[name])), [s.again, s.wishes, s.comment, s.gender, s.age, body.version]).map(cell));
-    } else if (body.kind === 'raffle') {
-      // Its own tab and no shared id, so a contact can't be matched to a survey row.
-      sheetFor(book, '경품 응모', ['응모 시각', '연락처']).appendRow([new Date(), body.data.contact].map(cell));
     } else {
       return reply({ ok: false, error: 'bad-kind' });
     }
