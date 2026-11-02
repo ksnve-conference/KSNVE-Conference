@@ -5,6 +5,8 @@ import sessionsData from '@/data/sessions.json';
 export const feedbackCategories = ['행사 운영', '발표장 · 시설', '앱 오류 · 개선', '기타'] as const;
 export const surveyRoles = ['학계', '연구계', '산업계', '학생', '기타'] as const;
 export const surveyAgain = ['예', '아직 모르겠음', '아니오'] as const;
+export const surveyGenders = ['남성', '여성', '응답하지 않음'] as const;
+export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대 이상', '응답하지 않음'] as const;
 export const surveyVisits = ['처음', '2~3회', '4~5회', '6회 이상'] as const;
 
 /** 가장 유익했던 분야: every session category in programme order, grouped like the programme book, plus the talks. */
@@ -49,7 +51,7 @@ export const DEVICE_MAX = 300;
 
 export type FeedbackData = { category: string; message: string; email: string; device: string };
 export type SurveyData = {
-  role: string; visits: string; overall: number; program: number; venue: number; app: number;
+  role: string; gender: string; age: string; visits: string; overall: number; program: number; venue: number; app: number;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
@@ -75,10 +77,13 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
   }
   if (kind === 'survey') {
     const role = text(data.role, 20);
+    const gender = text(data.gender, 20);
+    const age = text(data.age, 20);
     const visits = text(data.visits, 20);
     const again = text(data.again, 20);
     if (!(surveyRoles as readonly string[]).includes(role) || !(surveyAgain as readonly string[]).includes(again)) return null;
     if (!(surveyVisits as readonly string[]).includes(visits)) return null;
+    if (!(surveyGenders as readonly string[]).includes(gender) || !(surveyAges as readonly string[]).includes(age)) return null;
     if (!ratingQuestions.every((q) => isRating(data[q.id]))) return null;
     const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
     if (!fields.every((f) => fieldGroupOf.has(f)) || !fieldsComplete(fields)) return null;
@@ -92,7 +97,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     return {
       kind,
       data: {
-        role, visits, again, fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
+        role, gender, age, visits, again, fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
         overall: data.overall as number, program: data.program as number, venue: data.venue as number, app: data.app as number,
       },
     };
