@@ -750,3 +750,46 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .session-guide-link{ display:flex; align-items:center; gap:6px; margin:10px 2px 0; font-size:var(--type-meta); font-weight:600; color:var(--brand); }
 .session-guide-link svg:last-child{ margin-left:auto; color:var(--muted); }
 .guide-panel li, .guide-panel .guide-text, .guide-panel .info-cards p, .guide-panel .guide-callout, .guide-panel .info-note{ word-break:keep-all; text-align:justify; }
+
+/* 건의·피드백 and 만족도 설문 forms */
+.app-form{ display:flex; flex-direction:column; gap:22px; margin-top:18px; }
+.app-form fieldset{ margin:0; padding:0; border:0; min-width:0; }
+.app-form legend, .form-field > span{ display:block; margin:0 2px 10px; padding:0; font-size:var(--type-body); font-weight:700; color:var(--text); line-height:1.45; word-break:keep-all; }
+.app-form legend em, .form-field > span em{ margin-left:4px; font-size:var(--type-caption); font-style:normal; font-weight:600; color:var(--brand); }
+.app-form legend i, .form-field > span i{ margin-left:4px; font-size:var(--type-caption); font-style:normal; font-weight:500; color:var(--muted); }
+.form-choices{ display:flex; flex-wrap:wrap; gap:8px; }
+.form-choices button{ padding:10px 14px; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); color:var(--text-2); font:inherit; font-size:var(--type-meta); font-weight:600; }
+.form-choices button.active, .form-rating button.active{ border-color:var(--brand); background:var(--brand); color:#fff; }
+.form-rating{ display:grid; grid-template-columns:repeat(5, 1fr); gap:6px; }
+.form-rating button{ display:flex; flex-direction:column; align-items:center; gap:3px; padding:10px 2px; border:1px solid var(--line); border-radius:var(--r-md); background:var(--card); color:var(--text-2); font:inherit; }
+.form-rating b{ font-size:var(--type-card); }
+.form-rating small{ font-size:11px; line-height:1.25; text-align:center; word-break:keep-all; color:inherit; opacity:.85; }
+.form-field{ display:flex; flex-direction:column; }
+.form-field textarea, .form-field input{ width:100%; padding:12px 13px; border:1px solid var(--line); border-radius:var(--r-md); background:var(--card); color:var(--text); font:inherit; font-size:16px; line-height:1.55; }
+.form-field textarea{ resize:vertical; min-height:120px; }
+.form-field textarea:focus, .form-field input:focus{ outline:2px solid var(--brand); outline-offset:1px; border-color:var(--brand); }
+.form-field small{ margin:6px 2px 0; font-size:var(--type-caption); line-height:1.55; color:var(--muted); }
+.form-field textarea + small{ align-self:flex-end; }
+.form-trap{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+.form-error{ margin:0; padding:11px 13px; border-radius:var(--r-md); background:var(--danger-bg); color:var(--danger); font-size:var(--type-meta); }
+.form-submit{ padding:15px; border:0; border-radius:var(--r-md); background:var(--brand); color:#fff; font:inherit; font-size:var(--type-body); font-weight:700; }
+.form-submit:disabled{ background:var(--line); color:var(--muted); }
+.app-form > .info-note{ margin-top:-10px; }
+.form-done{ display:flex; flex-direction:column; align-items:center; gap:8px; margin-top:24px; padding:28px 20px; background:var(--card); border:1px solid var(--line); border-radius:var(--r-lg); text-align:center; }
+.form-done > span{ display:grid; place-items:center; width:48px; height:48px; border-radius:50%; background:var(--tint); color:var(--brand); }
+.form-done b{ font-size:var(--type-card); }
+.form-done p{ margin:0; font-size:var(--type-meta); line-height:1.65; color:var(--text-2); word-break:keep-all; }
+.form-done button{ margin-top:8px; padding:10px 16px; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); color:var(--brand); font:inherit; font-size:var(--type-meta); font-weight:600; }
+.survey-banner{ text-decoration:none; }
+.form-choice-group + .form-choice-group{ margin-top:12px; }
+.form-choice-group > small, .form-event-ratings small{ display:block; margin:0 2px 7px; font-size:var(--type-caption); font-weight:600; color:var(--muted); }
+.form-choices.compact{ gap:6px; }
+.form-choices.compact button{ padding:8px 11px; font-size:var(--type-caption); }
+.form-choices button:disabled{ opacity:.45; }
+.form-event-ratings{ display:flex; flex-direction:column; gap:14px; }
+.form-event-ratings .form-rating button{ padding:7px 2px; }
+.form-event-ratings .form-rating b{ font-size:var(--type-body); }
+.form-hint{ margin:10px 2px 0; font-size:var(--type-caption); line-height:1.55; color:var(--muted); }
+.form-hint-top{ margin:-4px 2px 12px; }
+.form-choices .form-choice-none{ border-style:dashed; color:var(--muted); }
+.form-choices .form-choice-none.active{ border-style:solid; background:var(--text-2); border-color:var(--text-2); color:#fff; }

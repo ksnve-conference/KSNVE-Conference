@@ -5,7 +5,7 @@ export type IconName =
   | 'pin' | 'clock' | 'chevron' | 'chevron-down' | 'back' | 'close'
   | 'bell' | 'check' | 'info' | 'sponsor' | 'notice' | 'map' | 'download'
   | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand' | 'filter' | 'share'
-  | 'train' | 'coffee' | 'bed' | 'camera' | 'phone';
+  | 'train' | 'coffee' | 'bed' | 'camera' | 'phone' | 'message';
 
 const paths: Record<IconName, React.ReactNode> = {
   calendar: <><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></>,
@@ -21,6 +21,7 @@ const paths: Record<IconName, React.ReactNode> = {
   back: <path d="m14.5 5.5-6.5 6.5 6.5 6.5"/>,
   close: <path d="m6 6 12 12M18 6 6 18"/>,
   bell: <><path d="M18 8.8a6 6 0 1 0-12 0c0 5.2-2 6.7-2 6.7h16s-2-1.5-2-6.7Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></>,
+  message: <><path d="M4 5.5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9l-4.5 3.5v-3.5H4a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1Z"/><path d="M7.5 10h9M7.5 13.5h6"/></>,
   check: <path d="m5 12.5 4.5 4.5L19 7.5"/>,
   info: <><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.2"/></>,
   sponsor: <><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></>,
