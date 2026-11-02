@@ -36,19 +36,32 @@ export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) 
 });
 
 /** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
-export const surveyEvents = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'] as const;
+/** 웰컴 리셉션 and 만찬 are rated under 식사 instead. */
+export const surveyEvents = ['전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
-/** `optional` ones can be left blank by people who didn't use that service (e.g. no hotel). */
-export const ratingQuestions: readonly { id: string; label: string; optional?: string }[] = [
+/**
+ * `optional` ones can be left blank by people who didn't use that service (e.g. no hotel).
+ * Consecutive entries with the same `group` are asked as one question with a row each.
+ */
+export type RatingQuestion = { id: string; label: string; optional?: string; group?: string };
+export const ratingQuestions: readonly RatingQuestion[] = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
   { id: 'program', label: '발표·강연 등 프로그램 구성은 어떠셨나요?' },
   { id: 'venue', label: '행사장과 현장 운영은 어떠셨나요?' },
   { id: 'location', label: '행사장 위치(교통·접근성)는 어떠셨나요?' },
   { id: 'lodging', label: '주변 숙소는 어떠셨나요?', optional: '숙소를 이용하지 않았다면 비워 두세요' },
-  { id: 'meals', label: '식사(점심·만찬 등)는 어떠셨나요?' },
+  { id: 'meal_reception', label: '웰컴 리셉션', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'meal_lunch', label: '점심', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'meal_dinner', label: '만찬', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
   { id: 'souvenir', label: '기념품은 어떠셨나요?' },
   { id: 'app', label: '학술대회 앱은 도움이 되었나요?' },
 ];
+/** ratingQuestions as the form asks them: single questions, and groups folded into one. */
+export const ratingBlocks = ratingQuestions.reduce<RatingQuestion[][]>((blocks, q) => {
+  const last = blocks[blocks.length - 1];
+  if (q.group && last?.[0].group === q.group) last.push(q); else blocks.push([q]);
+  return blocks;
+}, []);
 export const ratingsComplete = (ratings: Record<string, unknown>) => ratingQuestions.every((q) => (
   q.optional ? ratings[q.id] === undefined || isRating(ratings[q.id]) : isRating(ratings[q.id])
 ));

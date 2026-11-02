@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingLabels, ratingQuestions, ratingsComplete, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyRoles, surveyVisits,
+  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingBlocks, ratingLabels, ratingsComplete, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -161,22 +161,37 @@ export default function SurveyForm() {
         </div>
       </fieldset>
 
-      {ratingQuestions.map((q, i) => (
-        <fieldset key={q.id}>
-          <legend>{i + 5}. {q.label}{q.optional && <i>선택</i>}</legend>
-          <RatingRow
-            label={q.label}
-            clearable={Boolean(q.optional)}
-            value={ratings[q.id]}
-            onChange={(v) => setRatings((current) => {
-              const next = { ...current };
-              if (v === undefined) delete next[q.id]; else next[q.id] = v;
-              return next;
-            })}
-          />
-          {q.optional && <p className="form-hint">{q.optional}. 선택한 점수를 다시 누르면 지워집니다.</p>}
-        </fieldset>
-      ))}
+      {ratingBlocks.map((block, i) => {
+        const q = block[0];
+        const setRating = (id: string) => (v: number | undefined) => setRatings((current) => {
+          const next = { ...current };
+          if (v === undefined) delete next[id]; else next[id] = v;
+          return next;
+        });
+        if (q.group) {
+          return (
+            <fieldset key={q.group}>
+              <legend>{i + 5}. {q.group}{q.optional && <i>{q.optional}</i>}</legend>
+              <div className="form-event-ratings">
+                {block.map((row) => (
+                  <div key={row.id}>
+                    <small>{row.label}</small>
+                    <RatingRow label={row.label} clearable={Boolean(row.optional)} value={ratings[row.id]} onChange={setRating(row.id)} />
+                  </div>
+                ))}
+              </div>
+              {q.optional && <p className="form-hint">참여하지 않은 항목은 비워 두세요. 선택한 점수를 다시 누르면 지워집니다.</p>}
+            </fieldset>
+          );
+        }
+        return (
+          <fieldset key={q.id}>
+            <legend>{i + 5}. {q.label}{q.optional && <i>선택</i>}</legend>
+            <RatingRow label={q.label} clearable={Boolean(q.optional)} value={ratings[q.id]} onChange={setRating(q.id)} />
+            {q.optional && <p className="form-hint">{q.optional}. 선택한 점수를 다시 누르면 지워집니다.</p>}
+          </fieldset>
+        );
+      })}
 
       <fieldset>
         <legend>13. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
