@@ -30,6 +30,8 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
   const venue = venues.find((item) => item.name === session.venue);
   const hasChair = Boolean(session.chair && session.chair !== '-');
   const isTalk = /키노트|초청/.test(session.category);
+  // Paper sessions (s…) and the two poster sessions get the matching guide tab; other events don't.
+  const guideTab = session.category === '포스터 발표' ? 'poster' : session.id.startsWith('s') ? 'chair' : null;
   const metaText = session.speaker ? `연사 ${session.speaker}`
     : isTalk && sessionPapers.length > 0
     ? `발표자 ${sessionPapers.map((p) => p.presenter).filter(Boolean).join(', ')}`
@@ -55,6 +57,11 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
         <h1>{formatSessionTitle(session.title)}</h1>
         {metaText && <p className="meta large">{metaText}</p>}
       </section>
+      {guideTab && (
+        <Link className="session-guide-link" href={`/conference/presentation-guide#${guideTab}`}>
+          <Icon name="file" size={15} />{guideTab === 'poster' ? '포스터발표 참가요령' : '좌장·구두발표 참가요령'}<Icon name="chevron" size={15} />
+        </Link>
+      )}
 
       {session.details && <EventDetailsView details={session.details} />}
 
