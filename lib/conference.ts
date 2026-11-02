@@ -71,7 +71,7 @@ export type EventDetails = {
 
 export type Venue = { id: string; name: string; floor: string };
 export type Speaker = { id: string; name: string; papers: string[] };
-export type Announcement = { id: string; title: string; body: string; date: string; category: string };
+export type Announcement = { id: string; title: string; body: string; date: string; category: string; image?: string };
 
 /**
  * Lightweight paper list — title, authors, time, place, no abstract text.

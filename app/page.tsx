@@ -288,7 +288,7 @@ export default function ProgramPage() {
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleNotice(a.id); } }}
               >
                 <span>{a.category}</span>
-                <div><b>{a.title}</b><small>{linkify(a.body)}</small></div>
+                <div><b>{a.title}</b><small>{linkify(a.body)}</small>{a.image && openNotices.includes(a.id) && <img className="notice-image" src={a.image} alt={a.title} loading="lazy" />}</div>
                 {!read.includes(a.id) && <em>NEW</em>}
               </div>
             ))}

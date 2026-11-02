@@ -34,6 +34,7 @@ export default function NoticesPage() {
             <div><span className="badge">{item.category}</span>{!read.includes(item.id) && <em>NEW</em>}</div>
             <h2>{item.title}</h2>
             <p>{linkify(item.body)}</p>
+            {item.image && <img className="notice-image" src={item.image} alt={item.title} loading="lazy" />}
             {item.date && <time>{item.date.replaceAll('-', '.')}</time>}
           </article>
         ))}

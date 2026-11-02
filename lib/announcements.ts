@@ -41,6 +41,14 @@ export function parseCsv(text: string): string[][] {
   return rows;
 }
 
+/** A Drive share link (…/file/d/<id>/view or ?id=<id>) becomes a directly embeddable image URL;
+ * other http(s) image addresses pass through unchanged. */
+export function imageSrc(url: string): string {
+  if (!/^https?:\/\//.test(url)) return '';
+  const drive = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?(?:export=\w+&)?id=)([\w-]+)/);
+  return drive ? `https://lh3.googleusercontent.com/d/${drive[1]}=w1200` : url;
+}
+
 /** Short stable hash (FNV-1a) for content-derived notice ids. */
 function hashId(text: string): string {
   let h = 0x811c9dc5;
@@ -70,6 +78,7 @@ export function rowsToAnnouncements(rows: string[][]): (Announcement & { legacyI
   const iDate = col('date', '날짜');
   const iCat = col('category', '분류', '구분', 'tag', '태그');
   const iVisible = col('visible', '공개', '노출');
+  const iImage = col('imageurl', 'image', 'img', '이미지');
   const out: (Announcement & { legacyId?: string })[] = [];
   rows.slice(1).forEach((r, n) => {
     const date = (iDate >= 0 ? r[iDate] : '')?.trim() || '';
@@ -86,6 +95,7 @@ export function rowsToAnnouncements(rows: string[][]): (Announcement & { legacyI
       body: (iBody >= 0 ? r[iBody] : '')?.trim() || '',
       date,
       category: (iCat >= 0 ? r[iCat] : '')?.trim() || '공지',
+      ...(imageSrc((iImage >= 0 ? r[iImage] : '')?.trim() || '') ? { image: imageSrc(r[iImage].trim()) } : {}),
     });
   });
   return sortByDateDesc(out);
