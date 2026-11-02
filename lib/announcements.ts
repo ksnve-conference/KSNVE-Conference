@@ -3,6 +3,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import { announcements as bundled, type Announcement } from '@/lib/conference';
 
+import { parseCsv } from '@/lib/announcement-csv';
+export { parseCsv } from '@/lib/announcement-csv';
+
 const READ_KEY = 'ksnveReadAnnouncements';
 const CACHE_KEY = 'ksnveAnnouncementsCache';
 const LEGACY_KEY = 'ksnveAnnouncementIdsV2';
@@ -10,36 +13,6 @@ const LEGACY_DONE = () => { try { return localStorage.getItem(LEGACY_KEY) === '1
 const SHEET_URL = process.env.NEXT_PUBLIC_ANNOUNCEMENTS_SHEET_URL;
 
 export type AnnouncementSource = 'sheet' | 'cache' | 'bundled';
-
-/** Minimal RFC-4180 CSV parser — handles quoted fields, embedded commas and newlines. */
-export function parseCsv(text: string): string[][] {
-  const rows: string[][] = [];
-  let row: string[] = [];
-  let field = '';
-  let quoted = false;
-  for (let i = 0; i < text.length; i += 1) {
-    const c = text[i];
-    if (quoted) {
-      if (c === '"') {
-        if (text[i + 1] === '"') { field += '"'; i += 1; } else { quoted = false; }
-      } else field += c;
-      continue;
-    }
-    if (c === '"') { quoted = true; continue; }
-    if (c === ',') { row.push(field); field = ''; continue; }
-    if (c === '\n' || c === '\r') {
-      if (c === '\r' && text[i + 1] === '\n') i += 1;
-      row.push(field); field = '';
-      if (row.some((v) => v.trim() !== '')) rows.push(row);
-      row = [];
-      continue;
-    }
-    field += c;
-  }
-  row.push(field);
-  if (row.some((v) => v.trim() !== '')) rows.push(row);
-  return rows;
-}
 
 /** A Drive share link (…/file/d/<id>/view or ?id=<id>) becomes a directly embeddable image URL;
  * other http(s) image addresses pass through unchanged. */
@@ -126,6 +99,7 @@ export function useAnnouncements() {
   const [source, setSource] = useState<AnnouncementSource>('bundled');
   const [read, setRead] = useState<string[]>([]);
   const [readReady, setReadReady] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     setRead(readRead());
@@ -143,14 +117,22 @@ export function useAnnouncements() {
       }
     } catch { /* ignore malformed cache */ }
 
-    const controller = new AbortController();
-    const timer = window.setTimeout(() => controller.abort(), 8000);
-    fetch(SHEET_URL, { signal: controller.signal, cache: 'no-store' })
+    let disposed = false;
+    let controller: AbortController | undefined;
+    let timer: number | undefined;
+    let pending = false;
+    const refresh = () => {
+      if (disposed || pending || document.visibilityState === 'hidden') return;
+      pending = true;
+      controller = new AbortController();
+      timer = window.setTimeout(() => controller?.abort(), 12000);
+      fetch('/api/announcements', { signal: controller.signal, cache: 'no-store' })
       .then((res) => (res.ok ? res.text() : Promise.reject(new Error(String(res.status)))))
       .then((text) => {
         const rows = parseCsv(text);
         // Accept a valid empty sheet (all notices removed), but not an HTML error page.
-        if (!rows[0]?.some((cell) => ['title', '제목'].includes(cell.trim().toLowerCase()))) return;
+        if (!rows[0]?.some((cell) => ['title', '제목'].includes(cell.trim().toLowerCase()))) throw new Error('Invalid notices');
+        if (disposed) return;
         const next = rowsToAnnouncements(rows);
         // Notices read under the old row-position ids stay read under their new ids.
         if (!LEGACY_DONE()) {
@@ -164,11 +146,26 @@ export function useAnnouncements() {
         }
         setItems(next.map(({ legacyId: _legacy, ...a }) => a));
         setSource('sheet');
+        setError(false);
         try { localStorage.setItem(CACHE_KEY, JSON.stringify({ url: SHEET_URL, items: next.map(({ legacyId: _legacy, ...a }) => a) })); } catch { /* quota */ }
       })
-      .catch(() => { /* offline or sheet unreachable — cached/bundled notices stay */ })
-      .finally(() => window.clearTimeout(timer));
-    return () => { controller.abort(); window.clearTimeout(timer); };
+      .catch(() => { if (!disposed) setError(true); })
+      .finally(() => { pending = false; window.clearTimeout(timer); });
+    };
+    refresh();
+    const interval = window.setInterval(refresh, 60000);
+    window.addEventListener('online', refresh);
+    window.addEventListener('pageshow', refresh);
+    document.addEventListener('visibilitychange', refresh);
+    return () => {
+      disposed = true;
+      controller?.abort();
+      window.clearTimeout(timer);
+      window.clearInterval(interval);
+      window.removeEventListener('online', refresh);
+      window.removeEventListener('pageshow', refresh);
+      document.removeEventListener('visibilitychange', refresh);
+    };
   }, []);
 
   const markRead = useCallback((id: string) => {
@@ -183,5 +180,5 @@ export function useAnnouncements() {
   // The server cannot know this browser's read history. Hide the badge until
   // that history is loaded instead of briefly treating every notice as unread.
   const unread = readReady ? items.filter((a) => !read.includes(a.id)).length : 0;
-  return { items, source, read, unread, markRead };
+  return { items, source, read, unread, markRead, error };
 }

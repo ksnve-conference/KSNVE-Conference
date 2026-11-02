@@ -81,7 +81,7 @@ export default function ProgramPage() {
   const [openTimelineSessions, setOpenTimelineSessions] = useState<string[]>([]);
   const toggleTimelineSessionOpen = (id: string) =>
     setOpenTimelineSessions((current) => current.includes(id) ? current.filter((x) => x !== id) : [...current, id]);
-  const { items: announcements, unread, markRead, read } = useAnnouncements();
+  const { items: announcements, unread, markRead, read, error: noticeError } = useAnnouncements();
   // The compact home-page list clips each notice to one line; a tap should
   // reveal the rest in place rather than only marking it read with no visible change.
   const [openNotices, setOpenNotices] = useState<string[]>([]);
@@ -275,6 +275,7 @@ export default function ProgramPage() {
             <h2>공지사항 {unread > 0 && <i>{unread}</i>}</h2>
             {announcements.length > 2 && <Link href="/notices">전체 보기</Link>}
           </div>
+          {noticeError && <p className="section-note" role="status">최신 공지를 불러오지 못했습니다. 기존 내용을 표시하며 자동으로 다시 확인합니다.</p>}
           <div className="announcement-list">
             {announcements.slice(0, 2).map((a) => (
               // A div with button semantics (not a <button>) so links in the body are valid and tappable.

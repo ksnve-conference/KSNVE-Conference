@@ -8,7 +8,7 @@ import { useAnnouncements } from '@/lib/announcements';
 import { linkify } from '@/lib/linkify';
 
 export default function NoticesPage() {
-  const { items, read, unread, markRead, source } = useAnnouncements();
+  const { items, read, unread, markRead, source, error } = useAnnouncements();
 
   return (
     <main className="shell detail-shell">
@@ -19,7 +19,9 @@ export default function NoticesPage() {
         <strong>{unread > 0 ? `새 소식 ${unread}건` : `${items.length}건`}</strong>
       </div>
 
-      {source === 'cache' && (
+      {error ? (
+        <p className="section-note" role="status">최신 공지를 불러오지 못했습니다. 기존 내용을 표시하며 자동으로 다시 확인합니다.</p>
+      ) : source === 'cache' && (
         <p className="section-note"><Icon name="info" size={13} /> 저장된 공지를 표시하고 있습니다. 연결되면 최신 내용으로 갱신됩니다.</p>
       )}
 
