@@ -10,6 +10,7 @@ import TimeTravelPanel from '@/components/TimeTravelPanel';
 import InstallPrompt from '@/components/InstallPrompt';
 import WelcomeIntro from '@/components/WelcomeIntro';
 import Icon, { type IconName } from '@/components/Icon';
+import SurveyBanner from '@/components/SurveyBanner';
 import { dayLabel, papers, sessions, type Session } from '@/lib/conference';
 import { allMajorItems, sessionRange, shortDate } from '@/lib/major-events';
 import { conferenceConfig } from '@/lib/conference-config';
@@ -203,6 +204,7 @@ export default function ProgramPage() {
 
       <section className="today-dashboard">
         <InstallPrompt />
+        <SurveyBanner now={now} />
         {showTimeTravel && <TimeTravelPanel mockNow={mockNow} onChange={changeMockNow} />}
 
         {isAfter && (

@@ -1,0 +1,70 @@
+/**
+ * Receives 건의·피드백 and 만족도 설문 submissions from /api/feedback and
+ * appends them to this spreadsheet. A new 건의 is also mailed to the account
+ * that deployed the script.
+ *
+ * Setup (once, in the Google account that should own the responses):
+ *  1. Create a Google Sheet → Extensions → Apps Script, paste this file.
+ *  2. Project Settings → Script properties: FEEDBACK_SECRET = a long random string.
+ *  3. Deploy → New deployment → Web app; Execute as: Me; Who has access: Anyone.
+ *  4. In Vercel set FEEDBACK_SCRIPT_URL (the /exec URL) and FEEDBACK_SECRET.
+ */
+
+const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
+const SURVEY_HEADERS = ['제출 시각', '참가 유형', '전반 만족도', '프로그램', '행사장·운영', '학술대회 앱', '다음 참가 의향', '자유 의견', '앱 버전'];
+
+function doPost(e) {
+  let body;
+  try {
+    body = JSON.parse(e.postData.contents);
+  } catch (error) {
+    return reply({ ok: false, error: 'bad-json' });
+  }
+  const secret = PropertiesService.getScriptProperties().getProperty('FEEDBACK_SECRET');
+  if (!secret || body.secret !== secret) return reply({ ok: false, error: 'forbidden' });
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const book = SpreadsheetApp.getActiveSpreadsheet();
+    if (body.kind === 'feedback') {
+      const f = body.data;
+      sheetFor(book, '건의', FEEDBACK_HEADERS).appendRow([new Date(), f.category, f.message, f.email, f.device, body.version, '접수', ''].map(cell));
+      MailApp.sendEmail({
+        to: Session.getEffectiveUser().getEmail(),
+        subject: `[KSNVE 학술대회 앱] 새 건의 · ${f.category}`,
+        body: `${f.message}\n\n답변 받을 이메일: ${f.email || '(없음)'}\n기기: ${f.device || '-'}\n\n전체 목록: ${book.getUrl()}`,
+      });
+    } else if (body.kind === 'survey') {
+      const s = body.data;
+      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, s.overall, s.program, s.venue, s.app, s.again, s.comment, body.version].map(cell));
+    } else {
+      return reply({ ok: false, error: 'bad-kind' });
+    }
+  } finally {
+    lock.releaseLock();
+  }
+  return reply({ ok: true });
+}
+
+function sheetFor(book, name, headers) {
+  let sheet = book.getSheetByName(name);
+  if (!sheet) {
+    sheet = book.insertSheet(name);
+    sheet.appendRow(headers);
+    sheet.setFrozenRows(1);
+    sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
+  }
+  return sheet;
+}
+
+/** Text that starts like a formula is stored as text, so a submission can't run one. */
+function cell(value) {
+  if (value === undefined || value === null) return '';
+  if (typeof value === 'string' && /^[=+\-@]/.test(value)) return `'${value}`;
+  return value;
+}
+
+function reply(value) {
+  return ContentService.createTextOutput(JSON.stringify(value)).setMimeType(ContentService.MimeType.JSON);
+}
