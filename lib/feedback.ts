@@ -10,7 +10,7 @@ export const surveyGenders = ['남성', '여성', '응답하지 않음'] as cons
 export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대 이상', '응답하지 않음'] as const;
 export const surveyVisits = ['처음', '2~3회', '4~5회', '6회 이상'] as const;
 
-/** 가장 유익했던 분야: every session category in programme order, grouped like the programme book, plus the talks. */
+/** 가장 유익했던 분야: every session category in programme order, grouped like the programme book. */
 const categories = Array.from(new Set((sessionsData as { category: string }[]).map((x) => x.category)));
 const prefixed = (prefix: string) => categories.filter((c) => c.startsWith(`${prefix} `)).map((c) => c.slice(prefix.length + 1));
 export const surveyFieldGroups = [
@@ -18,7 +18,6 @@ export const surveyFieldGroups = [
   { label: '기획세션', items: prefixed('기획') },
   { label: '부문세션', items: prefixed('부문') },
   { label: '특별세션', items: [...prefixed('특별'), '기업 특별세션'] },
-  { label: '강연·발표', items: ['키노트·초청특별강연', '포스터 발표'] },
 ];
 /** Each group needs an answer; this choice is how someone who skipped that kind of session says so. */
 export const FIELD_NONE = '해당 없음';
