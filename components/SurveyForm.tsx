@@ -165,18 +165,22 @@ export default function SurveyForm() {
           return next;
         });
         if (q.group) {
+          // A group whose rows are all optional says so once in the title; otherwise each optional row is marked.
+          const allOptional = block.every((row) => row.optional);
           return (
             <fieldset key={q.group}>
-              <legend>{i + 4}. {q.group}{q.optional && <i>{q.optional}</i>}</legend>
+              <legend>{i + 4}. {q.group}{allOptional && <i>{q.optional}</i>}</legend>
               <div className="form-event-ratings">
                 {block.map((row) => (
                   <div key={row.id}>
-                    <small>{row.label}</small>
+                    <small>{row.label}{!allOptional && row.optional && <> · {row.optional}</>}</small>
                     <RatingRow label={row.label} clearable={Boolean(row.optional)} value={ratings[row.id]} onChange={setRating(row.id)} />
                   </div>
                 ))}
               </div>
-              {q.optional && <p className="form-hint">참여하지 않은 항목은 비워 두세요. 선택한 점수를 다시 누르면 지워집니다.</p>}
+              {block.some((row) => row.optional) && (
+                <p className="form-hint">{allOptional ? '참여하지 않은 항목은 비워 두세요.' : '선택 항목은 해당이 없으면 비워 두세요.'} 선택한 점수를 다시 누르면 지워집니다.</p>
+              )}
             </fieldset>
           );
         }

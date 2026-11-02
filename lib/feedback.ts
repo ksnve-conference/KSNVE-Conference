@@ -47,7 +47,11 @@ export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족'
 export type RatingQuestion = { id: string; label: string; optional?: string; group?: string };
 export const ratingQuestions: readonly RatingQuestion[] = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
-  { id: 'program', label: '발표·강연 등 프로그램 구성은 어떠셨나요?' },
+  { id: 'program_level', label: '발표 내용의 수준', group: '학술 프로그램은 어떠셨나요?' },
+  { id: 'program_qa', label: '질의응답·토론', group: '학술 프로그램은 어떠셨나요?' },
+  { id: 'program_chair', label: '좌장 진행', group: '학술 프로그램은 어떠셨나요?' },
+  { id: 'program_facility', label: '발표장 시설 (음향·영상·노트북)', group: '학술 프로그램은 어떠셨나요?' },
+  { id: 'program_poster', label: '포스터 세션 운영', group: '학술 프로그램은 어떠셨나요?', optional: '선택' },
   { id: 'venue', label: '행사장과 현장 운영은 어떠셨나요?' },
   { id: 'location', label: '행사장 위치(교통·접근성)는 어떠셨나요?' },
   { id: 'lodging', label: '주변 숙소는 어떠셨나요?', optional: '숙소를 이용하지 않았다면 비워 두세요' },
