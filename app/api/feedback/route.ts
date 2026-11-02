@@ -46,10 +46,25 @@ export async function POST(request: Request) {
       body: JSON.stringify({ ...payload, secret, version: (process.env.NEXT_PUBLIC_DEPLOYMENT_VERSION ?? '').slice(0, 7) }),
       signal: AbortSignal.timeout(12000),
     });
-    const result = await response.json().catch(() => null) as { ok?: boolean } | null;
-    if (!response.ok || !result?.ok) throw new Error('Script rejected');
+    const body = await response.text();
+    let result: { ok?: boolean; error?: string } | null = null;
+    try {
+      result = JSON.parse(body);
+    } catch {
+      // Apps Script answers with an HTML page when the web app isn't open to anyone
+    }
+    if (!response.ok || !result?.ok) {
+      // Shows in Vercel's function logs; never includes the secret or the submission.
+      console.error('feedback: Apps Script rejected', {
+        status: response.status,
+        contentType: response.headers.get('content-type'),
+        error: result?.error ?? body.replace(/\s+/g, ' ').slice(0, 160),
+      });
+      return Response.json({ ok: false }, { status: 502, headers });
+    }
     return Response.json({ ok: true }, { headers });
-  } catch {
+  } catch (error) {
+    console.error('feedback: Apps Script unreachable', String(error));
     return Response.json({ ok: false }, { status: 502, headers });
   }
 }
