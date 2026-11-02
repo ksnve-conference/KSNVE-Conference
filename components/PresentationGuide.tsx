@@ -79,7 +79,7 @@ function Poster() {
           </tbody>
         </table>
       </div>
-      <p className="info-note">발표장: 컨퍼런스홀 (1층, 소음진동 제품전시장). 포스터 발표물은 발표 후에도 계속 게재 바랍니다. 행사 종료 후 학회 본부에서 일괄 철수할 예정입니다.</p>
+      <p className="info-note">발표장: 컨퍼런스홀 (1층, 소음진동 제품전시장). 포스터 발표물은 발표 후에도 계속 게시 바랍니다. 행사 종료 후 학회 본부에서 일괄 철수할 예정입니다.</p>
 
       <h2 className="info-subhead">포스터 발표물 준비 및 게시</h2>
       <ul className="info-list">
