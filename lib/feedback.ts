@@ -5,8 +5,7 @@ import sessionsData from '@/data/sessions.json';
 export const feedbackCategories = ['행사 운영', '발표장 · 시설', '앱 오류 · 개선', '기타'] as const;
 export const surveyRoles = ['학계', '연구계', '산업계', '학생', '기타'] as const;
 export const surveyAgain = ['예', '아직 모르겠음', '아니오'] as const;
-export const surveyVisits = ['처음', '2~3회', '4회 이상'] as const;
-export const FIELDS_MAX = 5;
+export const surveyVisits = ['처음', '2~3회', '4~5회', '6회 이상'] as const;
 
 /** 가장 유익했던 분야: every session category in programme order, grouped like the programme book, plus the talks. */
 const categories = Array.from(new Set((sessionsData as { category: string }[]).map((x) => x.category)));
@@ -73,7 +72,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     if (!(surveyVisits as readonly string[]).includes(visits)) return null;
     if (!ratingQuestions.every((q) => isRating(data[q.id]))) return null;
     const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
-    if (fields.length < 1 || fields.length > FIELDS_MAX || !fields.every((f) => fieldGroupOf.has(f))) return null;
+    if (fields.length < 1 || !fields.every((f) => fieldGroupOf.has(f))) return null;
     const rawEvents = data.events && typeof data.events === 'object' ? data.events as Record<string, unknown> : {};
     const events: Record<string, number> = {};
     for (const name of surveyEvents) {

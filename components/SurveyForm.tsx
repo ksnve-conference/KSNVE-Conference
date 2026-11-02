@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  FIELDS_MAX, MESSAGE_MAX, ratingLabels, ratingQuestions, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyRoles, surveyVisits,
+  MESSAGE_MAX, ratingLabels, ratingQuestions, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -88,7 +88,7 @@ export default function SurveyForm() {
   const complete = role && visits && again && fields.length > 0 && ratingQuestions.every((q) => ratings[q.id]);
 
   const toggleField = (item: string) => setFields((current) => (
-    current.includes(item) ? current.filter((f) => f !== item) : current.length < FIELDS_MAX ? [...current, item] : current
+    current.includes(item) ? current.filter((f) => f !== item) : [...current, item]
   ));
 
   const submit = async (event: React.FormEvent) => {
@@ -136,7 +136,7 @@ export default function SurveyForm() {
       ))}
 
       <fieldset>
-        <legend>7. 가장 유익했던 분야 <i>최대 {FIELDS_MAX}개 · {fields.length}개 선택</i></legend>
+        <legend>7. 가장 유익했던 분야 <i>1개 이상 · 복수 선택 가능{fields.length > 0 ? ` · ${fields.length}개 선택` : ''}</i></legend>
         {surveyFieldGroups.map((group) => (
           <div className="form-choice-group" key={group.label}>
             <small>{group.label}</small>
@@ -144,7 +144,7 @@ export default function SurveyForm() {
               {group.items.map((item) => {
                 const on = fields.includes(item);
                 return (
-                  <button key={item} type="button" className={on ? 'active' : ''} aria-pressed={on} disabled={!on && fields.length >= FIELDS_MAX} onClick={() => toggleField(item)}>{item}</button>
+                  <button key={item} type="button" className={on ? 'active' : ''} aria-pressed={on} onClick={() => toggleField(item)}>{item}</button>
                 );
               })}
             </div>
