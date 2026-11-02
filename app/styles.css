@@ -749,3 +749,4 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .guide-figure figcaption{ margin-top:6px; font-size:var(--type-caption); color:var(--muted); }
 .session-guide-link{ display:flex; align-items:center; gap:6px; margin:10px 2px 0; font-size:var(--type-meta); font-weight:600; color:var(--brand); }
 .session-guide-link svg:last-child{ margin-left:auto; color:var(--muted); }
+.guide-panel li, .guide-panel .guide-text, .guide-panel .info-cards p, .guide-panel .guide-callout, .guide-panel .info-note{ word-break:keep-all; text-align:justify; }
