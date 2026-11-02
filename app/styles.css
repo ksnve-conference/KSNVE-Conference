@@ -528,7 +528,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .notification-prompt em{ font-size:var(--type-caption); font-weight:700; }
 
 /* ---------- detail page bottom padding for the fixed nav ---------- */
-.detail-shell{ padding-bottom:96px; }
+.detail-shell{ padding-bottom:calc(96px + env(safe-area-inset-bottom)); }   /* clear the fixed tab bar, which grows by the home-indicator inset */
 
 /* ---------- information pages ---------- */
 /* 행사개요: the programme book's emblem above the introduction */
