@@ -36,8 +36,8 @@ export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) 
 });
 
 /** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
-/** 웰컴 리셉션 and 만찬 are rated under 식사 instead. */
-export const surveyEvents = ['전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험'] as const;
+/** 웰컴 리셉션 and 만찬 appear here for the event itself and under 식사 for the food. */
+export const surveyEvents = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
 /**
  * `optional` ones can be left blank by people who didn't use that service (e.g. no hotel).
@@ -50,9 +50,9 @@ export const ratingQuestions: readonly RatingQuestion[] = [
   { id: 'venue', label: '행사장과 현장 운영은 어떠셨나요?' },
   { id: 'location', label: '행사장 위치(교통·접근성)는 어떠셨나요?' },
   { id: 'lodging', label: '주변 숙소는 어떠셨나요?', optional: '숙소를 이용하지 않았다면 비워 두세요' },
-  { id: 'meal_reception', label: '웰컴 리셉션', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
-  { id: 'meal_lunch', label: '점심', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
-  { id: 'meal_dinner', label: '만찬', group: '식사는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'meal_reception', label: '웰컴 리셉션', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'meal_lunch', label: '점심', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
+  { id: 'meal_dinner', label: '만찬', group: '식사(음식)는 어떠셨나요?', optional: '참여한 식사만' },
   { id: 'souvenir', label: '기념품은 어떠셨나요?' },
   { id: 'app', label: '학술대회 앱은 도움이 되었나요?' },
 ];

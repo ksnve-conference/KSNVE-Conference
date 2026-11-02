@@ -218,7 +218,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>14. 부대행사는 어떠셨나요? <i>참가한 행사만</i></legend>
+        <legend>14. 부대행사(프로그램·진행)는 어떠셨나요? <i>참가한 행사만</i></legend>
         <div className="form-event-ratings">
           {surveyEvents.map((name) => (
             <div key={name}>

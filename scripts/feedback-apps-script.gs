@@ -12,7 +12,7 @@
 
 const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
 const RATING_IDS = ['overall', 'program', 'venue', 'location', 'lodging', 'meal_reception', 'meal_lunch', 'meal_dinner', 'souvenir', 'app'];
-const SURVEY_EVENTS = ['전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험'];
+const SURVEY_EVENTS = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'];
 const SURVEY_HEADERS = ['제출 시각', '참가 유형', '성별', '연령대', '참가 횟수', '전반 만족도', '프로그램', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
   .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '자유 의견', '앱 버전']);
 
