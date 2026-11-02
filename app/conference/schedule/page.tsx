@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import InfoPage from '@/components/InfoPage';
 import Icon from '@/components/Icon';
+import ScrollMemory from '@/components/ScrollMemory';
 import { conferenceConfig } from '@/lib/conference-config';
 import { allMajorItems, shortDate } from '@/lib/major-events';
 
@@ -14,6 +15,7 @@ export default function MajorSchedulePage() {
   }));
   return (
     <InfoPage title="주요 일정" intro="4일간 열리는 주요 행사와 키노트·초청 강연입니다. 항목을 누르면 세션이나 발표 상세로 이동합니다.">
+      <ScrollMemory screen="major-schedule" />
       {days.map((day) => (
         <section key={day.date}>
           <h2 className="info-subhead">{day.no}일차 <small className="info-subhead-note">{shortDate(day.date)}</small></h2>
