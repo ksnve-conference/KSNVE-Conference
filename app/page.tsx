@@ -17,6 +17,7 @@ import { parseMockNow, type MockNow } from '@/lib/dashboard-time';
 import { useSaved } from '@/lib/saved';
 import { useAnnouncements } from '@/lib/announcements';
 import { linkify } from '@/lib/linkify';
+import ScheduleOverview from '@/components/ScheduleOverview';
 import { useViewState } from '@/lib/view-state';
 
 function localDateKey() {
@@ -298,7 +299,7 @@ export default function ProgramPage() {
       </section>
 
       <section id="program" className="program-block" tabIndex={-1}>
-        <div className="screen-title"><h1>전체 프로그램</h1></div>
+        <div className="screen-title"><h1>전체 프로그램</h1><ScheduleOverview /></div>
         <div className="date-strip">
           {dates.map((item) => (
             <button key={item} className={date === item ? 'active' : ''} onClick={() => setDate(item)}>
