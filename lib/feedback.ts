@@ -38,12 +38,20 @@ export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) 
 /** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
 export const surveyEvents = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
-export const ratingQuestions = [
+/** `optional` ones can be left blank by people who didn't use that service (e.g. no hotel). */
+export const ratingQuestions: readonly { id: string; label: string; optional?: string }[] = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
   { id: 'program', label: '발표·강연 등 프로그램 구성은 어떠셨나요?' },
   { id: 'venue', label: '행사장과 현장 운영은 어떠셨나요?' },
+  { id: 'location', label: '행사장 위치(교통·접근성)는 어떠셨나요?' },
+  { id: 'lodging', label: '주변 숙소는 어떠셨나요?', optional: '숙소를 이용하지 않았다면 비워 두세요' },
+  { id: 'meals', label: '식사(점심·만찬 등)는 어떠셨나요?' },
+  { id: 'souvenir', label: '기념품은 어떠셨나요?' },
   { id: 'app', label: '학술대회 앱은 도움이 되었나요?' },
-] as const;
+];
+export const ratingsComplete = (ratings: Record<string, unknown>) => ratingQuestions.every((q) => (
+  q.optional ? ratings[q.id] === undefined || isRating(ratings[q.id]) : isRating(ratings[q.id])
+));
 
 export const MESSAGE_MAX = 1000;
 export const EMAIL_MAX = 120;
@@ -51,7 +59,7 @@ export const DEVICE_MAX = 300;
 
 export type FeedbackData = { category: string; message: string; email: string; device: string };
 export type SurveyData = {
-  role: string; gender: string; age: string; visits: string; overall: number; program: number; venue: number; app: number;
+  role: string; gender: string; age: string; visits: string; ratings: Record<string, number | ''>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
@@ -84,7 +92,9 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     if (!(surveyRoles as readonly string[]).includes(role) || !(surveyAgain as readonly string[]).includes(again)) return null;
     if (!(surveyVisits as readonly string[]).includes(visits)) return null;
     if (!(surveyGenders as readonly string[]).includes(gender) || !(surveyAges as readonly string[]).includes(age)) return null;
-    if (!ratingQuestions.every((q) => isRating(data[q.id]))) return null;
+    const rawRatings = data.ratings && typeof data.ratings === 'object' ? data.ratings as Record<string, unknown> : {};
+    if (!ratingsComplete(rawRatings)) return null;
+    const ratings: Record<string, number | ''> = Object.fromEntries(ratingQuestions.map((q) => [q.id, (rawRatings[q.id] as number | undefined) ?? ''] as const));
     const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
     if (!fields.every((f) => fieldGroupOf.has(f)) || !fieldsComplete(fields)) return null;
     const rawEvents = data.events && typeof data.events === 'object' ? data.events as Record<string, unknown> : {};
@@ -98,7 +108,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
       kind,
       data: {
         role, gender, age, visits, again, fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
-        overall: data.overall as number, program: data.program as number, venue: data.venue as number, app: data.app as number,
+        ratings,
       },
     };
   }

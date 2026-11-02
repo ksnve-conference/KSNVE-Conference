@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingLabels, ratingQuestions, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyRoles, surveyVisits,
+  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingLabels, ratingQuestions, ratingsComplete, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyAges, surveyGenders, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -35,7 +35,6 @@ export function surveyDone() {
   }
 }
 
-type Ratings = Record<(typeof ratingQuestions)[number]['id'], number>;
 
 /** 1–5 buttons; tapping the chosen score again clears it when `clearable` (optional rows). */
 function RatingRow({ label, value, onChange, clearable = false }: { label: string; value?: number; onChange: (v: number | undefined) => void; clearable?: boolean }) {
@@ -62,7 +61,7 @@ export default function SurveyForm() {
   const [phase, setPhase] = useState<Phase | null>(null);
   const [done, setDone] = useState(false);
   const [role, setRole] = useState('');
-  const [ratings, setRatings] = useState<Partial<Ratings>>({});
+  const [ratings, setRatings] = useState<Record<string, number>>({});
   const [gender, setGender] = useState('');
   const [age, setAge] = useState('');
   const [visits, setVisits] = useState('');
@@ -96,7 +95,7 @@ export default function SurveyForm() {
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 
-  const complete = role && gender && age && visits && again && fieldsComplete(fields) && ratingQuestions.every((q) => ratings[q.id]);
+  const complete = role && gender && age && visits && again && fieldsComplete(fields) && ratingsComplete(ratings);
 
   // 해당 없음 clears the group's other choices, and picking one of them clears 해당 없음.
   const toggleField = (group: { label: string; items: string[] }, item: string) => setFields((current) => {
@@ -111,7 +110,7 @@ export default function SurveyForm() {
     event.preventDefault();
     if (!complete || state === 'sending') return;
     setState('sending');
-    const ok = await sendFeedback({ kind: 'survey', website, data: { role, gender, age, visits, again, comment, fields, events, ...(ratings as Ratings) } });
+    const ok = await sendFeedback({ kind: 'survey', website, data: { role, gender, age, visits, again, comment, fields, events, ratings } });
     if (!ok) {
       setState('error');
       return;
@@ -164,13 +163,23 @@ export default function SurveyForm() {
 
       {ratingQuestions.map((q, i) => (
         <fieldset key={q.id}>
-          <legend>{i + 5}. {q.label}</legend>
-          <RatingRow label={q.label} value={ratings[q.id]} onChange={(v) => setRatings((current) => ({ ...current, [q.id]: v }))} />
+          <legend>{i + 5}. {q.label}{q.optional && <i>선택</i>}</legend>
+          <RatingRow
+            label={q.label}
+            clearable={Boolean(q.optional)}
+            value={ratings[q.id]}
+            onChange={(v) => setRatings((current) => {
+              const next = { ...current };
+              if (v === undefined) delete next[q.id]; else next[q.id] = v;
+              return next;
+            })}
+          />
+          {q.optional && <p className="form-hint">{q.optional}. 선택한 점수를 다시 누르면 지워집니다.</p>}
         </fieldset>
       ))}
 
       <fieldset>
-        <legend>9. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
+        <legend>13. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
         <p className="form-hint form-hint-top">묶음마다 하나 이상 골라 주세요. 듣지 않은 묶음은 &lsquo;{FIELD_NONE}&rsquo;을 누르면 됩니다. ({answeredGroups}/{surveyFieldGroups.length} 묶음 응답)</p>
         {surveyFieldGroups.map((group) => (
           <div className="form-choice-group" key={group.label}>
@@ -194,7 +203,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>10. 부대행사는 어떠셨나요? <i>참가한 행사만</i></legend>
+        <legend>14. 부대행사는 어떠셨나요? <i>참가한 행사만</i></legend>
         <div className="form-event-ratings">
           {surveyEvents.map((name) => (
             <div key={name}>
@@ -216,7 +225,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>11. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
+        <legend>15. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
         <div className="form-choices">
           {surveyAgain.map((a) => (
             <button key={a} type="button" className={again === a ? 'active' : ''} aria-pressed={again === a} onClick={() => setAgain(a)}>{a}</button>
@@ -225,7 +234,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <label className="form-field">
-        <span>12. 좋았던 점이나 개선할 점 <i>선택</i></span>
+        <span>16. 좋았던 점이나 개선할 점 <i>선택</i></span>
         <textarea value={comment} onChange={(e) => setComment(e.target.value.slice(0, MESSAGE_MAX))} rows={5} placeholder="자유롭게 적어 주세요." />
         <small>{comment.length} / {MESSAGE_MAX}</small>
       </label>
