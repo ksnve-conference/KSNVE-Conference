@@ -14,8 +14,8 @@ export const surveyFieldGroups = [
   { label: '일반 분야', items: categories.filter((c) => !/^(기획|부문|특별) /.test(c)) },
   { label: '기획세션', items: prefixed('기획') },
   { label: '부문세션', items: prefixed('부문') },
-  { label: '특별세션', items: prefixed('특별') },
-  { label: '강연·발표', items: ['키노트·초청특별강연', '포스터 발표', '기업 특별세션'] },
+  { label: '특별세션', items: [...prefixed('특별'), '기업 특별세션'] },
+  { label: '강연·발표', items: ['키노트·초청특별강연', '포스터 발표'] },
 ];
 /** Each group needs an answer; this choice is how someone who skipped that kind of session says so. */
 export const FIELD_NONE = '해당 없음';
@@ -34,7 +34,7 @@ export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) 
 });
 
 /** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
-export const surveyEvents = ['웰컴 리셉션', '학생 멘토링', '교양강좌', '가족프로그램 (마술공연·캐리커처)', '만찬'] as const;
+export const surveyEvents = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
 export const ratingQuestions = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
