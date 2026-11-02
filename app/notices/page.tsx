@@ -6,6 +6,15 @@ import BackLink from '@/components/BackLink';
 import Icon from '@/components/Icon';
 import { useAnnouncements } from '@/lib/announcements';
 
+const URL_RE = /(https?:\/\/[^\s<>"]+[^\s<>".,;:!?)'\]])/g;
+
+/** Turns http(s) addresses in a notice body into links that open in a new tab. */
+function linkify(text: string) {
+  return text.split(URL_RE).map((part, i) => (i % 2 === 1
+    ? <a key={i} className="notice-link" href={part} target="_blank" rel="noopener noreferrer">{part}</a>
+    : part));
+}
+
 export default function NoticesPage() {
   const { items, read, unread, markRead, source } = useAnnouncements();
 
@@ -24,16 +33,17 @@ export default function NoticesPage() {
 
       <div className="list">
         {items.map((item) => (
-          <button
+          // An article rather than a button so links inside the body are valid and tappable.
+          <article
             className={`card notice announcement-card ${read.includes(item.id) ? 'read' : ''}`}
             key={item.id}
             onClick={() => markRead(item.id)}
           >
             <div><span className="badge">{item.category}</span>{!read.includes(item.id) && <em>NEW</em>}</div>
             <h2>{item.title}</h2>
-            <p>{item.body}</p>
+            <p>{linkify(item.body)}</p>
             {item.date && <time>{item.date.replaceAll('-', '.')}</time>}
-          </button>
+          </article>
         ))}
         {items.length === 0 && (
           <div className="empty"><span><Icon name="notice" size={26} /></span><b>등록된 공지가 없습니다</b></div>
