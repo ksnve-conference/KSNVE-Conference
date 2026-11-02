@@ -29,7 +29,7 @@ export const conferenceConfig = {
   originalPagesPublic: false,
   /** 만족도 설문: home banner and the form are open in this window (KST). */
   surveyOpensAt: '2026-11-27T00:00:00+09:00',
-  surveyClosesAt: '2026-12-12T23:59:59+09:00',
+  surveyClosesAt: '2026-12-03T23:59:59+09:00',
 } as const;
 
 export type ConferenceConfig = typeof conferenceConfig;
