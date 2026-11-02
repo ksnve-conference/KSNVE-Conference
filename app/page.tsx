@@ -16,6 +16,7 @@ import { conferenceConfig } from '@/lib/conference-config';
 import { parseMockNow, type MockNow } from '@/lib/dashboard-time';
 import { useSaved } from '@/lib/saved';
 import { useAnnouncements } from '@/lib/announcements';
+import { linkify } from '@/lib/linkify';
 import { useViewState } from '@/lib/view-state';
 
 function localDateKey() {
@@ -276,15 +277,20 @@ export default function ProgramPage() {
           </div>
           <div className="announcement-list">
             {announcements.slice(0, 2).map((a) => (
-              <button
-                className={[read.includes(a.id) ? 'read' : '', openNotices.includes(a.id) ? 'open' : ''].filter(Boolean).join(' ')}
+              // A div with button semantics (not a <button>) so links in the body are valid and tappable.
+              <div
+                role="button"
+                tabIndex={0}
+                aria-expanded={openNotices.includes(a.id)}
+                className={['notice-row', read.includes(a.id) ? 'read' : '', openNotices.includes(a.id) ? 'open' : ''].filter(Boolean).join(' ')}
                 key={a.id}
                 onClick={() => toggleNotice(a.id)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleNotice(a.id); } }}
               >
                 <span>{a.category}</span>
-                <div><b>{a.title}</b><small>{a.body}</small></div>
+                <div><b>{a.title}</b><small>{linkify(a.body)}</small></div>
                 {!read.includes(a.id) && <em>NEW</em>}
-              </button>
+              </div>
             ))}
           </div>
         </div>

@@ -679,10 +679,10 @@ body{
 .announcement-list small{ font-size:var(--type-meta); line-height:1.55; color:var(--text-2); }
 /* read notices fade only slightly — the NEW badge already marks the unread ones,
    and at .62 opacity the text was hard to read */
-.announcement-list > button.read, .announcement-card.read{ opacity:.82; }
-.announcement-list > button > span{ font-size:11px; padding:4px 5px; }
+.announcement-list > .notice-row.read, .announcement-card.read{ opacity:.82; }
+.announcement-list > .notice-row > span{ font-size:11px; padding:4px 5px; }
 .dashboard-heading-date{ font-size:var(--type-caption); font-weight:600; color:var(--muted); }
-.announcement-list > button.open small{
+.announcement-list > .notice-row.open small{
   overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5; color:var(--text-2);
 }
 /* keep the line breaks the organiser types into a sheet cell (Cmd/Ctrl+Enter);
