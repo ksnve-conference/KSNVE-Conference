@@ -576,7 +576,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .event-poster{ display:block; margin:0 0 18px; overflow:hidden; border-radius:var(--r-md); border:1px solid var(--line-soft); }
 .event-poster img{ display:block; width:100%; height:auto; }
 .event-lead{ margin:0 0 8px; font-size:var(--type-body); font-weight:700; color:var(--brand-ink); }
-.event-intro{ margin:0; font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; }
+.event-intro{ margin:0; font-size:var(--type-read); line-height:var(--leading-read); color:var(--text-2); word-break:keep-all; text-align:justify; }
 .event-details .info-table{ margin-top:14px; }
 .event-intro + .event-intro{ margin-top:14px; }
 .event-program{ margin:0; padding:0; list-style:none; }
