@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 import { conferenceConfig } from '@/lib/conference-config';
 import {
-  MESSAGE_MAX, ratingLabels, ratingQuestions, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyRoles, surveyVisits,
+  FIELD_NONE, MESSAGE_MAX, fieldNone, fieldsComplete, ratingLabels, ratingQuestions, sendFeedback, surveyAgain, surveyEvents, surveyFieldGroups, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -85,11 +85,16 @@ export default function SurveyForm() {
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 
-  const complete = role && visits && again && fields.length > 0 && ratingQuestions.every((q) => ratings[q.id]);
+  const complete = role && visits && again && fieldsComplete(fields) && ratingQuestions.every((q) => ratings[q.id]);
 
-  const toggleField = (item: string) => setFields((current) => (
-    current.includes(item) ? current.filter((f) => f !== item) : [...current, item]
-  ));
+  // 해당 없음 clears the group's other choices, and picking one of them clears 해당 없음.
+  const toggleField = (group: { label: string; items: string[] }, item: string) => setFields((current) => {
+    if (current.includes(item)) return current.filter((f) => f !== item);
+    const none = fieldNone(group.label);
+    const others = item === none ? current.filter((f) => !group.items.includes(f)) : current.filter((f) => f !== none);
+    return [...others, item];
+  });
+  const answeredGroups = surveyFieldGroups.filter((g) => fields.some((f) => f === fieldNone(g.label) || g.items.includes(f))).length;
 
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -136,7 +141,8 @@ export default function SurveyForm() {
       ))}
 
       <fieldset>
-        <legend>7. 가장 유익했던 분야 <i>1개 이상 · 복수 선택 가능{fields.length > 0 ? ` · ${fields.length}개 선택` : ''}</i></legend>
+        <legend>7. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
+        <p className="form-hint form-hint-top">묶음마다 하나 이상 골라 주세요. 듣지 않은 묶음은 &lsquo;{FIELD_NONE}&rsquo;을 누르면 됩니다. ({answeredGroups}/{surveyFieldGroups.length} 묶음 응답)</p>
         {surveyFieldGroups.map((group) => (
           <div className="form-choice-group" key={group.label}>
             <small>{group.label}</small>
@@ -144,9 +150,15 @@ export default function SurveyForm() {
               {group.items.map((item) => {
                 const on = fields.includes(item);
                 return (
-                  <button key={item} type="button" className={on ? 'active' : ''} aria-pressed={on} onClick={() => toggleField(item)}>{item}</button>
+                  <button key={item} type="button" className={on ? 'active' : ''} aria-pressed={on} onClick={() => toggleField(group, item)}>{item}</button>
                 );
               })}
+              <button
+                type="button"
+                className={`form-choice-none${fields.includes(fieldNone(group.label)) ? ' active' : ''}`}
+                aria-pressed={fields.includes(fieldNone(group.label))}
+                onClick={() => toggleField(group, fieldNone(group.label))}
+              >{FIELD_NONE}</button>
             </div>
           </div>
         ))}

@@ -790,3 +790,6 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .form-event-ratings .form-rating button{ padding:7px 2px; }
 .form-event-ratings .form-rating b{ font-size:var(--type-body); }
 .form-hint{ margin:10px 2px 0; font-size:var(--type-caption); line-height:1.55; color:var(--muted); }
+.form-hint-top{ margin:-4px 2px 12px; }
+.form-choices .form-choice-none{ border-style:dashed; color:var(--muted); }
+.form-choices .form-choice-none.active{ border-style:solid; background:var(--text-2); border-color:var(--text-2); color:#fff; }

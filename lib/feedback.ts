@@ -17,12 +17,21 @@ export const surveyFieldGroups = [
   { label: '특별세션', items: prefixed('특별') },
   { label: '강연·발표', items: ['키노트·초청특별강연', '포스터 발표', '기업 특별세션'] },
 ];
-const fieldGroupOf = new Map(surveyFieldGroups.flatMap((g) => g.items.map((item) => [item, g.label] as const)));
+/** Each group needs an answer; this choice is how someone who skipped that kind of session says so. */
+export const FIELD_NONE = '해당 없음';
+export const fieldNone = (group: string) => `${group}: ${FIELD_NONE}`;
+const fieldGroupOf = new Map(surveyFieldGroups.flatMap((g) => [...g.items, fieldNone(g.label)].map((item) => [item, g.label] as const)));
 /** Stored as "[기획] 디지털 헬스" so sheet readers see where an item came from. */
 export const fieldLabel = (item: string) => {
   const group = fieldGroupOf.get(item);
-  return group?.endsWith('세션') ? `[${group.replace('세션', '')}] ${item}` : item;
+  return group?.endsWith('세션') && item !== fieldNone(group) ? `[${group.replace('세션', '')}] ${item}` : item;
 };
+
+/** Every group has a choice, and 해당 없음 is never mixed with real ones. */
+export const fieldsComplete = (fields: string[]) => surveyFieldGroups.every((g) => {
+  const picked = fields.filter((f) => fieldGroupOf.get(f) === g.label);
+  return picked.length > 0 && (!picked.includes(fieldNone(g.label)) || picked.length === 1);
+});
 
 /** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
 export const surveyEvents = ['웰컴 리셉션', '학생 멘토링', '교양강좌', '가족프로그램 (마술공연·캐리커처)', '만찬'] as const;
@@ -72,7 +81,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     if (!(surveyVisits as readonly string[]).includes(visits)) return null;
     if (!ratingQuestions.every((q) => isRating(data[q.id]))) return null;
     const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
-    if (fields.length < 1 || !fields.every((f) => fieldGroupOf.has(f))) return null;
+    if (!fields.every((f) => fieldGroupOf.has(f)) || !fieldsComplete(fields)) return null;
     const rawEvents = data.events && typeof data.events === 'object' ? data.events as Record<string, unknown> : {};
     const events: Record<string, number> = {};
     for (const name of surveyEvents) {
