@@ -11,7 +11,9 @@
  */
 
 const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
-const SURVEY_HEADERS = ['제출 시각', '참가 유형', '전반 만족도', '프로그램', '행사장·운영', '학술대회 앱', '다음 참가 의향', '자유 의견', '앱 버전'];
+const SURVEY_EVENTS = ['웰컴 리셉션', '학생 멘토링', '교양강좌', '가족프로그램 (마술공연·캐리커처)', '만찬'];
+const SURVEY_HEADERS = ['제출 시각', '참가 유형', '참가 횟수', '전반 만족도', '프로그램', '행사장·운영', '학술대회 앱', '유익했던 분야']
+  .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '자유 의견', '앱 버전']);
 
 function doPost(e) {
   let body;
@@ -37,7 +39,9 @@ function doPost(e) {
       });
     } else if (body.kind === 'survey') {
       const s = body.data;
-      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, s.overall, s.program, s.venue, s.app, s.again, s.comment, body.version].map(cell));
+      const events = s.events || {};
+      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, s.visits, s.overall, s.program, s.venue, s.app, (s.fields || []).join(' / ')]
+        .concat(SURVEY_EVENTS.map((name) => events[name] || ''), [s.again, s.comment, body.version]).map(cell));
     } else {
       return reply({ ok: false, error: 'bad-kind' });
     }

@@ -1,8 +1,32 @@
 /** Shared between the forms and /api/feedback, so both check the same limits. */
 
+import sessionsData from '@/data/sessions.json';
+
 export const feedbackCategories = ['행사 운영', '발표장 · 시설', '앱 오류 · 개선', '기타'] as const;
 export const surveyRoles = ['학계', '연구계', '산업계', '학생', '기타'] as const;
 export const surveyAgain = ['예', '아직 모르겠음', '아니오'] as const;
+export const surveyVisits = ['처음', '2~3회', '4회 이상'] as const;
+export const FIELDS_MAX = 5;
+
+/** 가장 유익했던 분야: every session category in programme order, grouped like the programme book, plus the talks. */
+const categories = Array.from(new Set((sessionsData as { category: string }[]).map((x) => x.category)));
+const prefixed = (prefix: string) => categories.filter((c) => c.startsWith(`${prefix} `)).map((c) => c.slice(prefix.length + 1));
+export const surveyFieldGroups = [
+  { label: '일반 분야', items: categories.filter((c) => !/^(기획|부문|특별) /.test(c)) },
+  { label: '기획세션', items: prefixed('기획') },
+  { label: '부문세션', items: prefixed('부문') },
+  { label: '특별세션', items: prefixed('특별') },
+  { label: '강연·발표', items: ['키노트·초청특별강연', '포스터 발표', '기업 특별세션'] },
+];
+const fieldGroupOf = new Map(surveyFieldGroups.flatMap((g) => g.items.map((item) => [item, g.label] as const)));
+/** Stored as "[기획] 디지털 헬스" so sheet readers see where an item came from. */
+export const fieldLabel = (item: string) => {
+  const group = fieldGroupOf.get(item);
+  return group?.endsWith('세션') ? `[${group.replace('세션', '')}] ${item}` : item;
+};
+
+/** 부대행사 만족도: optional per event, only for the ones the respondent attended. */
+export const surveyEvents = ['웰컴 리셉션', '학생 멘토링', '교양강좌', '가족프로그램 (마술공연·캐리커처)', '만찬'] as const;
 export const ratingLabels = ['매우 불만족', '불만족', '보통', '만족', '매우 만족'] as const;
 export const ratingQuestions = [
   { id: 'overall', label: '학술대회 전반에 얼마나 만족하셨나요?' },
@@ -17,7 +41,8 @@ export const DEVICE_MAX = 300;
 
 export type FeedbackData = { category: string; message: string; email: string; device: string };
 export type SurveyData = {
-  role: string; overall: number; program: number; venue: number; app: number; again: string; comment: string;
+  role: string; visits: string; overall: number; program: number; venue: number; app: number;
+  fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
   | { kind: 'feedback'; data: FeedbackData; website?: string }
@@ -42,13 +67,24 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
   }
   if (kind === 'survey') {
     const role = text(data.role, 20);
+    const visits = text(data.visits, 20);
     const again = text(data.again, 20);
     if (!(surveyRoles as readonly string[]).includes(role) || !(surveyAgain as readonly string[]).includes(again)) return null;
+    if (!(surveyVisits as readonly string[]).includes(visits)) return null;
     if (!ratingQuestions.every((q) => isRating(data[q.id]))) return null;
+    const fields = Array.isArray(data.fields) ? Array.from(new Set(data.fields.filter((f): f is string => typeof f === 'string'))) : [];
+    if (fields.length < 1 || fields.length > FIELDS_MAX || !fields.every((f) => fieldGroupOf.has(f))) return null;
+    const rawEvents = data.events && typeof data.events === 'object' ? data.events as Record<string, unknown> : {};
+    const events: Record<string, number> = {};
+    for (const name of surveyEvents) {
+      if (rawEvents[name] === undefined) continue;
+      if (!isRating(rawEvents[name])) return null;
+      events[name] = rawEvents[name] as number;
+    }
     return {
       kind,
       data: {
-        role, again, comment: text(data.comment, MESSAGE_MAX),
+        role, visits, again, fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
         overall: data.overall as number, program: data.program as number, venue: data.venue as number, app: data.app as number,
       },
     };

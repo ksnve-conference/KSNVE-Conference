@@ -781,3 +781,12 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .form-done p{ margin:0; font-size:var(--type-meta); line-height:1.65; color:var(--text-2); word-break:keep-all; }
 .form-done button{ margin-top:8px; padding:10px 16px; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); color:var(--brand); font:inherit; font-size:var(--type-meta); font-weight:600; }
 .survey-banner{ text-decoration:none; }
+.form-choice-group + .form-choice-group{ margin-top:12px; }
+.form-choice-group > small, .form-event-ratings small{ display:block; margin:0 2px 7px; font-size:var(--type-caption); font-weight:600; color:var(--muted); }
+.form-choices.compact{ gap:6px; }
+.form-choices.compact button{ padding:8px 11px; font-size:var(--type-caption); }
+.form-choices button:disabled{ opacity:.45; }
+.form-event-ratings{ display:flex; flex-direction:column; gap:14px; }
+.form-event-ratings .form-rating button{ padding:7px 2px; }
+.form-event-ratings .form-rating b{ font-size:var(--type-body); }
+.form-hint{ margin:10px 2px 0; font-size:var(--type-caption); line-height:1.55; color:var(--muted); }
