@@ -102,7 +102,7 @@
   "chair": "이승철(KAIST)",
   "flags": "",
   "presentationType": "ORAL",
-  "title": "인공지능 기반 머시닝 공구 마모 예측에 관한 연구",
+  "title": "Canny Edge 기반 CNN을 이용한 다양한 공구 형상의 절삭공구 치핑 검출",
   "authors": "손준범, 이승철(KAIST)",
   "presenter": "손준범",
   "affiliations": [
@@ -689,7 +689,7 @@
   "chair": "최정우(KAIST)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "전역, 국소, 주기적 음성패턴을 활용한 음성 소음 감소",
+  "title": "자기지도학습 모델의 층별 표현 선택을 통한 생성형 음성 소음 제거",
   "authors": "이용준, 최정우(KAIST)",
   "presenter": "이용준",
   "affiliations": [
@@ -1370,7 +1370,7 @@
   "chair": "김성현(현대차)",
   "flags": "",
   "presentationType": "ORAL",
-  "title": "냉장고 아이스메이커 소음저감기술",
+  "title": "1/4 파장관을 이용한 냉장고 저소음 팬모듈 설계",
   "authors": "민동우, 성상진, 박한솔, 기성현(LG전자)",
   "presenter": "민동우",
   "affiliations": [
@@ -1817,7 +1817,7 @@
   "chair": "노진홍(충북대)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "가변 수직항력을 이용한 비선형 에너지 싱크의 에너지 소산 성능 향상",
+  "title": "변위 의존 건마찰 비선형 흡진기의 동적 응답 및 안정성 분석",
   "authors": "조희진, 백승훈(부산대)",
   "presenter": "조희진",
   "affiliations": [
@@ -1871,7 +1871,7 @@
   "chair": "노진홍(충북대)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "댐퍼 임팩트를 고려한 불평형 로터 시스템의 회전속도 변화에 따른 동특성 분석",
+  "title": "마찰-충돌 전환 댐퍼의 비선형 이력 모델링 및 로터 실험을 통한 진동 응답 분석",
   "authors": "김가희, 백승훈(부산대)",
   "presenter": "김가희",
   "affiliations": [
@@ -4510,7 +4510,7 @@
   "chair": "이효진(방재시험연)",
   "flags": "",
   "presentationType": "ORAL",
-  "title": "Bang & Olufsen Audio Experience for a Premium Vehicle",
+  "title": "GV90에서의 ‘뱅앤올룹슨’ 사운드",
   "authors": "정상현, 문소연(하만인터내셔널코리아)",
   "presenter": "정상현",
   "affiliations": [
@@ -4755,7 +4755,7 @@
   "chair": "오주환(서울대)",
   "flags": "+",
   "presentationType": "ORAL",
-  "title": "하이브리드 기법을 사용한 부분구조 합성 기반 공작기계 동특성 예측",
+  "title": "내부 주파수응답함수 기반 공작기계 결합부의 동특성 식별",
   "authors": "김호재, 강연준, 김재윤(서울대), 장성현(DN솔루션즈)",
   "presenter": "김호재",
   "affiliations": [
@@ -5369,7 +5369,7 @@
   "venue": "컨퍼런스홀",
   "chair": "-",
   "flags": "",
-  "title": "진동 신호와 기계학습을 이용한 펌프 축 정렬 불량 판별 및 최소 검출 오정렬량 평가",
+  "title": "다채널 진동 데이터를 이용한 인공지능 기반 펌프 축 평행 오정렬 결함 판별",
   "authors": "고태영, 전지현, 장대식, 이정한(원자력연)",
   "presenter": "고태영",
   "affiliations": [
@@ -6166,7 +6166,7 @@
   "venue": "컨퍼런스홀",
   "chair": "김성현(현대차), 박춘수(표준과학연), 박현우(동아대), 손기성(세안기술)",
   "flags": "+",
-  "title": "직렬 열전발전 시스템의 고저항 결함 진단을 위한 전기 상태지표 분석",
+  "title": "열전발전 시스템의 발전최적화를 위한 인공지능 하베스팅 시스템",
   "authors": "이형주, 김주형(인하대)",
   "presenter": "이형주",
   "affiliations": [
