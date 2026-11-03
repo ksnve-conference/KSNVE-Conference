@@ -69,16 +69,34 @@ export function useViewState(
     setReady(true);
   }, [screen]);
 
-  // Scroll once the restored state is on screen; two frames lets the longer
-  // list lay out before jumping into it.
+  // Scroll once the restored state is on screen. On a phone the long list can
+  // still be laying out, or the router can scroll the page after us, so the
+  // jump is re-applied for a moment until it holds — unless the user starts
+  // scrolling first.
   useEffect(() => {
-    if (!ready || pendingScroll.current === null) return;
+    if (!ready || pendingScroll.current === null) return undefined;
     const y = pendingScroll.current;
     pendingScroll.current = null;
-    requestAnimationFrame(() => requestAnimationFrame(() => {
+    let stopped = false;
+    const timers: number[] = [];
+    const stop = () => { stopped = true; };
+    const apply = () => {
+      if (stopped || Math.abs(getScrollY() - y) < 4) return;
       scrollToY(y, 'instant');  // not the page's smooth scroll
       save();  // the save on mount ran before this jump and stored the top
-    }));
+    };
+    requestAnimationFrame(() => requestAnimationFrame(apply));
+    for (const ms of [120, 300, 600, 1000]) timers.push(window.setTimeout(apply, ms));
+    const opts = { passive: true, capture: true } as const;
+    window.addEventListener('touchstart', stop, opts);
+    window.addEventListener('wheel', stop, opts);
+    window.addEventListener('keydown', stop, true);
+    return () => {
+      timers.forEach((t) => window.clearTimeout(t));
+      window.removeEventListener('touchstart', stop, opts);
+      window.removeEventListener('wheel', stop, opts);
+      window.removeEventListener('keydown', stop, true);
+    };
   }, [ready]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const serialized = JSON.stringify(snapshot);

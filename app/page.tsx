@@ -19,7 +19,7 @@ import { useSaved } from '@/lib/saved';
 import { useAnnouncements } from '@/lib/announcements';
 import { linkify } from '@/lib/linkify';
 import ScheduleOverview from '@/components/ScheduleOverview';
-import { useViewState } from '@/lib/view-state';
+import { arrivedByBack, useViewState } from '@/lib/view-state';
 
 function localDateKey() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
@@ -116,6 +116,8 @@ export default function ProgramPage() {
   useEffect(() => {
     const anchor = window.location.hash.slice(1);
     if (anchor !== 'program' && !anchor.startsWith('session-')) return;
+    // Coming back from a paper or session restores the saved spot instead.
+    if (arrivedByBack()) return;
     let secondFrame = 0;
     const firstFrame = requestAnimationFrame(() => {
       secondFrame = requestAnimationFrame(() => {
