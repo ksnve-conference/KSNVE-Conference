@@ -13,7 +13,8 @@ export default function PresentationBadge({ paper, showId = false }: { paper: Pa
         <span aria-hidden="true">{meta.symbol}</span>
         {meta.label}
       </span>
-      {showId && <span className="paper-display-id">{paperId}</span>}
+      {/* Only posters have programme-book numbers (P101…); oral ids are internal and would clash with them. */}
+      {showId && type === 'POSTER' && <span className="paper-display-id">{paperId}</span>}
     </div>
   );
 }
