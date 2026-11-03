@@ -17,7 +17,7 @@ export default function EventDetailsView({ details }: { details: EventDetails })
           {Boolean(details.preface.agenda?.length) && (
             <>
               <h3>주요 안건</h3>
-              <ul className="info-list">
+              <ul className="info-list event-agenda">
                 {details.preface.agenda?.map((item) => <li key={item}>{item}</li>)}
               </ul>
             </>
