@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
+import { markBackNavigation } from '@/lib/view-state';
 
 /** Goes back in history when there is somewhere to go back to, so list scroll position is kept. */
 export default function BackLink({ fallback = '/', label = '뒤로' }: { fallback?: string; label?: string }) {
@@ -18,7 +19,7 @@ export default function BackLink({ fallback = '/', label = '뒤로' }: { fallbac
     return <Link href={fallback} className="back"><Icon name="back" size={16} />{label}</Link>;
   }
   return (
-    <button type="button" className="back" onClick={() => router.back()}>
+    <button type="button" className="back" onClick={() => { markBackNavigation(); router.back(); }}>
       <Icon name="back" size={16} />{label}
     </button>
   );

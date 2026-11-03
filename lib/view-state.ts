@@ -13,13 +13,46 @@ import { useCallback, useEffect, useRef, useState } from 'react';
  * only on a back/forward navigation — a tab tap still opens the screen fresh.
  */
 
+const BACK_KEY = 'ksnveBackAt';
+
 let lastPopState = 0;
 if (typeof window !== 'undefined') {
   window.addEventListener('popstate', () => { lastPopState = Date.now(); });
+  // Following a link is a fresh visit, even right after a return.
+  document.addEventListener('click', (event) => {
+    if (!(event.target as Element | null)?.closest?.('a[href]')) return;
+    lastPopState = 0;
+    try {
+      sessionStorage.removeItem(BACK_KEY);
+    } catch {
+      // storage unavailable
+    }
+  }, true);
 }
 
-/** True while mounting a screen reached with back/forward. */
-export const arrivedByBack = () => Date.now() - lastPopState < 2000;
+/** Called by 「목록으로」 just before going back, so a slow phone still counts it as a return. */
+export function markBackNavigation() {
+  try {
+    sessionStorage.setItem(BACK_KEY, String(Date.now()));
+  } catch {
+    // the popstate timestamp still covers most returns
+  }
+}
+
+/**
+ * True while mounting a screen reached with back/forward. A phone on a busy
+ * network can take a few seconds to draw the list, so the window is generous.
+ */
+export const arrivedByBack = () => {
+  let marked = 0;
+  try {
+    marked = Number(sessionStorage.getItem(BACK_KEY)) || 0;
+  } catch {
+    // storage unavailable
+  }
+  const since = Date.now() - Math.max(lastPopState, marked);
+  return since >= 0 && since < 6000;
+};
 
 const storageKey = (screen: string) => `ksnveView:${screen}`;
 
@@ -61,7 +94,13 @@ export function useViewState(
   restoreRef.current = restore;
 
   useEffect(() => {
-    const saved = arrivedByBack() ? readStored(screen) : null;
+    const back = arrivedByBack();
+    try {
+      sessionStorage.removeItem(BACK_KEY);
+    } catch {
+      // storage unavailable
+    }
+    const saved = back ? readStored(screen) : null;
     if (saved) {
       restoreRef.current(saved);
       if (typeof saved.scrollY === 'number') pendingScroll.current = saved.scrollY;
@@ -86,7 +125,7 @@ export function useViewState(
       save();  // the save on mount ran before this jump and stored the top
     };
     requestAnimationFrame(() => requestAnimationFrame(apply));
-    for (const ms of [120, 300, 600, 1000]) timers.push(window.setTimeout(apply, ms));
+    for (const ms of [120, 300, 600, 1000, 1600]) timers.push(window.setTimeout(apply, ms));
     const opts = { passive: true, capture: true } as const;
     window.addEventListener('touchstart', stop, opts);
     window.addEventListener('wheel', stop, opts);
