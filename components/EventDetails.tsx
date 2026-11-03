@@ -14,6 +14,15 @@ export default function EventDetailsView({ details }: { details: EventDetails })
           {details.preface.paragraphs.map((paragraph) => (
             <p className="event-intro" key={paragraph}>{paragraph}</p>
           ))}
+          {Boolean(details.preface.agenda?.length) && (
+            <>
+              <h3>주요 안건</h3>
+              <ul className="info-list">
+                {details.preface.agenda?.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </>
+          )}
+          {details.preface.closing && <p className="event-intro">{details.preface.closing}</p>}
         </section>
       )}
     {hasBody && <section className="detail-card event-details">
