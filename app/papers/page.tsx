@@ -9,7 +9,7 @@ import AppTabs from '@/components/AppTabs';
 import SearchBar from '@/components/SearchBar';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
-import { dayLabel, formatSessionTitle, papers, sessions, speakers } from '@/lib/conference';
+import { dayLabel, formatSessionTitle, papers, sessions, activeSpeakers as speakers } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
 import { presentationTypeFor, type PresentationType } from '@/lib/presentation-type';
 import { useRecentSearches } from '@/lib/recent-searches';

@@ -7,7 +7,7 @@ import AppTabs from '@/components/AppTabs';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
 import NotificationManager from '@/components/NotificationManager';
-import { dayLabel, formatSessionTitle } from '@/lib/conference';
+import { dayLabel, formatSessionTitle, withdrawnPapers } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
 import { buildIcs, conflicts, scheduleItems, useSaved } from '@/lib/saved';
 
@@ -16,6 +16,7 @@ export default function MySchedulePage() {
   const items = useMemo(() => scheduleItems(savedPapers, savedSessions), [savedPapers, savedSessions]);
   const clashes = useMemo(() => conflicts(items), [items]);
   const clashKeys = new Set(clashes.flat().map((i) => i.key));
+  const withdrawnSaved = withdrawnPapers.filter((paper) => savedPapers.includes(paper.id));
 
   const exportIcs = () => {
     const blob = new Blob([buildIcs(items, conferenceConfig.shortTitle)], { type: 'text/calendar;charset=utf-8' });
@@ -34,6 +35,24 @@ export default function MySchedulePage() {
       <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>내 일정</h1><strong>{items.length}</strong></div>
+
+        {ready && withdrawnSaved.length > 0 && (
+          <section className="saved-day" aria-label="철회된 발표">
+            <h2>철회된 발표</h2>
+            <p>저장하신 발표가 철회되어 일정과 발표 알림에서 제외되었습니다.</p>
+            <div className="list paper-list">
+              {withdrawnSaved.map((paper) => (
+                <article className="card session-saved" key={paper.id}>
+                  <button type="button" className="star on" onClick={() => togglePaper(paper.id)} aria-label={`${paper.title} 발표를 내 일정에서 제거`} aria-pressed>
+                    <Icon name="star-filled" size={17} />
+                  </button>
+                  <p className="meta">{paper.id.toUpperCase()} · 발표 철회 · {paper.presenter}</p>
+                  <h3 className="paper-title"><Link href={`/papers/${paper.id}`}>{paper.title}</Link></h3>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         {ready && items.length === 0 && (
           <div className="empty schedule-empty">

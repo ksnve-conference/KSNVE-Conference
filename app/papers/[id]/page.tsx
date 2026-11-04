@@ -7,7 +7,7 @@ import OriginalPageViewer from '@/components/OriginalPageViewer';
 import PaperActions from '@/components/PaperActions';
 import PresentationBadge from '@/components/PresentationBadge';
 import Icon from '@/components/Icon';
-import { dayLabel, formatSessionTitle, papers, sessionById, speakers, venueByName } from '@/lib/conference';
+import { dayLabel, formatSessionTitle, papers, withdrawnPapers, sessionById, speakers, venueByName } from '@/lib/conference';
 import { getPaperDetail, getPresenterAffiliation } from '@/lib/paper-detail';
 import { keynoteByNo } from '@/lib/keynotes';
 import { conferenceConfig } from '@/lib/conference-config';
@@ -15,12 +15,14 @@ import { conferenceConfig } from '@/lib/conference-config';
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const paper = getPaperDetail((await params).id);
   if (!paper) return {};
-  const description = `${paper.presenter} · ${dayLabel(paper.date)} ${paper.time} · ${paper.venue}`;
+  const description = paper.status === 'withdrawn'
+    ? `${paper.presenter} · 발표가 철회되었습니다.`
+    : `${paper.presenter} · ${dayLabel(paper.date)} ${paper.time} · ${paper.venue}`;
   return { title: paper.title, description, openGraph: { title: paper.title, description } };
 }
 
 export function generateStaticParams() {
-  return papers.map((p) => ({ id: p.id }));
+  return [...papers, ...withdrawnPapers].map((p) => ({ id: p.id }));
 }
 
 export default async function PaperDetail({ params }: { params: Promise<{ id: string }> }) {
@@ -29,6 +31,22 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
   if (!paper) notFound();
 
   const session = sessionById.get(paper.sessionId);
+  if (paper.status === 'withdrawn') {
+    return (
+      <main className="shell detail-shell paper-detail">
+        <AppHeader compact />
+        <BackLink fallback={session ? `/sessions/${session.id}` : '/papers'} label="목록으로" />
+        <article className="detail-card">
+          <p className="kicker">{paper.id.toUpperCase()} · 발표 철회</p>
+          <h1>{paper.title}</h1>
+          <p className="meta">{paper.presenter}</p>
+          <p className="event-intro">이 발표는 철회되었습니다. 변경된 세션의 발표 목록을 확인해 주세요.</p>
+          <Link className="text-link" href={session ? `/sessions/${session.id}` : '/papers'}>발표 목록 보기 <Icon name="chevron" size={13} /></Link>
+        </article>
+        <AppTabs />
+      </main>
+    );
+  }
   const keynote = paper.presentationType === 'KEYNOTE' && paper.keynoteNo ? keynoteByNo.get(paper.keynoteNo) : undefined;
   const speaker = speakers.find((s) => s.papers.includes(paper.id));
   const venue = venueByName.get(paper.venue);

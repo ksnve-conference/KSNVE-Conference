@@ -20,6 +20,7 @@ const warn = (m: string) => warnings.push(m);
 
 const allSessions = [...sessions, ...official];
 const allPapers = [...papers, ...posters];
+const activePapers = allPapers.filter((p) => !('status' in p) || p.status !== 'withdrawn');
 const dates = new Set<string>(conferenceConfig.dates);
 const sessionIds = new Set(allSessions.map((s) => s.id));
 const venueNames = new Set(venues.map((v) => v.name));
@@ -63,7 +64,7 @@ if (missingImage.length) fail(`확장요약문 이미지 파일 없음: ${missin
 
 if (!announcements.length) warn('공지사항이 비어 있습니다.');
 
-console.log(`세션 ${allSessions.length}건 · 논문 ${allPapers.length}건 · 장소 ${venues.length}곳 · 발표자 ${speakers.length}명`);
+console.log(`세션 ${allSessions.length}건 · 진행 발표 ${activePapers.length}건 · 철회 ${allPapers.length - activePapers.length}건 · 장소 ${venues.length}곳 · 발표자 ${speakers.length}명`);
 warnings.forEach((w) => console.log(`  경고  ${w}`));
 errors.forEach((e) => console.log(`  오류  ${e}`));
 console.log(errors.length ? `\n검증 실패 — 오류 ${errors.length}건` : `\n검증 통과 — 경고 ${warnings.length}건`);

@@ -12,6 +12,7 @@
     "extract:abstracts": "python3 scripts/extract-fall-abstracts.py",
     "assemble:data": "python3 scripts/assemble-fall-data.py",
     "test:mock-time": "tsx scripts/test-dashboard-mock-time.ts",
+    "test:program-update": "tsx scripts/test-program-update.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "build:font": "python3 scripts/subset-font.py",
     "build:paper-index": "tsx scripts/build-paper-index.ts"

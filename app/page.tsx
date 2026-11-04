@@ -164,16 +164,16 @@ export default function ProgramPage() {
   const majorDayNo = (dates as string[]).indexOf(majorDate) + 1;
   const daySessions = useMemo(() => sessions
     .filter((s) => s.date === date)
-    .sort((a, b) => a.time.localeCompare(b.time)), [date]);
+    .sort((a, b) => (a.programTime ?? a.time).localeCompare(b.programTime ?? b.time)), [date]);
 
-  // Grouped by start time so every hall running at once shows as one dense row
-  // under a shared heading, instead of a tall card per session.
+  // A session can share a programme block while retaining its actual end time.
   const daySlots = useMemo(() => {
     const map = new Map<string, Session[]>();
     daySessions.forEach((session) => {
-      const list = map.get(session.time) || [];
+      const time = session.programTime ?? session.time;
+      const list = map.get(time) || [];
       list.push(session);
-      map.set(session.time, list);
+      map.set(time, list);
     });
     return [...map.entries()];
   }, [daySessions]);

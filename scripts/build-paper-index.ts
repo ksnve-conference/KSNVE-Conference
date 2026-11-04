@@ -19,6 +19,7 @@ const summarize = (paper: SourceRecord) => ({
   // Display number (P201 for posters); falls back to id in the badge.
   paper_id: paper.paper_id,
   id: paper.id,
+  status: paper.status,
   sessionId: paper.sessionId ?? paper.session_id,
   date: paper.date,
   time: paper.time,

@@ -10,6 +10,8 @@ import { conferenceConfig } from '@/lib/conference-config';
 export type Paper = {
   paper_id?: string;
   id: string;
+  /** Withdrawn IDs remain available for old links and saved-paper notices. */
+  status?: 'withdrawn';
   session_id?: string;
   sessionId: string;
   date: string;
@@ -45,6 +47,8 @@ export type Session = {
   date: string;
   day: string;
   time: string;
+  /** Shared heading in the full programme; actual timing remains in time. */
+  programTime?: string;
   venue: string;
   chair: string;
   category: string;
@@ -82,7 +86,11 @@ export type Announcement = { id: string; title: string; body: string; date: stri
  * component imports. Regenerate with `npm run build:paper-index` after
  * editing papers-with-abstracts.json or poster-papers.json.
  */
-export const papers: Paper[] = papersIndexData as Paper[];
+export const withdrawnPapers: Paper[] = (papersIndexData as Paper[]).filter((paper) => paper.status === 'withdrawn');
+export const papers: Paper[] = (papersIndexData as Paper[])
+  .filter((paper) => paper.status !== 'withdrawn')
+  // New management IDs are appended; presentation order comes from the schedule.
+  .sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time) || a.id.localeCompare(b.id));
 
 /** Paper sessions plus the official programme-book events (opening, keynotes, dinner…). */
 export const sessions: Session[] = [
@@ -92,6 +100,11 @@ export const sessions: Session[] = [
 
 export const venues = venuesData as Venue[];
 export const speakers = speakersData as Speaker[];
+const activePaperIds = new Set(papers.map((paper) => paper.id));
+/** Preserve old presenter URLs, but only advertise scheduled talks in search. */
+export const activeSpeakers: Speaker[] = speakers
+  .map((speaker) => ({ ...speaker, papers: speaker.papers.filter((id) => activePaperIds.has(id)) }))
+  .filter((speaker) => speaker.papers.length > 0);
 export const announcements = announcementsData as Announcement[];
 
 const dayLabels = new Map(
