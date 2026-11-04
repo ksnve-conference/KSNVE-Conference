@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
+import ScrollMemory from '@/components/ScrollMemory';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
 import EventDetailsView from '@/components/EventDetails';
@@ -40,6 +41,7 @@ export default async function SessionDetail({ params }: { params: Promise<{ id: 
 
   return (
     <main className="shell detail-shell">
+      {sessionPapers.length > 0 && <ScrollMemory key={id} screen={`session:${id}`} />}
       <AppHeader compact />
       <BackLink fallback={`/?date=${session.date}#session-${session.id}`} label="목록으로" />
 
