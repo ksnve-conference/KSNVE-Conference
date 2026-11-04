@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import Link from 'next/link';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
+import ScrollMemory from '@/components/ScrollMemory';
 import VenueCard from '@/components/VenueCard';
 import InstallGuideModal from '@/components/InstallGuideModal';
 import Icon, { type IconName } from '@/components/Icon';
@@ -35,6 +36,7 @@ export default function MorePage() {
 
   return (
     <main className="shell app-shell">
+      <ScrollMemory screen="more" />
       <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>더보기</h1></div>
