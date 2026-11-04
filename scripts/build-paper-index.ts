@@ -32,7 +32,7 @@ const summarize = (paper: SourceRecord) => ({
   title: paper.title,
   authors: paper.authors,
   presenter: paper.presenter,
-  hasAbstract: Boolean(paper.abstract),
+  hasAbstract: Boolean(paper.abstract || paper.abstractImage),
   // Keywords are cheap (short strings) and power keyword search/links —
   // unlike the abstract text, worth keeping in the lightweight index.
   keywords: paper.keywords ?? undefined,

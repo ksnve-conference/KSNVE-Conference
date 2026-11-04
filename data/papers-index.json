@@ -1622,7 +1622,7 @@
     "title": "후드일체형 인덕션 고풍량, 저소음 기술",
     "authors": "이태근, 박군동, 한원석, 성상진, 김원태, 기성현(LG전자)",
     "presenter": "이태근",
-    "hasAbstract": false
+    "hasAbstract": true
   },
   {
     "paper_id": "p075",
@@ -4337,7 +4337,7 @@
     "title": "위상최적설계를 위한 음향블랙홀 과도진동 민감도 해석",
     "authors": "김선용(순천대)",
     "presenter": "김선용",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
       "Topology Optimization(위상최적설계)",
       "Transient Vibration(과도진동)",
@@ -6227,7 +6227,7 @@
     "title": "임의 충격하중에 대한 장갑차 구조물의 설계 개선",
     "authors": "최호준, 이재환, 오재이(한화에어로스페이스)",
     "presenter": "최호준",
-    "hasAbstract": false
+    "hasAbstract": true
   },
   {
     "paper_id": "P112",

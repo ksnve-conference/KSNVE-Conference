@@ -29,6 +29,8 @@ export type Paper = {
   presenter: string;
   affiliations?: string[] | string;
   abstract?: string;
+  /** Image-based abstract for formula-heavy submissions. */
+  abstractImage?: { src: string; width: number; height: number };
   keywords?: string[];
   /** pdf-text: abstract taken from the PDF's text · image-only: only the page image is usable */
   extractionStatus?: string;

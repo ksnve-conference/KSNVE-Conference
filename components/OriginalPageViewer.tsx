@@ -5,14 +5,14 @@ import { useEffect, useRef, useState } from 'react';
 type OriginalPageViewerProps = {
   src: string;
   title: string;
-  variant?: 'original' | 'figures';
+  variant?: 'original' | 'figures' | 'abstract';
   width?: number;
   height?: number;
 };
 
 export default function OriginalPageViewer({ src, title, variant = 'original', width = 1434, height = 2024 }: OriginalPageViewerProps) {
   const isFigures = variant === 'figures';
-  const label = isFigures ? '그림·표' : '확장요약문 원문';
+  const label = isFigures ? '그림·표' : variant === 'abstract' ? '확장요약문' : '확장요약문 원문';
   const dialogRef = useRef<HTMLDialogElement>(null);
   const previewRef = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -40,7 +40,7 @@ export default function OriginalPageViewer({ src, title, variant = 'original', w
       {!isFigures && <div className="original-page-heading">
         <div>
           <h2>{label}</h2>
-          <p>학술대회 제출 원문</p>
+          {variant === 'original' && <p>학술대회 제출 원문</p>}
         </div>
       </div>}
 

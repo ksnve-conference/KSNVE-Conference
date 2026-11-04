@@ -163,6 +163,10 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
           </section>
         )}
 
+        {paper.abstractImage && (
+          <OriginalPageViewer {...paper.abstractImage} title={paper.title} variant="abstract" />
+        )}
+
         {paper.figureImage && (
           <OriginalPageViewer {...paper.figureImage} title={paper.title} variant="figures" />
         )}
