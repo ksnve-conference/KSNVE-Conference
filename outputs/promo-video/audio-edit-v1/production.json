@@ -1,0 +1,79 @@
+{
+  "project": "KSNVE conference invitation",
+  "revision": "audio-edit-v1",
+  "workflow": "Local FFmpeg audio edit; no new TTS or video generation",
+  "written_text": "아니 그게 고민이 된다고?",
+  "spoken_text": "아니그게 고민이 된다고?",
+  "source": "intro-v4/voice-a-question.mp3",
+  "source_sha256": "89db81c99550313ef0be74de783a3321250e38ae55d2fbf991ce926ea455e0e7",
+  "source_voice": "fe3fbd12d84c41b5a791e6ea544f774d",
+  "source_duration_seconds": 1.593469387755102,
+  "edits": [
+    {
+      "operation": "trim_leading_margin",
+      "source_seconds": [
+        0,
+        0.09501133786848072
+      ]
+    },
+    {
+      "operation": "pitch_preserving_local_tempo",
+      "source_seconds": [
+        0.09501133786848072,
+        0.5049886621315193
+      ],
+      "target_phrase": "아니그게",
+      "tempo_multiplier": 1.2,
+      "output_samples": 14902,
+      "output_seconds": 0.33791383219954646,
+      "authorization": "User requested faster, more connected delivery"
+    },
+    {
+      "operation": "linear_crossfade",
+      "duration_seconds": 0.00399092970521542,
+      "output_start_seconds": 0.33392290249433104
+    },
+    {
+      "operation": "copy_at_original_speed",
+      "source_seconds": [
+        0.5049886621315193,
+        1.48
+      ],
+      "output_start_seconds": 0.33392290249433104
+    },
+    {
+      "operation": "trim_trailing_margin",
+      "source_seconds": [
+        1.48,
+        1.593469387755102
+      ]
+    },
+    {
+      "operation": "headroom_gain",
+      "linear_gain": 0.8473486272613838
+    },
+    {
+      "operation": "boundary_fades",
+      "in_seconds": 0.00399092970521542,
+      "out_seconds": 0.01199546485260771
+    }
+  ],
+  "outputs": [
+    "KSNVE_female_question_connected.wav",
+    "KSNVE_female_question_connected.mp3"
+  ],
+  "sample_rate": 44100,
+  "channels": 1,
+  "output_duration_seconds": 1.3089342403628117,
+  "verification": {
+    "original_preserved": true,
+    "full_decode_passed": true,
+    "finite_samples": true,
+    "decoded_peak": 0.838197648525238,
+    "tail_sample_comparison_max_error": 2.9802322387695312e-08,
+    "waveform_and_spectrogram_reviewed": true,
+    "listening_review_performed": false,
+    "note": "The latest source was already connected without a long silence; the opening was locally accelerated. No phoneme-level silence deletion or new rising-intonation synthesis was claimed."
+  },
+  "next_workflow": "Confirm speech before audio-driven lip-sync generation with existing character images."
+}

@@ -1,0 +1,31 @@
+{
+  "project": "KSNVE 2026 추계학술대회 참가 권유 영상",
+  "stage": "인물 및 카페 장면 1차 시안",
+  "created_date": "2026-11-05",
+  "generation_mode": "built-in image_gen",
+  "relation": "30대 초반 대학원 동기. A는 연구소 연구원, B는 기업 연구개발 엔지니어.",
+  "assets": [
+    {
+      "file": "01-cafe-master.png",
+      "role": "카페 기준 장면",
+      "prompt": "Use case: photorealistic-natural.\nAsset type: master casting and scene-reference still for a humorous Korean academic-conference invitation video.\nCreate a cinematic, photorealistic 16:9 landscape medium two-shot of exactly two fictional Korean adults, former graduate-school classmates now in their early thirties, comfortably talking at a small wooden table in a modern research-campus cafe in daytime.\nCharacter A, frame left: Korean woman about 32, believable approachable research-institute scientist, shoulder-length dark-brown hair with a soft side part, warm intelligent eyes, natural everyday makeup, ivory blouse with a simple tailored navy blazer. Friendly animated interest and a small conversational smile; not a fashion-model pose.\nCharacter B, frame right: Korean man about 33, believable corporate R&D engineer, short natural black hair with a side part, clean-shaven, oatmeal-grey fine-knit crewneck sweater, navy trousers. Mildly hesitant but curious expression, relaxed familiar rapport. No glasses.\nThey are peers and friends. They sit in a shallow V, torsos sufficiently toward camera for both faces to be clearly recognizable, heads only gently angled toward each other and eyes meeting. Both faces are large, unobscured and sharply in focus, with closed or gently relaxed lips suitable for later dialogue animation.\nComposition: eye-level medium framing from around the waist up, entire heads and shoulders visible, balanced left/right space, enough breathing room for future separate closeups. A is speaking with a small natural hand gesture; B's hands rest naturally beside a plain dark smartphone. Two plain ceramic coffee cups on the table, no extra props.\nSetting: daylight through large windows, softly blurred research-campus buildings outside, warm wood, restrained navy and muted blue-teal cafe accents. Quiet uncluttered background, no other people.\nLighting: soft diffused window light, natural skin texture and fabric detail, subtle cinematic depth, realistic proportions, consistent neutral-warm color. Both faces equally exposed. This is a convincing film still, not an illustration or 3D render.\nNo text, captions, lettering, speech bubbles, logos, watermarks, company badges, lab coats, exaggerated comedy faces, glamour retouching, or visible phone-screen text. Output one clean full-frame scene, not a collage."
+    },
+    {
+      "file": "02-character-a.png",
+      "role": "A — 여성 연구소 연구원",
+      "reference": "01-cafe-master.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: character A single-person portrait reference for Korean dialogue-video animation.\nInput image 1 is the identity, wardrobe, cafe location and lighting reference. Create ONE photorealistic vertical 3:4 portrait of ONLY the woman sitting on the LEFT in the reference.\nPreserve her exact face identity, apparent age about 32, facial proportions, eyes, nose, jaw, shoulder-length dark brown side-parted hair, natural makeup, ivory blouse, tailored navy blazer, and natural skin texture. Do not cast a different woman.\nChange only framing and pose: centered upper-torso portrait, complete head and shoulders with generous headroom, upright relaxed seated posture. Face nearly frontal with only a slight turn toward frame right and gaze just to the right of the lens, as if looking at her conversation partner. Both eyes and her entire mouth remain clearly visible. Soft attentive smile with relaxed closed lips, lively but subtle eyes. Hands and table out of frame.\nKeep the same warm wood, blue cafe seat and daylight-window environment softly blurred, neutral-warm soft window lighting and realistic film-still treatment as the reference. Face in sharp focus. Practical clean source for later facial animation.\nOnly this single character. No man, other people, collage, additional views, typography, logos, watermarks, glamour retouching, exaggerated expressions or invented accessories."
+    },
+    {
+      "file": "03-character-b.png",
+      "role": "B — 남성 기업 연구개발 엔지니어",
+      "reference": "01-cafe-master.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: character B single-person portrait reference for Korean dialogue-video animation.\nInput image 1 is the identity, wardrobe, cafe location and lighting reference. Create ONE photorealistic vertical 3:4 portrait of ONLY the man sitting on the RIGHT in the reference.\nPreserve his exact face identity, apparent age about 33, facial proportions, eyes, nose, jaw, natural short side-parted black hair, clean-shaven face, oatmeal-grey fine-knit crewneck sweater and natural skin texture. Do not cast a different man.\nChange only framing and pose: centered upper-torso portrait, complete head and shoulders with generous headroom, upright relaxed seated posture. Face nearly frontal with only a slight turn toward frame left and gaze just to the left of the lens, as if looking at his conversation partner. Both eyes and his entire mouth remain clearly visible. Calm slightly thoughtful, mildly hesitant but friendly expression, relaxed closed lips, no exaggerated frown. Hands and table out of frame.\nKeep the same warm wood, blue cafe seat and daylight-window environment softly blurred, neutral-warm soft window lighting and realistic film-still treatment as the reference. Face in sharp focus. Practical clean source for later facial animation.\nOnly this single character. No woman, other people, collage, additional views, typography, logos, watermarks, glamour retouching, exaggerated expressions or invented accessories."
+    }
+  ],
+  "notes": [
+    "정지 이미지 시안이며 음성이나 움직임은 포함하지 않음.",
+    "후속 장면에서도 얼굴, 머리 모양, 의상, 카페의 빛과 색을 유지할 것.",
+    "마지막 B 대사는 '됐어. 나 등록할게. 기차부터 예약한다!'로 유지."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "project": "KSNVE 추계학술대회 참가 권유 영상",
+  "revision": "intro-v2",
+  "created_date": "2026-11-05",
+  "source_revision": "../intro-v1/production.json",
+  "user_requested_changes": [
+    "여자와 남자 모두 더 빠른 말하기",
+    "남자 목소리의 어색함을 줄이고 더 낮은 톤으로 변경",
+    "여자의 '아니 그게 고민이 된다고?'를 더 빠르게 말하기",
+    "'된다고?'의 말끝을 올리는 의문형 억양"
+  ],
+  "performance_targets": {
+    "overall": "짧은 호흡과 빠른 대사 교환. 이전의 느린 설명체 대비 체감 25–35% 빠른 대화.",
+    "female": "기존 여성 음색 참고. '아니 그게 고민이 된다고?'를 한 호흡으로 빠르게, 마지막 '고?'는 분명한 상승 억양.",
+    "male": "자연스러운 서울 한국어 발음의 중저음 바리톤. 이전 남성 음성 참조 제외. 낮은 톤을 유지하면서 빠른 대화 속도.",
+    "target_duration_seconds": 8
+  },
+  "dialogue": [
+    {
+      "role": "A",
+      "text": "너 이번에 소음진동학회 가?"
+    },
+    {
+      "role": "B",
+      "text": "음, 아직 고민 중."
+    },
+    {
+      "role": "A",
+      "text": "아니 그게 고민이 된다고?"
+    },
+    {
+      "role": "A",
+      "text": "딱 일 분만 들어봐."
+    }
+  ],
+  "heygen": {
+    "video_id": "2573e8ac5cd54254942325304ba8fab0",
+    "last_observed_status": "processing",
+    "request": {
+      "model": "heygen-video-1",
+      "duration": 8,
+      "aspectRatio": "16:9",
+      "resolution": "1080p",
+      "promptEnhancement": "quality",
+      "seed": 3542956461,
+      "prompt": "REVISION OF AN EXISTING KOREAN DIALOGUE TEST. Create one complete 8-second clip. The user's requested corrections are faster speech from BOTH characters, a more natural lower-pitched male voice, and a clearly rising QUESTION intonation on the woman's \"된다고?\".\n\nIDENTITY AND SETTING\nImage 1 is the approved cafe two-shot: same modern research-campus cafe, warm wood table, two plain mugs, dark smartphone, blue chairs, soft daylight.\nImage 2 is character A, the woman: preserve her exact face, early-thirties age, shoulder-length dark-brown hair, ivory blouse and navy blazer.\nImage 3 is character B, the man: preserve his exact face, early-thirties age, short black hair, clean-shaven face and oatmeal-grey knit sweater.\nA sits on the left; B on the right. They are graduate-school friends, talking informally to each other, not presenting to camera.\n\nVOICE REFERENCE\nThe only audio reference is A's voice, for FEMALE VOCAL TIMBRE ONLY. It contains A's two lines back to back. Preserve her recognizable vocal timbre, but replace the slow cadence with the faster, lively delivery specified here. Override the reference intonation on \"된다고?\" with a strong, unmistakable upward question inflection.\nB must have a NEW native Korean male voice: natural low-mid register, warm restrained baritone/chest resonance, contemporary Seoul Korean pronunciation, age early thirties. His tone is lower and more grounded, with smooth natural phrasing. Do not imitate the old male voice. No foreign accent, nasal thinness, breathy falsetto, exaggerated bass, vocal fry or robotic pitch shifting.\n\nEXACT SPOKEN WORDS, EACH ONCE, IN THIS ORDER\nA: \"너 이번에 소음진동학회 가?\"\nB: \"음, 아직 고민 중.\"\nA: \"아니 그게 고민이 된다고?\"\nA: \"딱 일 분만 들어봐.\"\n\nACTING AND PACING — THE MAIN PURPOSE OF THIS REVISION\nAll dialogue is brisk and conversational, about 25–35 percent faster in perceived pace than a slow explanatory delivery. Short turn-taking gaps of roughly 0.1 seconds. No drawn-out vowels, no leisurely narration, no long thinking pause.\nA's \"아니 그게 고민이 된다고?\" is a quick, playful incredulous QUESTION delivered as ONE rapid breath. Do not pause after \"아니\". Slightly accelerate through \"그게 고민이\", then sharply lift pitch over \"된다고?\", with the final \"고?\" rising distinctly upward. The ending must sound like she is genuinely asking \"that is a dilemma?!\" rather than finishing a statement. Make the upward inflection crisp, not stretched or sung. Her eyebrows rise with the questioning intonation.\nA's next line \"딱 일 분만 들어봐.\" follows after a tiny beat, quick, bright and confident.\nB's \"음\" is a SHORT hesitation, immediately followed by \"아직 고민 중.\" in a low, natural voice. Lower pitch must NOT make his speaking rate slower.\n\nTIMED SHOTS\n0.0–2.1 seconds: cafe medium two-shot. A immediately asks \"너 이번에 소음진동학회 가?\" while looking at B; B listens.\n2.2–3.6 seconds: hard cut to B's medium close-up. He replies \"음, 아직 고민 중.\" promptly and casually, eyes toward A off-camera left.\n3.7–5.3 seconds: hard cut to A's medium close-up. She quickly asks \"아니 그게 고민이 된다고?\" with the sharply RISING end on \"고?\" and playful raised eyebrows, looking toward B off-camera right.\n5.4–7.1 seconds: remain on A as she briskly adds \"딱 일 분만 들어봐.\"\n7.1–8.0 seconds: brief natural smile and reaction only; end promptly.\nThe exact syllable boundaries may shift slightly for natural Korean fluency, but keep this compact rhythm and complete all words clearly. Do not lengthen the performance to fill time.\n\nVISUAL AND AUDIO QUALITY\nKeep identities, clothes, lighting and cafe consistent. Preserve normal motion speed and realistic anatomy while the people speak faster. Natural mouth articulation synchronized with each speaker; listener keeps lips still. Small restrained gestures; no wild head movements. Objects remain on the table.\nClear Korean dialogue with very low cafe room tone. No music, additional dialogue, narration, subtitles, visible writing, labels, logos or title cards. Output one 16:9 cinematic-realism scene, preserving the approved natural everyday look.",
+      "referenceImages": [
+        {
+          "type": "asset_id",
+          "asset_id": "851c40b04ede4aca98f51a877a2ac688"
+        },
+        {
+          "type": "asset_id",
+          "asset_id": "21907bc273a6442789e3d7d5093e0442"
+        },
+        {
+          "type": "asset_id",
+          "asset_id": "ece29d859e5a4077830bc9dcd4add4d3"
+        }
+      ],
+      "referenceAudio": [
+        {
+          "type": "url",
+          "url": "https://resource2.heygen.ai/text_to_speech/e03edf7d797c41b595d0355282559efd/fe3fbd12d84c41b5a791e6ea544f774d/id=2209c0dd-6721-4a15-933d-d3a4c0e718cf.wav"
+        }
+      ]
+    }
+  },
+  "verification": {
+    "final_video_received": false,
+    "audio_intonation_reviewed": false,
+    "notes": "현재 생성 중. 실제 말속도·남자 음역·여자 질문형 말끝은 완료 영상 확인 필요."
+  },
+  "future_full_video_notes": [
+    "주요 분야 전체 포함",
+    "학교·기업·연구소·관공서의 교류와 정보 획득 강조",
+    "맥북은 추첨 경품으로 안내",
+    "마지막 B 대사: 됐어. 나 등록할게. 기차부터 예약한다!"
+  ]
+}

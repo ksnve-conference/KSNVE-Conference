@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a1",
+    "voice": "Yuna",
+    "rate": 205,
+    "text": "너 이번에 소음진동학회 가?",
+    "duration": 1.368299
+  },
+  {
+    "id": "b1",
+    "voice": "Eddy (Korean (South Korea))",
+    "rate": 175,
+    "text": "음… 아직 고민 중.",
+    "duration": 1.422857
+  },
+  {
+    "id": "a2",
+    "voice": "Yuna",
+    "rate": 205,
+    "text": "아니, 그게 고민이 된다고? 딱 일 분만 들어봐.",
+    "duration": 2.357732
+  },
+  {
+    "id": "b2",
+    "voice": "Eddy (Korean (South Korea))",
+    "rate": 195,
+    "text": "맥북? 됐어. 나 등록할게. 기차부터 예약한다!",
+    "duration": 3.23619
+  }
+]

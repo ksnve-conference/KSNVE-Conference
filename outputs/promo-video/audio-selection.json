@@ -1,0 +1,18 @@
+{
+  "project": "KSNVE 추계학술대회 참가 권유 영상",
+  "selection": "female_question_original_before_local_edits",
+  "user_instruction": "어색하다 기존걸로하라",
+  "selected_audio": "intro-v4/voice-a-question.mp3",
+  "selected_production_record": "intro-v4/production.json",
+  "written_text": "아니 그게 고민이 된다고?",
+  "speech_input_text": "아니그게 고민이 된다고?",
+  "selection_note": "속도를 직접 편집하기 전 음성으로 복귀. 영상의 해당 대사에는 선택된 원본 파일을 사용.",
+  "selected_file_sha256": "89db81c99550313ef0be74de783a3321250e38ae55d2fbf991ce926ea455e0e7",
+  "local_processing": "none",
+  "superseded_edits": [
+    "audio-edit-v1/KSNVE_female_question_connected.mp3",
+    "audio-edit-v2/KSNVE_female_question_connected_slower.mp3"
+  ],
+  "original_and_edits_preserved": true,
+  "video_update_performed": false
+}

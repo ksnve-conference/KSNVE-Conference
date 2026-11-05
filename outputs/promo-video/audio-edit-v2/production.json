@@ -1,0 +1,31 @@
+{
+  "revision": "audio-edit-v2",
+  "user_request": "말이 너무 빠르다",
+  "spoken_text": "아니그게 고민이 된다고?",
+  "source": "intro-v4/voice-a-question.mp3",
+  "source_sha256": "89db81c99550313ef0be74de783a3321250e38ae55d2fbf991ce926ea455e0e7",
+  "source_in_seconds": 0.09501133786848072,
+  "source_out_seconds": 1.48,
+  "change": "Removed the previous local 1.2x opening speed-up; slowed the full connected phrase to 0.85x of the untouched source with pitch preserved.",
+  "tempo_multiplier_from_source": 0.85,
+  "silence_inserted": false,
+  "new_synthesis": false,
+  "gain": 0.8473195344640216,
+  "previous_duration_seconds": 1.3089342403628117,
+  "output_duration_seconds": 1.6141950113378685,
+  "outputs": [
+    "KSNVE_female_question_connected_slower.wav",
+    "KSNVE_female_question_connected_slower.mp3"
+  ],
+  "sample_rate": 44100,
+  "channels": 1,
+  "verification": {
+    "source_unchanged": true,
+    "full_decode_passed": true,
+    "finite_samples": true,
+    "decoded_peak": 0.8402713537216187,
+    "audio_listening_performed": false,
+    "note": "Technical audio checks passed. Naturalness and intonation remain unverified by listening."
+  },
+  "next_step": "Use accepted audio to drive character lip-sync."
+}
