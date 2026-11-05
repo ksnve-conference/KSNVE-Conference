@@ -3,9 +3,17 @@ import Icon from '@/components/Icon';
 import { dayLabel, formatSessionTitle, type Paper } from '@/lib/conference';
 import PresentationBadge from '@/components/PresentationBadge';
 
-export default function PaperCard({ paper, saved = false, onToggle }: { paper: Paper; saved?: boolean; onToggle?: (id: string) => void }) {
+type PaperCardProps = {
+  paper: Paper;
+  saved?: boolean;
+  onToggle?: (id: string) => void;
+  searchResult?: boolean;
+};
+
+export default function PaperCard({ paper, saved = false, onToggle, searchResult = false }: PaperCardProps) {
+  const sessionTitle = formatSessionTitle(paper.session);
   return (
-    <article className="card paper-card">
+    <article className={`card paper-card${searchResult ? ' paper-search-result' : ''}`}>
       <PresentationBadge paper={paper} showId />
       {onToggle && (
         <button
@@ -23,7 +31,9 @@ export default function PaperCard({ paper, saved = false, onToggle }: { paper: P
       </div>
       <h3 className="paper-title"><Link href={`/papers/${paper.id}`}>{paper.title}</Link></h3>
       <p className="meta authors">{paper.authors}</p>
-      <p className="meta session-link"><Link href={`/sessions/${paper.sessionId}`}>{formatSessionTitle(paper.session)}</Link></p>
+      <p className="meta session-link">
+        {searchResult ? sessionTitle : <Link href={`/sessions/${paper.sessionId}`}>{sessionTitle}</Link>}
+      </p>
     </article>
   );
 }

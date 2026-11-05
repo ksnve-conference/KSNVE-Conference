@@ -92,6 +92,9 @@ body{font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-ser
 .original-pending svg{color:var(--brand)}
 .notice-link{color:var(--brand);font-weight:700;text-decoration:underline;word-break:break-all}
 .announcement-list>.notice-row{cursor:pointer}
+.paper-search-result .paper-title a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.paper-search-result .star{z-index:1}
+.paper-search-result .session-link{color:var(--muted)}
 .notice-image{display:block;width:100%;height:auto;margin:10px 0 4px;border-radius:12px;border:1px solid var(--line)}
 
 /* Installed home-screen app: scroll an inner container, not the document. iOS 26 lets a fixed

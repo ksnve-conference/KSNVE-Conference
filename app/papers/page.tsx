@@ -229,7 +229,7 @@ function PapersPageInner() {
                 <h2>{filter === 'KEYNOTE' ? '키노트 발표' : '논문'} <span>{filtered.length}</span></h2>
                 <div className="list paper-list">
                   {filtered.slice(0, 60).map((paper) => (
-                    <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
+                    <PaperCard key={paper.id} paper={paper} searchResult saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
                   ))}
                 </div>
                 {filtered.length > 60 && <p className="list-more">상위 60건을 표시했습니다. 검색어를 좁혀 보세요.</p>}
@@ -257,7 +257,7 @@ function PapersPageInner() {
                     {isOpen && (
                       <div className="list paper-list">
                         {list.map((paper) => (
-                          <PaperCard key={paper.id} paper={paper} saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
+                          <PaperCard key={paper.id} paper={paper} searchResult saved={savedPapers.includes(paper.id)} onToggle={togglePaper} />
                         ))}
                       </div>
                     )}
