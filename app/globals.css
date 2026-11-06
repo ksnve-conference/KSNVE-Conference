@@ -102,6 +102,11 @@ body{font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-ser
 @media (display-mode: standalone){
   html,body{height:100%;overflow:hidden}
   #app-scroll{position:fixed;inset:0;overflow-y:auto;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
+  /* iOS paints the status-bar strip above the web view from the body colour (as a
+     fade into the page). Keep body white to match the header, and carry the grey
+     page background on the scroller, which fills the whole view anyway. */
+  html body{background:#fff} /* beats the plain body rule in styles.css, which loads later */
+  #app-scroll{background:var(--bg)}
 }
 /* 총일정표 (schedule overview) button and viewer */
 .schedule-overview-open{display:inline-flex;align-items:center;gap:5px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--brand);font-size:13px;font-weight:800;box-shadow:var(--shadow)}
