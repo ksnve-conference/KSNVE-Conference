@@ -33,20 +33,35 @@ export function PromoVideoShortcut() {
   );
 }
 
-/** Thumbnail card on 더보기; the whole card opens the video on YouTube. */
+/**
+ * Card on 더보기: the landscape video plays in place. Only the thumbnail loads
+ * until someone taps it, so the page stays light on mobile data.
+ */
 export default function PromoVideoCard() {
   const href = useVideoUrl();
+  const [playing, setPlaying] = useState(false);
   return (
-    <a className="promo-video" href={href} target="_blank" rel="noopener noreferrer" aria-label="학술대회 미리보기 영상 (YouTube에서 열기)">
+    <section className="promo-video" aria-label="학술대회 미리보기">
       <div className="promo-video-frame">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`} alt="" loading="lazy" />
-        <span className="promo-video-play"><Play size={26} /></span>
+        {playing ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&playsinline=1&rel=0`}
+            title="2026 추계 학술대회 홍보 영상"
+            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+            allowFullScreen
+          />
+        ) : (
+          <button type="button" onClick={() => setPlaying(true)} aria-label="홍보 영상 재생">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`} alt="" loading="lazy" />
+            <span className="promo-video-play"><Play size={26} /></span>
+          </button>
+        )}
       </div>
       <div className="promo-video-heading">
         <b>2026 추계 학술대회 홍보 영상</b>
-        <span>YouTube에서 보기 <Icon name="external" size={13} /></span>
+        <a href={href} target="_blank" rel="noopener noreferrer">YouTube에서 보기 <Icon name="external" size={13} /></a>
       </div>
-    </a>
+    </section>
   );
 }

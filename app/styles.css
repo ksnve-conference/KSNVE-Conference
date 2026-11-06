@@ -221,11 +221,13 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   background:var(--card); box-shadow:var(--shadow);
   display:block; color:inherit; text-decoration:none;
 }
-.promo-video:focus-visible{ outline:3px solid var(--brand); outline-offset:3px; }
 .promo-video-heading{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin:10px 2px 0; }
 .promo-video-heading b{ font-size:15px; font-weight:800; color:var(--text); }
-.promo-video-heading span{ display:inline-flex; align-items:center; gap:3px; font-size:var(--type-meta); color:var(--muted); text-decoration:none; }
+.promo-video-heading a{ display:inline-flex; flex-shrink:0; align-items:center; gap:3px; font-size:var(--type-meta); color:var(--muted); text-decoration:none; }
 .promo-video-frame{ position:relative; aspect-ratio:16/9; overflow:hidden; border-radius:10px; background:#000; }
+.promo-video-frame iframe, .promo-video-frame button{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+.promo-video-frame button{ padding:0; cursor:pointer; background:#000; }
+.promo-video-frame button:focus-visible{ outline:3px solid var(--brand); outline-offset:-3px; }
 .promo-video-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
 .promo-video-play{
   position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
