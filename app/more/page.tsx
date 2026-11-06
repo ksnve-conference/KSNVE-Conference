@@ -41,6 +41,7 @@ export default function MorePage() {
       <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>더보기</h1></div>
+        <PromoVideoCard />
         <div className="more-menu">
           <button type="button" onClick={openGuide}>
             <span><Icon name="download" size={19} /></span>
@@ -56,9 +57,6 @@ export default function MorePage() {
           ))}
         </div>
         <InstallGuideModal dialogRef={guideRef} onClose={closeGuide} />
-
-        <div className="venue-section-heading"><span>학술대회 미리보기</span></div>
-        <PromoVideoCard />
 
         <div className="venue-section-heading"><span>발표장</span></div>
         <div className="venue-preview">
