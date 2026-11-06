@@ -26,7 +26,7 @@ export function PromoVideoShortcut() {
   const href = useVideoUrl();
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className="program-shortcut promo-shortcut">
-      <Play size={20} />
+      <Icon name="video" size={20} />
       <span>학술대회 미리보기</span>
       <Icon name="external" size={16} />
     </a>
