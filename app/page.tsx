@@ -206,7 +206,7 @@ export default function ProgramPage() {
         <Icon name="chevron-down" size={18} />
       </a>
 
-      {isBefore && <PromoVideoShortcut />}
+      <PromoVideoShortcut />
 
       <section className="today-dashboard">
         <InstallPrompt />

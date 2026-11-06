@@ -21,7 +21,7 @@ const Play = ({ size }: { size: number }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
 );
 
-/** One-line shortcut under 전체 프로그램 바로가기 on the home screen (before the conference). */
+/** One-line shortcut under 전체 프로그램 바로가기 on the home screen. */
 export function PromoVideoShortcut() {
   const href = useVideoUrl();
   return (
