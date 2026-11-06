@@ -315,10 +315,9 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today{
   position:relative; overflow:hidden;
   min-height:clamp(268px, 72vw, 340px);
-  /* top padding clears the notice button; on narrow phones the hero grows
-     taller instead of the text running into it */
-  padding:66px 18px 22px;
-  display:flex; align-items:flex-end; gap:12px;
+  /* Reserve space below the text for the status badge. */
+  padding:24px 18px 66px;
+  display:flex; align-items:flex-start; gap:12px;
   background:#000; /* shows briefly while photos decode and between crossfades */
   color:#fff;
 }
@@ -340,17 +339,21 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-photo-stack span:nth-child(2){
   /* the busy fireworks frame gets extra shade under the text (it fades with the photo) */
-  background-image:linear-gradient(180deg, rgba(4,44,76,0) 40%, rgba(4,44,76,.35) 75%, rgba(4,40,70,.5) 100%), url('/images/hero-yeosu-fireworks.webp');
-  background-size:100% 100%, cover; background-position:0 0, 50% 62%;
+  background-image:linear-gradient(180deg, rgba(4,40,70,.35) 0%, rgba(4,44,76,.25) 45%, rgba(4,44,76,0) 75%), url('/images/hero-yeosu-fireworks.webp');
+  background-size:100% 100%, cover; background-position:0 0, 50% 20%;
   animation-delay:-3s;
 }
 .hero-photo-stack span:nth-child(3){
-  background-image:url('/images/hero-yeosu-harbor.webp'); background-position:50% 55%;
+  background-image:url('/images/hero-yeosu-harbor.webp'); background-position:50% 20%;
   animation-delay:-6s;
 }
 .hero-photo-stack span:nth-child(4){
-  background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 62%;
+  background-image:url('/images/hero-yeosu-venue.webp'); background-position:50% 20%;
   animation-delay:-9s;
+}
+.hero-photo-stack span:nth-child(n+2){
+  top:clamp(24px, 6vw, 40px); bottom:clamp(-40px, -6vw, -24px);
+  mask-image:linear-gradient(to bottom, transparent, #000 40px);
 }
 @keyframes heroPhotoZoom{
   0%{ transform:scale(1); }
@@ -366,9 +369,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 }
 .hero-today:before{
   content:""; position:absolute; inset:0; z-index:1;
-  /* light: a touch of shade behind the notice button, the photo left clear in
-     the middle, society blue only under the text */
-  background:linear-gradient(180deg, rgba(3,14,24,.22) 0%, rgba(3,14,24,0) 22%, rgba(3,14,24,0) 45%, rgba(4,44,76,.45) 72%, rgba(4,40,70,.72) 100%);
+  /* Shade the upper text block while keeping the lower scenery visible. */
+  background:linear-gradient(180deg, rgba(4,40,70,.78) 0%, rgba(4,40,70,.62) 45%, rgba(4,44,76,.15) 78%, rgba(3,14,24,.08) 100%);
 }
 .hero-today:after{ display:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
@@ -384,17 +386,21 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);
 }
 .hero-today .hero-title-block small{
-  display:flex; flex-wrap:wrap; gap:6px; margin-top:11px;
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:5px;
+  line-height:1.2;
   font-size:clamp(13px, 3.8vw, 15px); font-weight:700; letter-spacing:-.01em; color:#fff;
+  text-shadow:0 1px 3px rgba(0,0,0,.55);
 }
-/* date and venue as two glassy chips */
 .hero-today .hero-title-block small span{
-  padding:4px 10px; border-radius:var(--r-pill);
-  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px);
+  white-space:nowrap;
 }
-.hero-today .hero-bottom-row{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:10px; margin-top:10px; }
+.hero-today .hero-title-block small span + span::before{
+  content:"|"; margin-right:6px; opacity:.75;
+}
+.hero-today .hero-bottom-row{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:10px; margin-top:0; }
 .hero-today .conference-tagline{
   display:block; min-width:0; white-space:nowrap; /* the theme stays on one line */
+  line-height:1.25;
   font-size:clamp(13px, 3.8vw, 16px); font-weight:600; letter-spacing:-.01em;
   font-style:normal; color:rgba(255,255,255,.9); text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);
 }
@@ -403,6 +409,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   display:block; width:clamp(190px, 56vw, 240px); height:auto; margin-bottom:10px;
   filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));
 }
+.hero-today .hero-ci{ width:clamp(162px, 48vw, 204px); max-width:calc(100% - 58px); }
+.hero-today > .hero-status{ position:absolute; right:18px; bottom:22px; z-index:2; }
 .hero-status{
   flex:none; display:inline-flex; align-items:center; gap:5px;
   padding:4px 11px; border-radius:var(--r-pill);

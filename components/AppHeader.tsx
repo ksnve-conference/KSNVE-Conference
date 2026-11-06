@@ -43,19 +43,18 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
             <span>{conferenceConfig.venue}</span>
           </small>
           {!compact && (
-            // theme and status badge share a row, so a tall badge can't ride up into the chips
             <div className="hero-bottom-row">
               <em className="conference-tagline">“{conferenceConfig.theme}”</em>
-              {status && (
-                <span className={`hero-status${live ? ' is-live' : ''}`}>
-                  {live && <i className="hero-live-dot" aria-label="진행 중" />}
-                  {status}
-                </span>
-              )}
             </div>
           )}
         </div>
       </Link>
+      {!compact && status && (
+        <span className={`hero-status${live ? ' is-live' : ''}`}>
+          {live && <i className="hero-live-dot" aria-label="진행 중" />}
+          {status}
+        </span>
+      )}
       {showNotice && (
         <nav className="hero-links" aria-label="바로가기">
           <Link href="/notices" aria-label={unread > 0 ? `공지사항 ${unread}건 안 읽음` : '공지사항'} className="hero-link-notice">
