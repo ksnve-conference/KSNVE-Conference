@@ -451,7 +451,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .site-header.hero-compact:before,.site-header.hero-compact:after{ display:none; }
 .status-tint{ display:none; }
 @media (display-mode: standalone){
-  .status-tint{ display:block; position:fixed; top:0; left:0; right:0; height:2px; background:var(--card); z-index:21; }
+  .status-tint{ display:block; position:fixed; top:0; left:0; right:0; height:2px; background:var(--card); z-index:21; pointer-events:none; }
 }
 .hero-compact .brand-mark{ display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
