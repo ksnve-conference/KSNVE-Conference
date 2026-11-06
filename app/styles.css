@@ -114,9 +114,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   max-height:82vh; padding:0; border:0; border-radius:20px 20px 0 0;
   background:var(--card); color:var(--text);
 }
-/* A closed sheet keeps no fixed box: iOS home-screen apps otherwise tint the
-   status-bar strip above the header on screens that carry one (통합검색, 더보기). */
-.filter-sheet:not([open]){ position:static; inset:auto; }
 .filter-sheet::backdrop{ background:rgba(6,16,26,.5); }
 .filter-sheet-header{
   display:flex; align-items:center; justify-content:space-between;
