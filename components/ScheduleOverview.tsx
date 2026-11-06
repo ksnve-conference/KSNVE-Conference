@@ -3,10 +3,10 @@
 import { useRef, useState } from 'react';
 import Icon from '@/components/Icon';
 
-const IMAGE = { src: '/images/schedule-overview.webp?v=41075d3d51', width: 1989, height: 2720 };
-const PDF = '/files/2026-autumn-schedule-overview.pdf?v=63d5ff63ac';
+const IMAGE = { src: '/images/schedule-overview.webp?v=159da4bc66', width: 1989, height: 2721 };
+const PDF = '/files/2026-autumn-schedule-overview.pdf?v=cd9a5f763c';
 const PDF_NAME = '2026_추계_소음진동학술대회_총일정표.pdf';
-const TITLE = '총일정표 (v2.4)';
+const TITLE = '총일정표 (v2.5.2)';
 
 /** "총일정표" button beside the programme title: the one-page grid of every hall, zoomable, with the PDF to download. */
 export default function ScheduleOverview() {
