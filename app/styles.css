@@ -437,14 +437,14 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   font-family:var(--font-ci), var(--font-body), sans-serif;
   font-weight:500; font-synthesis:none;
 }
-.hero-compact{
+.hero.hero-compact{
   height:64px; min-height:64px; overflow:visible;
   display:flex; align-items:center; gap:10px;
   padding:0 16px; border:0; border-bottom:1px solid var(--line); border-radius:0;
   background:var(--card); color:var(--brand-dark); box-shadow:none;
   position:sticky; top:0; z-index:20;
 }
-.hero-compact:after{ display:none; }
+.hero.hero-compact:before,.hero.hero-compact:after{ display:none; }
 .hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
 .hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
 .hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
