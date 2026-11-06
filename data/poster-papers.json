@@ -2457,7 +2457,7 @@
   "extractionStatus": "pdf-text"
  },
  {
-  "paper_id": "P238",
+  "paper_id": "P149",
   "id": "poster-p238",
   "sessionId": "e07",
   "session": "포스터 발표 [1]",
@@ -2465,7 +2465,7 @@
   "time": "11:40~12:20",
   "venue": "컨퍼런스홀",
   "chair": "-",
-  "flags": "@",
+  "flags": "",
   "title": "충격파에 따른 쉘터 내 DAQ 장비에 가해지는 진동 해석",
   "authors": "박준영(인천대), 김경민(국방과학연), 김백진(인천대)",
   "presenter": "김백진",
