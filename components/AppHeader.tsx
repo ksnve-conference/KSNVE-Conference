@@ -15,7 +15,7 @@ type Props = { compact?: boolean; showNotice?: boolean; unread?: number; status?
 export default function AppHeader({ compact = false, showNotice = !compact, unread = 0, status, live = false }: Props) {
   const compactTitle = conferenceConfig.headerTitle.match(/^(\d{4}\s+\S+)\s+(.+)$/);
   return (
-    <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
+    <header className={compact ? 'site-header hero-compact' : 'hero hero-today'}>
       {!compact && (
         <div className="hero-photo-stack" aria-hidden="true">
           <span /><span /><span /><span />
