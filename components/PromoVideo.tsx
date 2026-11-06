@@ -59,7 +59,7 @@ export default function PromoVideoCard() {
         )}
       </div>
       <div className="promo-video-heading">
-        <b>2026 추계 학술대회 홍보 영상</b>
+        <b>2026 추계 학술대회 미리보기</b>
         <a href={href} target="_blank" rel="noopener noreferrer">YouTube에서 보기 <Icon name="external" size={13} /></a>
       </div>
     </section>
