@@ -13,6 +13,7 @@ type Props = { compact?: boolean; showNotice?: boolean; unread?: number; status?
 // it defaults off there instead of needing every caller to opt out. (Search
 // used to sit alongside it but was dropped — 논문 tab already covers that.)
 export default function AppHeader({ compact = false, showNotice = !compact, unread = 0, status, live = false }: Props) {
+  const compactTitle = conferenceConfig.headerTitle.match(/^(\d{4}\s+\S+)\s+(.+)$/);
   return (
     <header className={`hero ${compact ? 'hero-compact' : 'hero-today'}`}>
       {!compact && (
@@ -37,7 +38,7 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
             // Official horizontal CI (white, for coloured backgrounds) from KSNVE_CI.ai
             <img className="hero-ci" src="/images/ksnve-ci-horizontal-white.webp" alt="사단법인 한국소음진동공학회" width={900} height={179} />
           )}
-          <b>{conferenceConfig.headerTitle}</b>
+          <b>{compact && compactTitle ? <><span className="compact-season">{compactTitle[1]}</span>{' '}<span>{compactTitle[2]}</span></> : conferenceConfig.headerTitle}</b>
           <small>
             <span>{compact ? conferenceConfig.displayDate : conferenceConfig.heroDate}</span>
             <span>{conferenceConfig.venue}</span>

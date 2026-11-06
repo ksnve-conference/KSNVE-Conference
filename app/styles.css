@@ -445,13 +445,14 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
   position:sticky; top:0; z-index:20;
 }
 .hero.hero-compact:before,.hero.hero-compact:after{ display:none; }
-.hero-compact .brand-mark{ display:flex; align-items:center; gap:10px; min-width:0; }
+.hero-compact .brand-mark{ display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-compact .brand-logo{ width:52px; height:auto; flex:none; }
 .hero-compact .hero-title-block{ min-width:0; overflow:hidden; }
 .hero-compact .hero-title-block b{
   display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-  font-size:var(--type-screen); font-weight:700; letter-spacing:-.02em; color:var(--brand-dark);
+  font-size:clamp(17px, 4.5vw, 22px); font-weight:700; letter-spacing:-.03em; color:var(--brand-dark);
 }
+.hero-compact .compact-season{ font-size:.78em; color:var(--muted); margin-right:4px; }
 .hero-compact .hero-title-block small,
 .hero-compact .conference-tagline{ display:none; }
 .hero-compact .hero-links{ position:static; margin-left:auto; }
