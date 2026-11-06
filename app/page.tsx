@@ -11,6 +11,7 @@ import InstallPrompt from '@/components/InstallPrompt';
 import WelcomeIntro from '@/components/WelcomeIntro';
 import Icon, { type IconName } from '@/components/Icon';
 import SurveyBanner from '@/components/SurveyBanner';
+import PromoVideo from '@/components/PromoVideo';
 import { dayLabel, papers, sessions, type Session } from '@/lib/conference';
 import { allMajorItems, sessionRange, shortDate } from '@/lib/major-events';
 import { conferenceConfig } from '@/lib/conference-config';
@@ -204,6 +205,8 @@ export default function ProgramPage() {
         <span>전체 프로그램 바로가기</span>
         <Icon name="chevron-down" size={18} />
       </a>
+
+      {isBefore && <PromoVideo />}
 
       <section className="today-dashboard">
         <InstallPrompt />
