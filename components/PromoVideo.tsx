@@ -1,41 +1,35 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Icon from '@/components/Icon';
 
-/** The promo videos announced in 공지사항 (landscape plays here, the Shorts cut opens on YouTube). */
+/** The promo videos announced in 공지사항: Shorts for phones, the landscape cut for desktops. */
 const VIDEO_ID = 'C6wIfSbE7t4';
+const LANDSCAPE_URL = `https://youtu.be/${VIDEO_ID}`;
 const SHORTS_URL = 'https://youtube.com/shorts/EBksNSpmfgQ';
 
 /**
  * 학술대회 미리보기, shown on the home screen until the conference starts.
- * Only a thumbnail loads until someone taps it, so the page stays light on
- * mobile data; the player then loads in place without leaving the app.
+ * The whole card opens the video on YouTube: touch devices get the vertical
+ * Shorts cut, everything else the landscape one (also the server-rendered default).
  */
 export default function PromoVideo() {
-  const [playing, setPlaying] = useState(false);
+  const [href, setHref] = useState(LANDSCAPE_URL);
+  useEffect(() => {
+    if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) setHref(SHORTS_URL);
+  }, []);
+
   return (
-    <section className="promo-video" aria-label="학술대회 미리보기">
+    <a className="promo-video" href={href} target="_blank" rel="noopener noreferrer" aria-label="학술대회 미리보기 영상 (YouTube에서 열기)">
       <div className="promo-video-heading">
         <b>학술대회 미리보기</b>
-        <a href={SHORTS_URL} target="_blank" rel="noopener noreferrer">세로 영상 <Icon name="external" size={13} /></a>
+        <span>YouTube에서 보기 <Icon name="external" size={13} /></span>
       </div>
       <div className="promo-video-frame">
-        {playing ? (
-          <iframe
-            src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&playsinline=1&rel=0`}
-            title="2026 추계 학술대회 홍보 영상"
-            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-            allowFullScreen
-          />
-        ) : (
-          <button type="button" onClick={() => setPlaying(true)} aria-label="홍보 영상 재생">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`} alt="" loading="lazy" />
-            <span className="promo-video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg></span>
-          </button>
-        )}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`} alt="" loading="lazy" />
+        <span className="promo-video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg></span>
       </div>
-    </section>
+    </a>
   );
 }
