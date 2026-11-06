@@ -388,7 +388,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .hero-title-block small{
   display:flex; flex-wrap:wrap; gap:6px; margin-top:5px;
   line-height:1.2;
-  font-size:clamp(13px, 3.8vw, 15px); font-weight:700; letter-spacing:-.01em; color:#fff;
+  font-size:clamp(13px, 3.8vw, 15px); font-weight:700; letter-spacing:-.01em; color:rgba(255,255,255,.78); opacity:1;
   text-shadow:0 1px 3px rgba(0,0,0,.55);
 }
 .hero-today .hero-title-block small span{
@@ -397,12 +397,12 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .hero-title-block small span + span::before{
   content:"|"; margin-right:6px; opacity:.75;
 }
-.hero-today .hero-bottom-row{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:10px; margin-top:0; }
+.hero-today .hero-bottom-row{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:10px; margin-top:8px; }
 .hero-today .conference-tagline{
   display:block; min-width:0; white-space:nowrap; /* the theme stays on one line */
   line-height:1.25;
-  font-size:clamp(13px, 3.8vw, 16px); font-weight:600; letter-spacing:-.01em;
-  font-style:normal; color:rgba(255,255,255,.9); text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);
+  font-size:15px; font-weight:600; letter-spacing:-.01em;
+  font-style:normal; color:rgba(255,255,255,.78); text-shadow:0 1px 3px rgba(0,0,0,.55);
 }
 .hero-today .hero-links{ position:absolute; top:16px; right:16px; z-index:2; }
 .hero-ci{

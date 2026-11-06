@@ -17,10 +17,6 @@ function useVideoUrl() {
   return href;
 }
 
-const Play = ({ size }: { size: number }) => (
-  <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
-);
-
 /** One-line shortcut under 전체 프로그램 바로가기 on the home screen. */
 export function PromoVideoShortcut() {
   const href = useVideoUrl();
@@ -34,29 +30,21 @@ export function PromoVideoShortcut() {
 }
 
 /**
- * Card on 더보기: the landscape video plays in place. Only the thumbnail loads
- * until someone taps it, so the page stays light on mobile data.
+ * The native YouTube play button receives the user's tap directly, avoiding
+ * a second tap when mobile browsers block autoplay on a newly mounted iframe.
  */
 export default function PromoVideoCard() {
   const href = useVideoUrl();
-  const [playing, setPlaying] = useState(false);
   return (
     <section className="promo-video" aria-label="학술대회 미리보기">
       <div className="promo-video-frame">
-        {playing ? (
           <iframe
-            src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&playsinline=1&rel=0`}
+            src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?playsinline=1&rel=0`}
             title="2026 추계 학술대회 홍보 영상"
+            loading="lazy"
             allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
             allowFullScreen
           />
-        ) : (
-          <button type="button" onClick={() => setPlaying(true)} aria-label="홍보 영상 재생">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`} alt="" loading="lazy" />
-            <span className="promo-video-play"><Play size={26} /></span>
-          </button>
-        )}
       </div>
       <div className="promo-video-heading">
         <b>2026 추계 학술대회 미리보기</b>

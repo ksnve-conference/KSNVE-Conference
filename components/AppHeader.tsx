@@ -45,7 +45,7 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
           </small>
           {!compact && (
             <div className="hero-bottom-row">
-              <em className="conference-tagline">“{conferenceConfig.theme}”</em>
+              <em className="conference-tagline">「 {conferenceConfig.theme} 」</em>
             </div>
           )}
         </div>
