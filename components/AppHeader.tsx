@@ -17,7 +17,8 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
   return (
     <header className={compact ? 'site-header hero-compact' : 'hero hero-today'}>
       {/* Installed iOS app: a white strip pinned to the top edge, which iOS reads as the
-          status-bar colour, so every compact screen gets a plain white strip instead of a blurred fade. */}
+          status-bar colour instead of a blurred fade. It stays hit-testable (no
+          pointer-events:none), since iOS finds edge colours by hit-testing. */}
       {compact && <span className="status-tint" aria-hidden="true" />}
       {!compact && (
         <div className="hero-photo-stack" aria-hidden="true">
