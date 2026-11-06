@@ -16,6 +16,9 @@ export default function AppHeader({ compact = false, showNotice = !compact, unre
   const compactTitle = conferenceConfig.headerTitle.match(/^(\d{4}\s+\S+)\s+(.+)$/);
   return (
     <header className={compact ? 'site-header hero-compact' : 'hero hero-today'}>
+      {/* Installed iOS app: a white strip pinned to the top edge, which iOS reads as the
+          status-bar colour, so every compact screen gets a plain white strip instead of a blurred fade. */}
+      {compact && <span className="status-tint" aria-hidden="true" />}
       {!compact && (
         <div className="hero-photo-stack" aria-hidden="true">
           <span /><span /><span /><span />
