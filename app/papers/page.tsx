@@ -55,6 +55,17 @@ function PapersPageInner() {
   });
   const [open, setOpen] = useState<string[]>([]);
   const filterSheetRef = useRef<HTMLDialogElement>(null);
+  const topicToggleRef = useRef<HTMLButtonElement>(null);
+  const [topicsExpanded, setTopicsExpanded] = useState(false);
+  const [topicQuery, setTopicQuery] = useState('');
+  const topicMatches = searchMatcher(topicQuery.trim());
+  const visibleTopics = topics.filter((value) => topicMatches([value]));
+  const selectTopic = (value: string) => {
+    changeTopic(value);
+    setTopicsExpanded(false);
+    setTopicQuery('');
+    topicToggleRef.current?.focus();
+  };
 
   // Keep the current history entry self-contained. Returning from a detail
   // page must not depend on the timing of the popstate/sessionStorage restore.
@@ -86,9 +97,9 @@ function PapersPageInner() {
   const { recent, clear: clearRecent } = useRecentSearches(query);
 
   const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
-  const openFilters = () => filterSheetRef.current?.showModal();
+  const openFilters = () => { setTopicsExpanded(false); setTopicQuery(''); filterSheetRef.current?.showModal(); };
   const closeFilters = () => filterSheetRef.current?.close();
-  const resetFilters = () => { updateSearchUrl({ topic: 'all', type: 'all', day: 'all' }); setTopic('all'); setFilter('all'); setDay('all'); };
+  const resetFilters = () => { updateSearchUrl({ topic: 'all', type: 'all', day: 'all' }); setTopic('all'); setFilter('all'); setDay('all'); setTopicQuery(''); setTopicsExpanded(false); };
 
   const filtered = useMemo(() => papers.filter((paper) => {
     if (topic !== 'all' && sessionById.get(paper.sessionId)?.category !== topic) return false;
@@ -164,12 +175,25 @@ function PapersPageInner() {
           <div className="filter-sheet-body">
             <section>
               <h3>분야</h3>
-              <div className="filter-chips filter-topics" role="group" aria-label="분야">
-                <button className={topic === 'all' ? 'active' : ''} onClick={() => changeTopic('all')} aria-pressed={topic === 'all'}>전체 분야</button>
-                {topics.map((t) => (
-                  <button key={t} className={topic === t ? 'active' : ''} onClick={() => changeTopic(t)} aria-pressed={topic === t}>{formatSessionTitle(t)}</button>
-                ))}
-              </div>
+              <button ref={topicToggleRef} type="button" className="topic-select-toggle" aria-expanded={topicsExpanded} aria-controls="topic-picker" onClick={() => setTopicsExpanded((value) => !value)}>
+                <span><span className="topic-select-label">분야 선택 · </span>{topic === 'all' ? '전체 분야' : formatSessionTitle(topic)}</span>
+                <Icon name="chevron-down" size={18} />
+              </button>
+              {topicsExpanded && (
+                <div id="topic-picker" className="topic-picker">
+                  <div className="topic-search">
+                    <Icon name="search" size={18} />
+                    <input type="search" aria-label="분야 검색" placeholder="분야 검색" value={topicQuery} onChange={(event) => setTopicQuery(event.target.value)} />
+                  </div>
+                  <div className="topic-options" role="group" aria-label="분야 목록">
+                    <button type="button" aria-pressed={topic === 'all'} onClick={() => selectTopic('all')}><span>전체 분야</span>{topic === 'all' && <Icon name="check" size={18} />}</button>
+                    {visibleTopics.map((t) => (
+                      <button key={t} type="button" aria-pressed={topic === t} onClick={() => selectTopic(t)}><span>{formatSessionTitle(t)}</span>{topic === t && <Icon name="check" size={18} />}</button>
+                    ))}
+                    {visibleTopics.length === 0 && <p role="status">일치하는 분야가 없습니다.</p>}
+                  </div>
+                </div>
+              )}
             </section>
             <section>
               <h3>발표 유형</h3>
