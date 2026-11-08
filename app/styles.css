@@ -851,5 +851,5 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 
 .recent-chip{ display:inline-flex; flex:none; align-items:center; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); }
 .recent-chip button{ min-height:44px; padding:8px 10px; border:0; background:transparent; color:var(--muted); font:inherit; font-size:var(--type-meta); white-space:nowrap; }
-.recent-chip .recent-chip-remove{ justify-content:center; min-width:44px; padding:8px; border-left:1px solid var(--line); }
+.recent-chip .recent-chip-remove{ justify-content:center; min-width:30px; padding:8px 6px; border-left:0; }
 .recent-chips-clear{ min-height:44px; white-space:nowrap; }
