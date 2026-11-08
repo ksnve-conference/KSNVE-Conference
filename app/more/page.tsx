@@ -5,7 +5,6 @@ import Link from 'next/link';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import ScrollMemory from '@/components/ScrollMemory';
-import VenueCard from '@/components/VenueCard';
 import PromoVideoCard from '@/components/PromoVideo';
 import InstallGuideModal from '@/components/InstallGuideModal';
 import Icon, { type IconName } from '@/components/Icon';
@@ -29,6 +28,12 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/survey', icon: 'check', title: '참가 만족도 설문', desc: '11/27(금)부터 · 3분 이내' },
   { href: '/app-info', icon: 'info', title: '이용안내', desc: '앱 사용 방법 안내' },
 ];
+
+const venueGroups = [...new Set(venues.map((venue) => venue.floor))].map((floor) => ({
+  floor,
+  label: floor === 'B1F' ? 'B1층 · 발표장' : floor.endsWith('F') ? `${floor.slice(0, -1)}층` : floor,
+  venues: venues.filter((venue) => venue.floor === floor),
+}));
 
 export default function MorePage() {
   const { unread } = useAnnouncements();
@@ -68,10 +73,23 @@ export default function MorePage() {
         </nav>
         <InstallGuideModal dialogRef={guideRef} onClose={closeGuide} />
 
-        <div className="venue-section-heading"><span>발표장</span></div>
-        <div className="venue-preview">
-          {venues.map((venue) => (
-            <VenueCard key={venue.id} venue={venue} sessionCount={sessions.filter((s) => s.venue === venue.name).length} />
+        <div className="venue-section-heading"><span>발표장·행사장</span></div>
+        <div className={styles.venueGroups}>
+          {venueGroups.map((group) => (
+            <section key={group.floor} aria-label={group.label}>
+              <h2 className={styles.floorHeading}>{group.label}</h2>
+              <div className={styles.venueGrid}>
+                {group.venues.map((venue) => (
+                  <Link key={venue.id} href={`/venues/${venue.id}`} className={styles.venueButton}>
+                    <div>
+                      <b>{venue.name}</b>
+                      <small>세션 {sessions.filter((session) => session.venue === venue.name).length}개</small>
+                    </div>
+                    <Icon name="chevron" size={16} />
+                  </Link>
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       </section>
