@@ -257,7 +257,7 @@ export default function ProgramPage() {
             </div>
             )}
 
-            <div className="dashboard-section">
+            {isDuring && <div className="dashboard-section">
               <div className="dashboard-heading">
                 <h2>{majorDayNo}일차 주요 일정</h2>
                 <span className="dashboard-heading-date">
@@ -274,7 +274,7 @@ export default function ProgramPage() {
                 ))}
                 {majorEvents.length === 0 && <div className="compact-empty">예정된 주요 일정이 없습니다.</div>}
               </div>
-            </div>
+            </div>}
           </>
         )}
 
