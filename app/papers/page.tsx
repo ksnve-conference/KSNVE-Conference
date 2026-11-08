@@ -4,6 +4,7 @@ import { Suspense, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useViewState } from '@/lib/view-state';
+import { searchMatcher } from '@/lib/search-match';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import SearchBar from '@/components/SearchBar';
@@ -81,6 +82,7 @@ function PapersPageInner() {
 
   const q = query.trim().toLocaleLowerCase('ko');
   const searching = q.length > 0;
+  const matches = useMemo(() => searchMatcher(q), [q]);
   const { recent, clear: clearRecent } = useRecentSearches(query);
 
   const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
@@ -94,19 +96,17 @@ function PapersPageInner() {
     if (filter === 'saved' && !savedPapers.includes(paper.id)) return false;
     if (filter !== 'all' && filter !== 'saved' && presentationTypeFor(paper, sessionById.get(paper.sessionId)) !== filter) return false;
     if (!q) return true;
-    return [paper.title, paper.authors, paper.presenter, paper.session, paper.venue, ...(paper.keywords ?? [])]
-      .join(' ').toLocaleLowerCase('ko').includes(q);
-  }), [q, topic, filter, day, savedPapers]);
+    return matches([paper.title, paper.authors, paper.presenter, paper.session, paper.venue, ...(paper.keywords ?? [])]);
+  }), [q, matches, topic, filter, day, savedPapers]);
 
   // Invited lectures can be standalone events without a paper record.
   const matchedSessions = useMemo(() => searching || filter === 'INVITED' ? sessions.filter((s) => {
     if (filter === 'INVITED' && !/초청|invited/i.test(`${s.title} ${s.category}`)) return false;
     if (topic !== 'all' && s.category !== topic) return false;
     if (day !== 'all' && s.date !== day) return false;
-    return [s.title, s.speaker, s.chair, s.category, s.venue].join(' ').toLocaleLowerCase('ko').includes(q);
-  }) : [], [searching, q, filter, topic, day]);
-  const matchedSpeakers = useMemo(() => searching ? speakers.filter((s) =>
-    s.name.toLocaleLowerCase('ko').includes(q)) : [], [searching, q]);
+    return matches([s.title, s.speaker, s.chair, s.category, s.venue]);
+  }) : [], [searching, matches, filter, topic, day]);
+  const matchedSpeakers = useMemo(() => searching ? speakers.filter((s) => matches([s.name])) : [], [searching, matches]);
   const searchTotal = filtered.length + matchedSessions.length + matchedSpeakers.length;
 
   // Grouping keeps the DOM small: only the sessions a reader opens are rendered.
