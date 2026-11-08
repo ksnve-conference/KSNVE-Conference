@@ -11,14 +11,15 @@ import InstallGuideModal from '@/components/InstallGuideModal';
 import Icon, { type IconName } from '@/components/Icon';
 import { sessions, venues } from '@/lib/conference';
 import { useAnnouncements } from '@/lib/announcements';
+import styles from './more.module.css';
 
 const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/notices', icon: 'notice', title: '공지사항', desc: '학술대회 최신 안내' },
   { href: '/conference/overview', icon: 'info', title: '행사개요', desc: '주제, 일정, 주최' },
   { href: '/sponsors', icon: 'sponsor', title: '후원 · 전시 참여사', desc: '함께하는 후원·전시 참여사' },
   { href: '/conference/schedule', icon: 'calendar', title: '주요 일정', desc: '4일간 주요 행사와 강연' },
-  { href: '/conference/presentation-guide', icon: 'file', title: '발표 참가요령', desc: '좌장·구두·포스터 발표와 시상 안내' },
   { href: '/conference/registration', icon: 'user', title: '등록안내', desc: '등록비와 현장 등록' },
+  { href: '/conference/presentation-guide', icon: 'file', title: '발표 참가요령', desc: '좌장·구두·포스터 발표와 시상 안내' },
   { href: '/conference/venue-layout', icon: 'map', title: '행사장 배치도', desc: '층별 배치와 발표장' },
   { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX·자가용·주차 안내' },
   { href: '/conference/facilities', icon: 'coffee', title: '편의시설', desc: '행사장 카페·식당·편의점' },
@@ -48,7 +49,7 @@ export default function MorePage() {
             <div><b>홈 화면에 추가</b><small>앱처럼 설치하는 방법 보기</small></div>
             <em><Icon name="chevron" size={16} /></em>
           </button>
-          {menu.map((m) => (
+          {menu.filter((m) => m.href === '/notices' || m.href === '/conference/schedule').map((m) => (
             <Link href={m.href} key={m.href}>
               <span><Icon name={m.icon} size={19} /></span>
               <div><b>{m.title}</b><small>{m.desc}</small></div>
@@ -56,6 +57,15 @@ export default function MorePage() {
             </Link>
           ))}
         </div>
+        <nav className={styles.menuGrid} aria-label="행사 및 이용 안내">
+          {menu.filter((m) => m.href !== '/notices' && m.href !== '/conference/schedule').map((m) => (
+            <Link href={m.href} key={m.href} className={styles.menuTile} aria-label={`${m.title}: ${m.desc}`}>
+              <span className={styles.menuIcon}><Icon name={m.icon} size={26} /></span>
+              <b>{m.title}</b>
+              {m.href === '/survey' && <small>11/27부터 · 3분 이내</small>}
+            </Link>
+          ))}
+        </nav>
         <InstallGuideModal dialogRef={guideRef} onClose={closeGuide} />
 
         <div className="venue-section-heading"><span>발표장</span></div>
