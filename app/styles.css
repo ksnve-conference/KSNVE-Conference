@@ -89,7 +89,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
    so the resting browse view isn't cluttered with a permanent chip row ---------- */
 .search-cluster .recent-chips{ display:none; }
 .search-cluster:focus-within .recent-chips{ display:flex; }
-.recent-chips{ align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
+.recent-chips{ gap:8px; overflow-x:auto; align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
 .recent-chips::-webkit-scrollbar{ display:none; }
 .recent-chips button{ display:inline-flex; align-items:center; gap:5px; }
 .recent-chips-clear{
@@ -848,3 +848,8 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .survey-progress > div{ flex:1; height:6px; border-radius:var(--r-pill); background:var(--line); overflow:hidden; }
 .survey-progress i{ display:block; height:100%; background:var(--brand); transition:width .2s ease; }
 .form-event-ratings .form-rating small{ white-space:nowrap; letter-spacing:-.03em; }
+
+.recent-chip{ display:inline-flex; flex:none; align-items:center; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); }
+.recent-chip button{ min-height:44px; padding:8px 10px; border:0; background:transparent; color:var(--muted); font:inherit; font-size:var(--type-meta); white-space:nowrap; }
+.recent-chip .recent-chip-remove{ justify-content:center; min-width:44px; padding:8px; border-left:1px solid var(--line); }
+.recent-chips-clear{ min-height:44px; white-space:nowrap; }

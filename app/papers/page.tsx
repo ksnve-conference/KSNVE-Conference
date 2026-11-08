@@ -94,7 +94,7 @@ function PapersPageInner() {
   const q = query.trim().toLocaleLowerCase('ko');
   const searching = q.length > 0;
   const matches = useMemo(() => searchMatcher(q), [q]);
-  const { recent, clear: clearRecent } = useRecentSearches(query);
+  const { recent, remove: removeRecent, clear: clearRecent } = useRecentSearches(query);
 
   const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
   const openFilters = () => { setTopicsExpanded(false); setTopicQuery(''); filterSheetRef.current?.showModal(); };
@@ -161,12 +161,17 @@ function PapersPageInner() {
               }}
             >
               {recent.map((item) => (
-                <button key={item} type="button" onClick={() => changeQuery(item)}>
-                  <Icon name="search" size={12} />{item}
-                </button>
+                <span className="recent-chip" key={item}>
+                  <button type="button" onClick={() => changeQuery(item)}>
+                    <Icon name="search" size={12} />{item}
+                  </button>
+                  <button type="button" className="recent-chip-remove" aria-label={`${item} 검색 기록 삭제`} onClick={() => removeRecent(item)}>
+                    <Icon name="close" size={14} />
+                  </button>
+                </span>
               ))}
               <button type="button" className="recent-chips-clear" onClick={clearRecent} aria-label="최근 검색 모두 지우기">
-                <Icon name="close" size={12} />
+                전체 삭제
               </button>
             </div>
           )}

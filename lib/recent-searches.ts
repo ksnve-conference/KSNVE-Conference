@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const RECENT_KEY = 'ksnveRecentSearches';
 
@@ -21,6 +21,7 @@ function writeRecent(next: string[]) {
  * the active query for a moment (so a page-through of characters while typing
  * doesn't spam the list), and exposes remove/clear for the recent-search panel. */
 export function useRecentSearches(activeQuery: string) {
+  const pending = useRef<number | undefined>(undefined);
   const [recent, setRecent] = useState<string[]>([]);
 
   useEffect(() => { setRecent(readRecent()); }, []);
@@ -36,16 +37,20 @@ export function useRecentSearches(activeQuery: string) {
         return next;
       });
     }, 700);
+    pending.current = timer;
     return () => window.clearTimeout(timer);
   }, [activeQuery]);
 
-  const remove = (value: string) => setRecent((current) => {
+  const remove = (value: string) => {
+    if (value === activeQuery.trim()) window.clearTimeout(pending.current);
+    setRecent((current) => {
     const next = current.filter((item) => item !== value);
     writeRecent(next);
     return next;
-  });
+    });
+  };
 
-  const clear = () => { writeRecent([]); setRecent([]); };
+  const clear = () => { window.clearTimeout(pending.current); writeRecent([]); setRecent([]); };
 
   return { recent, remove, clear };
 }
