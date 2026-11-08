@@ -87,8 +87,8 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 
 /* ---------- recent searches — shown only while the search field is active,
    so the resting browse view isn't cluttered with a permanent chip row ---------- */
-.search-cluster .recent-chips{ display:none; }
-.search-cluster:focus-within .recent-chips{ display:flex; }
+/* shown only while the search box is in use (recentOpen in app/papers/page.tsx) */
+.search-cluster .recent-chips{ display:flex; }
 .recent-chips{ gap:8px; overflow-x:auto; align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
 .recent-chips::-webkit-scrollbar{ display:none; }
 .recent-chips button{ display:inline-flex; align-items:center; gap:5px; }

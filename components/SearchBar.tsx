@@ -5,9 +5,11 @@ type Props = {
   onChange: (value: string) => void;
   placeholder?: string;
   autoFocus?: boolean;
+  onFocus?: () => void;
+  onBlur?: () => void;
 };
 
-export default function SearchBar({ value, onChange, placeholder = '논문 제목, 저자, 발표자, 세션, 장소 검색', autoFocus = false }: Props) {
+export default function SearchBar({ value, onChange, placeholder = '논문 제목, 저자, 발표자, 세션, 장소 검색', autoFocus = false, onFocus, onBlur }: Props) {
   return (
     <label className="search-wrap">
       <span className="sr-only">통합검색</span>
@@ -22,6 +24,8 @@ export default function SearchBar({ value, onChange, placeholder = '논문 제�
         value={value}
         autoFocus={autoFocus}
         onChange={(e) => onChange(e.target.value)}
+        onFocus={onFocus}
+        onBlur={onBlur}
       />
       {value && (
         <button type="button" className="search-clear" aria-label="검색어 지우기" onClick={() => onChange('')}>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useMemo, useRef, useState } from 'react';
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useViewState } from '@/lib/view-state';
@@ -96,6 +96,31 @@ function PapersPageInner() {
   const matches = useMemo(() => searchMatcher(q), [q]);
   const { recent, remove: removeRecent, clear: clearRecent } = useRecentSearches(query);
 
+  // Recent searches show while the search box is in use. Tracked in state rather
+  // than with :focus-within: iOS Safari blurs the input on a tap without focusing
+  // the tapped button, so a CSS-only panel vanished before the tap could land.
+  const searchClusterRef = useRef<HTMLDivElement>(null);
+  const blurTimer = useRef<number | undefined>(undefined);
+  const touchingRecent = useRef(0);  // time of the last touch on the panel
+  const [recentOpen, setRecentOpen] = useState(false);
+  // A touch on the panel arrives before the input's blur, so mark it and let
+  // the blur that follows leave the panel open.
+  const keepRecentOpen = () => { touchingRecent.current = Date.now(); window.clearTimeout(blurTimer.current); };
+  useEffect(() => {
+    if (!recentOpen) return undefined;
+    const close = (event: PointerEvent) => {
+      if (!searchClusterRef.current?.contains(event.target as Node)) setRecentOpen(false);
+    };
+    document.addEventListener('pointerdown', close);
+    return () => document.removeEventListener('pointerdown', close);
+  }, [recentOpen]);
+  useEffect(() => () => window.clearTimeout(blurTimer.current), []);
+  const pickRecent = (item: string) => {
+    changeQuery(item);
+    setRecentOpen(false);
+    (document.activeElement as HTMLElement | null)?.blur();  // drop the keyboard so the results show
+  };
+
   const activeFilterCount = (topic !== 'all' ? 1 : 0) + (filter !== 'all' ? 1 : 0) + (day !== 'all' ? 1 : 0);
   const openFilters = () => { setTopicsExpanded(false); setTopicQuery(''); filterSheetRef.current?.showModal(); };
   const closeFilters = () => filterSheetRef.current?.close();
@@ -145,24 +170,28 @@ function PapersPageInner() {
       <section>
         <div className="screen-title"><h1>통합검색</h1><strong>{searchTotal}</strong></div>
 
-        <div className="search-cluster">
-          <SearchBar value={query} onChange={changeQuery} placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색" />
-          {recent.length > 0 && (
+        <div className="search-cluster" ref={searchClusterRef}>
+          <SearchBar
+            value={query}
+            onChange={changeQuery}
+            placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색"
+            onFocus={() => { keepRecentOpen(); setRecentOpen(true); }}
+            onBlur={() => {
+              if (Date.now() - touchingRecent.current < 1000) return;
+              blurTimer.current = window.setTimeout(() => setRecentOpen(false), 300);
+            }}
+          />
+          {recentOpen && recent.length > 0 && (
             <div
               className="recent-chips"
               role="group"
               aria-label="최근 검색"
-              onPointerDown={(event) => {
-                // Keep focus-within until click: mobile Safari can blur the
-                // input without focusing a button, hiding it before selection.
-                if (event.button === 0 && (event.target as Element).closest('button')) {
-                  event.preventDefault();
-                }
-              }}
+              onPointerDown={keepRecentOpen}
+              onTouchStart={keepRecentOpen}
             >
               {recent.map((item) => (
                 <span className="recent-chip" key={item}>
-                  <button type="button" onClick={() => changeQuery(item)}>
+                  <button type="button" onClick={() => pickRecent(item)}>
                     <Icon name="search" size={12} />{item}
                   </button>
                   <button type="button" className="recent-chip-remove" aria-label={`${item} 검색 기록 삭제`} onClick={() => removeRecent(item)}>
