@@ -5,6 +5,7 @@ import './styles.css';
 import type { Viewport } from 'next';
 import { conferenceConfig } from '@/lib/conference-config';
 import OfflineReady from '@/components/OfflineReady';
+import { NotificationWatcher } from '@/components/NotificationManager';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 // Pretendard, subsetted to the characters this app renders (2 MB -> 456 KB) and
@@ -77,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" data-scroll-behavior="smooth" className={`${bodyFont.variable} ${ciFont.variable}`}>
       <body>
         <OfflineReady />
+        <NotificationWatcher />
         <div id="app-scroll">{children}</div>
         <Analytics />
         <GoogleAnalytics />

@@ -7,6 +7,7 @@ import AppTabs from '@/components/AppTabs';
 import PaperCard from '@/components/PaperCard';
 import Icon from '@/components/Icon';
 import NotificationManager from '@/components/NotificationManager';
+import ScrollMemory from '@/components/ScrollMemory';
 import { dayLabel, formatSessionTitle, withdrawnPapers } from '@/lib/conference';
 import { conferenceConfig } from '@/lib/conference-config';
 import { buildIcs, conflicts, scheduleItems, useSaved } from '@/lib/saved';
@@ -32,6 +33,7 @@ export default function MySchedulePage() {
 
   return (
     <main className="shell app-shell">
+      {ready && <ScrollMemory screen="my" />}
       <AppHeader compact showNotice={false} />
       <section>
         <div className="screen-title"><h1>내 일정</h1><strong>{items.length}</strong></div>
@@ -65,7 +67,7 @@ export default function MySchedulePage() {
 
         {items.length > 0 && (
           <>
-            <NotificationManager favoriteIds={savedPapers} />
+            <NotificationManager />
 
             <div className="schedule-actions">
               <button type="button" onClick={exportIcs}>

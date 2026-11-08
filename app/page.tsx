@@ -22,8 +22,8 @@ import { linkify } from '@/lib/linkify';
 import ScheduleOverview from '@/components/ScheduleOverview';
 import { arrivedByBack, useViewState } from '@/lib/view-state';
 
-function localDateKey() {
-  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+function localDateKey(now: Date) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
 }
 
 const daysBetween = (from: string, to: string) =>
@@ -74,6 +74,21 @@ function prepItems(now: Date): { href: string; icon: IconName; title: string; de
 
 export default function ProgramPage() {
   const [mockNow, setMockNow] = useState<MockNow | null>(null);
+  const [liveNow, setLiveNow] = useState(() => new Date());
+  useEffect(() => {
+    const refresh = () => {
+      if (document.visibilityState === 'visible') setLiveNow(new Date());
+    };
+    refresh();
+    const timer = window.setInterval(refresh, 15_000);
+    document.addEventListener('visibilitychange', refresh);
+    window.addEventListener('pageshow', refresh);
+    return () => {
+      window.clearInterval(timer);
+      document.removeEventListener('visibilitychange', refresh);
+      window.removeEventListener('pageshow', refresh);
+    };
+  }, []);
   const [showTimeTravel, setShowTimeTravel] = useState(false);
   const { savedPapers, savedSessions, togglePaper, toggleSession } = useSaved();
   // Separate open-state per section: the same session can appear in both
@@ -94,7 +109,8 @@ export default function ProgramPage() {
   };
 
   const dates = [...conferenceConfig.dates];
-  const today = mockNow?.date ?? localDateKey();
+  const now = mockNow?.instant ?? liveNow;
+  const today = mockNow?.date ?? localDateKey(now);
   const isBefore = today < conferenceConfig.startDate;
   const isAfter = today > conferenceConfig.endDate;
   const isDuring = !isBefore && !isAfter;
@@ -145,7 +161,6 @@ export default function ProgramPage() {
     },
   );
 
-  const now = mockNow?.instant ?? new Date();
   // D-day / day number / finished, shown as the hero badge (replaces the status cards)
   // short enough to sit beside the theme on one line; the red dot marks "in progress"
   const heroStatus = isBefore ? `D-${daysBetween(today, conferenceConfig.startDate)}`
