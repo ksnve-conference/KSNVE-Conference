@@ -724,18 +724,18 @@ body{
 .major-event-list small{ font-size:13px; }
 .announcement-list b{ font-size:15px; font-weight:700; }
 /* notice text was 13px with a 9px tag — the smallest text on the home screen */
-.announcement-list small{ font-size:var(--type-meta); line-height:1.55; color:var(--text-2); }
+.announcement-list small{ font-size:var(--type-meta); line-height:1.55; color:var(--text); }
 /* read notices fade only slightly — the NEW badge already marks the unread ones,
    and at .62 opacity the text was hard to read */
 .announcement-list > .notice-row.read, .announcement-card.read{ opacity:.82; }
 .announcement-list > .notice-row > span{ font-size:11px; padding:4px 5px; }
 .dashboard-heading-date{ font-size:var(--type-caption); font-weight:600; color:var(--muted); }
 .announcement-list > .notice-row.open small{
-  overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5; color:var(--text-2);
+  overflow:visible; white-space:pre-line; text-overflow:clip; line-height:1.5; color:var(--text);
 }
 /* keep the line breaks the organiser types into a sheet cell (Cmd/Ctrl+Enter);
-   body text is read like an abstract, so it takes the same darker grey */
-.announcement-card p{ white-space:pre-line; color:var(--text-2); }
+   notice text uses the main text colour (near-black): the grey looked washed out on desktop */
+.announcement-card p{ white-space:pre-line; color:var(--text); }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
 
@@ -850,7 +850,7 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .form-event-ratings .form-rating small{ white-space:nowrap; letter-spacing:-.03em; }
 
 .recent-chip{ display:inline-flex; flex:none; align-items:center; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); }
-.recent-chip button{ min-height:44px; padding:8px 2px 8px 12px; border:0; background:transparent; color:var(--text-2); font:inherit; font-size:var(--type-meta); font-weight:500; white-space:nowrap; }
+.recent-chip button{ min-height:44px; padding:8px 2px 8px 12px; border:0; background:transparent; color:var(--text); font:inherit; font-size:var(--type-meta); font-weight:500; white-space:nowrap; }
 .recent-chip button svg{ color:var(--muted); }
 /* the × sits right after the term; its 28px-wide hit area still clears the 44px-tall row */
 .recent-chip .recent-chip-remove{ justify-content:center; min-width:28px; padding:8px 10px 8px 4px; color:var(--muted); }
