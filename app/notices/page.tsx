@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import AppHeader from '@/components/AppHeader';
 import AppTabs from '@/components/AppTabs';
 import BackLink from '@/components/BackLink';
@@ -8,7 +9,19 @@ import { useAnnouncements } from '@/lib/announcements';
 import { linkify } from '@/lib/linkify';
 
 export default function NoticesPage() {
-  const { items, read, unread, markRead, source, error } = useAnnouncements();
+  const { items, read, readReady, unread, markRead, source, error } = useAnnouncements();
+  // Unread notices open; ones already read on an earlier visit fold to their
+  // title. Notices opened (or newly read) on this visit stay open until tapped.
+  const [openNow, setOpenNow] = useState<string[]>([]);
+  const isOpen = (id: string) => (readReady && !read.includes(id)) || openNow.includes(id);
+  const toggle = (id: string) => {
+    if (!read.includes(id)) {
+      markRead(id);
+      setOpenNow((c) => (c.includes(id) ? c : [...c, id]));
+      return;
+    }
+    setOpenNow((c) => (c.includes(id) ? c.filter((x) => x !== id) : [...c, id]));
+  };
 
   return (
     <main className="shell detail-shell">
@@ -29,14 +42,24 @@ export default function NoticesPage() {
         {items.map((item) => (
           // An article rather than a button so links inside the body are valid and tappable.
           <article
-            className={`card notice announcement-card ${read.includes(item.id) ? 'read' : ''}`}
+            className={`card notice announcement-card ${read.includes(item.id) ? 'read' : ''} ${isOpen(item.id) ? 'open' : 'folded'}`}
             key={item.id}
-            onClick={() => markRead(item.id)}
+            onClick={(event) => {
+              if ((event.target as Element).closest('a')) return;  // a link in the body opens, the card stays put
+              toggle(item.id);
+            }}
           >
-            <div><span className="badge">{item.category}</span>{!read.includes(item.id) && <em>NEW</em>}</div>
-            <h2>{item.title}</h2>
-            <p>{linkify(item.body)}</p>
-            {item.image && <img className="notice-image" src={item.image} alt={item.title} loading="lazy" />}
+            <div className="notice-head">
+              <span className="badge">{item.category}</span>{readReady && !read.includes(item.id) && <em>NEW</em>}
+              <Icon name="chevron-down" size={18} className="notice-chevron" />
+            </div>
+            <h2><button type="button" className="notice-title" aria-expanded={isOpen(item.id)}>{item.title}</button></h2>
+            {isOpen(item.id) && (
+              <>
+                <p>{linkify(item.body)}</p>
+                {item.image && <img className="notice-image" src={item.image} alt={item.title} loading="lazy" />}
+              </>
+            )}
             {item.date && <time>{item.date.replaceAll('-', '.')}</time>}
           </article>
         ))}

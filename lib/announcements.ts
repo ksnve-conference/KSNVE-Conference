@@ -180,5 +180,5 @@ export function useAnnouncements() {
   // The server cannot know this browser's read history. Hide the badge until
   // that history is loaded instead of briefly treating every notice as unread.
   const unread = readReady ? items.filter((a) => !read.includes(a.id)).length : 0;
-  return { items, source, read, unread, markRead, error };
+  return { items, source, read, readReady, unread, markRead, error };
 }

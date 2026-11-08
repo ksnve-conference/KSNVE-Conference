@@ -736,6 +736,12 @@ body{
 /* keep the line breaks the organiser types into a sheet cell (Cmd/Ctrl+Enter);
    notice text uses the main text colour (near-black): the grey looked washed out on desktop */
 .announcement-card p{ white-space:pre-line; color:var(--text); }
+.announcement-card{ cursor:pointer; }
+.announcement-card .notice-head{ display:flex; align-items:center; gap:6px; }
+.announcement-card .notice-chevron{ margin-left:auto; color:var(--muted); transition:transform .2s; }
+.announcement-card.open .notice-chevron{ transform:rotate(180deg); }
+.announcement-card .notice-title{ display:block; width:100%; padding:0; border:0; background:none; color:inherit; font:inherit; text-align:left; cursor:pointer; }
+.announcement-card.folded h2{ margin-bottom:8px; }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
 
