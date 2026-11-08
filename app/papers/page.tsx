@@ -148,7 +148,18 @@ function PapersPageInner() {
         <div className="search-cluster">
           <SearchBar value={query} onChange={changeQuery} placeholder="논문 제목, 저자, 발표자, 세션, 장소 검색" />
           {recent.length > 0 && (
-            <div className="recent-chips" role="group" aria-label="최근 검색">
+            <div
+              className="recent-chips"
+              role="group"
+              aria-label="최근 검색"
+              onPointerDown={(event) => {
+                // Keep focus-within until click: mobile Safari can blur the
+                // input without focusing a button, hiding it before selection.
+                if (event.button === 0 && (event.target as Element).closest('button')) {
+                  event.preventDefault();
+                }
+              }}
+            >
               {recent.map((item) => (
                 <button key={item} type="button" onClick={() => changeQuery(item)}>
                   <Icon name="search" size={12} />{item}
