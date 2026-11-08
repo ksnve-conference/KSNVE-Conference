@@ -737,11 +737,15 @@ body{
    notice text uses the main text colour (near-black): the grey looked washed out on desktop */
 .announcement-card p{ white-space:pre-line; color:var(--text); }
 .announcement-card{ cursor:pointer; }
-.announcement-card .notice-head{ display:flex; align-items:center; gap:6px; }
-.announcement-card .notice-chevron{ margin-left:auto; color:var(--muted); transition:transform .2s; }
+/* tag, title, NEW and chevron on one row; a long title wraps beside the tag */
+.announcement-card .notice-head{ display:flex; align-items:flex-start; gap:8px; }
+.announcement-card .notice-head .badge, .announcement-card .notice-head em{ flex:none; margin-top:1px; }
+.announcement-card .notice-head h2{ flex:1; min-width:0; margin:0; font-size:17px; line-height:1.4; }
+.announcement-card .notice-chevron{ flex:none; margin-top:3px; color:var(--muted); transition:transform .2s; }
 .announcement-card.open .notice-chevron{ transform:rotate(180deg); }
 .announcement-card .notice-title{ display:block; width:100%; padding:0; border:0; background:none; color:inherit; font:inherit; text-align:left; cursor:pointer; }
-.announcement-card.folded h2{ margin-bottom:8px; }
+.announcement-card.open .notice-head{ margin-bottom:12px; }
+.announcement-card.folded .notice-head{ margin-bottom:6px; }
 .detail-card{ background:var(--card); border-color:var(--line); }
 .detail-card h1{ color:var(--text); }
 
