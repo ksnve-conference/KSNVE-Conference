@@ -850,6 +850,8 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 .form-event-ratings .form-rating small{ white-space:nowrap; letter-spacing:-.03em; }
 
 .recent-chip{ display:inline-flex; flex:none; align-items:center; border:1px solid var(--line); border-radius:var(--r-pill); background:var(--card); }
-.recent-chip button{ min-height:44px; padding:8px 10px; border:0; background:transparent; color:var(--muted); font:inherit; font-size:var(--type-meta); white-space:nowrap; }
-.recent-chip .recent-chip-remove{ justify-content:center; min-width:30px; padding:8px 6px; border-left:0; }
+.recent-chip button{ min-height:44px; padding:8px 2px 8px 12px; border:0; background:transparent; color:var(--text-2); font:inherit; font-size:var(--type-meta); font-weight:500; white-space:nowrap; }
+.recent-chip button svg{ color:var(--muted); }
+/* the × sits right after the term; its 28px-wide hit area still clears the 44px-tall row */
+.recent-chip .recent-chip-remove{ justify-content:center; min-width:28px; padding:8px 10px 8px 4px; color:var(--muted); }
 .recent-chips-clear{ min-height:44px; white-space:nowrap; }
