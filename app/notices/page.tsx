@@ -51,17 +51,17 @@ export default function NoticesPage() {
           >
             <div className="notice-head">
               <span className="badge">{item.category}</span>
-              <h2><button type="button" className="notice-title" aria-expanded={isOpen(item.id)}>{item.title}</button></h2>
+              {item.date && <time>{item.date.replaceAll('-', '.')}</time>}
               {readReady && !read.includes(item.id) && <em>NEW</em>}
               <Icon name="chevron-down" size={18} className="notice-chevron" />
             </div>
+            <h2><button type="button" className="notice-title" aria-expanded={isOpen(item.id)}>{item.title}</button></h2>
             {isOpen(item.id) && (
               <>
                 <p>{linkify(item.body)}</p>
                 {item.image && <img className="notice-image" src={item.image} alt={item.title} loading="lazy" />}
               </>
             )}
-            {item.date && <time>{item.date.replaceAll('-', '.')}</time>}
           </article>
         ))}
         {items.length === 0 && (
