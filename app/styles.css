@@ -85,10 +85,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .filter-chips button.active{ background:var(--brand); border-color:var(--brand); color:#fff; }
 .filter-days button.active{ background:var(--brand-ink); border-color:var(--brand-ink); }
 
-/* ---------- recent searches — shown only while the search field is active,
-   so the resting browse view isn't cluttered with a permanent chip row ---------- */
-/* shown only while the search box is in use (recentOpen in app/papers/page.tsx) */
-.search-cluster .recent-chips{ display:flex; }
+/* ---------- recent searches: rendered only while the search box is in use (recentOpen in app/papers/page.tsx) ---------- */
 .recent-chips{ gap:8px; overflow-x:auto; align-items:center; margin:10px -14px 0; padding:2px 14px 2px; scrollbar-width:none; }
 .recent-chips::-webkit-scrollbar{ display:none; }
 .recent-chips button{ display:inline-flex; align-items:center; gap:5px; }
@@ -241,15 +238,7 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .promo-video-heading b{ font-size:15px; font-weight:800; color:var(--text); }
 .promo-video-heading a{ display:inline-flex; flex-shrink:0; align-items:center; gap:3px; font-size:var(--type-meta); color:var(--muted); text-decoration:none; }
 .promo-video-frame{ position:relative; aspect-ratio:16/9; overflow:hidden; border-radius:10px; background:#000; }
-.promo-video-frame iframe, .promo-video-frame button{ position:absolute; inset:0; width:100%; height:100%; border:0; }
-.promo-video-frame button{ padding:0; cursor:pointer; background:#000; }
-.promo-video-frame button:focus-visible{ outline:3px solid var(--brand); outline-offset:-3px; }
-.promo-video-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
-.promo-video-play{
-  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
-  display:grid; place-items:center; width:60px; height:60px; padding-left:3px;
-  border-radius:50%; background:rgba(0,0,0,.6); color:#fff;
-}
+.promo-video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
 
 /* ---------- time-slot grid: every hall running at once, one row each ---------- */
 .program-timeline{ display:flex; flex-direction:column; gap:16px; }
@@ -392,11 +381,6 @@ svg{ display:inline-block; vertical-align:-.15em; flex:none; }
 .hero-today .brand-mark{ position:relative; z-index:2; display:flex; align-items:center; gap:12px; min-width:0; }
 .hero-today .brand-mark{ flex:1; }
 .hero-today .hero-title-block{ min-width:0; flex:1; }
-.hero-today .hero-org-name{
-  display:block; margin-bottom:3px; font-size:clamp(14px, 4.2vw, 16px);
-  font-weight:800; letter-spacing:.02em; color:rgba(255,255,255,.85);
-  text-shadow:0 1px 4px rgba(0,0,0,.4);
-}
 .hero-today .hero-title-block b{
   display:block; font-size:clamp(25px, 7vw, 33px); line-height:1.18; letter-spacing:-.03em;
   font-weight:800; text-wrap:balance; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.45);

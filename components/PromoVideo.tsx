@@ -30,8 +30,8 @@ export function PromoVideoShortcut() {
 }
 
 /**
- * The native YouTube play button receives the user's tap directly, avoiding
- * a second tap when mobile browsers block autoplay on a newly mounted iframe.
+ * The embed loads straight away so the user's tap lands on YouTube's own play
+ * button (a click-to-load cover needed a second tap where autoplay is blocked).
  * youtube.com rather than youtube-nocookie.com: desktop Safari's tracking
  * prevention made the nocookie player swallow the first click.
  */
@@ -40,13 +40,13 @@ export default function PromoVideoCard() {
   return (
     <section className="promo-video" aria-label="학술대회 미리보기">
       <div className="promo-video-frame">
-          <iframe
-            src={`https://www.youtube.com/embed/${VIDEO_ID}?playsinline=1&rel=0`}
-            title="2026 추계 학술대회 홍보 영상"
-            loading="lazy"
-            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-            allowFullScreen
-          />
+        <iframe
+          src={`https://www.youtube.com/embed/${VIDEO_ID}?playsinline=1&rel=0`}
+          title="2026 추계 학술대회 홍보 영상"
+          loading="lazy"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allowFullScreen
+        />
       </div>
       <div className="promo-video-heading">
         <b>2026 추계 학술대회 미리보기</b>
