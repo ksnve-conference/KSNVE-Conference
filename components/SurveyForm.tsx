@@ -71,10 +71,10 @@ function RatingRow({ label, value, onChange, allowNone = false }: {
 
 type Draft = {
   role: string; participation: string[]; visits: string; ratings: Record<string, number>; fields: string[];
-  events: Record<string, number>; again: string; wishes: string; comment: string; gender: string; age: string;
+  events: Record<string, number>; again: string; wishes: string; venueWish: string; comment: string; gender: string; age: string;
 };
 const emptyDraft: Draft = {
-  role: '', participation: [], visits: '', ratings: {}, fields: [], events: {}, again: '', wishes: '', comment: '', gender: '', age: '',
+  role: '', participation: [], visits: '', ratings: {}, fields: [], events: {}, again: '', wishes: '', venueWish: '', comment: '', gender: '', age: '',
 };
 
 function readDraft(): Draft {
@@ -127,7 +127,7 @@ export default function SurveyForm() {
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 
-  const { role, participation, visits, ratings, fields, events, again, wishes, comment, gender, age } = draft;
+  const { role, participation, visits, ratings, fields, events, again, wishes, venueWish, comment, gender, age } = draft;
   const update = (patch: Partial<Draft>) => setDraft((current) => ({ ...current, ...patch }));
   const setRating = (id: string) => (v: number) => update({ ratings: { ...ratings, [id]: v } });
 
@@ -150,7 +150,7 @@ export default function SurveyForm() {
   };
   const answeredGroups = surveyFieldGroups.filter((g) => fields.some((f) => f === fieldNone(g.label) || g.items.includes(f))).length;
 
-  // Progress over the required questions (15 and 16 are free text and optional).
+  // Progress over the required questions (15–17 are free text and optional).
   const required = [
     Boolean(role), participation.length > 0, Boolean(visits),
     ...ratingBlocks.map((block) => block.every((q) => ratingAnswered(q, ratings[q.id], participation))),
@@ -163,7 +163,7 @@ export default function SurveyForm() {
     event.preventDefault();
     if (!complete || state === 'sending') return;
     setState('sending');
-    const ok = await sendFeedback({ kind: 'survey', website, data: { role, participation, gender, age, visits, again, wishes, comment, fields, events, ratings } });
+    const ok = await sendFeedback({ kind: 'survey', website, data: { role, participation, gender, age, visits, again, wishes, venueWish, comment, fields, events, ratings } });
     if (!ok) {
       setState('error');
       return;
@@ -286,18 +286,24 @@ export default function SurveyForm() {
       </label>
 
       <label className="form-field">
-        <span>16. 좋았던 점이나 개선할 점 <i>선택</i></span>
+        <span>16. 다음 학술대회 개최지로 추천하고 싶은 곳 <i>선택</i></span>
+        <textarea value={venueWish} onChange={(e) => update({ venueWish: e.target.value.slice(0, MESSAGE_MAX) })} rows={2} placeholder="예: 제주, 부산 벡스코, 경주 화백컨벤션센터" />
+        <small>{venueWish.length} / {MESSAGE_MAX}</small>
+      </label>
+
+      <label className="form-field">
+        <span>17. 좋았던 점이나 개선할 점 <i>선택</i></span>
         <textarea value={comment} onChange={(e) => update({ comment: e.target.value.slice(0, MESSAGE_MAX) })} rows={5} placeholder="자유롭게 적어 주세요." />
         <small>{comment.length} / {MESSAGE_MAX}</small>
       </label>
 
       <fieldset>
-        <legend>17. 성별</legend>
+        <legend>18. 성별</legend>
         {choices(surveyGenders, gender, (v) => update({ gender: v }))}
       </fieldset>
 
       <fieldset>
-        <legend>18. 연령대</legend>
+        <legend>19. 연령대</legend>
         {choices(surveyAges, age, (v) => update({ age: v }))}
       </fieldset>
 

@@ -96,7 +96,7 @@ export const DEVICE_MAX = 300;
 export type FeedbackData = { category: string; message: string; sender: string; email: string; device: string };
 export const SENDER_MAX = 100;
 export type SurveyData = {
-  role: string; participation: string[]; wishes: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
+  role: string; participation: string[]; wishes: string; venueWish: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
@@ -143,7 +143,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     return {
       kind,
       data: {
-        role, participation, gender, age, visits, again, wishes: text(data.wishes, MESSAGE_MAX), fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
+        role, participation, gender, age, visits, again, wishes: text(data.wishes, MESSAGE_MAX), venueWish: text(data.venueWish, MESSAGE_MAX), fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
         ratings,
       },
     };
