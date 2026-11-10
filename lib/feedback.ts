@@ -7,7 +7,7 @@ export const surveyRoles = ['학계', '연구계', '산업계', '학생', '기�
 export const surveyAgain = ['예', '아직 모르겠음', '아니오'] as const;
 export const surveyParticipation = ['구두 발표', '포스터 발표', '좌장', '청중', '전시 참가'] as const;
 export const surveyGenders = ['남성', '여성', '응답하지 않음'] as const;
-export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대', '70대 이상', '응답하지 않음'] as const;
+export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대', '70대 이상'] as const;
 export const surveyVisits = ['처음', '2~3회', '4~5회', '6~9회', '10회 이상'] as const;
 
 /** 가장 유익했던 분야: every session category in programme order, grouped like the programme book. */

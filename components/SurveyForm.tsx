@@ -154,7 +154,7 @@ export default function SurveyForm() {
   const required = [
     Boolean(role), participation.length > 0, Boolean(visits),
     ...ratingBlocks.map((block) => block.every((q) => ratingAnswered(q, ratings[q.id], participation))),
-    fieldsComplete(fields), eventsComplete(events), Boolean(again), Boolean(gender), Boolean(age),
+    fieldsComplete(fields), eventsComplete(events), Boolean(again), Boolean(gender), (surveyAges as readonly string[]).includes(age),
   ];
   const answered = required.filter(Boolean).length;
   const complete = answered === required.length && ratingsComplete(ratings, participation);
@@ -303,7 +303,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>19. 연령대</legend>
+        <legend>19. 연령대 <i>필수</i></legend>
         {choices(surveyAges, age, (v) => update({ age: v }))}
       </fieldset>
 
