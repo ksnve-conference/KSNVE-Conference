@@ -14,7 +14,13 @@ export async function GET() {
     if (!parseCsv(csv)[0]?.some((cell) => ['title', '제목'].includes(cell.trim().toLowerCase()))) {
       throw new Error('Invalid CSV');
     }
-    return new Response(csv, { headers: { ...headers, 'Content-Type': 'text/csv; charset=utf-8' } });
+    // Public notices share a short CDN cache; browsers and error responses do not.
+    // No stale-while-revalidate: after 30s the next request waits for fresh CSV.
+    return new Response(csv, { headers: {
+      ...headers,
+      'Vercel-CDN-Cache-Control': 'public, s-maxage=30',
+      'Content-Type': 'text/csv; charset=utf-8',
+    } });
   } catch {
     return new Response('Announcements temporarily unavailable', { status: 502, headers });
   }

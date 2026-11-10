@@ -126,7 +126,9 @@ export function useAnnouncements() {
       pending = true;
       controller = new AbortController();
       timer = window.setTimeout(() => controller?.abort(), 12000);
-      fetch('/api/announcements', { signal: controller.signal, cache: 'no-store' })
+      // The response forbids browser storage. Avoid request no-cache directives
+      // so visitors can share the endpoint's short Vercel CDN cache.
+      fetch('/api/announcements', { signal: controller.signal })
       .then((res) => (res.ok ? res.text() : Promise.reject(new Error(String(res.status)))))
       .then((text) => {
         const rows = parseCsv(text);
