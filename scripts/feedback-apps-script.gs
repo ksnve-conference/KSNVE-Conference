@@ -13,8 +13,8 @@
 const FEEDBACK_HEADERS = ['접수 시각', '분류', '내용', '성함·소속', '답변 받을 이메일', '기기', '앱 버전', '처리 상태', '메모'];
 const RATING_IDS = ['overall', 'program_level', 'program_qa', 'program_chair', 'program_facility', 'program_poster', 'venue', 'location', 'lodging', 'meal_reception', 'meal_lunch', 'meal_dinner', 'souvenir', 'app'];
 const SURVEY_EVENTS = ['웰컴 리셉션', '전시부스 투어', '학생 멘토링', '교양강좌', '마술공연', '캐리커처 체험', '만찬'];
-const SURVEY_HEADERS = ['제출 시각', '참가 유형', '주요 역할', '참가 횟수', '전반 만족도', '학술: 발표 수준', '학술: 질의응답·토론', '학술: 좌장 진행', '학술: 발표장 시설', '학술: 포스터 세션', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
-  .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '다뤘으면 하는 주제·연사', '추천 개최지', '자유 의견', '성별', '연령대', '앱 버전', '참석 목적', '기타 참석 목적']);
+const SURVEY_HEADERS = ['제출 시각', '참가 유형', '주요 역할', '참가 횟수', '참석 목적', '기타 참석 목적', '전반 만족도', '학술: 발표 수준', '학술: 질의응답·토론', '학술: 좌장 진행', '학술: 발표장 시설', '학술: 포스터 세션', '행사장·운영', '행사장 위치', '주변 숙소', '식사: 웰컴 리셉션', '식사: 점심', '식사: 만찬', '기념품', '학술대회 앱', '유익했던 분야']
+  .concat(SURVEY_EVENTS.map((name) => `부대행사: ${name}`), ['다음 참가 의향', '다뤘으면 하는 주제·연사', '추천 개최지', '자유 의견', '성별', '연령대', '앱 버전']);
 
 function doPost(e) {
   let body;
@@ -41,8 +41,8 @@ function doPost(e) {
     } else if (body.kind === 'survey') {
       const s = body.data;
       const events = s.events || {};
-      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, (s.participation || []).join(' / '), s.visits, ...RATING_IDS.map((id) => score((s.ratings || {})[id])), (s.fields || []).join(' / ')]
-        .concat(SURVEY_EVENTS.map((name) => score(events[name])), [s.again, s.wishes, s.venueWish, s.comment, s.gender, s.age, body.version, (s.purposes || []).join(' / '), s.purposeOther]).map(cell));
+      sheetFor(book, '만족도 설문', SURVEY_HEADERS).appendRow([new Date(), s.role, (s.participation || []).join(' / '), s.visits, (s.purposes || []).join(' / '), s.purposeOther, ...RATING_IDS.map((id) => score((s.ratings || {})[id])), (s.fields || []).join(' / ')]
+        .concat(SURVEY_EVENTS.map((name) => score(events[name])), [s.again, s.wishes, s.venueWish, s.comment, s.gender, s.age, body.version]).map(cell));
     } else {
       return reply({ ok: false, error: 'bad-kind' });
     }
@@ -52,16 +52,61 @@ function doPost(e) {
   return reply({ ok: true });
 }
 
+/** Run once after pasting: backs up existing responses and orders columns. */
+function updateSurveyColumnOrder() {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    sheetFor(SpreadsheetApp.getActiveSpreadsheet(), '만족도 설문', SURVEY_HEADERS);
+    SpreadsheetApp.flush();
+  } finally {
+    lock.releaseLock();
+  }
+}
+
 function sheetFor(book, name, headers) {
   let sheet = book.getSheetByName(name);
-  if (!sheet) {
-    sheet = book.insertSheet(name);
-    sheet.appendRow(headers);
-    sheet.setFrozenRows(1);
-  } else if (sheet.getRange(1, 1, 1, headers.length).getValues()[0].join('|') !== headers.join('|')) {
-    // Columns changed in a new version: rewrite the title row (rows already there keep the old order).
+  if (!sheet) sheet = book.insertSheet(name);
+
+  if (sheet.getLastRow() === 0) {
+    if (sheet.getMaxColumns() < headers.length) {
+      sheet.insertColumnsAfter(sheet.getMaxColumns(), headers.length - sheet.getMaxColumns());
+    }
     sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+  } else {
+    const current = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    // Stop on an unexpected layout rather than overwrite existing responses.
+    if (current.some((title) => !headers.includes(title)) ||
+        new Set(current).size !== current.length) {
+      throw new Error(name + ': 알 수 없거나 중복된 열 제목이 있습니다. 열 제목을 확인하세요.');
+    }
+    if (current.join('|') !== headers.join('|')) {
+      if (sheet.getLastRow() > 1) {
+        const stamp = Utilities.formatDate(new Date(), 'Asia/Seoul', 'yyyyMMdd_HHmmss');
+        let backupName = name + '_백업_' + stamp;
+        let suffix = 1;
+        while (book.getSheetByName(backupName)) backupName = name + '_백업_' + stamp + '_' + suffix++;
+        sheet.copyTo(book).setName(backupName);
+      }
+      // Move whole columns: response values, formatting and notes move together.
+      headers.forEach((title, index) => {
+        let source = current.indexOf(title);
+        if (source < 0) {
+          if (sheet.getMaxColumns() < current.length + 1) {
+            sheet.insertColumnsAfter(sheet.getMaxColumns(), 1);
+          }
+          sheet.getRange(1, current.length + 1).setValue(title);
+          current.push(title);
+          source = current.length - 1;
+        }
+        if (source !== index) {
+          sheet.moveColumns(sheet.getRange(1, source + 1, sheet.getMaxRows(), 1), index + 1);
+          current.splice(index, 0, current.splice(source, 1)[0]);
+        }
+      });
+    }
   }
+  sheet.setFrozenRows(1);
   sheet.getRange(1, 1, 1, headers.length).setFontWeight('bold');
   return sheet;
 }
