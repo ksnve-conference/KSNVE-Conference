@@ -10,6 +10,23 @@ export const surveyGenders = ['남성', '여성', '응답하지 않음'] as cons
 export const surveyAges = ['20대 이하', '30대', '40대', '50대', '60대', '70대 이상'] as const;
 export const surveyVisits = ['처음', '2~3회', '4~5회', '6~9회', '10회 이상'] as const;
 
+export const surveyPurposes = [
+  '연구 결과 발표 및 의견 교환',
+  '최신 연구 동향·기술 정보 습득',
+  '관심 있는 강연·세션 참석',
+  '연구자·업계 관계자와의 교류 및 인적 네트워크 형성',
+  '공동연구·산학협력 기회 탐색',
+  '전시 관람 및 제품·기술 정보 확인',
+  '소속 기관·연구실의 권유 또는 단체 참가',
+  '기타',
+] as const;
+export const purposesComplete = (values: unknown, other: unknown): values is string[] => (
+  Array.isArray(values) && values.length >= 1 && values.length <= 3 &&
+  new Set(values).size === values.length &&
+  values.every((v) => (surveyPurposes as readonly unknown[]).includes(v)) &&
+  (!values.includes('기타') || (typeof other === 'string' && other.trim().length > 0 && other.length <= 1000))
+);
+
 /** 가장 유익했던 분야: every session category in programme order, grouped like the programme book. */
 const categories = Array.from(new Set((sessionsData as { category: string }[]).map((x) => x.category)));
 const prefixed = (prefix: string) => categories.filter((c) => c.startsWith(`${prefix} `)).map((c) => c.slice(prefix.length + 1));
@@ -96,7 +113,7 @@ export const DEVICE_MAX = 300;
 export type FeedbackData = { category: string; message: string; sender: string; email: string; device: string };
 export const SENDER_MAX = 100;
 export type SurveyData = {
-  role: string; participation: string[]; wishes: string; venueWish: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
+  purposes: string[]; purposeOther: string; role: string; participation: string[]; wishes: string; venueWish: string; gender: string; age: string; visits: string; ratings: Record<string, number>;
   fields: string[]; events: Record<string, number>; again: string; comment: string;
 };
 export type FeedbackPayload =
@@ -121,6 +138,9 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     return { kind, data: { category, message, sender: text(data.sender, SENDER_MAX), email, device: text(data.device, DEVICE_MAX) } };
   }
   if (kind === 'survey') {
+    const purposes = data.purposes;
+    if (!purposesComplete(purposes, data.purposeOther)) return null;
+    const purposeOther = purposes.includes('기타') ? text(data.purposeOther, MESSAGE_MAX) : '';
     const role = text(data.role, 20);
     const participation = Array.isArray(data.participation)
       ? (surveyParticipation as readonly string[]).filter((p) => (data.participation as unknown[]).includes(p)) : [];
@@ -143,7 +163,7 @@ export function cleanPayload(raw: unknown): FeedbackPayload | null {
     return {
       kind,
       data: {
-        role, participation, gender, age, visits, again, wishes: text(data.wishes, MESSAGE_MAX), venueWish: text(data.venueWish, MESSAGE_MAX), fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
+        purposes, purposeOther, role, participation, gender, age, visits, again, wishes: text(data.wishes, MESSAGE_MAX), venueWish: text(data.venueWish, MESSAGE_MAX), fields: fields.map(fieldLabel), events, comment: text(data.comment, MESSAGE_MAX),
         ratings,
       },
     };

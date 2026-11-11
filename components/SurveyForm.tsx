@@ -6,7 +6,7 @@ import { conferenceConfig } from '@/lib/conference-config';
 import {
   FIELD_NONE, MESSAGE_MAX, NOT_APPLICABLE, NOT_APPLICABLE_LABEL, allowsNotApplicable, eventsComplete, exhibitOnly, fieldNone,
   fieldsComplete, ratingAnswered, ratingBlocks, ratingLabels, ratingQuestions, ratingsComplete, sendFeedback, surveyAgain, surveyAges,
-  surveyEvents, surveyFieldGroups, surveyGenders, surveyParticipation, surveyRoles, surveyVisits,
+  purposesComplete, surveyPurposes, surveyEvents, surveyFieldGroups, surveyGenders, surveyParticipation, surveyRoles, surveyVisits,
 } from '@/lib/feedback';
 
 export const SURVEY_DONE_KEY = 'ksnveSurveyDone';
@@ -70,11 +70,11 @@ function RatingRow({ label, value, onChange, allowNone = false }: {
 }
 
 type Draft = {
-  role: string; participation: string[]; visits: string; ratings: Record<string, number>; fields: string[];
+  purposes: string[]; purposeOther: string; role: string; participation: string[]; visits: string; ratings: Record<string, number>; fields: string[];
   events: Record<string, number>; again: string; wishes: string; venueWish: string; comment: string; gender: string; age: string;
 };
 const emptyDraft: Draft = {
-  role: '', participation: [], visits: '', ratings: {}, fields: [], events: {}, again: '', wishes: '', venueWish: '', comment: '', gender: '', age: '',
+  purposes: [], purposeOther: '', role: '', participation: [], visits: '', ratings: {}, fields: [], events: {}, again: '', wishes: '', venueWish: '', comment: '', gender: '', age: '',
 };
 
 function readDraft(): Draft {
@@ -127,7 +127,7 @@ export default function SurveyForm() {
   }
   if (phase === 'closed') return <p className="guide-callout">만족도 설문이 마감되었습니다. 참여해 주신 모든 분께 감사드립니다.</p>;
 
-  const { role, participation, visits, ratings, fields, events, again, wishes, venueWish, comment, gender, age } = draft;
+  const { purposes, purposeOther, role, participation, visits, ratings, fields, events, again, wishes, venueWish, comment, gender, age } = draft;
   const update = (patch: Partial<Draft>) => setDraft((current) => ({ ...current, ...patch }));
   const setRating = (id: string) => (v: number) => update({ ratings: { ...ratings, [id]: v } });
 
@@ -150,9 +150,9 @@ export default function SurveyForm() {
   };
   const answeredGroups = surveyFieldGroups.filter((g) => fields.some((f) => f === fieldNone(g.label) || g.items.includes(f))).length;
 
-  // Progress over the required questions (15–17 are free text and optional).
+  // Progress over required questions; free-text feedback is optional.
   const required = [
-    Boolean(role), participation.length > 0, Boolean(visits),
+    Boolean(role), participation.length > 0, Boolean(visits), purposesComplete(purposes, purposeOther),
     ...ratingBlocks.map((block) => block.every((q) => ratingAnswered(q, ratings[q.id], participation))),
     fieldsComplete(fields), eventsComplete(events), Boolean(again), Boolean(gender), (surveyAges as readonly string[]).includes(age),
   ];
@@ -163,7 +163,7 @@ export default function SurveyForm() {
     event.preventDefault();
     if (!complete || state === 'sending') return;
     setState('sending');
-    const ok = await sendFeedback({ kind: 'survey', website, data: { role, participation, gender, age, visits, again, wishes, venueWish, comment, fields, events, ratings } });
+    const ok = await sendFeedback({ kind: 'survey', website, data: { purposes, purposeOther, role, participation, gender, age, visits, again, wishes, venueWish, comment, fields, events, ratings } });
     if (!ok) {
       setState('error');
       return;
@@ -205,13 +205,33 @@ export default function SurveyForm() {
         {choices(surveyVisits, visits, (v) => update({ visits: v }))}
       </fieldset>
 
+      <fieldset>
+        <legend>4. 이번 학술대회에 참석하신 주요 목적은 무엇입니까? <i>최대 3개 선택</i></legend>
+        <p className="form-hint form-hint-top" aria-live="polite">{purposes.length}/3개 선택 · 선택한 항목을 다시 누르면 해제됩니다.</p>
+        <div className="form-choices">
+          {surveyPurposes.map((purpose) => {
+            const selected = purposes.includes(purpose);
+            return <button key={purpose} type="button" aria-pressed={selected} className={selected ? 'active' : ''}
+              disabled={!selected && purposes.length >= 3}
+              onClick={() => setDraft((current) => ({ ...current, purposes: current.purposes.includes(purpose)
+                ? current.purposes.filter((v) => v !== purpose)
+                : current.purposes.length < 3 ? [...current.purposes, purpose] : current.purposes }))}>{purpose === '기타' ? '기타 (직접 입력)' : purpose}</button>;
+          })}
+        </div>
+        {purposes.includes('기타') && <label className="form-field">
+          <span>기타 참석 목적 <i>필수</i></span>
+          <textarea required value={purposeOther} maxLength={MESSAGE_MAX} rows={2}
+            onChange={(e) => update({ purposeOther: e.target.value.slice(0, MESSAGE_MAX) })} placeholder="참석 목적을 입력해 주세요." />
+        </label>}
+      </fieldset>
+
       {ratingBlocks.map((block, i) => {
         const q = block[0];
         const anyNone = block.some((row) => allowsNotApplicable(row, participation));
         if (q.group) {
           return (
             <fieldset key={q.group}>
-              <legend>{i + 4}. {q.group}</legend>
+              <legend>{i + 5}. {q.group}</legend>
               <div className="form-event-ratings">
                 {block.map((row) => (
                   <div key={row.id}>
@@ -232,7 +252,7 @@ export default function SurveyForm() {
         }
         return (
           <fieldset key={q.id}>
-            <legend>{i + 4}. {q.label}</legend>
+            <legend>{i + 5}. {q.label}</legend>
             <RatingRow label={q.label} allowNone={allowsNotApplicable(q, participation)} value={ratings[q.id]} onChange={setRating(q.id)} />
             {anyNone && <p className="form-hint">이용하지 않으셨다면 &lsquo;해당 없음&rsquo;을 눌러 주세요.</p>}
           </fieldset>
@@ -240,7 +260,7 @@ export default function SurveyForm() {
       })}
 
       <fieldset>
-        <legend>12. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
+        <legend>13. 가장 유익했던 분야 <i>분야별 1개 이상 · 복수 선택 가능</i></legend>
         <p className="form-hint form-hint-top">묶음마다 하나 이상 골라 주세요. 듣지 않은 묶음은 &lsquo;{FIELD_NONE}&rsquo;을 누르면 됩니다. ({answeredGroups}/{surveyFieldGroups.length} 묶음 응답)</p>
         {surveyFieldGroups.map((group) => (
           <div className="form-choice-group" key={group.label}>
@@ -262,7 +282,7 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>13. 부대행사(프로그램·진행)는 어떠셨나요?</legend>
+        <legend>14. 부대행사(프로그램·진행)는 어떠셨나요?</legend>
         <div className="form-event-ratings">
           {surveyEvents.map((name) => (
             <div key={name}>
@@ -275,35 +295,35 @@ export default function SurveyForm() {
       </fieldset>
 
       <fieldset>
-        <legend>14. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
+        <legend>15. 다음 학술대회에도 참가하실 생각이 있나요?</legend>
         {choices(surveyAgain, again, (v) => update({ again: v }))}
       </fieldset>
 
       <label className="form-field">
-        <span>15. 다음 학술대회에서 다뤘으면 하는 주제나 초청 연사 <i>선택</i></span>
+        <span>16. 다음 학술대회에서 다뤘으면 하는 주제나 초청 연사 <i>선택</i></span>
         <textarea value={wishes} onChange={(e) => update({ wishes: e.target.value.slice(0, MESSAGE_MAX) })} rows={3} placeholder="예: 기획세션 주제, 모시고 싶은 연사" />
         <small>{wishes.length} / {MESSAGE_MAX}</small>
       </label>
 
       <label className="form-field">
-        <span>16. 다음 학술대회 개최지로 추천하고 싶은 곳 <i>선택</i></span>
+        <span>17. 다음 학술대회 개최지로 추천하고 싶은 곳 <i>선택</i></span>
         <textarea value={venueWish} onChange={(e) => update({ venueWish: e.target.value.slice(0, MESSAGE_MAX) })} rows={2} placeholder="예: 제주, 부산 벡스코, 경주 화백컨벤션센터" />
         <small>{venueWish.length} / {MESSAGE_MAX}</small>
       </label>
 
       <label className="form-field">
-        <span>17. 좋았던 점이나 개선할 점 <i>선택</i></span>
+        <span>18. 좋았던 점이나 개선할 점 <i>선택</i></span>
         <textarea value={comment} onChange={(e) => update({ comment: e.target.value.slice(0, MESSAGE_MAX) })} rows={5} placeholder="자유롭게 적어 주세요." />
         <small>{comment.length} / {MESSAGE_MAX}</small>
       </label>
 
       <fieldset>
-        <legend>18. 성별</legend>
+        <legend>19. 성별</legend>
         {choices(surveyGenders, gender, (v) => update({ gender: v }))}
       </fieldset>
 
       <fieldset>
-        <legend>19. 연령대 <i>필수</i></legend>
+        <legend>20. 연령대 <i>필수</i></legend>
         {choices(surveyAges, age, (v) => update({ age: v }))}
       </fieldset>
 
