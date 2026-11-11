@@ -1,3 +1,4 @@
+import { conferenceConfig } from '@/lib/conference-config';
 import { cleanPayload } from '@/lib/feedback';
 
 export const dynamic = 'force-dynamic';
@@ -22,7 +23,6 @@ function limited(ip: string) {
 export async function POST(request: Request) {
   const url = process.env.FEEDBACK_SCRIPT_URL;
   const secret = process.env.FEEDBACK_SECRET;
-  if (!url || !secret) return Response.json({ ok: false }, { status: 503, headers });
 
   let raw: unknown;
   try {
@@ -30,6 +30,10 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ ok: false }, { status: 400, headers });
   }
+  if (!conferenceConfig.surveyEnabled && raw && typeof raw === 'object' && (raw as { kind?: unknown }).kind === 'survey') {
+    return Response.json({ ok: false, error: 'survey_disabled' }, { status: 403, headers });
+  }
+  if (!url || !secret) return Response.json({ ok: false }, { status: 503, headers });
   // Hidden field only bots fill in: pretend it worked.
   if (raw && typeof raw === 'object' && (raw as { website?: unknown }).website) return Response.json({ ok: true }, { headers });
 

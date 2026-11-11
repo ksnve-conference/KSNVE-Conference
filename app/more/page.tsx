@@ -11,6 +11,7 @@ import Icon, { type IconName } from '@/components/Icon';
 import { sessions, venues } from '@/lib/conference';
 import { useAnnouncements } from '@/lib/announcements';
 import styles from './more.module.css';
+import { conferenceConfig } from '@/lib/conference-config';
 
 const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/notices', icon: 'notice', title: '공지사항', desc: '학술대회 최신 안내' },
@@ -63,7 +64,7 @@ export default function MorePage() {
           ))}
         </div>
         <nav className={styles.menuGrid} aria-label="행사 및 이용 안내">
-          {menu.filter((m) => m.href !== '/notices' && m.href !== '/conference/schedule').map((m) => (
+          {menu.filter((m) => m.href !== '/notices' && m.href !== '/conference/schedule' && (m.href !== '/survey' || conferenceConfig.surveyEnabled)).map((m) => (
             <Link href={m.href} key={m.href} className={styles.menuTile} aria-label={m.desc ? `${m.title}: ${m.desc}` : m.title}>
               <span className={styles.menuIcon}><Icon name={m.icon} size={26} /></span>
               <b>{m.title}</b>

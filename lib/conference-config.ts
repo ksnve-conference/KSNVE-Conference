@@ -27,6 +27,8 @@ export const conferenceConfig = {
    * false the paper page shows a notice and proxy.ts answers 404 for the files.
    */
   originalPagesPublic: false,
+  /** 이번 학술대회에서는 설문을 운영하지 않습니다. 다음 행사에서 재활성화합니다. */
+  surveyEnabled: false,
   /** 만족도 설문: home banner and the form are open in this window (KST). */
   surveyOpensAt: '2026-11-27T00:00:00+09:00',
   surveyClosesAt: '2026-12-03T23:59:59+09:00',
