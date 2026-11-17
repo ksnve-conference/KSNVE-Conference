@@ -5176,7 +5176,7 @@
     "title": "감쇠 고유진동수는 존재하는가?",
     "authors": "이수목(삼우ANC)",
     "presenter": "이수목",
-    "hasAbstract": false,
+    "hasAbstract": true,
     "keywords": [
       "damped natural frequency",
       "free vibration",
