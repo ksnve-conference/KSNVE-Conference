@@ -7796,7 +7796,20 @@
    "영산대",
    "서울시립대",
    "에이치케이연구소"
-  ]
+  ],
+  "abstract": "우리나라 사찰은 종파적 특성과 조선시대의 불교 억압으로 주로 산지에 입지해 왔으나, 근대 이후 도시화가 진행되면서 도시 지역에 신흥 사찰과 복합건물 내 도심 사찰이 등장하였다. 도심 사찰은 목조 중심의 전통 산지 사찰과 달리 콘크리트 구조를 사용하고 전통적인 배치 체계를 따르지 않기 때문에, 실내 음향 특성과 외부 소음의 영향에서 큰 차이를 보인다.\n\n이에 본 연구에서는 Fig. 1과 같이 입지 특성이 상이한 전통 산지 목구조 사찰과 현대식 도심 콘크리트 사찰을 대상으로 법당 실내·외 음향을 현장 측정하였다. 법당 내 음원 및 수음점은 Fig. 2와 같이 배치하였으며, ISO 3382-1에 따라 잔향시간(RT), 초기감쇠시간(EDT), 명료도 등을 분석하였으며, 실외는 Loudness, Sharpness, Roughness, Fluctuation Strength 등 심리음향 지표로 평가하였다. 이를 통해 두 유형 사찰의 음환경 차이를 규명하고, 바람직한 사찰 음환경 조성 방안을 모색하고자 한다.",
+  "keywords": [
+   "Buddhist temple(사찰)",
+   "Field measurement(현장측정)",
+   "Acoustic environment(음환경)"
+  ],
+  "pageImage": "/paper-pages/p257.webp?v=bd4e5324",
+  "extractionStatus": "pdf-text",
+  "figureImage": {
+   "src": "/paper-pages/p257-figures.webp?v=00bfd8e383",
+   "width": 1062,
+   "height": 708
+  }
  },
  {
   "paper_id": "p258",

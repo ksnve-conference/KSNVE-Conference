@@ -5639,7 +5639,12 @@
     "title": "산지 사찰과 도심 사찰 간의 음환경 특성 비교",
     "authors": "전상은(부산대), 김준영, 김용희(영산대), 김신태(서울시립대), 김정중(에이치케이연구소)",
     "presenter": "전상은",
-    "hasAbstract": false
+    "hasAbstract": true,
+    "keywords": [
+      "Buddhist temple(사찰)",
+      "Field measurement(현장측정)",
+      "Acoustic environment(음환경)"
+    ]
   },
   {
     "paper_id": "p258",
