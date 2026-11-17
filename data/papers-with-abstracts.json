@@ -7173,7 +7173,12 @@
    "peak response"
   ],
   "pageImage": "/paper-pages/p236.webp?v=edbf19de",
-  "extractionStatus": "image-only"
+  "extractionStatus": "image-only",
+  "abstractImage": {
+   "src": "/paper-pages/p236-abstract.png?v=5197933ac1",
+   "width": 1042,
+   "height": 958
+  }
  },
  {
   "paper_id": "p237",
