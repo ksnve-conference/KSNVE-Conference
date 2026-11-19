@@ -12,8 +12,8 @@ const find = (id: string) => {
 };
 const sessionIds = (id: string) => papers.filter((paper) => paper.sessionId === id).map((paper) => paper.id);
 
-assert.equal(papers.length, 362);
-assert.equal(new Set([...papers, ...withdrawnPapers].map((paper) => paper.id)).size, 363);
+assert.equal(papers.length, 363);  // + poster P242 (p181 moved to poster)
+assert.equal(new Set([...papers, ...withdrawnPapers].map((paper) => paper.id)).size, 364);
 assert.deepEqual(withdrawnPapers.map((paper) => paper.id), ['p214']);
 assert.equal(getPaperDetail('p214')?.status, 'withdrawn');
 assert.equal(getPaperDetail('p214')?.presenter, '이준영');
@@ -49,7 +49,7 @@ assert.equal(find('p268').time, '15:00~15:15');
 assert.equal(find('p027').sessionId, 's061');
 assert.equal(find('p027').date, '2026-11-27');
 assert.equal(find('p027').time, '10:40~10:55');
-assert.equal(find('p108').title, '인간중심 음향AI엔지니어링: 개인화 지각-정서 모델');
+assert.equal(find('p108').title, '인간중심 음향 엔지니어링: 개인화 지각-정서 모델');
 assert.ok(find('p139').title.startsWith('2024 MIT 혁신 기술이 선정한 두 기회:'));
 assert.equal(speakers.find((speaker) => speaker.id === 'sp004')?.name, 'Viktoriia Gutorova');
 
