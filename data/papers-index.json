@@ -3966,7 +3966,7 @@
     "chair": "최성훈(철도기술연)",
     "flags": "@",
     "presentationType": "ORAL",
-    "title": "베이지안 최적화를 활용한 헬름홀츠형 방음벽용 패널 설계",
+    "title": "(포스터 발표 변경) 베이지안 최적화를 활용한 헬름홀츠형 방음벽용 패널 설계",
     "authors": "이정우(인하대), 노희민, 장승호(철도기술연)",
     "presenter": "이정우",
     "hasAbstract": true,
@@ -7908,6 +7908,28 @@
       "Amplitude Modulation(진폭 변조)",
       "Fan Fault Detection(팬 결함 탐지)",
       "Condition Monitoring(상태 모니터링)"
+    ]
+  },
+  {
+    "paper_id": "P242",
+    "id": "poster-p243",
+    "sessionId": "e19",
+    "date": "2026-11-27",
+    "time": "10:00~10:40",
+    "venue": "컨퍼런스홀",
+    "session": "포스터 발표 [2]",
+    "chair": "김성현(현대차), 박춘수(표준과학연), 박현우(동아대), 손기성(세안기술)",
+    "flags": "@",
+    "title": "베이지안 최적화를 활용한 헬름홀츠형 방음벽용 패널 설계",
+    "authors": "이정우(인하대), 노희민, 장승호(철도기술연)",
+    "presenter": "이정우",
+    "hasAbstract": true,
+    "keywords": [
+      "Sound Barrier(방음벽)",
+      "Helmholtz Resonator(헬름홀츠 공명기)",
+      "Bayesian Optimization(베이지안 최적화)",
+      "Transmission Loss(투과손실)",
+      "Automation(자동화)"
     ]
   }
 ]
