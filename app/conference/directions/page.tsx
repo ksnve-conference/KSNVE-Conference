@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import InfoPage from '@/components/InfoPage';
 import Icon from '@/components/Icon';
+import FloorPlanViewer from '@/components/FloorPlanViewer';
 import info from '@/data/conference-info.json';
 
 export const metadata = { title: '오시는 길' };
@@ -57,6 +58,9 @@ export default function DirectionsPage() {
         </table>
       </div>
       <p className="info-note">{directions.driving.note}</p>
+
+      <h2 className="info-subhead">행사장 동선</h2>
+      <FloorPlanViewer floor="동선" title={info.routeMap.title} src={info.routeMap.src} width={info.routeMap.width} height={info.routeMap.height} />
 
       <h2 className="info-subhead">주차</h2>
       <ul className="info-list">

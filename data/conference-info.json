@@ -569,5 +569,11 @@
       "width": 600,
       "height": 600
     }
+  },
+  "routeMap": {
+    "src": "/images/venue-route-map-afc2a4.webp",
+    "width": 1652,
+    "height": 1390,
+    "title": "행사장 동선 안내"
   }
 }

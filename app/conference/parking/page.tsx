@@ -1,11 +1,12 @@
 import InfoPage from '@/components/InfoPage';
 import Icon from '@/components/Icon';
+import FloorPlanViewer from '@/components/FloorPlanViewer';
 import info from '@/data/conference-info.json';
 
 export const metadata = { title: '주차 할인 등록' };
 
 export default function ParkingPage() {
-  const { parking } = info;
+  const { parking, routeMap } = info;
   return (
     <InfoPage title="주차 할인 등록" intro={parking.intro}>
       {/* A phone can't scan a QR shown on its own screen, so the link opens directly. */}
@@ -25,6 +26,9 @@ export default function ParkingPage() {
       <ul className="info-list">
         {parking.notes.map((note) => <li key={note}>{note}</li>)}
       </ul>
+
+      <h2 className="info-subhead">주차장 · 도보 동선</h2>
+      <FloorPlanViewer floor="동선" title={routeMap.title} src={routeMap.src} width={routeMap.width} height={routeMap.height} />
 
       <h2 className="info-subhead">주차 요금</h2>
       <dl className="info-table">
