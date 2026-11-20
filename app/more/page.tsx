@@ -15,6 +15,7 @@ import { conferenceConfig } from '@/lib/conference-config';
 
 const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/notices', icon: 'notice', title: '공지사항', desc: '학술대회 최신 안내' },
+  { href: '/conference/parking', icon: 'parking', title: '주차 할인 등록', desc: '국제관 지하주차장 · 1회 2,000원' },
   { href: '/conference/overview', icon: 'info', title: '행사개요', desc: '주제, 일정, 주최' },
   { href: '/sponsors', icon: 'sponsor', title: '후원 · 협찬 · 전시', desc: '함께하는 후원·협찬·전시 참여사' },
   { href: '/conference/schedule', icon: 'calendar', title: '주요 일정', desc: '4일간 주요 행사와 강연' },

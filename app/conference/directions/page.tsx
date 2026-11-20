@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import InfoPage from '@/components/InfoPage';
 import Icon from '@/components/Icon';
 import info from '@/data/conference-info.json';
@@ -61,6 +62,11 @@ export default function DirectionsPage() {
       <ul className="info-list">
         {directions.parking.map((line) => <li key={line}>{line}</li>)}
       </ul>
+      <Link className="pdf-cta" href="/conference/parking">
+        <span><Icon name="parking" size={18} /></span>
+        <div><b>주차 할인 등록</b><small>등록 방법 · QR · 유의사항</small></div>
+        <em><Icon name="chevron" size={17} /></em>
+      </Link>
 
       <a className="pdf-cta" href={directions.venueUrl} target="_blank" rel="noreferrer">
         <span><Icon name="external" size={18} /></span>

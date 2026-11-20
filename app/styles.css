@@ -850,3 +850,9 @@ button.install-prompt-icon:active{ background:var(--tint-ink); color:#fff; }
 /* the × sits right after the term; its 28px-wide hit area still clears the 44px-tall row */
 .recent-chip .recent-chip-remove{ justify-content:center; min-width:28px; padding:8px 10px 8px 4px; color:var(--muted); }
 .recent-chips-clear{ min-height:44px; white-space:nowrap; }
+
+/* ---------- 주차 할인 등록 ---------- */
+.parking-cta{ background:var(--brand); color:#fff; }
+.parking-warn{ display:flex; gap:8px; align-items:flex-start; margin:12px 0 0; padding:12px 14px; border-radius:var(--r-md); background:#fdeceb; color:#a1281f; font-size:var(--type-meta); font-weight:600; line-height:1.6; word-break:keep-all; }
+.parking-warn svg{ flex:none; margin-top:3px; }
+.parking-qr{ max-width:200px; }

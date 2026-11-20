@@ -5,9 +5,10 @@ export type IconName =
   | 'pin' | 'clock' | 'chevron' | 'chevron-down' | 'back' | 'close'
   | 'bell' | 'check' | 'info' | 'sponsor' | 'notice' | 'map' | 'download'
   | 'file' | 'user' | 'plus' | 'alert' | 'external' | 'expand' | 'filter' | 'share'
-  | 'train' | 'coffee' | 'bed' | 'camera' | 'phone' | 'message' | 'video';
+  | 'train' | 'coffee' | 'bed' | 'camera' | 'phone' | 'message' | 'video' | 'parking';
 
 const paths: Record<IconName, React.ReactNode> = {
+  parking: <><rect x="3.5" y="3.5" width="17" height="17" rx="3.5"/><path d="M9.5 16.5v-9h3.3a2.8 2.8 0 0 1 0 5.6H9.5"/></>,
   video: <><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M10.2 9.2v5.6l4.6-2.8Z"/></>,
   calendar: <><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></>,
   papers: <><path d="M7 3.5h9l4 4v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M15.5 3.5V8h4.5M9.5 13h6M9.5 17h4"/></>,
