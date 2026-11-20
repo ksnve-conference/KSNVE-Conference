@@ -21,7 +21,7 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/conference/registration', icon: 'user', title: '등록안내', desc: '등록비와 현장 등록' },
   { href: '/conference/presentation-guide', icon: 'file', title: '발표 참가요령', desc: '좌장·구두·포스터 발표와 시상 안내' },
   { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX·자가용·주차 안내' },
-  { href: '/conference/parking', icon: 'parking', title: '주차 할인 등록', desc: '국제관 지하주차장 · 1회 2,000원' },
+  { href: '/conference/parking', icon: 'parking', title: '주차 할인 등록', desc: '국제관 지하주차장 (A동, B동) · 1회 2,000원' },
   { href: '/conference/venue-layout', icon: 'map', title: '행사장 배치도', desc: '층별 배치와 발표장' },
   { href: '/conference/facilities', icon: 'coffee', title: '편의시설', desc: '행사장 카페·식당·편의점' },
   { href: '/conference/lodging', icon: 'bed', title: '숙박 안내', desc: '참가자 할인 숙소와 예약' },
