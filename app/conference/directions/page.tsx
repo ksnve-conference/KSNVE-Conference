@@ -21,6 +21,9 @@ export default function DirectionsPage() {
         <em><Icon name="external" size={17} /></em>
       </a>
 
+      <h2 className="info-subhead">행사장 동선</h2>
+      <FloorPlanViewer floor="동선" title={info.routeMap.title} src={info.routeMap.src} width={info.routeMap.width} height={info.routeMap.height} />
+
       <h2 className="info-subhead">KTX (여수EXPO역)</h2>
       <div className="fee-table-wrap">
         <table className="fee-table">
@@ -58,9 +61,6 @@ export default function DirectionsPage() {
         </table>
       </div>
       <p className="info-note">{directions.driving.note}</p>
-
-      <h2 className="info-subhead">행사장 동선</h2>
-      <FloorPlanViewer floor="동선" title={info.routeMap.title} src={info.routeMap.src} width={info.routeMap.width} height={info.routeMap.height} />
 
       <h2 className="info-subhead">주차</h2>
       <ul className="info-list">
