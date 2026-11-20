@@ -67,7 +67,7 @@ function prepItems(now: Date): { href: string; icon: IconName; title: string; de
       href: '/conference/lodging', icon: 'bed' as IconName,
       title: deadlineTitle('숙박 할인 예약', LODGING_DEADLINE, now), desc: '11/13(금)까지 · 신라스테이 여수 등 할인 숙소',
     }] : []),
-    { href: '/conference/schedule', icon: 'calendar', title: '주요 일정 한눈에 보기', desc: '4일간 키노트·초청특별강연·총회·만찬' },
+    { href: '/conference/schedule', icon: 'calendar', title: '주요 일정 한눈에 보기', desc: '초청특별강연·키노트·총회·만찬 등 주요 일정' },
     { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX 여수EXPO역 도보 5분 · 주차 할인' },
   ];
 }
