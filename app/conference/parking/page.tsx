@@ -46,7 +46,7 @@ export default function ParkingPage() {
       </a>
       <a className="pdf-cta" href={parking.pdf} target="_blank" rel="noreferrer">
         <span><Icon name="file" size={18} /></span>
-        <div><b>주차 등록 안내문 (PDF)</b><small>학회 공지 원본</small></div>
+        <div><b>주차 등록 안내문 (PDF)</b></div>
         <em><Icon name="download" size={17} /></em>
       </a>
     </InfoPage>
