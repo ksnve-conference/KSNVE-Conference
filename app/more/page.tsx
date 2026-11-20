@@ -17,7 +17,7 @@ const menu: { href: string; icon: IconName; title: string; desc: string }[] = [
   { href: '/notices', icon: 'notice', title: '공지사항', desc: '학술대회 최신 안내' },
   { href: '/conference/overview', icon: 'info', title: '행사개요', desc: '주제, 일정, 주최' },
   { href: '/sponsors', icon: 'sponsor', title: '후원 · 협찬 · 전시', desc: '함께하는 후원·협찬·전시 참여사' },
-  { href: '/conference/schedule', icon: 'calendar', title: '주요 일정', desc: '4일간 주요 행사와 강연' },
+  { href: '/conference/schedule', icon: 'calendar', title: '주요 일정', desc: '주요 행사 및 강연 안내' },
   { href: '/conference/registration', icon: 'user', title: '등록안내', desc: '등록비와 현장 등록' },
   { href: '/conference/presentation-guide', icon: 'file', title: '발표 참가요령', desc: '좌장·구두·포스터 발표와 시상 안내' },
   { href: '/conference/directions', icon: 'train', title: '오시는 길', desc: 'KTX·자가용·주차 안내' },
