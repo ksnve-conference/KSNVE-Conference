@@ -71,6 +71,9 @@ export type EventDetails = {
   topicsTitle?: string;
   topics?: string[];
   profile?: { title: string; name: string; lines: string[]; photo?: string };
+  /** Extended abstract of a talk listed as an event (e.g. 초청특별강연); paragraphs split by blank lines. */
+  keywords?: string[];
+  abstract?: string;
   notes?: string[];
   links?: { label: string; href: string }[];
 };

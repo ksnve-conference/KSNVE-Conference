@@ -5,7 +5,7 @@ import type { EventDetails } from '@/lib/conference';
 /** An official event's introduction from the programme book: what it is,
  * its running order, the speaker or mentor, and practical notes. */
 export default function EventDetailsView({ details }: { details: EventDetails }) {
-  const hasBody = Boolean(details.image || details.lead || details.intro || details.rows?.length || details.program?.length || details.topics?.length || details.profile || details.notes?.length || details.links?.length);
+  const hasBody = Boolean(details.image || details.lead || details.intro || details.rows?.length || details.program?.length || details.topics?.length || details.profile || details.keywords?.length || details.abstract || details.notes?.length || details.links?.length);
   return (
     <>
       {details.preface && (
@@ -85,6 +85,24 @@ export default function EventDetailsView({ details }: { details: EventDetails })
               {details.profile.lines.map((line) => <li key={line}>{line}</li>)}
             </ul>
           </div>
+        </>
+      )}
+
+      {details.keywords && details.keywords.length > 0 && (
+        <>
+          <h2>키워드</h2>
+          <div className="keyword-list">
+            {details.keywords.map((keyword) => <span className="keyword-chip" key={keyword}>{keyword}</span>)}
+          </div>
+        </>
+      )}
+
+      {details.abstract && (
+        <>
+          <h2>확장요약문</h2>
+          {details.abstract.split(/\n\s*\n/).map((paragraph) => (
+            <p className="abstract-text" key={paragraph.slice(0, 24)}>{paragraph}</p>
+          ))}
         </>
       )}
 
