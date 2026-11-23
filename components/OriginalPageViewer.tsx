@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import PdfShareButton from '@/components/PdfShareButton';
 
 type OriginalPageViewerProps = {
   src: string;
@@ -10,9 +11,11 @@ type OriginalPageViewerProps = {
   height?: number;
   /** One-page PDF of the same page, offered as a download beside the heading. */
   pdf?: string;
+  /** File name for the saved/shared PDF. */
+  pdfName?: string;
 };
 
-export default function OriginalPageViewer({ src, title, variant = 'original', width = 1481, height = 2024, pdf }: OriginalPageViewerProps) {
+export default function OriginalPageViewer({ src, title, variant = 'original', width = 1481, height = 2024, pdf, pdfName }: OriginalPageViewerProps) {
   const isFigures = variant === 'figures';
   const label = isFigures ? '그림·표' : variant === 'abstract' ? '확장요약문' : '확장요약문 원문';
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -44,7 +47,7 @@ export default function OriginalPageViewer({ src, title, variant = 'original', w
           <h2>{label}</h2>
           {variant === 'original' && <p>학술대회 초록집 수록본</p>}
         </div>
-        {pdf && <a href={pdf} target="_blank" rel="noopener noreferrer">PDF 다운로드</a>}
+        {pdf && <PdfShareButton href={pdf} fileName={pdfName ?? `${title}.pdf`} />}
       </div>}
 
       <button className="page-preview" type="button" onClick={openViewer} aria-label={`${label} 확대 보기`}>

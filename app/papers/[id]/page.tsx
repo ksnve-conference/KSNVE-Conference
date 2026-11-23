@@ -25,6 +25,12 @@ export function generateStaticParams() {
   return [...papers, ...withdrawnPapers].map((p) => ({ id: p.id }));
 }
 
+/** "KSNVE2026추계_P064_해석 모델을 이용한….pdf": readable in 파일 앱, safe on every OS. */
+function pdfFileName(paper: { id: string; paper_id?: string; title: string }) {
+  const title = paper.title.replace(/^\([^)]*\)\s*/, '').replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 50);
+  return `KSNVE2026추계_${(paper.paper_id ?? paper.id).toUpperCase()}_${title}.pdf`;
+}
+
 export default async function PaperDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const paper = getPaperDetail(id);
@@ -172,7 +178,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
         )}
 
         {paper.pageImage && (conferenceConfig.originalPagesPublic
-          ? <OriginalPageViewer src={paper.pageImage} title={paper.title} pdf={paper.pagePdf} />
+          ? <OriginalPageViewer src={paper.pageImage} title={paper.title} pdf={paper.pagePdf} pdfName={pdfFileName(paper)} />
           : (
             <section className="abstract original-page">
               <div className="original-page-heading"><div><h2>확장요약문 원문</h2></div></div>
