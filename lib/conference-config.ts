@@ -26,7 +26,7 @@ export const conferenceConfig = {
    * Kept private until the secretariat finishes the bibliographic edit; while
    * false the paper page shows a notice and proxy.ts answers 404 for the files.
    */
-  originalPagesPublic: false,
+  originalPagesPublic: true,
   /** 이번 학술대회에서는 설문을 운영하지 않습니다. 다음 행사에서 재활성화합니다. */
   surveyEnabled: false,
   /** 만족도 설문: home banner and the form are open in this window (KST). */
