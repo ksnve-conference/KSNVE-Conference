@@ -55,12 +55,12 @@ if (ghosts.length) fail(`speakers.json이 존재하지 않는 논문을 참조: 
 const emptyDays = conferenceConfig.dates.filter((d) => !allSessions.some((s) => s.date === d));
 if (emptyDays.length) warn(`일정이 하나도 없는 날: ${emptyDays.join(', ')}`);
 
-type Extended = { id: string; abstract?: string; abstractImage?: { src: string }; pageImage?: string };
+type Extended = { id: string; abstract?: string; abstractImage?: { src: string }; pageImage?: string; pagePdf?: string };
 const noAbstract = (allPapers as Extended[]).filter((p) => !p.abstract && !p.abstractImage);
 if (noAbstract.length) warn(`확장요약문 본문이 없는 논문 ${noAbstract.length}건 (원문 이미지만 또는 프로그램 정보만): ${noAbstract.map((p) => p.id).join(', ')}`);
 
-const missingImage = (allPapers as Extended[]).filter((p) => [p.pageImage, p.abstractImage?.src].some((src) => src && !existsSync(`public${src.split('?')[0]}`)));
-if (missingImage.length) fail(`확장요약문 이미지 파일 없음: ${missingImage.map((p) => p.id).join(', ')}`);
+const missingImage = (allPapers as Extended[]).filter((p) => [p.pageImage, p.pagePdf, p.abstractImage?.src].some((src) => src && !existsSync(`public${src.split('?')[0]}`)));
+if (missingImage.length) fail(`확장요약문 이미지·PDF 파일 없음: ${missingImage.map((p) => p.id).join(', ')}`);
 
 if (!announcements.length) warn('공지사항이 비어 있습니다.');
 

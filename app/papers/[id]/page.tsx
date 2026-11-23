@@ -172,7 +172,7 @@ export default async function PaperDetail({ params }: { params: Promise<{ id: st
         )}
 
         {paper.pageImage && (conferenceConfig.originalPagesPublic
-          ? <OriginalPageViewer src={paper.pageImage} title={paper.title} />
+          ? <OriginalPageViewer src={paper.pageImage} title={paper.title} pdf={paper.pagePdf} />
           : (
             <section className="abstract original-page">
               <div className="original-page-heading"><div><h2>확장요약문 원문</h2></div></div>

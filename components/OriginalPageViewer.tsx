@@ -8,9 +8,11 @@ type OriginalPageViewerProps = {
   variant?: 'original' | 'figures' | 'abstract';
   width?: number;
   height?: number;
+  /** One-page PDF of the same page, offered as a download beside the heading. */
+  pdf?: string;
 };
 
-export default function OriginalPageViewer({ src, title, variant = 'original', width = 1434, height = 2024 }: OriginalPageViewerProps) {
+export default function OriginalPageViewer({ src, title, variant = 'original', width = 1481, height = 2024, pdf }: OriginalPageViewerProps) {
   const isFigures = variant === 'figures';
   const label = isFigures ? '그림·표' : variant === 'abstract' ? '확장요약문' : '확장요약문 원문';
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -40,8 +42,9 @@ export default function OriginalPageViewer({ src, title, variant = 'original', w
       {!isFigures && <div className="original-page-heading">
         <div>
           <h2>{label}</h2>
-          {variant === 'original' && <p>학술대회 제출 원문</p>}
+          {variant === 'original' && <p>학술대회 초록집 수록본</p>}
         </div>
+        {pdf && <a href={pdf} target="_blank" rel="noopener noreferrer">PDF 다운로드</a>}
       </div>}
 
       <button className="page-preview" type="button" onClick={openViewer} aria-label={`${label} 확대 보기`}>

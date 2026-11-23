@@ -35,6 +35,8 @@ export type Paper = {
   /** pdf-text: abstract taken from the PDF's text · image-only: only the page image is usable */
   extractionStatus?: string;
   pageImage?: string;
+  /** The same abstract-book page as a one-page PDF (shown with the original page). */
+  pagePdf?: string;
   /** Cropped original figures/tables including their captions. */
   figureImage?: { src: string; width: number; height: number };
   /** Per-paper PDF, supplied for the autumn conference. */

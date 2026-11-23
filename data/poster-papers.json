@@ -22,13 +22,14 @@
    "Impedance Tube(임피던스 튜브)",
    "Finite Element Acoustic Analysis (유한요소 음향해석)"
   ],
-  "pageImage": "/paper-pages/poster-p101.webp?v=42f52066",
+  "pageImage": "/paper-pages/poster-p101.webp?v=dc608faf",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p101-figures.webp?v=276cdc0a16",
    "width": 1234,
    "height": 364
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p101.pdf?v=4fb55a3a"
  },
  {
   "paper_id": "P102",
@@ -54,13 +55,14 @@
    "FEM/BEM(유한요소법/경계요소법)",
    "Acoustic Tank Experiment(음향수조실험)"
   ],
-  "pageImage": "/paper-pages/poster-p102.webp?v=217fb92b",
+  "pageImage": "/paper-pages/poster-p102.webp?v=137b18d5",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p102-figures.webp?v=c456d0ce25",
    "width": 1297,
    "height": 279
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p102.pdf?v=af9e0c0f"
  },
  {
   "paper_id": "P103",
@@ -86,13 +88,14 @@
    "Semantic Segmentation(의미론적 분할)",
    "Spatial Constraints(공간 제약)"
   ],
-  "pageImage": "/paper-pages/poster-p103.webp?v=17e27c6a",
+  "pageImage": "/paper-pages/poster-p103.webp?v=1e929321",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p103-figures.webp?v=8c832ec1a6",
    "width": 1258,
    "height": 335
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p103.pdf?v=4fa015ec"
  },
  {
   "paper_id": "P104",
@@ -116,8 +119,9 @@
    "Sound Absorbing Material(흡음재)",
    "Thermal Environment(열환경)"
   ],
-  "pageImage": "/paper-pages/poster-p104.webp?v=fecac946",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p104.webp?v=b0f45538",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p104.pdf?v=6b933e8a"
  },
  {
   "paper_id": "P105",
@@ -142,8 +146,9 @@
    "Acoustic cavity(음향 공동)",
    "eigenvalue extraction(고유치 추출)"
   ],
-  "pageImage": "/paper-pages/poster-p105.webp?v=e225e077",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p105.webp?v=8506ab79",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p105.pdf?v=0de60c27"
  },
  {
   "paper_id": "P106",
@@ -166,8 +171,9 @@
    "Motor Electromagnetic force",
    "Drum-type washing machine"
   ],
-  "pageImage": "/paper-pages/poster-p106.webp?v=799ba477",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p106.webp?v=200077a0",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p106.pdf?v=974c1212"
  },
  {
   "paper_id": "P107",
@@ -192,13 +198,14 @@
    "Random vibration(랜덤 진동)",
    "Response spectrum(응답 스펙트럼)"
   ],
-  "pageImage": "/paper-pages/poster-p107.webp?v=8bbda72a",
+  "pageImage": "/paper-pages/poster-p107.webp?v=866b7ece",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p107-figures.webp?v=673b6fc7a5",
    "width": 1234,
    "height": 342
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p107.pdf?v=9cfb3c46"
  },
  {
   "paper_id": "P108",
@@ -222,8 +229,9 @@
    "Topping Machine(적심기)",
    "Non-linear vibration (비선형기어진동)"
   ],
-  "pageImage": "/paper-pages/poster-p108.webp?v=48076186",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p108.webp?v=3361caea",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p108.pdf?v=2cc640de"
  },
  {
   "paper_id": "P109",
@@ -250,8 +258,9 @@
    "Critical Speed(임계속도)",
    "Mode Shape(모드형상)"
   ],
-  "pageImage": "/paper-pages/poster-p109.webp?v=5e01ff00",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p109.webp?v=2b56cd16",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p109.pdf?v=e62e9984"
  },
  {
   "paper_id": "P110",
@@ -277,8 +286,9 @@
    "모달해석(Modal Analysis)",
    "충격시험(Impact Testing)"
   ],
-  "pageImage": "/paper-pages/poster-p110.webp?v=38776e14",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p110.webp?v=de59712f",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p110.pdf?v=7076c236"
  },
  {
   "paper_id": "P111",
@@ -296,7 +306,9 @@
   "affiliations": [
    "한화에어로스페이스"
   ],
-  "abstract": "장갑차 내부에 탑재되는 장치를 지지하는 프레임은 운용 중 발생하는 충격하중에 대해 구조적 안전성을 확보해야 한다. 특히 프레임의 리브와 연결부는 하중 전달 경로 및 국부 강성에 따라 응력 집중이 발생할 수 있으므로, 충격 환경을 고려한 구조 설계 검토가 요구된다. 본 연구에서는 임의 충격하중에 대한 장치 지지 프레임의 구조응답을 분석하고, 리브 형상 변경을 통한 설계 개선 방안을 검토하였다.\n\n이를 위해 프레임의 유한요소 모델을 구축하고 장치 탑재 조건 및 지지부의 구속조건을 고려하여 충격하중에 대한 구조해석을 수행하였다. 초기 설계의 등가응력 분포와 변형 양상을 검토하여 응력 집중 구간을 파악하였으며, 프레임의 기본적이 설치 기능을 유지하는 범위에서 리브의 형상을 조정한 개선 모델을 구성하였다. 이후 설계 변경 전후의 응력 분포를 비교하여 리브 형상 변화가 하중 전달 특성에 미치는 영향을 평가하였다.\n\n구조 안정성 평가는 안전율 1.5을 기준으로 수행하였다. 해석 결과, 리브 형상 변경을 통해 국부 응력 집중을 완화하고 프레임 내 하중 전달 양상을 개선할 수 있음을 확인하였다. 또한 특정 부위의 강성 변화는 인접 부위의 응력 분포에도 영향을 미치므로, 개별 취약부의 보강뿐 아니라 구조물 전체의 응력 재분배를 함께 검토해야 함을 확인하였다. 이를 바탕으로 설정한 안전율 기준을 충족하도록 설계 개선안을 도출하였으며, 본 연구의 접근법은 충격하중을 받는 유사 지지 구조물의 설계 개선에 활용될 수 있다."
+  "abstract": "장갑차 내부에 탑재되는 장치를 지지하는 프레임은 운용 중 발생하는 충격하중에 대해 구조적 안전성을 확보해야 한다. 특히 프레임의 리브와 연결부는 하중 전달 경로 및 국부 강성에 따라 응력 집중이 발생할 수 있으므로, 충격 환경을 고려한 구조 설계 검토가 요구된다. 본 연구에서는 임의 충격하중에 대한 장치 지지 프레임의 구조응답을 분석하고, 리브 형상 변경을 통한 설계 개선 방안을 검토하였다.\n\n이를 위해 프레임의 유한요소 모델을 구축하고 장치 탑재 조건 및 지지부의 구속조건을 고려하여 충격하중에 대한 구조해석을 수행하였다. 초기 설계의 등가응력 분포와 변형 양상을 검토하여 응력 집중 구간을 파악하였으며, 프레임의 기본적이 설치 기능을 유지하는 범위에서 리브의 형상을 조정한 개선 모델을 구성하였다. 이후 설계 변경 전후의 응력 분포를 비교하여 리브 형상 변화가 하중 전달 특성에 미치는 영향을 평가하였다.\n\n구조 안정성 평가는 안전율 1.5을 기준으로 수행하였다. 해석 결과, 리브 형상 변경을 통해 국부 응력 집중을 완화하고 프레임 내 하중 전달 양상을 개선할 수 있음을 확인하였다. 또한 특정 부위의 강성 변화는 인접 부위의 응력 분포에도 영향을 미치므로, 개별 취약부의 보강뿐 아니라 구조물 전체의 응력 재분배를 함께 검토해야 함을 확인하였다. 이를 바탕으로 설정한 안전율 기준을 충족하도록 설계 개선안을 도출하였으며, 본 연구의 접근법은 충격하중을 받는 유사 지지 구조물의 설계 개선에 활용될 수 있다.",
+  "pageImage": "/paper-pages/poster-p111.webp?v=c4afb501",
+  "pagePdf": "/paper-pdfs/poster-p111.pdf?v=04d13882"
  },
  {
   "paper_id": "P112",
@@ -322,8 +334,9 @@
    "Pump-jet",
    "Path-Following Control Model"
   ],
-  "pageImage": "/paper-pages/poster-p112.webp?v=6f7ab2ec",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p112.webp?v=b7ae0710",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p112.pdf?v=cc5309ad"
  },
  {
   "paper_id": "P113",
@@ -348,13 +361,14 @@
    "Ultrasound(초음파)",
    "Autonomous Driving(자율주행)"
   ],
-  "pageImage": "/paper-pages/poster-p113.webp?v=cc1d21fc",
+  "pageImage": "/paper-pages/poster-p113.webp?v=6313590c",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p113-figures.webp?v=4b01695857",
    "width": 1231,
    "height": 349
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p113.pdf?v=f4486ab9"
  },
  {
   "paper_id": "P114",
@@ -380,13 +394,14 @@
    "Viscoelastic Damping Layer(점탄성 제진층)",
    "Functional Coating(기능성 코팅)"
   ],
-  "pageImage": "/paper-pages/poster-p114.webp?v=2eda6ff2",
+  "pageImage": "/paper-pages/poster-p114.webp?v=dcba325f",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p114-figures.webp?v=9135433953",
    "width": 1234,
    "height": 511
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p114.pdf?v=1c571640"
  },
  {
   "paper_id": "P115",
@@ -413,13 +428,14 @@
    "Attitude Control(자세제어)",
    "LEO Satellite(저궤도위성)"
   ],
-  "pageImage": "/paper-pages/poster-p115.webp?v=fb33fa81",
+  "pageImage": "/paper-pages/poster-p115.webp?v=f267d69a",
   "extractionStatus": "manually-verified",
   "figureImage": {
    "src": "/paper-pages/poster-p115-figures.webp?v=319d3d042d",
    "width": 1210,
    "height": 357
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p115.pdf?v=208495d7"
  },
  {
   "paper_id": "P116",
@@ -445,13 +461,14 @@
    "Random Vibration Test(랜덤진동시험)",
    "Compressor(컴프레셔)"
   ],
-  "pageImage": "/paper-pages/poster-p116.webp?v=5fa38990",
+  "pageImage": "/paper-pages/poster-p116.webp?v=9fc483bc",
   "extractionStatus": "manually-verified",
   "figureImage": {
    "src": "/paper-pages/poster-p116-figures.webp?v=80101a43df",
    "width": 1210,
    "height": 375
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p116.pdf?v=6a19ef63"
  },
  {
   "paper_id": "P117",
@@ -475,13 +492,14 @@
    "랜덤진동 해석(Random Vibration Analysis)",
    "Durability(내구성)"
   ],
-  "pageImage": "/paper-pages/poster-p117.webp?v=c983556a",
+  "pageImage": "/paper-pages/poster-p117.webp?v=b5e376f4",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p117-figures.webp?v=35b8638887",
    "width": 1231,
    "height": 421
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p117.pdf?v=b7c0944c"
  },
  {
   "paper_id": "P118",
@@ -505,8 +523,9 @@
    "Sound Absorption Perfornmance(흡음성능)",
    "Vehicle Interior Noise(차량 실내소음)"
   ],
-  "pageImage": "/paper-pages/poster-p118.webp?v=2fba7017",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p118.webp?v=0a298313",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p118.pdf?v=cdf26e6a"
  },
  {
   "paper_id": "P119",
@@ -530,8 +549,9 @@
    "Finite Element Method (유한요소기법)",
    "Design Improvement (설계 개선)"
   ],
-  "pageImage": "/paper-pages/poster-p119.webp?v=154c28df",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p119.webp?v=8659b0cc",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p119.pdf?v=f4d52f89"
  },
  {
   "paper_id": "P120",
@@ -560,13 +580,14 @@
    "Response(응답특성)",
    "Modal analysis(모드해석)"
   ],
-  "pageImage": "/paper-pages/poster-p120.webp?v=27be79ec",
+  "pageImage": "/paper-pages/poster-p120.webp?v=b28f2e36",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p120-figures.webp?v=895e7eac96",
    "width": 1234,
    "height": 387
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p120.pdf?v=34093da1"
  },
  {
   "paper_id": "P121",
@@ -590,13 +611,14 @@
    "VPTF(가상경로 전달함수)",
    "SPTF(이차경로 전달함수)"
   ],
-  "pageImage": "/paper-pages/poster-p121.webp?v=9d3411f9",
+  "pageImage": "/paper-pages/poster-p121.webp?v=3cc71245",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p121-figures.webp?v=1617d7b027",
    "width": 1234,
    "height": 409
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p121.pdf?v=71b6cb88"
  },
  {
   "paper_id": "P122",
@@ -620,8 +642,9 @@
    "Multi-sensor(다중 센서)",
    "Rotaring Equipment(회전 설비)"
   ],
-  "pageImage": "/paper-pages/poster-p122.webp?v=87bf8ccc",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p122.webp?v=9f9940a9",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p122.pdf?v=5e387017"
  },
  {
   "paper_id": "P123",
@@ -647,8 +670,9 @@
    "Artificial Intelligence(인공지능)",
    "Fault Detection(결함 판별)"
   ],
-  "pageImage": "/paper-pages/poster-p123.webp?v=e74a14a5",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p123.webp?v=8779f8df",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p123.pdf?v=0cdd87c8"
  },
  {
   "paper_id": "P124",
@@ -674,8 +698,9 @@
    "Artificial Intelligence(인공지능)",
    "Optical Fiber Sensor(광섬유 센서)"
   ],
-  "pageImage": "/paper-pages/poster-p124.webp?v=8de5f087",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p124.webp?v=aba5690e",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p124.pdf?v=8b032541"
  },
  {
   "paper_id": "P125",
@@ -702,8 +727,9 @@
    "단순빔(Cantilever beam)",
    "Frequency response function(주파수응답함수)"
   ],
-  "pageImage": "/paper-pages/poster-p125.webp?v=c9cec247",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p125.webp?v=1c83f616",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p125.pdf?v=a910e8c3"
  },
  {
   "paper_id": "P126",
@@ -727,13 +753,14 @@
    "Transportation environment data recorder(운송환경기록계)",
    "Vibration and shock measurement(진동 및 충격 계측)"
   ],
-  "pageImage": "/paper-pages/poster-p126.webp?v=30150415",
+  "pageImage": "/paper-pages/poster-p126.webp?v=64306913",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p126-figures.webp?v=0300befcc7",
    "width": 1234,
    "height": 471
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p126.pdf?v=fe3991ed"
  },
  {
   "paper_id": "P127",
@@ -758,13 +785,14 @@
    "Thin plate(박판)",
    "Crack classification(크랙 분류)"
   ],
-  "pageImage": "/paper-pages/poster-p127.webp?v=4b2eee6a",
+  "pageImage": "/paper-pages/poster-p127.webp?v=124c3aaf",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p127-figures.webp?v=26403d9d7c",
    "width": 1234,
    "height": 483
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p127.pdf?v=0f1e6284"
  },
  {
   "paper_id": "P128",
@@ -789,13 +817,14 @@
    "Sound Transmission Loss (음향 투과손실)",
    "Correlation Analysis (상관관계 분석)"
   ],
-  "pageImage": "/paper-pages/poster-p128.webp?v=7532bf0e",
+  "pageImage": "/paper-pages/poster-p128.webp?v=9d2be2fe",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p128-figures.webp?v=361eef690a",
    "width": 1453,
    "height": 368
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p128.pdf?v=67fb2d4f"
  },
  {
   "paper_id": "P129",
@@ -821,13 +850,14 @@
    "변형 문항(Transformed Item)",
    "응답 비교(Response Comparison)"
   ],
-  "pageImage": "/paper-pages/poster-p129.webp?v=0b598b4f",
+  "pageImage": "/paper-pages/poster-p129.webp?v=893c3c2d",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p129-figures.webp?v=4dc7b477fb",
    "width": 1231,
    "height": 472
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p129.pdf?v=04ffc181"
  },
  {
   "paper_id": "P130",
@@ -853,13 +883,14 @@
    "Single-Number quantity(단일수치)",
    "Contribution(기여도)"
   ],
-  "pageImage": "/paper-pages/poster-p130.webp?v=2fe5f8d3",
+  "pageImage": "/paper-pages/poster-p130.webp?v=d12fa431",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p130-figures.webp?v=8456328b85",
    "width": 1231,
    "height": 586
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p130.pdf?v=922506d3"
  },
  {
   "paper_id": "P131",
@@ -884,13 +915,14 @@
    "Dynamic Characteristics(동특성)",
    "Performance Prediction(성능예측)"
   ],
-  "pageImage": "/paper-pages/poster-p131.webp?v=808e2c57",
+  "pageImage": "/paper-pages/poster-p131.webp?v=f333bfc4",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p131-figures.webp?v=b0b9a50941",
    "width": 1234,
    "height": 421
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p131.pdf?v=9fd00bd8"
  },
  {
   "paper_id": "P132",
@@ -916,13 +948,14 @@
    "Anchor",
    "Nuclear power plant"
   ],
-  "pageImage": "/paper-pages/poster-p132.webp?v=23e66c21",
+  "pageImage": "/paper-pages/poster-p132.webp?v=56557a1d",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p132-figures.webp?v=b6e8aafd04",
    "width": 1231,
    "height": 431
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p132.pdf?v=cb0f3165"
  },
  {
   "paper_id": "P133",
@@ -946,13 +979,14 @@
    "Linear Resonant Actuator(선형 공진 액추에이터)",
    "RMS(가속도 실효값)"
   ],
-  "pageImage": "/paper-pages/poster-p133.webp?v=332dfea0",
+  "pageImage": "/paper-pages/poster-p133.webp?v=a31150dc",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p133-figures.webp?v=6285830668",
    "width": 1233,
    "height": 279
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p133.pdf?v=8e0e74b3"
  },
  {
   "paper_id": "P134",
@@ -978,13 +1012,14 @@
    "Engineered Wood Flooring(강마루)",
    "Tile-to-wall Contact(타일-벽체 접촉)"
   ],
-  "pageImage": "/paper-pages/poster-p134.webp?v=659b8f65",
+  "pageImage": "/paper-pages/poster-p134.webp?v=19e1ed1b",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p134-figures.webp?v=3de4cfaaa7",
    "width": 1231,
    "height": 203
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p134.pdf?v=ff6a6e31"
  },
  {
   "paper_id": "P135",
@@ -1008,8 +1043,9 @@
    "strain distribution(변형률 분포)",
    "wall thinning monitoring method(감시방법)"
   ],
-  "pageImage": "/paper-pages/poster-p135.webp?v=d843cc79",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p135.webp?v=6bd897d8",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p135.pdf?v=dc90e39c"
  },
  {
   "paper_id": "P136",
@@ -1035,13 +1071,14 @@
    "Condition Monitoring(상태감시)",
    "Signal Processing(신호처리)"
   ],
-  "pageImage": "/paper-pages/poster-p136.webp?v=e8152255",
+  "pageImage": "/paper-pages/poster-p136.webp?v=61b55cf4",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p136-figures.webp?v=a58ba4583a",
    "width": 1231,
    "height": 524
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p136.pdf?v=0ff40cec"
  },
  {
   "paper_id": "P137",
@@ -1067,8 +1104,9 @@
    "Seismic Performance(내진성능)",
    "Shaking Table Test(진동대시험)"
   ],
-  "pageImage": "/paper-pages/poster-p137.webp?v=8c4b65f0",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p137.webp?v=416eeff3",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p137.pdf?v=3edb9466"
  },
  {
   "paper_id": "P138",
@@ -1094,13 +1132,14 @@
    "DCS",
    "Machine Learning"
   ],
-  "pageImage": "/paper-pages/poster-p138.webp?v=b5a14d1a",
+  "pageImage": "/paper-pages/poster-p138.webp?v=03662135",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p138-figures.webp?v=9e6389a8ae",
    "width": 1231,
    "height": 494
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p138.pdf?v=3d01851b"
  },
  {
   "paper_id": "P139",
@@ -1126,8 +1165,9 @@
    "가중치 최적화(Weight Optimization)",
    "상태감시(Condition Monitoring)"
   ],
-  "pageImage": "/paper-pages/poster-p139.webp?v=d389c867",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p139.webp?v=008278c3",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p139.pdf?v=85de3e00"
  },
  {
   "paper_id": "P140",
@@ -1152,8 +1192,9 @@
    "Prognostic Assessment(예지평가)",
    "Advisory Generation(의사결정 지원)"
   ],
-  "pageImage": "/paper-pages/poster-p140.webp?v=8b6f122d",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p140.webp?v=809067a2",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p140.pdf?v=b8555ed0"
  },
  {
   "paper_id": "P141",
@@ -1179,8 +1220,9 @@
    "Predictive Index(예측진단 지수)",
    "MLOps(머신러닝 운영)"
   ],
-  "pageImage": "/paper-pages/poster-p141.webp?v=1d150465",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p141.webp?v=b1b6bd68",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p141.pdf?v=137879ee"
  },
  {
   "paper_id": "P142",
@@ -1205,8 +1247,9 @@
    "Pressurizer(가압기)",
    "Primary reactor"
   ],
-  "pageImage": "/paper-pages/poster-p142.webp?v=3fbd8dbf",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p142.webp?v=2363e57a",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p142.pdf?v=ae753d94"
  },
  {
   "paper_id": "P143",
@@ -1232,13 +1275,14 @@
    "Nighttime Noise Level(야간 소음도)",
    "Seasonal Variation(계절 변동)"
   ],
-  "pageImage": "/paper-pages/poster-p143.webp?v=ef87c377",
+  "pageImage": "/paper-pages/poster-p143.webp?v=7c493eb8",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p143-figures.webp?v=e3b704be0d",
    "width": 1231,
    "height": 352
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p143.pdf?v=6bd7a9ef"
  },
  {
   "paper_id": "P144",
@@ -1264,13 +1308,14 @@
    "Model Retraining(모델 재학습)",
    "Identification Accuracy(식별 정확도)"
   ],
-  "pageImage": "/paper-pages/poster-p144.webp?v=d2a9af1c",
+  "pageImage": "/paper-pages/poster-p144.webp?v=ee0fe35f",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p144-figures.webp?v=2f3817ed92",
    "width": 1231,
    "height": 379
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p144.pdf?v=8ff4b535"
  },
  {
   "paper_id": "P145",
@@ -1295,13 +1340,14 @@
    "Reverberation time(잔향시간)",
    "Acoustic performance evaluation(음향성능 평가)"
   ],
-  "pageImage": "/paper-pages/poster-p145.webp?v=fa89c98a",
+  "pageImage": "/paper-pages/poster-p145.webp?v=4cb712f3",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p145-figures.webp?v=bc6e2d271b",
    "width": 1231,
    "height": 436
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p145.pdf?v=089fde8d"
  },
  {
   "paper_id": "P146",
@@ -1323,13 +1369,14 @@
   "keywords": [
    "Road Traffic Noise(도로교통소음)"
   ],
-  "pageImage": "/paper-pages/poster-p146.webp?v=2d180c10",
+  "pageImage": "/paper-pages/poster-p146.webp?v=42053361",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p146-figures.webp?v=153bb959ca",
    "width": 1231,
    "height": 427
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p146.pdf?v=fd85b9b6"
  },
  {
   "paper_id": "P147",
@@ -1353,8 +1400,9 @@
    "Low-noise pavement(저소음포장)",
    "machine learning(머신 러닝)"
   ],
-  "pageImage": "/paper-pages/poster-p147.webp?v=3e6a1982",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p147.webp?v=d2d3a852",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p147.pdf?v=7e2ab195"
  },
  {
   "paper_id": "P148",
@@ -1379,13 +1427,14 @@
    "Rolling Sound Emission(타이어 주행소음)",
    "Pass By Noise(실차주행 소음시험)"
   ],
-  "pageImage": "/paper-pages/poster-p148.webp?v=0cdbca67",
+  "pageImage": "/paper-pages/poster-p148.webp?v=b2faa5e7",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p148-figures.webp?v=56b81fc232",
    "width": 1231,
    "height": 402
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p148.pdf?v=aed29d47"
  },
  {
   "paper_id": "P201",
@@ -1411,13 +1460,14 @@
    "Multi-Sensor Feedback Control(다중 센서 피드백 제어)",
    "Broadband Sound Absorption(광대역 흡음)"
   ],
-  "pageImage": "/paper-pages/poster-p201.webp?v=7b5148d6",
+  "pageImage": "/paper-pages/poster-p201.webp?v=6a0e6ccb",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p201-figures.webp?v=54c33638b3",
    "width": 1234,
    "height": 328
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p201.pdf?v=70cb780d"
  },
  {
   "paper_id": "P202",
@@ -1442,8 +1492,9 @@
    "Mechanical metamaterials",
    "Generative flow network"
   ],
-  "pageImage": "/paper-pages/poster-p202.webp?v=69ebd787",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p202.webp?v=2d3417d1",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p202.pdf?v=c1c2348f"
  },
  {
   "paper_id": "P203",
@@ -1467,8 +1518,9 @@
    "LiDAR sensor (라이다 센서)",
    "Ultrasonic cleaning (초음파 세정)"
   ],
-  "pageImage": "/paper-pages/poster-p203.webp?v=044b2d13",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p203.webp?v=bb68f225",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p203.pdf?v=b238643a"
  },
  {
   "paper_id": "P204",
@@ -1493,8 +1545,9 @@
    "Accelerometer (가속도계)",
    "Vibration amplifying structure (진동 증폭 구조)"
   ],
-  "pageImage": "/paper-pages/poster-p204.webp?v=23c25800",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p204.webp?v=f37b2ccc",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p204.pdf?v=acdbb57c"
  },
  {
   "paper_id": "P205",
@@ -1521,13 +1574,14 @@
    "Jamming Phenomenon(재밍 현상)",
    "Lunar Exploration(달 탐사)"
   ],
-  "pageImage": "/paper-pages/poster-p205.webp?v=f69a2ffb",
+  "pageImage": "/paper-pages/poster-p205.webp?v=0fd5f6b4",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p205-figures.webp?v=5f04787c60",
    "width": 1234,
    "height": 424
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p205.pdf?v=f925367d"
  },
  {
   "paper_id": "P206",
@@ -1551,8 +1605,9 @@
    "진동 특성(Vibration Characteristics)",
    "유한요소모델(Finite Element Model)"
   ],
-  "pageImage": "/paper-pages/poster-p206.webp?v=7ba5e7d5",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p206.webp?v=6f1d0b3a",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p206.pdf?v=90ebd1c4"
  },
  {
   "paper_id": "P207",
@@ -1582,8 +1637,9 @@
    "sequential compliance transfer",
    "unilateral contact"
   ],
-  "pageImage": "/paper-pages/poster-p207.webp?v=4d5356e2",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p207.webp?v=61e85c8c",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p207.pdf?v=7c3881b6"
  },
  {
   "paper_id": "P208",
@@ -1610,13 +1666,14 @@
    "Airborne Ultrasound(공기 중 초음파)",
    "Finite Element Analysis(유한요소해석)"
   ],
-  "pageImage": "/paper-pages/poster-p208.webp?v=ab801f23",
+  "pageImage": "/paper-pages/poster-p208.webp?v=6f9aaf8a",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p208-figures.webp?v=760cdfc01b",
    "width": 1231,
    "height": 406
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p208.pdf?v=1f3cf931"
  },
  {
   "paper_id": "P209",
@@ -1641,8 +1698,9 @@
    "Dynamic Analysis(동적 해석)",
    "Electric Motor(전동기)"
   ],
-  "pageImage": "/paper-pages/poster-p209.webp?v=dfb391cb",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p209.webp?v=c0673165",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p209.pdf?v=a437e27b"
  },
  {
   "paper_id": "P210",
@@ -1668,8 +1726,9 @@
    "Fluid-Structure Interaction(유체-구조 연성)",
    "Dispersion Analysis(분산 해석)"
   ],
-  "pageImage": "/paper-pages/poster-p210.webp?v=897b505b",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p210.webp?v=d33bdd13",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p210.pdf?v=cb127eca"
  },
  {
   "paper_id": "P211",
@@ -1694,8 +1753,9 @@
    "Auditory training(청각 훈련)",
    "Sound localization(음원 위치 추정)"
   ],
-  "pageImage": "/paper-pages/poster-p211.webp?v=9bc80b0a",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p211.webp?v=83440265",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p211.pdf?v=e61b1672"
  },
  {
   "paper_id": "P212",
@@ -1722,8 +1782,9 @@
    "Acoustic–Structure Interaction(음향-구조 상호작용)",
    "Finite Element Analysis(유한요소해석)"
   ],
-  "pageImage": "/paper-pages/poster-p212.webp?v=2eb724e9",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p212.webp?v=f62b1029",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p212.pdf?v=90e33e95"
  },
  {
   "paper_id": "P213",
@@ -1747,8 +1808,9 @@
    "Acoustic communication",
    "Orbital angular momentum (OAM)"
   ],
-  "pageImage": "/paper-pages/poster-p213.webp?v=ccec6a83",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p213.webp?v=6f5dd53b",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p213.pdf?v=99413be9"
  },
  {
   "paper_id": "P214",
@@ -1774,13 +1836,14 @@
    "Measured Road Surface(계측 노면)",
    "Virtual Environment(가상환경)"
   ],
-  "pageImage": "/paper-pages/poster-p214.webp?v=aa9d9bc6",
+  "pageImage": "/paper-pages/poster-p214.webp?v=237f77b5",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p214-figures.webp?v=b2f4fc1dfb",
    "width": 1234,
    "height": 298
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p214.pdf?v=c257eea7"
  },
  {
   "paper_id": "P215",
@@ -1806,13 +1869,14 @@
    "재료 물성 보정(Material Parameter Calibration)",
    "설계파라미터(Design Parameters)"
   ],
-  "pageImage": "/paper-pages/poster-p215.webp?v=f986a00b",
+  "pageImage": "/paper-pages/poster-p215.webp?v=3f1b4f3d",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p215-figures.webp?v=f629112b56",
    "width": 1231,
    "height": 344
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p215.pdf?v=8e410284"
  },
  {
   "paper_id": "P216",
@@ -1839,8 +1903,9 @@
    "Natural Frequency Shift(고유주파수 변화)",
    "Frequency Response Function(주파수 응답 함수)"
   ],
-  "pageImage": "/paper-pages/poster-p216.webp?v=2fc8b384",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p216.webp?v=30f86d45",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p216.pdf?v=9352acf4"
  },
  {
   "paper_id": "P217",
@@ -1865,13 +1930,14 @@
    "Frequency Response Function(주파수응답함수)",
    "Equivalent Modeling(등가 모델링)"
   ],
-  "pageImage": "/paper-pages/poster-p217.webp?v=c063302b",
+  "pageImage": "/paper-pages/poster-p217.webp?v=1c747887",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p217-figures.webp?v=51d8a86f28",
    "width": 1231,
    "height": 388
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p217.pdf?v=3eebd812"
  },
  {
   "paper_id": "P218",
@@ -1898,8 +1964,9 @@
    "Natural Frequency Shift(고유 주파수 변화)",
    "Frequency Response Function(주파수 응답 함수)"
   ],
-  "pageImage": "/paper-pages/poster-p218.webp?v=03136b02",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p218.webp?v=58c81f3c",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p218.pdf?v=38f3f4e4"
  },
  {
   "paper_id": "P219",
@@ -1924,13 +1991,14 @@
    "Natural Frequency(고유진동수)",
    "Support Structure(지지구조)"
   ],
-  "pageImage": "/paper-pages/poster-p219.webp?v=0ec14509",
+  "pageImage": "/paper-pages/poster-p219.webp?v=687a1cbd",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p219-figures.webp?v=01a8a02d27",
    "width": 1231,
    "height": 454
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p219.pdf?v=2a3dadf7"
  },
  {
   "paper_id": "P220",
@@ -1956,13 +2024,14 @@
    "Crack Detection(균열 탐지)",
    "열화상 분해능 (IR Resolution)"
   ],
-  "pageImage": "/paper-pages/poster-p220.webp?v=df6d53c1",
+  "pageImage": "/paper-pages/poster-p220.webp?v=01397268",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p220-figures.webp?v=cbf6e294f7",
    "width": 1234,
    "height": 427
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p220.pdf?v=d83e8d84"
  },
  {
   "paper_id": "P221",
@@ -1989,13 +2058,14 @@
    "Optimizing Indicator(최적화 지표)",
    "인공지능(AI)"
   ],
-  "pageImage": "/paper-pages/poster-p221.webp?v=9e415eaf",
+  "pageImage": "/paper-pages/poster-p221.webp?v=fed5115d",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p221-figures.webp?v=d6738439dd",
    "width": 1234,
    "height": 473
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p221.pdf?v=375ae6a4"
  },
  {
   "paper_id": "P222",
@@ -2021,13 +2091,14 @@
    "GD&T(기하공차)",
    "Process quality(공정품질)"
   ],
-  "pageImage": "/paper-pages/poster-p222.webp?v=64630c0d",
+  "pageImage": "/paper-pages/poster-p222.webp?v=dec02e72",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p222-figures.webp?v=f96321933f",
    "width": 1234,
    "height": 331
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p222.pdf?v=2be3cca4"
  },
  {
   "paper_id": "P223",
@@ -2050,8 +2121,9 @@
    "Aircraft Noise(항공기 소음)",
    "Noise Map(소음지도)"
   ],
-  "pageImage": "/paper-pages/poster-p223.webp?v=c1978fc2",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p223.webp?v=3282d9ab",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p223.pdf?v=34435c14"
  },
  {
   "paper_id": "P224",
@@ -2074,8 +2146,9 @@
    "Discrete Cosine Transform(이산코사인변환)",
    "Topology Optimization(위상 최적화)"
   ],
-  "pageImage": "/paper-pages/poster-p224.webp?v=0814c079",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p224.webp?v=93dda17a",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p224.pdf?v=7e00fc96"
  },
  {
   "paper_id": "P225",
@@ -2100,8 +2173,9 @@
    "Thermoacoustic Excitation(열음향 가진)",
    "Lamb Wave(램파)"
   ],
-  "pageImage": "/paper-pages/poster-p225.webp?v=62b6e023",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p225.webp?v=584c89b4",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p225.pdf?v=5ce87603"
  },
  {
   "paper_id": "P226",
@@ -2128,8 +2202,9 @@
    "Angular Spectrum Method(각 스펙트럼법)",
    "Acoustic Pressure Distribution(음압 분포)"
   ],
-  "pageImage": "/paper-pages/poster-p226.webp?v=6f8ea218",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p226.webp?v=c1202ac5",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p226.pdf?v=e68f82e7"
  },
  {
   "paper_id": "P227",
@@ -2154,13 +2229,14 @@
    "Gaussian Process Regression(가우시안 프로세스 회귀)",
    "Transmission Loss(투과손실)"
   ],
-  "pageImage": "/paper-pages/poster-p227.webp?v=4129175a",
+  "pageImage": "/paper-pages/poster-p227.webp?v=cf58abf0",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p227-figures.webp?v=c2578c812b",
    "width": 1234,
    "height": 495
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p227.pdf?v=5e10900b"
  },
  {
   "paper_id": "P228",
@@ -2186,13 +2262,14 @@
    "Sound Absorption(흡음)",
    "Vertiport(버티포트)"
   ],
-  "pageImage": "/paper-pages/poster-p228.webp?v=c07f28e3",
+  "pageImage": "/paper-pages/poster-p228.webp?v=cfeee54f",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p228-figures.webp?v=4612b75023",
    "width": 1231,
    "height": 450
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p228.pdf?v=20f5b553"
  },
  {
   "paper_id": "P229",
@@ -2218,13 +2295,14 @@
    "Band Gap(밴드갭)",
    "Coincidence effect(일치 효과)"
   ],
-  "pageImage": "/paper-pages/poster-p229.webp?v=cb25d8ad",
+  "pageImage": "/paper-pages/poster-p229.webp?v=fd414fc7",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p229-figures.webp?v=220fcce6c6",
    "width": 1235,
    "height": 403
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p229.pdf?v=31676289"
  },
  {
   "paper_id": "P230",
@@ -2251,8 +2329,9 @@
    "Rectifier Circuit(정류 회로)",
    "Transfer Matrix Method(전달행렬법)"
   ],
-  "pageImage": "/paper-pages/poster-p230.webp?v=9f1c9aa2",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p230.webp?v=10951a9a",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p230.pdf?v=06ddf145"
  },
  {
   "paper_id": "P231",
@@ -2278,8 +2357,9 @@
    "Sensor(센서)",
    "Actuator(액추에이터)"
   ],
-  "pageImage": "/paper-pages/poster-p231.webp?v=52bdca85",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p231.webp?v=655e93d9",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p231.pdf?v=d47f254f"
  },
  {
   "paper_id": "P232",
@@ -2306,13 +2386,14 @@
    "Modal Analysis(모달 해석)",
    "Lightweight Design(경량화)"
   ],
-  "pageImage": "/paper-pages/poster-p232.webp?v=2e94757f",
+  "pageImage": "/paper-pages/poster-p232.webp?v=f3d28425",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p232-figures.webp?v=377290b163",
    "width": 1234,
    "height": 253
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p232.pdf?v=7fcb829d"
  },
  {
   "paper_id": "P233",
@@ -2337,8 +2418,9 @@
    "Energy-based optimal design (에너지 기반 최적설계)",
    "Vibration control(진동제어)"
   ],
-  "pageImage": "/paper-pages/poster-p233.webp?v=b4fadbf5",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p233.webp?v=8db0981c",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p233.pdf?v=d353eac7"
  },
  {
   "paper_id": "P234",
@@ -2363,13 +2445,14 @@
    "Ball Screw(볼스크류)",
    "Flywheel(플라이휠)"
   ],
-  "pageImage": "/paper-pages/poster-p234.webp?v=f2c2a2e0",
+  "pageImage": "/paper-pages/poster-p234.webp?v=5bf8283b",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p234-figures.webp?v=18ccdb46b6",
    "width": 1231,
    "height": 375
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p234.pdf?v=952394e0"
  },
  {
   "paper_id": "P235",
@@ -2396,13 +2479,14 @@
    "Support Geometry(서포트 형상)",
    "Vertical Stiffness(수직 강성)"
   ],
-  "pageImage": "/paper-pages/poster-p235.webp?v=3275882d",
+  "pageImage": "/paper-pages/poster-p235.webp?v=a40609fd",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p235-figures.webp?v=575cddd284",
    "width": 1234,
    "height": 370
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p235.pdf?v=3d1a10f4"
  },
  {
   "paper_id": "P236",
@@ -2428,8 +2512,9 @@
    "Four-bar linkage(4 절 링크)",
    "Domain randomization(도메인 무작위화)"
   ],
-  "pageImage": "/paper-pages/poster-p236.webp?v=92921a02",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p236.webp?v=fdf8d212",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p236.pdf?v=8cd82586"
  },
  {
   "paper_id": "P237",
@@ -2453,8 +2538,9 @@
    "Isaac Lab(아이작 랩)",
    "Bimanual Robot(양팔 로봇)"
   ],
-  "pageImage": "/paper-pages/poster-p237.webp?v=11e1354e",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p237.webp?v=683a909b",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p237.pdf?v=f7f07b33"
  },
  {
   "paper_id": "P149",
@@ -2479,8 +2565,9 @@
    "In-Structure Shock(구조물 내부 충격)",
    "Finite Element Analysis(유한요소해석)"
   ],
-  "pageImage": "/paper-pages/poster-p238.webp?v=80077564",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p238.webp?v=04f95e0d",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p238.pdf?v=c82c3f56"
  },
  {
   "paper_id": "P238",
@@ -2507,13 +2594,14 @@
    "Random Vibration(랜덤진동)",
    "Linear Buckling(선형 좌굴)"
   ],
-  "pageImage": "/paper-pages/poster-p239.webp?v=cd8fd9c3",
+  "pageImage": "/paper-pages/poster-p239.webp?v=a000a18f",
   "extractionStatus": "manually-verified",
   "figureImage": {
    "src": "/paper-pages/poster-p239-figures.webp?v=c4e098e439",
    "width": 1210,
    "height": 262
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p239.pdf?v=c21ee27f"
  },
  {
   "paper_id": "P239",
@@ -2538,13 +2626,14 @@
    "RLS-90(도로교통소음 예측모델)",
    "Geographic Information System(지리정보시스템)"
   ],
-  "pageImage": "/paper-pages/poster-p240.webp?v=f61e4209",
+  "pageImage": "/paper-pages/poster-p240.webp?v=f25ed2f2",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p240-figures.webp?v=bfbd16898e",
    "width": 1231,
    "height": 374
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p240.pdf?v=3d61b106"
  },
  {
   "paper_id": "P240",
@@ -2569,8 +2658,9 @@
    "Fault Diagnosis (고장진단)",
    "Persistent Homology(지속 호몰로지)"
   ],
-  "pageImage": "/paper-pages/poster-p241.webp?v=29fe3358",
-  "extractionStatus": "pdf-text"
+  "pageImage": "/paper-pages/poster-p241.webp?v=24bf19f7",
+  "extractionStatus": "pdf-text",
+  "pagePdf": "/paper-pdfs/poster-p241.pdf?v=5ee9ec07"
  },
  {
   "paper_id": "P241",
@@ -2596,13 +2686,14 @@
    "Fan Fault Detection(팬 결함 탐지)",
    "Condition Monitoring(상태 모니터링)"
   ],
-  "pageImage": "/paper-pages/poster-p242.webp?v=d844db9d",
+  "pageImage": "/paper-pages/poster-p242.webp?v=1457c4a8",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/poster-p242-figures.webp?v=d633dc63ae",
    "width": 1234,
    "height": 467
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p242.pdf?v=86cf8159"
  },
  {
   "paper_id": "P242",
@@ -2629,12 +2720,13 @@
    "Transmission Loss(투과손실)",
    "Automation(자동화)"
   ],
-  "pageImage": "/paper-pages/p181.webp?v=3a62e36e",
+  "pageImage": "/paper-pages/poster-p243.webp?v=fe7b8978",
   "extractionStatus": "pdf-text",
   "figureImage": {
    "src": "/paper-pages/p181-figures.webp?v=83fcfc4cdd",
    "width": 1233,
    "height": 157
-  }
+  },
+  "pagePdf": "/paper-pdfs/poster-p243.pdf?v=0b18c460"
  }
 ]
