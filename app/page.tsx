@@ -31,8 +31,11 @@ const daysBetween = (from: string, to: string) =>
 
 /** Sessions running now; between sessions (or before the day starts) the next
  * ones instead, so the heading says which of the two it is showing. */
+/** Off-site, open-ended (11:00~) events that would otherwise sit in 현재 진행 중 all day: 산·학·연·관 친선교류회. */
+const NOT_IN_NOW = new Set(['e01']);
+
 function currentOrNextSessions(items: Session[], date: string, now: Date): { running: boolean; items: Session[] } {
-  const dated = items.filter((s) => s.date === date);
+  const dated = items.filter((s) => s.date === date && !NOT_IN_NOW.has(s.id));
   const nowTime = now.getTime();
   const running = dated.filter((s) => { const r = sessionRange(s); return r.start <= nowTime && nowTime < r.end; });
   if (running.length > 0) return { running: true, items: running };
